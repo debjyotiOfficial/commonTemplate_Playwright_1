@@ -1,0 +1,30 @@
+{
+  "name": "cypress-to-playwright-converted",
+  "version": "1.0.0",
+  "description": "Converted Cypress tests to Playwright format",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "install-browsers": "playwright install",
+    "test:browserstack": "playwright test --config=browserstack.config.js",
+    "test:browserstack:chrome": "playwright test --config=browserstack.config.js --project=browserstack-chrome-windows",
+    "test:browserstack:firefox": "playwright test --config=browserstack.config.js --project=browserstack-firefox-windows",
+    "test:browserstack:edge": "playwright test --config=browserstack.config.js --project=browserstack-edge-windows"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "converted"
+  ],
+  "author": "Conversion Script",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "browserstack-local": "^1.5.8"
+  }
+}

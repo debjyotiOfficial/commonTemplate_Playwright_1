@@ -24,12 +24,12 @@ test.describe('Geofencing Tests', () => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
         
-        await page.goto(config.urls.backupLoginPage);
+        await page.goto(config.urls.backAdminLoginPage);
         
         await expect(page.locator(config.selectors.login.usernameFieldBackup)).toBeVisible();
         await page.locator(config.selectors.login.usernameFieldBackup).clear();
         await page.locator(config.selectors.login.usernameFieldBackup).fill(config.credentials.demo.usernameBackup);
-        
+
         await expect(page.locator(config.selectors.login.passwordFieldBackup)).toBeVisible();
         await page.locator(config.selectors.login.passwordFieldBackup).clear();
         await page.locator(config.selectors.login.passwordFieldBackup).fill(config.credentials.demo.passwordBackup);
@@ -38,8 +38,7 @@ test.describe('Geofencing Tests', () => {
         await page.locator(config.selectors.login.submitButtonBackup).click();
 
         await page.waitForTimeout(config.timeouts.wait);
-        await page.goto(config.urls.fleetNewDashboard);
-        await page.waitForTimeout(5000);
+        await page.goto(config.urls.fleetDashboard3);
 
         await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.geofencingMenu).click();
