@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="168.561419">
+<testsuite name="TS007_pulsingIcon.spec.js" timestamp="2025-10-03T15:33:46.991Z" hostname="chromium" tests="1" failures="0" skipped="0" time="134.042" errors="0">
+<testcase name="Pulsing Icon › should change the size of pulse effect" classname="TS007_pulsingIcon.spec.js" time="134.042">
+</testcase>
+</testsuite>
+</testsuites>

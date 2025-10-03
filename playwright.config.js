@@ -1,42 +1,87 @@
-// @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
+/**
+ * @see https://playwright.dev/docs/test-configuration
+ */
 module.exports = defineConfig({
   testDir: './tests',
+  /* Run tests in files in parallel */
   fullyParallel: true,
+  /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  /* Retry on CI only */
+  retries: process.env.CI ? 2 : 1,
+  /* Opt out of parallel tests on CI. */
+  workers: process.env.CI ? 1 : 2,
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html', { outputFolder: './test-report/html-report' }],
-    ['junit', { outputFile: './test-report/test-results.xml' }],
-    ['json', { outputFile: './test-report/test-results.json' }],
+    ['html', { outputFolder: 'test-reports/html' }],
+    ['json', { outputFile: 'test-reports/json/test-results.json' }],
+    ['junit', { outputFile: 'test-reports/junit.xml' }],
     ['list']
   ],
-  timeout: 1800000, // 30 minutes timeout for parallel execution
-  expect: {
-    timeout: 120000,
-  },
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    actionTimeout: 120000,
-    navigationTimeout: 400000, // 6+ minutes for unified platform navigation
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    // baseURL: 'http://127.0.0.1:3000',
+
+    /* Use saved authentication state */
+    storageState: 'storageState.json',
+
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+
+    /* Global timeout settings */
+    actionTimeout: 30000,
+    navigationTimeout: 60000,
+    testTimeout: 1800000, // 30 minutes per test
   },
 
+  /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1920, height: 1080 },
+        headless: true
+      },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+
+    /* Test against mobile viewports. */
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+    // },
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 12'] },
+    // },
+
+    /* Test against branded browsers. */
+    // {
+    //   name: 'Microsoft Edge',
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    // },
+    // {
+    //   name: 'Google Chrome',
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    // },
   ],
+
+  /* Global setup and teardown */
+  globalSetup: './utils/auth-setup.js',
+  // globalTeardown: './utils/global-teardown.js',
+
+  /* Folder for test artifacts such as screenshots, videos, traces, etc. */
+  outputDir: 'test-results/',
+
+  /* Run your local dev server before starting the tests */
+  // webServer: {
+  //   command: 'npm run start',
+  //   url: 'http://127.0.0.1:3000',
+  //   reuseExistingServer: !process.env.CI,
+  // },
 });

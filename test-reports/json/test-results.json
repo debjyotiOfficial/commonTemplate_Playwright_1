@@ -1,0 +1,133 @@
+{
+  "config": {
+    "configFile": "D:\\cypress-to-playwright-converted\\playwright.config.js",
+    "rootDir": "D:/cypress-to-playwright-converted/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "D:\\cypress-to-playwright-converted\\utils\\auth-setup.js",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-reports/html"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-reports/json/test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-reports/junit.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/cypress-to-playwright-converted/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/cypress-to-playwright-converted/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "TS007_pulsingIcon.spec.js",
+      "file": "TS007_pulsingIcon.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pulsing Icon",
+          "file": "TS007_pulsingIcon.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should change the size of pulse effect",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 134042,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-03T15:33:48.433Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b53bc4ce4dbc24a4cc8b-c697cc133b28261883cd",
+              "file": "TS007_pulsingIcon.spec.js",
+              "line": 23,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-03T15:33:16.691Z",
+    "duration": 168561.419,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,115 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="392.889712">
+<testsuite name="viewEditUser.spec.js" timestamp="2025-09-23T22:28:12.167Z" hostname="chromium" tests="1" failures="1" skipped="0" time="384.841" errors="0">
+<testcase name="view Edit User › should create user and edit them" classname="viewEditUser.spec.js" time="384.841">
+<failure message="viewEditUser.spec.js:24:5 should create user and edit them" type="FAILURE">
+<![CDATA[  [chromium] › viewEditUser.spec.js:24:5 › view Edit User › should create user and edit them ───────
+
+    Error: expect(received).toBeFalsy()
+
+    Received: true
+
+      711 |         //verify reports, real time tracking and alert settings should not be visible
+      712 |         const reportsVisible = await page.locator(config.selectors.navigation.reportMenu).isVisible();
+    > 713 |         expect(reportsVisible).toBeFalsy();
+          |                                ^
+      714 |         console.log('✅ Reports menu is not visible as expected');
+      715 |
+      716 |         const trackingVisible = await page.locator(config.selectors.realTimeTracking.realTimeTrackingMenu).isVisible();
+        at D:\cypress-to-playwright-converted\tests\viewEditUser.spec.js:713:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\viewEditUser-view-Edit-User-should-create-user-and-edit-them-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\viewEditUser-view-Edit-User-should-create-user-and-edit-them-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\viewEditUser-view-Edit-User-should-create-user-and-edit-them-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Collapsing side menu to access modal elements...
+✓ Clicked on modal to collapse side menu
+ℹ️ Entries per page dropdown not found, using default pagination
+📊 Total number of device rows: 6
+📱 Row 1: Device Name = "Sales car1"
+📱 Row 2: Device Name = "Demo1"
+❌ Row 3: Device Not Assigned
+❌ Row 4: Device Not Assigned
+❌ Row 5: Device Not Assigned
+❌ Row 6: Device Not Assigned
+
+📈 Summary:
+   Total device rows: 6
+   Rows with device names: 2
+   Rows without device names: 4
+   Percentage with device names: 33.3%
+   Extracted device names: [Sales car1, Demo1]
+✅ Device table contains data
+✅ Driver Card panel is visible
+⏳ Waiting for driver card data to populate...
+✅ Driver cards are now loaded
+
+🔍 Verifying device names in Driver Card...
+📋 Found 2 driver cards in the panel
+🚗 Driver Card 1: "Sales car1"
+🚗 Driver Card 2: "Demo1"
+✅ Device "Sales car1" found in driver card
+✅ Device "Demo1" found in driver card
+
+📊 Driver Card Verification Summary:
+   Extracted device names: 2
+   Driver cards found: 2
+   Matched devices: 2
+   Unmatched devices: 0
+   Match percentage: 100.0%
+✅ At least one device name from list appears in driver card
+
+🔄 Re-verifying device list data for consistency...
+⏳ Waiting for device list to fully load...
+✅ Device table finished loading
+Collapsing side menu to access modal elements...
+✓ Clicked on modal to collapse side menu
+✅ Side menu closure attempts completed (Re-verification)
+📊 Re-check - Total number of device rows: 6
+
+📈 Re-check Summary:
+   Total device rows: 6
+   Rows with device names: 2
+   Extracted device names: [Sales car1, Demo1]
+
+🔍 Data Consistency Verification:
+✅ Total row count matches: 6 = 6
+✅ Device name count matches: 2 = 2
+✅ Extracted device names match: [Demo1, Sales car1]
+✅ Device list data consistency verified successfully
+✅ Checked device: Demo1
+📋 Total devices checked for user access: [Demo1]
+✅ Driver Card panel is visible
+⏳ Waiting for driver card data to populate...
+✅ Driver cards are now loaded
+
+🔍 Verifying checked devices from user access settings in Driver Card...
+📋 Found 1 driver cards in the panel
+🚗 Driver Card 1: "Demo1"
+✅ Checked device "Demo1" found in driver card
+
+📊 User Access Device Verification Summary:
+   Devices checked for user access: 1
+   Driver cards found: 1
+   Matched devices: 1
+   Unmatched devices: 0
+   Match percentage: 100.0%
+✅ All checked devices from user access settings appear in driver card
+
+[[ATTACHMENT|..\test-results\viewEditUser-view-Edit-User-should-create-user-and-edit-them-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\viewEditUser-view-Edit-User-should-create-user-and-edit-them-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\viewEditUser-view-Edit-User-should-create-user-and-edit-them-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

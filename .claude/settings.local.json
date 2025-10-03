@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/claude/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
