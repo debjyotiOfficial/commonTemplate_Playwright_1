@@ -4,7 +4,8 @@
   "description": "Playwright test suite for Fleet Management platform",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
+    "test": "browserstack-node-sdk playwright test",
+    "test:local": "playwright test",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "test:ui": "playwright test --ui",
@@ -22,7 +23,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.40.0"
+    "@playwright/test": "^1.40.0",
+    "browserstack-node-sdk": "^1.34.4"
   },
   "dependencies": {}
 }
