@@ -26,7 +26,7 @@ module.exports = defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Use saved authentication state */
-    storageState: 'storageState.json',
+    // storageState: 'storageState.json', // Disabled for BrowserStack
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -72,7 +72,7 @@ module.exports = defineConfig({
   ],
 
   /* Global setup and teardown */
-  globalSetup: './utils/auth-setup.js',
+  // globalSetup: './utils/auth-setup.js', // Disabled for BrowserStack - each test handles its own auth
   // globalTeardown: './utils/global-teardown.js',
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
