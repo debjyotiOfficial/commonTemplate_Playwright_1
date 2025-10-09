@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="191.474447">
+<testsuite name="TS033_postedSpeedReport.spec.js" timestamp="2025-10-09T21:17:14.790Z" hostname="chromium" tests="1" failures="0" skipped="0" time="187.504" errors="0">
+<testcase name="Posted Speed Report › should generate and validate posted speed report" classname="TS033_postedSpeedReport.spec.js" time="187.504">
+</testcase>
+</testsuite>
+</testsuites>

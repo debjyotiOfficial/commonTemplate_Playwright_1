@@ -150,18 +150,18 @@ test.describe('Posted Speed Report', () => {
         await page.locator(config.selectors.postedSpeedReport.edit).first().click();
         
         // Verify the edit modal is visible
-        await expect(page.locator(config.selectors.postedSpeedReport.editModal)).toBeVisible();
+        await expect(page.locator(config.selectors.postedSpeedReport.editModal).first()).toBeVisible();
 
          await page.waitForTimeout(15000);
+
+        // Edit the speed limit - use .first() to handle duplicate IDs in modal
+        await page.locator(config.selectors.postedSpeedReport.speedLimitInput).first().clear();
+        await page.locator(config.selectors.postedSpeedReport.speedLimitInput).first().fill('50');
         
-        // Edit the speed limit
-        await page.locator(config.selectors.postedSpeedReport.speedLimitInput).clear();
-        await page.locator(config.selectors.postedSpeedReport.speedLimitInput).fill('50');
-        
-        
-        // Click on the submit button in the edit modal
-        await expect(page.locator(config.selectors.postedSpeedReport.editSubmitButton)).toBeVisible();
-        await page.locator(config.selectors.postedSpeedReport.editSubmitButton).click({ force: true });
+
+        // Click on the submit button in the edit modal - use .first() to handle duplicate IDs
+        await expect(page.locator(config.selectors.postedSpeedReport.editSubmitButton).first()).toBeVisible();
+        await page.locator(config.selectors.postedSpeedReport.editSubmitButton).first().click({ force: true });
         
         await page.waitForTimeout(15000);
         
