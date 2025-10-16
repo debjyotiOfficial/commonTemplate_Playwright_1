@@ -47,7 +47,8 @@ test.describe('Last 24 Hours', () => {
         await expect(page.locator(config.selectors.last24hrs.last24hrsMenu)).toBeVisible();
         await page.locator(config.selectors.last24hrs.last24hrsMenu).click();
 
-        await page.locator(config.selectors.last24hrs.last24hrsDriverSelect).click({ force: true });
+        await page.locator(config.selectors.last24hrs.last24hrsDriverSelect).filter({ hasText: 'Sales car1' })
+      .click({ force: true });
 
         await expect(page.locator(config.selectors.last24hrs.last24hrsContainer)).toBeVisible();
 

@@ -70,20 +70,20 @@
   },
   "suites": [
     {
-      "title": "TS033_postedSpeedReport.spec.js",
-      "file": "TS033_postedSpeedReport.spec.js",
+      "title": "TS039_weeklyUtilizationReport.spec.js",
+      "file": "TS039_weeklyUtilizationReport.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Posted Speed Report",
-          "file": "TS033_postedSpeedReport.spec.js",
+          "title": "Weekly Utilization Report",
+          "file": "TS039_weeklyUtilizationReport.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should generate and validate posted speed report",
+              "title": "should generate and validate weekly utilization report",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,12 +98,46 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 187504,
+                      "duration": 117146,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "New page URL after click: https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index7.php\n"
+                        },
+                        {
+                          "text": "Final new page URL: https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index7.php\n"
+                        },
+                        {
+                          "text": "Summary Card 1 content: Total Utilization\n                100%\n"
+                        },
+                        {
+                          "text": "Summary Card 2 content: Inside Landmarks\n                0%\n"
+                        },
+                        {
+                          "text": "Summary Card 3 content: Total Trackers\n                3\n"
+                        },
+                        {
+                          "text": "✅ All 3 summary cards verified successfully!\n"
+                        },
+                        {
+                          "text": "Stored Sales Car1 efficiency: 100%\n"
+                        },
+                        {
+                          "text": "Sales Car1 stored efficiency: 100%\n"
+                        },
+                        {
+                          "text": "Clicked row efficiency: --%\n"
+                        },
+                        {
+                          "text": "❌ Efficiencies differ by NaN%\n"
+                        },
+                        {
+                          "text": "ℹ️ Efficiencies are different but test continues\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-09T21:17:15.655Z",
+                      "startTime": "2025-10-16T14:42:17.379Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -111,8 +145,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "4559b3e342f46e277e21-bf88fb7e71fdeb866b5a",
-              "file": "TS033_postedSpeedReport.spec.js",
+              "id": "8685944af1fcd1cb5f15-4d60464be5b236f66685",
+              "file": "TS039_weeklyUtilizationReport.spec.js",
               "line": 23,
               "column": 5
             }
@@ -123,8 +157,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-09T21:17:14.608Z",
-    "duration": 191474.447,
+    "startTime": "2025-10-16T14:42:16.360Z",
+    "duration": 121159.686,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

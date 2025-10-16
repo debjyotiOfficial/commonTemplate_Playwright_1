@@ -222,7 +222,7 @@
       "last24hrs": {
         "last24hrsMenu": "#bottom-nav-last-24-hours",
         "last24hrsContainer": "#travel-log-report-panel",
-        "last24hrsDriverSelect": "div.submenu-item-content.last-24-hours-submenu-item[data-name='Sales car1']",
+        "last24hrsDriverSelect": "div.submenu-item-content .vehicle-name",
         "searchInput": "#last-24-hours-table_filter input[type=\"search\"]"
       },
       "realTimeTracking":{
@@ -642,6 +642,7 @@
         "alertSettingsContainer": "#container_Alerts",
         "saveAlertChangesButton": "#saveAlertChanges",
         "reportDate": "#reportDate",
+        "duration": "#duration",
         "totalTrackers": "#totalTrackers",
         "trackersModal": "#trackersModal",
         "searchDriver": "#trackersModal input[aria-controls='driversTable']",

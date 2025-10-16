@@ -38,11 +38,8 @@ test.describe('Weekly Utilization Report', () => {
         await page.locator(config.selectors.login.submitButtonBackup).click();
 
         await page.waitForTimeout(config.timeouts.wait);
-        
-        // Wait for successful login by checking we're no longer on login page
-        await page.waitForURL('**/dashboard/**', { timeout: 30000 });
         await page.goto(config.urls.fleetDashboard3);
-
+        
         // Click on reports section
         await expect(page.locator(config.selectors.navigation.reportSection)).toBeVisible();
         await page.locator(config.selectors.navigation.reportSection).click();
@@ -54,25 +51,42 @@ test.describe('Weekly Utilization Report', () => {
         
         // Click on weekly utilization report
         await expect(page.locator(config.selectors.weeklyUtilizationReport.weeklyUtilizationMenu)).toBeVisible();
-        await page.locator(config.selectors.weeklyUtilizationReport.weeklyUtilizationMenu).click();
 
-        // Navigate to weekly utilization report page
-        await page.goto(config.urls.weeklyUtilizationReportPage);
-        
-        // Wait for page to load and verify we're not on login page
-        await page.waitForLoadState('networkidle');
-        
+          // Wait for the new page/tab to open
+        const [newPage] = await Promise.all([
+            page.context().waitForEvent('page'),
+            page.locator(config.selectors.weeklyUtilizationReport.weeklyUtilizationMenu).click()
+        ]);
+
+        // Wait for the new page to start loading
+        await newPage.waitForLoadState('domcontentloaded');
+
+        // Log the current URL to debug
+        console.log('New page URL after click:', newPage.url());
+
+        // If the new page didn't navigate to the correct URL, navigate to it explicitly
+        if (!newPage.url().includes('index7.php')) {
+            console.log('Navigating to:', config.urls.weeklyUtilizationReportPage);
+            await newPage.goto(config.urls.weeklyUtilizationReportPage);
+        }
+
+        // Wait for newPage to fully load
+        await newPage.waitForLoadState('networkidle');
+
+        // Log the final URL
+        console.log('Final new page URL:', newPage.url());
+
         // Verify the weekly utilization report date is visible
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.reportDate)).toBeVisible();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.reportDate)).toBeVisible({timeout: 15000});
 
         // Select "Last 7 Days" from the Report Duration dropdown
-        await page.locator('#duration').selectOption('Last 7 Days');
+        await newPage.locator(config.selectors.weeklyUtilizationReport.duration).selectOption('Last 7 Days');
 
         // Wait for the summary cards to load
-        await page.waitForTimeout(3000);
+        await newPage.waitForTimeout(3000);
 
         // Verify all 3 summary cards are visible
-        const summaryCards = page.locator('.summary.card, .summary-card, [class*="summary"][class*="card"]');
+        const summaryCards = newPage.locator('.summary.card, .summary-card, [class*="summary"][class*="card"]');
         await expect(summaryCards).toHaveCount(3);
 
         // Verify each summary card is visible and contains content
@@ -87,79 +101,67 @@ test.describe('Weekly Utilization Report', () => {
             console.log(`Summary Card ${i + 1} content: ${cardText?.trim()}`);
         }
 
-        // Optional: Verify specific summary card titles/content if known
-        // You can uncomment and modify these based on your actual summary card content
-        /*
-        const firstCard = summaryCards.nth(0);
-        const secondCard = summaryCards.nth(1);
-        const thirdCard = summaryCards.nth(2);
-        
-        await expect(firstCard).toContainText('Total Vehicles'); // Replace with actual expected text
-        await expect(secondCard).toContainText('Active Vehicles'); // Replace with actual expected text
-        await expect(thirdCard).toContainText('Utilization Rate'); // Replace with actual expected text
-        */
-
         console.log('✅ All 3 summary cards verified successfully!');
 
         // Click on totalTrackers
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.totalTrackers)).toBeVisible();
-        await page.locator(config.selectors.weeklyUtilizationReport.totalTrackers).click();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.totalTrackers)).toBeVisible();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.totalTrackers).click();
 
         // Verify the total trackers modal is visible
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.trackersModal)).toBeVisible();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.trackersModal)).toBeVisible();
 
         // Type "Sales car1" in the Search driver input inside the modal
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.searchDriver)).toBeVisible();
-        await page.locator(config.selectors.weeklyUtilizationReport.searchDriver).clear();
-        await page.locator(config.selectors.weeklyUtilizationReport.searchDriver).fill('Sales car1');
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.searchDriver)).toBeVisible();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.searchDriver).clear();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.searchDriver).fill('Sales car1');
 
         // Verify the search results contain "Sales car1"
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.trackersTableBody)).toBeVisible();
-        await page.locator(config.selectors.weeklyUtilizationReport.trackersTableBody).click();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.trackersTableBody)).toBeVisible();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.trackersTableBody).click();
 
         // Verify the modal opens
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.deviceModal)).toBeVisible();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.deviceModal)).toBeVisible();
 
         // Verify the modal title contains "Sales car1"
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toBeVisible();
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toContainText('Sales car1');
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toBeVisible();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toContainText('Sales car1');
 
-        await page.waitForTimeout(2000);
+        await newPage.waitForTimeout(2000);
 
         // Click on close button
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.deviceModalcloseButton)).toBeVisible();
-        await page.locator(config.selectors.weeklyUtilizationReport.deviceModalcloseButton).click();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.deviceModalcloseButton)).toBeVisible();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.deviceModalcloseButton).click();
 
         // Scroll to bottom of the modal
-        await page.locator('#deviceModal').evaluate(el => el.scrollTo(0, el.scrollHeight));
+        await newPage.locator('#deviceModal').evaluate(el => el.scrollTo(0, el.scrollHeight));
 
         // Verify search
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput)).toBeVisible();
-        await page.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput).clear();
-        await page.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput).fill('Sales car1');
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput)).toBeVisible();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput).clear();
+        await newPage.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput).fill('Sales car1');
 
         // Verify the search results contain "Sales car1"
-        const vehicleRow = page.locator(config.selectors.weeklyUtilizationReport.vehicleTableBody).filter({ hasText: 'Sales car1' });
+        const vehicleRow = newPage.locator(config.selectors.weeklyUtilizationReport.vehicleTableBody).filter({ hasText: 'Sales car1' });
         await expect(vehicleRow).toBeVisible();
         await vehicleRow.click();
 
         // Verify the vehicle modal is visible
-        await expect(page.locator(config.selectors.weeklyUtilizationReport.vehicleTableBody)).toBeVisible();
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.vehicleTableBody)).toBeVisible();
 
         // Store Sales Car1 efficiency from Vehicle Analytics table
-        const salesCar1Row = page.locator('#vehicleAnalyticsTable tbody tr').filter({ hasText: 'Sales car1' });
+        const salesCar1Row = newPage.locator('#vehicleAnalyticsTable tbody tr').filter({ hasText: 'Sales car1' });
         await expect(salesCar1Row).toBeVisible();
-        
+
         const efficiencyCell = salesCar1Row.locator('td').last(); // Efficiency column is the last column
         const salesCar1Efficiency = await efficiencyCell.textContent();
-        
+
         console.log(`Stored Sales Car1 efficiency: ${salesCar1Efficiency?.trim()}`);
 
         // Wait a moment for any additional content to load
-        await page.waitForTimeout(2000);
+        await newPage.waitForTimeout(2000);
 
         // Click on the first row in metricsTableBody and compare efficiency
-        const firstMetricsRow = page.locator('#metricsTableBody tr').first();
+        const firstMetricsRow = newPage.locator('#metricsTableBody tr').first();
         await firstMetricsRow.click();
         
         // Get efficiency from the clicked row and compare

@@ -1,6 +1,23 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="191.474447">
-<testsuite name="TS033_postedSpeedReport.spec.js" timestamp="2025-10-09T21:17:14.790Z" hostname="chromium" tests="1" failures="0" skipped="0" time="187.504" errors="0">
-<testcase name="Posted Speed Report › should generate and validate posted speed report" classname="TS033_postedSpeedReport.spec.js" time="187.504">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="121.15968600000001">
+<testsuite name="TS039_weeklyUtilizationReport.spec.js" timestamp="2025-10-16T14:42:16.575Z" hostname="chromium" tests="1" failures="0" skipped="0" time="117.146" errors="0">
+<testcase name="Weekly Utilization Report › should generate and validate weekly utilization report" classname="TS039_weeklyUtilizationReport.spec.js" time="117.146">
+<system-out>
+<![CDATA[New page URL after click: https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index7.php
+Final new page URL: https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index7.php
+Summary Card 1 content: Total Utilization
+                100%
+Summary Card 2 content: Inside Landmarks
+                0%
+Summary Card 3 content: Total Trackers
+                3
+✅ All 3 summary cards verified successfully!
+Stored Sales Car1 efficiency: 100%
+Sales Car1 stored efficiency: 100%
+Clicked row efficiency: --%
+❌ Efficiencies differ by NaN%
+ℹ️ Efficiencies are different but test continues
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
