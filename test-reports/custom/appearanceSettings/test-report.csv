@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS055-A,"Timezone","should edit the timezone of users",PASSED,122.58,"",N/A,TS055_appearanceSettings.spec.js,24

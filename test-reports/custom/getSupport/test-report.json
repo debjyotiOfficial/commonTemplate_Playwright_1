@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 61876,
+    "startTime": "2025-12-02T23:32:19.030Z",
+    "endTime": "2025-12-02T23:33:20.906Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS052-A",
+      "module": "Get Support",
+      "title": "should verify Get Support and Insurance form functionality",
+      "description": "should verify Get Support and Insurance form functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 58272,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Get Support form...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Get Support form test completed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Insurance form...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Response received: 200 for https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common/SaveData/Insurance.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Success alert found and visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Insurance form submission test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-02T23:32:21.645Z",
+      "endTime": "2025-12-02T23:33:19.924Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS052_getSupport.spec.js",
+      "fileName": "TS052_getSupport",
+      "line": 23
+    }
+  ]
+}

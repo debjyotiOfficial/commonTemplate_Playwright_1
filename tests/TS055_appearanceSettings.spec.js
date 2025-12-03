@@ -24,22 +24,9 @@ test.describe('Timezone', () => {
     test('should edit the timezone of users', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
-        
-        await page.goto(config.urls.backAdminLoginPage);
-        
-        await expect(page.locator(config.selectors.login.usernameFieldBackup)).toBeVisible();
-        await page.locator(config.selectors.login.usernameFieldBackup)
-            .fill(config.credentials.demo.usernameBackup);
 
-        await expect(page.locator(config.selectors.login.passwordFieldBackup)).toBeVisible();
-        await page.locator(config.selectors.login.passwordFieldBackup)
-            .fill(config.credentials.demo.passwordBackup);
-        
-        await expect(page.locator(config.selectors.login.submitButtonBackup)).toBeVisible();
-        await page.locator(config.selectors.login.submitButtonBackup).click();
-
-        await page.waitForTimeout(config.timeouts.wait);
-        await page.goto(config.urls.fleetDashboard3);
+        // Use fast login helper which handles stored auth vs fresh login automatically
+        await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
 
         // 1. Verify the Driver Card panel is visible
@@ -381,8 +368,8 @@ test.describe('Timezone', () => {
 
         await page.waitForTimeout(1000);
 
-        // Click "Reset to default" button
-        const resetButton = page.locator('button:has-text("Reset to default")');
+        // Click "Reset to default" button - use specific class selector to avoid matching multiple buttons
+        const resetButton = page.locator('button.appearance-modal__reset-btn');
         await expect(resetButton).toBeVisible();
         await resetButton.click();
         console.log('✓ Clicked "Reset to default" button');

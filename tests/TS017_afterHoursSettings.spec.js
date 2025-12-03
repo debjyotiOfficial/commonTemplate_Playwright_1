@@ -24,22 +24,8 @@ test.describe('After Hour Setting', () => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
-        await page.goto(config.urls.backupLoginPage);
-        
-        await expect(page.locator(config.selectors.login.usernameFieldBackup)).toBeVisible();
-        await page.locator(config.selectors.login.usernameFieldBackup).clear();
-        await page.locator(config.selectors.login.usernameFieldBackup).fill(config.credentials.demo.usernameBackup);
-        
-        await expect(page.locator(config.selectors.login.passwordFieldBackup)).toBeVisible();
-        await page.locator(config.selectors.login.passwordFieldBackup).clear();
-        await page.locator(config.selectors.login.passwordFieldBackup).fill(config.credentials.demo.passwordBackup);
-        
-        await expect(page.locator(config.selectors.login.submitButtonBackup)).toBeVisible();
-        await page.locator(config.selectors.login.submitButtonBackup).click();
-        
-        await page.waitForTimeout(config.timeouts.wait);
-        await page.goto(config.urls.fleetNewDashboard);
-        await page.waitForTimeout(5000);
+        // Use fast login helper which handles stored auth vs fresh login automatically
+        await helpers.loginAndNavigateToPage(config.urls.fleetNewDashboard);
 
         // Click on alerts menu
         await expect(page.locator(config.selectors.navigation.alertsMenu)).toBeVisible();

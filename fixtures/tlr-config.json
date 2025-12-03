@@ -11,12 +11,12 @@
       "loginPage": "https://gpsandfleet.io/gpsandfleet/client_login.php",
       "matrackBackupLoginPage": "https://www.tracking.matrack.io/gpstracking/adminnew/view/login.php",
       "backupLoginPage": "https://www.tracking.gpsandfleet.io/gpsandfleet/adminnew/view/index.php",
-      "backAdminLoginPage": "https://www.gpsandfleet-server1.com/gpsandfleet/adminnew/view/login.php",
+      "backAdminLoginPage": "https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/login.php",
       "mainAdminLoginPage": "https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/login.php",
       "fleetDashboardBackup2": "https://www.tracking.gpsandfleet.io/gpsandfleet/client/shawn.cmstransportation@gmail.com/maps/index2_unified.php",
       "fleetDashcamDashboard2": "https://www.gpsandfleet-server1.com/gpsandfleet/client/varsha_dashcamdemo/maps/index2.php",
-      "fleetDashboard3": "https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index2_unified.php",
-      "fleetMainDashboard": "https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2_unified.php",
+      "fleetDashboard3": "https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php",
+      "fleetMainDashboard": "https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php",
       "matrackBackupDashboard": "https://www.tracking.matrack.io/gpstracking/client/DashcamDemo/maps/index2_unified.php",
       "ffBackupDashboard": "https://www.tracking.matrack.io/gpstracking/client/VNMA9275/maps/index2_unified.php",
       "weeklyUtilizationReportPage": "https://www.tracking.gpsandfleet.io/gpsandfleet/client/fleetdemo/maps/index7.php"
@@ -222,14 +222,14 @@
       "last24hrs": {
         "last24hrsMenu": "#bottom-nav-last-24-hours",
         "last24hrsContainer": "#travel-log-report-panel",
-        "last24hrsDriverSelect": "div.submenu-item-content .vehicle-name",
+        "last24hrsDriverSelect": "div.submenu-item-content.last-24-hours-submenu-item[data-name='Sales car1']",
         "searchInput": "#last-24-hours-table_filter input[type=\"search\"]"
       },
       "realTimeTracking":{
         "realTimeTrackingMenu": "#bottom-nav-realtime"
       },
       "getSupport": {
-        "getSupportMenu": "#bottom-nav-support",
+        "getSupportMenu": "#bottom-nav-support1",
         "getSupportContainer": "#support-team-panel",
         "firstName": "#first-name",
         "lastName": "#last-name",
@@ -466,8 +466,8 @@
         "reportPanelClose": "#posted-speed-map-report-panel .icon--close",
         "editModal": "#posted-speed-one-modal",
         "delButton": "#posted-delete-report-modal .delete.btn.btn--danger",
-        "speedLimitInput": "#posted-speed-one-modal #txtSpeed",
-        "editSubmitButton": "#posted-speed-one-modal #submit-posted-speed-one-modal-btn",
+        "speedLimitInput": "#txtSpeed",
+        "editSubmitButton": "#submit-posted-speed-one-modal-btn",
         "reportTable": "#posted-speed-report-table",
         "reportRows": "#posted-speed-report-table tbody tr",
         "searchDevice": "#posted-speed-report-panel .select2-selection",
@@ -642,7 +642,6 @@
         "alertSettingsContainer": "#container_Alerts",
         "saveAlertChangesButton": "#saveAlertChanges",
         "reportDate": "#reportDate",
-        "duration": "#duration",
         "totalTrackers": "#totalTrackers",
         "trackersModal": "#trackersModal",
         "searchDriver": "#trackersModal input[aria-controls='driversTable']",

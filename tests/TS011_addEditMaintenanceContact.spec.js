@@ -20,30 +20,11 @@ test.describe('Add Edit Maintenance Contact', () => {
         test.setTimeout(600000); // 10 minutes for long test
     });
     
-  test('should add the contact details', async ({ page }) => { 
-    await page.goto(config.urls.backAdminLoginPage);
-    
-    await page.locator(config.selectors.login.usernameFieldBackup)
-      .waitFor({ state: 'visible' });
-    await page.locator(config.selectors.login.usernameFieldBackup)
-      .clear();
-    await page.locator(config.selectors.login.usernameFieldBackup)
-      .fill(config.credentials.demo.usernameBackup);
+  test('should add the contact details', async ({ page }) => {
+    const helpers = new TestHelpers(page);
 
-    await page.locator(config.selectors.login.passwordFieldBackup)
-      .waitFor({ state: 'visible' });
-    await page.locator(config.selectors.login.passwordFieldBackup)
-      .clear();
-    await page.locator(config.selectors.login.passwordFieldBackup)
-      .fill(config.credentials.demo.passwordBackup);
-    
-    await page.locator(config.selectors.login.submitButtonBackup)
-      .waitFor({ state: 'visible' });
-    await page.locator(config.selectors.login.submitButtonBackup)
-      .click();
-
-    await page.waitForTimeout(config.timeouts.wait);
-    await page.goto(config.urls.fleetDashboard3);
+    // Use fast login helper which handles stored auth vs fresh login automatically
+    await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
     // Click on alerts menu
     await page.locator(config.selectors.navigation.alertsMenu)

@@ -21,25 +21,12 @@ test.describe('view Edit User', () => {
         test.setTimeout(600000); // 10 minutes for long test
     });
 
-    test('should create user and edit them', async ({ page }) => { 
+    test('should create user and edit them', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
-        
-        await page.goto(config.urls.backAdminLoginPage);
-        
-        await expect(page.locator(config.selectors.login.usernameFieldBackup)).toBeVisible();
-        await page.locator(config.selectors.login.usernameFieldBackup)
-            .fill(config.credentials.demo.usernameBackup);
 
-        await expect(page.locator(config.selectors.login.passwordFieldBackup)).toBeVisible();
-        await page.locator(config.selectors.login.passwordFieldBackup)
-            .fill(config.credentials.demo.passwordBackup);
-        
-        await expect(page.locator(config.selectors.login.submitButtonBackup)).toBeVisible();
-        await page.locator(config.selectors.login.submitButtonBackup).click();
-
-        await page.waitForTimeout(config.timeouts.wait);
-        await page.goto(config.urls.fleetDashboard3, { timeout: 600000 });
+        // Use fast login helper which handles stored auth vs fresh login automatically
+        await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
         // Click on accounts menu
         await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();

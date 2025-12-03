@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Read(//d/claude/**)"
+      "Read(//d/claude/**)",
+      "Bash(powershell -Command:*)"
     ],
     "deny": [],
     "ask": []

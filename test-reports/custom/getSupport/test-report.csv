@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,58.27,"",N/A,TS052_getSupport.spec.js,23

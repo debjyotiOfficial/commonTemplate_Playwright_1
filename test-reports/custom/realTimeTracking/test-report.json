@@ -1,0 +1,142 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 127602,
+    "startTime": "2025-12-02T23:10:55.842Z",
+    "endTime": "2025-12-02T23:13:03.444Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS051-A",
+      "module": "Real Time Tracking",
+      "title": "should verify real-time tracking timer and API data synchronization",
+      "description": "should verify real-time tracking timer and API data synchronization",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 120520,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver Card is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on Demo 1 card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Realtime tracking timer visible with Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for 30-second refresh cycle...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response captured: [{\"id\":15,\"name\":\"Demo 1 \",\"imei\":\"860111051554966\",\"subgroup\":\"\",\"icon\":\"/gpsandfleet/gpsandfleet-common-2025-v4-aakash/icons/devices/cars/car-11.png\",\"deviceType\":\"MA9276-Portable\",\"position\":{\"lat\":33.624265,\"lng\":-111.84037},\"speed\":\"0.0\",\"battery\":\"98.9\",\"mileage\":15000,\"fuel\":{\"level\":0,\"lastRefill\":\"\"},\"date\":\"12/02/2025\",\"time\":\"21:00:16\",\"lastUpdate\":\"12/02/2025T21:00:16Z\",\"activity\":\"2h 12 min ago\",\"direction\":\"North\",\"state\":\"off\",\"isPulsing\":false,\"eventTitle\":\"Vehicle Is Off\",\"effect_color\":\"black\",\"trackingMode\":\"normal\",\"pingFrequency\":1,\"movementBased\":true,\"driver\":{\"name\":\"Demo 1\",\"picture\":\"/gpsandfleet/gpsandfleet-common-2025-v4-aakash/icons/devices/cars/car-11.png\"},\"address\":\"11233 E Karen Dr, Scottsdale, AZ 85255\",\"alertSettings\":{\"speed\":true,\"speedEmail\":\"\",\"ignitionOn\":true,\"ignitionOnEmail\":\"\",\"ignitionOff\":true,\"ignitionOffEmail\":\"\",\"geofence\":true,\"geofenceEmail\":\"\",\"sos\":true,\"sosEmail\":\"\",\"photoTrap\":false,\"photoTrapEmail\":\"\",\"dms\":false,\"dmsEmail\":\"\",\"volume\":true,\"volumeEmail\":\"\",\"speedLimit\":70},\"pastLocations\":[],\"infobox_type\":\"4\",\"track_infobox_type\":\"2\"}]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 verification completed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Now testing with Sales car1 driver card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on Sales car1 card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Realtime tracking timer visible with Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial timer value:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "00:30Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for 30-second refresh cycle for Sales car1...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales car1 API response captured: [{\"id\":14,\"name\":\"Sales Car1 \",\"imei\":\"220902734\",\"subgroup\":\"\",\"icon\":\"/gpsandfleet/gpsandfleet-common-2025-v4-aakash/icons/devices/box-trucks/box-truck-1.png\",\"deviceType\":\"XT2469\",\"position\":{\"lat\":33.639136,\"lng\":-111.887786},\"speed\":\"0.0\",\"battery\":\"12\",\"mileage\":15235.703,\"fuel\":{\"level\":0,\"lastRefill\":\"\"},\"date\":\"12/02/2025\",\"time\":\"22:16:05\",\"lastUpdate\":\"12/02/2025T22:16:05Z\",\"activity\":\"56 min ago\",\"direction\":\"North-West\",\"state\":\"off\",\"isPulsing\":true,\"eventTitle\":\"Ignition Off\",\"effect_color\":\"yellow\",\"pulseColor\":\"rgba(255,255,0, 0.6)\",\"trackingMode\":\"normal\",\"pingFrequency\":1,\"movementBased\":true,\"driver\":{\"name\":\"Sales Car1\",\"picture\":\"/gpsandfleet/gpsandfleet-common-2025-v4-aakash/icons/devices/box-trucks/box-truck-1.png\"},\"address\":\"16812 N 90th St, Scottsdale, AZ 85260\",\"alertSettings\":{\"speed\":true,\"speedEmail\":\"\",\"ignitionOn\":true,\"ignitionOnEmail\":\"\",\"ignitionOff\":true,\"ignitionOffEmail\":\"\",\"geofence\":true,\"geofenceEmail\":\"\",\"sos\":true,\"sosEmail\":\"\",\"photoTrap\":false,\"photoTrapEmail\":\"\",\"dms\":false,\"dmsEmail\":\"\",\"volume\":true,\"volumeEmail\":\"\",\"speedLimit\":70},\"pastLocations\":[],\"infobox_type\":\"4\",\"track_infobox_type\":\"2\"}]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales car1 vehicleId: 14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Real Time Tracking test completed successfully for both drivers",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-02T23:11:01.378Z",
+      "endTime": "2025-12-02T23:13:01.913Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS051_realTimeTracking.spec.js",
+      "fileName": "TS051_realTimeTracking",
+      "line": 23
+    }
+  ]
+}

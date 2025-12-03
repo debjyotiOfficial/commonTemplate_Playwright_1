@@ -1,0 +1,1300 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 131677,
+    "startTime": "2025-12-02T22:29:45.191Z",
+    "endTime": "2025-12-02T22:31:56.868Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS055-A",
+      "module": "Timezone",
+      "title": "should edit the timezone of users",
+      "description": "should edit the timezone of users",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 122582,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "✓ Driver Card panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected number of drivers: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual number of driver containers: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Driver count verification passed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial driver order: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Sales Car1 '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Demo 1 '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'View Tracking'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Access Reports'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Change Alert Settings'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Assign Device For Subuser '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'\\n\\t\\t\\t\\t\\t\\tFeb 25, 2025 12:00 AM - Mar 3, 2025 11:59 PM\\n\\t\\t\\t\\t\\t'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sorted driver order: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Demo 1 '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Sales Car1 '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'View Tracking'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Access Reports'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Change Alert Settings'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Assign Device For Subuser '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'\\n\\t\\t\\t\\t\\t\\tFeb 25, 2025 12:00 AM - Mar 3, 2025 11:59 PM\\n\\t\\t\\t\\t\\t'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sorting functionality verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver statuses extracted: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'\\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                                Vehicle Is Off\\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                            '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'\\n                                Ignition Off\\n                            '\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Detailed driver status info: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "{ text: \u001b[32m'Vehicle Is Off'\u001b[39m, class: \u001b[32m'driver-status off'\u001b[39m },",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "{ text: \u001b[32m'Ignition Off'\u001b[39m, class: \u001b[32m'driver-status off'\u001b[39m }",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Driver statuses extracted successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Appearance settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Appearance Settings modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Extracting All Colors from Driver Cards ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Complete driver card data extracted: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Demo 1'\u001b[39m: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "status: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'Vehicle Is Off'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "originalStyles: \u001b[36m[Object]\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "address: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'11233 E Karen Dr, Scottsdale, AZ 85255'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#494F50'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m''\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "originalStyles: \u001b[36m[Object]\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Sales Car1'\u001b[39m: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "status: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'Ignition Off'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "originalStyles: \u001b[36m[Object]\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "address: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'16812 N 90th St, Scottsdale, AZ 85260'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#494F50'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m''\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "originalStyles: \u001b[36m[Object]\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Extracting Modal Color Settings ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Moving\" -> #7DB248",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Not Moving\" -> #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Vehicle is idle\" -> #DB9200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Power Disconnected\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Turned On\" -> #ABC819",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Off\" -> #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Normal\" -> #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Stopped\" -> #DB9200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Stationary\" -> #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Sleep Mode\" -> #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Towing\" -> #DB9200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Hard Braking\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Accelerating\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Tampered\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"PTO Connected\" -> #F55600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Battery Mode\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Aggressive\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"WiFi Update\" -> #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Button Pressed\" -> #E718BA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Not Updating\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Low Voltage\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Default Location\" -> #448628",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Power Loss\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Blocked Satellite\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Low Battery\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found status: \"Notice\" -> #F44336",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found address color from ID selector: #494F50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal status colors: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Moving: \u001b[32m'#7DB248'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Not Moving'\u001b[39m: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Vehicle is idle'\u001b[39m: \u001b[32m'#DB9200'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Power Disconnected'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Turned On'\u001b[39m: \u001b[32m'#ABC819'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Off: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Normal: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stopped: \u001b[32m'#DB9200'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stationary: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Sleep Mode'\u001b[39m: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Towing: \u001b[32m'#DB9200'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Hard Braking'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Accelerating: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Tampered: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'PTO Connected'\u001b[39m: \u001b[32m'#F55600'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Battery Mode'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Aggressive: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'WiFi Update'\u001b[39m: \u001b[32m'#8999AB'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Button Pressed'\u001b[39m: \u001b[32m'#E718BA'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Not Updating'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Low Voltage'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Default Location'\u001b[39m: \u001b[32m'#448628'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Power Loss'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Blocked Satellite'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Low Battery'\u001b[39m: \u001b[32m'#F44336'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Notice: \u001b[32m'#F44336'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal address color: #494F50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Status Color Comparison Results ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status: Vehicle Is Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Background: #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Text: #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Status: Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Color: #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Driver: Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status: Ignition Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Background: #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Text: #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Status: Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Color: #8999AB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "=== Address Color Comparison Results ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address: 11233 E Karen Dr, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Text Color: #494F50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Background:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Address Color: #494F50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Text Match: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Background Match: ✗",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Overall Match: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Driver: Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address: 16812 N 90th St, Scottsdale, AZ 85260",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Text Color: #494F50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Card Background:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Address Color: #494F50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Text Match: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Background Match: ✗",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Overall Match: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Color Validation Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status Colors: 2/2 matches",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address Colors: 2/2 matches",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Complete color validation completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Testing Color Change and Reset Functionality ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Changed address color to: #FF0000",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Changed \"Off\" status color to: #00FF00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Changed \"Vehicle is idle\" status color to: #0000FF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked \"Reset to default\" button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Verifying Reset Functionality ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address color after reset: #494F50 (was: #494F50)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Off\" status color after reset: #8999AB (was: #8999AB)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Vehicle is idle\" status color after reset: #DB9200 (was: #DB9200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Reset verification:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address color changed from our edit: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Off color changed from our edit: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Idle color changed from our edit: ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Reset functionality verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Testing Save Functionality ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Set final address color to: #FFA500",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Set final \"Off\" status color to: #800080",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Set final \"Vehicle is idle\" status color to: #008000",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked \"Save\" button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked \"Close\" button to close modal",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Verifying Saved Colors in Driver Cards ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated driver card data: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Demo 1'\u001b[39m: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "status: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'Vehicle Is Off'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m'#800080'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#800080'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "address: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'11233 E Karen Dr, Scottsdale, AZ 85255'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#FFA500'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m''\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Sales Car1'\u001b[39m: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "status: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'Ignition Off'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m'#800080'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#800080'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "address: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "text: \u001b[32m'16812 N 90th St, Scottsdale, AZ 85260'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "textColor: \u001b[32m'#FFA500'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "backgroundColor: \u001b[32m''\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver Demo 1 address color: #FFA500 (expected: #FFA500) - ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver Sales Car1 address color: #FFA500 (expected: #FFA500) - ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver Demo 1 status \"Vehicle Is Off\": #800080 (expected: #800080) - ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final Validation Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address colors updated: 2/2 matches",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status colors updated: 1/2 matches (for changed statuses)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Complete appearance settings functionality verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== All Test Steps Completed ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "1. ✓ Driver Card panel visibility verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2. ✓ Driver count and containers verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "3. ✓ Sort functionality tested",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "4. ✓ Driver statuses extracted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "5. ✓ Appearance settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "6. ✓ Appearance Settings modal verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "7. ✓ Complete color comparison (status + address) completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "8. ✓ Color change and reset functionality tested",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "9. ✓ Save functionality tested",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "10. ✓ Driver card color updates verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Appearance settings test completed successfully!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-02T22:29:52.188Z",
+      "endTime": "2025-12-02T22:31:54.778Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS055_appearanceSettings.spec.js",
+      "fileName": "TS055_appearanceSettings",
+      "line": 24
+    }
+  ]
+}

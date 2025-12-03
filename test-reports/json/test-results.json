@@ -36,6 +36,12 @@
       [
         "list",
         null
+      ],
+      [
+        "C:\\cypress-to-playwright-converted\\reporters\\custom-reporter.js",
+        {
+          "outputDir": "test-reports/custom"
+        }
       ]
     ],
     "reportSlowTests": {
@@ -65,25 +71,25 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.0",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "TS039_weeklyUtilizationReport.spec.js",
-      "file": "TS039_weeklyUtilizationReport.spec.js",
+      "title": "TS052_getSupport.spec.js",
+      "file": "TS052_getSupport.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Weekly Utilization Report",
-          "file": "TS039_weeklyUtilizationReport.spec.js",
+          "title": "Get Support",
+          "file": "TS052_getSupport.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should generate and validate weekly utilization report",
+              "title": "should verify Get Support and Insurance form functionality",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,46 +104,40 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 117146,
+                      "duration": 58272,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "New page URL after click: https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index7.php\n"
+                          "text": "Performing login...\n"
                         },
                         {
-                          "text": "Final new page URL: https://www.gpsandfleet-server1.com/gpsandfleet/client/fleetdemo/maps/index7.php\n"
+                          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
                         },
                         {
-                          "text": "Summary Card 1 content: Total Utilization\n                100%\n"
+                          "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "Summary Card 2 content: Inside Landmarks\n                0%\n"
+                          "text": "Testing Get Support form...\n"
                         },
                         {
-                          "text": "Summary Card 3 content: Total Trackers\n                3\n"
+                          "text": "Get Support form test completed successfully\n"
                         },
                         {
-                          "text": "✅ All 3 summary cards verified successfully!\n"
+                          "text": "Testing Insurance form...\n"
                         },
                         {
-                          "text": "Stored Sales Car1 efficiency: 100%\n"
+                          "text": "Response received: 200 for https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common/SaveData/Insurance.php\n"
                         },
                         {
-                          "text": "Sales Car1 stored efficiency: 100%\n"
+                          "text": "Success alert found and visible\n"
                         },
                         {
-                          "text": "Clicked row efficiency: --%\n"
-                        },
-                        {
-                          "text": "❌ Efficiencies differ by NaN%\n"
-                        },
-                        {
-                          "text": "ℹ️ Efficiencies are different but test continues\n"
+                          "text": "Insurance form submission test completed successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-16T14:42:17.379Z",
+                      "startTime": "2025-12-02T23:32:19.894Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -145,8 +145,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "8685944af1fcd1cb5f15-4d60464be5b236f66685",
-              "file": "TS039_weeklyUtilizationReport.spec.js",
+              "id": "4efc1a7deca6cb908c87-3d065e32078b954df234",
+              "file": "TS052_getSupport.spec.js",
               "line": 23,
               "column": 5
             }
@@ -157,8 +157,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-16T14:42:16.360Z",
-    "duration": 121159.686,
+    "startTime": "2025-12-02T23:32:18.857Z",
+    "duration": 61961.106,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

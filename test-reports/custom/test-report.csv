@@ -1,0 +1,9 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
+TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,58.27,"",N/A,TS052_getSupport,23
+TS055-A,"Timezone","should edit the timezone of users",PASSED,122.58,"",N/A,TS055_appearanceSettings,24
+TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",FAILED,88.86,"Error: expect(locator).toBeVisible() failed",TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm,TS057_accountHealthSummary,23
+TS057-B,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",FAILED,103.54,"TimeoutError: locator.textContent: Timeout 30000ms exceeded.",TS057_accountHealthSummary-should-verify-Fleet-Status-Summary-cards-and-table.webm,TS057_accountHealthSummary,340
+TS057-C,"Account Health Summary Report","should verify table sorting functionality",PASSED,76.62,"",N/A,TS057_accountHealthSummary,442
+TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",FAILED,81.72,"Error: expect(locator).toBeVisible() failed",TS057_accountHealthSummary-should-verify-export-buttons-and-file-downloads.webm,TS057_accountHealthSummary,505
+TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,68.22,"",N/A,TS057_accountHealthSummary,608

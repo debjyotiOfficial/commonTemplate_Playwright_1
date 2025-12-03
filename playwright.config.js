@@ -18,7 +18,8 @@ module.exports = defineConfig({
     ['html', { outputFolder: 'test-reports/html' }],
     ['json', { outputFile: 'test-reports/json/test-results.json' }],
     ['junit', { outputFile: 'test-reports/junit.xml' }],
-    ['list']
+    ['list'],
+    ['./reporters/custom-reporter.js', { outputDir: 'test-reports/custom' }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

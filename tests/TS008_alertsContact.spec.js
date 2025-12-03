@@ -21,30 +21,11 @@ test.describe('Alert Contact', () => {
     });
 
   test('should add email and phone contacts and configure alert settings', async ({ page }) => {
-    await page.goto(config.urls.backAdminLoginPage);
-    
-    await page.locator(config.selectors.login.usernameFieldBackup)
-      .waitFor({ state: 'visible' });
-    await page.locator(config.selectors.login.usernameFieldBackup)
-      .clear();
-    await page.locator(config.selectors.login.usernameFieldBackup)
-      .fill(config.credentials.demo.usernameBackup);
+    const helpers = new TestHelpers(page);
 
-    await page.locator(config.selectors.login.passwordFieldBackup)
-      .waitFor({ state: 'visible' });
-    await page.locator(config.selectors.login.passwordFieldBackup)
-      .clear();
-    await page.locator(config.selectors.login.passwordFieldBackup)
-      .fill(config.credentials.demo.passwordBackup);
-    
-    await page.locator(config.selectors.login.submitButtonBackup)
-      .waitFor({ state: 'visible' });
-    await page.locator(config.selectors.login.submitButtonBackup)
-      .click();
+    // Use fast login helper which handles stored auth vs fresh login automatically
+    await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
-    await page.waitForTimeout(config.timeouts.wait);
-    await page.goto(config.urls.fleetDashboard3);
-    
     // Click on alerts menu
     await page.locator(config.selectors.navigation.alertsMenu)
       .waitFor({ state: 'visible' });

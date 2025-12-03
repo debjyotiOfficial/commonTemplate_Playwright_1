@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking.spec.js,23
