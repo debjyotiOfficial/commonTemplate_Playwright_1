@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS037-A,"Low Voltage Device Report","should generate and validate low voltage device report",FAILED,81.84,"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.",TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm,TS037_lowVoltageDeviceReport.spec.js,23

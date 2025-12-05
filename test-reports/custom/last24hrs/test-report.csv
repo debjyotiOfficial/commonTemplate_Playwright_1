@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",FAILED,138.50,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS050_last24hrs-should-verify-Engine-Idling-Events-checkbox-functi.webm,TS050_last24hrs.spec.js,23

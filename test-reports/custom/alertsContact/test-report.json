@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 141778,
+    "startTime": "2025-12-04T19:52:40.105Z",
+    "endTime": "2025-12-04T19:55:01.883Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS008-A",
+      "module": "Alert Contact",
+      "title": "should add email and phone contacts and configure alert settings",
+      "description": "should add email and phone contacts and configure alert settings",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 137128,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-04T19:52:43.612Z",
+      "endTime": "2025-12-04T19:55:00.748Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS008_alertsContact.spec.js",
+      "fileName": "TS008_alertsContact",
+      "line": 23
+    }
+  ]
+}

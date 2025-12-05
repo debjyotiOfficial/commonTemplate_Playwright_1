@@ -1,12 +1,12 @@
 {
   "summary": {
     "total": 5,
-    "passed": 2,
-    "failed": 3,
+    "passed": 5,
+    "failed": 0,
     "skipped": 0,
-    "duration": 428022,
-    "startTime": "2025-12-02T17:46:58.486Z",
-    "endTime": "2025-12-02T17:54:06.508Z"
+    "duration": 351236,
+    "startTime": "2025-12-04T21:24:25.560Z",
+    "endTime": "2025-12-04T21:30:16.796Z"
   },
   "tests": [
     {
@@ -14,25 +14,13 @@
       "module": "Account Health Summary Report",
       "title": "should display Account Health Summary report and verify device data with Historical Data",
       "description": "should display Account Health Summary report and verify device data with Historical Data",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 88864,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "'#iot-showNoUpdate'",
-        "expected": "Element should be visible on page",
-        "actual": "<element(s) not found>",
-        "timeout": "5s",
-        "file": "TS057_accountHealthSummary.spec.js",
-        "line": 23,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('#iot-showNoUpdate')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('#iot-showNoUpdate')\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('#iot-showNoUpdate')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('#iot-showNoUpdate')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js:221:43"
-      },
-      "videoPath": "videos/TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm",
-      "videoIdentifier": "TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 74200,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -66,7 +54,7 @@
         },
         {
           "number": "",
-          "text": "Driver names from Driver Card panel: [ \u001b[32m'Demo1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
+          "text": "Driver names from Driver Card panel: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
           "status": "info",
           "type": "log"
         },
@@ -222,13 +210,7 @@
         },
         {
           "number": "",
-          "text": "Driver names from table: [ \u001b[32m'Demo1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Demo1\" found in IoT Device table",
+          "text": "Driver names from table: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
           "status": "info",
           "type": "log"
         },
@@ -240,13 +222,19 @@
         },
         {
           "number": "",
+          "text": "✓ Driver \"Demo 1\" found in IoT Device table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Step 9: Verifying table data for each device...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo1, Type=MA9276-Portable, Status=Blocked Satellite",
+          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Active",
           "status": "info",
           "type": "log"
         },
@@ -321,39 +309,201 @@
           "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"No Update Days\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Battery/Voltage checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Battery/Voltage initial state: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Battery/Voltage after toggle: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Battery/Voltage checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing GPS Satellites checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "GPS Satellites initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "GPS Satellites after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ GPS Satellites checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Signal Quality (CSQ) checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Signal Quality (CSQ) initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Signal Quality (CSQ) after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Signal Quality (CSQ) checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Buffered Packets Only checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Buffered Packets Only initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Buffered Packets Only after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Buffered Packets Only checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing No Update Days checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No Update Days initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No Update Days after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ No Update Days checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Verifying chart legend...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Legend item \"Battery/Voltage\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Legend item \"GPS Satellites\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Legend item \"Signal Quality (CSQ)\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Legend item \"Buffered Packets\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Legend item \"No Update Days\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Closing Historical Data modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Account Health Summary report verification completed successfully!",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2025-12-02T17:47:00.570Z",
-      "endTime": "2025-12-02T17:48:29.438Z",
+      "startTime": "2025-12-04T21:24:29.244Z",
+      "endTime": "2025-12-04T21:25:43.445Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 23
+      "line": 26
     },
     {
       "testCaseNo": "TS057-B",
       "module": "Account Health Summary Report",
       "title": "should verify Fleet Status Summary cards and table filtering",
       "description": "should verify Fleet Status Summary cards and table filtering",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 103540,
-      "failureReason": "TimeoutError: locator.textContent: Timeout 30000ms exceeded.",
-      "parsedError": {
-        "type": "Timeout Error",
-        "element": ".iot-status-card.all-devices",
-        "expected": "Operation should complete within time limit",
-        "actual": "Operation took too long",
-        "timeout": "30s",
-        "file": "TS057_accountHealthSummary.spec.js",
-        "line": 340,
-        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
-        "cleanMessage": "TimeoutError: locator.textContent: Timeout 30000ms exceeded.",
-        "fullMessage": "TimeoutError: locator.textContent: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.iot-status-card.all-devices').locator('h3, .iot-status-value, .status-count').first()\n",
-        "stackTrace": "TimeoutError: locator.textContent: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.iot-status-card.all-devices').locator('h3, .iot-status-value, .status-count').first()\n\n    at getCardCount (C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js:379:54)\n    at C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js:406:35"
-      },
-      "videoPath": "videos/TS057_accountHealthSummary-should-verify-Fleet-Status-Summary-cards-and-table.webm",
-      "videoIdentifier": "TS057_accountHealthSummary-should-verify-Fleet-Status-Summary-cards-and-table.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 80561,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -384,14 +534,212 @@
           "text": "Testing status card: ALL DEVICES",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ALL DEVICES card count: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking ALL DEVICES: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ ALL DEVICES: Card count (2) matches table rows (2)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: ONLINE & ACTIVE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ONLINE & ACTIVE card count: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking ONLINE & ACTIVE: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ ONLINE & ACTIVE: Card count (2) matches table rows (2)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: SUSPENDED SIMS",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SUSPENDED SIMS card count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking SUSPENDED SIMS: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SUSPENDED SIMS: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: LOW BATTERY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "LOW BATTERY card count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking LOW BATTERY: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ LOW BATTERY: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: LOW VOLTAGE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "LOW VOLTAGE card count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking LOW VOLTAGE: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ LOW VOLTAGE: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: POOR SIGNAL ACTIVE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "POOR SIGNAL ACTIVE card count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking POOR SIGNAL ACTIVE: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ POOR SIGNAL ACTIVE: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: POWER DISCONNECT",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "POWER DISCONNECT card count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking POWER DISCONNECT: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ POWER DISCONNECT: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing status card: NOT UPDATING",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "NOT UPDATING card count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows after clicking NOT UPDATING: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ NOT UPDATING: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Reset filter to ALL DEVICES",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Fleet Status Summary cards and table filtering verification completed!",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2025-12-02T17:48:31.670Z",
-      "endTime": "2025-12-02T17:50:15.210Z",
+      "startTime": "2025-12-04T21:25:43.544Z",
+      "endTime": "2025-12-04T21:27:04.105Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 340
+      "line": 343
     },
     {
       "testCaseNo": "TS057-C",
@@ -400,7 +748,7 @@
       "description": "should verify table sorting functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 76620,
+      "duration": 60750,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -432,19 +780,19 @@
         },
         {
           "number": "",
-          "text": "Initial order: [ \u001b[32m'Demo1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
+          "text": "Initial order: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "After ascending sort: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo1'\u001b[39m ]",
+          "text": "After ascending sort: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "After descending sort: [ \u001b[32m'Demo1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
+          "text": "After descending sort: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
           "status": "info",
           "type": "log"
         },
@@ -467,37 +815,25 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-02T17:50:16.999Z",
-      "endTime": "2025-12-02T17:51:33.619Z",
+      "startTime": "2025-12-04T21:27:04.125Z",
+      "endTime": "2025-12-04T21:28:04.875Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 442
+      "line": 445
     },
     {
       "testCaseNo": "TS057-D",
       "module": "Account Health Summary Report",
       "title": "should verify export buttons and file downloads",
       "description": "should verify export buttons and file downloads",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 81719,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "'button:has-text(\"CSV\")').first(",
-        "expected": "Element should be visible on page",
-        "actual": "hidden",
-        "timeout": "5s",
-        "file": "TS057_accountHealthSummary.spec.js",
-        "line": 505,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('button:has-text(\"CSV\")').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('button:has-text(\"CSV\")').first()\n    8 × locator resolved to <button class=\"dropdown__item\">…</button>\n      - unexpected value \"hidden\"\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('button:has-text(\"CSV\")').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('button:has-text(\"CSV\")').first()\n    8 × locator resolved to <button class=\"dropdown__item\">…</button>\n      - unexpected value \"hidden\"\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js:529:33"
-      },
-      "videoPath": "videos/TS057_accountHealthSummary-should-verify-export-buttons-and-file-downloads.webm",
-      "videoIdentifier": "TS057_accountHealthSummary-should-verify-export-buttons-and-file-downloads.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 65302,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -525,17 +861,113 @@
         },
         {
           "number": "",
+          "text": "✓ Report table loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Testing CSV export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV export button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-04.csv",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV download verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Excel export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Excel export button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-04.xlsx",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Excel download verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing PDF export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF export button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-04.pdf",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF download verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Show Map View button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Show Map View button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Map view is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Export buttons and file downloads verification completed!",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-02T17:51:33.876Z",
-      "endTime": "2025-12-02T17:52:55.595Z",
+      "startTime": "2025-12-04T21:28:04.939Z",
+      "endTime": "2025-12-04T21:29:10.241Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 505
+      "line": 508
     },
     {
       "testCaseNo": "TS057-E",
@@ -544,7 +976,7 @@
       "description": "should verify search functionality in device table",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 68217,
+      "duration": 65565,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -588,13 +1020,13 @@
         },
         {
           "number": "",
-          "text": "Search results for Demo1 count: 1",
+          "text": "Search results for Demo 1 count: 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Search for \"Demo1\" shows correct results",
+          "text": "✓ Search for \"Demo 1\" shows correct results",
           "status": "info",
           "type": "log"
         },
@@ -605,12 +1037,12 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-02T17:52:57.938Z",
-      "endTime": "2025-12-02T17:54:06.155Z",
+      "startTime": "2025-12-04T21:29:10.344Z",
+      "endTime": "2025-12-04T21:30:15.910Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 608
+      "line": 618
     }
   ]
 }

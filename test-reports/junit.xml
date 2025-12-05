@@ -1,16 +1,67 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="61.961106">
-<testsuite name="TS052_getSupport.spec.js" timestamp="2025-12-02T23:32:19.029Z" hostname="chromium" tests="1" failures="0" skipped="0" time="58.272" errors="0">
-<testcase name="Get Support › should verify Get Support and Insurance form functionality" classname="TS052_getSupport.spec.js" time="58.272">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="142.25736299999997">
+<testsuite name="TS050_last24hrs.spec.js" timestamp="2025-12-05T10:22:29.981Z" hostname="chromium" tests="1" failures="1" skipped="0" time="138.504" errors="0">
+<testcase name="Last 24 Hours › should verify Engine Idling Events checkbox functionality" classname="TS050_last24hrs.spec.js" time="138.504">
+<failure message="TS050_last24hrs.spec.js:23:5 should verify Engine Idling Events checkbox functionality" type="FAILURE">
+<![CDATA[  [chromium] › TS050_last24hrs.spec.js:23:5 › Last 24 Hours › should verify Engine Idling Events checkbox functionality 
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[data-tab=\'track-report\']')
+        - locator resolved to <button data-tab="track-report" class="tabs__btn track-report-tab">↵⇆⇆⇆⇆Travel Log Report↵⇆⇆⇆</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="modal-overlay" id="date-range-warning-modal">…</div> intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="modal-overlay" id="date-range-warning-modal">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        51 × waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <div class="modal-overlay" id="date-range-warning-modal">…</div> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+
+
+      68 |         // Click on the "Travel Log Report" tab to make the track-report div visible
+      69 |         await expect(page.locator(config.selectors.report.tlrTab)).toBeVisible();
+    > 70 |         await page.locator(config.selectors.report.tlrTab).click();
+         |                                                            ^
+      71 |
+      72 |         await page.waitForTimeout(60000);
+      73 |
+        at C:\cypress-to-playwright-converted\tests\TS050_last24hrs.spec.js:70:60
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\error-context.md
+]]>
+</failure>
 <system-out>
 <![CDATA[Performing login...
 Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Page loaded successfully
-Testing Get Support form...
-Get Support form test completed successfully
-Testing Insurance form...
-Response received: 200 for https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common/SaveData/Insurance.php
-Success alert found and visible
-Insurance form submission test completed successfully
+
+[[ATTACHMENT|..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>

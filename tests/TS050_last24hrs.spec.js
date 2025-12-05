@@ -27,20 +27,30 @@ test.describe('Last 24 Hours', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
-        // Navigate to Last 24 Hours
-        await page.locator(config.selectors.last24hrs.last24hrsMenu).hover();
-        await page.waitForTimeout(500);
+        // Navigate to Last 24 Hours - first click on the menu to expand submenu
+        const last24hrsMenu = page.locator(config.selectors.last24hrs.last24hrsMenu);
+        await last24hrsMenu.scrollIntoViewIfNeeded();
+        await expect(last24hrsMenu).toBeVisible({ timeout: 15000 });
+        await last24hrsMenu.click();
 
-        await expect(page.locator(config.selectors.last24hrs.last24hrsMenu)).toBeVisible();
-        await page.locator(config.selectors.last24hrs.last24hrsMenu).click();
+        // Wait for submenu to fully expand
+        await page.waitForTimeout(1000);
 
-        await page.locator(config.selectors.last24hrs.last24hrsDriverSelect).filter({ hasText: 'Sales car1' })
-      .click({ force: true });
+        // Wait for submenu to expand then click on Sales Car1
+        const salesCarItem = page.locator('.submenu-item-content:has(.vehicle-name:text("Sales Car1"))');
+        await expect(salesCarItem).toBeVisible({ timeout: 15000 });
+        await salesCarItem.click();
 
-        await expect(page.locator(config.selectors.last24hrs.last24hrsContainer)).toBeVisible();
+        // Wait for the Last 24 Hours / Travel Log Report container to be visible
+        await expect(page.locator(config.selectors.last24hrs.last24hrsContainer)).toBeVisible({ timeout: 15000 });
 
-        // Date selection
-        await page.locator('#travel-log-report-calendar-btn').click({ force: true });
+        // Wait for loading modal to disappear
+        await expect(page.getByText('Loading Travel Report...')).toBeHidden({ timeout: 60000 });
+
+        // Date selection - click the date picker input within the Travel Log Report panel
+        const datePickerInput = page.locator('#travel-log-report-panel #date-range-picker');
+        await expect(datePickerInput).toBeVisible({ timeout: 15000 });
+        await datePickerInput.click();
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('June');
         await page.locator('.flatpickr-day[aria-label="June 1, 2025"]').click();
         await page.locator('.flatpickr-day[aria-label="June 10, 2025"]').click();
