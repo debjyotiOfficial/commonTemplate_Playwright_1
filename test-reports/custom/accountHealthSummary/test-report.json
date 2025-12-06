@@ -4,9 +4,9 @@
     "passed": 5,
     "failed": 0,
     "skipped": 0,
-    "duration": 351236,
-    "startTime": "2025-12-04T21:24:25.560Z",
-    "endTime": "2025-12-04T21:30:16.796Z"
+    "duration": 529272,
+    "startTime": "2025-12-05T17:57:38.169Z",
+    "endTime": "2025-12-05T18:06:27.441Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "should display Account Health Summary report and verify device data with Historical Data",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 74200,
+      "duration": 120463,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -485,8 +485,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-04T21:24:29.244Z",
-      "endTime": "2025-12-04T21:25:43.445Z",
+      "startTime": "2025-12-05T17:57:43.904Z",
+      "endTime": "2025-12-05T17:59:44.368Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
@@ -499,7 +499,7 @@
       "description": "should verify Fleet Status Summary cards and table filtering",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 80561,
+      "duration": 107407,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -734,8 +734,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-04T21:25:43.544Z",
-      "endTime": "2025-12-04T21:27:04.105Z",
+      "startTime": "2025-12-05T17:59:44.435Z",
+      "endTime": "2025-12-05T18:01:31.842Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
@@ -748,7 +748,7 @@
       "description": "should verify table sorting functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 60750,
+      "duration": 99103,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -815,8 +815,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-04T21:27:04.125Z",
-      "endTime": "2025-12-04T21:28:04.875Z",
+      "startTime": "2025-12-05T18:01:31.907Z",
+      "endTime": "2025-12-05T18:03:11.010Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
@@ -829,7 +829,7 @@
       "description": "should verify export buttons and file downloads",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 65302,
+      "duration": 106538,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -879,7 +879,7 @@
         },
         {
           "number": "",
-          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-04.csv",
+          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-05.csv",
           "status": "info",
           "type": "log"
         },
@@ -903,7 +903,7 @@
         },
         {
           "number": "",
-          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-04.xlsx",
+          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-05.xlsx",
           "status": "info",
           "type": "log"
         },
@@ -927,7 +927,7 @@
         },
         {
           "number": "",
-          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-04.pdf",
+          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-05.pdf",
           "status": "info",
           "type": "log"
         },
@@ -962,8 +962,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-04T21:28:04.939Z",
-      "endTime": "2025-12-04T21:29:10.241Z",
+      "startTime": "2025-12-05T18:03:11.085Z",
+      "endTime": "2025-12-05T18:04:57.623Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
@@ -976,7 +976,7 @@
       "description": "should verify search functionality in device table",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 65565,
+      "duration": 87799,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -1037,8 +1037,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-04T21:29:10.344Z",
-      "endTime": "2025-12-04T21:30:15.910Z",
+      "startTime": "2025-12-05T18:04:57.653Z",
+      "endTime": "2025-12-05T18:06:25.452Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",

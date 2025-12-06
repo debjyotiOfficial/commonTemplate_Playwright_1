@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total": 1,
-    "passed": 0,
-    "failed": 1,
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
     "skipped": 0,
-    "duration": 142074,
-    "startTime": "2025-12-05T10:22:29.983Z",
-    "endTime": "2025-12-05T10:24:52.057Z"
+    "duration": 290969,
+    "startTime": "2025-12-05T20:06:46.838Z",
+    "endTime": "2025-12-05T20:11:37.807Z"
   },
   "tests": [
     {
@@ -14,25 +14,13 @@
       "module": "Last 24 Hours",
       "title": "should verify Engine Idling Events checkbox functionality",
       "description": "should verify Engine Idling Events checkbox functionality",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 138504,
-      "failureReason": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
-      "parsedError": {
-        "type": "Timeout Error",
-        "element": "'button[data-tab=\\'track-report\\']'",
-        "expected": "Operation should complete within time limit",
-        "actual": "Operation took too long",
-        "timeout": "30s",
-        "file": "TS050_last24hrs.spec.js",
-        "line": 23,
-        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
-        "cleanMessage": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
-        "fullMessage": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('button[data-tab=\\'track-report\\']')\n    - locator resolved to <button data-tab=\"track-report\" class=\"tabs__btn track-report-tab\">↵⇆⇆⇆⇆Travel Log Report↵⇆⇆⇆</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"modal-overlay\" id=\"date-range-warning-modal\">…</div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"modal-overlay\" id=\"date-range-warning-modal\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    51 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-overlay\" id=\"date-range-warning-modal\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
-        "stackTrace": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('button[data-tab=\\'track-report\\']')\n    - locator resolved to <button data-tab=\"track-report\" class=\"tabs__btn track-report-tab\">↵⇆⇆⇆⇆Travel Log Report↵⇆⇆⇆</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"modal-overlay\" id=\"date-range-warning-modal\">…</div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"modal-overlay\" id=\"date-range-warning-modal\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    51 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-overlay\" id=\"date-range-warning-modal\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS050_last24hrs.spec.js:70:60"
-      },
-      "videoPath": "videos/TS050_last24hrs-should-verify-Engine-Idling-Events-checkbox-functi.webm",
-      "videoIdentifier": "TS050_last24hrs-should-verify-Engine-Idling-Events-checkbox-functi.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 153735,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -51,14 +39,983 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checkbox is not checked - verifying Engine Idling is not visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Engine Idling events are not visible when checkbox is unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checkbox has been checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: No Engine Idling events found in the current data set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Engine Idling search functionality",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 20 Engine Idling events in search results (out of 100 total rows)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Search results contain Engine Idling events",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Search functionality test completed",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2025-12-05T10:22:33.398Z",
-      "endTime": "2025-12-05T10:24:51.902Z",
+      "startTime": "2025-12-05T20:06:50.706Z",
+      "endTime": "2025-12-05T20:09:24.451Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS050_last24hrs.spec.js",
       "fileName": "TS050_last24hrs",
-      "line": 23
+      "line": 39
+    },
+    {
+      "testCaseNo": "TS050-B",
+      "module": "Last 24 Hours",
+      "title": "should verify Geofence Events, Landmark Events, and Frequent Stops functionality",
+      "description": "should verify Geofence Events, Landmark Events, and Frequent Stops functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 131607,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Show Geofence Events checkbox functionality",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checked Show Geofence Events checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Geofence In events are visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total rows in table: 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 11 Geofence In events",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence names found: Name 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Geofence In events are visible after checking the checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unchecking Show Geofence Events checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Geofence In events are hidden after unchecking the checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Show Landmark Events checkbox functionality",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark column exists before checking: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checked Show Landmark Events checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Landmark column appears after checking Show Landmark Events checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to Travel Log Frequent Stops tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API response matches table data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 30 rows in Frequent Stops table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API returned 30 records",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 1: Date = 06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing: Table=\"06/01/2025\" vs API=\"06/01/2025\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: Date = 06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing: Table=\"06/01/2025\" vs API=\"06/01/2025\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3: Date = 06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing: Table=\"06/01/2025\" vs API=\"06/01/2025\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Frequent Stops table has data from API",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search functionality in Frequent Stops",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for: \"-111.840215\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 30 rows after search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "11:58 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.64015",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "11:59 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.641009",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 4 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:00 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.640448",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 5 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:07 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.646704",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 6 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:25 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.701657",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 7 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:29 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.698765",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 8 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:30 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.69876",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 9 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:31 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.698793",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 10 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:34 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.698532",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 11 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:51 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.64681",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 12 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:52 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.640426",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 13 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:56 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.629485",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 14 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "12:59 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.627652",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 15 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:00 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.627676",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 16 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:00 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.627739",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 17 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:08 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.62424",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 18 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:24 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.628639",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 19 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:28 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.622044",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 20 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:30 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.618273",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 21 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "01:33 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.380255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 22 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "05:23 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.628446",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 23 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "05:27 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.624161",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 24 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "05:41 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.64068",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 25 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "05:45 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.64015",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 26 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "05:47 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.638973",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 27 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06:31 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.651392",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 28 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "07:18 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.656319",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 29 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "07:20 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.654677",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 30 does not contain search term:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "06/02/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "09:31 PM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "33.628472",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Search returns results",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: Some rows may not contain the exact search term in visible text",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 30 rows after clearing search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Search functionality test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-05T20:09:24.497Z",
+      "endTime": "2025-12-05T20:11:36.104Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS050_last24hrs.spec.js",
+      "fileName": "TS050_last24hrs",
+      "line": 338
     }
   ]
 }

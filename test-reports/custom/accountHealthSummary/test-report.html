@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: accountHealthSummary</div>
             <div class="subtitle">
-                Generated: 5/12/2025, 3:00:16 am |
-                Duration: 351.24s |
+                Generated: 5/12/2025, 11:36:27 pm |
+                Duration: 529.27s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -612,7 +612,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>74.20s</strong></td>
+                        <td><strong>120.46s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -828,7 +828,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>80.56s</strong></td>
+                        <td><strong>107.41s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -904,7 +904,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>60.75s</strong></td>
+                        <td><strong>99.10s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -962,7 +962,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ CSV file downloaded: device-fleet-all-devices-2025-12-04.csv</span>
+                                                <span class="step-text">✓ CSV file downloaded: device-fleet-all-devices-2025-12-05.csv</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -982,7 +982,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Excel file downloaded: device-fleet-all-devices-2025-12-04.xlsx</span>
+                                                <span class="step-text">✓ Excel file downloaded: device-fleet-all-devices-2025-12-05.xlsx</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1002,7 +1002,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ PDF file downloaded: device-fleet-all-devices-2025-12-04.pdf</span>
+                                                <span class="step-text">✓ PDF file downloaded: device-fleet-all-devices-2025-12-05.pdf</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1035,7 +1035,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>65.30s</strong></td>
+                        <td><strong>106.54s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -1106,7 +1106,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>65.56s</strong></td>
+                        <td><strong>87.80s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -1160,7 +1160,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"74.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"80.56s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"60.75s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"65.30s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"65.56s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"120.46s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"107.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"99.10s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"106.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"87.80s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -1177,7 +1177,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-04.csv';
+            link.download = 'test-report-2025-12-05.csv';
             link.click();
         }
     </script>

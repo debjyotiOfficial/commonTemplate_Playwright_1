@@ -1,67 +1,231 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="142.25736299999997">
-<testsuite name="TS050_last24hrs.spec.js" timestamp="2025-12-05T10:22:29.981Z" hostname="chromium" tests="1" failures="1" skipped="0" time="138.504" errors="0">
-<testcase name="Last 24 Hours › should verify Engine Idling Events checkbox functionality" classname="TS050_last24hrs.spec.js" time="138.504">
-<failure message="TS050_last24hrs.spec.js:23:5 should verify Engine Idling Events checkbox functionality" type="FAILURE">
-<![CDATA[  [chromium] › TS050_last24hrs.spec.js:23:5 › Last 24 Hours › should verify Engine Idling Events checkbox functionality 
-
-    TimeoutError: locator.click: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('button[data-tab=\'track-report\']')
-        - locator resolved to <button data-tab="track-report" class="tabs__btn track-report-tab">↵⇆⇆⇆⇆Travel Log Report↵⇆⇆⇆</button>
-      - attempting click action
-        2 × waiting for element to be visible, enabled and stable
-          - element is visible, enabled and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div class="modal-overlay" id="date-range-warning-modal">…</div> intercepts pointer events
-        - retrying click action
-        - waiting 20ms
-        2 × waiting for element to be visible, enabled and stable
-          - element is visible, enabled and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div class="modal-overlay" id="date-range-warning-modal">…</div> intercepts pointer events
-        - retrying click action
-          - waiting 100ms
-        51 × waiting for element to be visible, enabled and stable
-           - element is visible, enabled and stable
-           - scrolling into view if needed
-           - done scrolling
-           - <div class="modal-overlay" id="date-range-warning-modal">…</div> intercepts pointer events
-         - retrying click action
-           - waiting 500ms
-
-
-      68 |         // Click on the "Travel Log Report" tab to make the track-report div visible
-      69 |         await expect(page.locator(config.selectors.report.tlrTab)).toBeVisible();
-    > 70 |         await page.locator(config.selectors.report.tlrTab).click();
-         |                                                            ^
-      71 |
-      72 |         await page.waitForTimeout(60000);
-      73 |
-        at C:\cypress-to-playwright-converted\tests\TS050_last24hrs.spec.js:70:60
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\error-context.md
-]]>
-</failure>
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="291.009061">
+<testsuite name="TS050_last24hrs.spec.js" timestamp="2025-12-05T20:06:46.836Z" hostname="chromium" tests="2" failures="0" skipped="0" time="285.342" errors="0">
+<testcase name="Last 24 Hours › should verify Engine Idling Events checkbox functionality" classname="TS050_last24hrs.spec.js" time="153.735">
 <system-out>
 <![CDATA[Performing login...
 Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Page loaded successfully
-
-[[ATTACHMENT|..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-results\TS050_last24hrs-Last-24-Ho-ec750-ents-checkbox-functionality-chromium\error-context.md]]
+Checkbox is not checked - verifying Engine Idling is not visible
+Verified: Engine Idling events are not visible when checkbox is unchecked
+Checkbox has been checked
+Note: No Engine Idling events found in the current data set
+Testing Engine Idling search functionality
+Found 20 Engine Idling events in search results (out of 100 total rows)
+Verified: Search results contain Engine Idling events
+Search functionality test completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Last 24 Hours › should verify Geofence Events, Landmark Events, and Frequent Stops functionality" classname="TS050_last24hrs.spec.js" time="131.607">
+<system-out>
+<![CDATA[Performing login...
+Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Page loaded successfully
+Testing Show Geofence Events checkbox functionality
+Checked Show Geofence Events checkbox
+Verifying Geofence In events are visible
+Total rows in table: 100
+Found 11 Geofence In events
+Geofence names found: Name 1
+Verified: Geofence In events are visible after checking the checkbox
+Unchecking Show Geofence Events checkbox
+Verified: Geofence In events are hidden after unchecking the checkbox
+Testing Show Landmark Events checkbox functionality
+Landmark column exists before checking: true
+Checked Show Landmark Events checkbox
+Verified: Landmark column appears after checking Show Landmark Events checkbox
+Navigating to Travel Log Frequent Stops tab
+Verifying API response matches table data
+Found 30 rows in Frequent Stops table
+API returned 30 records
+Row 1: Date = 06/01/2025
+Comparing: Table="06/01/2025" vs API="06/01/2025"
+Row 2: Date = 06/01/2025
+Comparing: Table="06/01/2025" vs API="06/01/2025"
+Row 3: Date = 06/01/2025
+Comparing: Table="06/01/2025" vs API="06/01/2025"
+Verified: Frequent Stops table has data from API
+Testing search functionality in Frequent Stops
+Searching for: "-111.840215"
+Found 30 rows after search
+Row 2 does not contain search term: 
+                06/01/2025
+                0
+                11:58 AM
+                33.64015
+    ...
+Row 3 does not contain search term: 
+                06/01/2025
+                0
+                11:59 AM
+                33.641009
+   ...
+Row 4 does not contain search term: 
+                06/01/2025
+                3
+                12:00 PM
+                33.640448
+   ...
+Row 5 does not contain search term: 
+                06/01/2025
+                0
+                12:07 PM
+                33.646704
+   ...
+Row 6 does not contain search term: 
+                06/01/2025
+                2
+                12:25 PM
+                33.701657
+   ...
+Row 7 does not contain search term: 
+                06/01/2025
+                0
+                12:29 PM
+                33.698765
+   ...
+Row 8 does not contain search term: 
+                06/01/2025
+                0
+                12:30 PM
+                33.69876
+    ...
+Row 9 does not contain search term: 
+                06/01/2025
+                2
+                12:31 PM
+                33.698793
+   ...
+Row 10 does not contain search term: 
+                06/01/2025
+                0
+                12:34 PM
+                33.698532
+   ...
+Row 11 does not contain search term: 
+                06/01/2025
+                0
+                12:51 PM
+                33.64681
+    ...
+Row 12 does not contain search term: 
+                06/01/2025
+                0
+                12:52 PM
+                33.640426
+   ...
+Row 13 does not contain search term: 
+                06/01/2025
+                0
+                12:56 PM
+                33.629485
+   ...
+Row 14 does not contain search term: 
+                06/01/2025
+                0
+                12:59 PM
+                33.627652
+   ...
+Row 15 does not contain search term: 
+                06/01/2025
+                0
+                01:00 PM
+                33.627676
+   ...
+Row 16 does not contain search term: 
+                06/01/2025
+                5
+                01:00 PM
+                33.627739
+   ...
+Row 17 does not contain search term: 
+                06/01/2025
+                12
+                01:08 PM
+                33.62424
+   ...
+Row 18 does not contain search term: 
+                06/01/2025
+                2
+                01:24 PM
+                33.628639
+   ...
+Row 19 does not contain search term: 
+                06/01/2025
+                0
+                01:28 PM
+                33.622044
+   ...
+Row 20 does not contain search term: 
+                06/01/2025
+                1
+                01:30 PM
+                33.618273
+   ...
+Row 21 does not contain search term: 
+                06/01/2025
+                1664
+                01:33 PM
+                33.380255
+...
+Row 22 does not contain search term: 
+                06/02/2025
+                0
+                05:23 PM
+                33.628446
+   ...
+Row 23 does not contain search term: 
+                06/02/2025
+                7
+                05:27 PM
+                33.624161
+   ...
+Row 24 does not contain search term: 
+                06/02/2025
+                3
+                05:41 PM
+                33.64068
+    ...
+Row 25 does not contain search term: 
+                06/02/2025
+                0
+                05:45 PM
+                33.64015
+    ...
+Row 26 does not contain search term: 
+                06/02/2025
+                41
+                05:47 PM
+                33.638973
+  ...
+Row 27 does not contain search term: 
+                06/02/2025
+                43
+                06:31 PM
+                33.651392
+  ...
+Row 28 does not contain search term: 
+                06/02/2025
+                0
+                07:18 PM
+                33.656319
+   ...
+Row 29 does not contain search term: 
+                06/02/2025
+                126
+                07:20 PM
+                33.654677
+ ...
+Row 30 does not contain search term: 
+                06/02/2025
+                0
+                09:31 PM
+                33.628472
+   ...
+Verified: Search returns results
+Note: Some rows may not contain the exact search term in visible text
+Found 30 rows after clearing search
+Search functionality test completed successfully
 ]]>
 </system-out>
 </testcase>

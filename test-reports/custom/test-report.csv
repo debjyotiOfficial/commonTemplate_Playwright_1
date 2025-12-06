@@ -1,12 +1,13 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
 TS008-A,"Alert Contact","should add email and phone contacts and configure alert settings",PASSED,137.13,"",N/A,TS008_alertsContact,23
 TS037-A,"Low Voltage Device Report","should generate and validate low voltage device report",FAILED,81.84,"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.",TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm,TS037_lowVoltageDeviceReport,23
-TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",FAILED,138.50,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS050_last24hrs-should-verify-Engine-Idling-Events-checkbox-functi.webm,TS050_last24hrs,23
+TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",PASSED,153.74,"",N/A,TS050_last24hrs,39
+TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Frequent Stops functionality",PASSED,131.61,"",N/A,TS050_last24hrs,338
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
 TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,58.27,"",N/A,TS052_getSupport,23
 TS055-A,"Timezone","should edit the timezone of users",PASSED,122.58,"",N/A,TS055_appearanceSettings,24
-TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,74.20,"",N/A,TS057_accountHealthSummary,26
-TS057-B,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,80.56,"",N/A,TS057_accountHealthSummary,343
-TS057-C,"Account Health Summary Report","should verify table sorting functionality",PASSED,60.75,"",N/A,TS057_accountHealthSummary,445
-TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,65.30,"",N/A,TS057_accountHealthSummary,508
-TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,65.56,"",N/A,TS057_accountHealthSummary,618
+TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,120.46,"",N/A,TS057_accountHealthSummary,26
+TS057-B,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,107.41,"",N/A,TS057_accountHealthSummary,343
+TS057-C,"Account Health Summary Report","should verify table sorting functionality",PASSED,99.10,"",N/A,TS057_accountHealthSummary,445
+TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,106.54,"",N/A,TS057_accountHealthSummary,508
+TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,87.80,"",N/A,TS057_accountHealthSummary,618
