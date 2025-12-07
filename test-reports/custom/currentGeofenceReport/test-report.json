@@ -1,0 +1,268 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 280850,
+    "startTime": "2025-12-07T16:36:31.787Z",
+    "endTime": "2025-12-07T16:41:12.637Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS021-A",
+      "module": "Current geofence report",
+      "title": "should manage recent geofence report",
+      "description": "should manage recent geofence report",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 121726,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Step 1: Login and navigate to fleet dashboard",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully logged in",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Geofencing menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Expanding Geofence Reports accordion",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofence Reports accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking Current Geofence Report menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Current Geofence Report menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Current Geofence Report container",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked inside modal to close navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Selecting \"Show All Status\" from dropdown",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Status filter set to \"Show All Status\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying status column values",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Verified 2 rows with valid status values",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Selecting \"Show All Geofences\"",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofence filter set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Selecting \"Show All Subgroups\"",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Subgroup filter set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Searching for \"Sales car1\"",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Search performed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying search results",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Search result verification skipped - no matching data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Clearing search",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Search cleared",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Verifying directions icon in table rows",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table has 2 rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 1: Directions icon found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: Directions icon found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Testing export functionality",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Exported to Excel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exported to CSV",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exported to PDF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Verifying directions link functionality",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "No link element found for directions icon",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current Geofence Report test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T16:38:17.751Z",
+      "endTime": "2025-12-07T16:40:19.478Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS021_currentGeofenceReport.spec.js",
+      "fileName": "TS021_currentGeofenceReport",
+      "line": 45
+    }
+  ]
+}

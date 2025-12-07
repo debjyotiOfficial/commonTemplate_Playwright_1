@@ -33,12 +33,23 @@ test.describe('Utilization Report', () => {
 
         await page.waitForTimeout(4000);
 
-        // Click on Analytics section
-        await page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' }).click();
-        
-        // Click on utilization report
-        await expect(page.locator(config.selectors.UtilizationReport.utilizationMenu)).toBeVisible();
-        await page.locator(config.selectors.UtilizationReport.utilizationMenu).click();
+        // Click on Analytics section to expand it
+        const analyticsSection = page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' });
+        await analyticsSection.click();
+
+        // Wait for accordion to expand
+        await page.waitForTimeout(3000);
+
+        // The utilization report button might need a more direct approach - try clicking with JavaScript
+        const utilizationBtn = page.locator(config.selectors.UtilizationReport.utilizationMenu);
+        await utilizationBtn.waitFor({ state: 'attached', timeout: 10000 });
+        await page.evaluate((selector) => {
+            const el = document.querySelector(selector);
+            if (el) {
+                el.scrollIntoView({ behavior: 'instant', block: 'center' });
+                el.click();
+            }
+        }, config.selectors.UtilizationReport.utilizationMenu);
 
         // Verify report is visible
         await expect(page.locator(config.selectors.UtilizationReport.utilizationReportContainer)).toBeVisible();

@@ -121,7 +121,7 @@ test.describe('Mileage Report', () => {
         await page.locator('#mileage-report-panel #select2-mileage-device-select-container').click();
 
         // Select Demo1 from the dropdown
-        await page.locator('.select2-results__option').filter({ hasText: 'Demo1' }).click({ force: true });
+        await page.locator('.select2-results__option').filter({ hasText: 'Demo 1' }).click({ force: true });
 
         // Specify time frame
         await page.locator(config.selectors.mileageReport.specifyTime).check();

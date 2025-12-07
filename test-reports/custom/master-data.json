@@ -1,6 +1,213 @@
 {
-  "lastUpdated": "2025-12-05T20:11:37.847Z",
+  "lastUpdated": "2025-12-07T18:04:25.791Z",
   "tests": [
+    {
+      "testCaseNo": "TS001-A",
+      "module": "List of Device",
+      "title": "should show list of all devices in the platform",
+      "description": "should show list of all devices in the platform",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 109524,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "NAVIGATING TO LIST OF DEVICES",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Account Settings icon clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "List of Devices clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 6 devices in the table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Search for \"Sales Car1\" returned 1 results",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Collapsing side menu to access modal elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on modal to collapse side menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Moved mouse away from side menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Verifying device list page...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device table is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 51 devices in the list",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Searched for Sales",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 1 rows matching \"Sales\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Finding and clicking edit icon...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked pencil icon using config selector",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Verifying edit panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Edit panel found: #add-edit-device-panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked Edit Device tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device name input value: \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed edit panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Testing export functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found export option: text=Save file as",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found export option: text=Copy",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found export option: .dropdown__trigger",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Screenshot saved: device-list-page.png",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ TEST COMPLETED SUCCESSFULLY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device list functionality has been tested",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T16:09:01.864Z",
+      "endTime": "2025-12-07T16:10:51.389Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS001_listOfDevice.spec.js",
+      "fileName": "TS001_listOfDevice",
+      "line": 10
+    },
     {
       "testCaseNo": "TS008-A",
       "module": "Alert Contact",
@@ -39,6 +246,1068 @@
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS008_alertsContact.spec.js",
       "fileName": "TS008_alertsContact",
       "line": 23
+    },
+    {
+      "testCaseNo": "TS020-A",
+      "module": "Weekly Geofencing reports",
+      "title": "should manage recent geofence report",
+      "description": "should manage recent geofence report",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 102423,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Step 1: Login and navigate to fleet dashboard",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully logged in",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Geofencing menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Expanding Geofence Reports accordion",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofence Reports accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking Weekly Geofence Report menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weekly Geofence Report menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Weekly Geofence Report container",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Selecting date range",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Calendar not visible, using default date range",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Clicking Copy button",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Copy button not available, continuing",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 810: Exporting to Excel, PDF, CSV",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Excel export not available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PDF export not available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "CSV export not available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Clicking View Chart button",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "View Chart button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Verifying chart modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Chart modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Selecting vehicle in chart",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Vehicle selected: All Devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Closing chart modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Chart modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Searching for device",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Searched for \"Sales car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 16: Clicking View Details on first row",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "No data rows available or View Details button not found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weekly Geofence Report test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T16:36:34.708Z",
+      "endTime": "2025-12-07T16:38:17.132Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS020_weeklyGeofenceReport.spec.js",
+      "fileName": "TS020_weeklyGeofenceReport",
+      "line": 48
+    },
+    {
+      "testCaseNo": "TS021-A",
+      "module": "Current geofence report",
+      "title": "should manage recent geofence report",
+      "description": "should manage recent geofence report",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 121726,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Step 1: Login and navigate to fleet dashboard",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully logged in",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Geofencing menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Expanding Geofence Reports accordion",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofence Reports accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking Current Geofence Report menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Current Geofence Report menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Current Geofence Report container",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked inside modal to close navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Selecting \"Show All Status\" from dropdown",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Status filter set to \"Show All Status\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying status column values",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Verified 2 rows with valid status values",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Selecting \"Show All Geofences\"",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofence filter set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Selecting \"Show All Subgroups\"",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Subgroup filter set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Searching for \"Sales car1\"",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Search performed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying search results",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Search result verification skipped - no matching data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Clearing search",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Search cleared",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Verifying directions icon in table rows",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table has 2 rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 1: Directions icon found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: Directions icon found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Testing export functionality",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Exported to Excel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exported to CSV",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exported to PDF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Verifying directions link functionality",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "No link element found for directions icon",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current Geofence Report test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T16:38:17.751Z",
+      "endTime": "2025-12-07T16:40:19.478Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS021_currentGeofenceReport.spec.js",
+      "fileName": "TS021_currentGeofenceReport",
+      "line": 45
+    },
+    {
+      "testCaseNo": "TS032-A",
+      "module": "30 Day Mileage Report",
+      "title": "should be redirected to fleet demo page with demo credentials",
+      "description": "should be redirected to fleet demo page with demo credentials",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 98200,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Step 1: Login and navigate to fleet dashboard",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully logged in",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Reports menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Reports menu opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Clicking on Fleet section",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Fleet section expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking 30 Day Mileage Report menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "30 Day Mileage Report menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying container is visible",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Selecting date range",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Month selected: July",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Start date selected: July 1, 2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "End date selected: July 30, 2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Checking All Devices checkbox",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "All Devices checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Clicking Submit button",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Waiting for report to load",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Waiting for report data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying table has data",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table has 44 row(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table has 6 header(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying first row has data",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Cell 1: \"07/30/2025\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Cell 2: \"860111051554966\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Cell 3: \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Cell 4: \"0\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Cell 5: \"0\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Cell 6: \"0\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Testing search functionality",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Searched for \"Sales\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered results: 30 row(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Testing export functionality",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Exported to Excel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exported to CSV",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exported to PDF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Searching for another device",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Searched for \"Demo\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Demo search results: 14 row(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First result device: \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Closing report panel",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Report panel closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 16: Reopening report and viewing saved report",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Reports menu opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "30 Day Mileage Report menu clicked again",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searched for reports from 2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Could not click View button: locator.click: Element is outside of the viewport",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Call log:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m  - waiting for locator('#thirty-day-report-table tbody tr').first().locator('button.aViewMileageReport')\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m    - locator resolved to <button class=\"aViewMileageReport\" data-unique-id=\"67853189dc51a\">↵                View↵            </button>\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m  - attempting click action\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m    - scrolling into view if needed\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m    - done scrolling\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "30 Day Mileage Report test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T18:02:46.467Z",
+      "endTime": "2025-12-07T18:04:24.668Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS032_30DayMileageReport.spec.js",
+      "fileName": "TS032_30DayMileageReport",
+      "line": 46
+    },
+    {
+      "testCaseNo": "TS034-A",
+      "module": "Trip Report",
+      "title": "should generate and validate trip report",
+      "description": "should generate and validate trip report",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 112469,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Step 1: Login and navigate to fleet dashboard",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully logged in and navigated to dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Reports menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Reports menu opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Clicking on Fleet section",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Fleet section expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking on Trip Report menu option",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Trip Report menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Trip Report container is visible",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Trip Report container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Selecting a driver/device from dropdown",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Device selected by index",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Entering date for the report",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Date entered: 2025-07-01",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Clicking Submit button",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Waiting for report to load",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Report loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying table has data rows",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table has 1 row(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table contains data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Attempting to change entries dropdown to show 25 entries",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Could not scroll to entries dropdown, continuing with default entries",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current row count: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Clicking \"Map Trip\" button on first row",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Map Trip button not found on first row, skipping",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map view loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Trip Report test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T15:11:02.472Z",
+      "endTime": "2025-12-07T15:12:54.941Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS034_tripReport.spec.js",
+      "fileName": "TS034_tripReport",
+      "line": 43
     },
     {
       "testCaseNo": "TS037-A",

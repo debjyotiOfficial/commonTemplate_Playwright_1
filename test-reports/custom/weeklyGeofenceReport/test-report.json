@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 280850,
+    "startTime": "2025-12-07T16:36:31.787Z",
+    "endTime": "2025-12-07T16:41:12.637Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS020-A",
+      "module": "Weekly Geofencing reports",
+      "title": "should manage recent geofence report",
+      "description": "should manage recent geofence report",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 102423,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Step 1: Login and navigate to fleet dashboard",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully logged in",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Geofencing menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Expanding Geofence Reports accordion",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Geofence Reports accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking Weekly Geofence Report menu",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weekly Geofence Report menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Weekly Geofence Report container",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Selecting date range",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Calendar not visible, using default date range",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Clicking Copy button",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Copy button not available, continuing",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 810: Exporting to Excel, PDF, CSV",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Excel export not available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PDF export not available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "CSV export not available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Clicking View Chart button",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "View Chart button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Verifying chart modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Chart modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Selecting vehicle in chart",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Vehicle selected: All Devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Closing chart modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Chart modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Searching for device",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Searched for \"Sales car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 16: Clicking View Details on first row",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "No data rows available or View Details button not found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weekly Geofence Report test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T16:36:34.708Z",
+      "endTime": "2025-12-07T16:38:17.132Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS020_weeklyGeofenceReport.spec.js",
+      "fileName": "TS020_weeklyGeofenceReport",
+      "line": 48
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 111668,
+    "startTime": "2025-12-07T16:09:00.137Z",
+    "endTime": "2025-12-07T16:10:51.805Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS001-A",
+      "module": "List of Device",
+      "title": "should show list of all devices in the platform",
+      "description": "should show list of all devices in the platform",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 109524,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Performing login...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "NAVIGATING TO LIST OF DEVICES",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Account Settings icon clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "List of Devices clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 6 devices in the table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Search for \"Sales Car1\" returned 1 results",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Collapsing side menu to access modal elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on modal to collapse side menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Moved mouse away from side menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Verifying device list page...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device table is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 51 devices in the list",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Searched for Sales",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 1 rows matching \"Sales\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Finding and clicking edit icon...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked pencil icon using config selector",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Verifying edit panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Edit panel found: #add-edit-device-panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked Edit Device tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device name input value: \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed edit panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Testing export functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found export option: text=Save file as",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found export option: text=Copy",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found export option: .dropdown__trigger",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Screenshot saved: device-list-page.png",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ TEST COMPLETED SUCCESSFULLY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device list functionality has been tested",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-07T16:09:01.864Z",
+      "endTime": "2025-12-07T16:10:51.389Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS001_listOfDevice.spec.js",
+      "fileName": "TS001_listOfDevice",
+      "line": 10
+    }
+  ]
+}

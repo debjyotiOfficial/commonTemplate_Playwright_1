@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS032-A,"30 Day Mileage Report","should be redirected to fleet demo page with demo credentials",PASSED,98.20,"",N/A,TS032_30DayMileageReport.spec.js,46

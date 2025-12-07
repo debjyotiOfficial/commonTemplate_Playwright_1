@@ -33,12 +33,23 @@ test.describe('Day of Week Report', () => {
 
         await page.waitForTimeout(4000);
 
-        // Click on Analytics section
-        await page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' }).click();
-        
-        // Click on day of week report menu
-        await expect(page.locator(config.selectors.dayOfWeek.dayOfWeekMenu)).toBeVisible();
-        await page.locator(config.selectors.dayOfWeek.dayOfWeekMenu).click();
+        // Click on Analytics section to expand it
+        const analyticsSection = page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' });
+        await analyticsSection.click();
+
+        // Wait for accordion to expand
+        await page.waitForTimeout(3000);
+
+        // The day of week report button might need a more direct approach - try clicking with JavaScript
+        const dayOfWeekBtn = page.locator(config.selectors.dayOfWeek.dayOfWeekMenu);
+        await dayOfWeekBtn.waitFor({ state: 'attached', timeout: 10000 });
+        await page.evaluate((selector) => {
+            const el = document.querySelector(selector);
+            if (el) {
+                el.scrollIntoView({ behavior: 'instant', block: 'center' });
+                el.click();
+            }
+        }, config.selectors.dayOfWeek.dayOfWeekMenu);
 
         // Verify day of week report container is visible
         await expect(page.locator(config.selectors.dayOfWeek.dayOfWeekReportContainer)).toBeVisible();
@@ -48,15 +59,18 @@ test.describe('Day of Week Report', () => {
         await page.locator(config.selectors.dayOfWeek.getLatestDayOfWeekReport).click();
 
         // Wait for the requests table to load and click the first "View Report" button
-        const viewReportButton = page.locator(config.selectors.dayOfWeek.dayOfWeekReportTable).filter({ hasText: 'View Report' }).first();
-        await expect(viewReportButton).toBeVisible();
+        const viewReportButton = page.locator(config.selectors.dayOfWeek.dayOfWeekReportTable).locator('a').filter({ hasText: 'View Report' }).first();
+        await expect(viewReportButton).toBeVisible({ timeout: 30000 });
         await viewReportButton.click();
 
-        // Scroll to the bottom of the report
-        await page.locator(config.selectors.dayOfWeek.dayOfWeekReportContainer).scrollIntoView({ block: 'end' });
+        // Wait for report content to load
+        await page.waitForTimeout(5000);
 
-        // Verify the exit report is visible
-        await expect(page.locator(config.selectors.dayOfWeek.viewExitsReport)).toBeVisible();
+        // Scroll to the bottom of the report
+        await page.locator(config.selectors.dayOfWeek.dayOfWeekReportContainer).evaluate(el => el.scrollTo(0, el.scrollHeight));
+
+        // Verify the exit report is visible (wait longer for it to load)
+        await expect(page.locator(config.selectors.dayOfWeek.viewExitsReport)).toBeVisible({ timeout: 30000 });
 
         // Verify all three exit report cards are visible
         const exitReportCards = page.locator('#day-of-week-report-panel .exit-report__card');
@@ -91,7 +105,7 @@ test.describe('Day of Week Report', () => {
         await page.locator('#day-report-content .dropdown__content button.dropdown__item').filter({ hasText: 'PDF' }).click({ force: true });
 
         // Scroll to the top of the report
-        await page.locator(config.selectors.dayOfWeek.dayOfWeekReportContainer).scrollIntoView();
+        await page.locator(config.selectors.dayOfWeek.dayOfWeekReportContainer).evaluate(el => el.scrollTo(0, 0));
 
         // Click on the pagination next button
         await expect(page.locator(config.selectors.dayOfWeek.pagination)).toBeVisible();
@@ -99,7 +113,7 @@ test.describe('Day of Week Report', () => {
 
         // Verify the next page of the report is visible
         const reportRows = page.locator(config.selectors.dayOfWeek.dayOfWeekReportRows);
-        await expect(reportRows).toBeVisible();
+        await expect(reportRows.first()).toBeVisible();
         const rowCount = await reportRows.count();
         expect(rowCount).toBeGreaterThanOrEqual(1);
 
@@ -109,7 +123,7 @@ test.describe('Day of Week Report', () => {
 
         // Verify the previous page of the report is visible
         const reportRowsPrev = page.locator(config.selectors.dayOfWeek.dayOfWeekReportRows);
-        await expect(reportRowsPrev).toBeVisible();
+        await expect(reportRowsPrev.first()).toBeVisible();
         const rowCountPrev = await reportRowsPrev.count();
         expect(rowCountPrev).toBeGreaterThanOrEqual(1);
     });

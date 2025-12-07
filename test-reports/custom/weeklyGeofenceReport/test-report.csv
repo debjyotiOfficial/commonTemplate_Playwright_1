@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS020-A,"Weekly Geofencing reports","should manage recent geofence report",PASSED,102.42,"",N/A,TS020_weeklyGeofenceReport.spec.js,48

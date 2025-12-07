@@ -40,8 +40,9 @@ test.describe('Driver Safety Report', () => {
         // Verify driver safety report container is visible
         await expect(page.locator(config.selectors.driverSafetyReport.driverSafetyContainer)).toBeVisible();
 
-        // Click on the Select dropdown to open options
-        await page.locator('#driver-safety-device-select').selectOption('Sales car1');
+        // Click on the Select dropdown to open options (select2 dropdown)
+        await page.locator('#driver-safety-report-panel .select2-selection').click();
+        await page.locator('.select2-results__option').filter({ hasText: 'Sales car1' }).click();
 
         // Click on submit button
         await expect(page.locator(config.selectors.driverSafetyReport.submitButton)).toBeVisible();

@@ -167,17 +167,44 @@ class TestHelpers {
   async navigateToDevicesList(config) {
     // Wait extra time for unified platform to fully load
     await this.page.waitForTimeout(15000);
-    
-    // Click on Account menu (using devMenu selector)
-    await this.waitForElementAndClick(config.selectors.navigation.accountsMenu);
-    // await this.page.waitForTimeout(3000);
+
+    // Try multiple selectors for the Account menu (different platforms have different selectors)
+    const accountMenuSelectors = [
+      config.selectors.navigation.accountsMenu,  // .icon.icon--xl.icon--account-settings
+      config.selectors.navigation.devMenu,       // #account
+      '#account',
+      '.icon--account-settings',
+      '[data-menu="account"]',
+      'text=Account Settings'
+    ];
+
+    let menuClicked = false;
+    for (const selector of accountMenuSelectors) {
+      try {
+        const element = this.page.locator(selector).first();
+        if (await element.isVisible({ timeout: 5000 }).catch(() => false)) {
+          await element.click();
+          console.log(`Clicked account menu using selector: ${selector}`);
+          menuClicked = true;
+          break;
+        }
+      } catch (e) {
+        // Try next selector
+      }
+    }
+
+    if (!menuClicked) {
+      throw new Error('Could not find Account menu with any known selector');
+    }
+
+    await this.page.waitForTimeout(2000);
 
     // Click on List of Devices
     await this.waitForElementAndClick(config.selectors.navigation.listOfDevices);
-    
+
     // Wait for the devices panel to be visible with increased timeout
-    await this.page.waitForSelector(config.selectors.devList.container, { 
-        state: 'visible', 
+    await this.page.waitForSelector(config.selectors.devList.container, {
+        state: 'visible',
         timeout: 60000 // 1 minute timeout for devices panel
     });
   }

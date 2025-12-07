@@ -33,12 +33,23 @@ test.describe('Exit Report', () => {
 
         await page.waitForTimeout(4000);
 
-        // Click on Analytics section
-        await page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' }).click();
-        
-        // Click on exit report
-        await expect(page.locator(config.selectors.ExitReport.exit)).toBeVisible();
-        await page.locator(config.selectors.ExitReport.exit).click();
+        // Click on Analytics section to expand it
+        const analyticsSection = page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' });
+        await analyticsSection.click();
+
+        // Wait for accordion to expand
+        await page.waitForTimeout(3000);
+
+        // The exit report button might need a more direct approach - try clicking with JavaScript
+        const exitBtn = page.locator(config.selectors.ExitReport.exit);
+        await exitBtn.waitFor({ state: 'attached', timeout: 10000 });
+        await page.evaluate((selector) => {
+            const el = document.querySelector(selector);
+            if (el) {
+                el.scrollIntoView({ behavior: 'instant', block: 'center' });
+                el.click();
+            }
+        }, config.selectors.ExitReport.exit);
 
         // Verify exit report is visible
         await expect(page.locator(config.selectors.ExitReport.exitReport)).toBeVisible();

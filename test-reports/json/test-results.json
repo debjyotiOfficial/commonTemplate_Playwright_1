@@ -64,7 +64,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 600000
       }
     ],
     "shard": null,
@@ -76,20 +76,20 @@
   },
   "suites": [
     {
-      "title": "TS050_last24hrs.spec.js",
-      "file": "TS050_last24hrs.spec.js",
+      "title": "TS032_30DayMileageReport.spec.js",
+      "file": "TS032_30DayMileageReport.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Last 24 Hours",
-          "file": "TS050_last24hrs.spec.js",
-          "line": 10,
+          "title": "30 Day Mileage Report",
+          "file": "TS032_30DayMileageReport.spec.js",
+          "line": 27,
           "column": 6,
           "specs": [
             {
-              "title": "should verify Engine Idling Events checkbox functionality",
+              "title": "should be redirected to fleet demo page with demo credentials",
               "ok": true,
               "tags": [],
               "tests": [
@@ -104,9 +104,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 153735,
+                      "duration": 98200,
                       "errors": [],
                       "stdout": [
+                        {
+                          "text": "--- Step 1: Login and navigate to fleet dashboard ---\n"
+                        },
                         {
                           "text": "Performing login...\n"
                         },
@@ -117,33 +120,156 @@
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "Checkbox is not checked - verifying Engine Idling is not visible\n"
+                          "text": " Successfully logged in\n"
                         },
                         {
-                          "text": "Verified: Engine Idling events are not visible when checkbox is unchecked\n"
+                          "text": "--- Step 2: Opening Reports menu ---\n"
                         },
                         {
-                          "text": "Checkbox has been checked\n"
+                          "text": " Reports menu opened\n"
                         },
                         {
-                          "text": "Note: No Engine Idling events found in the current data set\n"
+                          "text": "--- Step 3: Clicking on Fleet section ---\n"
                         },
                         {
-                          "text": "Testing Engine Idling search functionality\n"
+                          "text": " Fleet section expanded\n"
                         },
                         {
-                          "text": "Found 20 Engine Idling events in search results (out of 100 total rows)\n"
+                          "text": "--- Step 4: Clicking 30 Day Mileage Report menu ---\n"
                         },
                         {
-                          "text": "Verified: Search results contain Engine Idling events\n"
+                          "text": " 30 Day Mileage Report menu clicked\n"
                         },
                         {
-                          "text": "Search functionality test completed\n"
+                          "text": "--- Step 5: Verifying container is visible ---\n"
+                        },
+                        {
+                          "text": " Container is visible\n"
+                        },
+                        {
+                          "text": "--- Step 6: Selecting date range ---\n"
+                        },
+                        {
+                          "text": " Month selected: July\n"
+                        },
+                        {
+                          "text": " Start date selected: July 1, 2025\n"
+                        },
+                        {
+                          "text": " End date selected: July 30, 2025\n"
+                        },
+                        {
+                          "text": "--- Step 7: Checking All Devices checkbox ---\n"
+                        },
+                        {
+                          "text": " All Devices checkbox checked\n"
+                        },
+                        {
+                          "text": "--- Step 8: Clicking Submit button ---\n"
+                        },
+                        {
+                          "text": " Submit button clicked\n"
+                        },
+                        {
+                          "text": "--- Step 9: Waiting for report to load ---\n"
+                        },
+                        {
+                          "text": " Waiting for report data...\n"
+                        },
+                        {
+                          "text": "--- Step 10: Verifying table has data ---\n"
+                        },
+                        {
+                          "text": " Table has 44 row(s)\n"
+                        },
+                        {
+                          "text": " Table has 6 header(s)\n"
+                        },
+                        {
+                          "text": "--- Step 11: Verifying first row has data ---\n"
+                        },
+                        {
+                          "text": " Cell 1: \"07/30/2025\"\n"
+                        },
+                        {
+                          "text": " Cell 2: \"860111051554966\"\n"
+                        },
+                        {
+                          "text": " Cell 3: \"Demo 1\"\n"
+                        },
+                        {
+                          "text": " Cell 4: \"0\"\n"
+                        },
+                        {
+                          "text": " Cell 5: \"0\"\n"
+                        },
+                        {
+                          "text": " Cell 6: \"0\"\n"
+                        },
+                        {
+                          "text": "--- Step 12: Testing search functionality ---\n"
+                        },
+                        {
+                          "text": " Searched for \"Sales\"\n"
+                        },
+                        {
+                          "text": " Filtered results: 30 row(s)\n"
+                        },
+                        {
+                          "text": "--- Step 13: Testing export functionality ---\n"
+                        },
+                        {
+                          "text": " Exported to Excel\n"
+                        },
+                        {
+                          "text": " Exported to CSV\n"
+                        },
+                        {
+                          "text": " Exported to PDF\n"
+                        },
+                        {
+                          "text": "--- Step 14: Searching for another device ---\n"
+                        },
+                        {
+                          "text": " Searched for \"Demo\"\n"
+                        },
+                        {
+                          "text": " Demo search results: 14 row(s)\n"
+                        },
+                        {
+                          "text": " First result device: \"Demo 1\"\n"
+                        },
+                        {
+                          "text": "--- Step 15: Closing report panel ---\n"
+                        },
+                        {
+                          "text": " Report panel closed\n"
+                        },
+                        {
+                          "text": "--- Step 16: Re-opening report and viewing saved report ---\n"
+                        },
+                        {
+                          "text": " Reports menu opened\n"
+                        },
+                        {
+                          "text": " 30 Day Mileage Report menu clicked again\n"
+                        },
+                        {
+                          "text": " Container is visible\n"
+                        },
+                        {
+                          "text": " Searched for reports from 2025\n"
+                        },
+                        {
+                          "text": " Could not click View button: locator.click: Element is outside of the viewport\nCall log:\n\u001b[2m  - waiting for locator('#thirty-day-report-table tbody tr').first().locator('button.aViewMileageReport')\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"aViewMileageReport\" data-unique-id=\"67853189dc51a\">↵                View↵            </button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\n"
+                        },
+                        {
+                          "text": " 30 Day Mileage Report test completed successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-05T20:06:48.440Z",
+                      "startTime": "2025-12-07T18:02:44.521Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -151,233 +277,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "71f1e305ba4976f42251-e27dcc7ee138ac3566f6",
-              "file": "TS050_last24hrs.spec.js",
-              "line": 39,
-              "column": 5
-            },
-            {
-              "title": "should verify Geofence Events, Landmark Events, and Frequent Stops functionality",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 600000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 131607,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Performing login...\n"
-                        },
-                        {
-                          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
-                        },
-                        {
-                          "text": "Page loaded successfully\n"
-                        },
-                        {
-                          "text": "Testing Show Geofence Events checkbox functionality\n"
-                        },
-                        {
-                          "text": "Checked Show Geofence Events checkbox\n"
-                        },
-                        {
-                          "text": "Verifying Geofence In events are visible\n"
-                        },
-                        {
-                          "text": "Total rows in table: 100\n"
-                        },
-                        {
-                          "text": "Found 11 Geofence In events\n"
-                        },
-                        {
-                          "text": "Geofence names found: Name 1\n"
-                        },
-                        {
-                          "text": "Verified: Geofence In events are visible after checking the checkbox\n"
-                        },
-                        {
-                          "text": "Unchecking Show Geofence Events checkbox\n"
-                        },
-                        {
-                          "text": "Verified: Geofence In events are hidden after unchecking the checkbox\n"
-                        },
-                        {
-                          "text": "Testing Show Landmark Events checkbox functionality\n"
-                        },
-                        {
-                          "text": "Landmark column exists before checking: true\n"
-                        },
-                        {
-                          "text": "Checked Show Landmark Events checkbox\n"
-                        },
-                        {
-                          "text": "Verified: Landmark column appears after checking Show Landmark Events checkbox\n"
-                        },
-                        {
-                          "text": "Navigating to Travel Log Frequent Stops tab\n"
-                        },
-                        {
-                          "text": "Verifying API response matches table data\n"
-                        },
-                        {
-                          "text": "Found 30 rows in Frequent Stops table\n"
-                        },
-                        {
-                          "text": "API returned 30 records\n"
-                        },
-                        {
-                          "text": "Row 1: Date = 06/01/2025\n"
-                        },
-                        {
-                          "text": "Comparing: Table=\"06/01/2025\" vs API=\"06/01/2025\"\n"
-                        },
-                        {
-                          "text": "Row 2: Date = 06/01/2025\n"
-                        },
-                        {
-                          "text": "Comparing: Table=\"06/01/2025\" vs API=\"06/01/2025\"\n"
-                        },
-                        {
-                          "text": "Row 3: Date = 06/01/2025\n"
-                        },
-                        {
-                          "text": "Comparing: Table=\"06/01/2025\" vs API=\"06/01/2025\"\n"
-                        },
-                        {
-                          "text": "Verified: Frequent Stops table has data from API\n"
-                        },
-                        {
-                          "text": "Testing search functionality in Frequent Stops\n"
-                        },
-                        {
-                          "text": "Searching for: \"-111.840215\"\n"
-                        },
-                        {
-                          "text": "Found 30 rows after search\n"
-                        },
-                        {
-                          "text": "Row 2 does not contain search term: \n                06/01/2025\n                0\n                11:58 AM\n                33.64015\n    ...\n"
-                        },
-                        {
-                          "text": "Row 3 does not contain search term: \n                06/01/2025\n                0\n                11:59 AM\n                33.641009\n   ...\n"
-                        },
-                        {
-                          "text": "Row 4 does not contain search term: \n                06/01/2025\n                3\n                12:00 PM\n                33.640448\n   ...\n"
-                        },
-                        {
-                          "text": "Row 5 does not contain search term: \n                06/01/2025\n                0\n                12:07 PM\n                33.646704\n   ...\n"
-                        },
-                        {
-                          "text": "Row 6 does not contain search term: \n                06/01/2025\n                2\n                12:25 PM\n                33.701657\n   ...\n"
-                        },
-                        {
-                          "text": "Row 7 does not contain search term: \n                06/01/2025\n                0\n                12:29 PM\n                33.698765\n   ...\n"
-                        },
-                        {
-                          "text": "Row 8 does not contain search term: \n                06/01/2025\n                0\n                12:30 PM\n                33.69876\n    ...\n"
-                        },
-                        {
-                          "text": "Row 9 does not contain search term: \n                06/01/2025\n                2\n                12:31 PM\n                33.698793\n   ...\n"
-                        },
-                        {
-                          "text": "Row 10 does not contain search term: \n                06/01/2025\n                0\n                12:34 PM\n                33.698532\n   ...\n"
-                        },
-                        {
-                          "text": "Row 11 does not contain search term: \n                06/01/2025\n                0\n                12:51 PM\n                33.64681\n    ...\n"
-                        },
-                        {
-                          "text": "Row 12 does not contain search term: \n                06/01/2025\n                0\n                12:52 PM\n                33.640426\n   ...\n"
-                        },
-                        {
-                          "text": "Row 13 does not contain search term: \n                06/01/2025\n                0\n                12:56 PM\n                33.629485\n   ...\n"
-                        },
-                        {
-                          "text": "Row 14 does not contain search term: \n                06/01/2025\n                0\n                12:59 PM\n                33.627652\n   ...\n"
-                        },
-                        {
-                          "text": "Row 15 does not contain search term: \n                06/01/2025\n                0\n                01:00 PM\n                33.627676\n   ...\n"
-                        },
-                        {
-                          "text": "Row 16 does not contain search term: \n                06/01/2025\n                5\n                01:00 PM\n                33.627739\n   ...\n"
-                        },
-                        {
-                          "text": "Row 17 does not contain search term: \n                06/01/2025\n                12\n                01:08 PM\n                33.62424\n   ...\n"
-                        },
-                        {
-                          "text": "Row 18 does not contain search term: \n                06/01/2025\n                2\n                01:24 PM\n                33.628639\n   ...\n"
-                        },
-                        {
-                          "text": "Row 19 does not contain search term: \n                06/01/2025\n                0\n                01:28 PM\n                33.622044\n   ...\n"
-                        },
-                        {
-                          "text": "Row 20 does not contain search term: \n                06/01/2025\n                1\n                01:30 PM\n                33.618273\n   ...\n"
-                        },
-                        {
-                          "text": "Row 21 does not contain search term: \n                06/01/2025\n                1664\n                01:33 PM\n                33.380255\n...\n"
-                        },
-                        {
-                          "text": "Row 22 does not contain search term: \n                06/02/2025\n                0\n                05:23 PM\n                33.628446\n   ...\n"
-                        },
-                        {
-                          "text": "Row 23 does not contain search term: \n                06/02/2025\n                7\n                05:27 PM\n                33.624161\n   ...\n"
-                        },
-                        {
-                          "text": "Row 24 does not contain search term: \n                06/02/2025\n                3\n                05:41 PM\n                33.64068\n    ...\n"
-                        },
-                        {
-                          "text": "Row 25 does not contain search term: \n                06/02/2025\n                0\n                05:45 PM\n                33.64015\n    ...\n"
-                        },
-                        {
-                          "text": "Row 26 does not contain search term: \n                06/02/2025\n                41\n                05:47 PM\n                33.638973\n  ...\n"
-                        },
-                        {
-                          "text": "Row 27 does not contain search term: \n                06/02/2025\n                43\n                06:31 PM\n                33.651392\n  ...\n"
-                        },
-                        {
-                          "text": "Row 28 does not contain search term: \n                06/02/2025\n                0\n                07:18 PM\n                33.656319\n   ...\n"
-                        },
-                        {
-                          "text": "Row 29 does not contain search term: \n                06/02/2025\n                126\n                07:20 PM\n                33.654677\n ...\n"
-                        },
-                        {
-                          "text": "Row 30 does not contain search term: \n                06/02/2025\n                0\n                09:31 PM\n                33.628472\n   ...\n"
-                        },
-                        {
-                          "text": "Verified: Search returns results\n"
-                        },
-                        {
-                          "text": "Note: Some rows may not contain the exact search term in visible text\n"
-                        },
-                        {
-                          "text": "Found 30 rows after clearing search\n"
-                        },
-                        {
-                          "text": "Search functionality test completed successfully\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-05T20:09:24.328Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "71f1e305ba4976f42251-f48ec451ccefb0358590",
-              "file": "TS050_last24hrs.spec.js",
-              "line": 338,
+              "id": "0dfb7403c65f3c696988-83c767bfb7c942436c70",
+              "file": "TS032_30DayMileageReport.spec.js",
+              "line": 46,
               "column": 5
             }
           ]
@@ -387,9 +289,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-05T20:06:46.651Z",
-    "duration": 291009.061,
-    "expected": 2,
+    "startTime": "2025-12-07T18:02:42.736Z",
+    "duration": 102928.184,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

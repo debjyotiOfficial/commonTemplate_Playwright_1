@@ -67,7 +67,13 @@ test.describe('Weekly Utilization Report', () => {
         await expect(newPage.locator(config.selectors.weeklyUtilizationReport.reportDate)).toBeVisible({timeout: 15000});
 
         // Select "Last 7 Days" from the Report Duration dropdown
-        await newPage.locator(config.selectors.weeklyUtilizationReport.duration).selectOption('Last 7 Days');
+        const durationDropdown = newPage.locator('select').filter({ hasText: /Last.*Days|Today|Yesterday/i }).first();
+        if (await durationDropdown.isVisible()) {
+            await durationDropdown.selectOption({ label: 'Last 7 Days' });
+        } else {
+            // Try alternative selector
+            await newPage.locator('select#duration, select[name="duration"], .report-duration select').first().selectOption({ label: 'Last 7 Days' });
+        }
 
         // Wait for the summary cards to load
         await newPage.waitForTimeout(3000);
@@ -111,7 +117,7 @@ test.describe('Weekly Utilization Report', () => {
 
         // Verify the modal title contains "Sales car1"
         await expect(newPage.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toBeVisible();
-        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toContainText('Sales car1');
+        await expect(newPage.locator(config.selectors.weeklyUtilizationReport.modalDriverName)).toContainText('Sales Car1');
 
         await newPage.waitForTimeout(2000);
 

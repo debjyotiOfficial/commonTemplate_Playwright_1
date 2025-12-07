@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Test Report - All Modules - 6/12/2025</title>
+    <title>Master Test Report - All Modules - 7/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,21 +150,21 @@
     <div class="container">
         <div class="header">
             <h1>Master Test Execution Report</h1>
-            <div class="module-name">All Modules (7 modules, 12 tests)</div>
+            <div class="module-name">All Modules (12 modules, 17 tests)</div>
             <div class="subtitle">
-                Generated: 6/12/2025, 1:41:37 am |
-                Duration: 290.97s |
+                Generated: 7/12/2025, 11:34:25 pm |
+                Duration: 102.66s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">12</div>
+                <div class="number">17</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">11</div>
+                <div class="number">16</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">91.7%</div>
+                <div class="number">94.1%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -192,7 +192,7 @@
             
             <select id="moduleFilter" onchange="filterTests()">
                 <option value="">All Modules</option>
-                <option value="Account Health Summary Report">Account Health Summary Report</option><option value="Alert Contact">Alert Contact</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option>
+                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Alert Contact">Alert Contact</option><option value="Current geofence report">Current geofence report</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option>
             </select>
             
             <button class="export-btn" onclick="exportToExcel()">Export to Excel</button>
@@ -212,6 +212,187 @@
                 </thead>
                 <tbody>
                     
+                    <tr data-status="passed" data-module="List of Device">
+                        <td><span class="test-case-no">TS001-A</span></td>
+                        <td>List of Device</td>
+                        <td>
+                            <strong>should show list of all devices in the platform</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(0)">
+                                    <span>View Test Steps (31)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-0" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing login...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Map page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">NAVIGATING TO LIST OF DEVICES</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Account Settings icon clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">List of Devices clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 6 devices in the table</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Search for &quot;Sales Car1&quot; returned 1 results</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Collapsing side menu to access modal elements...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Clicked on modal to collapse side menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Moved mouse away from side menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 1: Verifying device list page...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Device table is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found 51 devices in the list</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Searched for Sales</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found 1 rows matching &quot;Sales&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 2: Finding and clicking edit icon...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Clicked pencil icon using config selector</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 3: Verifying edit panel...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Edit panel found: #add-edit-device-panel</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Clicked Edit Device tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Device name input value: &quot;Sales Car1&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Closed edit panel</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 4: Testing export functionality...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found export option: text=Save file as</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found export option: text=Copy</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found export option: .dropdown__trigger</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Screenshot saved: device-list-page.png</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✅ TEST COMPLETED SUCCESSFULLY</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device list functionality has been tested</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>109.52s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="Alert Contact">
                         <td><span class="test-case-no">TS008-A</span></td>
                         <td>Alert Contact</td>
@@ -219,11 +400,11 @@
                             <strong>should add email and phone contacts and configure alert settings</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(0)">
+                                <button class="steps-toggle" onclick="toggleSteps(1)">
                                     <span>View Test Steps (3)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-0" class="steps-panel">
+                                <div id="steps-1" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -253,17 +434,936 @@
                         </td>
                     </tr>
                     
+                    <tr data-status="passed" data-module="Weekly Geofencing reports">
+                        <td><span class="test-case-no">TS020-A</span></td>
+                        <td>Weekly Geofencing reports</td>
+                        <td>
+                            <strong>should manage recent geofence report</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                    <span>View Test Steps (34)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-2" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 1: Login and navigate to fleet dashboard</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing login...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Successfully logged in</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 2: Opening Geofencing menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofencing menu clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 3: Expanding Geofence Reports accordion</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence Reports accordion expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 4: Clicking Weekly Geofence Report menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Weekly Geofence Report menu clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 5: Verifying Weekly Geofence Report container</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 6: Selecting date range</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Calendar not visible, using default date range</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 7: Clicking Copy button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Copy button not available, continuing</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 810: Exporting to Excel, PDF, CSV</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Excel export not available</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">PDF export not available</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">CSV export not available</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 11: Clicking View Chart button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">View Chart button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 12: Verifying chart modal</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Chart modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 13: Selecting vehicle in chart</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Vehicle selected: All Devices</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 14: Closing chart modal</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Chart modal closed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 15: Searching for device</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searched for &quot;Sales car1&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 16: Clicking View Details on first row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">No data rows available or View Details button not found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Weekly Geofence Report test completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>102.42s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Current geofence report">
+                        <td><span class="test-case-no">TS021-A</span></td>
+                        <td>Current geofence report</td>
+                        <td>
+                            <strong>should manage recent geofence report</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(3)">
+                                    <span>View Test Steps (39)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-3" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 1: Login and navigate to fleet dashboard</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing login...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Successfully logged in</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 2: Opening Geofencing menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofencing menu clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 3: Expanding Geofence Reports accordion</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence Reports accordion expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 4: Clicking Current Geofence Report menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Current Geofence Report menu clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 5: Verifying Current Geofence Report container</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked inside modal to close navbar</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 6: Selecting &quot;Show All Status&quot; from dropdown</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Status filter set to &quot;Show All Status&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 7: Verifying status column values</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified 2 rows with valid status values</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 8: Selecting &quot;Show All Geofences&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence filter set</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 9: Selecting &quot;Show All Subgroups&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Subgroup filter set</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 10: Searching for &quot;Sales car1&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Search performed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 11: Verifying search results</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Search result verification skipped - no matching data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 12: Clearing search</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Search cleared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 13: Verifying directions icon in table rows</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table has 2 rows</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row 1: Directions icon found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row 2: Directions icon found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 14: Testing export functionality</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exported to Excel</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exported to CSV</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exported to PDF</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 15: Verifying directions link functionality</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">No link element found for directions icon</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Current Geofence Report test completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>121.73s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="30 Day Mileage Report">
+                        <td><span class="test-case-no">TS032-A</span></td>
+                        <td>30 Day Mileage Report</td>
+                        <td>
+                            <strong>should be redirected to fleet demo page with demo credentials</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                    <span>View Test Steps (59)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-4" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 1: Login and navigate to fleet dashboard</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing login...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Successfully logged in</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 2: Opening Reports menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Reports menu opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 3: Clicking on Fleet section</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Fleet section expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 4: Clicking 30 Day Mileage Report menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">30 Day Mileage Report menu clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 5: Verifying container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 6: Selecting date range</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Month selected: July</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Start date selected: July 1, 2025</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">End date selected: July 30, 2025</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 7: Checking All Devices checkbox</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All Devices checkbox checked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 8: Clicking Submit button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 9: Waiting for report to load</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Waiting for report data...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 10: Verifying table has data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table has 44 row(s)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table has 6 header(s)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 11: Verifying first row has data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cell 1: &quot;07/30/2025&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cell 2: &quot;860111051554966&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cell 3: &quot;Demo 1&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cell 4: &quot;0&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cell 5: &quot;0&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cell 6: &quot;0&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 12: Testing search functionality</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searched for &quot;Sales&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered results: 30 row(s)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 13: Testing export functionality</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exported to Excel</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exported to CSV</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exported to PDF</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 14: Searching for another device</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searched for &quot;Demo&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Demo search results: 14 row(s)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">First result device: &quot;Demo 1&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 15: Closing report panel</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Report panel closed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 16: Reopening report and viewing saved report</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Reports menu opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">30 Day Mileage Report menu clicked again</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searched for reports from 2025</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Could not click View button: locator.click: Element is outside of the viewport</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Call log:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m  - waiting for locator(&#039;#thirty-day-report-table tbody tr&#039;).first().locator(&#039;button.aViewMileageReport&#039;)[22m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m    - locator resolved to &lt;button class=&quot;aViewMileageReport&quot; data-unique-id=&quot;67853189dc51a&quot;&gt;↵                View↵            &lt;/button&gt;[22m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m  - attempting click action[22m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m    - scrolling into view if needed[22m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m    - done scrolling[22m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">30 Day Mileage Report test completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>98.20s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Trip Report">
+                        <td><span class="test-case-no">TS034-A</span></td>
+                        <td>Trip Report</td>
+                        <td>
+                            <strong>should generate and validate trip report</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                    <span>View Test Steps (31)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-5" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 1: Login and navigate to fleet dashboard</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing login...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Successfully logged in and navigated to dashboard</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 2: Opening Reports menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Reports menu opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 3: Clicking on Fleet section</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Fleet section expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 4: Clicking on Trip Report menu option</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Trip Report menu clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 5: Verifying Trip Report container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Trip Report container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 6: Selecting a driver/device from dropdown</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device selected by index</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 7: Entering date for the report</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date entered: 2025-07-01</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 8: Clicking Submit button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 9: Waiting for report to load</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Report loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 10: Verifying table has data rows</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table has 1 row(s)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table contains data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 11: Attempting to change entries dropdown to show 25 entries</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Could not scroll to entries dropdown, continuing with default entries</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Current row count: 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 13: Clicking &quot;Map Trip&quot; button on first row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Map Trip button not found on first row, skipping</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Map view loaded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Trip Report test completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>112.47s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="failed" data-module="Low Voltage Device Report">
                         <td><span class="test-case-no">TS037-A</span></td>
                         <td>Low Voltage Device Report</td>
                         <td>
                             <strong>should generate and validate low voltage device report</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(1)">
+                                <button class="error-toggle" onclick="toggleError(6)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-1" class="error-panel">
+                                <div id="error-6" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -317,11 +1417,11 @@ Call log:
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(1)">
+                                <button class="steps-toggle" onclick="toggleSteps(6)">
                                     <span>View Test Steps (4)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-1" class="steps-panel">
+                                <div id="steps-6" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -363,11 +1463,11 @@ Call log:
                             <strong>should verify Engine Idling Events checkbox functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                <button class="steps-toggle" onclick="toggleSteps(7)">
                                     <span>View Test Steps (11)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-2" class="steps-panel">
+                                <div id="steps-7" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -444,11 +1544,11 @@ Call log:
                             <strong>should verify Geofence Events, Landmark Events, and Frequent Stops functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(3)">
+                                <button class="steps-toggle" onclick="toggleSteps(8)">
                                     <span>View Test Steps (150)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-3" class="steps-panel">
+                                <div id="steps-8" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1220,11 +2320,11 @@ Call log:
                             <strong>should verify real-time tracking timer and API data synchronization</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                <button class="steps-toggle" onclick="toggleSteps(9)">
                                     <span>View Test Steps (18)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-4" class="steps-panel">
+                                <div id="steps-9" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1336,11 +2436,11 @@ Call log:
                             <strong>should verify Get Support and Insurance form functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                <button class="steps-toggle" onclick="toggleSteps(10)">
                                     <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-5" class="steps-panel">
+                                <div id="steps-10" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1407,11 +2507,11 @@ Call log:
                             <strong>should edit the timezone of users</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(6)">
+                                <button class="steps-toggle" onclick="toggleSteps(11)">
                                     <span>View Test Steps (211)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-6" class="steps-panel">
+                                <div id="steps-11" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2488,11 +3588,11 @@ Call log:
                             <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(7)">
+                                <button class="steps-toggle" onclick="toggleSteps(12)">
                                     <span>View Test Steps (77)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-7" class="steps-panel">
+                                <div id="steps-12" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2899,11 +3999,11 @@ Call log:
                             <strong>should verify Fleet Status Summary cards and table filtering</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(8)">
+                                <button class="steps-toggle" onclick="toggleSteps(13)">
                                     <span>View Test Steps (38)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-8" class="steps-panel">
+                                <div id="steps-13" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3115,11 +4215,11 @@ Call log:
                             <strong>should verify table sorting functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(9)">
+                                <button class="steps-toggle" onclick="toggleSteps(14)">
                                     <span>View Test Steps (10)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-9" class="steps-panel">
+                                <div id="steps-14" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3191,11 +4291,11 @@ Call log:
                             <strong>should verify export buttons and file downloads</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(10)">
+                                <button class="steps-toggle" onclick="toggleSteps(15)">
                                     <span>View Test Steps (21)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-10" class="steps-panel">
+                                <div id="steps-15" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3322,11 +4422,11 @@ Call log:
                             <strong>should verify search functionality in device table</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(11)">
+                                <button class="steps-toggle" onclick="toggleSteps(16)">
                                     <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-11" class="steps-panel">
+                                <div id="steps-16" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3434,7 +4534,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"120.46s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"107.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"99.10s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"106.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"87.80s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"120.46s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"107.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"99.10s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"106.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"87.80s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -3451,7 +4551,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'master-test-report-2025-12-05.csv';
+            link.download = 'master-test-report-2025-12-07.csv';
             link.click();
         }
     </script>
