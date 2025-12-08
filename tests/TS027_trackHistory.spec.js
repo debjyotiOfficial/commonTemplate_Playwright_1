@@ -70,7 +70,20 @@ test.describe('Track History Tests', () => {
         await expect(page.locator(config.selectors.trackHistoryReport.sortBtn)).toBeVisible();
         await page.locator(config.selectors.trackHistoryReport.sortBtn).click({ force: true });
 
-        await page.locator(config.selectors.trackHistoryReport.itemNo).filter({ hasText: /^1$/ }).click({ force: true });
+        // Wait for sort to complete
+        await page.waitForTimeout(1000);
+
+        // Re-expand the segment dropdown if it collapsed after sorting
+        await page.locator(config.selectors.trackHistoryReport.segmentDropdown).click({ force: true });
+        await page.waitForTimeout(500);
+
+        // Click item 1 - wait for it to be visible first
+        const item1Locator = page.locator(config.selectors.trackHistoryReport.itemNo).filter({ hasText: /^1$/ });
+        await expect(item1Locator).toBeVisible({ timeout: 10000 });
+        await item1Locator.click({ force: true });
+
+        // Wait for segment data to load and playback controls to appear
+        await page.waitForTimeout(3000);
 
         const markerCount = await page.locator(config.selectors.trackHistoryReport.markers).count();
         expect(markerCount).toBeGreaterThan(0);
@@ -118,8 +131,11 @@ test.describe('Track History Tests', () => {
         });
 
         // Test 3: Start animation and verify car marker creation
-        await expect(page.locator(config.selectors.trackHistoryReport.play)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.play).click({ force: true });
+        // The playback controls are text-based elements within the track history container
+        // Use a more specific locator to avoid matching "Display" which contains "Play"
+        const playButton = page.locator('text="Play"').first();
+        await expect(playButton).toBeVisible({ timeout: 15000 });
+        await playButton.click({ force: true });
 
         await page.waitForTimeout(2000); // Wait for animation to start
 
@@ -184,8 +200,10 @@ test.describe('Track History Tests', () => {
         });
 
         // Test 5: Test pause functionality
-        await expect(page.locator(config.selectors.trackHistoryReport.pause)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.pause).click({ force: true });
+        // After clicking Play, the button changes to Pause (text-based)
+        const pauseButton = page.locator('text="Pause"').first();
+        await expect(pauseButton).toBeVisible({ timeout: 10000 });
+        await pauseButton.click({ force: true });
 
         await page.waitForTimeout(1000);
         console.log('✓ PAUSE BUTTON CLICKED');
@@ -269,11 +287,13 @@ test.describe('Track History Tests', () => {
         }, pausedPosition);
 
         // Test 7: Resume animation
-        await expect(page.locator(config.selectors.trackHistoryReport.continue)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.continue).click({ force: true });
+        // After pausing, the button shows "Resume" text
+        const resumeButton = page.locator('text="Resume"').first();
+        await expect(resumeButton).toBeVisible({ timeout: 10000 });
+        await resumeButton.click({ force: true });
 
         await page.waitForTimeout(1000);
-        console.log('✓ CONTINUE BUTTON CLICKED');
+        console.log('✓ RESUME BUTTON CLICKED');
 
         // Check resume state
         const resumeConfirmed = await page.evaluate(() => {
@@ -312,9 +332,10 @@ test.describe('Track History Tests', () => {
             return false;
         });
 
-        // Test 8: Speed controls
-        await expect(page.locator(config.selectors.trackHistoryReport.speedUp)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.speedUp).click({ force: true });
+        // Test 8: Speed controls (text-based)
+        const fastButton = page.locator('text="Fast"').first();
+        await expect(fastButton).toBeVisible({ timeout: 10000 });
+        await fastButton.click({ force: true });
 
         await page.waitForTimeout(1000);
         console.log('✓ SPEED UP BUTTON CLICKED');
@@ -331,15 +352,17 @@ test.describe('Track History Tests', () => {
             return false;
         });
 
-        await expect(page.locator(config.selectors.trackHistoryReport.speedDown)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.speedDown).click({ force: true });
+        const slowButton = page.locator('text="Slow"').first();
+        await expect(slowButton).toBeVisible({ timeout: 10000 });
+        await slowButton.click({ force: true });
 
         await page.waitForTimeout(1000);
         console.log('✓ SPEED DOWN BUTTON CLICKED');
 
-        // Test 9: Restart functionality
-        await expect(page.locator(config.selectors.trackHistoryReport.restart)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.restart).click({ force: true });
+        // Test 9: Restart functionality (text-based)
+        const restartButton = page.locator('text="Restart"').first();
+        await expect(restartButton).toBeVisible({ timeout: 10000 });
+        await restartButton.click({ force: true });
 
         await page.waitForTimeout(2000);
         console.log('✓ RESTART BUTTON CLICKED');
@@ -403,8 +426,9 @@ test.describe('Track History Tests', () => {
         console.log('✓ SEGMENT 1 SELECTED');
 
         // Final test - Run complete animation cycle
-        await expect(page.locator(config.selectors.trackHistoryReport.play)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.play).click({ force: true });
+        const playButtonFinal = page.locator('text="Play"').first();
+        await expect(playButtonFinal).toBeVisible({ timeout: 10000 });
+        await playButtonFinal.click({ force: true });
 
         await page.waitForTimeout(5000); // Let animation run
 
@@ -447,8 +471,9 @@ test.describe('Track History Tests', () => {
 
         await page.waitForTimeout(1000);
 
-        await expect(page.locator(config.selectors.trackHistoryReport.play)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.play).click({ force: true });
+        const playButtonJune = page.locator('text="Play"').first();
+        await expect(playButtonJune).toBeVisible({ timeout: 10000 });
+        await playButtonJune.click({ force: true });
 
         await page.waitForTimeout(3000);
 
@@ -480,8 +505,9 @@ test.describe('Track History Tests', () => {
             return false;
         });
 
-        await expect(page.locator(config.selectors.trackHistoryReport.pause)).toBeVisible();
-        await page.locator(config.selectors.trackHistoryReport.pause).click({ force: true });
+        const pauseButtonJune = page.locator('text="Pause"').first();
+        await expect(pauseButtonJune).toBeVisible({ timeout: 10000 });
+        await pauseButtonJune.click({ force: true });
 
         await page.screenshot({ path: 'complete-car-animation-test.png' });
         
