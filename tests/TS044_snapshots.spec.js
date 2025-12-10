@@ -29,16 +29,18 @@ test.describe('Snapshots', () => {
 
         await page.waitForTimeout(config.timeouts.wait);
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on snapshot button
-        await page.locator(config.selectors.dashcam.snapshots).click({ force: true });
+        // Click on Snapshots option
+        const snapshotsOption = page.locator('#bottom-nav-current-photo');
+        await expect(snapshotsOption).toBeVisible();
+        await snapshotsOption.click({ force: true });
 
         await page.waitForTimeout(config.timeouts.wait);
 

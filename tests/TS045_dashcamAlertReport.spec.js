@@ -27,16 +27,18 @@ test.describe('Dashcam Alert Report', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashcamDashboard2);
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on alertReport button
-        await page.locator(config.selectors.dashcam.alertReport).click({ force: true });
+        // Click on Alert Report option
+        const alertReportOption = page.locator('#bottom-nav-alerts');
+        await expect(alertReportOption).toBeVisible();
+        await alertReportOption.click({ force: true });
 
         await page.waitForTimeout(5000);
 

@@ -3,7 +3,7 @@
     "configFile": "C:\\cypress-to-playwright-converted\\playwright.config.js",
     "rootDir": "C:/cypress-to-playwright-converted/tests",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -57,6 +57,22 @@
         "metadata": {
           "actualWorkers": 1
         },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "C:/cypress-to-playwright-converted/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.js/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "C:/cypress-to-playwright-converted/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
         "id": "chromium",
         "name": "chromium",
         "testDir": "C:/cypress-to-playwright-converted/tests",
@@ -71,26 +87,72 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.0",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "TS032_30DayMileageReport.spec.js",
-      "file": "TS032_30DayMileageReport.spec.js",
+      "title": "auth.setup.js",
+      "file": "auth.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1007,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Valid authentication session found (age: 22 minutes). Skipping login.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-09T21:32:14.271Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f376efe52c54b1a876fd-9d03a3bb502e264caa3f",
+          "file": "auth.setup.js",
+          "line": 10,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "TS028_travelLogReport.spec.js",
+      "file": "TS028_travelLogReport.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "30 Day Mileage Report",
-          "file": "TS032_30DayMileageReport.spec.js",
-          "line": 27,
+          "title": "Travel Log Report",
+          "file": "TS028_travelLogReport.spec.js",
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should be redirected to fleet demo page with demo credentials",
-              "ok": true,
+              "title": "should verify Frequent Stops functionality with API validation",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -101,185 +163,144 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 98200,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 131142,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m76\u001b[39m\nReceived:   \u001b[31m76\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m76\u001b[39m\nReceived:   \u001b[31m76\u001b[39m\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js:1041:35",
+                        "location": {
+                          "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+                          "column": 35,
+                          "line": 1041
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 1039 |\u001b[39m\n \u001b[90m 1040 |\u001b[39m         \u001b[90m// Verify search filtered the results (should be fewer rows than total)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1041 |\u001b[39m         expect(searchResultCount)\u001b[33m.\u001b[39mtoBeLessThan(totalRowsBeforeSearch)\u001b[33m;\u001b[39m\n \u001b[90m      |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 1042 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m`✓ Search filtered results: ${searchResultCount} rows (down from ${totalRowsBeforeSearch})`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 1043 |\u001b[39m\n \u001b[90m 1044 |\u001b[39m         \u001b[90m// Verify ALL visible rows contain \"02:08 AM\"\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+                            "column": 35,
+                            "line": 1041
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m76\u001b[39m\nReceived:   \u001b[31m76\u001b[39m\n\n  1039 |\n  1040 |         // Verify search filtered the results (should be fewer rows than total)\n> 1041 |         expect(searchResultCount).toBeLessThan(totalRowsBeforeSearch);\n       |                                   ^\n  1042 |         console.log(`✓ Search filtered results: ${searchResultCount} rows (down from ${totalRowsBeforeSearch})`);\n  1043 |\n  1044 |         // Verify ALL visible rows contain \"02:08 AM\"\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js:1041:35"
+                        }
+                      ],
                       "stdout": [
                         {
-                          "text": "--- Step 1: Login and navigate to fleet dashboard ---\n"
+                          "text": "Preserving cookies (using stored auth session)\n"
                         },
                         {
-                          "text": "Performing login...\n"
+                          "text": "Using stored authentication session (skipping login)...\n"
                         },
                         {
-                          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
+                          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
                         },
                         {
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": " Successfully logged in\n"
+                          "text": "Testing Frequent Stops functionality with API validation...\n"
                         },
                         {
-                          "text": "--- Step 2: Opening Reports menu ---\n"
+                          "text": "--- Verifying Loading Modal ---\n"
                         },
                         {
-                          "text": " Reports menu opened\n"
+                          "text": "✓ Loading modal is visible\n"
                         },
                         {
-                          "text": "--- Step 3: Clicking on Fleet section ---\n"
+                          "text": "✓ Loading modal title shows \"Loading Travel Report...\"\n"
                         },
                         {
-                          "text": " Fleet section expanded\n"
+                          "text": "Loading time estimate: ⏱️ Loading 3 days of data...\n"
                         },
                         {
-                          "text": "--- Step 4: Clicking 30 Day Mileage Report menu ---\n"
+                          "text": "✓ Loading modal shows correct \"3 days\" estimate\n"
                         },
                         {
-                          "text": " 30 Day Mileage Report menu clicked\n"
+                          "text": "API Response captured: [{\"id\":160833,\"idIndex\":0,\"date\":\"12/01/2025\",\"duration\":355,\"time\":\"02:08 AM\",\"lat\":\"33.624222\",\"lng\":\"-111.840185\",\"location\":\"\",\"tripType\":\"\",\"battery\":\"12\",\"speed\":\"0.0\",\"mileage\":\"1166.238\",\"dire...\n"
                         },
                         {
-                          "text": "--- Step 5: Verifying container is visible ---\n"
+                          "text": "✓ Loading modal disappeared after data loaded\n"
                         },
                         {
-                          "text": " Container is visible\n"
+                          "text": "Verifying API response matches table data...\n"
                         },
                         {
-                          "text": "--- Step 6: Selecting date range ---\n"
+                          "text": "Found 76 rows in Frequent Stops table\n"
                         },
                         {
-                          "text": " Month selected: July\n"
+                          "text": "API returned 76 records\n"
                         },
                         {
-                          "text": " Start date selected: July 1, 2025\n"
+                          "text": "Row 1: First cell = 12/01/2025\n"
                         },
                         {
-                          "text": " End date selected: July 30, 2025\n"
+                          "text": "Row 2: First cell = 12/01/2025\n"
                         },
                         {
-                          "text": "--- Step 7: Checking All Devices checkbox ---\n"
+                          "text": "Row 3: First cell = 12/01/2025\n"
                         },
                         {
-                          "text": " All Devices checkbox checked\n"
+                          "text": "Verified: Frequent Stops table data matches API response\n"
                         },
                         {
-                          "text": "--- Step 8: Clicking Submit button ---\n"
+                          "text": "--- Testing Sort functionality in Frequent Stops ---\n"
                         },
                         {
-                          "text": " Submit button clicked\n"
+                          "text": "Testing Date column sort...\n"
                         },
                         {
-                          "text": "--- Step 9: Waiting for report to load ---\n"
+                          "text": "Testing Time column sort...\n"
                         },
                         {
-                          "text": " Waiting for report data...\n"
+                          "text": "--- Testing Search functionality in Frequent Stops ---\n"
                         },
                         {
-                          "text": "--- Step 10: Verifying table has data ---\n"
+                          "text": "Total visible rows before search: 76\n"
                         },
                         {
-                          "text": " Table has 44 row(s)\n"
+                          "text": "Searching for \"02:08 AM\"...\n"
                         },
                         {
-                          "text": " Table has 6 header(s)\n"
-                        },
-                        {
-                          "text": "--- Step 11: Verifying first row has data ---\n"
-                        },
-                        {
-                          "text": " Cell 1: \"07/30/2025\"\n"
-                        },
-                        {
-                          "text": " Cell 2: \"860111051554966\"\n"
-                        },
-                        {
-                          "text": " Cell 3: \"Demo 1\"\n"
-                        },
-                        {
-                          "text": " Cell 4: \"0\"\n"
-                        },
-                        {
-                          "text": " Cell 5: \"0\"\n"
-                        },
-                        {
-                          "text": " Cell 6: \"0\"\n"
-                        },
-                        {
-                          "text": "--- Step 12: Testing search functionality ---\n"
-                        },
-                        {
-                          "text": " Searched for \"Sales\"\n"
-                        },
-                        {
-                          "text": " Filtered results: 30 row(s)\n"
-                        },
-                        {
-                          "text": "--- Step 13: Testing export functionality ---\n"
-                        },
-                        {
-                          "text": " Exported to Excel\n"
-                        },
-                        {
-                          "text": " Exported to CSV\n"
-                        },
-                        {
-                          "text": " Exported to PDF\n"
-                        },
-                        {
-                          "text": "--- Step 14: Searching for another device ---\n"
-                        },
-                        {
-                          "text": " Searched for \"Demo\"\n"
-                        },
-                        {
-                          "text": " Demo search results: 14 row(s)\n"
-                        },
-                        {
-                          "text": " First result device: \"Demo 1\"\n"
-                        },
-                        {
-                          "text": "--- Step 15: Closing report panel ---\n"
-                        },
-                        {
-                          "text": " Report panel closed\n"
-                        },
-                        {
-                          "text": "--- Step 16: Re-opening report and viewing saved report ---\n"
-                        },
-                        {
-                          "text": " Reports menu opened\n"
-                        },
-                        {
-                          "text": " 30 Day Mileage Report menu clicked again\n"
-                        },
-                        {
-                          "text": " Container is visible\n"
-                        },
-                        {
-                          "text": " Searched for reports from 2025\n"
-                        },
-                        {
-                          "text": " Could not click View button: locator.click: Element is outside of the viewport\nCall log:\n\u001b[2m  - waiting for locator('#thirty-day-report-table tbody tr').first().locator('button.aViewMileageReport')\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"aViewMileageReport\" data-unique-id=\"67853189dc51a\">↵                View↵            </button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\n"
-                        },
-                        {
-                          "text": " 30 Day Mileage Report test completed successfully\n"
+                          "text": "Found 76 visible rows after searching \"02:08 AM\"\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-07T18:02:44.521Z",
+                      "startTime": "2025-12-09T21:32:17.901Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+                        "column": 35,
+                        "line": 1041
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "0dfb7403c65f3c696988-83c767bfb7c942436c70",
-              "file": "TS032_30DayMileageReport.spec.js",
-              "line": 46,
+              "id": "37ce27a124866619f49d-ab7d8531deb5c8a5281d",
+              "file": "TS028_travelLogReport.spec.js",
+              "line": 815,
               "column": 5
             }
           ]
@@ -289,11 +310,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-07T18:02:42.736Z",
-    "duration": 102928.184,
+    "startTime": "2025-12-09T21:32:12.359Z",
+    "duration": 139243.34100000001,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

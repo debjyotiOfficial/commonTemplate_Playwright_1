@@ -27,16 +27,18 @@ test.describe('Dashcam Track History', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashcamDashboard2);
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on track history menu
-        await page.locator(config.selectors.dashcam.trackHistoryMenu).click({ force: true });
+        // Click on Track History option
+        const trackHistoryOption = page.locator('#bottom-nav-track-history');
+        await expect(trackHistoryOption).toBeVisible();
+        await trackHistoryOption.click({ force: true });
 
         await page.waitForTimeout(5000); // Wait for the page to load
 

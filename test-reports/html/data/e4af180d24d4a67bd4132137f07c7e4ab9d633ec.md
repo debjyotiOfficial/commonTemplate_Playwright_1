@@ -1,0 +1,4022 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - img
+      - generic:
+        - link "Terms of use" [ref=e7] [cursor=pointer]:
+          - /url: https://legal.here.com/us-en/terms/here-end-user-terms
+        - generic: © 1987–2025 HERE
+    - generic [ref=e8]:
+      - generic:
+        - generic [ref=e9]:
+          - img [ref=e11] [cursor=pointer]
+          - img [ref=e15] [cursor=pointer]
+        - img [ref=e19] [cursor=pointer]
+  - navigation [ref=e26]:
+    - generic [ref=e28]:
+      - generic:
+        - paragraph [ref=e31] [cursor=pointer]: List Of Devices
+        - paragraph [ref=e32] [cursor=pointer]: Add/Edit Device
+        - paragraph [ref=e33] [cursor=pointer]: Change Password
+        - paragraph [ref=e34] [cursor=pointer]: Change Timezone
+        - paragraph [ref=e35] [cursor=pointer]: View/Edit Users
+        - paragraph [ref=e36] [cursor=pointer]: Subgroups
+        - paragraph [ref=e37] [cursor=pointer]: Pulsing Icon Settings
+    - generic [ref=e38]:
+      - generic:
+        - paragraph [ref=e41] [cursor=pointer]: Alerts Contacts
+        - paragraph [ref=e42] [cursor=pointer]: Change Alerts Settings
+        - paragraph [ref=e43] [cursor=pointer]: Scheduled Reports
+        - paragraph [ref=e44] [cursor=pointer]: Add/Edit Maintenance Contact
+        - paragraph [ref=e45] [cursor=pointer]: Maintenance Report
+        - paragraph [ref=e46] [cursor=pointer]: View Vehicle Service
+        - paragraph [ref=e47] [cursor=pointer]: Weekly After Hours Alert Summary
+        - paragraph [ref=e48] [cursor=pointer]: After Hours Summary
+        - paragraph [ref=e49] [cursor=pointer]: After Hours Insights
+        - paragraph [ref=e50] [cursor=pointer]: After Hours Settings
+    - generic [ref=e51]:
+      - generic:
+        - paragraph [ref=e54] [cursor=pointer]: Create Geofencing Area
+        - paragraph [ref=e55] [cursor=pointer]: View/Delete Geofences
+        - generic [ref=e56]:
+          - generic [ref=e58] [cursor=pointer]: Geofence Reports
+          - generic:
+            - paragraph [ref=e59] [cursor=pointer]: Weekly Geofence Report
+            - paragraph [ref=e60] [cursor=pointer]: Current Geofence Report
+            - paragraph [ref=e61] [cursor=pointer]: Recent Geofence Report
+        - generic [ref=e62]:
+          - generic [ref=e64] [cursor=pointer]: Landmarks
+          - generic:
+            - paragraph [ref=e65] [cursor=pointer]: Create Landmarks
+            - paragraph [ref=e66] [cursor=pointer]: View/Edit Landmarks
+            - paragraph [ref=e67] [cursor=pointer]: Landmarks Report
+    - generic [ref=e70]:
+      - generic:
+        - paragraph [ref=e73] [cursor=pointer]: Dashcam Refresh
+        - paragraph [ref=e74] [cursor=pointer]: Alert Report
+        - paragraph [ref=e75] [cursor=pointer]: Alert Settings
+        - paragraph [ref=e76] [cursor=pointer]: Track History
+        - paragraph [ref=e77] [cursor=pointer]:
+          - text: Dashcam Safety Report
+          - generic [ref=e78] [cursor=pointer]: 
+        - paragraph [ref=e79] [cursor=pointer]: Video On Demand
+        - paragraph [ref=e80] [cursor=pointer]:
+          - text: Snapshots
+          - generic [ref=e81] [cursor=pointer]: 
+        - paragraph [ref=e82] [cursor=pointer]: Live Video Stream
+    - generic [ref=e83]:
+      - generic:
+        - paragraph [ref=e86] [cursor=pointer]: Travel Log Report
+        - paragraph [ref=e87] [cursor=pointer]: Current Location Report
+        - paragraph [ref=e88] [cursor=pointer]: Account Health Summary
+        - generic [ref=e89]:
+          - generic [ref=e91] [cursor=pointer]: Fleet Reports
+          - generic:
+            - paragraph [ref=e92] [cursor=pointer]: Mileage Report
+            - paragraph [ref=e93] [cursor=pointer]: State Mileage Report
+            - paragraph [ref=e94] [cursor=pointer]: 30 Day Mileage Report
+            - paragraph [ref=e95] [cursor=pointer]: Posted Speed Report
+            - paragraph [ref=e96] [cursor=pointer]: Trip Report
+            - paragraph [ref=e97] [cursor=pointer]: Engine On Report
+            - paragraph [ref=e98] [cursor=pointer]: Idling Report
+            - paragraph [ref=e99] [cursor=pointer]: Low Voltage Device Report
+            - paragraph [ref=e100] [cursor=pointer]: Driver Safety Report
+        - generic [ref=e101]:
+          - generic [ref=e103] [cursor=pointer]: Analytics
+          - paragraph [ref=e104] [cursor=pointer]: Weekly Utilization Report
+    - generic [ref=e105]:
+      - generic [ref=e107]: F
+      - generic:
+        - paragraph [ref=e108] [cursor=pointer]: Get Support
+        - paragraph [ref=e110] [cursor=pointer]: Online Manual
+        - paragraph [ref=e112] [cursor=pointer]: Logout
+  - generic [ref=e114]:
+    - heading "Driver Card" [level=2] [ref=e116]
+    - generic [ref=e121]:
+      - textbox "Search" [ref=e124]
+      - generic [ref=e125]:
+        - paragraph [ref=e126]: 2 Drivers
+        - paragraph [ref=e128] [cursor=pointer]: Sort
+    - generic [ref=e130]:
+      - generic [ref=e131] [cursor=pointer]:
+        - img [ref=e133] [cursor=pointer]
+        - generic [ref=e135] [cursor=pointer]:
+          - generic [ref=e137] [cursor=pointer]:
+            - heading "Demo 1" [level=5] [ref=e138] [cursor=pointer]
+            - generic [ref=e139] [cursor=pointer]: Vehicle Is Off
+          - generic [ref=e140] [cursor=pointer]:
+            - generic [ref=e141] [cursor=pointer]:
+              - paragraph [ref=e142] [cursor=pointer]: 11231 E Karen Dr, Scottsdale, AZ 85255
+              - link [ref=e143] [cursor=pointer]:
+                - /url: http://maps.google.com/?q=33.624166,-111.840377
+            - generic [ref=e144] [cursor=pointer]: 73 min 15 secs ago
+      - generic [ref=e145] [cursor=pointer]:
+        - img [ref=e147] [cursor=pointer]
+        - generic [ref=e149] [cursor=pointer]:
+          - generic [ref=e151] [cursor=pointer]:
+            - heading "Sales Car1" [level=5] [ref=e152] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Vehicle Is Off
+          - generic [ref=e154] [cursor=pointer]:
+            - generic [ref=e155] [cursor=pointer]:
+              - paragraph [ref=e156] [cursor=pointer]: 370 E Jackson St, Phoenix, AZ 85004
+              - link [ref=e157] [cursor=pointer]:
+                - /url: http://maps.google.com/?q=33.445327,-112.06907
+            - generic [ref=e158] [cursor=pointer]: 74 min 22 secs ago
+  - generic [ref=e159]:
+    - heading "List Of Devices" [level=2] [ref=e161]
+    - generic [ref=e164]:
+      - textbox "Search" [ref=e167]
+      - generic [ref=e169]:
+        - generic [ref=e170]: Show
+        - combobox "Show Devices" [ref=e171]:
+          - option "All" [selected]
+          - option "Only Assigned"
+          - option "Only Unassigned"
+        - generic [ref=e172]: Devices
+      - generic [ref=e174]:
+        - generic [ref=e175]: Show
+        - combobox "Show entries" [ref=e176]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e177]: entries
+      - button "Copy" [ref=e178] [cursor=pointer]
+      - button "Save file as" [ref=e180] [cursor=pointer]: Save file as
+    - table [ref=e183]:
+      - rowgroup [ref=e184]:
+        - row "No Devices to Display" [ref=e185]:
+          - cell "No Devices to Display" [ref=e186] [cursor=pointer]
+    - paragraph [ref=e188]: Showing 0 to 0 of 0 entries
+  - generic [ref=e192]:
+    - heading "Add/Edit Device" [level=2] [ref=e194]
+    - generic [ref=e197]:
+      - button "Add Device" [ref=e199] [cursor=pointer]
+      - button "Edit Device" [ref=e200] [cursor=pointer]
+    - generic [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]: "IMEI:"
+        - combobox [ref=e204]
+        - combobox "Search Available Devices" [ref=e207] [cursor=pointer]:
+          - generic [ref=e209] [cursor=pointer]: Search Available Devices
+      - generic [ref=e210]:
+        - generic [ref=e211]: "Device Name:"
+        - textbox "Device Name:" [ref=e212]
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - generic [ref=e216]: "Select Icon:"
+            - combobox "Select Icon:" [ref=e217]:
+              - option "All" [selected]
+              - option "Custom Icon"
+              - option "Cars"
+              - option "Motorbikes"
+              - option "Vans"
+              - option "Box Trucks"
+              - option "Tractors"
+              - option "Tractor Trailers"
+              - option "Trailers"
+              - option "Heavy"
+              - option "Markers"
+              - option "Special"
+          - button "Add Device" [ref=e218] [cursor=pointer]
+        - generic [ref=e219]:
+          - generic [ref=e221] [cursor=pointer]:
+            - radio "icon0.png" [checked] [ref=e222]
+            - img "icon0.png" [ref=e223] [cursor=pointer]
+          - generic [ref=e225] [cursor=pointer]:
+            - radio "icon1.png" [ref=e226]
+            - img "icon1.png" [ref=e227] [cursor=pointer]
+          - generic [ref=e229] [cursor=pointer]:
+            - radio "icon5.png" [ref=e230]
+            - img "icon5.png" [ref=e231] [cursor=pointer]
+          - generic [ref=e233] [cursor=pointer]:
+            - radio "icon6.png" [ref=e234]
+            - img "icon6.png" [ref=e235] [cursor=pointer]
+          - generic [ref=e237] [cursor=pointer]:
+            - radio "icon8.png" [ref=e238]
+            - img "icon8.png" [ref=e239] [cursor=pointer]
+          - generic [ref=e241] [cursor=pointer]:
+            - radio "icon9.png" [ref=e242]
+            - img "icon9.png" [ref=e243] [cursor=pointer]
+          - generic [ref=e245] [cursor=pointer]:
+            - radio "icon11.png" [ref=e246]
+            - img "icon11.png" [ref=e247] [cursor=pointer]
+          - generic [ref=e249] [cursor=pointer]:
+            - radio "icon15.png" [ref=e250]
+            - img "icon15.png" [ref=e251] [cursor=pointer]
+          - generic [ref=e253] [cursor=pointer]:
+            - radio "icon16.png" [ref=e254]
+            - img "icon16.png" [ref=e255] [cursor=pointer]
+          - generic [ref=e257] [cursor=pointer]:
+            - radio "icon18.png" [ref=e258]
+            - img "icon18.png" [ref=e259] [cursor=pointer]
+          - generic [ref=e261] [cursor=pointer]:
+            - radio "icon19.png" [ref=e262]
+            - img "icon19.png" [ref=e263] [cursor=pointer]
+          - generic [ref=e265] [cursor=pointer]:
+            - radio "icon30.png" [ref=e266]
+            - img "icon30.png" [ref=e267] [cursor=pointer]
+          - generic [ref=e269] [cursor=pointer]:
+            - radio "icon21.png" [ref=e270]
+            - img "icon21.png" [ref=e271] [cursor=pointer]
+          - generic [ref=e273] [cursor=pointer]:
+            - radio "icon22.png" [ref=e274]
+            - img "icon22.png" [ref=e275] [cursor=pointer]
+          - generic [ref=e277] [cursor=pointer]:
+            - radio "icon23.png" [ref=e278]
+            - img "icon23.png" [ref=e279] [cursor=pointer]
+          - generic [ref=e281] [cursor=pointer]:
+            - radio "icon17.png" [ref=e282]
+            - img "icon17.png" [ref=e283] [cursor=pointer]
+          - generic [ref=e285] [cursor=pointer]:
+            - radio "icon43.png" [ref=e286]
+            - img "icon43.png" [ref=e287] [cursor=pointer]
+          - generic [ref=e289] [cursor=pointer]:
+            - radio "icon44.png" [ref=e290]
+            - img "icon44.png" [ref=e291] [cursor=pointer]
+          - generic [ref=e293] [cursor=pointer]:
+            - radio "icon45.png" [ref=e294]
+            - img "icon45.png" [ref=e295] [cursor=pointer]
+          - generic [ref=e297] [cursor=pointer]:
+            - radio "icon64.png" [ref=e298]
+            - img "icon64.png" [ref=e299] [cursor=pointer]
+          - generic [ref=e301] [cursor=pointer]:
+            - radio "icon65.png" [ref=e302]
+            - img "icon65.png" [ref=e303] [cursor=pointer]
+          - generic [ref=e305] [cursor=pointer]:
+            - radio "icon66.png" [ref=e306]
+            - img "icon66.png" [ref=e307] [cursor=pointer]
+          - generic [ref=e309] [cursor=pointer]:
+            - radio "icon67.png" [ref=e310]
+            - img "icon67.png" [ref=e311] [cursor=pointer]
+          - generic [ref=e313] [cursor=pointer]:
+            - radio "icon20.png" [ref=e314]
+            - img "icon20.png" [ref=e315] [cursor=pointer]
+          - generic [ref=e317] [cursor=pointer]:
+            - radio "icon31.png" [ref=e318]
+            - img "icon31.png" [ref=e319] [cursor=pointer]
+          - generic [ref=e321] [cursor=pointer]:
+            - radio "icon32.png" [ref=e322]
+            - img "icon32.png" [ref=e323] [cursor=pointer]
+          - generic [ref=e325] [cursor=pointer]:
+            - radio "icon33.png" [ref=e326]
+            - img "icon33.png" [ref=e327] [cursor=pointer]
+          - generic [ref=e329] [cursor=pointer]:
+            - radio "icon34.png" [ref=e330]
+            - img "icon34.png" [ref=e331] [cursor=pointer]
+          - generic [ref=e333] [cursor=pointer]:
+            - radio "icon35.png" [ref=e334]
+            - img "icon35.png" [ref=e335] [cursor=pointer]
+          - generic [ref=e337] [cursor=pointer]:
+            - radio "icon36.png" [ref=e338]
+            - img "icon36.png" [ref=e339] [cursor=pointer]
+          - generic [ref=e341] [cursor=pointer]:
+            - radio "icon37.png" [ref=e342]
+            - img "icon37.png" [ref=e343] [cursor=pointer]
+          - generic [ref=e345] [cursor=pointer]:
+            - radio "icon38.png" [ref=e346]
+            - img "icon38.png" [ref=e347] [cursor=pointer]
+          - generic [ref=e349] [cursor=pointer]:
+            - radio "icon46.png" [ref=e350]
+            - img "icon46.png" [ref=e351] [cursor=pointer]
+          - generic [ref=e353] [cursor=pointer]:
+            - radio "icon47.png" [ref=e354]
+            - img "icon47.png" [ref=e355] [cursor=pointer]
+          - generic [ref=e357] [cursor=pointer]:
+            - radio "icon48.png" [ref=e358]
+            - img "icon48.png" [ref=e359] [cursor=pointer]
+          - generic [ref=e361] [cursor=pointer]:
+            - radio "icon49.png" [ref=e362]
+            - img "icon49.png" [ref=e363] [cursor=pointer]
+          - generic [ref=e365] [cursor=pointer]:
+            - radio "icon50.png" [ref=e366]
+            - img "icon50.png" [ref=e367] [cursor=pointer]
+          - generic [ref=e369] [cursor=pointer]:
+            - radio "icon51.png" [ref=e370]
+            - img "icon51.png" [ref=e371] [cursor=pointer]
+          - generic [ref=e373] [cursor=pointer]:
+            - radio "icon52.png" [ref=e374]
+            - img "icon52.png" [ref=e375] [cursor=pointer]
+          - generic [ref=e377] [cursor=pointer]:
+            - radio "icon13.png" [ref=e378]
+            - img "icon13.png" [ref=e379] [cursor=pointer]
+          - generic [ref=e381] [cursor=pointer]:
+            - radio "icon53.png" [ref=e382]
+            - img "icon53.png" [ref=e383] [cursor=pointer]
+          - generic [ref=e385] [cursor=pointer]:
+            - radio "icon54.png" [ref=e386]
+            - img "icon54.png" [ref=e387] [cursor=pointer]
+          - generic [ref=e389] [cursor=pointer]:
+            - radio "icon55.png" [ref=e390]
+            - img "icon55.png" [ref=e391] [cursor=pointer]
+          - generic [ref=e393] [cursor=pointer]:
+            - radio "icon56.png" [ref=e394]
+            - img "icon56.png" [ref=e395] [cursor=pointer]
+          - generic [ref=e397] [cursor=pointer]:
+            - radio "icon57.png" [ref=e398]
+            - img "icon57.png" [ref=e399] [cursor=pointer]
+          - generic [ref=e401] [cursor=pointer]:
+            - radio "icon58.png" [ref=e402]
+            - img "icon58.png" [ref=e403] [cursor=pointer]
+          - generic [ref=e405] [cursor=pointer]:
+            - radio "icon10.png" [ref=e406]
+            - img "icon10.png" [ref=e407] [cursor=pointer]
+          - generic [ref=e409] [cursor=pointer]:
+            - radio "icon59.png" [ref=e410]
+            - img "icon59.png" [ref=e411] [cursor=pointer]
+          - generic [ref=e413] [cursor=pointer]:
+            - radio "icon60.png" [ref=e414]
+            - img "icon60.png" [ref=e415] [cursor=pointer]
+          - generic [ref=e417] [cursor=pointer]:
+            - radio "icon61.png" [ref=e418]
+            - img "icon61.png" [ref=e419] [cursor=pointer]
+          - generic [ref=e421] [cursor=pointer]:
+            - radio "icon62.png" [ref=e422]
+            - img "icon62.png" [ref=e423] [cursor=pointer]
+          - generic [ref=e425] [cursor=pointer]:
+            - radio "icon63.png" [ref=e426]
+            - img "icon63.png" [ref=e427] [cursor=pointer]
+          - generic [ref=e429] [cursor=pointer]:
+            - radio "icon39.png" [ref=e430]
+            - img "icon39.png" [ref=e431] [cursor=pointer]
+          - generic [ref=e433] [cursor=pointer]:
+            - radio "icon40.png" [ref=e434]
+            - img "icon40.png" [ref=e435] [cursor=pointer]
+          - generic [ref=e437] [cursor=pointer]:
+            - radio "icon41.png" [ref=e438]
+            - img "icon41.png" [ref=e439] [cursor=pointer]
+          - generic [ref=e441] [cursor=pointer]:
+            - radio "icon42.png" [ref=e442]
+            - img "icon42.png" [ref=e443] [cursor=pointer]
+          - generic [ref=e445] [cursor=pointer]:
+            - radio "icon87.png" [ref=e446]
+            - img "icon87.png" [ref=e447] [cursor=pointer]
+          - generic [ref=e449] [cursor=pointer]:
+            - radio "icon88.png" [ref=e450]
+            - img "icon88.png" [ref=e451] [cursor=pointer]
+          - generic [ref=e453] [cursor=pointer]:
+            - radio "icon89.png" [ref=e454]
+            - img "icon89.png" [ref=e455] [cursor=pointer]
+          - generic [ref=e457] [cursor=pointer]:
+            - radio "icon90.png" [ref=e458]
+            - img "icon90.png" [ref=e459] [cursor=pointer]
+          - generic [ref=e461] [cursor=pointer]:
+            - radio "icon91.png" [ref=e462]
+            - img "icon91.png" [ref=e463] [cursor=pointer]
+          - generic [ref=e465] [cursor=pointer]:
+            - radio "icon92.png" [ref=e466]
+            - img "icon92.png" [ref=e467] [cursor=pointer]
+          - generic [ref=e469] [cursor=pointer]:
+            - radio "icon93.png" [ref=e470]
+            - img "icon93.png" [ref=e471] [cursor=pointer]
+          - generic [ref=e473] [cursor=pointer]:
+            - radio "icon94.png" [ref=e474]
+            - img "icon94.png" [ref=e475] [cursor=pointer]
+          - generic [ref=e477] [cursor=pointer]:
+            - radio "icon95.png" [ref=e478]
+            - img "icon95.png" [ref=e479] [cursor=pointer]
+          - generic [ref=e481] [cursor=pointer]:
+            - radio "icon96.png" [ref=e482]
+            - img "icon96.png" [ref=e483] [cursor=pointer]
+          - generic [ref=e485] [cursor=pointer]:
+            - radio "icon2.png" [ref=e486]
+            - img "icon2.png" [ref=e487] [cursor=pointer]
+          - generic [ref=e489] [cursor=pointer]:
+            - radio "icon4.png" [ref=e490]
+            - img "icon4.png" [ref=e491] [cursor=pointer]
+          - generic [ref=e493] [cursor=pointer]:
+            - radio "icon7.png" [ref=e494]
+            - img "icon7.png" [ref=e495] [cursor=pointer]
+          - generic [ref=e497] [cursor=pointer]:
+            - radio "icon12.png" [ref=e498]
+            - img "icon12.png" [ref=e499] [cursor=pointer]
+          - generic [ref=e501] [cursor=pointer]:
+            - radio "icon14.png" [ref=e502]
+            - img "icon14.png" [ref=e503] [cursor=pointer]
+          - generic [ref=e505] [cursor=pointer]:
+            - radio "icon82.png" [ref=e506]
+            - img "icon82.png" [ref=e507] [cursor=pointer]
+          - generic [ref=e509] [cursor=pointer]:
+            - radio "icon83.png" [ref=e510]
+            - img "icon83.png" [ref=e511] [cursor=pointer]
+          - generic [ref=e513] [cursor=pointer]:
+            - radio "icon84.png" [ref=e514]
+            - img "icon84.png" [ref=e515] [cursor=pointer]
+          - generic [ref=e517] [cursor=pointer]:
+            - radio "icon85.png" [ref=e518]
+            - img "icon85.png" [ref=e519] [cursor=pointer]
+          - generic [ref=e521] [cursor=pointer]:
+            - radio "icon86.png" [ref=e522]
+            - img "icon86.png" [ref=e523] [cursor=pointer]
+          - generic [ref=e525] [cursor=pointer]:
+            - radio "icon97.png" [ref=e526]
+            - img "icon97.png" [ref=e527] [cursor=pointer]
+          - generic [ref=e529] [cursor=pointer]:
+            - radio "icon98.png" [ref=e530]
+            - img "icon98.png" [ref=e531] [cursor=pointer]
+          - generic [ref=e533] [cursor=pointer]:
+            - radio "icon99.png" [ref=e534]
+            - img "icon99.png" [ref=e535] [cursor=pointer]
+          - generic [ref=e537] [cursor=pointer]:
+            - radio "icon100.png" [ref=e538]
+            - img "icon100.png" [ref=e539] [cursor=pointer]
+          - generic [ref=e541] [cursor=pointer]:
+            - radio "icon101.png" [ref=e542]
+            - img "icon101.png" [ref=e543] [cursor=pointer]
+          - generic [ref=e545] [cursor=pointer]:
+            - radio "icon102.png" [ref=e546]
+            - img "icon102.png" [ref=e547] [cursor=pointer]
+          - generic [ref=e549] [cursor=pointer]:
+            - radio "icon103.png" [ref=e550]
+            - img "icon103.png" [ref=e551] [cursor=pointer]
+          - generic [ref=e553] [cursor=pointer]:
+            - radio "icon104.png" [ref=e554]
+            - img "icon104.png" [ref=e555] [cursor=pointer]
+          - generic [ref=e557] [cursor=pointer]:
+            - radio "icon105.png" [ref=e558]
+            - img "icon105.png" [ref=e559] [cursor=pointer]
+          - generic [ref=e561] [cursor=pointer]:
+            - radio "icon106.png" [ref=e562]
+            - img "icon106.png" [ref=e563] [cursor=pointer]
+          - generic [ref=e565] [cursor=pointer]:
+            - radio "icon107.png" [ref=e566]
+            - img "icon107.png" [ref=e567] [cursor=pointer]
+          - generic [ref=e569] [cursor=pointer]:
+            - radio "icon108.png" [ref=e570]
+            - img "icon108.png" [ref=e571] [cursor=pointer]
+          - generic [ref=e573] [cursor=pointer]:
+            - radio "icon109.png" [ref=e574]
+            - img "icon109.png" [ref=e575] [cursor=pointer]
+          - generic [ref=e577] [cursor=pointer]:
+            - radio "icon110.png" [ref=e578]
+            - img "icon110.png" [ref=e579] [cursor=pointer]
+          - generic [ref=e581] [cursor=pointer]:
+            - radio "icon111.png" [ref=e582]
+            - img "icon111.png" [ref=e583] [cursor=pointer]
+          - generic [ref=e585] [cursor=pointer]:
+            - radio "icon112.png" [ref=e586]
+            - img "icon112.png" [ref=e587] [cursor=pointer]
+          - generic [ref=e589] [cursor=pointer]:
+            - radio "icon113.png" [ref=e590]
+            - img "icon113.png" [ref=e591] [cursor=pointer]
+          - generic [ref=e593] [cursor=pointer]:
+            - radio "icon114.png" [ref=e594]
+            - img "icon114.png" [ref=e595] [cursor=pointer]
+          - generic [ref=e597] [cursor=pointer]:
+            - radio "icon115.png" [ref=e598]
+            - img "icon115.png" [ref=e599] [cursor=pointer]
+          - generic [ref=e601] [cursor=pointer]:
+            - radio "icon116.png" [ref=e602]
+            - img "icon116.png" [ref=e603] [cursor=pointer]
+          - generic [ref=e605] [cursor=pointer]:
+            - radio "icon117.png" [ref=e606]
+            - img "icon117.png" [ref=e607] [cursor=pointer]
+          - generic [ref=e609] [cursor=pointer]:
+            - radio "icon118.png" [ref=e610]
+            - img "icon118.png" [ref=e611] [cursor=pointer]
+          - generic [ref=e613] [cursor=pointer]:
+            - radio "icon119.png" [ref=e614]
+            - img "icon119.png" [ref=e615] [cursor=pointer]
+          - generic [ref=e617] [cursor=pointer]:
+            - radio "icon120.png" [ref=e618]
+            - img "icon120.png" [ref=e619] [cursor=pointer]
+          - generic [ref=e621] [cursor=pointer]:
+            - radio "icon121.png" [ref=e622]
+            - img "icon121.png" [ref=e623] [cursor=pointer]
+          - generic [ref=e625] [cursor=pointer]:
+            - radio "icon122.png" [ref=e626]
+            - img "icon122.png" [ref=e627] [cursor=pointer]
+          - generic [ref=e629] [cursor=pointer]:
+            - radio "icon123.png" [ref=e630]
+            - img "icon123.png" [ref=e631] [cursor=pointer]
+          - generic [ref=e633] [cursor=pointer]:
+            - radio "icon124.png" [ref=e634]
+            - img "icon124.png" [ref=e635] [cursor=pointer]
+          - generic [ref=e637] [cursor=pointer]:
+            - radio "icon125.png" [ref=e638]
+            - img "icon125.png" [ref=e639] [cursor=pointer]
+          - generic [ref=e641] [cursor=pointer]:
+            - radio "icon126.png" [ref=e642]
+            - img "icon126.png" [ref=e643] [cursor=pointer]
+          - generic [ref=e645] [cursor=pointer]:
+            - radio "icon127.png" [ref=e646]
+            - img "icon127.png" [ref=e647] [cursor=pointer]
+          - generic [ref=e649] [cursor=pointer]:
+            - radio "icon128.png" [ref=e650]
+            - img "icon128.png" [ref=e651] [cursor=pointer]
+          - generic [ref=e653] [cursor=pointer]:
+            - radio "icon129.png" [ref=e654]
+            - img "icon129.png" [ref=e655] [cursor=pointer]
+          - generic [ref=e657] [cursor=pointer]:
+            - radio "icon130.png" [ref=e658]
+            - img "icon130.png" [ref=e659] [cursor=pointer]
+          - generic [ref=e661] [cursor=pointer]:
+            - radio "icon131.png" [ref=e662]
+            - img "icon131.png" [ref=e663] [cursor=pointer]
+          - generic [ref=e665] [cursor=pointer]:
+            - radio "icon132.png" [ref=e666]
+            - img "icon132.png" [ref=e667] [cursor=pointer]
+          - generic [ref=e669] [cursor=pointer]:
+            - radio "icon0.png" [ref=e670]
+            - img "icon0.png" [ref=e671] [cursor=pointer]
+          - generic [ref=e673] [cursor=pointer]:
+            - radio "icon24.png" [ref=e674]
+            - img "icon24.png" [ref=e675] [cursor=pointer]
+          - generic [ref=e677] [cursor=pointer]:
+            - radio "icon25.png" [ref=e678]
+            - img "icon25.png" [ref=e679] [cursor=pointer]
+          - generic [ref=e681] [cursor=pointer]:
+            - radio "icon26.png" [ref=e682]
+            - img "icon26.png" [ref=e683] [cursor=pointer]
+          - generic [ref=e685] [cursor=pointer]:
+            - radio "icon27.png" [ref=e686]
+            - img "icon27.png" [ref=e687] [cursor=pointer]
+          - generic [ref=e689] [cursor=pointer]:
+            - radio "icon28.png" [ref=e690]
+            - img "icon28.png" [ref=e691] [cursor=pointer]
+          - generic [ref=e693] [cursor=pointer]:
+            - radio "icon29.png" [ref=e694]
+            - img "icon29.png" [ref=e695] [cursor=pointer]
+          - generic [ref=e697] [cursor=pointer]:
+            - radio "icon68.png" [ref=e698]
+            - img "icon68.png" [ref=e699] [cursor=pointer]
+          - generic [ref=e701] [cursor=pointer]:
+            - radio "icon69.png" [ref=e702]
+            - img "icon69.png" [ref=e703] [cursor=pointer]
+          - generic [ref=e705] [cursor=pointer]:
+            - radio "icon70.png" [ref=e706]
+            - img "icon70.png" [ref=e707] [cursor=pointer]
+          - generic [ref=e709] [cursor=pointer]:
+            - radio "icon71.png" [ref=e710]
+            - img "icon71.png" [ref=e711] [cursor=pointer]
+          - generic [ref=e713] [cursor=pointer]:
+            - radio "icon72.png" [ref=e714]
+            - img "icon72.png" [ref=e715] [cursor=pointer]
+          - generic [ref=e717] [cursor=pointer]:
+            - radio "icon73.png" [ref=e718]
+            - img "icon73.png" [ref=e719] [cursor=pointer]
+          - generic [ref=e721] [cursor=pointer]:
+            - radio "icon74.png" [ref=e722]
+            - img "icon74.png" [ref=e723] [cursor=pointer]
+          - generic [ref=e725] [cursor=pointer]:
+            - radio "icon75.png" [ref=e726]
+            - img "icon75.png" [ref=e727] [cursor=pointer]
+          - generic [ref=e729] [cursor=pointer]:
+            - radio "icon76.png" [ref=e730]
+            - img "icon76.png" [ref=e731] [cursor=pointer]
+          - generic [ref=e733] [cursor=pointer]:
+            - radio "icon77.png" [ref=e734]
+            - img "icon77.png" [ref=e735] [cursor=pointer]
+          - generic [ref=e737] [cursor=pointer]:
+            - radio "icon78.png" [ref=e738]
+            - img "icon78.png" [ref=e739] [cursor=pointer]
+          - generic [ref=e741] [cursor=pointer]:
+            - radio "icon79.png" [ref=e742]
+            - img "icon79.png" [ref=e743] [cursor=pointer]
+          - generic [ref=e745] [cursor=pointer]:
+            - radio "icon80.png" [ref=e746]
+            - img "icon80.png" [ref=e747] [cursor=pointer]
+          - generic [ref=e749] [cursor=pointer]:
+            - radio "icon81.png" [ref=e750]
+            - img "icon81.png" [ref=e751] [cursor=pointer]
+      - button "Upload Icon" [ref=e753] [cursor=pointer]
+    - text: 
+  - generic [ref=e754]:
+    - heading "Change Password" [level=2] [ref=e756]
+    - list [ref=e759]:
+      - listitem [ref=e760]: None of the password fields should be blank.
+      - listitem [ref=e761]: New password and confirm new password should be the same.
+      - listitem [ref=e762]: Passwords should not contain &,#, or $ symbols.
+    - generic [ref=e763]:
+      - generic [ref=e764]:
+        - generic [ref=e765]: "Old Password:"
+        - textbox "Old Password:" [ref=e766]
+      - generic [ref=e767]:
+        - generic [ref=e768]: "New Password:"
+        - textbox "New Password:" [ref=e769]
+      - generic [ref=e770]:
+        - generic [ref=e771]: "Confirm New Password:"
+        - textbox "Confirm New Password:" [ref=e772]
+    - button "Submit" [ref=e774] [cursor=pointer]
+  - generic [ref=e775]:
+    - heading "Change Timezone" [level=2] [ref=e777]
+    - generic [ref=e780]:
+      - paragraph
+      - list [ref=e781]:
+        - listitem [ref=e782]: For EDT, select GMT-4.
+        - listitem [ref=e783]: For EST or CDT, select GMT-5.
+        - listitem [ref=e784]: For CST or MDT, select GMT-6.
+        - listitem [ref=e785]: For MST or PDT, select GMT-7.
+        - listitem [ref=e786]: For PST, select GMT-8.
+    - generic [ref=e787]:
+      - generic [ref=e788]:
+        - radio "GMT -4" [ref=e789]
+        - text: GMT -4
+      - generic [ref=e790]:
+        - radio "GMT -5" [ref=e791]
+        - text: GMT -5
+      - generic [ref=e792]:
+        - radio "GMT -6" [ref=e793]
+        - text: GMT -6
+      - generic [ref=e794]:
+        - radio "GMT -7" [ref=e795]
+        - text: GMT -7
+      - generic [ref=e796]:
+        - radio "GMT -8" [checked] [ref=e797]
+        - text: GMT -8
+      - generic [ref=e798]:
+        - radio "GMT -9" [ref=e799]
+        - text: GMT -9
+      - generic [ref=e800]:
+        - radio "GMT -10" [ref=e801]
+        - text: GMT -10
+      - generic [ref=e802]:
+        - radio "GMT -11" [ref=e803]
+        - text: GMT -11
+    - button "Submit" [ref=e805] [cursor=pointer]
+  - generic [ref=e806]:
+    - generic [ref=e807]:
+      - heading " View/Edit Users" [level=2] [ref=e808]:
+        - generic [ref=e809]: 
+        - text: View/Edit Users
+      - paragraph [ref=e810]: Manage subuser accounts and permissions
+    - generic [ref=e813]:
+      - generic [ref=e814]:
+        - heading " Subusers" [level=3] [ref=e816]:
+          - generic [ref=e817]: 
+          - text: Subusers
+        - generic [ref=e819]:
+          - generic [ref=e820]: 
+          - textbox "Search users..." [ref=e821]
+        - generic [ref=e822]:
+          - generic [ref=e823] [cursor=pointer]:
+            - generic [ref=e824] [cursor=pointer]: P
+            - generic [ref=e825] [cursor=pointer]:
+              - generic [ref=e826] [cursor=pointer]: paq1
+              - generic [ref=e827] [cursor=pointer]: paq1@gmail.com
+          - generic [ref=e828] [cursor=pointer]:
+            - generic [ref=e829] [cursor=pointer]: A
+            - generic [ref=e830] [cursor=pointer]:
+              - generic [ref=e831] [cursor=pointer]: arun77
+              - generic [ref=e832] [cursor=pointer]: arun.r@sievanetworks2.com
+          - generic [ref=e833] [cursor=pointer]:
+            - generic [ref=e834] [cursor=pointer]: D
+            - generic [ref=e835] [cursor=pointer]:
+              - generic [ref=e836] [cursor=pointer]: d123456
+              - generic [ref=e837] [cursor=pointer]: d@gmail.com
+          - generic [ref=e838] [cursor=pointer]:
+            - generic [ref=e839] [cursor=pointer]: K
+            - generic [ref=e840] [cursor=pointer]:
+              - generic [ref=e841] [cursor=pointer]: kilay
+              - generic [ref=e842] [cursor=pointer]: kilay@gmail.com
+          - generic [ref=e843] [cursor=pointer]:
+            - generic [ref=e844] [cursor=pointer]: J
+            - generic [ref=e845] [cursor=pointer]:
+              - generic [ref=e846] [cursor=pointer]: justin17
+              - generic [ref=e847] [cursor=pointer]: Jusjohn@gmail.com
+          - generic [ref=e848] [cursor=pointer]:
+            - generic [ref=e849] [cursor=pointer]: P
+            - generic [ref=e850] [cursor=pointer]:
+              - generic [ref=e851] [cursor=pointer]: punamgava
+              - generic [ref=e852] [cursor=pointer]: punam.gavali@sievanetworks2.com
+          - generic [ref=e853] [cursor=pointer]:
+            - generic [ref=e854] [cursor=pointer]: P
+            - generic [ref=e855] [cursor=pointer]:
+              - generic [ref=e856] [cursor=pointer]: punamtest1
+              - generic [ref=e857] [cursor=pointer]: punam.gavali@sievanetworks2.com
+          - generic [ref=e858] [cursor=pointer]:
+            - generic [ref=e859] [cursor=pointer]: D
+            - generic [ref=e860] [cursor=pointer]:
+              - generic [ref=e861] [cursor=pointer]: d112233
+              - generic [ref=e862] [cursor=pointer]: d11@gmail.com
+          - generic [ref=e863] [cursor=pointer]:
+            - generic [ref=e864] [cursor=pointer]: T
+            - generic [ref=e865] [cursor=pointer]:
+              - generic [ref=e866] [cursor=pointer]: testDD123
+              - generic [ref=e867] [cursor=pointer]: debjyoti@sievanetworks2.com
+          - generic [ref=e868] [cursor=pointer]:
+            - generic [ref=e869] [cursor=pointer]: D
+            - generic [ref=e870] [cursor=pointer]:
+              - generic [ref=e871] [cursor=pointer]: deb4567
+              - generic [ref=e872] [cursor=pointer]: testDD@gmail.com
+          - generic [ref=e873] [cursor=pointer]:
+            - generic [ref=e874] [cursor=pointer]: A
+            - generic [ref=e875] [cursor=pointer]:
+              - generic [ref=e876] [cursor=pointer]: AutomatedUsername2
+              - generic [ref=e877] [cursor=pointer]: testingAuto@gmail.com
+          - generic [ref=e878] [cursor=pointer]:
+            - generic [ref=e879] [cursor=pointer]: A
+            - generic [ref=e880] [cursor=pointer]:
+              - generic [ref=e881] [cursor=pointer]: AutoUser_1764262677836
+              - generic [ref=e882] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e883] [cursor=pointer]:
+            - generic [ref=e884] [cursor=pointer]: E
+            - generic [ref=e885] [cursor=pointer]:
+              - generic [ref=e886] [cursor=pointer]: EditTest_1764263062066
+              - generic [ref=e887] [cursor=pointer]: edituser@test.com
+          - generic [ref=e888] [cursor=pointer]:
+            - generic [ref=e889] [cursor=pointer]: E
+            - generic [ref=e890] [cursor=pointer]:
+              - generic [ref=e891] [cursor=pointer]: EditTest_1764263401302
+              - generic [ref=e892] [cursor=pointer]: edituser@test.com
+          - generic [ref=e893] [cursor=pointer]:
+            - generic [ref=e894] [cursor=pointer]: A
+            - generic [ref=e895] [cursor=pointer]:
+              - generic [ref=e896] [cursor=pointer]: AutoUser_1764264353497
+              - generic [ref=e897] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e898] [cursor=pointer]:
+            - generic [ref=e899] [cursor=pointer]: E
+            - generic [ref=e900] [cursor=pointer]:
+              - generic [ref=e901] [cursor=pointer]: EditTest_1764264521671
+              - generic [ref=e902] [cursor=pointer]: edituser@test.com
+          - generic [ref=e903] [cursor=pointer]:
+            - generic [ref=e904] [cursor=pointer]: E
+            - generic [ref=e905] [cursor=pointer]:
+              - generic [ref=e906] [cursor=pointer]: EditTest_1764264628731
+              - generic [ref=e907] [cursor=pointer]: edituser@test.com
+          - generic [ref=e908] [cursor=pointer]:
+            - generic [ref=e909] [cursor=pointer]: A
+            - generic [ref=e910] [cursor=pointer]:
+              - generic [ref=e911] [cursor=pointer]: AutoUser_1764266870703
+              - generic [ref=e912] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e913] [cursor=pointer]:
+            - generic [ref=e914] [cursor=pointer]: E
+            - generic [ref=e915] [cursor=pointer]:
+              - generic [ref=e916] [cursor=pointer]: EditTest_1764267132415
+              - generic [ref=e917] [cursor=pointer]: edituser@test.com
+          - generic [ref=e918] [cursor=pointer]:
+            - generic [ref=e919] [cursor=pointer]: E
+            - generic [ref=e920] [cursor=pointer]:
+              - generic [ref=e921] [cursor=pointer]: EditTest_1764267132459
+              - generic [ref=e922] [cursor=pointer]: edituser@test.com
+          - generic [ref=e923] [cursor=pointer]:
+            - generic [ref=e924] [cursor=pointer]: E
+            - generic [ref=e925] [cursor=pointer]:
+              - generic [ref=e926] [cursor=pointer]: EditTest_1764267462873
+              - generic [ref=e927] [cursor=pointer]: edituser@test.com
+          - generic [ref=e928] [cursor=pointer]:
+            - generic [ref=e929] [cursor=pointer]: D
+            - generic [ref=e930] [cursor=pointer]:
+              - generic [ref=e931] [cursor=pointer]: DeleteTest_1764267527369
+              - generic [ref=e932] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e933] [cursor=pointer]:
+            - generic [ref=e934] [cursor=pointer]: R
+            - generic [ref=e935] [cursor=pointer]:
+              - generic [ref=e936] [cursor=pointer]: Restricted_1764267559118
+              - generic [ref=e937] [cursor=pointer]: restricted@test.com
+          - generic [ref=e938] [cursor=pointer]:
+            - generic [ref=e939] [cursor=pointer]: A
+            - generic [ref=e940] [cursor=pointer]:
+              - generic [ref=e941] [cursor=pointer]: AutoUser_1764268626488
+              - generic [ref=e942] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e943] [cursor=pointer]:
+            - generic [ref=e944] [cursor=pointer]: E
+            - generic [ref=e945] [cursor=pointer]:
+              - generic [ref=e946] [cursor=pointer]: EditTest_1764268953067
+              - generic [ref=e947] [cursor=pointer]: edituser@test.com
+          - generic [ref=e948] [cursor=pointer]:
+            - generic [ref=e949] [cursor=pointer]: E
+            - generic [ref=e950] [cursor=pointer]:
+              - generic [ref=e951] [cursor=pointer]: EditTest_1764269013187
+              - generic [ref=e952] [cursor=pointer]: edituser@test.com
+          - generic [ref=e953] [cursor=pointer]:
+            - generic [ref=e954] [cursor=pointer]: E
+            - generic [ref=e955] [cursor=pointer]:
+              - generic [ref=e956] [cursor=pointer]: EditTest_1764269066443
+              - generic [ref=e957] [cursor=pointer]: edituser@test.com
+          - generic [ref=e958] [cursor=pointer]:
+            - generic [ref=e959] [cursor=pointer]: D
+            - generic [ref=e960] [cursor=pointer]:
+              - generic [ref=e961] [cursor=pointer]: DeleteTest_1764269192636
+              - generic [ref=e962] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e963] [cursor=pointer]:
+            - generic [ref=e964] [cursor=pointer]: R
+            - generic [ref=e965] [cursor=pointer]:
+              - generic [ref=e966] [cursor=pointer]: Restricted_1764269322616
+              - generic [ref=e967] [cursor=pointer]: restricted@test.com
+          - generic [ref=e968] [cursor=pointer]:
+            - generic [ref=e969] [cursor=pointer]: A
+            - generic [ref=e970] [cursor=pointer]:
+              - generic [ref=e971] [cursor=pointer]: AutoUser_1764269696346
+              - generic [ref=e972] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e973] [cursor=pointer]:
+            - generic [ref=e974] [cursor=pointer]: E
+            - generic [ref=e975] [cursor=pointer]:
+              - generic [ref=e976] [cursor=pointer]: EditTest_1764269814040
+              - generic [ref=e977] [cursor=pointer]: edituser@test.com
+          - generic [ref=e978] [cursor=pointer]:
+            - generic [ref=e979] [cursor=pointer]: E
+            - generic [ref=e980] [cursor=pointer]:
+              - generic [ref=e981] [cursor=pointer]: EditTest_1764269890009
+              - generic [ref=e982] [cursor=pointer]: edituser@test.com
+          - generic [ref=e983] [cursor=pointer]:
+            - generic [ref=e984] [cursor=pointer]: E
+            - generic [ref=e985] [cursor=pointer]:
+              - generic [ref=e986] [cursor=pointer]: EditTest_1764269966291
+              - generic [ref=e987] [cursor=pointer]: edituser@test.com
+          - generic [ref=e988] [cursor=pointer]:
+            - generic [ref=e989] [cursor=pointer]: D
+            - generic [ref=e990] [cursor=pointer]:
+              - generic [ref=e991] [cursor=pointer]: DeleteTest_1764270126028
+              - generic [ref=e992] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e993] [cursor=pointer]:
+            - generic [ref=e994] [cursor=pointer]: R
+            - generic [ref=e995] [cursor=pointer]:
+              - generic [ref=e996] [cursor=pointer]: Restricted_1764270194454
+              - generic [ref=e997] [cursor=pointer]: restricted@test.com
+          - generic [ref=e998] [cursor=pointer]:
+            - generic [ref=e999] [cursor=pointer]: A
+            - generic [ref=e1000] [cursor=pointer]:
+              - generic [ref=e1001] [cursor=pointer]: AutoUser_1764270496429
+              - generic [ref=e1002] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1003] [cursor=pointer]:
+            - generic [ref=e1004] [cursor=pointer]: E
+            - generic [ref=e1005] [cursor=pointer]:
+              - generic [ref=e1006] [cursor=pointer]: EditTest_1764270616659
+              - generic [ref=e1007] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1008] [cursor=pointer]:
+            - generic [ref=e1009] [cursor=pointer]: E
+            - generic [ref=e1010] [cursor=pointer]:
+              - generic [ref=e1011] [cursor=pointer]: EditTest_1764270685064
+              - generic [ref=e1012] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1013] [cursor=pointer]:
+            - generic [ref=e1014] [cursor=pointer]: A
+            - generic [ref=e1015] [cursor=pointer]:
+              - generic [ref=e1016] [cursor=pointer]: AutoUser_1764270972418
+              - generic [ref=e1017] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1018] [cursor=pointer]:
+            - generic [ref=e1019] [cursor=pointer]: E
+            - generic [ref=e1020] [cursor=pointer]:
+              - generic [ref=e1021] [cursor=pointer]: EditTest_1764271081405
+              - generic [ref=e1022] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1023] [cursor=pointer]:
+            - generic [ref=e1024] [cursor=pointer]: E
+            - generic [ref=e1025] [cursor=pointer]:
+              - generic [ref=e1026] [cursor=pointer]: EditTest_1764271152500
+              - generic [ref=e1027] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1028] [cursor=pointer]:
+            - generic [ref=e1029] [cursor=pointer]: A
+            - generic [ref=e1030] [cursor=pointer]:
+              - generic [ref=e1031] [cursor=pointer]: AutoUser_1764271566786
+              - generic [ref=e1032] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1033] [cursor=pointer]:
+            - generic [ref=e1034] [cursor=pointer]: E
+            - generic [ref=e1035] [cursor=pointer]:
+              - generic [ref=e1036] [cursor=pointer]: EditTest_1764271691111
+              - generic [ref=e1037] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1038] [cursor=pointer]:
+            - generic [ref=e1039] [cursor=pointer]: E
+            - generic [ref=e1040] [cursor=pointer]:
+              - generic [ref=e1041] [cursor=pointer]: EditTest_1764271761783
+              - generic [ref=e1042] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1043] [cursor=pointer]:
+            - generic [ref=e1044] [cursor=pointer]: E
+            - generic [ref=e1045] [cursor=pointer]:
+              - generic [ref=e1046] [cursor=pointer]: EditTest_1764271866751
+              - generic [ref=e1047] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1048] [cursor=pointer]:
+            - generic [ref=e1049] [cursor=pointer]: D
+            - generic [ref=e1050] [cursor=pointer]:
+              - generic [ref=e1051] [cursor=pointer]: DeleteTest_1764272034576
+              - generic [ref=e1052] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e1053] [cursor=pointer]:
+            - generic [ref=e1054] [cursor=pointer]: R
+            - generic [ref=e1055] [cursor=pointer]:
+              - generic [ref=e1056] [cursor=pointer]: Restricted_1764272142903
+              - generic [ref=e1057] [cursor=pointer]: restricted@test.com
+          - generic [ref=e1058] [cursor=pointer]:
+            - generic [ref=e1059] [cursor=pointer]: A
+            - generic [ref=e1060] [cursor=pointer]:
+              - generic [ref=e1061] [cursor=pointer]: AutoUser_1764272460259
+              - generic [ref=e1062] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1063] [cursor=pointer]:
+            - generic [ref=e1064] [cursor=pointer]: E
+            - generic [ref=e1065] [cursor=pointer]:
+              - generic [ref=e1066] [cursor=pointer]: EditTest_1764272578334
+              - generic [ref=e1067] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1068] [cursor=pointer]:
+            - generic [ref=e1069] [cursor=pointer]: E
+            - generic [ref=e1070] [cursor=pointer]:
+              - generic [ref=e1071] [cursor=pointer]: EditTest_1764272646858
+              - generic [ref=e1072] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1073] [cursor=pointer]:
+            - generic [ref=e1074] [cursor=pointer]: A
+            - generic [ref=e1075] [cursor=pointer]:
+              - generic [ref=e1076] [cursor=pointer]: AutoUser_1764273579826
+              - generic [ref=e1077] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1078] [cursor=pointer]:
+            - generic [ref=e1079] [cursor=pointer]: E
+            - generic [ref=e1080] [cursor=pointer]:
+              - generic [ref=e1081] [cursor=pointer]: EditTest_1764273725947
+              - generic [ref=e1082] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1083] [cursor=pointer]:
+            - generic [ref=e1084] [cursor=pointer]: E
+            - generic [ref=e1085] [cursor=pointer]:
+              - generic [ref=e1086] [cursor=pointer]: EditTest_1764273807193
+              - generic [ref=e1087] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1088] [cursor=pointer]:
+            - generic [ref=e1089] [cursor=pointer]: E
+            - generic [ref=e1090] [cursor=pointer]:
+              - generic [ref=e1091] [cursor=pointer]: EditTest_1764273893174
+              - generic [ref=e1092] [cursor=pointer]: edituser@test.com
+        - button " Add New User" [ref=e1094] [cursor=pointer]:
+          - generic [ref=e1095] [cursor=pointer]: 
+          - text: Add New User
+      - generic [ref=e1096]:
+        - generic [ref=e1098]:
+          - generic [ref=e1099]:
+            - generic [ref=e1100]: Select a User
+            - generic [ref=e1101]: Choose a user from the list to view details
+          - generic:  
+        - generic [ref=e1102]:
+          - generic [ref=e1103]:
+            - generic [ref=e1104]: 
+            - heading "No User Selected" [level=3] [ref=e1105]
+            - paragraph [ref=e1106]: Select a user from the list to view and edit their details
+          - text:         
+  - generic [ref=e1108]:
+    - heading "Subgroups " [level=2] [ref=e1110]:
+      - text: Subgroups
+      - generic [ref=e1111] [cursor=pointer]: 
+    - generic [ref=e1114]:
+      - generic [ref=e1115]:
+        - textbox "Search" [ref=e1118]
+        - button "Add" [ref=e1119] [cursor=pointer]:
+          - generic [ref=e1121] [cursor=pointer]: Add
+      - generic [ref=e1122]:
+        - generic [ref=e1123] [cursor=pointer]:
+          - heading "DDtest2244" [level=3] [ref=e1125] [cursor=pointer]
+          - generic [ref=e1126] [cursor=pointer]:
+            - button [ref=e1127] [cursor=pointer]
+            - button [ref=e1129] [cursor=pointer]
+        - generic [ref=e1131] [cursor=pointer]:
+          - heading "DeleteMe_1764427498019" [level=3] [ref=e1133] [cursor=pointer]
+          - generic [ref=e1134] [cursor=pointer]:
+            - button [ref=e1135] [cursor=pointer]
+            - button [ref=e1137] [cursor=pointer]
+        - generic [ref=e1139] [cursor=pointer]:
+          - heading "DeleteMe_1764442063362" [level=3] [ref=e1141] [cursor=pointer]
+          - generic [ref=e1142] [cursor=pointer]:
+            - button [ref=e1143] [cursor=pointer]
+            - button [ref=e1145] [cursor=pointer]
+        - generic [ref=e1147] [cursor=pointer]:
+          - heading "DeleteMe_1764703765468" [level=3] [ref=e1149] [cursor=pointer]
+          - generic [ref=e1150] [cursor=pointer]:
+            - button [ref=e1151] [cursor=pointer]
+            - button [ref=e1153] [cursor=pointer]
+        - generic [ref=e1155] [cursor=pointer]:
+          - heading "DeleteMe_1764773177779" [level=3] [ref=e1157] [cursor=pointer]
+          - generic [ref=e1158] [cursor=pointer]:
+            - button [ref=e1159] [cursor=pointer]
+            - button [ref=e1161] [cursor=pointer]
+        - generic [ref=e1163] [cursor=pointer]:
+          - heading "DeleteMe_1764799671818" [level=3] [ref=e1165] [cursor=pointer]
+          - generic [ref=e1166] [cursor=pointer]:
+            - button [ref=e1167] [cursor=pointer]
+            - button [ref=e1169] [cursor=pointer]
+        - generic [ref=e1171] [cursor=pointer]:
+          - heading "DeleteMe_1764868139771" [level=3] [ref=e1173] [cursor=pointer]
+          - generic [ref=e1174] [cursor=pointer]:
+            - button [ref=e1175] [cursor=pointer]
+            - button [ref=e1177] [cursor=pointer]
+        - generic [ref=e1179] [cursor=pointer]:
+          - heading "DeleteMe_1764887137011" [level=3] [ref=e1181] [cursor=pointer]
+          - generic [ref=e1182] [cursor=pointer]:
+            - button [ref=e1183] [cursor=pointer]
+            - button [ref=e1185] [cursor=pointer]
+        - generic [ref=e1187] [cursor=pointer]:
+          - heading "DeleteMe_1765182196904" [level=3] [ref=e1189] [cursor=pointer]
+          - generic [ref=e1190] [cursor=pointer]:
+            - button [ref=e1191] [cursor=pointer]
+            - button [ref=e1193] [cursor=pointer]
+        - generic [ref=e1195] [cursor=pointer]:
+          - heading "DeleteMe_1765294237022" [level=3] [ref=e1197] [cursor=pointer]
+          - generic [ref=e1198] [cursor=pointer]:
+            - button [ref=e1199] [cursor=pointer]
+            - button [ref=e1201] [cursor=pointer]
+        - generic [ref=e1203] [cursor=pointer]:
+          - heading "Subhash" [level=3] [ref=e1205] [cursor=pointer]
+          - generic [ref=e1206] [cursor=pointer]:
+            - button [ref=e1207] [cursor=pointer]
+            - button [ref=e1209] [cursor=pointer]
+        - generic [ref=e1211] [cursor=pointer]:
+          - heading "TestSubgroup_1764344320979" [level=3] [ref=e1213] [cursor=pointer]
+          - generic [ref=e1214] [cursor=pointer]:
+            - button [ref=e1215] [cursor=pointer]
+            - button [ref=e1217] [cursor=pointer]
+        - generic [ref=e1219] [cursor=pointer]:
+          - heading "TestSubgroup_1764427297039" [level=3] [ref=e1221] [cursor=pointer]
+          - generic [ref=e1222] [cursor=pointer]:
+            - button [ref=e1223] [cursor=pointer]
+            - button [ref=e1225] [cursor=pointer]
+        - generic [ref=e1227] [cursor=pointer]:
+          - heading "TestSubgroup_1764441944865" [level=3] [ref=e1229] [cursor=pointer]
+          - generic [ref=e1230] [cursor=pointer]:
+            - button [ref=e1231] [cursor=pointer]
+            - button [ref=e1233] [cursor=pointer]
+        - generic [ref=e1235] [cursor=pointer]:
+          - heading "TestSubgroup_1764703653790" [level=3] [ref=e1237] [cursor=pointer]
+          - generic [ref=e1238] [cursor=pointer]:
+            - button [ref=e1239] [cursor=pointer]
+            - button [ref=e1241] [cursor=pointer]
+        - generic [ref=e1243] [cursor=pointer]:
+          - heading "TestSubgroup_1764773025336" [level=3] [ref=e1245] [cursor=pointer]
+          - generic [ref=e1246] [cursor=pointer]:
+            - button [ref=e1247] [cursor=pointer]
+            - button [ref=e1249] [cursor=pointer]
+        - generic [ref=e1251] [cursor=pointer]:
+          - heading "TestSubgroup_1764799516204" [level=3] [ref=e1253] [cursor=pointer]
+          - generic [ref=e1254] [cursor=pointer]:
+            - button [ref=e1255] [cursor=pointer]
+            - button [ref=e1257] [cursor=pointer]
+  - generic [ref=e1259]:
+    - heading "Track Info Display Options" [level=2] [ref=e1261]
+    - paragraph [ref=e1264]: Please select from the options below to change the Information Box’s size and the amount of device information of the GPS & Fleet Tracking Platform.
+    - generic [ref=e1265]:
+      - generic [ref=e1266]:
+        - radio "Standard" [checked] [ref=e1267]
+        - text: Standard
+      - generic [ref=e1268]:
+        - radio "Driver Card" [ref=e1269]
+        - text: Driver Card
+      - generic [ref=e1270]:
+        - radio "Small" [ref=e1271]
+        - text: Small
+      - generic [ref=e1272]:
+        - radio "Name Only" [ref=e1273]
+        - text: Name Only
+      - generic [ref=e1274]:
+        - radio "No Information Box" [ref=e1275]
+        - text: No Information Box
+    - button "Submit" [ref=e1277] [cursor=pointer]
+  - generic [ref=e1278]:
+    - heading "IoT Device Fleet Monitoring Dashboard" [level=2] [ref=e1280]
+    - generic [ref=e1283]:
+      - generic [ref=e1284]:
+        - heading "IoT Device Fleet Monitoring Dashboard" [level=1] [ref=e1285]
+        - generic [ref=e1286]:
+          - text: Report generated on
+          - generic [ref=e1287]: Wednesday, December 10, 2025
+        - generic [ref=e1288]:
+          - text: "Total devices monitored:"
+          - generic [ref=e1289]: Loading...
+      - generic [ref=e1290]:
+        - generic [ref=e1291]: Fleet Status Summary
+        - generic [ref=e1292]:
+          - generic [ref=e1293] [cursor=pointer]:
+            - generic [ref=e1294] [cursor=pointer]: "-"
+            - generic [ref=e1295] [cursor=pointer]:
+              - text: ALL
+              - text: DEVICES
+            - generic [ref=e1296] [cursor=pointer]: 100% of fleet
+          - generic [ref=e1297] [cursor=pointer]:
+            - generic [ref=e1298] [cursor=pointer]: "-"
+            - generic [ref=e1299] [cursor=pointer]:
+              - text: ONLINE &
+              - text: ACTIVE
+            - generic [ref=e1300] [cursor=pointer]: Loading...
+          - generic [ref=e1301] [cursor=pointer]:
+            - generic [ref=e1302] [cursor=pointer]: "-"
+            - generic [ref=e1303] [cursor=pointer]:
+              - text: SUSPENDED
+              - text: SIMS
+            - generic [ref=e1304] [cursor=pointer]: Loading...
+          - generic [ref=e1305] [cursor=pointer]:
+            - generic [ref=e1306] [cursor=pointer]: "-"
+            - generic [ref=e1307] [cursor=pointer]:
+              - text: LOW
+              - text: BATTERY
+            - generic [ref=e1308] [cursor=pointer]: Loading...
+          - generic [ref=e1309] [cursor=pointer]:
+            - generic [ref=e1310] [cursor=pointer]: "-"
+            - generic [ref=e1311] [cursor=pointer]:
+              - text: LOW
+              - text: VOLTAGE
+            - generic [ref=e1312] [cursor=pointer]: Loading...
+          - generic [ref=e1313] [cursor=pointer]:
+            - generic [ref=e1314] [cursor=pointer]: "-"
+            - generic [ref=e1315] [cursor=pointer]:
+              - text: UPDATING WITH
+              - text: BLOCKED SATELLITE
+            - generic [ref=e1316] [cursor=pointer]: Loading...
+          - generic [ref=e1317] [cursor=pointer]:
+            - generic [ref=e1318] [cursor=pointer]: "-"
+            - generic [ref=e1319] [cursor=pointer]:
+              - text: NO CONSTANT
+              - text: POWER
+            - generic [ref=e1320] [cursor=pointer]: Loading...
+          - generic [ref=e1321] [cursor=pointer]:
+            - generic [ref=e1322] [cursor=pointer]: "-"
+            - generic [ref=e1323] [cursor=pointer]:
+              - text: NOT
+              - text: UPDATING
+            - generic [ref=e1324] [cursor=pointer]: Loading...
+      - generic [ref=e1325]:
+        - generic [ref=e1326]: Device Details
+        - generic [ref=e1327]:
+          - generic [ref=e1328]: Showing all devices
+          - button "🗺️ Show Map View" [ref=e1330] [cursor=pointer]
+        - table [ref=e1332]:
+          - rowgroup [ref=e1333]:
+            - row "Device IMEI Driver Name Device Type Status SIM Status Battery/Voltage GPS Satellites Signal Quality Last GPS Connect Last Cell Connect Renewal Date Historical Data" [ref=e1334]:
+              - cell "Device IMEI" [ref=e1335]
+              - cell "Driver Name" [ref=e1336]
+              - cell "Device Type" [ref=e1337]
+              - cell "Status" [ref=e1338]
+              - cell "SIM Status" [ref=e1339]
+              - cell "Battery/Voltage" [ref=e1340]
+              - cell "GPS Satellites" [ref=e1341]
+              - cell "Signal Quality" [ref=e1342]
+              - cell "Last GPS Connect" [ref=e1343]
+              - cell "Last Cell Connect" [ref=e1344]
+              - cell "Renewal Date" [ref=e1345]
+              - cell "Historical Data" [ref=e1346]
+          - rowgroup [ref=e1347]:
+            - row "Loading device data..." [ref=e1348]:
+              - cell "Loading device data..." [ref=e1349]
+      - generic [ref=e1350]:
+        - paragraph [ref=e1351]:
+          - strong [ref=e1352]: IoT Device Fleet Monitoring Dashboard
+          - text: "- Generated automatically"
+        - paragraph [ref=e1353]: For technical support, contact your system administrator
+  - generic [ref=e1354]:
+    - heading "Asset Tracker Settings" [level=2] [ref=e1356]
+    - generic [ref=e1359]:
+      - button "Change Update Frequency" [ref=e1361] [cursor=pointer]
+      - button "Aggressive Mode/Change Intervals" [ref=e1362] [cursor=pointer]
+      - button "Set Timed Updates For MA1086" [ref=e1363] [cursor=pointer]
+    - generic [ref=e1364]:
+      - generic [ref=e1365]:
+        - generic [ref=e1366]: "Select Device:"
+        - 'combobox "Select Device: Select Device:" [ref=e1367]'
+      - generic [ref=e1368]:
+        - generic [ref=e1369]: "Pings Per Day:"
+        - combobox "Pings Per Day:" [ref=e1370]:
+          - option "1 Pings Per Day" [selected]
+          - option "2 Pings Per Day"
+          - option "3 Pings Per Day"
+      - paragraph [ref=e1371]: Please check the box below if you have a movement based tracker.
+      - generic [ref=e1372]:
+        - checkbox "Send Movement Commands " [ref=e1373]
+        - text: Send Movement Commands
+        - generic [ref=e1374] [cursor=pointer]: 
+      - button "Update Frequency" [ref=e1376] [cursor=pointer]
+    - text:    
+  - generic [ref=e1377]:
+    - heading "Alerts Contacts" [level=2] [ref=e1379]
+    - generic [ref=e1382]:
+      - button "Email" [ref=e1384] [cursor=pointer]
+      - button "Phone Number" [ref=e1385] [cursor=pointer]
+    - generic [ref=e1386]:
+      - generic [ref=e1387]:
+        - generic [ref=e1388]: "Email:"
+        - textbox "Email:" [ref=e1389]
+      - generic [ref=e1390]:
+        - button "Submit" [ref=e1391] [cursor=pointer]
+        - button "Change Alerts Settings" [ref=e1392] [cursor=pointer]
+      - table [ref=e1393]:
+        - rowgroup [ref=e1394]:
+          - row "No Email Contacts to Display" [ref=e1395]:
+            - cell "No Email Contacts to Display" [ref=e1396] [cursor=pointer]
+    - text: 
+  - generic [ref=e1397]:
+    - heading "Change Alerts Settings" [level=2] [ref=e1399]
+    - generic [ref=e1402]:
+      - generic [ref=e1403]:
+        - generic [ref=e1404]: "Select Device/Subgroup:"
+        - combobox [ref=e1405]
+        - combobox "Search Device" [ref=e1408] [cursor=pointer]:
+          - generic [ref=e1410] [cursor=pointer]: Search Device
+      - text: 
+      - generic [ref=e1412]:
+        - button "Alerts Contacts" [ref=e1413] [cursor=pointer]
+        - button "After Hour Alerts" [ref=e1414] [cursor=pointer]
+  - generic [ref=e1415]:
+    - heading "Scheduled Reports" [level=2] [ref=e1417]
+    - generic [ref=e1420]:
+      - button "Add New" [ref=e1422] [cursor=pointer]
+      - button "Edit" [ref=e1423] [cursor=pointer]
+    - generic [ref=e1424]:
+      - generic [ref=e1425]:
+        - generic [ref=e1426]: "Add Email:"
+        - textbox "Add Email:" [ref=e1427]
+      - generic [ref=e1428]:
+        - paragraph [ref=e1429]: "Select Schedule Reports:"
+        - generic [ref=e1430]:
+          - checkbox "Blocked Satellite Signals (Asset Only) ?" [ref=e1431]
+          - text: Blocked Satellite Signals (Asset Only)
+          - generic [ref=e1432]: "?"
+        - generic [ref=e1433]:
+          - checkbox "Check-in Reports (Asset Only) ?" [ref=e1434]
+          - text: Check-in Reports (Asset Only)
+          - generic [ref=e1435]: "?"
+        - generic [ref=e1436]:
+          - checkbox "Geofence Weekly/Daily Email ?" [ref=e1437]
+          - text: Geofence Weekly/Daily Email
+          - generic [ref=e1438]: "?"
+        - generic [ref=e1439]:
+          - checkbox "Weekly Alert Summary ?" [ref=e1440]
+          - text: Weekly Alert Summary
+          - generic [ref=e1441]: "?"
+        - generic [ref=e1442]:
+          - checkbox "15 Days Or More Outside The Geofence" [ref=e1443]
+          - text: 15 Days Or More Outside The Geofence
+        - generic [ref=e1444]:
+          - checkbox "15 Days Or More Inside The Geofence" [ref=e1445]
+          - text: 15 Days Or More Inside The Geofence
+        - generic [ref=e1446]:
+          - checkbox "30 Days Or More Outside The Geofence" [ref=e1447]
+          - text: 30 Days Or More Outside The Geofence
+        - generic [ref=e1448]:
+          - checkbox "30 Days Or More Inside The Geofence" [ref=e1449]
+          - text: 30 Days Or More Inside The Geofence
+        - generic [ref=e1450]:
+          - checkbox "60 Days Or More Outside The Geofence" [ref=e1451]
+          - text: 60 Days Or More Outside The Geofence
+        - generic [ref=e1452]:
+          - checkbox "60 Days Or More Inside The Geofence" [ref=e1453]
+          - text: 60 Days Or More Inside The Geofence
+      - button "Submit" [ref=e1455] [cursor=pointer]
+      - generic [ref=e1456]:
+        - generic [ref=e1457]:
+          - generic [ref=e1458]: "Select Time:"
+          - 'textbox "Select Time: From: To: From:: To::" [ref=e1459]'
+        - button "Submit" [ref=e1460] [cursor=pointer]
+  - generic [ref=e1461]:
+    - heading "Add/Edit Maintenance Contact " [level=2] [ref=e1463]:
+      - text: Add/Edit Maintenance Contact
+      - generic [ref=e1464] [cursor=pointer]: 
+    - generic [ref=e1467]:
+      - generic [ref=e1468]: Add Maintenance Contact
+      - textbox "Add Maintenance Contact" [ref=e1469]
+    - button "Submit" [ref=e1471] [cursor=pointer]
+    - table [ref=e1472]:
+      - rowgroup [ref=e1473]:
+        - row "No Email Contacts to Display" [ref=e1474]:
+          - cell "No Email Contacts to Display" [ref=e1475] [cursor=pointer]
+  - generic [ref=e1476]:
+    - heading "Maintenance Report " [level=2] [ref=e1478]:
+      - text: Maintenance Report
+      - generic [ref=e1479] [cursor=pointer]: 
+    - generic [ref=e1482]:
+      - textbox "Search" [ref=e1485]
+      - generic [ref=e1487]:
+        - generic [ref=e1488]: Show
+        - combobox "Show entries" [ref=e1489]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e1490]: entries
+      - button "Copy" [ref=e1491] [cursor=pointer]
+      - button "Save file as" [ref=e1493] [cursor=pointer]: Save file as
+    - table [ref=e1496]:
+      - rowgroup [ref=e1497]:
+        - row "No Maintenance Reports to Display" [ref=e1498]:
+          - cell "No Maintenance Reports to Display" [ref=e1499] [cursor=pointer]
+    - paragraph [ref=e1501]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e1506] [cursor=pointer]
+  - generic [ref=e1507]:
+    - heading "View Vehicle Service " [level=2] [ref=e1509]:
+      - text: View Vehicle Service
+      - generic [ref=e1510] [cursor=pointer]: 
+    - generic [ref=e1513]:
+      - generic [ref=e1514]: "Select Device:"
+      - combobox [ref=e1515]
+    - button "Shortcut To Maintenance Report" [ref=e1516] [cursor=pointer]
+  - generic [ref=e1518]:
+    - heading "Add New/Edit Service Type" [level=2] [ref=e1520]
+    - generic [ref=e1522]:
+      - generic [ref=e1523]:
+        - generic [ref=e1524]: Service Type
+        - textbox "Service Type Service Type" [ref=e1525]
+      - generic [ref=e1526]:
+        - generic [ref=e1527]: Last Service Mileage
+        - spinbutton "Last Service Mileage Last Service Mileage" [ref=e1528]
+      - generic [ref=e1529]:
+        - generic [ref=e1530]: Service Frequency (Mileage)
+        - spinbutton "Service Frequency (Mileage) Service Frequency (Mileage)" [ref=e1531]
+      - generic [ref=e1532]:
+        - generic [ref=e1533]: Service Frequency (Days)
+        - spinbutton "Service Frequency (Days) Service Frequency (Days)" [ref=e1534]
+      - generic [ref=e1535]:
+        - generic [ref=e1536]: Last Service Date
+        - textbox "Last Service Date Last Service Date" [ref=e1537]
+      - generic [ref=e1538]:
+        - generic [ref=e1539]: Notes
+        - textbox "Notes Notes" [ref=e1540]
+      - generic [ref=e1541]:
+        - button "Submit" [ref=e1542] [cursor=pointer]
+        - button "Close" [ref=e1543] [cursor=pointer]
+  - generic [ref=e1544]:
+    - heading "Vehicle Service Change Log" [level=2] [ref=e1546]
+    - table [ref=e1549]:
+      - rowgroup [ref=e1550]:
+        - row "No Service Log Data to Display" [ref=e1551]:
+          - cell "No Service Log Data to Display" [ref=e1552] [cursor=pointer]
+    - paragraph [ref=e1554]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e1559] [cursor=pointer]
+  - generic [ref=e1560]:
+    - heading "Vehicle Service Form" [level=2] [ref=e1562]
+    - generic [ref=e1565]:
+      - generic [ref=e1566]:
+        - generic [ref=e1567]: Service Type
+        - textbox [disabled] [ref=e1568]
+      - generic [ref=e1569]:
+        - generic [ref=e1570]: Last Service Mileage
+        - spinbutton [ref=e1571]
+      - generic [ref=e1572]:
+        - generic [ref=e1573]: Service Frequency (Mileage)
+        - spinbutton [ref=e1574]
+      - generic [ref=e1575]:
+        - generic [ref=e1576]: Service Frequency (Days)
+        - spinbutton [ref=e1577]
+      - generic [ref=e1578]:
+        - generic [ref=e1579]: Last Service Date
+        - textbox [ref=e1580]
+      - generic [ref=e1581]:
+        - generic [ref=e1582]: Notes
+        - textbox [ref=e1583]
+      - button "Submit" [ref=e1585] [cursor=pointer]
+  - generic [ref=e1586]:
+    - heading "Weekly After Hours Alert Summary" [level=2] [ref=e1588]
+    - generic [ref=e1591]:
+      - textbox "Search" [ref=e1594]
+      - button "Copy" [ref=e1595] [cursor=pointer]
+      - button "Save file as" [ref=e1597] [cursor=pointer]: Save file as
+    - table [ref=e1600]:
+      - rowgroup [ref=e1601]:
+        - row "No Weekly Alert Reports to Display" [ref=e1602]:
+          - cell "No Weekly Alert Reports to Display" [ref=e1603] [cursor=pointer]
+    - button "Close" [ref=e1605] [cursor=pointer]
+  - generic [ref=e1606]:
+    - heading "After Hours Summary" [level=2] [ref=e1608]
+    - generic [ref=e1613]:
+      - textbox [ref=e1615]: 2025-12-09
+      - button "Submit" [ref=e1616] [cursor=pointer]
+    - paragraph [ref=e1617]: "Last Update : Not Updated"
+    - generic [ref=e1618]:
+      - generic [ref=e1619]:
+        - paragraph [ref=e1620]: "0"
+        - paragraph [ref=e1621]: Alerts
+      - generic [ref=e1622]:
+        - generic [ref=e1623]:
+          - paragraph [ref=e1625]: Low Priority Alerts
+          - paragraph [ref=e1626]: "0"
+        - generic [ref=e1627]:
+          - paragraph [ref=e1629]: Medium Priority Alerts
+          - paragraph [ref=e1630]: "0"
+        - generic [ref=e1631]:
+          - paragraph [ref=e1633]: High Priority Alerts
+          - paragraph [ref=e1634]: "0"
+    - generic [ref=e1635]:
+      - generic [ref=e1636]:
+        - paragraph [ref=e1637]: "0"
+        - paragraph [ref=e1638]: Actively Transmitting
+      - generic [ref=e1639]:
+        - paragraph [ref=e1640]: "0"
+        - paragraph [ref=e1641]: Engine Off
+      - generic [ref=e1642]:
+        - paragraph [ref=e1643]: "0"
+        - paragraph [ref=e1644]: Idling
+      - generic [ref=e1645]:
+        - paragraph [ref=e1646]: "0"
+        - paragraph [ref=e1647]: Outside Hours
+      - generic [ref=e1648]:
+        - paragraph [ref=e1649]: "0"
+        - paragraph [ref=e1650]: Hard Acceleration
+      - generic [ref=e1651]:
+        - paragraph [ref=e1652]: "0"
+        - paragraph [ref=e1653]: Hard Braking
+    - generic [ref=e1654]:
+      - paragraph [ref=e1655]: Update Alerts
+      - paragraph [ref=e1657]: 1 devices didn't update over 2 days
+    - generic [ref=e1658]:
+      - paragraph [ref=e1659]: Speed Limit Violation
+      - paragraph [ref=e1661]: 0 after hours alerts triggered today!
+    - button "Show Details" [ref=e1662] [cursor=pointer]
+  - generic [ref=e1663]:
+    - heading "Alerts Overview" [level=2] [ref=e1665]
+    - generic [ref=e1668]:
+      - generic [ref=e1669]:
+        - generic [ref=e1670]:
+          - generic [ref=e1671]:
+            - generic [ref=e1672]:
+              - paragraph [ref=e1673]: "0"
+              - paragraph [ref=e1674]: Alerts
+            - generic [ref=e1675]:
+              - generic [ref=e1676]:
+                - paragraph [ref=e1678]: Low Priority Alerts
+                - paragraph [ref=e1679]: "0"
+              - generic [ref=e1680]:
+                - paragraph [ref=e1682]: Medium Priority Alerts
+                - paragraph [ref=e1683]: "0"
+              - generic [ref=e1684]:
+                - paragraph [ref=e1686]: High Priority Alerts
+                - paragraph [ref=e1687]: "0"
+          - generic [ref=e1688] [cursor=pointer]:
+            - paragraph [ref=e1689] [cursor=pointer]: "0"
+            - paragraph [ref=e1690] [cursor=pointer]: Actively Transmitting
+          - generic [ref=e1691] [cursor=pointer]:
+            - paragraph [ref=e1692] [cursor=pointer]: "0"
+            - paragraph [ref=e1693] [cursor=pointer]: Engine Off
+          - generic [ref=e1694] [cursor=pointer]:
+            - paragraph [ref=e1695] [cursor=pointer]: "0"
+            - paragraph [ref=e1696] [cursor=pointer]: Idling
+        - generic [ref=e1698]:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - link "Terms of use" [ref=e1702] [cursor=pointer]:
+                - /url: https://legal.here.com/us-en/terms/here-end-user-terms
+              - generic: © 1987–2025 HERE
+          - generic [ref=e1703]:
+            - generic:
+              - generic [ref=e1704]:
+                - img [ref=e1706] [cursor=pointer]
+                - img [ref=e1710] [cursor=pointer]
+              - img [ref=e1714] [cursor=pointer]
+        - heading "Vehicle Alerts" [level=2] [ref=e1716]
+        - generic [ref=e1717]:
+          - textbox "Search" [ref=e1720]
+          - button "Copy" [ref=e1721] [cursor=pointer]
+          - button "Save file as" [ref=e1723] [cursor=pointer]: Save file as
+        - table [ref=e1726]:
+          - rowgroup [ref=e1727]:
+            - row "Device Name Location Date Posted Speed Speed Over The Speed Limit" [ref=e1728]:
+              - cell "Device Name" [ref=e1729] [cursor=pointer]:
+                - paragraph [ref=e1731] [cursor=pointer]: Device Name
+              - cell "Location" [ref=e1733] [cursor=pointer]:
+                - paragraph [ref=e1735] [cursor=pointer]: Location
+              - cell "Date" [ref=e1737] [cursor=pointer]:
+                - paragraph [ref=e1739] [cursor=pointer]: Date
+              - cell "Posted Speed" [ref=e1741] [cursor=pointer]:
+                - paragraph [ref=e1743] [cursor=pointer]: Posted Speed
+              - cell "Speed" [ref=e1745] [cursor=pointer]:
+                - paragraph [ref=e1747] [cursor=pointer]: Speed
+              - cell "Over The Speed Limit" [ref=e1749] [cursor=pointer]:
+                - paragraph [ref=e1751] [cursor=pointer]: Over The Speed Limit
+          - rowgroup [ref=e1753]:
+            - row "PR OBD1 2345 South Fort Apache Rd, Las Vegas, NV 89117 05-10-2021 50 56 6" [ref=e1754]:
+              - cell "PR OBD1" [ref=e1755] [cursor=pointer]
+              - cell "2345 South Fort Apache Rd, Las Vegas, NV 89117" [ref=e1756] [cursor=pointer]:
+                - paragraph [ref=e1758] [cursor=pointer]: 2345 South Fort Apache Rd, Las Vegas, NV 89117
+              - cell "05-10-2021" [ref=e1760] [cursor=pointer]
+              - cell "50" [ref=e1761] [cursor=pointer]
+              - cell "56" [ref=e1762] [cursor=pointer]
+              - cell "6" [ref=e1763] [cursor=pointer]
+            - row "PR OBD2 9876 West Flamingo Rd, Las Vegas, NV 89147 05-11-2021 40 40 0" [ref=e1764]:
+              - cell "PR OBD2" [ref=e1765] [cursor=pointer]
+              - cell "9876 West Flamingo Rd, Las Vegas, NV 89147" [ref=e1766] [cursor=pointer]:
+                - paragraph [ref=e1768] [cursor=pointer]: 9876 West Flamingo Rd, Las Vegas, NV 89147
+              - cell "05-11-2021" [ref=e1770] [cursor=pointer]
+              - cell "40" [ref=e1771] [cursor=pointer]
+              - cell "40" [ref=e1772] [cursor=pointer]
+              - cell "0" [ref=e1773] [cursor=pointer]
+            - row "PR OBD3 1388 October Oak Ave, Paradise, NV 89123 04-30-2021 30 34 12" [ref=e1774]:
+              - cell "PR OBD3" [ref=e1775] [cursor=pointer]
+              - cell "1388 October Oak Ave, Paradise, NV 89123" [ref=e1776] [cursor=pointer]:
+                - paragraph [ref=e1778] [cursor=pointer]: 1388 October Oak Ave, Paradise, NV 89123
+              - cell "04-30-2021" [ref=e1780] [cursor=pointer]
+              - cell "30" [ref=e1781] [cursor=pointer]
+              - cell "34" [ref=e1782] [cursor=pointer]
+              - cell "12" [ref=e1783] [cursor=pointer]
+            - row "PR OBD4 2456 Maple Ridge Rd, Boulder City, NV 89005 05-01-2021 40 40 0" [ref=e1784]:
+              - cell "PR OBD4" [ref=e1785] [cursor=pointer]
+              - cell "2456 Maple Ridge Rd, Boulder City, NV 89005" [ref=e1786] [cursor=pointer]:
+                - paragraph [ref=e1788] [cursor=pointer]: 2456 Maple Ridge Rd, Boulder City, NV 89005
+              - cell "05-01-2021" [ref=e1790] [cursor=pointer]
+              - cell "40" [ref=e1791] [cursor=pointer]
+              - cell "40" [ref=e1792] [cursor=pointer]
+              - cell "0" [ref=e1793] [cursor=pointer]
+            - row "PR OBD5 1234 Sunset Blvd, Las Vegas, NV 89119 05-02-2021 0 0 0" [ref=e1794]:
+              - cell "PR OBD5" [ref=e1795] [cursor=pointer]
+              - cell "1234 Sunset Blvd, Las Vegas, NV 89119" [ref=e1796] [cursor=pointer]:
+                - paragraph [ref=e1798] [cursor=pointer]: 1234 Sunset Blvd, Las Vegas, NV 89119
+              - cell "05-02-2021" [ref=e1800] [cursor=pointer]
+              - cell "0" [ref=e1801] [cursor=pointer]
+              - cell "0" [ref=e1802] [cursor=pointer]
+              - cell "0" [ref=e1803] [cursor=pointer]
+            - row "PR OBD6 7890 East Sahara Ave, Las Vegas, NV 89117 05-03-2021 50 55 5" [ref=e1804]:
+              - cell "PR OBD6" [ref=e1805] [cursor=pointer]
+              - cell "7890 East Sahara Ave, Las Vegas, NV 89117" [ref=e1806] [cursor=pointer]:
+                - paragraph [ref=e1808] [cursor=pointer]: 7890 East Sahara Ave, Las Vegas, NV 89117
+              - cell "05-03-2021" [ref=e1810] [cursor=pointer]
+              - cell "50" [ref=e1811] [cursor=pointer]
+              - cell "55" [ref=e1812] [cursor=pointer]
+              - cell "5" [ref=e1813] [cursor=pointer]
+            - row "PR OBD7 5678 West Charleston Blvd, Las Vegas, NV 89146 05-04-2021 25 30 5" [ref=e1814]:
+              - cell "PR OBD7" [ref=e1815] [cursor=pointer]
+              - cell "5678 West Charleston Blvd, Las Vegas, NV 89146" [ref=e1816] [cursor=pointer]:
+                - paragraph [ref=e1818] [cursor=pointer]: 5678 West Charleston Blvd, Las Vegas, NV 89146
+              - cell "05-04-2021" [ref=e1820] [cursor=pointer]
+              - cell "25" [ref=e1821] [cursor=pointer]
+              - cell "30" [ref=e1822] [cursor=pointer]
+              - cell "5" [ref=e1823] [cursor=pointer]
+            - row "PR OBD8 4321 Fremont St, Las Vegas, NV 89104 05-05-2021 45 50 5" [ref=e1824]:
+              - cell "PR OBD8" [ref=e1825] [cursor=pointer]
+              - cell "4321 Fremont St, Las Vegas, NV 89104" [ref=e1826] [cursor=pointer]:
+                - paragraph [ref=e1828] [cursor=pointer]: 4321 Fremont St, Las Vegas, NV 89104
+              - cell "05-05-2021" [ref=e1830] [cursor=pointer]
+              - cell "45" [ref=e1831] [cursor=pointer]
+              - cell "50" [ref=e1832] [cursor=pointer]
+              - cell "5" [ref=e1833] [cursor=pointer]
+            - row "PR OBD9 8765 Tropicana Ave, Las Vegas, NV 89147 05-06-2021 60 70 10" [ref=e1834]:
+              - cell "PR OBD9" [ref=e1835] [cursor=pointer]
+              - cell "8765 Tropicana Ave, Las Vegas, NV 89147" [ref=e1836] [cursor=pointer]:
+                - paragraph [ref=e1838] [cursor=pointer]: 8765 Tropicana Ave, Las Vegas, NV 89147
+              - cell "05-06-2021" [ref=e1840] [cursor=pointer]
+              - cell "60" [ref=e1841] [cursor=pointer]
+              - cell "70" [ref=e1842] [cursor=pointer]
+              - cell "10" [ref=e1843] [cursor=pointer]
+            - row "PR OBD10 1234 Las Vegas Blvd, Las Vegas, NV 89109 05-07-2021 40 44 4" [ref=e1844]:
+              - cell "PR OBD10" [ref=e1845] [cursor=pointer]
+              - cell "1234 Las Vegas Blvd, Las Vegas, NV 89109" [ref=e1846] [cursor=pointer]:
+                - paragraph [ref=e1848] [cursor=pointer]: 1234 Las Vegas Blvd, Las Vegas, NV 89109
+              - cell "05-07-2021" [ref=e1850] [cursor=pointer]
+              - cell "40" [ref=e1851] [cursor=pointer]
+              - cell "44" [ref=e1852] [cursor=pointer]
+              - cell "4" [ref=e1853] [cursor=pointer]
+            - row "PR OBD11 3456 North Decatur Blvd, Las Vegas, NV 89130 05-08-2021 55 60 5" [ref=e1854]:
+              - cell "PR OBD11" [ref=e1855] [cursor=pointer]
+              - cell "3456 North Decatur Blvd, Las Vegas, NV 89130" [ref=e1856] [cursor=pointer]:
+                - paragraph [ref=e1858] [cursor=pointer]: 3456 North Decatur Blvd, Las Vegas, NV 89130
+              - cell "05-08-2021" [ref=e1860] [cursor=pointer]
+              - cell "55" [ref=e1861] [cursor=pointer]
+              - cell "60" [ref=e1862] [cursor=pointer]
+              - cell "5" [ref=e1863] [cursor=pointer]
+            - row "PR OBD12 6789 South Rainbow Blvd, Las Vegas, NV 89118 05-09-2021 30 35 5" [ref=e1864]:
+              - cell "PR OBD12" [ref=e1865] [cursor=pointer]
+              - cell "6789 South Rainbow Blvd, Las Vegas, NV 89118" [ref=e1866] [cursor=pointer]:
+                - paragraph [ref=e1868] [cursor=pointer]: 6789 South Rainbow Blvd, Las Vegas, NV 89118
+              - cell "05-09-2021" [ref=e1870] [cursor=pointer]
+              - cell "30" [ref=e1871] [cursor=pointer]
+              - cell "35" [ref=e1872] [cursor=pointer]
+              - cell "5" [ref=e1873] [cursor=pointer]
+        - paragraph [ref=e1875]: Showing 0 to 0 of 0 entries
+      - generic [ref=e1879]:
+        - generic [ref=e1880] [cursor=pointer]:
+          - paragraph [ref=e1881] [cursor=pointer]: "0"
+          - paragraph [ref=e1882] [cursor=pointer]: Outside Hours
+        - generic [ref=e1883] [cursor=pointer]:
+          - paragraph [ref=e1884] [cursor=pointer]: "0"
+          - paragraph [ref=e1885] [cursor=pointer]: Hard Braking
+        - generic [ref=e1886] [cursor=pointer]:
+          - paragraph [ref=e1887] [cursor=pointer]: "0"
+          - paragraph [ref=e1888] [cursor=pointer]: Hard Acceleration
+        - generic [ref=e1889] [cursor=pointer]:
+          - paragraph [ref=e1890] [cursor=pointer]: "0"
+          - generic [ref=e1891] [cursor=pointer]:
+            - paragraph [ref=e1892] [cursor=pointer]: Speed Limit Violations
+            - paragraph [ref=e1893] [cursor=pointer]: Posted Today
+        - generic [ref=e1894] [cursor=pointer]:
+          - paragraph [ref=e1895] [cursor=pointer]: "0"
+          - paragraph [ref=e1897] [cursor=pointer]: Devices That Have Not Updated In 2 Days
+  - generic [ref=e1898]:
+    - heading "After Hours Insights " [level=2] [ref=e1900]:
+      - text: After Hours Insights
+      - generic [ref=e1901] [cursor=pointer]: 
+    - generic [ref=e1904]:
+      - generic [ref=e1905]:
+        - button "Choose Period" [ref=e1906] [cursor=pointer]:
+          - generic [ref=e1907] [cursor=pointer]: Choose Period
+        - textbox [ref=e1909] [cursor=pointer]
+      - button "Submit" [ref=e1910] [cursor=pointer]
+    - textbox "Search" [ref=e1914]
+    - heading "No vehicles found" [level=3] [ref=e1918]
+  - generic [ref=e1919]:
+    - heading "Authorized Hours" [level=2] [ref=e1921]
+    - generic [ref=e1924]:
+      - generic [ref=e1925]:
+        - generic [ref=e1926]:
+          - paragraph [ref=e1927]: Authorized
+          - generic [ref=e1928]:
+            - generic [ref=e1929]:
+              - paragraph [ref=e1930]: 00:29:46
+              - paragraph [ref=e1933]: Working Hours
+            - generic [ref=e1934]:
+              - paragraph [ref=e1935]: "8.06"
+              - paragraph [ref=e1938]: Miles
+        - img [ref=e1939]
+      - generic [ref=e1940]:
+        - generic [ref=e1941]:
+          - paragraph [ref=e1942]: Unauthorized
+          - generic [ref=e1943]:
+            - generic [ref=e1944]:
+              - paragraph [ref=e1945]: 00:32:16
+              - paragraph [ref=e1948]: Working Hours
+            - generic [ref=e1949]:
+              - paragraph [ref=e1950]: "14.26"
+              - paragraph [ref=e1953]: Miles
+        - img [ref=e1954]
+    - generic [ref=e1955]:
+      - generic [ref=e1956]:
+        - generic [ref=e1957]:
+          - button "All" [ref=e1959] [cursor=pointer]
+          - button "Authorized" [ref=e1960] [cursor=pointer]
+          - button "Unauthorized" [ref=e1961] [cursor=pointer]
+        - table [ref=e1962]:
+          - rowgroup [ref=e1963]:
+            - row "Date Day Of The Week Time Range Location Duration" [ref=e1964]:
+              - cell "Date" [ref=e1965] [cursor=pointer]:
+                - paragraph [ref=e1967] [cursor=pointer]: Date
+              - cell "Day Of The Week" [ref=e1969] [cursor=pointer]:
+                - paragraph [ref=e1971] [cursor=pointer]: Day Of The Week
+              - cell "Time Range" [ref=e1973] [cursor=pointer]:
+                - paragraph [ref=e1975] [cursor=pointer]: Time Range
+              - cell "Location" [ref=e1977] [cursor=pointer]:
+                - paragraph [ref=e1979] [cursor=pointer]: Location
+              - cell "Duration" [ref=e1981] [cursor=pointer]:
+                - paragraph [ref=e1983] [cursor=pointer]: Duration
+          - rowgroup
+        - generic [ref=e1985]:
+          - paragraph [ref=e1986]: Showing 0 to 0 of 0 entries
+          - paragraph [ref=e1989] [cursor=pointer]: "1"
+      - generic [ref=e1993]:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - link "Terms of use" [ref=e1997] [cursor=pointer]:
+              - /url: https://legal.here.com/us-en/terms/here-end-user-terms
+            - generic: © 1987–2025 HERE
+        - generic [ref=e1998]:
+          - generic:
+            - generic [ref=e1999]:
+              - img [ref=e2001] [cursor=pointer]
+              - img [ref=e2005] [cursor=pointer]
+            - img [ref=e2009] [cursor=pointer]
+  - generic [ref=e2011]:
+    - heading "After Hours Settings " [level=2] [ref=e2013]:
+      - text: After Hours Settings
+      - generic [ref=e2014] [cursor=pointer]: 
+    - generic [ref=e2017]:
+      - generic [ref=e2018]: "Select Device:"
+      - combobox [ref=e2019]:
+        - 'option "Trailer 1 (IMEI: 861492065103241)" [selected]'
+        - 'option "Trailer 2 (IMEI: ...)"'
+    - generic [ref=e2020]:
+      - paragraph [ref=e2021]: "Working Hours:"
+      - generic [ref=e2022]:
+        - generic [ref=e2023]:
+          - radio "All Days" [checked] [ref=e2024]
+          - text: All Days
+        - generic [ref=e2025]:
+          - radio "Custom Days" [ref=e2026]
+          - text: Custom Days
+        - generic [ref=e2027]:
+          - radio "Weekdays" [ref=e2028]
+          - text: Weekdays
+    - generic [ref=e2029]:
+      - generic [ref=e2030]:
+        - generic [ref=e2031]: "From:"
+        - textbox [ref=e2032]
+      - generic [ref=e2033]:
+        - generic [ref=e2034]: "To:"
+        - textbox [ref=e2035]
+    - button "Advanced Settings" [ref=e2038] [cursor=pointer]
+    - button "Submit" [ref=e2040] [cursor=pointer]
+  - generic [ref=e2041]:
+    - heading "Landmarks Report " [level=2] [ref=e2043]:
+      - text: Landmarks Report
+      - generic [ref=e2044] [cursor=pointer]: 
+    - generic [ref=e2047]:
+      - textbox "Search" [ref=e2050]
+      - button "Copy" [ref=e2051] [cursor=pointer]
+      - button "Save file as" [ref=e2053] [cursor=pointer]: Save file as
+    - table [ref=e2056]:
+      - rowgroup [ref=e2057]:
+        - row "No Landmarks to Display" [ref=e2058]:
+          - cell "No Landmarks to Display" [ref=e2059] [cursor=pointer]
+  - generic [ref=e2060]:
+    - heading "Pulsing Icon Settings" [level=2] [ref=e2062]
+    - generic [ref=e2065]:
+      - heading "Marker Pulse Scale" [level=3] [ref=e2066]
+      - paragraph [ref=e2067]: Choose the scale for marker pulse animation.
+      - combobox [ref=e2069] [cursor=pointer]:
+        - option "Small - Default" [selected]
+        - option "Medium"
+        - option "Large"
+    - button "Save Settings" [ref=e2070] [cursor=pointer]
+  - generic [ref=e2071]:
+    - heading "Recent Geofence Report" [level=2] [ref=e2073]
+    - generic [ref=e2076]:
+      - combobox [ref=e2078]:
+        - option "Select Status" [disabled] [selected]
+        - option "Inside Geofence"
+        - option "Outside Geofence"
+      - combobox [ref=e2080]:
+        - option "Select Geofence" [disabled] [selected]
+      - combobox [ref=e2082]:
+        - option "Select Time Range" [disabled] [selected]
+        - option "More than 15 Days"
+        - option "More than 30 Days"
+        - option "More than 45 Days"
+      - button "Submit" [ref=e2083] [cursor=pointer]
+    - generic [ref=e2084]:
+      - textbox "Search" [ref=e2087]
+      - button "Copy" [ref=e2088] [cursor=pointer]
+      - button "Save file as" [ref=e2090] [cursor=pointer]: Save file as
+    - table [ref=e2093]:
+      - rowgroup [ref=e2094]:
+        - row "Please select filters and click Submit" [ref=e2095]:
+          - cell "Please select filters and click Submit" [ref=e2096] [cursor=pointer]
+  - generic [ref=e2097]:
+    - heading "View / Edit Aggressive Geofence" [level=2] [ref=e2099]
+    - iframe [ref=e2103]:
+      
+    - generic [ref=e2104]:
+      - generic [ref=e2105]:
+        - button "Activate" [ref=e2106] [cursor=pointer]
+        - button "Edit" [ref=e2107] [cursor=pointer]
+        - button "Deactivate" [ref=e2108] [cursor=pointer]
+        - button "Delete" [ref=e2109] [cursor=pointer]
+      - button "Back" [ref=e2111] [cursor=pointer]
+  - generic [ref=e2112]:
+    - heading "Aggressive Geofence Report " [level=2] [ref=e2114]:
+      - text: Aggressive Geofence Report
+      - generic [ref=e2115] [cursor=pointer]: 
+    - generic [ref=e2118]:
+      - textbox "Search" [ref=e2121]
+      - generic [ref=e2122]:
+        - checkbox [ref=e2124]
+        - generic [ref=e2125]: Click here to show only aggressive geofences created on the account.
+      - button "Copy" [ref=e2126] [cursor=pointer]
+      - button "Save file as" [ref=e2128] [cursor=pointer]: Save file as
+    - table [ref=e2131]:
+      - rowgroup [ref=e2132]:
+        - row "No Aggressive Geofences to Display" [ref=e2133]:
+          - cell "No Aggressive Geofences to Display" [ref=e2134] [cursor=pointer]
+  - generic [ref=e2135]:
+    - heading "Current Geofence Report " [level=2] [ref=e2137]:
+      - text: Current Geofence Report
+      - generic [ref=e2138] [cursor=pointer]: 
+    - generic [ref=e2141]:
+      - combobox [ref=e2142]:
+        - option "Show All Status" [selected]
+        - option "Inside Geofence"
+        - option "Outside Geofence"
+      - combobox [ref=e2143]:
+        - option "Show All Geofences" [selected]
+      - combobox [ref=e2144]:
+        - option "Show All Subgroups" [selected]
+    - generic [ref=e2145]:
+      - textbox "Search" [ref=e2148]
+      - button "Copy" [ref=e2149] [cursor=pointer]
+      - button "Save file as" [ref=e2151] [cursor=pointer]: Save file as
+    - table [ref=e2154]:
+      - rowgroup [ref=e2155]:
+        - row "No Geofences to Display" [ref=e2156]:
+          - cell "No Geofences to Display" [ref=e2157] [cursor=pointer]
+  - generic [ref=e2158]:
+    - heading "Weekly Geofence Report (12/07/2025 to 12/13/2025) " [level=2] [ref=e2160]:
+      - text: Weekly Geofence Report
+      - generic [ref=e2161]: (12/07/2025 to 12/13/2025)
+      - generic [ref=e2162] [cursor=pointer]: 
+    - generic [ref=e2165]:
+      - generic [ref=e2166]:
+        - textbox [ref=e2167] [cursor=pointer]: 12/07/2025 to 12/13/2025
+        - button [ref=e2168] [cursor=pointer]
+      - combobox [ref=e2170]:
+        - option "All Devices" [selected]
+        - option "Demo 1"
+        - option "Sales Car1"
+      - combobox [ref=e2171]:
+        - option "All Geofences" [selected]
+      - button "View Chart" [ref=e2172] [cursor=pointer]
+    - generic [ref=e2173]:
+      - textbox "Search" [ref=e2176]
+      - button "Copy" [ref=e2177] [cursor=pointer]
+      - button "Save file as" [ref=e2179] [cursor=pointer]: Save file as
+    - table [ref=e2182]:
+      - cell "No geofences to display" [ref=e2183]
+  - text:  Track History ✕
+  - generic [ref=e2184]:
+    - heading "Travel Log Report " [level=2] [ref=e2186]:
+      - text: Travel Log Report
+      - generic [ref=e2187] [cursor=pointer]: 
+    - generic [ref=e2190]:
+      - generic [ref=e2191]:
+        - button "2025-12-01 to 2025-12-03" [ref=e2192] [cursor=pointer]:
+          - generic [ref=e2193] [cursor=pointer]: 2025-12-01 to 2025-12-03
+        - textbox [ref=e2195] [cursor=pointer]
+      - generic [ref=e2196]:
+        - combobox [ref=e2197] [cursor=pointer]
+        - combobox "Sales Car1" [ref=e2200] [cursor=pointer]
+      - button "Submit" [ref=e2202] [cursor=pointer]
+    - generic [ref=e2203]:
+      - button "Travel Log Report" [ref=e2205] [cursor=pointer]
+      - button "Travel Log Report With Map" [ref=e2206] [cursor=pointer]
+      - button "Travel Log Frequent Stops" [ref=e2207] [cursor=pointer]
+      - generic [ref=e2208] [cursor=pointer]: 
+    - generic [ref=e2209]:
+      - textbox "Search" [active] [ref=e2212]: 02:08 AM
+      - text:  
+      - button "Copy" [ref=e2213] [cursor=pointer]
+      - button "Save file as" [ref=e2215] [cursor=pointer]: Save file as
+    - generic [ref=e2218]:
+      - table [ref=e2219]:
+        - rowgroup [ref=e2220]:
+          - row "Date Duration Time Latitude Longitude Location Battery / Voltage Speed Mileage Direction" [ref=e2221]:
+            - cell "Date" [ref=e2222] [cursor=pointer]:
+              - paragraph [ref=e2224] [cursor=pointer]: Date
+            - cell "Duration" [ref=e2226] [cursor=pointer]:
+              - paragraph [ref=e2228] [cursor=pointer]: Duration
+            - cell "Time" [ref=e2230] [cursor=pointer]:
+              - paragraph [ref=e2232] [cursor=pointer]: Time
+            - cell "Latitude" [ref=e2234] [cursor=pointer]:
+              - paragraph [ref=e2236] [cursor=pointer]: Latitude
+            - cell "Longitude" [ref=e2238] [cursor=pointer]:
+              - paragraph [ref=e2240] [cursor=pointer]: Longitude
+            - cell "Location" [ref=e2242] [cursor=pointer]:
+              - paragraph [ref=e2244] [cursor=pointer]: Location
+            - cell "Battery / Voltage" [ref=e2246] [cursor=pointer]:
+              - paragraph [ref=e2248] [cursor=pointer]: Battery / Voltage
+            - cell "Speed" [ref=e2250] [cursor=pointer]:
+              - paragraph [ref=e2252] [cursor=pointer]: Speed
+            - cell "Mileage" [ref=e2254] [cursor=pointer]:
+              - paragraph [ref=e2256] [cursor=pointer]: Mileage
+            - cell "Direction" [ref=e2258] [cursor=pointer]:
+              - paragraph [ref=e2260] [cursor=pointer]: Direction
+        - rowgroup [ref=e2262]:
+          - row "12/01/2025 355 02:08 AM 33.624222 -111.840185 11243 E Karen Dr, Scottsdale, AZ 85255 12% 0.0 mph 1166.238 mi N" [ref=e2263]:
+            - cell "12/01/2025" [ref=e2264] [cursor=pointer]
+            - cell "355" [ref=e2265] [cursor=pointer]
+            - cell "02:08 AM" [ref=e2266] [cursor=pointer]
+            - cell "33.624222" [ref=e2267] [cursor=pointer]
+            - cell "-111.840185" [ref=e2268] [cursor=pointer]
+            - cell "11243 E Karen Dr, Scottsdale, AZ 85255" [ref=e2269] [cursor=pointer]:
+              - generic [ref=e2270] [cursor=pointer]:
+                - paragraph [ref=e2271] [cursor=pointer]:
+                  - text: 11243 E Karen Dr,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2272] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624222,-111.840185
+            - cell "12%" [ref=e2273] [cursor=pointer]:
+              - paragraph [ref=e2276] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2277] [cursor=pointer]
+            - cell "1166.238 mi" [ref=e2278] [cursor=pointer]
+            - cell "N" [ref=e2279] [cursor=pointer]
+          - row "12/01/2025 0 08:07 AM 33.62769 -111.855267 10433 McDowell Mountain Ranch Rd, Scottsdale, AZ 85255 11% 0.0 mph 1167.480 mi S" [ref=e2280]:
+            - cell "12/01/2025" [ref=e2281] [cursor=pointer]
+            - cell "0" [ref=e2282] [cursor=pointer]
+            - cell "08:07 AM" [ref=e2283] [cursor=pointer]
+            - cell "33.62769" [ref=e2284] [cursor=pointer]
+            - cell "-111.855267" [ref=e2285] [cursor=pointer]
+            - cell "10433 McDowell Mountain Ranch Rd, Scottsdale, AZ 85255" [ref=e2286] [cursor=pointer]:
+              - generic [ref=e2287] [cursor=pointer]:
+                - paragraph [ref=e2288] [cursor=pointer]:
+                  - text: 10433 McDowell Mountain Ranch Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2289] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.62769,-111.855267
+            - cell "11%" [ref=e2290] [cursor=pointer]:
+              - paragraph [ref=e2293] [cursor=pointer]: 11%
+            - cell "0.0 mph" [ref=e2294] [cursor=pointer]
+            - cell "1167.480 mi" [ref=e2295] [cursor=pointer]
+            - cell "S" [ref=e2296] [cursor=pointer]
+          - row "12/01/2025 1 08:07 AM 33.627691 -111.855019 15644 105th St, Scottsdale, AZ 85259 13% 0.0 mph 1167.480 mi E" [ref=e2297]:
+            - cell "12/01/2025" [ref=e2298] [cursor=pointer]
+            - cell "1" [ref=e2299] [cursor=pointer]
+            - cell "08:07 AM" [ref=e2300] [cursor=pointer]
+            - cell "33.627691" [ref=e2301] [cursor=pointer]
+            - cell "-111.855019" [ref=e2302] [cursor=pointer]
+            - cell "15644 105th St, Scottsdale, AZ 85259" [ref=e2303] [cursor=pointer]:
+              - generic [ref=e2304] [cursor=pointer]:
+                - paragraph [ref=e2305] [cursor=pointer]:
+                  - text: 15644 105th St,
+                  - text: Scottsdale,
+                  - text: AZ 85259
+                - link [ref=e2306] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.627691,-111.855019
+            - cell "13%" [ref=e2307] [cursor=pointer]:
+              - paragraph [ref=e2310] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2311] [cursor=pointer]
+            - cell "1167.480 mi" [ref=e2312] [cursor=pointer]
+            - cell "E" [ref=e2313] [cursor=pointer]
+          - row "12/01/2025 1 08:13 AM 33.640916 -111.863126 10082 E Bell Rd, Scottsdale, AZ 85260 13% 0.0 mph 1169.964 mi N" [ref=e2314]:
+            - cell "12/01/2025" [ref=e2315] [cursor=pointer]
+            - cell "1" [ref=e2316] [cursor=pointer]
+            - cell "08:13 AM" [ref=e2317] [cursor=pointer]
+            - cell "33.640916" [ref=e2318] [cursor=pointer]
+            - cell "-111.863126" [ref=e2319] [cursor=pointer]
+            - cell "10082 E Bell Rd, Scottsdale, AZ 85260" [ref=e2320] [cursor=pointer]:
+              - generic [ref=e2321] [cursor=pointer]:
+                - paragraph [ref=e2322] [cursor=pointer]:
+                  - text: 10082 E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2323] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640916,-111.863126
+            - cell "13%" [ref=e2324] [cursor=pointer]:
+              - paragraph [ref=e2327] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2328] [cursor=pointer]
+            - cell "1169.964 mi" [ref=e2329] [cursor=pointer]
+            - cell "N" [ref=e2330] [cursor=pointer]
+          - row "12/01/2025 186 08:17 AM 33.638991 -111.887674 16796 N 90th St, Scottsdale, AZ 85260 12% 0.0 mph 1171.206 mi W" [ref=e2331]:
+            - cell "12/01/2025" [ref=e2332] [cursor=pointer]
+            - cell "186" [ref=e2333] [cursor=pointer]
+            - cell "08:17 AM" [ref=e2334] [cursor=pointer]
+            - cell "33.638991" [ref=e2335] [cursor=pointer]
+            - cell "-111.887674" [ref=e2336] [cursor=pointer]
+            - cell "16796 N 90th St, Scottsdale, AZ 85260" [ref=e2337] [cursor=pointer]:
+              - generic [ref=e2338] [cursor=pointer]:
+                - paragraph [ref=e2339] [cursor=pointer]:
+                  - text: 16796 N 90th St,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2340] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638991,-111.887674
+            - cell "12%" [ref=e2341] [cursor=pointer]:
+              - paragraph [ref=e2344] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2345] [cursor=pointer]
+            - cell "1171.206 mi" [ref=e2346] [cursor=pointer]
+            - cell "W" [ref=e2347] [cursor=pointer]
+          - row "12/01/2025 0 11:26 AM 33.630371 -111.890982 N Pima, Scottsdale, AZ 14% 0.0 mph 1172.448 mi S" [ref=e2348]:
+            - cell "12/01/2025" [ref=e2349] [cursor=pointer]
+            - cell "0" [ref=e2350] [cursor=pointer]
+            - cell "11:26 AM" [ref=e2351] [cursor=pointer]
+            - cell "33.630371" [ref=e2352] [cursor=pointer]
+            - cell "-111.890982" [ref=e2353] [cursor=pointer]
+            - cell "N Pima, Scottsdale, AZ" [ref=e2354] [cursor=pointer]:
+              - generic [ref=e2355] [cursor=pointer]:
+                - paragraph [ref=e2356] [cursor=pointer]:
+                  - text: N Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2357] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.630371,-111.890982
+            - cell "14%" [ref=e2358] [cursor=pointer]:
+              - paragraph [ref=e2361] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2362] [cursor=pointer]
+            - cell "1172.448 mi" [ref=e2363] [cursor=pointer]
+            - cell "S" [ref=e2364] [cursor=pointer]
+          - row "12/01/2025 31 11:53 AM 33.394647 -111.71711 5299 E Flower Ave, Mesa, AZ 85206 13% 0.0 mph 1200.393 mi NW" [ref=e2365]:
+            - cell "12/01/2025" [ref=e2366] [cursor=pointer]
+            - cell "31" [ref=e2367] [cursor=pointer]
+            - cell "11:53 AM" [ref=e2368] [cursor=pointer]
+            - cell "33.394647" [ref=e2369] [cursor=pointer]
+            - cell "-111.71711" [ref=e2370] [cursor=pointer]
+            - cell "5299 E Flower Ave, Mesa, AZ 85206" [ref=e2371] [cursor=pointer]:
+              - generic [ref=e2372] [cursor=pointer]:
+                - paragraph [ref=e2373] [cursor=pointer]:
+                  - text: 5299 E Flower Ave,
+                  - text: Mesa,
+                  - text: AZ 85206
+                - link [ref=e2374] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.394647,-111.71711
+            - cell "13%" [ref=e2375] [cursor=pointer]:
+              - paragraph [ref=e2378] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2379] [cursor=pointer]
+            - cell "1200.393 mi" [ref=e2380] [cursor=pointer]
+            - cell "NW" [ref=e2381] [cursor=pointer]
+          - row "12/01/2025 0 12:26 PM 33.393813 -111.718702 5231 E Southern Ave, Mesa, AZ 85206 14% 0.0 mph 1200.393 mi W" [ref=e2382]:
+            - cell "12/01/2025" [ref=e2383] [cursor=pointer]
+            - cell "0" [ref=e2384] [cursor=pointer]
+            - cell "12:26 PM" [ref=e2385] [cursor=pointer]
+            - cell "33.393813" [ref=e2386] [cursor=pointer]
+            - cell "-111.718702" [ref=e2387] [cursor=pointer]
+            - cell "5231 E Southern Ave, Mesa, AZ 85206" [ref=e2388] [cursor=pointer]:
+              - generic [ref=e2389] [cursor=pointer]:
+                - paragraph [ref=e2390] [cursor=pointer]:
+                  - text: 5231 E Southern Ave,
+                  - text: Mesa,
+                  - text: AZ 85206
+                - link [ref=e2391] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.393813,-111.718702
+            - cell "14%" [ref=e2392] [cursor=pointer]:
+              - paragraph [ref=e2395] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2396] [cursor=pointer]
+            - cell "1200.393 mi" [ref=e2397] [cursor=pointer]
+            - cell "W" [ref=e2398] [cursor=pointer]
+          - row "12/01/2025 0 12:53 PM 33.629113 -111.889129 8867 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260 13% 0.0 mph 1228.338 mi SE" [ref=e2399]:
+            - cell "12/01/2025" [ref=e2400] [cursor=pointer]
+            - cell "0" [ref=e2401] [cursor=pointer]
+            - cell "12:53 PM" [ref=e2402] [cursor=pointer]
+            - cell "33.629113" [ref=e2403] [cursor=pointer]
+            - cell "-111.889129" [ref=e2404] [cursor=pointer]
+            - cell "8867 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260" [ref=e2405] [cursor=pointer]:
+              - generic [ref=e2406] [cursor=pointer]:
+                - paragraph [ref=e2407] [cursor=pointer]:
+                  - text: 8867 E Frank Lloyd Wright Blvd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2408] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629113,-111.889129
+            - cell "13%" [ref=e2409] [cursor=pointer]:
+              - paragraph [ref=e2412] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2413] [cursor=pointer]
+            - cell "1228.338 mi" [ref=e2414] [cursor=pointer]
+            - cell "SE" [ref=e2415] [cursor=pointer]
+          - row "12/01/2025 0 12:54 PM 33.629219 -111.888836 8881 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260 13% 0.0 mph 1228.338 mi E" [ref=e2416]:
+            - cell "12/01/2025" [ref=e2417] [cursor=pointer]
+            - cell "0" [ref=e2418] [cursor=pointer]
+            - cell "12:54 PM" [ref=e2419] [cursor=pointer]
+            - cell "33.629219" [ref=e2420] [cursor=pointer]
+            - cell "-111.888836" [ref=e2421] [cursor=pointer]
+            - cell "8881 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260" [ref=e2422] [cursor=pointer]:
+              - generic [ref=e2423] [cursor=pointer]:
+                - paragraph [ref=e2424] [cursor=pointer]:
+                  - text: 8881 E Frank Lloyd Wright Blvd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2425] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629219,-111.888836
+            - cell "13%" [ref=e2426] [cursor=pointer]:
+              - paragraph [ref=e2429] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2430] [cursor=pointer]
+            - cell "1228.338 mi" [ref=e2431] [cursor=pointer]
+            - cell "E" [ref=e2432] [cursor=pointer]
+          - row "12/01/2025 230 12:57 PM 33.638988 -111.887668 16796 N 90th St, Scottsdale, AZ 85260 12% 0.0 mph 1228.959 mi N" [ref=e2433]:
+            - cell "12/01/2025" [ref=e2434] [cursor=pointer]
+            - cell "230" [ref=e2435] [cursor=pointer]
+            - cell "12:57 PM" [ref=e2436] [cursor=pointer]
+            - cell "33.638988" [ref=e2437] [cursor=pointer]
+            - cell "-111.887668" [ref=e2438] [cursor=pointer]
+            - cell "16796 N 90th St, Scottsdale, AZ 85260" [ref=e2439] [cursor=pointer]:
+              - generic [ref=e2440] [cursor=pointer]:
+                - paragraph [ref=e2441] [cursor=pointer]:
+                  - text: 16796 N 90th St,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2442] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638988,-111.887668
+            - cell "12%" [ref=e2443] [cursor=pointer]:
+              - paragraph [ref=e2446] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2447] [cursor=pointer]
+            - cell "1228.959 mi" [ref=e2448] [cursor=pointer]
+            - cell "N" [ref=e2449] [cursor=pointer]
+          - row "12/01/2025 0 04:49 PM 33.640015 -111.86986 9795 E Bell Rd, Scottsdale, AZ 85260 13% 0.0 mph 1230.201 mi E" [ref=e2450]:
+            - cell "12/01/2025" [ref=e2451] [cursor=pointer]
+            - cell "0" [ref=e2452] [cursor=pointer]
+            - cell "04:49 PM" [ref=e2453] [cursor=pointer]
+            - cell "33.640015" [ref=e2454] [cursor=pointer]
+            - cell "-111.86986" [ref=e2455] [cursor=pointer]
+            - cell "9795 E Bell Rd, Scottsdale, AZ 85260" [ref=e2456] [cursor=pointer]:
+              - generic [ref=e2457] [cursor=pointer]:
+                - paragraph [ref=e2458] [cursor=pointer]:
+                  - text: 9795 E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2459] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640015,-111.86986
+            - cell "13%" [ref=e2460] [cursor=pointer]:
+              - paragraph [ref=e2463] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2464] [cursor=pointer]
+            - cell "1230.201 mi" [ref=e2465] [cursor=pointer]
+            - cell "E" [ref=e2466] [cursor=pointer]
+          - row "12/01/2025 1 04:51 PM 33.629369 -111.863084 N Thompson Peak Pkwy, Scottsdale, AZ 13% 0.0 mph 1231.443 mi SW" [ref=e2467]:
+            - cell "12/01/2025" [ref=e2468] [cursor=pointer]
+            - cell "1" [ref=e2469] [cursor=pointer]
+            - cell "04:51 PM" [ref=e2470] [cursor=pointer]
+            - cell "33.629369" [ref=e2471] [cursor=pointer]
+            - cell "-111.863084" [ref=e2472] [cursor=pointer]
+            - cell "N Thompson Peak Pkwy, Scottsdale, AZ" [ref=e2473] [cursor=pointer]:
+              - generic [ref=e2474] [cursor=pointer]:
+                - paragraph [ref=e2475] [cursor=pointer]:
+                  - text: N Thompson Peak Pkwy,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2476] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629369,-111.863084
+            - cell "13%" [ref=e2477] [cursor=pointer]:
+              - paragraph [ref=e2480] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2481] [cursor=pointer]
+            - cell "1231.443 mi" [ref=e2482] [cursor=pointer]
+            - cell "SW" [ref=e2483] [cursor=pointer]
+          - row "12/01/2025 5 04:57 PM 33.624238 -111.840296 11237 E Karen Dr, Scottsdale, AZ 85255 12% 0.0 mph 1233.306 mi W" [ref=e2484]:
+            - cell "12/01/2025" [ref=e2485] [cursor=pointer]
+            - cell "5" [ref=e2486] [cursor=pointer]
+            - cell "04:57 PM" [ref=e2487] [cursor=pointer]
+            - cell "33.624238" [ref=e2488] [cursor=pointer]
+            - cell "-111.840296" [ref=e2489] [cursor=pointer]
+            - cell "11237 E Karen Dr, Scottsdale, AZ 85255" [ref=e2490] [cursor=pointer]:
+              - generic [ref=e2491] [cursor=pointer]:
+                - paragraph [ref=e2492] [cursor=pointer]:
+                  - text: 11237 E Karen Dr,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2493] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624238,-111.840296
+            - cell "12%" [ref=e2494] [cursor=pointer]:
+              - paragraph [ref=e2497] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2498] [cursor=pointer]
+            - cell "1233.306 mi" [ref=e2499] [cursor=pointer]
+            - cell "W" [ref=e2500] [cursor=pointer]
+          - row "12/01/2025 79 05:10 PM 33.639034 -111.887679 16802 N 90th St, Scottsdale, AZ 85260 12% 0.0 mph 1237.653 mi W" [ref=e2501]:
+            - cell "12/01/2025" [ref=e2502] [cursor=pointer]
+            - cell "79" [ref=e2503] [cursor=pointer]
+            - cell "05:10 PM" [ref=e2504] [cursor=pointer]
+            - cell "33.639034" [ref=e2505] [cursor=pointer]
+            - cell "-111.887679" [ref=e2506] [cursor=pointer]
+            - cell "16802 N 90th St, Scottsdale, AZ 85260" [ref=e2507] [cursor=pointer]:
+              - generic [ref=e2508] [cursor=pointer]:
+                - paragraph [ref=e2509] [cursor=pointer]:
+                  - text: 16802 N 90th St,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2510] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639034,-111.887679
+            - cell "12%" [ref=e2511] [cursor=pointer]:
+              - paragraph [ref=e2514] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2515] [cursor=pointer]
+            - cell "1237.653 mi" [ref=e2516] [cursor=pointer]
+            - cell "W" [ref=e2517] [cursor=pointer]
+          - row "12/01/2025 0 06:30 PM 33.63888 -111.889487 N Pima, Scottsdale, AZ 13% 0.0 mph 1237.653 mi W" [ref=e2518]:
+            - cell "12/01/2025" [ref=e2519] [cursor=pointer]
+            - cell "0" [ref=e2520] [cursor=pointer]
+            - cell "06:30 PM" [ref=e2521] [cursor=pointer]
+            - cell "33.63888" [ref=e2522] [cursor=pointer]
+            - cell "-111.889487" [ref=e2523] [cursor=pointer]
+            - cell "N Pima, Scottsdale, AZ" [ref=e2524] [cursor=pointer]:
+              - generic [ref=e2525] [cursor=pointer]:
+                - paragraph [ref=e2526] [cursor=pointer]:
+                  - text: N Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2527] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.63888,-111.889487
+            - cell "13%" [ref=e2528] [cursor=pointer]:
+              - paragraph [ref=e2531] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2532] [cursor=pointer]
+            - cell "1237.653 mi" [ref=e2533] [cursor=pointer]
+            - cell "W" [ref=e2534] [cursor=pointer]
+          - row "12/01/2025 1 06:31 PM 33.639717 -111.88971 N Pima, Scottsdale, AZ 13% 0.0 mph 1238.274 mi NW" [ref=e2535]:
+            - cell "12/01/2025" [ref=e2536] [cursor=pointer]
+            - cell "1" [ref=e2537] [cursor=pointer]
+            - cell "06:31 PM" [ref=e2538] [cursor=pointer]
+            - cell "33.639717" [ref=e2539] [cursor=pointer]
+            - cell "-111.88971" [ref=e2540] [cursor=pointer]
+            - cell "N Pima, Scottsdale, AZ" [ref=e2541] [cursor=pointer]:
+              - generic [ref=e2542] [cursor=pointer]:
+                - paragraph [ref=e2543] [cursor=pointer]:
+                  - text: N Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2544] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639717,-111.88971
+            - cell "13%" [ref=e2545] [cursor=pointer]:
+              - paragraph [ref=e2548] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2549] [cursor=pointer]
+            - cell "1238.274 mi" [ref=e2550] [cursor=pointer]
+            - cell "NW" [ref=e2551] [cursor=pointer]
+          - row "12/01/2025 43 06:34 PM 33.651294 -111.886831 18235 N Pima Rd, Scottsdale, AZ 85255 12% 0.0 mph 1238.895 mi E" [ref=e2552]:
+            - cell "12/01/2025" [ref=e2553] [cursor=pointer]
+            - cell "43" [ref=e2554] [cursor=pointer]
+            - cell "06:34 PM" [ref=e2555] [cursor=pointer]
+            - cell "33.651294" [ref=e2556] [cursor=pointer]
+            - cell "-111.886831" [ref=e2557] [cursor=pointer]
+            - cell "18235 N Pima Rd, Scottsdale, AZ 85255" [ref=e2558] [cursor=pointer]:
+              - generic [ref=e2559] [cursor=pointer]:
+                - paragraph [ref=e2560] [cursor=pointer]:
+                  - text: 18235 N Pima Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2561] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.651294,-111.886831
+            - cell "12%" [ref=e2562] [cursor=pointer]:
+              - paragraph [ref=e2565] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2566] [cursor=pointer]
+            - cell "1238.895 mi" [ref=e2567] [cursor=pointer]
+            - cell "E" [ref=e2568] [cursor=pointer]
+          - row "12/01/2025 0 07:21 PM 33.656301 -111.866981 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255 13% 0.0 mph 1240.137 mi NE" [ref=e2569]:
+            - cell "12/01/2025" [ref=e2570] [cursor=pointer]
+            - cell "0" [ref=e2571] [cursor=pointer]
+            - cell "07:21 PM" [ref=e2572] [cursor=pointer]
+            - cell "33.656301" [ref=e2573] [cursor=pointer]
+            - cell "-111.866981" [ref=e2574] [cursor=pointer]
+            - cell "18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255" [ref=e2575] [cursor=pointer]:
+              - generic [ref=e2576] [cursor=pointer]:
+                - paragraph [ref=e2577] [cursor=pointer]:
+                  - text: 18698 N Thompson Peak Pkwy,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2578] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.656301,-111.866981
+            - cell "13%" [ref=e2579] [cursor=pointer]:
+              - paragraph [ref=e2582] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2583] [cursor=pointer]
+            - cell "1240.137 mi" [ref=e2584] [cursor=pointer]
+            - cell "NE" [ref=e2585] [cursor=pointer]
+          - row "12/01/2025 44 07:23 PM 33.655056 -111.864985 N 101st St, Scottsdale, AZ 12% 0.0 mph 1240.758 mi W" [ref=e2586]:
+            - cell "12/01/2025" [ref=e2587] [cursor=pointer]
+            - cell "44" [ref=e2588] [cursor=pointer]
+            - cell "07:23 PM" [ref=e2589] [cursor=pointer]
+            - cell "33.655056" [ref=e2590] [cursor=pointer]
+            - cell "-111.864985" [ref=e2591] [cursor=pointer]
+            - cell "N 101st St, Scottsdale, AZ" [ref=e2592] [cursor=pointer]:
+              - generic [ref=e2593] [cursor=pointer]:
+                - paragraph [ref=e2594] [cursor=pointer]:
+                  - text: N 101st St,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2595] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.655056,-111.864985
+            - cell "12%" [ref=e2596] [cursor=pointer]:
+              - paragraph [ref=e2599] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2600] [cursor=pointer]
+            - cell "1240.758 mi" [ref=e2601] [cursor=pointer]
+            - cell "W" [ref=e2602] [cursor=pointer]
+          - row "12/01/2025 0 08:08 PM 33.656238 -111.866747 N Thompson Peak Pkwy, Scottsdale, AZ 13% 0.0 mph 1240.758 mi NW" [ref=e2603]:
+            - cell "12/01/2025" [ref=e2604] [cursor=pointer]
+            - cell "0" [ref=e2605] [cursor=pointer]
+            - cell "08:08 PM" [ref=e2606] [cursor=pointer]
+            - cell "33.656238" [ref=e2607] [cursor=pointer]
+            - cell "-111.866747" [ref=e2608] [cursor=pointer]
+            - cell "N Thompson Peak Pkwy, Scottsdale, AZ" [ref=e2609] [cursor=pointer]:
+              - generic [ref=e2610] [cursor=pointer]:
+                - paragraph [ref=e2611] [cursor=pointer]:
+                  - text: N Thompson Peak Pkwy,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2612] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.656238,-111.866747
+            - cell "13%" [ref=e2613] [cursor=pointer]:
+              - paragraph [ref=e2616] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2617] [cursor=pointer]
+            - cell "1240.758 mi" [ref=e2618] [cursor=pointer]
+            - cell "NW" [ref=e2619] [cursor=pointer]
+          - row "12/01/2025 0 08:10 PM 33.640147 -111.861094 E Bell Rd, Scottsdale, AZ 12% 0.0 mph 1242.000 mi S" [ref=e2620]:
+            - cell "12/01/2025" [ref=e2621] [cursor=pointer]
+            - cell "0" [ref=e2622] [cursor=pointer]
+            - cell "08:10 PM" [ref=e2623] [cursor=pointer]
+            - cell "33.640147" [ref=e2624] [cursor=pointer]
+            - cell "-111.861094" [ref=e2625] [cursor=pointer]
+            - cell "E Bell Rd, Scottsdale, AZ" [ref=e2626] [cursor=pointer]:
+              - generic [ref=e2627] [cursor=pointer]:
+                - paragraph [ref=e2628] [cursor=pointer]:
+                  - text: E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2629] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640147,-111.861094
+            - cell "12%" [ref=e2630] [cursor=pointer]:
+              - paragraph [ref=e2633] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2634] [cursor=pointer]
+            - cell "1242.000 mi" [ref=e2635] [cursor=pointer]
+            - cell "S" [ref=e2636] [cursor=pointer]
+          - row "12/01/2025 0 08:14 PM 33.628467 -111.854646 E McDowell Mountain Ranch Rd, Scottsdale, AZ 12% 0.0 mph 1243.863 mi W" [ref=e2637]:
+            - cell "12/01/2025" [ref=e2638] [cursor=pointer]
+            - cell "0" [ref=e2639] [cursor=pointer]
+            - cell "08:14 PM" [ref=e2640] [cursor=pointer]
+            - cell "33.628467" [ref=e2641] [cursor=pointer]
+            - cell "-111.854646" [ref=e2642] [cursor=pointer]
+            - cell "E McDowell Mountain Ranch Rd, Scottsdale, AZ" [ref=e2643] [cursor=pointer]:
+              - generic [ref=e2644] [cursor=pointer]:
+                - paragraph [ref=e2645] [cursor=pointer]:
+                  - text: E McDowell Mountain Ranch Rd,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2646] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.628467,-111.854646
+            - cell "12%" [ref=e2647] [cursor=pointer]:
+              - paragraph [ref=e2650] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2651] [cursor=pointer]
+            - cell "1243.863 mi" [ref=e2652] [cursor=pointer]
+            - cell "W" [ref=e2653] [cursor=pointer]
+          - row "12/01/2025 0 08:15 PM 33.628448 -111.854669 E McDowell Mountain Ranch Rd, Scottsdale, AZ 13% 0.0 mph 1243.863 mi W" [ref=e2654]:
+            - cell "12/01/2025" [ref=e2655] [cursor=pointer]
+            - cell "0" [ref=e2656] [cursor=pointer]
+            - cell "08:15 PM" [ref=e2657] [cursor=pointer]
+            - cell "33.628448" [ref=e2658] [cursor=pointer]
+            - cell "-111.854669" [ref=e2659] [cursor=pointer]
+            - cell "E McDowell Mountain Ranch Rd, Scottsdale, AZ" [ref=e2660] [cursor=pointer]:
+              - generic [ref=e2661] [cursor=pointer]:
+                - paragraph [ref=e2662] [cursor=pointer]:
+                  - text: E McDowell Mountain Ranch Rd,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2663] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.628448,-111.854669
+            - cell "13%" [ref=e2664] [cursor=pointer]:
+              - paragraph [ref=e2667] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2668] [cursor=pointer]
+            - cell "1243.863 mi" [ref=e2669] [cursor=pointer]
+            - cell "W" [ref=e2670] [cursor=pointer]
+          - row "12/01/2025 685 08:18 PM 33.624201 -111.840256 11239 E Karen Dr, Scottsdale, AZ 85255 13% 0.0 mph 1245.105 mi W" [ref=e2671]:
+            - cell "12/01/2025" [ref=e2672] [cursor=pointer]
+            - cell "685" [ref=e2673] [cursor=pointer]
+            - cell "08:18 PM" [ref=e2674] [cursor=pointer]
+            - cell "33.624201" [ref=e2675] [cursor=pointer]
+            - cell "-111.840256" [ref=e2676] [cursor=pointer]
+            - cell "11239 E Karen Dr, Scottsdale, AZ 85255" [ref=e2677] [cursor=pointer]:
+              - generic [ref=e2678] [cursor=pointer]:
+                - paragraph [ref=e2679] [cursor=pointer]:
+                  - text: 11239 E Karen Dr,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2680] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624201,-111.840256
+            - cell "13%" [ref=e2681] [cursor=pointer]:
+              - paragraph [ref=e2684] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2685] [cursor=pointer]
+            - cell "1245.105 mi" [ref=e2686] [cursor=pointer]
+            - cell "W" [ref=e2687] [cursor=pointer]
+          - row "12/02/2025 0 07:51 AM 33.629098 -111.889169 8867 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260 14% 0.0 mph 1248.210 mi S" [ref=e2688]:
+            - cell "12/02/2025" [ref=e2689] [cursor=pointer]
+            - cell "0" [ref=e2690] [cursor=pointer]
+            - cell "07:51 AM" [ref=e2691] [cursor=pointer]
+            - cell "33.629098" [ref=e2692] [cursor=pointer]
+            - cell "-111.889169" [ref=e2693] [cursor=pointer]
+            - cell "8867 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260" [ref=e2694] [cursor=pointer]:
+              - generic [ref=e2695] [cursor=pointer]:
+                - paragraph [ref=e2696] [cursor=pointer]:
+                  - text: 8867 E Frank Lloyd Wright Blvd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2697] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629098,-111.889169
+            - cell "14%" [ref=e2698] [cursor=pointer]:
+              - paragraph [ref=e2701] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2702] [cursor=pointer]
+            - cell "1248.210 mi" [ref=e2703] [cursor=pointer]
+            - cell "S" [ref=e2704] [cursor=pointer]
+          - row "12/02/2025 1 07:51 AM 33.62918 -111.888876 8877 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260 14% 0.0 mph 1248.210 mi N" [ref=e2705]:
+            - cell "12/02/2025" [ref=e2706] [cursor=pointer]
+            - cell "1" [ref=e2707] [cursor=pointer]
+            - cell "07:51 AM" [ref=e2708] [cursor=pointer]
+            - cell "33.62918" [ref=e2709] [cursor=pointer]
+            - cell "-111.888876" [ref=e2710] [cursor=pointer]
+            - cell "8877 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260" [ref=e2711] [cursor=pointer]:
+              - generic [ref=e2712] [cursor=pointer]:
+                - paragraph [ref=e2713] [cursor=pointer]:
+                  - text: 8877 E Frank Lloyd Wright Blvd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2714] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.62918,-111.888876
+            - cell "14%" [ref=e2715] [cursor=pointer]:
+              - paragraph [ref=e2718] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2719] [cursor=pointer]
+            - cell "1248.210 mi" [ref=e2720] [cursor=pointer]
+            - cell "N" [ref=e2721] [cursor=pointer]
+          - row "12/02/2025 65 07:57 AM 33.639261 -111.88386 9105 E Bell Rd, Scottsdale, AZ 85260 14% 0.0 mph 1250.073 mi NE" [ref=e2722]:
+            - cell "12/02/2025" [ref=e2723] [cursor=pointer]
+            - cell "65" [ref=e2724] [cursor=pointer]
+            - cell "07:57 AM" [ref=e2725] [cursor=pointer]
+            - cell "33.639261" [ref=e2726] [cursor=pointer]
+            - cell "-111.88386" [ref=e2727] [cursor=pointer]
+            - cell "9105 E Bell Rd, Scottsdale, AZ 85260" [ref=e2728] [cursor=pointer]:
+              - generic [ref=e2729] [cursor=pointer]:
+                - paragraph [ref=e2730] [cursor=pointer]:
+                  - text: 9105 E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2731] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639261,-111.88386
+            - cell "14%" [ref=e2732] [cursor=pointer]:
+              - paragraph [ref=e2735] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2736] [cursor=pointer]
+            - cell "1250.073 mi" [ref=e2737] [cursor=pointer]
+            - cell "NE" [ref=e2738] [cursor=pointer]
+          - row "12/02/2025 261 09:04 AM 33.638996 -111.887581 16796 N 90th St, Scottsdale, AZ 85260 12% 0.0 mph 1250.073 mi N" [ref=e2739]:
+            - cell "12/02/2025" [ref=e2740] [cursor=pointer]
+            - cell "261" [ref=e2741] [cursor=pointer]
+            - cell "09:04 AM" [ref=e2742] [cursor=pointer]
+            - cell "33.638996" [ref=e2743] [cursor=pointer]
+            - cell "-111.887581" [ref=e2744] [cursor=pointer]
+            - cell "16796 N 90th St, Scottsdale, AZ 85260" [ref=e2745] [cursor=pointer]:
+              - generic [ref=e2746] [cursor=pointer]:
+                - paragraph [ref=e2747] [cursor=pointer]:
+                  - text: 16796 N 90th St,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2748] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638996,-111.887581
+            - cell "12%" [ref=e2749] [cursor=pointer]:
+              - paragraph [ref=e2752] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2753] [cursor=pointer]
+            - cell "1250.073 mi" [ref=e2754] [cursor=pointer]
+            - cell "N" [ref=e2755] [cursor=pointer]
+          - row "12/02/2025 1 01:27 PM 33.639751 -111.879813 9275 E Bell Rd, Scottsdale, AZ 85260 14% 0.0 mph 1250.694 mi SW" [ref=e2756]:
+            - cell "12/02/2025" [ref=e2757] [cursor=pointer]
+            - cell "1" [ref=e2758] [cursor=pointer]
+            - cell "01:27 PM" [ref=e2759] [cursor=pointer]
+            - cell "33.639751" [ref=e2760] [cursor=pointer]
+            - cell "-111.879813" [ref=e2761] [cursor=pointer]
+            - cell "9275 E Bell Rd, Scottsdale, AZ 85260" [ref=e2762] [cursor=pointer]:
+              - generic [ref=e2763] [cursor=pointer]:
+                - paragraph [ref=e2764] [cursor=pointer]:
+                  - text: 9275 E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2765] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639751,-111.879813
+            - cell "14%" [ref=e2766] [cursor=pointer]:
+              - paragraph [ref=e2769] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2770] [cursor=pointer]
+            - cell "1250.694 mi" [ref=e2771] [cursor=pointer]
+            - cell "SW" [ref=e2772] [cursor=pointer]
+          - row "12/02/2025 0 01:33 PM 33.628465 -111.854656 E McDowell Mountain Ranch Rd, Scottsdale, AZ 12% 0.0 mph 1253.799 mi SW" [ref=e2773]:
+            - cell "12/02/2025" [ref=e2774] [cursor=pointer]
+            - cell "0" [ref=e2775] [cursor=pointer]
+            - cell "01:33 PM" [ref=e2776] [cursor=pointer]
+            - cell "33.628465" [ref=e2777] [cursor=pointer]
+            - cell "-111.854656" [ref=e2778] [cursor=pointer]
+            - cell "E McDowell Mountain Ranch Rd, Scottsdale, AZ" [ref=e2779] [cursor=pointer]:
+              - generic [ref=e2780] [cursor=pointer]:
+                - paragraph [ref=e2781] [cursor=pointer]:
+                  - text: E McDowell Mountain Ranch Rd,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2782] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.628465,-111.854656
+            - cell "12%" [ref=e2783] [cursor=pointer]:
+              - paragraph [ref=e2786] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2787] [cursor=pointer]
+            - cell "1253.799 mi" [ref=e2788] [cursor=pointer]
+            - cell "SW" [ref=e2789] [cursor=pointer]
+          - row "12/02/2025 1 01:37 PM 33.624239 -111.840267 11239 E Karen Dr, Scottsdale, AZ 85255 14% 0.0 mph 1255.041 mi SE" [ref=e2790]:
+            - cell "12/02/2025" [ref=e2791] [cursor=pointer]
+            - cell "1" [ref=e2792] [cursor=pointer]
+            - cell "01:37 PM" [ref=e2793] [cursor=pointer]
+            - cell "33.624239" [ref=e2794] [cursor=pointer]
+            - cell "-111.840267" [ref=e2795] [cursor=pointer]
+            - cell "11239 E Karen Dr, Scottsdale, AZ 85255" [ref=e2796] [cursor=pointer]:
+              - generic [ref=e2797] [cursor=pointer]:
+                - paragraph [ref=e2798] [cursor=pointer]:
+                  - text: 11239 E Karen Dr,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2799] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624239,-111.840267
+            - cell "14%" [ref=e2800] [cursor=pointer]:
+              - paragraph [ref=e2803] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2804] [cursor=pointer]
+            - cell "1255.041 mi" [ref=e2805] [cursor=pointer]
+            - cell "SE" [ref=e2806] [cursor=pointer]
+          - row "12/02/2025 0 01:40 PM 33.625971 -111.844835 10957 E Queens Wreath Ln, Scottsdale, AZ 85255 12% 0.0 mph 1255.041 mi N" [ref=e2807]:
+            - cell "12/02/2025" [ref=e2808] [cursor=pointer]
+            - cell "0" [ref=e2809] [cursor=pointer]
+            - cell "01:40 PM" [ref=e2810] [cursor=pointer]
+            - cell "33.625971" [ref=e2811] [cursor=pointer]
+            - cell "-111.844835" [ref=e2812] [cursor=pointer]
+            - cell "10957 E Queens Wreath Ln, Scottsdale, AZ 85255" [ref=e2813] [cursor=pointer]:
+              - generic [ref=e2814] [cursor=pointer]:
+                - paragraph [ref=e2815] [cursor=pointer]:
+                  - text: 10957 E Queens Wreath Ln,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2816] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.625971,-111.844835
+            - cell "12%" [ref=e2817] [cursor=pointer]:
+              - paragraph [ref=e2820] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2821] [cursor=pointer]
+            - cell "1255.041 mi" [ref=e2822] [cursor=pointer]
+            - cell "N" [ref=e2823] [cursor=pointer]
+          - row "12/02/2025 0 01:41 PM 33.627479 -111.854517 15608 105th St, Scottsdale, AZ 85259 14% 0.0 mph 1255.662 mi N" [ref=e2824]:
+            - cell "12/02/2025" [ref=e2825] [cursor=pointer]
+            - cell "0" [ref=e2826] [cursor=pointer]
+            - cell "01:41 PM" [ref=e2827] [cursor=pointer]
+            - cell "33.627479" [ref=e2828] [cursor=pointer]
+            - cell "-111.854517" [ref=e2829] [cursor=pointer]
+            - cell "15608 105th St, Scottsdale, AZ 85259" [ref=e2830] [cursor=pointer]:
+              - generic [ref=e2831] [cursor=pointer]:
+                - paragraph [ref=e2832] [cursor=pointer]:
+                  - text: 15608 105th St,
+                  - text: Scottsdale,
+                  - text: AZ 85259
+                - link [ref=e2833] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.627479,-111.854517
+            - cell "14%" [ref=e2834] [cursor=pointer]:
+              - paragraph [ref=e2837] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2838] [cursor=pointer]
+            - cell "1255.662 mi" [ref=e2839] [cursor=pointer]
+            - cell "N" [ref=e2840] [cursor=pointer]
+          - row "12/02/2025 0 01:42 PM 33.627389 -111.855248 15616 105th St, Scottsdale, AZ 85259 14% 0.0 mph 1255.662 mi SE" [ref=e2841]:
+            - cell "12/02/2025" [ref=e2842] [cursor=pointer]
+            - cell "0" [ref=e2843] [cursor=pointer]
+            - cell "01:42 PM" [ref=e2844] [cursor=pointer]
+            - cell "33.627389" [ref=e2845] [cursor=pointer]
+            - cell "-111.855248" [ref=e2846] [cursor=pointer]
+            - cell "15616 105th St, Scottsdale, AZ 85259" [ref=e2847] [cursor=pointer]:
+              - generic [ref=e2848] [cursor=pointer]:
+                - paragraph [ref=e2849] [cursor=pointer]:
+                  - text: 15616 105th St,
+                  - text: Scottsdale,
+                  - text: AZ 85259
+                - link [ref=e2850] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.627389,-111.855248
+            - cell "14%" [ref=e2851] [cursor=pointer]:
+              - paragraph [ref=e2854] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2855] [cursor=pointer]
+            - cell "1255.662 mi" [ref=e2856] [cursor=pointer]
+            - cell "SE" [ref=e2857] [cursor=pointer]
+          - row "12/02/2025 0 01:48 PM 33.640071 -111.878009 9321 E Bell Rd, Scottsdale, AZ 85260 14% 0.0 mph 1258.767 mi W" [ref=e2858]:
+            - cell "12/02/2025" [ref=e2859] [cursor=pointer]
+            - cell "0" [ref=e2860] [cursor=pointer]
+            - cell "01:48 PM" [ref=e2861] [cursor=pointer]
+            - cell "33.640071" [ref=e2862] [cursor=pointer]
+            - cell "-111.878009" [ref=e2863] [cursor=pointer]
+            - cell "9321 E Bell Rd, Scottsdale, AZ 85260" [ref=e2864] [cursor=pointer]:
+              - generic [ref=e2865] [cursor=pointer]:
+                - paragraph [ref=e2866] [cursor=pointer]:
+                  - text: 9321 E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2867] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640071,-111.878009
+            - cell "14%" [ref=e2868] [cursor=pointer]:
+              - paragraph [ref=e2871] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2872] [cursor=pointer]
+            - cell "1258.767 mi" [ref=e2873] [cursor=pointer]
+            - cell "W" [ref=e2874] [cursor=pointer]
+          - row "12/02/2025 0 01:49 PM 33.640118 -111.88712 8958 E Bell Rd, Scottsdale, AZ 85255 12% 0.0 mph 1259.388 mi W" [ref=e2875]:
+            - cell "12/02/2025" [ref=e2876] [cursor=pointer]
+            - cell "0" [ref=e2877] [cursor=pointer]
+            - cell "01:49 PM" [ref=e2878] [cursor=pointer]
+            - cell "33.640118" [ref=e2879] [cursor=pointer]
+            - cell "-111.88712" [ref=e2880] [cursor=pointer]
+            - cell "8958 E Bell Rd, Scottsdale, AZ 85255" [ref=e2881] [cursor=pointer]:
+              - generic [ref=e2882] [cursor=pointer]:
+                - paragraph [ref=e2883] [cursor=pointer]:
+                  - text: 8958 E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2884] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640118,-111.88712
+            - cell "12%" [ref=e2885] [cursor=pointer]:
+              - paragraph [ref=e2888] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2889] [cursor=pointer]
+            - cell "1259.388 mi" [ref=e2890] [cursor=pointer]
+            - cell "W" [ref=e2891] [cursor=pointer]
+          - row "12/02/2025 184 01:49 PM 33.63901 -111.887537 16796 N 90th St, Scottsdale, AZ 85260 12% 0.0 mph 1259.388 mi N" [ref=e2892]:
+            - cell "12/02/2025" [ref=e2893] [cursor=pointer]
+            - cell "184" [ref=e2894] [cursor=pointer]
+            - cell "01:49 PM" [ref=e2895] [cursor=pointer]
+            - cell "33.63901" [ref=e2896] [cursor=pointer]
+            - cell "-111.887537" [ref=e2897] [cursor=pointer]
+            - cell "16796 N 90th St, Scottsdale, AZ 85260" [ref=e2898] [cursor=pointer]:
+              - generic [ref=e2899] [cursor=pointer]:
+                - paragraph [ref=e2900] [cursor=pointer]:
+                  - text: 16796 N 90th St,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2901] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.63901,-111.887537
+            - cell "12%" [ref=e2902] [cursor=pointer]:
+              - paragraph [ref=e2905] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2906] [cursor=pointer]
+            - cell "1259.388 mi" [ref=e2907] [cursor=pointer]
+            - cell "N" [ref=e2908] [cursor=pointer]
+          - row "12/02/2025 4 05:02 PM 33.624255 -111.840298 11237 E Karen Dr, Scottsdale, AZ 85255 14% 0.0 mph 1264.356 mi W" [ref=e2909]:
+            - cell "12/02/2025" [ref=e2910] [cursor=pointer]
+            - cell "4" [ref=e2911] [cursor=pointer]
+            - cell "05:02 PM" [ref=e2912] [cursor=pointer]
+            - cell "33.624255" [ref=e2913] [cursor=pointer]
+            - cell "-111.840298" [ref=e2914] [cursor=pointer]
+            - cell "11237 E Karen Dr, Scottsdale, AZ 85255" [ref=e2915] [cursor=pointer]:
+              - generic [ref=e2916] [cursor=pointer]:
+                - paragraph [ref=e2917] [cursor=pointer]:
+                  - text: 11237 E Karen Dr,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2918] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624255,-111.840298
+            - cell "14%" [ref=e2919] [cursor=pointer]:
+              - paragraph [ref=e2922] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e2923] [cursor=pointer]
+            - cell "1264.356 mi" [ref=e2924] [cursor=pointer]
+            - cell "W" [ref=e2925] [cursor=pointer]
+          - row "12/02/2025 0 05:12 PM 33.640151 -111.860676 E Bell Rd, Scottsdale, AZ 12% 0.0 mph 1267.461 mi W" [ref=e2926]:
+            - cell "12/02/2025" [ref=e2927] [cursor=pointer]
+            - cell "0" [ref=e2928] [cursor=pointer]
+            - cell "05:12 PM" [ref=e2929] [cursor=pointer]
+            - cell "33.640151" [ref=e2930] [cursor=pointer]
+            - cell "-111.860676" [ref=e2931] [cursor=pointer]
+            - cell "E Bell Rd, Scottsdale, AZ" [ref=e2932] [cursor=pointer]:
+              - generic [ref=e2933] [cursor=pointer]:
+                - paragraph [ref=e2934] [cursor=pointer]:
+                  - text: E Bell Rd,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2935] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640151,-111.860676
+            - cell "12%" [ref=e2936] [cursor=pointer]:
+              - paragraph [ref=e2939] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2940] [cursor=pointer]
+            - cell "1267.461 mi" [ref=e2941] [cursor=pointer]
+            - cell "W" [ref=e2942] [cursor=pointer]
+          - row "12/02/2025 71 05:16 PM 33.639136 -111.887786 16812 N 90th St, Scottsdale, AZ 85260 12% 0.0 mph 1268.703 mi S" [ref=e2943]:
+            - cell "12/02/2025" [ref=e2944] [cursor=pointer]
+            - cell "71" [ref=e2945] [cursor=pointer]
+            - cell "05:16 PM" [ref=e2946] [cursor=pointer]
+            - cell "33.639136" [ref=e2947] [cursor=pointer]
+            - cell "-111.887786" [ref=e2948] [cursor=pointer]
+            - cell "16812 N 90th St, Scottsdale, AZ 85260" [ref=e2949] [cursor=pointer]:
+              - generic [ref=e2950] [cursor=pointer]:
+                - paragraph [ref=e2951] [cursor=pointer]:
+                  - text: 16812 N 90th St,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e2952] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639136,-111.887786
+            - cell "12%" [ref=e2953] [cursor=pointer]:
+              - paragraph [ref=e2956] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e2957] [cursor=pointer]
+            - cell "1268.703 mi" [ref=e2958] [cursor=pointer]
+            - cell "S" [ref=e2959] [cursor=pointer]
+          - row "12/02/2025 1 06:28 PM 33.639823 -111.889705 N Pima, Scottsdale, AZ 13% 0.0 mph 1269.324 mi N" [ref=e2960]:
+            - cell "12/02/2025" [ref=e2961] [cursor=pointer]
+            - cell "1" [ref=e2962] [cursor=pointer]
+            - cell "06:28 PM" [ref=e2963] [cursor=pointer]
+            - cell "33.639823" [ref=e2964] [cursor=pointer]
+            - cell "-111.889705" [ref=e2965] [cursor=pointer]
+            - cell "N Pima, Scottsdale, AZ" [ref=e2966] [cursor=pointer]:
+              - generic [ref=e2967] [cursor=pointer]:
+                - paragraph [ref=e2968] [cursor=pointer]:
+                  - text: N Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e2969] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639823,-111.889705
+            - cell "13%" [ref=e2970] [cursor=pointer]:
+              - paragraph [ref=e2973] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2974] [cursor=pointer]
+            - cell "1269.324 mi" [ref=e2975] [cursor=pointer]
+            - cell "N" [ref=e2976] [cursor=pointer]
+          - row "12/02/2025 49 06:33 PM 33.651212 -111.88678 18233 N Pima Rd, Scottsdale, AZ 85255 13% 0.0 mph 1269.945 mi S" [ref=e2977]:
+            - cell "12/02/2025" [ref=e2978] [cursor=pointer]
+            - cell "49" [ref=e2979] [cursor=pointer]
+            - cell "06:33 PM" [ref=e2980] [cursor=pointer]
+            - cell "33.651212" [ref=e2981] [cursor=pointer]
+            - cell "-111.88678" [ref=e2982] [cursor=pointer]
+            - cell "18233 N Pima Rd, Scottsdale, AZ 85255" [ref=e2983] [cursor=pointer]:
+              - generic [ref=e2984] [cursor=pointer]:
+                - paragraph [ref=e2985] [cursor=pointer]:
+                  - text: 18233 N Pima Rd,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e2986] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.651212,-111.88678
+            - cell "13%" [ref=e2987] [cursor=pointer]:
+              - paragraph [ref=e2990] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e2991] [cursor=pointer]
+            - cell "1269.945 mi" [ref=e2992] [cursor=pointer]
+            - cell "S" [ref=e2993] [cursor=pointer]
+          - row "12/02/2025 0 07:28 PM 33.638888 -111.86188 16884 N Thompson Peak Pkwy, Scottsdale, AZ 85260 13% 0.0 mph 1273.050 mi NW" [ref=e2994]:
+            - cell "12/02/2025" [ref=e2995] [cursor=pointer]
+            - cell "0" [ref=e2996] [cursor=pointer]
+            - cell "07:28 PM" [ref=e2997] [cursor=pointer]
+            - cell "33.638888" [ref=e2998] [cursor=pointer]
+            - cell "-111.86188" [ref=e2999] [cursor=pointer]
+            - cell "16884 N Thompson Peak Pkwy, Scottsdale, AZ 85260" [ref=e3000] [cursor=pointer]:
+              - generic [ref=e3001] [cursor=pointer]:
+                - paragraph [ref=e3002] [cursor=pointer]:
+                  - text: 16884 N Thompson Peak Pkwy,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e3003] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638888,-111.86188
+            - cell "13%" [ref=e3004] [cursor=pointer]:
+              - paragraph [ref=e3007] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3008] [cursor=pointer]
+            - cell "1273.050 mi" [ref=e3009] [cursor=pointer]
+            - cell "NW" [ref=e3010] [cursor=pointer]
+          - row "12/02/2025 0 07:31 PM 33.634205 -111.860418 N Thompson Peak Pkwy, Scottsdale, AZ 12% 0.0 mph 1273.671 mi S" [ref=e3011]:
+            - cell "12/02/2025" [ref=e3012] [cursor=pointer]
+            - cell "0" [ref=e3013] [cursor=pointer]
+            - cell "07:31 PM" [ref=e3014] [cursor=pointer]
+            - cell "33.634205" [ref=e3015] [cursor=pointer]
+            - cell "-111.860418" [ref=e3016] [cursor=pointer]
+            - cell "N Thompson Peak Pkwy, Scottsdale, AZ" [ref=e3017] [cursor=pointer]:
+              - generic [ref=e3018] [cursor=pointer]:
+                - paragraph [ref=e3019] [cursor=pointer]:
+                  - text: N Thompson Peak Pkwy,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3020] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.634205,-111.860418
+            - cell "12%" [ref=e3021] [cursor=pointer]:
+              - paragraph [ref=e3024] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3025] [cursor=pointer]
+            - cell "1273.671 mi" [ref=e3026] [cursor=pointer]
+            - cell "S" [ref=e3027] [cursor=pointer]
+          - row "12/02/2025 1 07:32 PM 33.629434 -111.863194 15538 N Thompson Peak Pkwy, Scottsdale, AZ 85260 13% 0.0 mph 1273.671 mi S" [ref=e3028]:
+            - cell "12/02/2025" [ref=e3029] [cursor=pointer]
+            - cell "1" [ref=e3030] [cursor=pointer]
+            - cell "07:32 PM" [ref=e3031] [cursor=pointer]
+            - cell "33.629434" [ref=e3032] [cursor=pointer]
+            - cell "-111.863194" [ref=e3033] [cursor=pointer]
+            - cell "15538 N Thompson Peak Pkwy, Scottsdale, AZ 85260" [ref=e3034] [cursor=pointer]:
+              - generic [ref=e3035] [cursor=pointer]:
+                - paragraph [ref=e3036] [cursor=pointer]:
+                  - text: 15538 N Thompson Peak Pkwy,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e3037] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629434,-111.863194
+            - cell "13%" [ref=e3038] [cursor=pointer]:
+              - paragraph [ref=e3041] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3042] [cursor=pointer]
+            - cell "1273.671 mi" [ref=e3043] [cursor=pointer]
+            - cell "S" [ref=e3044] [cursor=pointer]
+          - row "12/02/2025 0 07:36 PM 33.624608 -111.849801 10679 E Queens Wreath Ln, Scottsdale, AZ 85255 12% 0.0 mph 1274.913 mi E" [ref=e3045]:
+            - cell "12/02/2025" [ref=e3046] [cursor=pointer]
+            - cell "0" [ref=e3047] [cursor=pointer]
+            - cell "07:36 PM" [ref=e3048] [cursor=pointer]
+            - cell "33.624608" [ref=e3049] [cursor=pointer]
+            - cell "-111.849801" [ref=e3050] [cursor=pointer]
+            - cell "10679 E Queens Wreath Ln, Scottsdale, AZ 85255" [ref=e3051] [cursor=pointer]:
+              - generic [ref=e3052] [cursor=pointer]:
+                - paragraph [ref=e3053] [cursor=pointer]:
+                  - text: 10679 E Queens Wreath Ln,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e3054] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624608,-111.849801
+            - cell "12%" [ref=e3055] [cursor=pointer]:
+              - paragraph [ref=e3058] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3059] [cursor=pointer]
+            - cell "1274.913 mi" [ref=e3060] [cursor=pointer]
+            - cell "E" [ref=e3061] [cursor=pointer]
+          - row "12/02/2025 45 07:38 PM 33.624308 -111.840392 11229 E Karen Dr, Scottsdale, AZ 85255 13% 0.0 mph 1275.534 mi W" [ref=e3062]:
+            - cell "12/02/2025" [ref=e3063] [cursor=pointer]
+            - cell "45" [ref=e3064] [cursor=pointer]
+            - cell "07:38 PM" [ref=e3065] [cursor=pointer]
+            - cell "33.624308" [ref=e3066] [cursor=pointer]
+            - cell "-111.840392" [ref=e3067] [cursor=pointer]
+            - cell "11229 E Karen Dr, Scottsdale, AZ 85255" [ref=e3068] [cursor=pointer]:
+              - generic [ref=e3069] [cursor=pointer]:
+                - paragraph [ref=e3070] [cursor=pointer]:
+                  - text: 11229 E Karen Dr,
+                  - text: Scottsdale,
+                  - text: AZ 85255
+                - link [ref=e3071] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624308,-111.840392
+            - cell "13%" [ref=e3072] [cursor=pointer]:
+              - paragraph [ref=e3075] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3076] [cursor=pointer]
+            - cell "1275.534 mi" [ref=e3077] [cursor=pointer]
+            - cell "W" [ref=e3078] [cursor=pointer]
+          - row "12/02/2025 1 08:26 PM 33.628945 -111.863003 McDowell Mountain Ranch Rd, Scottsdale, AZ 13% 0.0 mph 1276.776 mi NW" [ref=e3079]:
+            - cell "12/02/2025" [ref=e3080] [cursor=pointer]
+            - cell "1" [ref=e3081] [cursor=pointer]
+            - cell "08:26 PM" [ref=e3082] [cursor=pointer]
+            - cell "33.628945" [ref=e3083] [cursor=pointer]
+            - cell "-111.863003" [ref=e3084] [cursor=pointer]
+            - cell "McDowell Mountain Ranch Rd, Scottsdale, AZ" [ref=e3085] [cursor=pointer]:
+              - generic [ref=e3086] [cursor=pointer]:
+                - paragraph [ref=e3087] [cursor=pointer]:
+                  - text: McDowell Mountain Ranch Rd,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3088] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.628945,-111.863003
+            - cell "13%" [ref=e3089] [cursor=pointer]:
+              - paragraph [ref=e3092] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3093] [cursor=pointer]
+            - cell "1276.776 mi" [ref=e3094] [cursor=pointer]
+            - cell "NW" [ref=e3095] [cursor=pointer]
+          - row "12/02/2025 1 08:31 PM 33.629779 -111.889552 8848 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260 12% 0.0 mph 1278.639 mi W" [ref=e3096]:
+            - cell "12/02/2025" [ref=e3097] [cursor=pointer]
+            - cell "1" [ref=e3098] [cursor=pointer]
+            - cell "08:31 PM" [ref=e3099] [cursor=pointer]
+            - cell "33.629779" [ref=e3100] [cursor=pointer]
+            - cell "-111.889552" [ref=e3101] [cursor=pointer]
+            - cell "8848 E Frank Lloyd Wright Blvd, Scottsdale, AZ 85260" [ref=e3102] [cursor=pointer]:
+              - generic [ref=e3103] [cursor=pointer]:
+                - paragraph [ref=e3104] [cursor=pointer]:
+                  - text: 8848 E Frank Lloyd Wright Blvd,
+                  - text: Scottsdale,
+                  - text: AZ 85260
+                - link [ref=e3105] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629779,-111.889552
+            - cell "12%" [ref=e3106] [cursor=pointer]:
+              - paragraph [ref=e3109] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3110] [cursor=pointer]
+            - cell "1278.639 mi" [ref=e3111] [cursor=pointer]
+            - cell "W" [ref=e3112] [cursor=pointer]
+          - row "12/02/2025 0 08:34 PM 33.634203 -111.907028 Fwy Pima, Scottsdale, AZ 12% 0.0 mph 1279.881 mi W" [ref=e3113]:
+            - cell "12/02/2025" [ref=e3114] [cursor=pointer]
+            - cell "0" [ref=e3115] [cursor=pointer]
+            - cell "08:34 PM" [ref=e3116] [cursor=pointer]
+            - cell "33.634203" [ref=e3117] [cursor=pointer]
+            - cell "-111.907028" [ref=e3118] [cursor=pointer]
+            - cell "Fwy Pima, Scottsdale, AZ" [ref=e3119] [cursor=pointer]:
+              - generic [ref=e3120] [cursor=pointer]:
+                - paragraph [ref=e3121] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3122] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.634203,-111.907028
+            - cell "12%" [ref=e3123] [cursor=pointer]:
+              - paragraph [ref=e3126] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3127] [cursor=pointer]
+            - cell "1279.881 mi" [ref=e3128] [cursor=pointer]
+            - cell "W" [ref=e3129] [cursor=pointer]
+          - row "12/02/2025 0 08:37 PM 33.636678 -111.921376 Fwy Pima, Scottsdale, AZ 13% 0.0 mph 1281.123 mi N" [ref=e3130]:
+            - cell "12/02/2025" [ref=e3131] [cursor=pointer]
+            - cell "0" [ref=e3132] [cursor=pointer]
+            - cell "08:37 PM" [ref=e3133] [cursor=pointer]
+            - cell "33.636678" [ref=e3134] [cursor=pointer]
+            - cell "-111.921376" [ref=e3135] [cursor=pointer]
+            - cell "Fwy Pima, Scottsdale, AZ" [ref=e3136] [cursor=pointer]:
+              - generic [ref=e3137] [cursor=pointer]:
+                - paragraph [ref=e3138] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3139] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.636678,-111.921376
+            - cell "13%" [ref=e3140] [cursor=pointer]:
+              - paragraph [ref=e3143] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3144] [cursor=pointer]
+            - cell "1281.123 mi" [ref=e3145] [cursor=pointer]
+            - cell "N" [ref=e3146] [cursor=pointer]
+          - row "12/02/2025 0 08:38 PM 33.638147 -111.924942 Fwy Pima, Scottsdale, AZ 13% 0.0 mph 1281.123 mi W" [ref=e3147]:
+            - cell "12/02/2025" [ref=e3148] [cursor=pointer]
+            - cell "0" [ref=e3149] [cursor=pointer]
+            - cell "08:38 PM" [ref=e3150] [cursor=pointer]
+            - cell "33.638147" [ref=e3151] [cursor=pointer]
+            - cell "-111.924942" [ref=e3152] [cursor=pointer]
+            - cell "Fwy Pima, Scottsdale, AZ" [ref=e3153] [cursor=pointer]:
+              - generic [ref=e3154] [cursor=pointer]:
+                - paragraph [ref=e3155] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3156] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638147,-111.924942
+            - cell "13%" [ref=e3157] [cursor=pointer]:
+              - paragraph [ref=e3160] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3161] [cursor=pointer]
+            - cell "1281.123 mi" [ref=e3162] [cursor=pointer]
+            - cell "W" [ref=e3163] [cursor=pointer]
+          - row "12/02/2025 0 08:39 PM 33.638222 -111.925171 11480 Fwy Pima, Scottsdale, AZ 85258 13% 0.0 mph 1281.123 mi W" [ref=e3164]:
+            - cell "12/02/2025" [ref=e3165] [cursor=pointer]
+            - cell "0" [ref=e3166] [cursor=pointer]
+            - cell "08:39 PM" [ref=e3167] [cursor=pointer]
+            - cell "33.638222" [ref=e3168] [cursor=pointer]
+            - cell "-111.925171" [ref=e3169] [cursor=pointer]
+            - cell "11480 Fwy Pima, Scottsdale, AZ 85258" [ref=e3170] [cursor=pointer]:
+              - generic [ref=e3171] [cursor=pointer]:
+                - paragraph [ref=e3172] [cursor=pointer]:
+                  - text: 11480 Fwy Pima,
+                  - text: Scottsdale,
+                  - text: AZ 85258
+                - link [ref=e3173] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638222,-111.925171
+            - cell "13%" [ref=e3174] [cursor=pointer]:
+              - paragraph [ref=e3177] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3178] [cursor=pointer]
+            - cell "1281.123 mi" [ref=e3179] [cursor=pointer]
+            - cell "W" [ref=e3180] [cursor=pointer]
+          - row "12/02/2025 2 08:40 PM 33.639897 -111.924759 Scottsdale, AZ 13% 0.0 mph 1281.123 mi S" [ref=e3181]:
+            - cell "12/02/2025" [ref=e3182] [cursor=pointer]
+            - cell "2" [ref=e3183] [cursor=pointer]
+            - cell "08:40 PM" [ref=e3184] [cursor=pointer]
+            - cell "33.639897" [ref=e3185] [cursor=pointer]
+            - cell "-111.924759" [ref=e3186] [cursor=pointer]
+            - cell "Scottsdale, AZ" [ref=e3187] [cursor=pointer]:
+              - generic [ref=e3188] [cursor=pointer]:
+                - paragraph [ref=e3189] [cursor=pointer]:
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3190] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639897,-111.924759
+            - cell "13%" [ref=e3191] [cursor=pointer]:
+              - paragraph [ref=e3194] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3195] [cursor=pointer]
+            - cell "1281.123 mi" [ref=e3196] [cursor=pointer]
+            - cell "S" [ref=e3197] [cursor=pointer]
+          - row "12/02/2025 0 08:45 PM 33.651333 -111.92519 Fwy Pima, Scottsdale, AZ 12% 0.0 mph 1282.365 mi N" [ref=e3198]:
+            - cell "12/02/2025" [ref=e3199] [cursor=pointer]
+            - cell "0" [ref=e3200] [cursor=pointer]
+            - cell "08:45 PM" [ref=e3201] [cursor=pointer]
+            - cell "33.651333" [ref=e3202] [cursor=pointer]
+            - cell "-111.92519" [ref=e3203] [cursor=pointer]
+            - cell "Fwy Pima, Scottsdale, AZ" [ref=e3204] [cursor=pointer]:
+              - generic [ref=e3205] [cursor=pointer]:
+                - paragraph [ref=e3206] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Scottsdale,
+                  - text: AZ
+                - link [ref=e3207] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.651333,-111.92519
+            - cell "12%" [ref=e3208] [cursor=pointer]:
+              - paragraph [ref=e3211] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3212] [cursor=pointer]
+            - cell "1282.365 mi" [ref=e3213] [cursor=pointer]
+            - cell "N" [ref=e3214] [cursor=pointer]
+          - row "12/02/2025 0 08:48 PM 33.646721 -111.893955 Fwy Pima, Salt River, AZ 12% 0.0 mph 1284.849 mi S" [ref=e3215]:
+            - cell "12/02/2025" [ref=e3216] [cursor=pointer]
+            - cell "0" [ref=e3217] [cursor=pointer]
+            - cell "08:48 PM" [ref=e3218] [cursor=pointer]
+            - cell "33.646721" [ref=e3219] [cursor=pointer]
+            - cell "-111.893955" [ref=e3220] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3221] [cursor=pointer]:
+              - generic [ref=e3222] [cursor=pointer]:
+                - paragraph [ref=e3223] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3224] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.646721,-111.893955
+            - cell "12%" [ref=e3225] [cursor=pointer]:
+              - paragraph [ref=e3228] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3229] [cursor=pointer]
+            - cell "1284.849 mi" [ref=e3230] [cursor=pointer]
+            - cell "S" [ref=e3231] [cursor=pointer]
+          - row "12/02/2025 7 08:51 PM 33.651859 -111.886226 Fwy Pima, Salt River, AZ 13% 0.0 mph 1285.470 mi NE" [ref=e3232]:
+            - cell "12/02/2025" [ref=e3233] [cursor=pointer]
+            - cell "7" [ref=e3234] [cursor=pointer]
+            - cell "08:51 PM" [ref=e3235] [cursor=pointer]
+            - cell "33.651859" [ref=e3236] [cursor=pointer]
+            - cell "-111.886226" [ref=e3237] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3238] [cursor=pointer]:
+              - generic [ref=e3239] [cursor=pointer]:
+                - paragraph [ref=e3240] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3241] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.651859,-111.886226
+            - cell "13%" [ref=e3242] [cursor=pointer]:
+              - paragraph [ref=e3245] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3246] [cursor=pointer]
+            - cell "1285.470 mi" [ref=e3247] [cursor=pointer]
+            - cell "NE" [ref=e3248] [cursor=pointer]
+          - row "12/02/2025 2 09:05 PM 33.629106 -111.864184 Fwy Pima, Salt River, AZ 12% 0.0 mph 1288.575 mi N" [ref=e3249]:
+            - cell "12/02/2025" [ref=e3250] [cursor=pointer]
+            - cell "2" [ref=e3251] [cursor=pointer]
+            - cell "09:05 PM" [ref=e3252] [cursor=pointer]
+            - cell "33.629106" [ref=e3253] [cursor=pointer]
+            - cell "-111.864184" [ref=e3254] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3255] [cursor=pointer]:
+              - generic [ref=e3256] [cursor=pointer]:
+                - paragraph [ref=e3257] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3258] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629106,-111.864184
+            - cell "12%" [ref=e3259] [cursor=pointer]:
+              - paragraph [ref=e3262] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3263] [cursor=pointer]
+            - cell "1288.575 mi" [ref=e3264] [cursor=pointer]
+            - cell "N" [ref=e3265] [cursor=pointer]
+          - row "12/02/2025 0 09:09 PM 33.629362 -111.863662 Fwy Pima, Salt River, AZ 13% 0.0 mph 1288.575 mi SE" [ref=e3266]:
+            - cell "12/02/2025" [ref=e3267] [cursor=pointer]
+            - cell "0" [ref=e3268] [cursor=pointer]
+            - cell "09:09 PM" [ref=e3269] [cursor=pointer]
+            - cell "33.629362" [ref=e3270] [cursor=pointer]
+            - cell "-111.863662" [ref=e3271] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3272] [cursor=pointer]:
+              - generic [ref=e3273] [cursor=pointer]:
+                - paragraph [ref=e3274] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3275] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629362,-111.863662
+            - cell "13%" [ref=e3276] [cursor=pointer]:
+              - paragraph [ref=e3279] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3280] [cursor=pointer]
+            - cell "1288.575 mi" [ref=e3281] [cursor=pointer]
+            - cell "SE" [ref=e3282] [cursor=pointer]
+          - row "12/02/2025 630 09:14 PM 33.62422 -111.840158 Fwy Pima, Salt River, AZ 12% 0.0 mph 1290.438 mi W" [ref=e3283]:
+            - cell "12/02/2025" [ref=e3284] [cursor=pointer]
+            - cell "630" [ref=e3285] [cursor=pointer]
+            - cell "09:14 PM" [ref=e3286] [cursor=pointer]
+            - cell "33.62422" [ref=e3287] [cursor=pointer]
+            - cell "-111.840158" [ref=e3288] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3289] [cursor=pointer]:
+              - generic [ref=e3290] [cursor=pointer]:
+                - paragraph [ref=e3291] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3292] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.62422,-111.840158
+            - cell "12%" [ref=e3293] [cursor=pointer]:
+              - paragraph [ref=e3296] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3297] [cursor=pointer]
+            - cell "1290.438 mi" [ref=e3298] [cursor=pointer]
+            - cell "W" [ref=e3299] [cursor=pointer]
+          - row "12/03/2025 0 07:52 AM 33.629081 -111.889109 Fwy Pima, Salt River, AZ 14% 0.0 mph 1294.164 mi SE" [ref=e3300]:
+            - cell "12/03/2025" [ref=e3301] [cursor=pointer]
+            - cell "0" [ref=e3302] [cursor=pointer]
+            - cell "07:52 AM" [ref=e3303] [cursor=pointer]
+            - cell "33.629081" [ref=e3304] [cursor=pointer]
+            - cell "-111.889109" [ref=e3305] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3306] [cursor=pointer]:
+              - generic [ref=e3307] [cursor=pointer]:
+                - paragraph [ref=e3308] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3309] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629081,-111.889109
+            - cell "14%" [ref=e3310] [cursor=pointer]:
+              - paragraph [ref=e3313] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e3314] [cursor=pointer]
+            - cell "1294.164 mi" [ref=e3315] [cursor=pointer]
+            - cell "SE" [ref=e3316] [cursor=pointer]
+          - row "12/03/2025 1 07:53 AM 33.629254 -111.888966 Fwy Pima, Salt River, AZ 14% 0.0 mph 1294.164 mi N" [ref=e3317]:
+            - cell "12/03/2025" [ref=e3318] [cursor=pointer]
+            - cell "1" [ref=e3319] [cursor=pointer]
+            - cell "07:53 AM" [ref=e3320] [cursor=pointer]
+            - cell "33.629254" [ref=e3321] [cursor=pointer]
+            - cell "-111.888966" [ref=e3322] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3323] [cursor=pointer]:
+              - generic [ref=e3324] [cursor=pointer]:
+                - paragraph [ref=e3325] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3326] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629254,-111.888966
+            - cell "14%" [ref=e3327] [cursor=pointer]:
+              - paragraph [ref=e3330] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e3331] [cursor=pointer]
+            - cell "1294.164 mi" [ref=e3332] [cursor=pointer]
+            - cell "N" [ref=e3333] [cursor=pointer]
+          - row "12/03/2025 0 07:56 AM 33.629259 -111.889843 Fwy Pima, Salt River, AZ 14% 0.0 mph 1294.164 mi N" [ref=e3334]:
+            - cell "12/03/2025" [ref=e3335] [cursor=pointer]
+            - cell "0" [ref=e3336] [cursor=pointer]
+            - cell "07:56 AM" [ref=e3337] [cursor=pointer]
+            - cell "33.629259" [ref=e3338] [cursor=pointer]
+            - cell "-111.889843" [ref=e3339] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3340] [cursor=pointer]:
+              - generic [ref=e3341] [cursor=pointer]:
+                - paragraph [ref=e3342] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3343] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.629259,-111.889843
+            - cell "14%" [ref=e3344] [cursor=pointer]:
+              - paragraph [ref=e3347] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e3348] [cursor=pointer]
+            - cell "1294.164 mi" [ref=e3349] [cursor=pointer]
+            - cell "N" [ref=e3350] [cursor=pointer]
+          - row "12/03/2025 59 07:59 AM 33.63927 -111.883799 Fwy Pima, Salt River, AZ 13% 0.0 mph 1295.406 mi SE" [ref=e3351]:
+            - cell "12/03/2025" [ref=e3352] [cursor=pointer]
+            - cell "59" [ref=e3353] [cursor=pointer]
+            - cell "07:59 AM" [ref=e3354] [cursor=pointer]
+            - cell "33.63927" [ref=e3355] [cursor=pointer]
+            - cell "-111.883799" [ref=e3356] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3357] [cursor=pointer]:
+              - generic [ref=e3358] [cursor=pointer]:
+                - paragraph [ref=e3359] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3360] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.63927,-111.883799
+            - cell "13%" [ref=e3361] [cursor=pointer]:
+              - paragraph [ref=e3364] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3365] [cursor=pointer]
+            - cell "1295.406 mi" [ref=e3366] [cursor=pointer]
+            - cell "SE" [ref=e3367] [cursor=pointer]
+          - row "12/03/2025 0 09:00 AM 33.639975 -111.878883 Fwy Pima, Salt River, AZ 13% 0.0 mph 1295.406 mi E" [ref=e3368]:
+            - cell "12/03/2025" [ref=e3369] [cursor=pointer]
+            - cell "0" [ref=e3370] [cursor=pointer]
+            - cell "09:00 AM" [ref=e3371] [cursor=pointer]
+            - cell "33.639975" [ref=e3372] [cursor=pointer]
+            - cell "-111.878883" [ref=e3373] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3374] [cursor=pointer]:
+              - generic [ref=e3375] [cursor=pointer]:
+                - paragraph [ref=e3376] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3377] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639975,-111.878883
+            - cell "13%" [ref=e3378] [cursor=pointer]:
+              - paragraph [ref=e3381] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3382] [cursor=pointer]
+            - cell "1295.406 mi" [ref=e3383] [cursor=pointer]
+            - cell "E" [ref=e3384] [cursor=pointer]
+          - row "12/03/2025 16 09:07 AM 33.624248 -111.840237 Fwy Pima, Salt River, AZ 12% 0.0 mph 1299.753 mi W" [ref=e3385]:
+            - cell "12/03/2025" [ref=e3386] [cursor=pointer]
+            - cell "16" [ref=e3387] [cursor=pointer]
+            - cell "09:07 AM" [ref=e3388] [cursor=pointer]
+            - cell "33.624248" [ref=e3389] [cursor=pointer]
+            - cell "-111.840237" [ref=e3390] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3391] [cursor=pointer]:
+              - generic [ref=e3392] [cursor=pointer]:
+                - paragraph [ref=e3393] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3394] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624248,-111.840237
+            - cell "12%" [ref=e3395] [cursor=pointer]:
+              - paragraph [ref=e3398] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3399] [cursor=pointer]
+            - cell "1299.753 mi" [ref=e3400] [cursor=pointer]
+            - cell "W" [ref=e3401] [cursor=pointer]
+          - row "12/03/2025 0 09:31 AM 33.640147 -111.878165 Fwy Pima, Salt River, AZ 12% 0.0 mph 1303.479 mi W" [ref=e3402]:
+            - cell "12/03/2025" [ref=e3403] [cursor=pointer]
+            - cell "0" [ref=e3404] [cursor=pointer]
+            - cell "09:31 AM" [ref=e3405] [cursor=pointer]
+            - cell "33.640147" [ref=e3406] [cursor=pointer]
+            - cell "-111.878165" [ref=e3407] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3408] [cursor=pointer]:
+              - generic [ref=e3409] [cursor=pointer]:
+                - paragraph [ref=e3410] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3411] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640147,-111.878165
+            - cell "12%" [ref=e3412] [cursor=pointer]:
+              - paragraph [ref=e3415] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3416] [cursor=pointer]
+            - cell "1303.479 mi" [ref=e3417] [cursor=pointer]
+            - cell "W" [ref=e3418] [cursor=pointer]
+          - row "12/03/2025 483 09:34 AM 33.638993 -111.887673 Fwy Pima, Salt River, AZ 12% 0.0 mph 1304.100 mi N" [ref=e3419]:
+            - cell "12/03/2025" [ref=e3420] [cursor=pointer]
+            - cell "483" [ref=e3421] [cursor=pointer]
+            - cell "09:34 AM" [ref=e3422] [cursor=pointer]
+            - cell "33.638993" [ref=e3423] [cursor=pointer]
+            - cell "-111.887673" [ref=e3424] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3425] [cursor=pointer]:
+              - generic [ref=e3426] [cursor=pointer]:
+                - paragraph [ref=e3427] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3428] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.638993,-111.887673
+            - cell "12%" [ref=e3429] [cursor=pointer]:
+              - paragraph [ref=e3432] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3433] [cursor=pointer]
+            - cell "1304.100 mi" [ref=e3434] [cursor=pointer]
+            - cell "N" [ref=e3435] [cursor=pointer]
+          - row "12/03/2025 0 05:38 PM 33.639833 -111.888218 Fwy Pima, Salt River, AZ 13% 0.0 mph 1304.100 mi NW" [ref=e3436]:
+            - cell "12/03/2025" [ref=e3437] [cursor=pointer]
+            - cell "0" [ref=e3438] [cursor=pointer]
+            - cell "05:38 PM" [ref=e3439] [cursor=pointer]
+            - cell "33.639833" [ref=e3440] [cursor=pointer]
+            - cell "-111.888218" [ref=e3441] [cursor=pointer]
+            - cell "Fwy Pima, Salt River, AZ" [ref=e3442] [cursor=pointer]:
+              - generic [ref=e3443] [cursor=pointer]:
+                - paragraph [ref=e3444] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Salt River,
+                  - text: AZ
+                - link [ref=e3445] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639833,-111.888218
+            - cell "13%" [ref=e3446] [cursor=pointer]:
+              - paragraph [ref=e3449] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3450] [cursor=pointer]
+            - cell "1304.100 mi" [ref=e3451] [cursor=pointer]
+            - cell "NW" [ref=e3452] [cursor=pointer]
+          - row "12/03/2025 0 05:39 PM 33.640159 -111.878803 Fwy Pima, Mesa, AZ 14% 0.0 mph 1304.721 mi E" [ref=e3453]:
+            - cell "12/03/2025" [ref=e3454] [cursor=pointer]
+            - cell "0" [ref=e3455] [cursor=pointer]
+            - cell "05:39 PM" [ref=e3456] [cursor=pointer]
+            - cell "33.640159" [ref=e3457] [cursor=pointer]
+            - cell "-111.878803" [ref=e3458] [cursor=pointer]
+            - cell "Fwy Pima, Mesa, AZ" [ref=e3459] [cursor=pointer]:
+              - generic [ref=e3460] [cursor=pointer]:
+                - paragraph [ref=e3461] [cursor=pointer]:
+                  - text: Fwy Pima,
+                  - text: Mesa,
+                  - text: AZ
+                - link [ref=e3462] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.640159,-111.878803
+            - cell "14%" [ref=e3463] [cursor=pointer]:
+              - paragraph [ref=e3466] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e3467] [cursor=pointer]
+            - cell "1304.721 mi" [ref=e3468] [cursor=pointer]
+            - cell "E" [ref=e3469] [cursor=pointer]
+          - row "12/03/2025 4 05:47 PM 33.624229 -111.840243 Fwy Price, Tempe, AZ 12% 0.0 mph 1309.068 mi NW" [ref=e3470]:
+            - cell "12/03/2025" [ref=e3471] [cursor=pointer]
+            - cell "4" [ref=e3472] [cursor=pointer]
+            - cell "05:47 PM" [ref=e3473] [cursor=pointer]
+            - cell "33.624229" [ref=e3474] [cursor=pointer]
+            - cell "-111.840243" [ref=e3475] [cursor=pointer]
+            - cell "Fwy Price, Tempe, AZ" [ref=e3476] [cursor=pointer]:
+              - generic [ref=e3477] [cursor=pointer]:
+                - paragraph [ref=e3478] [cursor=pointer]:
+                  - text: Fwy Price,
+                  - text: Tempe,
+                  - text: AZ
+                - link [ref=e3479] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.624229,-111.840243
+            - cell "12%" [ref=e3480] [cursor=pointer]:
+              - paragraph [ref=e3483] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3484] [cursor=pointer]
+            - cell "1309.068 mi" [ref=e3485] [cursor=pointer]
+            - cell "NW" [ref=e3486] [cursor=pointer]
+          - row "12/03/2025 24 06:01 PM 33.639707 -111.887662 Fwy Price, Tempe, AZ 12% 0.0 mph 1313.415 mi S" [ref=e3487]:
+            - cell "12/03/2025" [ref=e3488] [cursor=pointer]
+            - cell "24" [ref=e3489] [cursor=pointer]
+            - cell "06:01 PM" [ref=e3490] [cursor=pointer]
+            - cell "33.639707" [ref=e3491] [cursor=pointer]
+            - cell "-111.887662" [ref=e3492] [cursor=pointer]
+            - cell "Fwy Price, Tempe, AZ" [ref=e3493] [cursor=pointer]:
+              - generic [ref=e3494] [cursor=pointer]:
+                - paragraph [ref=e3495] [cursor=pointer]:
+                  - text: Fwy Price,
+                  - text: Tempe,
+                  - text: AZ
+                - link [ref=e3496] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639707,-111.887662
+            - cell "12%" [ref=e3497] [cursor=pointer]:
+              - paragraph [ref=e3500] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3501] [cursor=pointer]
+            - cell "1313.415 mi" [ref=e3502] [cursor=pointer]
+            - cell "S" [ref=e3503] [cursor=pointer]
+          - row "12/03/2025 0 06:27 PM 33.639371 -111.889658 Fwy Price, Tempe, AZ 14% 0.0 mph 1314.036 mi N" [ref=e3504]:
+            - cell "12/03/2025" [ref=e3505] [cursor=pointer]
+            - cell "0" [ref=e3506] [cursor=pointer]
+            - cell "06:27 PM" [ref=e3507] [cursor=pointer]
+            - cell "33.639371" [ref=e3508] [cursor=pointer]
+            - cell "-111.889658" [ref=e3509] [cursor=pointer]
+            - cell "Fwy Price, Tempe, AZ" [ref=e3510] [cursor=pointer]:
+              - generic [ref=e3511] [cursor=pointer]:
+                - paragraph [ref=e3512] [cursor=pointer]:
+                  - text: Fwy Price,
+                  - text: Tempe,
+                  - text: AZ
+                - link [ref=e3513] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.639371,-111.889658
+            - cell "14%" [ref=e3514] [cursor=pointer]:
+              - paragraph [ref=e3517] [cursor=pointer]: 14%
+            - cell "0.0 mph" [ref=e3518] [cursor=pointer]
+            - cell "1314.036 mi" [ref=e3519] [cursor=pointer]
+            - cell "N" [ref=e3520] [cursor=pointer]
+          - row "12/03/2025 49 06:30 PM 33.651344 -111.886694 Fwy Price, Tempe, AZ 12% 0.0 mph 1314.657 mi N" [ref=e3521]:
+            - cell "12/03/2025" [ref=e3522] [cursor=pointer]
+            - cell "49" [ref=e3523] [cursor=pointer]
+            - cell "06:30 PM" [ref=e3524] [cursor=pointer]
+            - cell "33.651344" [ref=e3525] [cursor=pointer]
+            - cell "-111.886694" [ref=e3526] [cursor=pointer]
+            - cell "Fwy Price, Tempe, AZ" [ref=e3527] [cursor=pointer]:
+              - generic [ref=e3528] [cursor=pointer]:
+                - paragraph [ref=e3529] [cursor=pointer]:
+                  - text: Fwy Price,
+                  - text: Tempe,
+                  - text: AZ
+                - link [ref=e3530] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.651344,-111.886694
+            - cell "12%" [ref=e3531] [cursor=pointer]:
+              - paragraph [ref=e3534] [cursor=pointer]: 12%
+            - cell "0.0 mph" [ref=e3535] [cursor=pointer]
+            - cell "1314.657 mi" [ref=e3536] [cursor=pointer]
+            - cell "N" [ref=e3537] [cursor=pointer]
+          - row "12/03/2025 0 07:27 PM 33.628397 -111.854595 S Price Rd, Tempe, AZ 13% 0.0 mph 1319.004 mi NW" [ref=e3538]:
+            - cell "12/03/2025" [ref=e3539] [cursor=pointer]
+            - cell "0" [ref=e3540] [cursor=pointer]
+            - cell "07:27 PM" [ref=e3541] [cursor=pointer]
+            - cell "33.628397" [ref=e3542] [cursor=pointer]
+            - cell "-111.854595" [ref=e3543] [cursor=pointer]
+            - cell "S Price Rd, Tempe, AZ" [ref=e3544] [cursor=pointer]:
+              - generic [ref=e3545] [cursor=pointer]:
+                - paragraph [ref=e3546] [cursor=pointer]:
+                  - text: S Price Rd,
+                  - text: Tempe,
+                  - text: AZ
+                - link [ref=e3547] [cursor=pointer]:
+                  - /url: http://maps.google.com/?q=33.628397,-111.854595
+            - cell "13%" [ref=e3548] [cursor=pointer]:
+              - paragraph [ref=e3551] [cursor=pointer]: 13%
+            - cell "0.0 mph" [ref=e3552] [cursor=pointer]
+            - cell "1319.004 mi" [ref=e3553] [cursor=pointer]
+            - cell "NW" [ref=e3554] [cursor=pointer]
+      - generic [ref=e3555]:
+        - paragraph [ref=e3556]: Showing 1 to 76 of 76 entries
+        - paragraph [ref=e3560] [cursor=pointer]: "1"
+  - generic [ref=e3563]:
+    - heading "Asset Tracker Check-In Report " [level=2] [ref=e3565]:
+      - text: Asset Tracker Check-In Report
+      - generic [ref=e3566] [cursor=pointer]: 
+    - generic [ref=e3569]:
+      - generic [ref=e3570]: "Filter by:"
+      - combobox [ref=e3571]:
+        - option "All" [selected]
+        - option "Start Movement"
+        - option "Stop Movement"
+        - option "Aggressive"
+        - option "No Satellite"
+    - table [ref=e3572]:
+      - rowgroup [ref=e3573]:
+        - row "No data available" [ref=e3574]:
+          - cell "No data available" [ref=e3575] [cursor=pointer]
+    - generic [ref=e3577]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e3582] [cursor=pointer]
+  - generic [ref=e3583]:
+    - heading "Mileage Report " [level=2] [ref=e3585]:
+      - text: Mileage Report
+      - generic [ref=e3586] [cursor=pointer]: 
+    - generic [ref=e3589]:
+      - generic [ref=e3590]:
+        - button "Choose Period" [ref=e3591] [cursor=pointer]:
+          - generic [ref=e3592] [cursor=pointer]: Choose Period
+        - textbox [ref=e3594] [cursor=pointer]
+      - combobox [ref=e3596]
+    - generic [ref=e3597]:
+      - paragraph [ref=e3598]: "Select Report Type:"
+      - generic [ref=e3599]:
+        - generic [ref=e3600]:
+          - radio "Mileage" [checked] [ref=e3601]
+          - text: Mileage
+        - generic [ref=e3602]:
+          - radio "Speed" [ref=e3603]
+          - text: Speed
+    - generic [ref=e3604]:
+      - checkbox "Specify Time Frame" [ref=e3605]
+      - text: Specify Time Frame
+    - generic [ref=e3606]:
+      - paragraph [ref=e3607]: "Select Time Range:"
+      - generic [ref=e3608]:
+        - textbox [ref=e3609]
+        - textbox [ref=e3610]
+    - button "Submit" [ref=e3612] [cursor=pointer]
+  - generic [ref=e3613]:
+    - heading "30 Day Mileage Report " [level=2] [ref=e3615]:
+      - text: 30 Day Mileage Report
+      - generic [ref=e3616] [cursor=pointer]: 
+    - generic [ref=e3619]:
+      - generic [ref=e3620]:
+        - button "Choose Period" [ref=e3621] [cursor=pointer]:
+          - generic [ref=e3622] [cursor=pointer]: Choose Period
+        - textbox [ref=e3624] [cursor=pointer]
+      - combobox [ref=e3626]
+      - generic [ref=e3627]:
+        - checkbox "All" [ref=e3628]
+        - text: All
+      - button "Submit" [ref=e3629] [cursor=pointer]
+    - textbox "Search" [ref=e3633]
+    - table [ref=e3634]:
+      - rowgroup [ref=e3635]:
+        - row "Report Not Generated" [ref=e3636]:
+          - cell "Report Not Generated" [ref=e3637] [cursor=pointer]
+  - generic [ref=e3638]:
+    - heading "30 Day Mileage Report" [level=2] [ref=e3640]
+    - table [ref=e3643]:
+      - rowgroup [ref=e3644]:
+        - row "No Data to Display" [ref=e3645]:
+          - cell "No Data to Display" [ref=e3646] [cursor=pointer]
+  - generic [ref=e3647]:
+    - heading "Current Location Report " [level=2] [ref=e3649]:
+      - text: Current Location Report
+      - generic [ref=e3650] [cursor=pointer]: 
+    - generic [ref=e3653]:
+      - textbox "Search" [ref=e3656]
+      - generic [ref=e3658]:
+        - generic [ref=e3659]: Show
+        - combobox "Show entries" [ref=e3660]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e3661]: entries
+      - button "Copy" [ref=e3662] [cursor=pointer]
+      - button "Save file as" [ref=e3664] [cursor=pointer]: Save file as
+    - table [ref=e3667]:
+      - rowgroup [ref=e3668]:
+        - row "No Data to Display" [ref=e3669]:
+          - cell "No Data to Display" [ref=e3670] [cursor=pointer]
+    - generic [ref=e3671]:
+      - paragraph [ref=e3672]: Showing 0 to 0 of 0 entries
+      - paragraph [ref=e3675] [cursor=pointer]: "1"
+  - generic [ref=e3677]:
+    - heading "State Mileage Report " [level=2] [ref=e3679]:
+      - text: State Mileage Report
+      - generic [ref=e3680] [cursor=pointer]: 
+    - generic [ref=e3683]:
+      - generic [ref=e3684]:
+        - button "Choose Period" [ref=e3685] [cursor=pointer]:
+          - generic [ref=e3686] [cursor=pointer]: Choose Period
+        - textbox [ref=e3688] [cursor=pointer]
+      - combobox [ref=e3690]:
+        - option "Select Device" [selected]
+      - generic [ref=e3691]:
+        - checkbox "All Devices" [ref=e3692]
+        - generic [ref=e3693]: All Devices
+      - generic [ref=e3694]:
+        - button "Submit" [ref=e3695] [cursor=pointer]
+        - button "Refresh" [ref=e3697] [cursor=pointer]: Refresh
+    - generic [ref=e3699]:
+      - heading "Requests Table" [level=4] [ref=e3700]
+      - table [ref=e3701]:
+        - rowgroup [ref=e3702]:
+          - row "No Reports Generated" [ref=e3703]:
+            - cell "No Reports Generated" [ref=e3704] [cursor=pointer]
+    - button "Close" [ref=e3705] [cursor=pointer]
+  - generic [ref=e3706]:
+    - heading "Trip Report " [level=2] [ref=e3708]:
+      - text: Trip Report
+      - generic [ref=e3709] [cursor=pointer]: 
+    - generic [ref=e3712]:
+      - generic [ref=e3713]:
+        - generic [ref=e3714]: "Select Device:"
+        - combobox "Select Device:" [ref=e3715]
+      - generic [ref=e3716]:
+        - generic [ref=e3717]: "Select Date:"
+        - textbox [ref=e3718]: 2025-12-09
+      - button "Submit" [ref=e3719] [cursor=pointer]
+    - table [ref=e3720]:
+      - rowgroup [ref=e3721]:
+        - row "Report Not Generated" [ref=e3722]:
+          - cell "Report Not Generated" [ref=e3723] [cursor=pointer]
+  - generic [ref=e3724]:
+    - heading "Driver Safety Report " [level=2] [ref=e3726]:
+      - text: Driver Safety Report
+      - generic [ref=e3727] [cursor=pointer]: 
+    - generic [ref=e3730]:
+      - generic [ref=e3731]: "Select Device:"
+      - combobox "Select Device:" [ref=e3732]
+    - button "Submit" [ref=e3734] [cursor=pointer]
+  - generic [ref=e3735]:
+    - heading "Posted Speed Report " [level=2] [ref=e3737]:
+      - text: Posted Speed Report
+      - generic [ref=e3738] [cursor=pointer]: 
+    - paragraph [ref=e3741]:
+      - strong [ref=e3742]: "Instructions:"
+      - text: Select your date range (maximum 30 days). Then select the Device Name and select the Posted Speed Limit (mph). This is the maximum mph allowed over the speed limit before it is considered a violation. E.g., if you choose 10, you will see a violation when your drivers go 10 mph over the posted speed limit. Finally, click Submit. The report will be queued up and may take up to 10 minutes to load. You can come back to this page to check the status.
+    - generic [ref=e3743]:
+      - generic [ref=e3744]:
+        - button "Choose Period" [ref=e3745] [cursor=pointer]:
+          - generic [ref=e3746] [cursor=pointer]: Choose Period
+        - textbox [ref=e3748] [cursor=pointer]
+      - combobox [ref=e3750]
+      - textbox "Enter Posted Speed Limit (MPH)" [ref=e3752]
+      - button "Submit" [ref=e3753] [cursor=pointer]
+      - button "Refresh" [ref=e3754] [cursor=pointer]
+    - generic [ref=e3755]:
+      - textbox "Search" [ref=e3758]
+      - generic [ref=e3760]:
+        - generic [ref=e3761]: Show
+        - combobox "Show entries" [ref=e3762]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e3763]: entries
+      - button "Copy" [ref=e3764] [cursor=pointer]
+      - button "Save file as" [ref=e3766] [cursor=pointer]: Save file as
+    - table [ref=e3769]:
+      - rowgroup [ref=e3770]:
+        - row "No Data to Display" [ref=e3771]:
+          - cell "No Data to Display" [ref=e3772] [cursor=pointer]
+    - generic [ref=e3774]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e3779] [cursor=pointer]
+  - generic [ref=e3780]:
+    - heading "Engine On Report " [level=2] [ref=e3782]:
+      - text: Engine On Report
+      - generic [ref=e3783] [cursor=pointer]: 
+    - generic [ref=e3786]:
+      - generic [ref=e3787]:
+        - button "Choose Period" [ref=e3788] [cursor=pointer]:
+          - generic [ref=e3789] [cursor=pointer]: Choose Period
+        - textbox [ref=e3791] [cursor=pointer]
+      - combobox [ref=e3793]
+      - button "Submit" [ref=e3794] [cursor=pointer]
+  - generic [ref=e3795]:
+    - heading "Idling Report " [level=2] [ref=e3797]:
+      - text: Idling Report
+      - generic [ref=e3798] [cursor=pointer]: 
+    - generic [ref=e3801]:
+      - generic [ref=e3802]:
+        - button "Choose Period" [ref=e3803] [cursor=pointer]:
+          - generic [ref=e3804] [cursor=pointer]: Choose Period
+        - textbox [ref=e3806] [cursor=pointer]
+      - combobox [ref=e3808]
+      - button "Submit" [ref=e3809] [cursor=pointer]
+  - generic [ref=e3810]:
+    - heading "Low Voltage Device Report " [level=2] [ref=e3812]:
+      - text: Low Voltage Device Report
+      - generic [ref=e3813] [cursor=pointer]: 
+    - generic [ref=e3816]:
+      - generic [ref=e3817]: "Select Data Point:"
+      - generic [ref=e3818]:
+        - generic [ref=e3819]:
+          - radio "Speed more than 80 MPH" [checked] [ref=e3820]
+          - text: Speed more than 80 MPH
+        - generic [ref=e3821]:
+          - radio "Voltage lower than 12V" [ref=e3822]
+          - text: Voltage lower than 12V
+    - generic [ref=e3823]:
+      - generic [ref=e3824]: "Select Duration:"
+      - generic [ref=e3825]:
+        - generic [ref=e3826]:
+          - radio "Current" [checked] [ref=e3827]
+          - text: Current
+        - generic [ref=e3828]:
+          - radio "Last 24 hours" [ref=e3829]
+          - text: Last 24 hours
+        - generic [ref=e3830]:
+          - radio "Last 3 days" [ref=e3831]
+          - text: Last 3 days
+        - generic [ref=e3832]:
+          - radio "Last 7 days" [ref=e3833]
+          - text: Last 7 days
+    - button "Submit" [ref=e3835] [cursor=pointer]
+    - generic [ref=e3836]:
+      - textbox "Search" [ref=e3839]
+      - button "Copy" [ref=e3840] [cursor=pointer]
+      - button "Save file as" [ref=e3842] [cursor=pointer]: Save file as
+    - table [ref=e3845]:
+      - rowgroup [ref=e3846]:
+        - row "No Data to Display" [ref=e3847]:
+          - cell "No Data to Display" [ref=e3848] [cursor=pointer]
+  - generic [ref=e3849]:
+    - heading "Asset Ping Program Report " [level=2] [ref=e3851]:
+      - text: Asset Ping Program Report
+      - generic [ref=e3852] [cursor=pointer]: 
+    - generic [ref=e3855]:
+      - generic [ref=e3856]: "Select Device:"
+      - combobox "Select Device:" [ref=e3857]
+    - button "Submit" [ref=e3859] [cursor=pointer]
+    - generic [ref=e3860]:
+      - textbox "Search" [ref=e3863]
+      - button "Copy" [ref=e3864] [cursor=pointer]
+      - button "Save file as" [ref=e3866] [cursor=pointer]: Save file as
+    - table [ref=e3869]:
+      - rowgroup [ref=e3870]:
+        - row "Report Not Generated" [ref=e3871]:
+          - cell "Report Not Generated" [ref=e3872] [cursor=pointer]
+  - generic [ref=e3873]:
+    - heading "Vehicle Utilization Report " [level=2] [ref=e3875]:
+      - text: Vehicle Utilization Report
+      - generic [ref=e3876] [cursor=pointer]: 
+    - generic [ref=e3879]:
+      - generic [ref=e3881]:
+        - textbox [ref=e3882]
+        - textbox [ref=e3883]
+      - button "Submit" [ref=e3884] [cursor=pointer]
+    - generic [ref=e3885]:
+      - generic [ref=e3886]:
+        - heading "Summary" [level=4] [ref=e3887]
+        - generic [ref=e3888]:
+          - paragraph [ref=e3889]: Mar 1, 2025 12:00 AM - Mar 31, 2025 11:59 PM
+          - paragraph [ref=e3890]: 0%
+        - generic [ref=e3891]:
+          - paragraph [ref=e3892]: "Average Utilization:"
+          - paragraph [ref=e3893]: 0%
+        - generic [ref=e3894]:
+          - paragraph [ref=e3895]: "Average Hours Used (per day):"
+          - paragraph [ref=e3896]: 00:00
+        - generic [ref=e3897]:
+          - paragraph [ref=e3898]: "Trailers Used:"
+          - paragraph [ref=e3899]: 0 of 5
+      - generic [ref=e3900]:
+        - heading "Average Utilization" [level=4] [ref=e3901]
+        - heading "Feb 25, 2025 12:00 AM - Mar 3, 2025 11:59 PM" [level=5] [ref=e3903]
+    - generic [ref=e3906]:
+      - textbox "Search" [ref=e3909]
+      - button "Copy" [ref=e3910] [cursor=pointer]
+      - button "Save file as" [ref=e3912] [cursor=pointer]: Save file as
+    - table [ref=e3915]:
+      - rowgroup [ref=e3916]:
+        - row "No Data Available" [ref=e3917]:
+          - cell "No Data Available" [ref=e3918] [cursor=pointer]
+  - generic [ref=e3919]:
+    - heading "Exit Report " [level=2] [ref=e3921]:
+      - text: Exit Report
+      - generic [ref=e3922] [cursor=pointer]: 
+    - generic [ref=e3925]:
+      - heading "Get the Latest Report" [level=2] [ref=e3926]
+      - paragraph [ref=e3927]: Click the button below to fetch the most recent up-to-date report for your account.
+      - button "Get Latest Report" [ref=e3928] [cursor=pointer]
+    - heading "Requests Table" [level=4] [ref=e3929]
+    - table [ref=e3930]:
+      - rowgroup [ref=e3931]:
+        - row "No Reports Generated" [ref=e3932]:
+          - cell "No Reports Generated" [ref=e3933] [cursor=pointer]
+  - generic [ref=e3934]:
+    - heading "Utilization Report " [level=2] [ref=e3936]:
+      - text: Utilization Report
+      - generic [ref=e3937] [cursor=pointer]: 
+    - generic [ref=e3940]:
+      - generic [ref=e3941]:
+        - generic [ref=e3942]: "Account Name:"
+        - textbox "Account Name:" [disabled] [ref=e3943]
+      - generic [ref=e3944]:
+        - generic [ref=e3945]: "Select Date Range:"
+        - button "Choose Period" [ref=e3946] [cursor=pointer]:
+          - generic [ref=e3947] [cursor=pointer]: Choose Period
+        - textbox [ref=e3949] [cursor=pointer]
+      - button "Submit" [ref=e3950] [cursor=pointer]
+    - heading "Requests Table" [level=4] [ref=e3951]
+    - table [ref=e3952]:
+      - rowgroup [ref=e3953]:
+        - row "No Reports Generated" [ref=e3954]:
+          - cell "No Reports Generated" [ref=e3955] [cursor=pointer]
+  - generic [ref=e3956]:
+    - heading "Day of the Week Report " [level=2] [ref=e3958]:
+      - text: Day of the Week Report
+      - generic [ref=e3959] [cursor=pointer]: 
+    - generic [ref=e3962]:
+      - heading "Get the Latest Report" [level=2] [ref=e3963]
+      - paragraph [ref=e3964]: Click the button below to fetch the most recent up-to-date report for your account.
+      - button "Get Latest Report" [ref=e3965] [cursor=pointer]
+    - heading "Requests Table" [level=4] [ref=e3966]
+    - table [ref=e3967]:
+      - rowgroup [ref=e3968]:
+        - row "No Reports Generated" [ref=e3969]:
+          - cell "No Reports Generated" [ref=e3970] [cursor=pointer]
+  - generic [ref=e3971]:
+    - heading "Alert Report " [level=2] [ref=e3973]:
+      - text: Alert Report
+      - generic [ref=e3974] [cursor=pointer]: 
+    - generic [ref=e3977]:
+      - generic [ref=e3978]:
+        - button "Choose Period" [ref=e3979] [cursor=pointer]:
+          - generic [ref=e3980] [cursor=pointer]: Choose Period
+        - textbox [ref=e3982] [cursor=pointer]
+      - combobox [ref=e3984]
+      - button "Submit" [ref=e3985] [cursor=pointer]
+    - table [ref=e3986]:
+      - rowgroup [ref=e3987]:
+        - row "Report Not Generated" [ref=e3988]:
+          - cell "Report Not Generated" [ref=e3989] [cursor=pointer]
+    - button "Close" [ref=e3990] [cursor=pointer]
+  - generic [ref=e3991]:
+    - heading "Dashcam Refresh " [level=2] [ref=e3993]:
+      - text: Dashcam Refresh
+      - generic [ref=e3994] [cursor=pointer]: 
+    - combobox [ref=e3999]
+    - button "Refresh Dashcam" [ref=e4002] [cursor=pointer]
+  - generic [ref=e4003]:
+    - heading "Alert Settings " [level=2] [ref=e4005]:
+      - text: Alert Settings
+      - generic [ref=e4006] [cursor=pointer]: 
+    - generic [ref=e4009]:
+      - generic [ref=e4010]: "Select Dashcam:"
+      - 'combobox "Select Dashcam: Select Dashcam:" [ref=e4011]'
+  - generic [ref=e4013]:
+    - heading "Dashcam Device Settings" [level=2] [ref=e4015]
+    - generic [ref=e4018]:
+      - generic [ref=e4020]:
+        - generic [ref=e4021]:
+          - generic [ref=e4022]: "Configuration Mode:"
+          - combobox [ref=e4023] [cursor=pointer]:
+            - option "Single Device"
+            - option "Multiple Devices" [selected]
+        - generic [ref=e4025]:
+          - generic [ref=e4026]: "Select Devices:"
+          - generic [ref=e4028] [cursor=pointer]:
+            - generic [ref=e4029] [cursor=pointer]: No devices selected
+            - img [ref=e4030] [cursor=pointer]
+      - generic [ref=e4033]:
+        - button "Device Settings" [disabled] [ref=e4034]
+        - button "Event Settings" [disabled] [ref=e4035]
+      - generic [ref=e4036]:
+        - img [ref=e4037]
+        - heading "No Devices Selected" [level=2] [ref=e4039]
+        - paragraph [ref=e4040]: Please select one or more devices from the dropdown above to configure their settings. You can search for specific devices or use the quick selection buttons.
+        - button "Select Devices" [ref=e4041] [cursor=pointer]:
+          - img [ref=e4042] [cursor=pointer]
+          - text: Select Devices
+      - generic [ref=e4045]:
+        - generic [ref=e4046]:
+          - generic [ref=e4047]:
+            - img [ref=e4049]
+            - heading "General Settings" [level=3] [ref=e4052]
+          - generic [ref=e4054]:
+            - generic [ref=e4055]:
+              - generic [ref=e4056]:
+                - generic [ref=e4057]: Enable Live Video
+                - generic [ref=e4058]: Allow real-time video streaming
+              - button [ref=e4060] [cursor=pointer]
+            - generic [ref=e4061]:
+              - generic [ref=e4062]:
+                - generic [ref=e4063]: Virtual Ignition
+                - generic [ref=e4064]: Automatically detect vehicle ignition
+              - button [ref=e4066] [cursor=pointer]
+            - generic [ref=e4067]:
+              - generic [ref=e4068]:
+                - generic [ref=e4069]: Enable LED
+                - generic [ref=e4070]: Show LED status indicators
+              - button [ref=e4072] [cursor=pointer]
+            - generic [ref=e4073]:
+              - generic [ref=e4074]:
+                - generic [ref=e4075]: Passenger Limit
+                - generic [ref=e4076]: Maximum number of passengers allowed
+              - spinbutton [ref=e4079]: "4"
+            - generic [ref=e4080]:
+              - generic [ref=e4081]:
+                - generic [ref=e4082]: Idle Minutes to Standby
+                - generic [ref=e4083]: Time before device enters standby mode
+              - generic [ref=e4085]:
+                - spinbutton [ref=e4086]: "10"
+                - generic [ref=e4087]: min
+            - generic [ref=e4088]:
+              - generic [ref=e4089]:
+                - generic [ref=e4090]: Screen Timeout
+                - generic [ref=e4091]: Screen timeout duration
+              - generic [ref=e4093]:
+                - spinbutton [ref=e4094]: "120"
+                - generic [ref=e4095]: sec
+            - generic [ref=e4096]:
+              - generic [ref=e4097]:
+                - generic [ref=e4098]: Wake up Message
+                - generic [ref=e4099]: Show message when device wakes up
+              - button [ref=e4101] [cursor=pointer]
+            - generic [ref=e4102]:
+              - generic [ref=e4103]:
+                - generic [ref=e4104]: Wake up Message Timeout
+                - generic [ref=e4105]: Duration to show wakeup message
+              - generic [ref=e4107]:
+                - spinbutton [ref=e4108]: "10"
+                - generic [ref=e4109]: sec
+        - generic [ref=e4110]:
+          - generic [ref=e4111]:
+            - img [ref=e4113]
+            - heading "Video Settings" [level=3] [ref=e4115]
+          - generic [ref=e4117]:
+            - generic [ref=e4118]:
+              - generic [ref=e4119]:
+                - generic [ref=e4120]: Enable Driver Camera
+                - generic [ref=e4121]: Record driver-facing camera
+              - button [ref=e4123] [cursor=pointer]
+            - generic [ref=e4124]:
+              - generic [ref=e4125]:
+                - generic [ref=e4126]: In-Cabin Camera Recording
+                - generic [ref=e4127]: Record interior cabin activity
+              - button [ref=e4129] [cursor=pointer]
+            - generic [ref=e4130]:
+              - generic [ref=e4131]:
+                - generic [ref=e4132]: Video Text Overlay
+                - generic [ref=e4133]: Display information overlay on video
+              - button [ref=e4135] [cursor=pointer]
+            - generic [ref=e4136]:
+              - generic [ref=e4137]:
+                - generic [ref=e4138]: Recording Encryption
+                - generic [ref=e4139]: Encrypt recorded video files
+              - button [ref=e4141] [cursor=pointer]
+        - generic [ref=e4142]:
+          - generic [ref=e4143]:
+            - img [ref=e4145]
+            - heading "Audio Settings" [level=3] [ref=e4147]
+          - generic [ref=e4149]:
+            - generic [ref=e4150]:
+              - generic [ref=e4151]:
+                - generic [ref=e4152]: Audio Recording
+                - generic [ref=e4153]: Record audio with video
+              - button [ref=e4155] [cursor=pointer]
+            - generic [ref=e4156]:
+              - generic [ref=e4157]:
+                - generic [ref=e4158]: Voice Recording
+                - generic [ref=e4159]: Enable voice command recording
+              - button [ref=e4161] [cursor=pointer]
+            - generic [ref=e4162]:
+              - generic [ref=e4163]:
+                - generic [ref=e4164]: Enable Audio Alerts
+                - generic [ref=e4165]: Play audio notifications and alerts
+              - button [ref=e4167] [cursor=pointer]
+        - generic [ref=e4168]:
+          - generic [ref=e4169]:
+            - img [ref=e4171]
+            - heading "Safety Settings" [level=3] [ref=e4173]
+          - generic [ref=e4175]:
+            - generic [ref=e4176]:
+              - generic [ref=e4177]:
+                - generic [ref=e4178]: Enable Distracted Driver Detection
+                - generic [ref=e4179]: Monitor driver attention and alertness
+              - button [ref=e4181] [cursor=pointer]
+            - generic [ref=e4182]:
+              - generic [ref=e4183]:
+                - generic [ref=e4184]: Driver Position
+                - generic [ref=e4185]: Vehicle driver seat position
+              - combobox [ref=e4188] [cursor=pointer]:
+                - option "Left" [selected]
+                - option "Right"
+            - generic [ref=e4189]:
+              - generic [ref=e4190]:
+                - generic [ref=e4191]: Driver Identification
+                - generic [ref=e4192]: Method for driver identification
+              - combobox [ref=e4195] [cursor=pointer]:
+                - option "Off" [selected]
+                - option "PIN Code"
+                - option "QR Code"
+            - generic [ref=e4196]:
+              - generic [ref=e4197]:
+                - generic [ref=e4198]: Driver Prompt
+                - generic [ref=e4199]: Prompt driver to check in
+              - button [ref=e4201] [cursor=pointer]
+            - generic [ref=e4202]:
+              - generic [ref=e4203]:
+                - generic [ref=e4204]: Driver Prompt Audio Alert
+                - generic [ref=e4205]: Enable audio beeps for driver prompt
+              - button [ref=e4207] [cursor=pointer]
+        - generic [ref=e4208]:
+          - generic [ref=e4209]:
+            - img [ref=e4211]
+            - heading "Display Settings" [level=3] [ref=e4213]
+          - generic [ref=e4215]:
+            - generic [ref=e4216]:
+              - generic [ref=e4217]:
+                - generic [ref=e4218]: Speed Units
+                - generic [ref=e4219]: Speed measurement units
+              - combobox [ref=e4222] [cursor=pointer]:
+                - option "MPH" [selected]
+                - option "KMPH"
+            - generic [ref=e4223]:
+              - generic [ref=e4224]:
+                - generic [ref=e4225]: Time Format
+                - generic [ref=e4226]: Time display format
+              - generic [ref=e4229]:
+                - generic [ref=e4230] [cursor=pointer]:
+                  - radio [checked] [ref=e4231]
+                  - generic [ref=e4232] [cursor=pointer]: 12 Hour
+                - generic [ref=e4233] [cursor=pointer]:
+                  - radio [ref=e4234]
+                  - generic [ref=e4235] [cursor=pointer]: 24 Hour
+  - generic [ref=e4236]:
+    - heading "Alert Settings " [level=2] [ref=e4238]:
+      - text: Alert Settings
+      - generic [ref=e4239] [cursor=pointer]: 
+    - generic [ref=e4242]:
+      - generic [ref=e4243]: "Select Dashcam:"
+      - combobox [ref=e4244]
+    - generic [ref=e4246]:
+      - checkbox [ref=e4247]
+      - generic [ref=e4248]: Select/Unselect All Alerts
+    - generic [ref=e4249]:
+      - button "Volume On" [ref=e4250] [cursor=pointer]
+      - button "Submit" [ref=e4251] [cursor=pointer]
+      - button "Alerts Contacts" [ref=e4252] [cursor=pointer]
+  - generic [ref=e4253]:
+    - heading "Video On Demand " [level=2] [ref=e4255]:
+      - text: Video On Demand
+      - generic [ref=e4256] [cursor=pointer]: 
+    - generic [ref=e4259]:
+      - heading "Select Dashcam" [level=3] [ref=e4261]
+      - generic [ref=e4262]:
+        - generic [ref=e4263]: Dashcam Device
+        - combobox "Dashcam Device" [ref=e4264] [cursor=pointer]:
+          - option "-- Select a Dashcam --" [selected]
+      - button "Refresh Status" [ref=e4266] [cursor=pointer]
+      - generic [ref=e4267]:
+        - generic [ref=e4268]: 
+        - text: Choose the vehicle dashcam you want to retrieve video from
+      - text: 
+    - generic [ref=e4269]:
+      - heading "Request New Video" [level=3] [ref=e4271]
+      - generic [ref=e4272]:
+        - generic [ref=e4273]:
+          - generic [ref=e4274]: "Start Date:"
+          - textbox "Start Date:" [ref=e4275] [cursor=pointer]: 2025-12-09
+        - generic [ref=e4276]:
+          - generic [ref=e4277]: "Start Time:"
+          - textbox "Start Time:" [ref=e4278]: 00:00
+          - button "×" [ref=e4279] [cursor=pointer]
+        - generic [ref=e4280]:
+          - generic [ref=e4281]: "End Date:"
+          - textbox "End Date:" [ref=e4282] [cursor=pointer]: 2025-12-09
+        - generic [ref=e4283]:
+          - generic [ref=e4284]: "End Time:"
+          - textbox "End Time:" [ref=e4285]: 23:59
+          - button "×" [ref=e4286] [cursor=pointer]
+    - generic [ref=e4287]:
+      - generic [ref=e4289]:
+        - generic [ref=e4290]:
+          - checkbox "Cabin View" [checked] [ref=e4291]
+          - text: Cabin View
+        - generic [ref=e4292]:
+          - checkbox "Dash View" [checked] [ref=e4293]
+          - text: Dash View
+      - button "Refresh" [ref=e4295] [cursor=pointer]
+    - table [ref=e4296]:
+      - rowgroup [ref=e4297]:
+        - row "Report Not Generated" [ref=e4298]:
+          - cell "Report Not Generated" [ref=e4299] [cursor=pointer]
+    - button "Close" [ref=e4301] [cursor=pointer]
+  - generic [ref=e4302]:
+    - heading "Live Video Stream " [level=2] [ref=e4304]:
+      - text: Live Video Stream
+      - generic [ref=e4305] [cursor=pointer]: 
+    - generic [ref=e4308]:
+      - generic [ref=e4309]: "Select Dashcam:"
+      - combobox "Select Dashcam:" [ref=e4310]:
+        - option "Vehicle 1" [selected]
+        - option "Vehicle 2"
+        - option "Vehicle 3"
+    - button "Refresh Status" [ref=e4312] [cursor=pointer]
+    - button "Submit" [ref=e4314] [cursor=pointer]
+    - heading "Live Video Stream" [level=2] [ref=e4317]
+  - generic [ref=e4321]:
+    - heading "Snapshots Of Camera Images" [level=2] [ref=e4323]
+    - generic [ref=e4326]:
+      - generic [ref=e4327]: "Select Dashcam:"
+      - combobox "Select Dashcam:" [ref=e4328]
+    - generic [ref=e4329]:
+      - generic [ref=e4330]:
+        - checkbox "Cabin View" [checked] [ref=e4331]
+        - text: Cabin View
+      - generic [ref=e4332]:
+        - checkbox "Dashcam View" [checked] [ref=e4333]
+        - text: Dashcam View
+    - button "Submit" [ref=e4335] [cursor=pointer]
+    - generic [ref=e4336]:
+      - heading "Snapshots Of Camera Images " [level=2] [ref=e4338]:
+        - text: Snapshots Of Camera Images
+        - generic [ref=e4339] [cursor=pointer]: 
+      - paragraph [ref=e4342]:
+        - strong [ref=e4343]: "Status:"
+        - text: Dashcam images will refresh every 60 seconds
+      - generic [ref=e4345] [cursor=pointer]:
+        - checkbox "Show Images In Color" [ref=e4346]
+        - text: Show Images In Color
+  - generic [ref=e4348]:
+    - heading "Get Support" [level=2] [ref=e4350]
+    - generic [ref=e4353]:
+      - generic [ref=e4354] [cursor=pointer]: Get Support
+      - generic [ref=e4355] [cursor=pointer]: 💰Save up to 20% on fleet insurance from our partners
+    - generic [ref=e4357]:
+      - paragraph [ref=e4358]:
+        - text: You can call us at
+        - strong [ref=e4359]: 800-578-1809
+        - text: during business hours
+        - strong [ref=e4360]: Monday-Friday 8AM-5PM (MST)
+        - text: . Email support is available 24/7. You can email
+        - strong [ref=e4361]: support@gpsandfleet.com
+        - text: "or fill out this form below:"
+      - generic [ref=e4362]:
+        - generic [ref=e4364]:
+          - generic [ref=e4365]: "First Name:"
+          - textbox "First Name:" [ref=e4366]
+        - generic [ref=e4368]:
+          - generic [ref=e4369]: "Last Name:"
+          - textbox "Last Name:" [ref=e4370]
+        - generic [ref=e4372]:
+          - generic [ref=e4373]: "Email:"
+          - textbox [ref=e4374]
+        - generic [ref=e4376]:
+          - generic [ref=e4377]: "Phone:"
+          - textbox "Phone:" [ref=e4378]
+        - generic [ref=e4380]:
+          - generic [ref=e4381]: "Comments:"
+          - textbox "Comments:" [ref=e4382]
+      - button "Submit" [ref=e4384] [cursor=pointer]
+  - generic [ref=e4385]:
+    - heading "Get Support" [level=2] [ref=e4387]
+    - generic [ref=e4390]:
+      - paragraph [ref=e4391]: Kindly enter your information and query below and an agent will email you back soon. Our normal response time is within 15 minutes.
+      - generic [ref=e4392]:
+        - generic [ref=e4394]:
+          - generic [ref=e4395]: "First Name:"
+          - textbox "First Name:" [ref=e4396]
+        - generic [ref=e4398]:
+          - generic [ref=e4399]: "Last Name:"
+          - textbox "Last Name:" [ref=e4400]
+        - generic [ref=e4402]:
+          - generic [ref=e4403]: "Email:"
+          - textbox "Email:" [ref=e4404]
+        - generic [ref=e4406]:
+          - generic [ref=e4407]: "Phone:"
+          - textbox "Phone:" [ref=e4408]
+        - generic [ref=e4410]:
+          - generic [ref=e4411]: "Comments:"
+          - textbox "Comments:" [ref=e4412]
+      - button "Submit" [ref=e4414] [cursor=pointer]
+  - generic [ref=e4415]:
+    - heading "Posted Speed Map Report" [level=2] [ref=e4417]
+    - generic [ref=e4421]:
+      - textbox "Search" [ref=e4424]
+      - button "Copy" [ref=e4425] [cursor=pointer]
+      - button "Save file as" [ref=e4427] [cursor=pointer]: Save file as
+    - table [ref=e4430]:
+      - rowgroup [ref=e4431]:
+        - row "Date Location Posted Speed (mph) Speed (mph) Over The Speed Limit (mph)" [ref=e4432]:
+          - cell "Date" [ref=e4433] [cursor=pointer]
+          - cell "Location" [ref=e4434] [cursor=pointer]
+          - cell "Posted Speed (mph)" [ref=e4435] [cursor=pointer]
+          - cell "Speed (mph)" [ref=e4436] [cursor=pointer]
+          - cell "Over The Speed Limit (mph)" [ref=e4437] [cursor=pointer]
+      - rowgroup [ref=e4438]:
+        - row "No Data to Display" [ref=e4439] [cursor=pointer]:
+          - cell "No Data to Display" [ref=e4440] [cursor=pointer]
+  - generic [ref=e4441]:
+    - heading "Test Alerts" [level=2] [ref=e4443]
+    - generic [ref=e4446]:
+      - heading "Alert Types" [level=3] [ref=e4447]
+      - generic [ref=e4448]:
+        - button "Success Alert" [ref=e4449] [cursor=pointer]: Success Alert
+        - button "Error Alert" [ref=e4451] [cursor=pointer]: Error Alert
+        - button "Warning Alert" [ref=e4453] [cursor=pointer]: Warning Alert
+        - button "Info Alert" [ref=e4455] [cursor=pointer]: Info Alert
+    - generic [ref=e4457]:
+      - heading "Duration Options" [level=3] [ref=e4458]
+      - generic [ref=e4459]:
+        - button "2s Duration" [ref=e4460] [cursor=pointer]: 2s Duration
+        - button "5s Duration" [ref=e4462] [cursor=pointer]: 5s Duration
+        - button "No Auto-close" [ref=e4464] [cursor=pointer]: No Auto-close
+    - generic [ref=e4466]:
+      - heading "Mobile Info Box" [level=3] [ref=e4467]
+      - generic [ref=e4468]:
+        - button "Location Info" [ref=e4469] [cursor=pointer]: Location Info
+        - button "Speed Info" [ref=e4471] [cursor=pointer]: Speed Info
+        - button "Status Info" [ref=e4473] [cursor=pointer]: Status Info
+  - text:  
+  - status [ref=e4475]
+  - status [ref=e4476]
+```

@@ -27,16 +27,18 @@ test.describe('Dashcam refresh', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashcamDashboard2);
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on live-video-stream button
-        await page.locator(config.selectors.dashcam.liveVideoStreamMenu).click({ force: true });
+        // Click on Live Video Stream option
+        const liveVideoStreamOption = page.locator('#bottom-nav-live-stream');
+        await expect(liveVideoStreamOption).toBeVisible();
+        await liveVideoStreamOption.click({ force: true });
 
         await page.waitForTimeout(4000);
 

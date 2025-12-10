@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,131.14,"Error: expect(received).toBeLessThan(expected)",TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm,TS028_travelLogReport.spec.js,815

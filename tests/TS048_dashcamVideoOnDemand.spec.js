@@ -26,16 +26,19 @@ test.describe('Dashcam Video On Demand', () => {
 
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashcamDashboard2);
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on dashcam video on demand menu
-        await page.locator(config.selectors.dashcam.videoOnDemandMenu).click({ force: true });
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
+
+        // Click on Video On Demand option
+        const videoOnDemandOption = page.locator('#bottom-nav-video-request');
+        await expect(videoOnDemandOption).toBeVisible();
+        await videoOnDemandOption.click({ force: true });
 
         // Verify the modal is visible
         await expect(page.locator(config.selectors.dashcam.videoOnDemandPanel)).toBeVisible();

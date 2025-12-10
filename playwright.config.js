@@ -1,12 +1,25 @@
 const { defineConfig, devices } = require('@playwright/test');
+const fs = require('fs');
+const path = require('path');
+
+// Check if running on BrowserStack
+const isBrowserStack = !!(process.env.BROWSERSTACK_BUILD_NAME || process.env.BROWSERSTACK_USERNAME);
+
+// Check if auth file exists (for local runs)
+const authFile = path.join(__dirname, '.auth', 'user.json');
+const authFileExists = fs.existsSync(authFile);
 
 /**
  * @see https://playwright.dev/docs/test-configuration
+ *
+ * AUTH SETUP STRATEGY:
+ * - LOCAL: Runs auth.setup.js first, saves session to .auth/user.json, subsequent tests reuse it
+ * - BROWSERSTACK: Each test performs its own login (auth file not available on remote)
  */
 module.exports = defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: isBrowserStack ? true : false, // Parallel on BrowserStack, sequential locally for auth reuse
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -26,9 +39,6 @@ module.exports = defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
-    /* Use saved authentication state */
-    // storageState: 'storageState.json', // Disabled for BrowserStack
-
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
@@ -41,39 +51,43 @@ module.exports = defineConfig({
   },
 
   /* Configure projects for major browsers */
-  projects: [
+  projects: isBrowserStack ? [
+    // BROWSERSTACK: Single project without auth setup (each test handles its own login)
     {
       name: 'chromium',
-      use: { 
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1920, height: 1080 },
+        headless: true
+        // No storageState - each test performs its own login
+      },
+    },
+  ] : [
+    // LOCAL: Auth setup project runs first, then tests use stored session
+    {
+      name: 'setup',
+      testMatch: /auth\.setup\.js/,
+      use: {
         ...devices['Desktop Chrome'],
         viewport: { width: 1920, height: 1080 },
         headless: true
       },
     },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    {
+      name: 'chromium',
+      dependencies: ['setup'], // Wait for auth setup to complete
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1920, height: 1080 },
+        headless: true,
+        // Use the authenticated state from setup (only for local runs)
+        storageState: '.auth/user.json',
+      },
+    },
   ],
 
   /* Global setup and teardown */
-  // globalSetup: './utils/auth-setup.js', // Disabled for BrowserStack - each test handles its own auth
+  // globalSetup: './utils/auth-setup.js', // Disabled - using project-based setup instead
   // globalTeardown: './utils/global-teardown.js',
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */

@@ -1,0 +1,40 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 138751,
+    "startTime": "2025-12-09T21:32:12.984Z",
+    "endTime": "2025-12-09T21:34:31.735Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TC-A",
+      "module": "auth.setup.js",
+      "title": "authenticate",
+      "description": "authenticate",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 1007,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Valid authentication session found (age: 22 minutes). Skipping login.",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-09T21:32:15.220Z",
+      "endTime": "2025-12-09T21:32:16.227Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
+      "fileName": "auth.setup.js",
+      "line": 10
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "cookies": [
+    {
+      "name": "tzRemember",
+      "value": "0",
+      "domain": "www.gpsandfleet3.net",
+      "path": "/gpsandfleet/adminnew/saveData",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tzLogin",
+      "value": "o6pp1b2bkgohchdf2j0m0rspu3",
+      "domain": "www.gpsandfleet3.net",
+      "path": "/",
+      "expires": 1766524123.055394,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

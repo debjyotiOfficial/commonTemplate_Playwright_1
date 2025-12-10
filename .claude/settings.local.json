@@ -6,7 +6,8 @@
       "Bash(npx playwright test:*)",
       "Bash(dir:*)",
       "Bash(findstr:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(timeout:*)"
     ],
     "deny": [],
     "ask": []

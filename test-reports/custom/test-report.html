@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Test Report - All Modules - 7/12/2025</title>
+    <title>Master Test Report - All Modules - 10/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,25 +150,25 @@
     <div class="container">
         <div class="header">
             <h1>Master Test Execution Report</h1>
-            <div class="module-name">All Modules (12 modules, 17 tests)</div>
+            <div class="module-name">All Modules (15 modules, 20 tests)</div>
             <div class="subtitle">
-                Generated: 7/12/2025, 11:34:25 pm |
-                Duration: 102.66s |
+                Generated: 10/12/2025, 3:04:31 am |
+                Duration: 138.75s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">17</div>
+                <div class="number">20</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">16</div>
+                <div class="number">18</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">1</div>
+                <div class="number">2</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">94.1%</div>
+                <div class="number">90.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -192,7 +192,7 @@
             
             <select id="moduleFilter" onchange="filterTests()">
                 <option value="">All Modules</option>
-                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Alert Contact">Alert Contact</option><option value="Current geofence report">Current geofence report</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option>
+                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Alert Contact">Alert Contact</option><option value="Current geofence report">Current geofence report</option><option value="Dashcam Refresh">Dashcam Refresh</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option><option value="Travel Log Report">Travel Log Report</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option><option value="auth.setup.js">auth.setup.js</option>
             </select>
             
             <button class="export-btn" onclick="exportToExcel()">Export to Excel</button>
@@ -212,6 +212,37 @@
                 </thead>
                 <tbody>
                     
+                    <tr data-status="passed" data-module="auth.setup.js">
+                        <td><span class="test-case-no">TC-A</span></td>
+                        <td>auth.setup.js</td>
+                        <td>
+                            <strong>authenticate</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(0)">
+                                    <span>View Test Steps (1)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-0" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Valid authentication session found (age: 22 minutes). Skipping login.</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>1.01s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="List of Device">
                         <td><span class="test-case-no">TS001-A</span></td>
                         <td>List of Device</td>
@@ -219,11 +250,11 @@
                             <strong>should show list of all devices in the platform</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(0)">
+                                <button class="steps-toggle" onclick="toggleSteps(1)">
                                     <span>View Test Steps (31)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-0" class="steps-panel">
+                                <div id="steps-1" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -400,11 +431,11 @@
                             <strong>should add email and phone contacts and configure alert settings</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(1)">
+                                <button class="steps-toggle" onclick="toggleSteps(2)">
                                     <span>View Test Steps (3)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-1" class="steps-panel">
+                                <div id="steps-2" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -441,11 +472,11 @@
                             <strong>should manage recent geofence report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                <button class="steps-toggle" onclick="toggleSteps(3)">
                                     <span>View Test Steps (34)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-2" class="steps-panel">
+                                <div id="steps-3" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -637,11 +668,11 @@
                             <strong>should manage recent geofence report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(3)">
+                                <button class="steps-toggle" onclick="toggleSteps(4)">
                                     <span>View Test Steps (39)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-3" class="steps-panel">
+                                <div id="steps-4" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -851,6 +882,209 @@
                         </td>
                     </tr>
                     
+                    <tr data-status="failed" data-module="Travel Log Report">
+                        <td><span class="test-case-no">TS028-A</span></td>
+                        <td>Travel Log Report</td>
+                        <td>
+                            <strong>should verify Frequent Stops functionality with API validation</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(5)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-5" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Assertion Failed</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS028_travelLogReport.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">815</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Values should be equal</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">76</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check the expected vs actual values in the assertion</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(received).toBeLessThan(expected)
+
+Expected: &lt; 76
+Received:   76</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                    <span>View Test Steps (26)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-5" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Frequent Stops functionality with API validation...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Verifying Loading Modal</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Loading modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Loading modal title shows &quot;Loading Travel Report...&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading time estimate: ⏱️ Loading 3 days of data...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Loading modal shows correct &quot;3 days&quot; estimate</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Response captured: [{&quot;id&quot;:160833,&quot;idIndex&quot;:0,&quot;date&quot;:&quot;12/01/2025&quot;,&quot;duration&quot;:355,&quot;time&quot;:&quot;02:08 AM&quot;,&quot;lat&quot;:&quot;33.624222&quot;,&quot;lng&quot;:&quot;-111.840185&quot;,&quot;location&quot;:&quot;&quot;,&quot;tripType&quot;:&quot;&quot;,&quot;battery&quot;:&quot;12&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;mileage&quot;:&quot;1166.238&quot;,&quot;dire...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Loading modal disappeared after data loaded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying API response matches table data...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 76 rows in Frequent Stops table</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API returned 76 records</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row 1: First cell = 12/01/2025</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row 2: First cell = 12/01/2025</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row 3: First cell = 12/01/2025</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified: Frequent Stops table data matches API response</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Sort functionality in Frequent Stops</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Date column sort...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Time column sort...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Search functionality in Frequent Stops</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total visible rows before search: 76</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searching for &quot;02:08 AM&quot;...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 76 visible rows after searching &quot;02:08 AM&quot;</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>131.14s</strong></td>
+                        <td>
+                            <a href="videos/TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm" class="video-link" target="_blank">Video: TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm</a>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="30 Day Mileage Report">
                         <td><span class="test-case-no">TS032-A</span></td>
                         <td>30 Day Mileage Report</td>
@@ -858,11 +1092,11 @@
                             <strong>should be redirected to fleet demo page with demo credentials</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                <button class="steps-toggle" onclick="toggleSteps(6)">
                                     <span>View Test Steps (59)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-4" class="steps-panel">
+                                <div id="steps-6" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1179,11 +1413,11 @@
                             <strong>should generate and validate trip report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                <button class="steps-toggle" onclick="toggleSteps(7)">
                                     <span>View Test Steps (31)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-5" class="steps-panel">
+                                <div id="steps-7" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1359,11 +1593,11 @@
                         <td>
                             <strong>should generate and validate low voltage device report</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(6)">
+                                <button class="error-toggle" onclick="toggleError(8)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-6" class="error-panel">
+                                <div id="error-8" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -1417,11 +1651,11 @@ Call log:
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(6)">
+                                <button class="steps-toggle" onclick="toggleSteps(8)">
                                     <span>View Test Steps (4)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-6" class="steps-panel">
+                                <div id="steps-8" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1456,6 +1690,52 @@ Call log:
                         </td>
                     </tr>
                     
+                    <tr data-status="passed" data-module="Dashcam Refresh">
+                        <td><span class="test-case-no">TS043-A</span></td>
+                        <td>Dashcam Refresh</td>
+                        <td>
+                            <strong>should refresh dashcam functionality</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(9)">
+                                    <span>View Test Steps (4)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-9" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>103.15s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="Last 24 Hours">
                         <td><span class="test-case-no">TS050-A</span></td>
                         <td>Last 24 Hours</td>
@@ -1463,11 +1743,11 @@ Call log:
                             <strong>should verify Engine Idling Events checkbox functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(7)">
+                                <button class="steps-toggle" onclick="toggleSteps(10)">
                                     <span>View Test Steps (11)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-7" class="steps-panel">
+                                <div id="steps-10" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1544,11 +1824,11 @@ Call log:
                             <strong>should verify Geofence Events, Landmark Events, and Frequent Stops functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(8)">
+                                <button class="steps-toggle" onclick="toggleSteps(11)">
                                     <span>View Test Steps (150)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-8" class="steps-panel">
+                                <div id="steps-11" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2320,11 +2600,11 @@ Call log:
                             <strong>should verify real-time tracking timer and API data synchronization</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(9)">
+                                <button class="steps-toggle" onclick="toggleSteps(12)">
                                     <span>View Test Steps (18)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-9" class="steps-panel">
+                                <div id="steps-12" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2436,11 +2716,11 @@ Call log:
                             <strong>should verify Get Support and Insurance form functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(10)">
+                                <button class="steps-toggle" onclick="toggleSteps(13)">
                                     <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-10" class="steps-panel">
+                                <div id="steps-13" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2507,11 +2787,11 @@ Call log:
                             <strong>should edit the timezone of users</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(11)">
+                                <button class="steps-toggle" onclick="toggleSteps(14)">
                                     <span>View Test Steps (211)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-11" class="steps-panel">
+                                <div id="steps-14" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3588,11 +3868,11 @@ Call log:
                             <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(12)">
+                                <button class="steps-toggle" onclick="toggleSteps(15)">
                                     <span>View Test Steps (77)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-12" class="steps-panel">
+                                <div id="steps-15" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3999,11 +4279,11 @@ Call log:
                             <strong>should verify Fleet Status Summary cards and table filtering</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(13)">
+                                <button class="steps-toggle" onclick="toggleSteps(16)">
                                     <span>View Test Steps (38)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-13" class="steps-panel">
+                                <div id="steps-16" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4215,11 +4495,11 @@ Call log:
                             <strong>should verify table sorting functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(14)">
+                                <button class="steps-toggle" onclick="toggleSteps(17)">
                                     <span>View Test Steps (10)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-14" class="steps-panel">
+                                <div id="steps-17" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4291,11 +4571,11 @@ Call log:
                             <strong>should verify export buttons and file downloads</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(15)">
+                                <button class="steps-toggle" onclick="toggleSteps(18)">
                                     <span>View Test Steps (21)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-15" class="steps-panel">
+                                <div id="steps-18" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4422,11 +4702,11 @@ Call log:
                             <strong>should verify search functionality in device table</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(16)">
+                                <button class="steps-toggle" onclick="toggleSteps(19)">
                                     <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-16" class="steps-panel">
+                                <div id="steps-19" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4534,7 +4814,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"120.46s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"107.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"99.10s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"106.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"87.80s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"1.01s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"120.46s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"107.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"99.10s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"106.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"87.80s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -4551,7 +4831,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'master-test-report-2025-12-07.csv';
+            link.download = 'master-test-report-2025-12-09.csv';
             link.click();
         }
     </script>

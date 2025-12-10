@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 112392,
+    "startTime": "2025-12-09T17:44:43.907Z",
+    "endTime": "2025-12-09T17:46:36.299Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS043-A",
+      "module": "Dashcam Refresh",
+      "title": "should refresh dashcam functionality",
+      "description": "should refresh dashcam functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 103153,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-09T17:44:52.278Z",
+      "endTime": "2025-12-09T17:46:35.431Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS043_dashcamRefresh.spec.js",
+      "fileName": "TS043_dashcamRefresh",
+      "line": 23
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS043-A,"Dashcam Refresh","should refresh dashcam functionality",PASSED,103.15,"",N/A,TS043_dashcamRefresh.spec.js,23

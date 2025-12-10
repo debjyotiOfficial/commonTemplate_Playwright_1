@@ -27,16 +27,18 @@ test.describe('Dashcam Alert Settings', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashcamDashboard2);
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on alert settings button
-        await page.locator(config.selectors.dashcam.alertSettings).click({ force: true });
+        // Click on Alert Settings option
+        const alertSettingsOption = page.locator('#bottom-nav-alerts-settings');
+        await expect(alertSettingsOption).toBeVisible();
+        await alertSettingsOption.click({ force: true });
 
         await page.waitForTimeout(5000);
 
@@ -108,16 +110,18 @@ test.describe('Dashcam Alert Settings', () => {
 
         // Click on the Change Alerts Settings button and make changes
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion2 = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion2).toBeVisible();
+        await dashcamAccordion2.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on alert settings button
-        await page.locator(config.selectors.dashcam.alertSettings).click({ force: true });
+        // Click on Alert Settings option
+        const alertSettingsOption2 = page.locator('#bottom-nav-alerts-settings');
+        await expect(alertSettingsOption2).toBeVisible();
+        await alertSettingsOption2.click({ force: true });
 
         await page.waitForTimeout(config.timeouts.wait);
 

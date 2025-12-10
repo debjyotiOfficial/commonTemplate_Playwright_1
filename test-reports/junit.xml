@@ -1,67 +1,75 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="102.92818399999999">
-<testsuite name="TS032_30DayMileageReport.spec.js" timestamp="2025-12-07T18:02:43.105Z" hostname="chromium" tests="1" failures="0" skipped="0" time="98.2" errors="0">
-<testcase name="30 Day Mileage Report › should be redirected to fleet demo page with demo credentials" classname="TS032_30DayMileageReport.spec.js" time="98.2">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="139.24334100000002">
+<testsuite name="auth.setup.js" timestamp="2025-12-09T21:32:12.983Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.007" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="1.007">
 <system-out>
-<![CDATA[--- Step 1: Login and navigate to fleet dashboard ---
-Performing login...
-Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Page loaded successfully
- Successfully logged in
---- Step 2: Opening Reports menu ---
- Reports menu opened
---- Step 3: Clicking on Fleet section ---
- Fleet section expanded
---- Step 4: Clicking 30 Day Mileage Report menu ---
- 30 Day Mileage Report menu clicked
---- Step 5: Verifying container is visible ---
- Container is visible
---- Step 6: Selecting date range ---
- Month selected: July
- Start date selected: July 1, 2025
- End date selected: July 30, 2025
---- Step 7: Checking All Devices checkbox ---
- All Devices checkbox checked
---- Step 8: Clicking Submit button ---
- Submit button clicked
---- Step 9: Waiting for report to load ---
- Waiting for report data...
---- Step 10: Verifying table has data ---
- Table has 44 row(s)
- Table has 6 header(s)
---- Step 11: Verifying first row has data ---
- Cell 1: "07/30/2025"
- Cell 2: "860111051554966"
- Cell 3: "Demo 1"
- Cell 4: "0"
- Cell 5: "0"
- Cell 6: "0"
---- Step 12: Testing search functionality ---
- Searched for "Sales"
- Filtered results: 30 row(s)
---- Step 13: Testing export functionality ---
- Exported to Excel
- Exported to CSV
- Exported to PDF
---- Step 14: Searching for another device ---
- Searched for "Demo"
- Demo search results: 14 row(s)
- First result device: "Demo 1"
---- Step 15: Closing report panel ---
- Report panel closed
---- Step 16: Re-opening report and viewing saved report ---
- Reports menu opened
- 30 Day Mileage Report menu clicked again
- Container is visible
- Searched for reports from 2025
- Could not click View button: locator.click: Element is outside of the viewport
-Call log:
-[2m  - waiting for locator('#thirty-day-report-table tbody tr').first().locator('button.aViewMileageReport')[22m
-[2m    - locator resolved to <button class="aViewMileageReport" data-unique-id="67853189dc51a">↵                View↵            </button>[22m
-[2m  - attempting click action[22m
-[2m    - scrolling into view if needed[22m
-[2m    - done scrolling[22m
+<![CDATA[Valid authentication session found (age: 22 minutes). Skipping login.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="TS028_travelLogReport.spec.js" timestamp="2025-12-09T21:32:12.983Z" hostname="chromium" tests="1" failures="1" skipped="0" time="131.142" errors="0">
+<testcase name="Travel Log Report › should verify Frequent Stops functionality with API validation" classname="TS028_travelLogReport.spec.js" time="131.142">
+<failure message="TS028_travelLogReport.spec.js:815:5 should verify Frequent Stops functionality with API validation" type="FAILURE">
+<![CDATA[  [chromium] › TS028_travelLogReport.spec.js:815:5 › Travel Log Report › should verify Frequent Stops functionality with API validation 
 
- 30 Day Mileage Report test completed successfully
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 76
+    Received:   76
+
+      1039 |
+      1040 |         // Verify search filtered the results (should be fewer rows than total)
+    > 1041 |         expect(searchResultCount).toBeLessThan(totalRowsBeforeSearch);
+           |                                   ^
+      1042 |         console.log(`✓ Search filtered results: ${searchResultCount} rows (down from ${totalRowsBeforeSearch})`);
+      1043 |
+      1044 |         // Verify ALL visible rows contain "02:08 AM"
+        at C:\cypress-to-playwright-converted\tests\TS028_travelLogReport.spec.js:1041:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Page loaded successfully
+Testing Frequent Stops functionality with API validation...
+--- Verifying Loading Modal ---
+✓ Loading modal is visible
+✓ Loading modal title shows "Loading Travel Report..."
+Loading time estimate: ⏱️ Loading 3 days of data...
+✓ Loading modal shows correct "3 days" estimate
+API Response captured: [{"id":160833,"idIndex":0,"date":"12/01/2025","duration":355,"time":"02:08 AM","lat":"33.624222","lng":"-111.840185","location":"","tripType":"","battery":"12","speed":"0.0","mileage":"1166.238","dire...
+✓ Loading modal disappeared after data loaded
+Verifying API response matches table data...
+Found 76 rows in Frequent Stops table
+API returned 76 records
+Row 1: First cell = 12/01/2025
+Row 2: First cell = 12/01/2025
+Row 3: First cell = 12/01/2025
+Verified: Frequent Stops table data matches API response
+--- Testing Sort functionality in Frequent Stops ---
+Testing Date column sort...
+Testing Time column sort...
+--- Testing Search functionality in Frequent Stops ---
+Total visible rows before search: 76
+Searching for "02:08 AM"...
+Found 76 visible rows after searching "02:08 AM"
+
+[[ATTACHMENT|..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>

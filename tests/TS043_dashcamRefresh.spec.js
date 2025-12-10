@@ -27,16 +27,18 @@ test.describe('Dashcam Refresh', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashcamDashboard2);
 
-        // Hover over "dashcamMenu"
-        await page.locator(config.selectors.dashcam.dashcamMenu).hover();
-        await page.waitForTimeout(500); // Give time for menu to open
+        // Click on Dashcam accordion header to expand menu
+        const dashcamAccordion = page.locator('#bottom-nav-dashcam .accordion__header');
+        await expect(dashcamAccordion).toBeVisible();
+        await dashcamAccordion.click();
 
-        // Click on "dashcamMenu"
-        await expect(page.locator(config.selectors.dashcam.dashcamMenu)).toBeVisible();
-        await page.locator(config.selectors.dashcam.dashcamMenu).click();
+        // Wait for accordion to expand
+        await page.waitForTimeout(1000);
 
-        // Click on dashcam refresh button
-        await page.locator(config.selectors.dashcam.dashcamRefreshButton).click({ force: true });
+        // Click on Dashcam Refresh option
+        const dashcamRefreshOption = page.locator('#bottom-nav-refresh-dashcam');
+        await expect(dashcamRefreshOption).toBeVisible();
+        await dashcamRefreshOption.click({ force: true });
 
         await page.waitForTimeout(config.timeouts.wait);
 
@@ -46,9 +48,10 @@ test.describe('Dashcam Refresh', () => {
         // Click on the Select2 dropdown to open options
         await page.locator('#dashcam-refresh-panel .select2-selection__rendered').click();
 
-        const firstOption = page.locator('.select2-results__option').first();
-        await expect(firstOption).toBeVisible();
-        await firstOption.click({ force: true });
+        // Select the specific device: M4000-Training3 Off (353899269355234)
+        const deviceOption = page.locator('.select2-results__option').filter({ hasText: 'M4000-Training3' });
+        await expect(deviceOption).toBeVisible();
+        await deviceOption.click({ force: true });
 
         // Intercept the API call before clicking the button
         const refreshDashcamPromise = page.waitForResponse(response => 
