@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const TestHelpers = require('../utils/test-helpers');
+const path = require('path');
 
 /**
  * Test Suite: Add/Edit Device
@@ -341,5 +342,417 @@ test.describe('Add edit Device', () => {
 
         // Test complete - device was successfully added, edited twice, and removed
         console.log('Device add/edit/remove test completed successfully');
+    });
+
+    test('should add device with custom icon', async ({ page }) => {
+        const helpers = new TestHelpers(page);
+        config = await helpers.getConfig();
+        let selectedImei = '';
+
+        // Path to test image - relative to project root for BrowserStack compatibility
+        const testImagePath = path.resolve(__dirname, '../fixtures/test-icon.png');
+
+        // ========================================
+        // STEP 1: LOGIN AND NAVIGATE TO DASHBOARD
+        // ========================================
+        await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
+
+        // ========================================
+        // STEP 2: OPEN ADD/EDIT DEVICE MODAL
+        // ========================================
+        // Open the accounts menu from the navigation bar
+        await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.accountsMenu).click();
+
+        // Click on "Add/Edit Device" menu option
+        await expect(page.locator(config.selectors.addEditDevice.addEditDriverMenu)).toBeVisible();
+        await page.waitForTimeout(1000);
+        await page.locator(config.selectors.addEditDevice.addEditDriverMenu).click({ force: true });
+
+        // Verify the Add/Edit Device modal is displayed
+        await expect(page.locator(config.selectors.addEditDevice.addEditDriverModal)).toBeVisible({ timeout: 15000 });
+        await page.waitForTimeout(2000);
+
+        // ========================================
+        // STEP 3: NAVIGATE TO ADD DEVICE TAB
+        // ========================================
+        // Switch to the "Add Device" tab within the modal
+        await page.locator(config.selectors.addEditDevice.addTab).first().scrollIntoViewIfNeeded();
+        await page.locator(config.selectors.addEditDevice.addTab).first().click({ force: true });
+
+        // Wait for the tab content to load
+        await page.waitForTimeout(2000);
+
+        // ========================================
+        // STEP 4: SELECT IMEI FROM DROPDOWN
+        // ========================================
+        // Open the IMEI dropdown (Select2 AJAX-powered dropdown)
+        await page.locator('#select2-imei-search-container').click();
+
+        // Wait for IMEI options to load from the server
+        // IMEI values are 15-digit numbers, so we filter for options containing only digits
+        const imeiOptionLocator = page.locator('.select2-results__option').filter({
+            hasText: /^\d{6,}$/
+        }).first();
+
+        // Select the first available IMEI and store it for later verification
+        await expect(imeiOptionLocator).toBeVisible({ timeout: 10000 });
+        selectedImei = await imeiOptionLocator.textContent();
+        selectedImei = selectedImei.trim();
+        await imeiOptionLocator.click();
+        console.log('Selected IMEI: ' + selectedImei);
+
+        // Wait for the form to populate with IMEI-related data
+        await page.waitForTimeout(4000);
+
+        // ========================================
+        // STEP 5: ENTER DEVICE NAME
+        // ========================================
+        await expect(page.locator(config.selectors.addEditDevice.newDeviceName)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.newDeviceName).clear();
+        await page.locator(config.selectors.addEditDevice.newDeviceName).fill('CustomIconDevice');
+        console.log('Device name entered: CustomIconDevice');
+
+        // ========================================
+        // STEP 6: UPLOAD CUSTOM ICON
+        // ========================================
+        // 6a: Click Upload Icon button to open the custom icon modal
+        // Use JavaScript click to bypass visibility checks
+        await page.waitForTimeout(2000);
+        await page.evaluate(() => {
+            document.querySelector('#upload-icon-btn').click();
+        });
+
+        // Verify the Upload & Crop Custom Icon modal appears
+        await expect(page.locator(config.selectors.addEditDevice.customIconModal)).toBeVisible();
+        console.log('Upload & Crop Custom Icon modal opened successfully');
+
+        // 6b: Upload image file
+        const fileChooserPromise = page.waitForEvent('filechooser');
+        await page.locator(config.selectors.addEditDevice.selectImageButton).click();
+        const fileChooser = await fileChooserPromise;
+        await fileChooser.setFiles(testImagePath);
+
+        // Wait for the image to be loaded and processed
+        await page.waitForTimeout(2000);
+
+        // Verify the crop canvas is visible (image loaded successfully)
+        await expect(page.locator(config.selectors.addEditDevice.cropCanvas)).toBeVisible();
+        console.log('Test image uploaded successfully');
+
+        // 6c: Adjust zoom controls
+        const zoomPlusBtn = page.locator(config.selectors.addEditDevice.zoomPlusButton);
+        if (await zoomPlusBtn.isVisible()) {
+            await zoomPlusBtn.click();
+            await page.waitForTimeout(500);
+            console.log('Zoom adjusted');
+        }
+
+        // 6d: Verify preview is displayed
+        await expect(page.locator(config.selectors.addEditDevice.previewSection)).toBeVisible();
+        console.log('Preview section is visible');
+
+        // 6e: Save custom icon with API validation
+        // Set up dialog handler to handle success alert
+        page.on('dialog', async dialog => {
+            console.log('Alert message: ' + dialog.message());
+            await dialog.accept();
+        });
+
+        // Set up listeners for the API calls
+        const cropImageUploadPromise = page.waitForResponse(
+            response => response.url().includes('crop_image_upload_new.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+
+        // Click Save Icon button
+        const saveIconBtn = page.getByRole('button', { name: 'Save Icon' });
+        await expect(saveIconBtn).toBeVisible();
+        await saveIconBtn.click();
+        console.log('Save Icon button clicked');
+
+        // Wait for the upload API call to complete
+        const cropImageResponse = await cropImageUploadPromise;
+        expect(cropImageResponse.status()).toBe(200);
+        console.log('crop_image_upload_new.php API called successfully');
+
+        // Wait for modal to close
+        await page.waitForTimeout(3000);
+        await expect(page.locator(config.selectors.addEditDevice.customIconModal)).not.toBeVisible({ timeout: 10000 });
+        console.log('Custom icon uploaded and saved successfully');
+
+        // ========================================
+        // STEP 7: SELECT CUSTOM ICON FROM DROPDOWN
+        // ========================================
+        // 7a: Select "custom icon" from icon category dropdown
+        // This triggers the getCustomIconAll.php API call
+        const getCustomIconPromise = page.waitForResponse(
+            response => response.url().includes('getCustomIconAll.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+
+        await page.locator(config.selectors.addEditDevice.iconCategoryAdd).selectOption('custom');
+        console.log('Selected "Custom Icon" from icon category dropdown');
+
+        // 7b: Wait for custom icons API to load
+        const getCustomIconResponse = await getCustomIconPromise;
+        expect(getCustomIconResponse.status()).toBe(200);
+        console.log('getCustomIconAll.php API called successfully');
+
+        // 7c: Select the uploaded custom icon (first one in the list)
+        // Wait for the icon grid items to be visible (radio inputs may be visually hidden)
+        await expect(page.locator('#icon-grid-add .icon-radio-item').first()).toBeVisible({ timeout: 60000 });
+        console.log('Custom icons loaded in grid');
+        // Click on the first icon radio item label (the input may be hidden)
+        await page.locator('#icon-grid-add .icon-radio-item label').first().click({ force: true });
+        console.log('Custom icon selected');
+
+        // ========================================
+        // STEP 8: ADD DEVICE
+        // ========================================
+        await page.locator(config.selectors.addEditDevice.addDeviceBtn).scrollIntoViewIfNeeded();
+        await expect(page.locator(config.selectors.addEditDevice.addDeviceBtn)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.addDeviceBtn).click({ force: true });
+        console.log('Add Device button clicked');
+
+        // Wait for the device to be added and the device list to refresh
+        await page.waitForTimeout(10000);
+
+        // ========================================
+        // STEP 9: VERIFY DEVICE WAS ADDED
+        // ========================================
+        // Find the row in the devices table that contains the selected IMEI
+        const deviceRow = page.locator('table#devices-table tbody tr').filter({ hasText: selectedImei });
+        await expect(deviceRow).toBeVisible();
+        // Verify the device name appears in the same row as the IMEI
+        await expect(deviceRow).toContainText('CustomIconDevice');
+        console.log('Device added successfully with IMEI: ' + selectedImei);
+
+        // Close the device list modal
+        await page.locator(config.selectors.devList.container + ' .icon--close').click({ force: true });
+        await page.waitForTimeout(5000);
+
+        // ========================================
+        // STEP 10: OPEN EDIT DEVICE TAB
+        // ========================================
+        // Re-open the accounts menu
+        await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.accountsMenu).click();
+
+        // Navigate to Add/Edit Device modal again
+        await expect(page.locator(config.selectors.addEditDevice.addEditDriverMenu)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.addEditDriverMenu).click();
+
+        await expect(page.locator(config.selectors.addEditDevice.addEditDriverModal)).toBeVisible();
+
+        // Switch to the "Edit Device" tab
+        await page.locator(config.selectors.addEditDevice.editTab).first().scrollIntoViewIfNeeded();
+        await page.locator(config.selectors.addEditDevice.editTab).first().click({ force: true });
+
+        // Wait for the Edit Device tab content to load
+        await page.waitForTimeout(5000);
+
+        // Verify the Edit Device content area is visible
+        await expect(page.locator('#edit-device-content')).toBeVisible();
+
+        // ========================================
+        // STEP 11: SELECT DEVICE FROM DROPDOWN
+        // ========================================
+        // Open the device selection dropdown (Select2 AJAX-powered)
+        await page.locator('#edit-device-content .select2-selection').click();
+        // Select the device we just created from the dropdown options
+        await page.locator('.select2-results__option').filter({ hasText: 'CustomIconDevice' }).first().click();
+
+        // Verify the device name input field shows the selected device name
+        await expect(page.locator(config.selectors.addEditDevice.deviceNameInput)).toHaveValue('CustomIconDevice');
+        console.log('Device selected in Edit tab: CustomIconDevice');
+
+        // ========================================
+        // STEP 12: CHANGE DEVICE NAME
+        // ========================================
+        await page.locator(config.selectors.addEditDevice.deviceNameInput).clear();
+        await page.locator(config.selectors.addEditDevice.deviceNameInput).fill('CustomIconDeviceEdited');
+        console.log('Device name changed to: CustomIconDeviceEdited');
+
+        // ========================================
+        // STEP 13: UPLOAD NEW CUSTOM ICON
+        // ========================================
+        // 13a: Click Upload Icon button to open the custom icon modal
+        // Use JavaScript click to bypass visibility checks
+        await page.waitForTimeout(2000);
+        await page.evaluate(() => {
+            document.querySelector('#upload-icon-btn').click();
+        });
+
+        // Verify the Upload & Crop Custom Icon modal appears
+        await expect(page.locator(config.selectors.addEditDevice.customIconModal)).toBeVisible();
+        console.log('Upload & Crop Custom Icon modal opened successfully');
+
+        // 13b: Upload image file
+        const fileChooserPromise2 = page.waitForEvent('filechooser');
+        await page.locator(config.selectors.addEditDevice.selectImageButton).click();
+        const fileChooser2 = await fileChooserPromise2;
+        await fileChooser2.setFiles(testImagePath);
+
+        // Wait for the image to be loaded and processed
+        await page.waitForTimeout(2000);
+
+        // Verify the crop canvas is visible (image loaded successfully)
+        await expect(page.locator(config.selectors.addEditDevice.cropCanvas)).toBeVisible();
+        console.log('Test image uploaded successfully');
+
+        // 13c: Adjust zoom controls
+        const zoomPlusBtn2 = page.locator(config.selectors.addEditDevice.zoomPlusButton);
+        if (await zoomPlusBtn2.isVisible()) {
+            await zoomPlusBtn2.click();
+            await page.waitForTimeout(500);
+            console.log('Zoom adjusted');
+        }
+
+        // 13d: Verify preview is displayed
+        await expect(page.locator(config.selectors.addEditDevice.previewSection)).toBeVisible();
+        console.log('Preview section is visible');
+
+        // 13e: Save custom icon with API validation
+        const cropImageUploadPromise2 = page.waitForResponse(
+            response => response.url().includes('crop_image_upload_new.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+
+        // Click Save Icon button
+        const saveIconBtn2 = page.getByRole('button', { name: 'Save Icon' });
+        await expect(saveIconBtn2).toBeVisible();
+        await saveIconBtn2.click();
+        console.log('Save Icon button clicked');
+
+        // Wait for the upload API call to complete
+        const cropImageResponse2 = await cropImageUploadPromise2;
+        expect(cropImageResponse2.status()).toBe(200);
+        console.log('crop_image_upload_new.php API called successfully');
+
+        // Wait for modal to close
+        await page.waitForTimeout(3000);
+        await expect(page.locator(config.selectors.addEditDevice.customIconModal)).not.toBeVisible({ timeout: 10000 });
+        console.log('Custom icon uploaded and saved successfully');
+
+        // ========================================
+        // STEP 14: SELECT CUSTOM ICON FROM DROPDOWN
+        // ========================================
+        // 14a: Select "custom icon" from icon category dropdown
+        // This triggers the getCustomIconAll.php API call
+        const getCustomIconPromise2 = page.waitForResponse(
+            response => response.url().includes('getCustomIconAll.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+
+        await page.locator(config.selectors.addEditDevice.iconCategoryEdit).selectOption('custom');
+        console.log('Selected "Custom Icon" from icon category dropdown');
+
+        // 14b: Wait for custom icons API to load
+        const getCustomIconResponse2 = await getCustomIconPromise2;
+        expect(getCustomIconResponse2.status()).toBe(200);
+        console.log('getCustomIconAll.php API called successfully');
+
+        // 14c: Select the uploaded custom icon (first one in the list)
+        // Wait for the icon grid items to be visible (radio inputs may be visually hidden)
+        await expect(page.locator('#icon-grid-edit .icon-radio-item').first()).toBeVisible({ timeout: 60000 });
+        console.log('Custom icons loaded in grid');
+        // Click on the first icon radio item label (the input may be hidden)
+        await page.locator('#icon-grid-edit .icon-radio-item label').first().click({ force: true });
+        console.log('Custom icon selected');
+
+        // ========================================
+        // STEP 15: UPDATE DEVICE
+        // ========================================
+        await page.locator(config.selectors.addEditDevice.updateDeviceButton).scrollIntoViewIfNeeded();
+        await expect(page.locator(config.selectors.addEditDevice.updateDeviceButton)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.updateDeviceButton).click({ force: true });
+        console.log('Update Device button clicked');
+
+        // Wait for the device to be updated
+        await page.waitForTimeout(10000);
+
+        // ========================================
+        // STEP 16: VERIFY DEVICE WAS UPDATED
+        // ========================================
+        // Open the accounts menu to access device list
+        await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.accountsMenu).click();
+
+        // Click on "List of Devices" menu option
+        await expect(page.locator(config.selectors.navigation.listOfDevices)).toBeVisible();
+        await page.locator(config.selectors.navigation.listOfDevices).click();
+
+        // Ensure the device list container is visible
+        await expect(page.locator(config.selectors.devList.container)).toBeVisible();
+        await page.locator(config.selectors.devList.container).scrollIntoViewIfNeeded();
+        await page.locator(config.selectors.devList.container).click({ force: true });
+
+        // Wait for the device table to load and verify the edited device name appears
+        await expect(page.locator('table#devices-table').filter({ hasText: 'CustomIconDeviceEdited' })).toBeVisible({ timeout: 30000 });
+
+        // Find the row with the edited device name and verify
+        const editedDeviceRow = page.locator('table#devices-table tbody tr').filter({ hasText: selectedImei });
+        await expect(editedDeviceRow).toBeVisible();
+        await expect(editedDeviceRow).toContainText('CustomIconDeviceEdited');
+        console.log('Device updated successfully: CustomIconDeviceEdited');
+
+        // Close the device list modal
+        await page.locator(config.selectors.devList.container + ' .icon--close').click({ force: true });
+        await page.waitForTimeout(5000);
+
+        // ========================================
+        // STEP 17: REMOVE THE DEVICE
+        // ========================================
+        // Open the accounts menu to access device editing
+        await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.accountsMenu).click();
+
+        // Navigate to Add/Edit Device modal
+        await expect(page.locator(config.selectors.addEditDevice.addEditDriverMenu)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.addEditDriverMenu).click();
+
+        await expect(page.locator(config.selectors.addEditDevice.addEditDriverModal)).toBeVisible();
+
+        // Switch to the "Edit Device" tab to access removal option
+        await page.locator(config.selectors.addEditDevice.editTab).first().scrollIntoViewIfNeeded();
+        await expect(page.locator(config.selectors.addEditDevice.editTab).first()).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.editTab).first().click();
+
+        // Wait for the edit tab content to load
+        await page.waitForTimeout(8000);
+
+        // Open the device selection dropdown and select the device to remove
+        await page.locator('#edit-device-content .select2-selection').click();
+        await page.locator('.select2-results__option').filter({ hasText: 'CustomIconDeviceEdited' }).first().click();
+
+        // Verify the correct device is selected before removal
+        await expect(page.locator(config.selectors.addEditDevice.deviceNameInput)).toHaveValue('CustomIconDeviceEdited');
+
+        // Click the "Remove Device" button to initiate deletion
+        await expect(page.locator(config.selectors.addEditDevice.removeDeviceButton)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.removeDeviceButton).click({ force: true });
+
+        // A confirmation modal appears to prevent accidental deletions
+        await expect(page.locator(config.selectors.addEditDevice.confirmationModal)).toBeVisible();
+
+        // Click the confirm button to proceed with deletion
+        await expect(page.locator(config.selectors.addEditDevice.confirmDeleteButton)).toBeVisible();
+        await page.locator(config.selectors.addEditDevice.confirmDeleteButton).click({ force: true });
+
+        // Wait for the deletion to process on the server
+        await page.waitForTimeout(10000);
+
+        // ========================================
+        // STEP 18: VERIFY DEVICE WAS REMOVED
+        // ========================================
+        // Confirm the device no longer appears in the devices table
+        await expect(page.locator('table#devices-table td').filter({ hasText: 'CustomIconDeviceEdited' })).not.toBeVisible();
+        console.log('Device removed successfully');
+
+        // Modal closes automatically after device removal
+
+        // Test complete - device was successfully added with custom icon, edited, and removed
+        console.log('Custom icon device add/edit/remove test completed successfully');
     });
 });

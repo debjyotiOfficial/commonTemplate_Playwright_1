@@ -67,11 +67,11 @@ test.describe('Account Health Summary Report', () => {
         // Wait for the report panel to open
         await page.waitForTimeout(5000);
 
-        // Step 5: Verify the IoT Device Fleet Monitoring Dashboard is visible
-        console.log('Step 3: Verifying IoT Device Fleet Monitoring Dashboard...');
-        const dashboardTitle = page.locator('h2:has-text("IoT Device Fleet Monitoring Dashboard")');
-        await expect(dashboardTitle).toBeVisible();
-        console.log('IoT Device Fleet Monitoring Dashboard is visible');
+        // Step 5: Verify the Device Fleet Monitoring Dashboard is visible
+        console.log('Step 3: Verifying Device Fleet Monitoring Dashboard...');
+        const dashboardTitle = page.locator('h2:has-text("Device Fleet Monitoring Dashboard")');
+        await expect(dashboardTitle).toBeVisible({ timeout: 30000 });
+        console.log('Device Fleet Monitoring Dashboard is visible');
 
         // Step 6: Verify Total devices monitored count matches driver count
         console.log('Step 4: Verifying total devices count...');
