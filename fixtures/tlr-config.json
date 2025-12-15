@@ -144,7 +144,22 @@
         "editButton": "#geofence-edit-btn",
         "inputField": "#geolabel_id",
         "confirmationButton": "#submit-save-confirmation-modal-btn",
-        "geoMapList": "#sel_geofence"
+        "geoMapList": "#sel_geofence",
+        "viewGeofencesModal": ".modal:has-text('View Geofences')",
+        "geofenceDeviceSelect": "#geofence-device-select",
+        "hideVehicleMarkersCheckbox": "input[type='checkbox']",
+        "viewSubmitButton": "button:has-text('Submit')",
+        "geofenceInfoOverlay": "#geofence-info-overlay",
+        "geofenceInfoName": "#geofence-name1",
+        "geofenceInfoRadius": "#geofence-radius",
+        "geofenceInfoLocation": "#geofence-location",
+        "editGeofenceButton": "#edit-geofence",
+        "closeGeofenceOverlay": "#close-geofence-overlay",
+        "geofenceNameEdit": "#geofence-name-edit",
+        "geofenceRadiusEdit": "#geofence-radius-edit",
+        "saveGeofenceEdit": "#save-geofence-edit",
+        "cancelGeofenceEdit": "#cancel-geofence-edit",
+        "deleteGeofence": "#delete-geofence"
       },
       "changePassword": {
         "changePasswordMenu": "#change-password-btn",
@@ -325,7 +340,15 @@
         "confirmButton": "#submit-save-confirmation-modal-btn",
         "viewDelGeo": "#view-delete-geofences-btn",
         "editGeoModal": "#edit-geofence-modal",
-        "editSubmitButton": "#submit-edit-geofence-modal-btn"
+        "editSubmitButton": "#submit-edit-geofence-modal-btn",
+        "previewOverlay": "#geofence-preview-overlay",
+        "previewOverlayContent": ".geofence-info-overlay__content",
+        "previewNameValue": "#geofence-preview-overlay .geofence-info-overlay__content-item:nth-child(1) .value",
+        "previewRadiusValue": "#geofence-preview-overlay .geofence-info-overlay__content-item:nth-child(2) .value",
+        "previewAddressValue": "#geofence-preview-overlay .geofence-info-overlay__content-item:nth-child(3) .value",
+        "previewCancelButton": "#geofence-preview-overlay button:has-text('Cancel')",
+        "previewSaveButton": "#geofence-preview-overlay button:has-text('Save')",
+        "mapRadiusLabel": "div[style*='text-align: center'][style*='color: rgb(203, 56, 56)']"
       },
       "landmarkInput": {
         "addressField": "#landmark-address",
@@ -570,7 +593,21 @@
         "driverCardName": ".driver-card__name",
         "removeDeviceButton": "#remove-device-btn",
         "confirmationModal": "#delete-device-modal",
-        "confirmDeleteButton": "#confirm-delete-device"
+        "confirmDeleteButton": "#confirm-delete-device",
+        "uploadIconButton": "#upload-icon-btn",
+        "customIconModal": "#image-upload-modal",
+        "selectImageButton": ".image-upload-modal__upload-section button",
+        "customIconFileInput": "#image-upload-modal input[type='file']",
+        "zoomMinusButton": ".image-upload-modal__zoom-controls button:first-child",
+        "zoomPlusButton": ".image-upload-modal__zoom-controls button:last-child",
+        "zoomSlider": ".image-upload-modal__zoom-controls input[type='range']",
+        "sizeSlider": ".image-upload-modal__size-controls input[type='range']",
+        "sizeValue": ".image-upload-modal__size-controls span",
+        "cropCanvas": "#modal-crop-canvas",
+        "previewSection": ".image-upload-modal__preview",
+        "saveIconButton": ".image-upload-modal button.btn-primary",
+        "cancelIconButton": ".image-upload-modal button.btn-secondary",
+        "customIconModalClose": ".image-upload-modal .close"
       },
       "pulsingIcon": {
         "pulsingIconMenu": "#preferences-btn",

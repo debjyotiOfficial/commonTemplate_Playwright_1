@@ -39,8 +39,33 @@ class TestHelpers {
   async getConfig() {
     if (!this.config) {
       const configPath = path.join(__dirname, '..', 'fixtures', 'tlr-config.json');
+      console.log(`Loading config from: ${configPath}`);
+
+      // Check if file exists
+      if (!fs.existsSync(configPath)) {
+        console.error(`ERROR: Config file not found at ${configPath}`);
+        console.error(`Current __dirname: ${__dirname}`);
+        // Try alternative paths
+        const altPaths = [
+          path.join(process.cwd(), 'fixtures', 'tlr-config.json'),
+          path.resolve('fixtures', 'tlr-config.json'),
+          './fixtures/tlr-config.json'
+        ];
+        for (const altPath of altPaths) {
+          console.log(`Trying alternative path: ${altPath}`);
+          if (fs.existsSync(altPath)) {
+            console.log(`Found config at: ${altPath}`);
+            const configData = fs.readFileSync(altPath, 'utf-8');
+            this.config = JSON.parse(configData).testConfig;
+            return this.config;
+          }
+        }
+        throw new Error(`Config file not found. Tried paths: ${configPath}, ${altPaths.join(', ')}`);
+      }
+
       const configData = fs.readFileSync(configPath, 'utf-8');
       this.config = JSON.parse(configData).testConfig;
+      console.log('Config loaded successfully');
     }
     return this.config;
   }

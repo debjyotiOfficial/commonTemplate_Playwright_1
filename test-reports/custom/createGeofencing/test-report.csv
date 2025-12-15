@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS018-A,"Create Geofencing","should be able to create new Geofence",PASSED,139.29,"",N/A,TS018_createGeofencing.spec.js,23

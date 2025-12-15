@@ -1,6 +1,7 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,120.46,"",N/A,TS057_accountHealthSummary.spec.js,26
-TS057-B,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,107.41,"",N/A,TS057_accountHealthSummary.spec.js,343
-TS057-C,"Account Health Summary Report","should verify table sorting functionality",PASSED,99.10,"",N/A,TS057_accountHealthSummary.spec.js,445
-TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,106.54,"",N/A,TS057_accountHealthSummary.spec.js,508
-TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,87.80,"",N/A,TS057_accountHealthSummary.spec.js,618
+TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",FAILED,137.11,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm,TS057_accountHealthSummary.spec.js,26
+TS057-B,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,228.78,"",N/A,TS057_accountHealthSummary.spec.js,26
+TS057-C,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,92.78,"",N/A,TS057_accountHealthSummary.spec.js,343
+TS057-D,"Account Health Summary Report","should verify table sorting functionality",PASSED,66.45,"",N/A,TS057_accountHealthSummary.spec.js,445
+TS057-E,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,55.04,"",N/A,TS057_accountHealthSummary.spec.js,508
+TS057-F,"Account Health Summary Report","should verify search functionality in device table",PASSED,64.44,"",N/A,TS057_accountHealthSummary.spec.js,647

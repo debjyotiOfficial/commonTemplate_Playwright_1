@@ -1,0 +1,262 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 1042185,
+    "startTime": "2025-12-15T07:46:51.805Z",
+    "endTime": "2025-12-15T08:04:13.990Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS002-A",
+      "module": "Add edit Device",
+      "title": "should add device with custom icon",
+      "description": "should add device with custom icon",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 209167,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name entered: CustomIconDevice",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "getCustomIconAll.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Add Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device added successfully with IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device selected in Edit tab: CustomIconDevice",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name changed to: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "getCustomIconAll.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device updated successfully: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device removed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon device add/edit/remove test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T07:48:18.634Z",
+      "endTime": "2025-12-15T07:51:47.801Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
+      "fileName": "TS002_addEditDevices",
+      "line": 347
+    }
+  ]
+}

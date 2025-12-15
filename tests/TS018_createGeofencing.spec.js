@@ -24,6 +24,25 @@ test.describe('Create Geofencing', () => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
+        // Validate config loaded correctly
+        if (!config || !config.selectors || !config.selectors.navigation) {
+            console.error('Config validation failed!');
+            console.error('config:', JSON.stringify(config, null, 2));
+            throw new Error('Config not loaded correctly - selectors.navigation is missing');
+        }
+        if (!config.selectors.geofencingInput) {
+            throw new Error('Config not loaded correctly - selectors.geofencingInput is missing');
+        }
+        if (!config.testData || !config.testData.geofencingAddress || !config.testData.geofencingRadius) {
+            console.error('testData:', JSON.stringify(config.testData, null, 2));
+            throw new Error('Config not loaded correctly - testData.geofencingAddress or geofencingRadius is missing');
+        }
+        console.log('Config validated successfully');
+        console.log('  - geofencingMenu:', config.selectors.navigation.geofencingMenu);
+        console.log('  - creategeofencingMenu:', config.selectors.navigation.creategeofencingMenu);
+        console.log('  - geofencingAddress:', config.testData.geofencingAddress);
+        console.log('  - geofencingRadius:', config.testData.geofencingRadius);
+
         // Generate unique geofence name for this test run to avoid conflicts with previous runs
         const uniqueGeofenceName = `AutoTest_Geofence_${Date.now()}`;
         console.log(`Using unique geofence name: ${uniqueGeofenceName}`);

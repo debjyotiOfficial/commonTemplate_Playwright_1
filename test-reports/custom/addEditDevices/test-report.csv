@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS002-A,"Add edit Device","should add device with custom icon",PASSED,209.17,"",N/A,TS002_addEditDevices.spec.js,347

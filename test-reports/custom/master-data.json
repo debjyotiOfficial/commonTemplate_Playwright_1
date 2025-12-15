@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-09T21:34:31.765Z",
+  "lastUpdated": "2025-12-15T15:32:15.647Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 1007,
+      "duration": 101323,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,67 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 22 minutes). Skipping login.",
+          "text": "Authentication session expired (age: 343 minutes). Re-authenticating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Performing authentication setup...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login page loaded, filling credentials...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked, waiting for login to complete...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to fleet dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashboard loaded, saving session state...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-09T21:32:15.220Z",
-      "endTime": "2025-12-09T21:32:16.227Z",
+      "startTime": "2025-12-15T15:15:46.837Z",
+      "endTime": "2025-12-15T15:17:28.167Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -236,6 +290,255 @@
       "line": 10
     },
     {
+      "testCaseNo": "TS002-A",
+      "module": "Add edit Device",
+      "title": "should add device with custom icon",
+      "description": "should add device with custom icon",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 209167,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name entered: CustomIconDevice",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "getCustomIconAll.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Add Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device added successfully with IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device selected in Edit tab: CustomIconDevice",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name changed to: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "getCustomIconAll.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device updated successfully: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device removed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon device add/edit/remove test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T07:48:18.634Z",
+      "endTime": "2025-12-15T07:51:47.801Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
+      "fileName": "TS002_addEditDevices",
+      "line": 347
+    },
+    {
       "testCaseNo": "TS008-A",
       "module": "Alert Contact",
       "title": "should add email and phone contacts and configure alert settings",
@@ -272,6 +575,765 @@
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS008_alertsContact.spec.js",
       "fileName": "TS008_alertsContact",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS018-A",
+      "module": "Create Geofencing",
+      "title": "should be able to create new Geofence",
+      "description": "should be able to create new Geofence",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 139295,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config validated successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- geofencingMenu: .icon.icon--xl.icon--geofencing",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- creategeofencingMenu: #create-geofence-btn",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- geofencingAddress: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- geofencingRadius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using unique geofence name: AutoTest_Geofence_1765811852646",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded, proceeding...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Geofencing menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Geofence submenu is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Create Geofence submenu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Geofence modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered geofence name: AutoTest_Geofence_1765811852646",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered address: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected address suggestion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying geofence preview overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Name: AutoTest_Geofence_1765811852646",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Radius: 600 feet",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Address: San Ramon, CA, United States",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying radius label on the map...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map radius label verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Save button on preview overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence save API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Success alert container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence Created",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "The geofence has been created successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to View/Delete Geofences...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying View Geofences modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available geofences: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'View All Geofences'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'pan (Max, MN, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'home (64 New Brighton Grv SE, Calgary, AB T2Z 1G4, Canada)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'PGP (Max, ND, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'dur_geo (807 Centre St S, Calgary, AB T2G, Canada)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Putest (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'homeware (1 S 6th St, San Jose, CA 95112, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'PGPF (United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'PGPF (United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Sales car1  Geofence (933 Howard St, San Francisco, CA 94103-4108, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Name 1 (11153 E Karen Dr, Scottsdale, AZ 85255-1840, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'ddnewTest33 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'ddTest12345 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test A1 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'seank (3287 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'sea (3289 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Office 2 (Calle Central, 20201 San Ramon, Costa Rica)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test21 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'ser (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'test (6556 Birds Landing Rd, Birds Landing, CA 94512-9511, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764109559362 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764109838178 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764110001717 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764152796329_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764153240924_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764200723008_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764274855379_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764275311246_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1764277193016_Second (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'ddTest (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'ddTest123 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'ddTest (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected geofence: AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Hide Vehicle Markers checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Hide Vehicle Markers checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Submit button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying geofence info overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence info overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed geofence name: AutoTest_Geofence_1765811852646",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed geofence radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed geofence location: San Ramon, CA, United States",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying geofence name label on map...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence name label verified on map",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying radius label on map...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Radius label verified on map",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Editing the geofence...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edited geofence name to: AutoTest_Geofence_1765811852646_Edited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified radius minimum value is 500",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempted to set radius to 400, actual value: 400",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Set radius to 510",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Saving edited geofence...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update geofence API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying updated geofence details...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated geofence name displayed: AutoTest_Geofence_1765811852646_Edited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated geofence radius displayed: 510",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified updated name appears in dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Deleting the geofence...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Delete button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Confirming delete in modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete confirmation modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 Delete button(s) in modal container",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete geofence API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying geofence is deleted...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified deleted geofence is no longer in the dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SUCCESS: Geofence creation, edit, and deletion completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T15:17:32.480Z",
+      "endTime": "2025-12-15T15:19:51.775Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS018_createGeofencing.spec.js",
+      "fileName": "TS018_createGeofencing",
       "line": 23
     },
     {
@@ -4131,23 +5193,41 @@
       "module": "Account Health Summary Report",
       "title": "should display Account Health Summary report and verify device data with Historical Data",
       "description": "should display Account Health Summary report and verify device data with Historical Data",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 120463,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 137110,
+      "failureReason": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": "#iot-showNoUpdates",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS057_accountHealthSummary.spec.js",
+        "line": 26,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#iot-showNoUpdates')\n",
+        "stackTrace": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#iot-showNoUpdates')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js:303:32"
+      },
+      "videoPath": "videos/TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm",
+      "videoIdentifier": "TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm",
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
           "status": "info",
           "type": "log"
         },
@@ -4183,13 +5263,13 @@
         },
         {
           "number": "",
-          "text": "Step 3: Verifying IoT Device Fleet Monitoring Dashboard...",
+          "text": "Step 3: Verifying Device Fleet Monitoring Dashboard...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "IoT Device Fleet Monitoring Dashboard is visible",
+          "text": "Device Fleet Monitoring Dashboard is visible",
           "status": "info",
           "type": "log"
         },
@@ -4351,7 +5431,436 @@
         },
         {
           "number": "",
-          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Active",
+          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 2: IMEI=220902734, Driver=Sales Car1, Type=XT2469, Status=Active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Clicking on Last 30 Days button for Sales Car1...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying Historical Data modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Historical Data modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal header shows: Historical Data - Sales Car1 (220902734)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Verifying Historical Data chart...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Historical Data chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Testing checkbox filters...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"Battery/Voltage\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"GPS Satellites\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"No Update Days\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Battery/Voltage checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Battery/Voltage initial state: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Battery/Voltage after toggle: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Battery/Voltage checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing GPS Satellites checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "GPS Satellites initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "GPS Satellites after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ GPS Satellites checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Signal Quality (CSQ) checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Signal Quality (CSQ) initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Signal Quality (CSQ) after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Signal Quality (CSQ) checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Buffered Packets Only checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Buffered Packets Only initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Buffered Packets Only after toggle: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Buffered Packets Only checkbox toggle works",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing No Update Days checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No Update Days initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T10:15:38.409Z",
+      "endTime": "2025-12-15T10:17:55.519Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
+      "fileName": "TS057_accountHealthSummary",
+      "line": 26
+    },
+    {
+      "testCaseNo": "TS057-B",
+      "module": "Account Health Summary Report",
+      "title": "should display Account Health Summary report and verify device data with Historical Data",
+      "description": "should display Account Health Summary report and verify device data with Historical Data",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 228775,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Getting driver count from Driver Card panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number of drivers in Driver Card panel: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver names from Driver Card panel: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Account Health Summary report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Verifying Device Fleet Monitoring Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Fleet Monitoring Dashboard is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Verifying total devices count...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total devices monitored in report: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device count matches: Driver Cards (2) = Report (2)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Device Details table...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying table headers...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 12 table headers",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 1: Device IMEI",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 2: Driver Name",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 3: Device Type",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 4: Status",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 5: SIM Status",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 6: Battery/Voltage",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 7: GPS Satellites",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 8: Signal Quality",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 9: Last GPS Connect",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 10: Last Cell Connect",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 11: Renewal Date",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Header 12: Historical Data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying table row count...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table rows: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Table row count matches device count: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying driver names in table match Driver Card panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver names from table: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Driver \"Sales Car1\" found in IoT Device table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Driver \"Demo 1\" found in IoT Device table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying table data for each device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite",
           "status": "info",
           "type": "log"
         },
@@ -4602,21 +6111,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-05T17:57:43.904Z",
-      "endTime": "2025-12-05T17:59:44.368Z",
-      "retries": 0,
+      "startTime": "2025-12-15T10:18:10.912Z",
+      "endTime": "2025-12-15T10:21:59.688Z",
+      "retries": 1,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
       "line": 26
     },
     {
-      "testCaseNo": "TS057-B",
+      "testCaseNo": "TS057-C",
       "module": "Account Health Summary Report",
       "title": "should verify Fleet Status Summary cards and table filtering",
       "description": "should verify Fleet Status Summary cards and table filtering",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 107407,
+      "duration": 92779,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -4624,13 +6133,19 @@
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
           "status": "info",
           "type": "log"
         },
@@ -4678,19 +6193,19 @@
         },
         {
           "number": "",
-          "text": "ONLINE & ACTIVE card count: 2",
+          "text": "ONLINE & ACTIVE card count: 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking ONLINE & ACTIVE: 2",
+          "text": "Table rows after clicking ONLINE & ACTIVE: 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ ONLINE & ACTIVE: Card count (2) matches table rows (2)",
+          "text": "✓ ONLINE & ACTIVE: Card count (1) matches table rows (1)",
           "status": "info",
           "type": "log"
         },
@@ -4774,19 +6289,19 @@
         },
         {
           "number": "",
-          "text": "POOR SIGNAL ACTIVE card count: 0",
+          "text": "POOR SIGNAL ACTIVE card count: 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking POOR SIGNAL ACTIVE: 0",
+          "text": "Table rows after clicking POOR SIGNAL ACTIVE: 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ POOR SIGNAL ACTIVE: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ POOR SIGNAL ACTIVE: Card count (1) matches table rows (1)",
           "status": "info",
           "type": "log"
         },
@@ -4851,21 +6366,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-05T17:59:44.435Z",
-      "endTime": "2025-12-05T18:01:31.842Z",
+      "startTime": "2025-12-15T10:21:59.692Z",
+      "endTime": "2025-12-15T10:23:32.471Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
       "line": 343
     },
     {
-      "testCaseNo": "TS057-C",
+      "testCaseNo": "TS057-D",
       "module": "Account Health Summary Report",
       "title": "should verify table sorting functionality",
       "description": "should verify table sorting functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 99103,
+      "duration": 66452,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -4873,13 +6388,19 @@
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
           "status": "info",
           "type": "log"
         },
@@ -4932,21 +6453,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-05T18:01:31.907Z",
-      "endTime": "2025-12-05T18:03:11.010Z",
+      "startTime": "2025-12-15T10:23:32.504Z",
+      "endTime": "2025-12-15T10:24:38.956Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
       "line": 445
     },
     {
-      "testCaseNo": "TS057-D",
+      "testCaseNo": "TS057-E",
       "module": "Account Health Summary Report",
       "title": "should verify export buttons and file downloads",
       "description": "should verify export buttons and file downloads",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 106538,
+      "duration": 55043,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -4954,13 +6475,19 @@
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
           "status": "info",
           "type": "log"
         },
@@ -4996,7 +6523,7 @@
         },
         {
           "number": "",
-          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-05.csv",
+          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-15.csv",
           "status": "info",
           "type": "log"
         },
@@ -5020,7 +6547,7 @@
         },
         {
           "number": "",
-          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-05.xlsx",
+          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-15.xlsx",
           "status": "info",
           "type": "log"
         },
@@ -5044,7 +6571,7 @@
         },
         {
           "number": "",
-          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-05.pdf",
+          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-15.pdf",
           "status": "info",
           "type": "log"
         },
@@ -5079,21 +6606,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-05T18:03:11.085Z",
-      "endTime": "2025-12-05T18:04:57.623Z",
+      "startTime": "2025-12-15T10:24:38.991Z",
+      "endTime": "2025-12-15T10:25:34.034Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
       "line": 508
     },
     {
-      "testCaseNo": "TS057-E",
+      "testCaseNo": "TS057-F",
       "module": "Account Health Summary Report",
       "title": "should verify search functionality in device table",
       "description": "should verify search functionality in device table",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 87799,
+      "duration": 64437,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -5101,13 +6628,19 @@
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
           "status": "info",
           "type": "log"
         },
@@ -5154,12 +6687,12 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-05T18:04:57.653Z",
-      "endTime": "2025-12-05T18:06:25.452Z",
+      "startTime": "2025-12-15T10:25:34.082Z",
+      "endTime": "2025-12-15T10:26:38.519Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 618
+      "line": 647
     }
   ]
 }

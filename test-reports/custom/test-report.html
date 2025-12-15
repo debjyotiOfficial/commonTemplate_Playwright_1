@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Test Report - All Modules - 10/12/2025</title>
+    <title>Master Test Report - All Modules - 15/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,25 +150,25 @@
     <div class="container">
         <div class="header">
             <h1>Master Test Execution Report</h1>
-            <div class="module-name">All Modules (15 modules, 20 tests)</div>
+            <div class="module-name">All Modules (17 modules, 23 tests)</div>
             <div class="subtitle">
-                Generated: 10/12/2025, 3:04:31 am |
-                Duration: 138.75s |
+                Generated: 15/12/2025, 9:02:15 pm |
+                Duration: 990.82s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">20</div>
+                <div class="number">23</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">18</div>
+                <div class="number">20</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">2</div>
+                <div class="number">3</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">90.0%</div>
+                <div class="number">87.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -192,7 +192,7 @@
             
             <select id="moduleFilter" onchange="filterTests()">
                 <option value="">All Modules</option>
-                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Alert Contact">Alert Contact</option><option value="Current geofence report">Current geofence report</option><option value="Dashcam Refresh">Dashcam Refresh</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option><option value="Travel Log Report">Travel Log Report</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option><option value="auth.setup.js">auth.setup.js</option>
+                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Add edit Device">Add edit Device</option><option value="Alert Contact">Alert Contact</option><option value="Create Geofencing">Create Geofencing</option><option value="Current geofence report">Current geofence report</option><option value="Dashcam Refresh">Dashcam Refresh</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option><option value="Travel Log Report">Travel Log Report</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option><option value="auth.setup.js">auth.setup.js</option>
             </select>
             
             <button class="export-btn" onclick="exportToExcel()">Export to Excel</button>
@@ -220,7 +220,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (1)</span>
+                                    <span>View Test Steps (10)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -229,7 +229,52 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 22 minutes). Skipping login.</span>
+                                                <span class="step-text">Authentication session expired (age: 343 minutes). Re-authenticating...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing authentication setup...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Login page loaded, filling credentials...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Username filled</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Password filled</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit clicked, waiting for login to complete...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to fleet dashboard...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Dashboard loaded, saving session state...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json</span>
                                             </div>
                                         
                                     </div>
@@ -237,7 +282,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>1.01s</strong></td>
+                        <td><strong>101.32s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -424,6 +469,222 @@
                         </td>
                     </tr>
                     
+                    <tr data-status="passed" data-module="Add edit Device">
+                        <td><span class="test-case-no">TS002-A</span></td>
+                        <td>Add edit Device</td>
+                        <td>
+                            <strong>should add device with custom icon</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                    <span>View Test Steps (38)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-2" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected IMEI: 861492065082189</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device name entered: CustomIconDevice</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Upload &amp; Crop Custom Icon modal opened successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Test image uploaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Zoom adjusted</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preview section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Save Icon button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">crop_image_upload_new.php API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Alert message: Custom icon saved successfully!</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icon uploaded and saved successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected &quot;Custom Icon&quot; from icon category dropdown</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">getCustomIconAll.php API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icons loaded in grid</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icon selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Add Device button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device added successfully with IMEI: 861492065082189</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device selected in Edit tab: CustomIconDevice</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device name changed to: CustomIconDeviceEdited</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Upload &amp; Crop Custom Icon modal opened successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Test image uploaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Zoom adjusted</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preview section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Save Icon button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">crop_image_upload_new.php API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Alert message: Custom icon saved successfully!</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icon uploaded and saved successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected &quot;Custom Icon&quot; from icon category dropdown</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">getCustomIconAll.php API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icons loaded in grid</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icon selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Update Device button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device updated successfully: CustomIconDeviceEdited</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device removed successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom icon device add/edit/remove test completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>209.17s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="Alert Contact">
                         <td><span class="test-case-no">TS008-A</span></td>
                         <td>Alert Contact</td>
@@ -431,11 +692,11 @@
                             <strong>should add email and phone contacts and configure alert settings</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                <button class="steps-toggle" onclick="toggleSteps(3)">
                                     <span>View Test Steps (3)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-2" class="steps-panel">
+                                <div id="steps-3" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -465,6 +726,647 @@
                         </td>
                     </tr>
                     
+                    <tr data-status="passed" data-module="Create Geofencing">
+                        <td><span class="test-case-no">TS018-A</span></td>
+                        <td>Create Geofencing</td>
+                        <td>
+                            <strong>should be able to create new Geofence</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                    <span>View Test Steps (123)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-4" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config validated successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- geofencingMenu: .icon.icon--xl.icon--geofencing</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- creategeofencingMenu: #create-geofence-btn</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- geofencingAddress: San Ramon, CA</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- geofencingRadius: 600</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using unique geofence name: AutoTest_Geofence_1765811852646</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded, proceeding...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofencing menu is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Geofencing menu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Create Geofence submenu is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Create Geofence submenu</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Create Geofence modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered geofence name: AutoTest_Geofence_1765811852646</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered address: San Ramon, CA</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected address suggestion</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered radius: 600</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Submit button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying geofence preview overlay...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preview overlay is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preview Name: AutoTest_Geofence_1765811852646</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preview Radius: 600 feet</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preview Address: San Ramon, CA, United States</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying radius label on the map...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Map radius label verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking Save button on preview overlay...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence save API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Success alert container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Alert message:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence Created</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">The geofence has been created successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to View/Delete Geofences...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying View Geofences modal...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Available geofences: [</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;View All Geofences&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;pan (Max, MN, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;home (64 New Brighton Grv SE, Calgary, AB T2Z 1G4, Canada)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;PGP (Max, ND, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;dur_geo (807 Centre St S, Calgary, AB T2G, Canada)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Putest (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;homeware (1 S 6th St, San Jose, CA 95112, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;PGPF (United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;PGPF (United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Sales car1  Geofence (933 Howard St, San Francisco, CA 94103-4108, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Name 1 (11153 E Karen Dr, Scottsdale, AZ 85255-1840, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;ddnewTest33 (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;ddTest12345 (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test A1 (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;seank (3287 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;sea (3289 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Office 2 (Calle Central, 20201 San Ramon, Costa Rica)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test21 (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;ser (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;test (6556 Birds Landing Rd, Birds Landing, CA 94512-9511, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764109559362 (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764109838178 (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764110001717 (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764152796329_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764153240924_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764200723008_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764274855379_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764275311246_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1764277193016_Second (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;ddTest (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;ddTest123 (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;ddTest (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence_Edited (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence_Edited (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence_Edited (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence_Edited (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence_Edited (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence_Edited (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Test Auto Geofence (San Ramon, CA, United States)&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)&#039;[39m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected geofence: AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Hide Vehicle Markers checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Hide Vehicle Markers checkbox checked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking Submit button...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying geofence info overlay...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence info overlay is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Displayed geofence name: AutoTest_Geofence_1765811852646</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Displayed geofence radius: 600</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Displayed geofence location: San Ramon, CA, United States</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying geofence name label on map...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Geofence name label verified on map</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying radius label on map...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Radius label verified on map</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 6: Editing the geofence...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Edit button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Edit mode is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Edited geofence name to: AutoTest_Geofence_1765811852646_Edited</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified radius minimum value is 500</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Attempted to set radius to 400, actual value: 400</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Set radius to 510</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Saving edited geofence...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Update geofence API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 7: Verifying updated geofence details...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Updated geofence name displayed: AutoTest_Geofence_1765811852646_Edited</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Updated geofence radius displayed: 510</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified updated name appears in dropdown</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 8: Deleting the geofence...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Edit button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking Delete button...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Confirming delete in modal...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Delete confirmation modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 1 Delete button(s) in modal container</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Delete geofence API called successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 9: Verifying geofence is deleted...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified deleted geofence is no longer in the dropdown</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">SUCCESS: Geofence creation, edit, and deletion completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>139.29s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="Weekly Geofencing reports">
                         <td><span class="test-case-no">TS020-A</span></td>
                         <td>Weekly Geofencing reports</td>
@@ -472,11 +1374,11 @@
                             <strong>should manage recent geofence report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(3)">
+                                <button class="steps-toggle" onclick="toggleSteps(5)">
                                     <span>View Test Steps (34)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-3" class="steps-panel">
+                                <div id="steps-5" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -668,11 +1570,11 @@
                             <strong>should manage recent geofence report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                <button class="steps-toggle" onclick="toggleSteps(6)">
                                     <span>View Test Steps (39)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-4" class="steps-panel">
+                                <div id="steps-6" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -888,11 +1790,11 @@
                         <td>
                             <strong>should verify Frequent Stops functionality with API validation</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(5)">
+                                <button class="error-toggle" onclick="toggleError(7)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-5" class="error-panel">
+                                <div id="error-7" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -936,11 +1838,11 @@ Received:   76</pre></span>
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                <button class="steps-toggle" onclick="toggleSteps(7)">
                                     <span>View Test Steps (26)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-5" class="steps-panel">
+                                <div id="steps-7" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1092,11 +1994,11 @@ Received:   76</pre></span>
                             <strong>should be redirected to fleet demo page with demo credentials</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(6)">
+                                <button class="steps-toggle" onclick="toggleSteps(8)">
                                     <span>View Test Steps (59)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-6" class="steps-panel">
+                                <div id="steps-8" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1413,11 +2315,11 @@ Received:   76</pre></span>
                             <strong>should generate and validate trip report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(7)">
+                                <button class="steps-toggle" onclick="toggleSteps(9)">
                                     <span>View Test Steps (31)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-7" class="steps-panel">
+                                <div id="steps-9" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1593,11 +2495,11 @@ Received:   76</pre></span>
                         <td>
                             <strong>should generate and validate low voltage device report</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(8)">
+                                <button class="error-toggle" onclick="toggleError(10)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-8" class="error-panel">
+                                <div id="error-10" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -1651,11 +2553,11 @@ Call log:
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(8)">
+                                <button class="steps-toggle" onclick="toggleSteps(10)">
                                     <span>View Test Steps (4)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-8" class="steps-panel">
+                                <div id="steps-10" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1697,11 +2599,11 @@ Call log:
                             <strong>should refresh dashcam functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(9)">
+                                <button class="steps-toggle" onclick="toggleSteps(11)">
                                     <span>View Test Steps (4)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-9" class="steps-panel">
+                                <div id="steps-11" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1743,11 +2645,11 @@ Call log:
                             <strong>should verify Engine Idling Events checkbox functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(10)">
+                                <button class="steps-toggle" onclick="toggleSteps(12)">
                                     <span>View Test Steps (11)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-10" class="steps-panel">
+                                <div id="steps-12" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1824,11 +2726,11 @@ Call log:
                             <strong>should verify Geofence Events, Landmark Events, and Frequent Stops functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(11)">
+                                <button class="steps-toggle" onclick="toggleSteps(13)">
                                     <span>View Test Steps (150)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-11" class="steps-panel">
+                                <div id="steps-13" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2600,11 +3502,11 @@ Call log:
                             <strong>should verify real-time tracking timer and API data synchronization</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(12)">
+                                <button class="steps-toggle" onclick="toggleSteps(14)">
                                     <span>View Test Steps (18)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-12" class="steps-panel">
+                                <div id="steps-14" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2716,11 +3618,11 @@ Call log:
                             <strong>should verify Get Support and Insurance form functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(13)">
+                                <button class="steps-toggle" onclick="toggleSteps(15)">
                                     <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-13" class="steps-panel">
+                                <div id="steps-15" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2787,11 +3689,11 @@ Call log:
                             <strong>should edit the timezone of users</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(14)">
+                                <button class="steps-toggle" onclick="toggleSteps(16)">
                                     <span>View Test Steps (211)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-14" class="steps-panel">
+                                <div id="steps-16" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3861,29 +4763,91 @@ Call log:
                         </td>
                     </tr>
                     
-                    <tr data-status="passed" data-module="Account Health Summary Report">
+                    <tr data-status="failed" data-module="Account Health Summary Report">
                         <td><span class="test-case-no">TS057-A</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
                             
-                            <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(15)">
-                                    <span>View Test Steps (77)</span>
+                                <button class="error-toggle" onclick="toggleError(17)">
+                                    View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-15" class="steps-panel">
+                                <div id="error-17" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Timeout Error</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS057_accountHealthSummary.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">26</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Element:</span>
+                        <span class="error-value element-selector">#iot-showNoUpdates</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Timeout:</span>
+                        <span class="error-value">30s</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Operation should complete within time limit</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">Operation took too long</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Page may be slow to load, or element never appeared. Check network/server status</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(&#039;#iot-showNoUpdates&#039;)
+</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(17)">
+                                    <span>View Test Steps (68)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-17" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -3913,12 +4877,12 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Step 3: Verifying IoT Device Fleet Monitoring Dashboard...</span>
+                                                <span class="step-text">Step 3: Verifying Device Fleet Monitoring Dashboard...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">IoT Device Fleet Monitoring Dashboard is visible</span>
+                                                <span class="step-text">Device Fleet Monitoring Dashboard is visible</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4053,7 +5017,373 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Active</span>
+                                                <span class="step-text">✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 2: IMEI=220902734, Driver=Sales Car1, Type=XT2469, Status=Active</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 10: Clicking on Last 30 Days button for Sales Car1...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 11: Verifying Historical Data modal...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Historical Data modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal header shows: Historical Data - Sales Car1 (220902734)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 12: Verifying Historical Data chart...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Historical Data chart is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 13: Testing checkbox filters...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;Battery/Voltage&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;GPS Satellites&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;Signal Quality (CSQ)&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;Buffered Packets Only&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;No Update Days&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Battery/Voltage checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Battery/Voltage initial state: checked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Battery/Voltage after toggle: unchecked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Battery/Voltage checkbox toggle works</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing GPS Satellites checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">GPS Satellites initial state: unchecked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">GPS Satellites after toggle: checked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ GPS Satellites checkbox toggle works</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Signal Quality (CSQ) checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Signal Quality (CSQ) initial state: unchecked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Signal Quality (CSQ) after toggle: checked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Signal Quality (CSQ) checkbox toggle works</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Buffered Packets Only checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Buffered Packets Only initial state: unchecked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Buffered Packets Only after toggle: checked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Buffered Packets Only checkbox toggle works</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing No Update Days checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">No Update Days initial state: unchecked</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>137.11s</strong></td>
+                        <td>
+                            <a href="videos/TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm" class="video-link" target="_blank">Video: TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm</a>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Account Health Summary Report">
+                        <td><span class="test-case-no">TS057-B</span></td>
+                        <td>Account Health Summary Report</td>
+                        <td>
+                            <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(18)">
+                                    <span>View Test Steps (78)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-18" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 1: Getting driver count from Driver Card panel...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Number of drivers in Driver Card panel: 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Driver names from Driver Card panel: [ [32m&#039;Sales Car1&#039;[39m, [32m&#039;Demo 1&#039;[39m ]</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 2: Opening Account Health Summary report...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 3: Verifying Device Fleet Monitoring Dashboard...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Device Fleet Monitoring Dashboard is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 4: Verifying total devices count...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total devices monitored in report: 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Device count matches: Driver Cards (2) = Report (2)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 5: Verifying Device Details table...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 6: Verifying table headers...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 12 table headers</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 1: Device IMEI</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 2: Driver Name</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 3: Device Type</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 4: Status</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 5: SIM Status</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 6: Battery/Voltage</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 7: GPS Satellites</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 8: Signal Quality</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 9: Last GPS Connect</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 10: Last Cell Connect</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 11: Renewal Date</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Header 12: Historical Data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 7: Verifying table row count...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table rows: 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Table row count matches device count: 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 8: Verifying driver names in table match Driver Card panel...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Driver names from table: [ [32m&#039;Demo 1&#039;[39m, [32m&#039;Sales Car1&#039;[39m ]</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Driver &quot;Sales Car1&quot; found in IoT Device table</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Driver &quot;Demo 1&quot; found in IoT Device table</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Step 9: Verifying table data for each device...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4266,35 +5596,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>120.46s</strong></td>
+                        <td><strong>228.78s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-B</span></td>
+                        <td><span class="test-case-no">TS057-C</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify Fleet Status Summary cards and table filtering</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(16)">
-                                    <span>View Test Steps (38)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(19)">
+                                    <span>View Test Steps (39)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-16" class="steps-panel">
+                                <div id="steps-19" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4334,17 +5669,17 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">ONLINE &amp; ACTIVE card count: 2</span>
+                                                <span class="step-text">ONLINE &amp; ACTIVE card count: 1</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Table rows after clicking ONLINE &amp; ACTIVE: 2</span>
+                                                <span class="step-text">Table rows after clicking ONLINE &amp; ACTIVE: 1</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ ONLINE &amp; ACTIVE: Card count (2) matches table rows (2)</span>
+                                                <span class="step-text">✓ ONLINE &amp; ACTIVE: Card count (1) matches table rows (1)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4414,17 +5749,17 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">POOR SIGNAL ACTIVE card count: 0</span>
+                                                <span class="step-text">POOR SIGNAL ACTIVE card count: 1</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Table rows after clicking POOR SIGNAL ACTIVE: 0</span>
+                                                <span class="step-text">Table rows after clicking POOR SIGNAL ACTIVE: 1</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ POOR SIGNAL ACTIVE: Card count is 0, table has 0 rows (filter may not apply for empty categories)</span>
+                                                <span class="step-text">✓ POOR SIGNAL ACTIVE: Card count (1) matches table rows (1)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4482,35 +5817,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>107.41s</strong></td>
+                        <td><strong>92.78s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-C</span></td>
+                        <td><span class="test-case-no">TS057-D</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify table sorting functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(17)">
-                                    <span>View Test Steps (10)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(20)">
+                                    <span>View Test Steps (11)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-17" class="steps-panel">
+                                <div id="steps-20" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4558,35 +5898,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>99.10s</strong></td>
+                        <td><strong>66.45s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-D</span></td>
+                        <td><span class="test-case-no">TS057-E</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify export buttons and file downloads</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(18)">
-                                    <span>View Test Steps (21)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(21)">
+                                    <span>View Test Steps (22)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-18" class="steps-panel">
+                                <div id="steps-21" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4616,7 +5961,7 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ CSV file downloaded: device-fleet-all-devices-2025-12-05.csv</span>
+                                                <span class="step-text">✓ CSV file downloaded: device-fleet-all-devices-2025-12-15.csv</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4636,7 +5981,7 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Excel file downloaded: device-fleet-all-devices-2025-12-05.xlsx</span>
+                                                <span class="step-text">✓ Excel file downloaded: device-fleet-all-devices-2025-12-15.xlsx</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4656,7 +6001,7 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ PDF file downloaded: device-fleet-all-devices-2025-12-05.pdf</span>
+                                                <span class="step-text">✓ PDF file downloaded: device-fleet-all-devices-2025-12-15.pdf</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4689,35 +6034,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>106.54s</strong></td>
+                        <td><strong>55.04s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-E</span></td>
+                        <td><span class="test-case-no">TS057-F</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify search functionality in device table</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(19)">
-                                    <span>View Test Steps (9)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(22)">
+                                    <span>View Test Steps (10)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-19" class="steps-panel">
+                                <div id="steps-22" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -4760,7 +6110,7 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>87.80s</strong></td>
+                        <td><strong>64.44s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -4814,7 +6164,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"1.01s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"120.46s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"107.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"99.10s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"106.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"87.80s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"101.32s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add device with custom icon","status":"PASSED","duration":"209.17s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"FAILED","duration":"137.11s","failureReason":"TimeoutError: locator.click: Timeout 30000ms exceeded.","videoIdentifier":"TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"228.78s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"92.78s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"66.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"55.04s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-F","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"64.44s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -4831,7 +6181,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'master-test-report-2025-12-09.csv';
+            link.download = 'master-test-report-2025-12-15.csv';
             link.click();
         }
     </script>

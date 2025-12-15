@@ -1,75 +1,155 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="139.24334100000002">
-<testsuite name="auth.setup.js" timestamp="2025-12-09T21:32:12.983Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.007" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="1.007">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="248.52337100000003">
+<testsuite name="auth.setup.js" timestamp="2025-12-15T15:15:44.759Z" hostname="setup" tests="1" failures="0" skipped="0" time="101.323" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="101.323">
 <system-out>
-<![CDATA[Valid authentication session found (age: 22 minutes). Skipping login.
+<![CDATA[Authentication session expired (age: 343 minutes). Re-authenticating...
+Performing authentication setup...
+Login page loaded, filling credentials...
+Username filled
+Password filled
+Submit clicked, waiting for login to complete...
+Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php
+Navigating to fleet dashboard...
+Dashboard loaded, saving session state...
+Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS028_travelLogReport.spec.js" timestamp="2025-12-09T21:32:12.983Z" hostname="chromium" tests="1" failures="1" skipped="0" time="131.142" errors="0">
-<testcase name="Travel Log Report › should verify Frequent Stops functionality with API validation" classname="TS028_travelLogReport.spec.js" time="131.142">
-<failure message="TS028_travelLogReport.spec.js:815:5 should verify Frequent Stops functionality with API validation" type="FAILURE">
-<![CDATA[  [chromium] › TS028_travelLogReport.spec.js:815:5 › Travel Log Report › should verify Frequent Stops functionality with API validation 
-
-    Error: expect(received).toBeLessThan(expected)
-
-    Expected: < 76
-    Received:   76
-
-      1039 |
-      1040 |         // Verify search filtered the results (should be fewer rows than total)
-    > 1041 |         expect(searchResultCount).toBeLessThan(totalRowsBeforeSearch);
-           |                                   ^
-      1042 |         console.log(`✓ Search filtered results: ${searchResultCount} rows (down from ${totalRowsBeforeSearch})`);
-      1043 |
-      1044 |         // Verify ALL visible rows contain "02:08 AM"
-        at C:\cypress-to-playwright-converted\tests\TS028_travelLogReport.spec.js:1041:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\error-context.md
-]]>
-</failure>
+<testsuite name="TS018_createGeofencing.spec.js" timestamp="2025-12-15T15:15:44.759Z" hostname="chromium" tests="1" failures="0" skipped="0" time="139.295" errors="0">
+<testcase name="Create Geofencing › should be able to create new Geofence" classname="TS018_createGeofencing.spec.js" time="139.295">
 <system-out>
-<![CDATA[Preserving cookies (using stored auth session)
+<![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Config validated successfully
+  - geofencingMenu: .icon.icon--xl.icon--geofencing
+  - creategeofencingMenu: #create-geofence-btn
+  - geofencingAddress: San Ramon, CA
+  - geofencingRadius: 600
+Using unique geofence name: AutoTest_Geofence_1765811852646
 Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Page loaded successfully
-Testing Frequent Stops functionality with API validation...
---- Verifying Loading Modal ---
-✓ Loading modal is visible
-✓ Loading modal title shows "Loading Travel Report..."
-Loading time estimate: ⏱️ Loading 3 days of data...
-✓ Loading modal shows correct "3 days" estimate
-API Response captured: [{"id":160833,"idIndex":0,"date":"12/01/2025","duration":355,"time":"02:08 AM","lat":"33.624222","lng":"-111.840185","location":"","tripType":"","battery":"12","speed":"0.0","mileage":"1166.238","dire...
-✓ Loading modal disappeared after data loaded
-Verifying API response matches table data...
-Found 76 rows in Frequent Stops table
-API returned 76 records
-Row 1: First cell = 12/01/2025
-Row 2: First cell = 12/01/2025
-Row 3: First cell = 12/01/2025
-Verified: Frequent Stops table data matches API response
---- Testing Sort functionality in Frequent Stops ---
-Testing Date column sort...
-Testing Time column sort...
---- Testing Search functionality in Frequent Stops ---
-Total visible rows before search: 76
-Searching for "02:08 AM"...
-Found 76 visible rows after searching "02:08 AM"
-
-[[ATTACHMENT|..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-results\TS028_travelLogReport-Trav-3b24d-onality-with-API-validation-chromium\error-context.md]]
+Page loaded, proceeding...
+Geofencing menu is visible
+Clicked Geofencing menu
+Create Geofence submenu is visible
+Clicked Create Geofence submenu
+Create Geofence modal is visible
+Entered geofence name: AutoTest_Geofence_1765811852646
+Entered address: San Ramon, CA
+Selected address suggestion
+Entered radius: 600
+Clicked Submit button
+Verifying geofence preview overlay...
+Preview overlay is visible
+Preview Name: AutoTest_Geofence_1765811852646
+Preview Radius: 600 feet
+Preview Address: San Ramon, CA, United States
+Verifying radius label on the map...
+Map radius label verified
+Clicking Save button on preview overlay...
+Geofence save API called successfully
+Success alert container is visible
+Alert message: 
+        
+        
+            Geofence Created
+            The geofence has been created successfully
+        
+        
+            
+        
+    
+Navigating to View/Delete Geofences...
+Verifying View Geofences modal...
+Available geofences: [
+  [32m'View All Geofences'[39m,
+  [32m'pan (Max, MN, United States)'[39m,
+  [32m'home (64 New Brighton Grv SE, Calgary, AB T2Z 1G4, Canada)'[39m,
+  [32m'PGP (Max, ND, United States)'[39m,
+  [32m'dur_geo (807 Centre St S, Calgary, AB T2G, Canada)'[39m,
+  [32m'Putest (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'homeware (1 S 6th St, San Jose, CA 95112, United States)'[39m,
+  [32m'PGPF (United States)'[39m,
+  [32m'PGPF (United States)'[39m,
+  [32m'Sales car1  Geofence (933 Howard St, San Francisco, CA 94103-4108, United States)'[39m,
+  [32m'Name 1 (11153 E Karen Dr, Scottsdale, AZ 85255-1840, United States)'[39m,
+  [32m'ddnewTest33 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'ddTest12345 (San Ramon, CA, United States)'[39m,
+  [32m'Test A1 (San Ramon, CA, United States)'[39m,
+  [32m'seank (3287 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'[39m,
+  [32m'sea (3289 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'[39m,
+  [32m'Office 2 (Calle Central, 20201 San Ramon, Costa Rica)'[39m,
+  [32m'Test21 (San Ramon, CA, United States)'[39m,
+  [32m'ser (San Ramon, CA, United States)'[39m,
+  [32m'test (6556 Birds Landing Rd, Birds Landing, CA 94512-9511, United States)'[39m,
+  [32m'AutoTest_Geofence_1764109559362 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764109838178 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764110001717 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764152796329_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764153240924_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764200723008_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764274855379_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764275311246_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
+  [32m'AutoTest_Geofence_1764277193016_Second (San Ramon, CA, United States)'[39m,
+  [32m'ddTest (San Ramon, CA, United States)'[39m,
+  [32m'ddTest123 (San Ramon, CA, United States)'[39m,
+  [32m'ddTest (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)'[39m
+]
+Selected geofence: AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)
+Checking Hide Vehicle Markers checkbox...
+Hide Vehicle Markers checkbox checked
+Clicking Submit button...
+Verifying geofence info overlay...
+Geofence info overlay is visible
+Displayed geofence name: AutoTest_Geofence_1765811852646
+Displayed geofence radius: 600
+Displayed geofence location: San Ramon, CA, United States
+Verifying geofence name label on map...
+Geofence name label verified on map
+Verifying radius label on map...
+Radius label verified on map
+Step 6: Editing the geofence...
+Clicked Edit button
+Edit mode is visible
+Edited geofence name to: AutoTest_Geofence_1765811852646_Edited
+Verified radius minimum value is 500
+Attempted to set radius to 400, actual value: 400
+Set radius to 510
+Saving edited geofence...
+Update geofence API called successfully
+Step 7: Verifying updated geofence details...
+Updated geofence name displayed: AutoTest_Geofence_1765811852646_Edited
+Updated geofence radius displayed: 510
+Verified updated name appears in dropdown
+Step 8: Deleting the geofence...
+Clicked Edit button
+Clicking Delete button...
+Confirming delete in modal...
+Delete confirmation modal is visible
+Found 1 Delete button(s) in modal container
+Delete geofence API called successfully
+Step 9: Verifying geofence is deleted...
+Verified deleted geofence is no longer in the dropdown
+SUCCESS: Geofence creation, edit, and deletion completed successfully
 ]]>
 </system-out>
 </testcase>

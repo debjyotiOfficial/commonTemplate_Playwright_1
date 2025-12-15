@@ -1,7 +1,9 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,1.01,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,101.32,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,109.52,"",N/A,TS001_listOfDevice,10
+TS002-A,"Add edit Device","should add device with custom icon",PASSED,209.17,"",N/A,TS002_addEditDevices,347
 TS008-A,"Alert Contact","should add email and phone contacts and configure alert settings",PASSED,137.13,"",N/A,TS008_alertsContact,23
+TS018-A,"Create Geofencing","should be able to create new Geofence",PASSED,139.29,"",N/A,TS018_createGeofencing,23
 TS020-A,"Weekly Geofencing reports","should manage recent geofence report",PASSED,102.42,"",N/A,TS020_weeklyGeofenceReport,48
 TS021-A,"Current geofence report","should manage recent geofence report",PASSED,121.73,"",N/A,TS021_currentGeofenceReport,45
 TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,131.14,"Error: expect(received).toBeLessThan(expected)",TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm,TS028_travelLogReport,815
@@ -14,8 +16,9 @@ TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Fre
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
 TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,58.27,"",N/A,TS052_getSupport,23
 TS055-A,"Timezone","should edit the timezone of users",PASSED,122.58,"",N/A,TS055_appearanceSettings,24
-TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,120.46,"",N/A,TS057_accountHealthSummary,26
-TS057-B,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,107.41,"",N/A,TS057_accountHealthSummary,343
-TS057-C,"Account Health Summary Report","should verify table sorting functionality",PASSED,99.10,"",N/A,TS057_accountHealthSummary,445
-TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,106.54,"",N/A,TS057_accountHealthSummary,508
-TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,87.80,"",N/A,TS057_accountHealthSummary,618
+TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",FAILED,137.11,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm,TS057_accountHealthSummary,26
+TS057-B,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,228.78,"",N/A,TS057_accountHealthSummary,26
+TS057-C,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,92.78,"",N/A,TS057_accountHealthSummary,343
+TS057-D,"Account Health Summary Report","should verify table sorting functionality",PASSED,66.45,"",N/A,TS057_accountHealthSummary,445
+TS057-E,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,55.04,"",N/A,TS057_accountHealthSummary,508
+TS057-F,"Account Health Summary Report","should verify search functionality in device table",PASSED,64.44,"",N/A,TS057_accountHealthSummary,647
