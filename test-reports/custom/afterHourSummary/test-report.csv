@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS015-A,"After Hour Summary","should redirect to fleet demo page with demo credentials",FAILED,123.89,"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm,TS015_afterHourSummary.spec.js,23

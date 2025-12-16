@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - accountHealthSummary - 15/12/2025</title>
+    <title>Test Report - accountHealthSummary - 16/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,15 +152,15 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: accountHealthSummary</div>
             <div class="subtitle">
-                Generated: 15/12/2025, 4:13:55 pm |
-                Duration: 1704.27s |
+                Generated: 16/12/2025, 2:33:02 am |
+                Duration: 548.54s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">6</div>
+                <div class="number">5</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
@@ -168,7 +168,7 @@
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">83.3%</div>
+                <div class="number">100.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,72 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="failed" data-module="Account Health Summary Report">
+                    <tr data-status="passed" data-module="Account Health Summary Report">
                         <td><span class="test-case-no">TS057-A</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(0)">
-                                    View Error Details
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="error-0" class="error-panel">
-                                    
-            <div class="error-details">
-                <div class="error-details-header">
-                    <span class="error-type-badge">Timeout Error</span>
-                </div>
-                <div class="error-details-body">
-                    <div class="error-row">
-                        <span class="error-label">File:</span>
-                        <span class="error-value">TS057_accountHealthSummary.spec.js</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Line:</span>
-                        <span class="error-value">26</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Element:</span>
-                        <span class="error-value element-selector">#iot-showNoUpdates</span>
-                    </div>
-                    
-                    
-                    <div class="error-row">
-                        <span class="error-label">Timeout:</span>
-                        <span class="error-value">30s</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Expected:</span>
-                        <span class="error-value">Operation should complete within time limit</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Actual:</span>
-                        <span class="error-value error-actual">Operation took too long</span>
-                    </div>
-                    
-                    <div class="error-row suggestion">
-                        <span class="error-label">Suggestion:</span>
-                        <span class="error-value">Page may be slow to load, or element never appeared. Check network/server status</span>
-                    </div>
-                    
-                    <div class="error-row full-error">
-                        <span class="error-label">Full Error:</span>
-                        <span class="error-value"><pre>TimeoutError: locator.click: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator(&#039;#iot-showNoUpdates&#039;)
-</pre></span>
-                    </div>
-                </div>
-            </div>
-        
-                                </div>
-                            
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (68)</span>
+                                    <span>View Test Steps (89)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -281,7 +224,27 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -496,6 +459,11 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Chart container not found, checking for alternate selectors...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">✓ Historical Data chart is visible</span>
                                             </div>
                                         
@@ -506,32 +474,37 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;Battery/Voltage&quot; is visible</span>
+                                                <span class="step-text">✓ Checkbox &quot;Battery/Voltage&quot; is present</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;GPS Satellites&quot; is visible</span>
+                                                <span class="step-text">✓ Checkbox &quot;GPS Satellites&quot; is present</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;Signal Quality (CSQ)&quot; is visible</span>
+                                                <span class="step-text">✓ Checkbox &quot;Signal Quality (CSQ)&quot; is present</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;Buffered Packets Only&quot; is visible</span>
+                                                <span class="step-text">✓ Checkbox &quot;Buffered Packets Only&quot; is present</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;No Update Days&quot; is visible</span>
+                                                <span class="step-text">✓ Checkbox &quot;No Update Days&quot; is present</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Testing Battery/Voltage checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;Battery/Voltage&quot; is visible</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -556,6 +529,11 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;GPS Satellites&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">GPS Satellites initial state: unchecked</span>
                                             </div>
                                         
@@ -572,312 +550,6 @@ Call log:
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Testing Signal Quality (CSQ) checkbox...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Signal Quality (CSQ) initial state: unchecked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Signal Quality (CSQ) after toggle: checked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Signal Quality (CSQ) checkbox toggle works</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Testing Buffered Packets Only checkbox...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Buffered Packets Only initial state: unchecked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Buffered Packets Only after toggle: checked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Buffered Packets Only checkbox toggle works</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Testing No Update Days checkbox...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">No Update Days initial state: unchecked</span>
-                                            </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td><span class="status failed">FAILED</span></td>
-                        <td><strong>137.11s</strong></td>
-                        <td>
-                            <a href="videos/TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm" class="video-link" target="_blank">Video: TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm</a>
-                        </td>
-                    </tr>
-                    
-                    <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-B</span></td>
-                        <td>Account Health Summary Report</td>
-                        <td>
-                            <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
-                            
-                            <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(1)">
-                                    <span>View Test Steps (78)</span>
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="steps-1" class="steps-panel">
-                                    <div class="steps-header">Test Execution Steps</div>
-                                    <div class="steps-list">
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Page loaded successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 1: Getting driver count from Driver Card panel...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Number of drivers in Driver Card panel: 2</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Driver names from Driver Card panel: [ [32m&#039;Sales Car1&#039;[39m, [32m&#039;Demo 1&#039;[39m ]</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 2: Opening Account Health Summary report...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 3: Verifying Device Fleet Monitoring Dashboard...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Device Fleet Monitoring Dashboard is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 4: Verifying total devices count...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Total devices monitored in report: 2</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Device count matches: Driver Cards (2) = Report (2)</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 5: Verifying Device Details table...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 6: Verifying table headers...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Found 12 table headers</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 1: Device IMEI</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 2: Driver Name</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 3: Device Type</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 4: Status</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 5: SIM Status</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 6: Battery/Voltage</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 7: GPS Satellites</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 8: Signal Quality</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 9: Last GPS Connect</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 10: Last Cell Connect</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 11: Renewal Date</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Header 12: Historical Data</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 7: Verifying table row count...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Table rows: 2</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Table row count matches device count: 2</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 8: Verifying driver names in table match Driver Card panel...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Driver names from table: [ [32m&#039;Demo 1&#039;[39m, [32m&#039;Sales Car1&#039;[39m ]</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Driver &quot;Sales Car1&quot; found in IoT Device table</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Driver &quot;Demo 1&quot; found in IoT Device table</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 9: Verifying table data for each device...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Row 2: IMEI=220902734, Driver=Sales Car1, Type=XT2469, Status=Active</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 10: Clicking on Last 30 Days button for Sales Car1...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 11: Verifying Historical Data modal...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Historical Data modal is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Modal header shows: Historical Data - Sales Car1 (220902734)</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 12: Verifying Historical Data chart...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Historical Data chart is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Step 13: Testing checkbox filters...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;Battery/Voltage&quot; is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;GPS Satellites&quot; is visible</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -887,61 +559,6 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;Buffered Packets Only&quot; is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Checkbox &quot;No Update Days&quot; is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Testing Battery/Voltage checkbox...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Battery/Voltage initial state: checked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Battery/Voltage after toggle: unchecked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Battery/Voltage checkbox toggle works</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Testing GPS Satellites checkbox...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">GPS Satellites initial state: unchecked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">GPS Satellites after toggle: checked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ GPS Satellites checkbox toggle works</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Testing Signal Quality (CSQ) checkbox...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Signal Quality (CSQ) initial state: unchecked</span>
                                             </div>
                                         
@@ -962,22 +579,37 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;Buffered Packets Only&quot; is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Buffered Packets Only initial state: unchecked</span>
                                             </div>
                                         
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Buffered Packets Only after toggle: checked</span>
+                                            <div class="step-item failed step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">⚠ Error testing &quot;Buffered Packets Only&quot;: locator.click: Timeout 30000ms exceeded.</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Buffered Packets Only checkbox toggle works</span>
+                                                <span class="step-text">Call log:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m  - waiting for locator(&#039;#iot-showBuffered&#039;).first()[22m</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Testing No Update Days checkbox...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Checkbox &quot;No Update Days&quot; is visible</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1040,30 +672,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>228.78s</strong></td>
+                        <td><strong>227.76s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-C</span></td>
+                        <td><span class="test-case-no">TS057-B</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify Fleet Status Summary cards and table filtering</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(2)">
-                                    <span>View Test Steps (39)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(1)">
+                                    <span>View Test Steps (41)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-2" class="steps-panel">
+                                <div id="steps-1" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1261,30 +903,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>92.78s</strong></td>
+                        <td><strong>70.20s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-D</span></td>
+                        <td><span class="test-case-no">TS057-C</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify table sorting functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(3)">
-                                    <span>View Test Steps (11)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                    <span>View Test Steps (13)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-3" class="steps-panel">
+                                <div id="steps-2" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1342,30 +994,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>66.45s</strong></td>
+                        <td><strong>52.95s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-E</span></td>
+                        <td><span class="test-case-no">TS057-D</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify export buttons and file downloads</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(4)">
-                                    <span>View Test Steps (22)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(3)">
+                                    <span>View Test Steps (29)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-4" class="steps-panel">
+                                <div id="steps-3" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1395,12 +1057,27 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Export buttons container loaded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Testing CSV export...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">✓ CSV export button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item failed step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">Regular click failed for CSV, trying force click...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ CSV export button clicked</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1425,6 +1102,11 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Excel export button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">✓ Excel file downloaded: device-fleet-all-devices-2025-12-15.xlsx</span>
                                             </div>
                                         
@@ -1441,6 +1123,11 @@ Call log:
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">✓ PDF export button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ PDF export button clicked</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1478,30 +1165,40 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>55.04s</strong></td>
+                        <td><strong>86.67s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
                     <tr data-status="passed" data-module="Account Health Summary Report">
-                        <td><span class="test-case-no">TS057-F</span></td>
+                        <td><span class="test-case-no">TS057-E</span></td>
                         <td>Account Health Summary Report</td>
                         <td>
                             <strong>should verify search functionality in device table</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(5)">
-                                    <span>View Test Steps (10)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                    <span>View Test Steps (12)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-5" class="steps-panel">
+                                <div id="steps-4" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1554,7 +1251,7 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>64.44s</strong></td>
+                        <td><strong>79.08s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -1608,7 +1305,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"FAILED","duration":"137.11s","failureReason":"TimeoutError: locator.click: Timeout 30000ms exceeded.","videoIdentifier":"TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"228.78s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"92.78s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"66.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"55.04s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-F","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"64.44s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([

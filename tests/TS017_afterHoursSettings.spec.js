@@ -25,7 +25,7 @@ test.describe('After Hour Setting', () => {
         config = await helpers.getConfig();
 
         // Use fast login helper which handles stored auth vs fresh login automatically
-        await helpers.loginAndNavigateToPage(config.urls.fleetNewDashboard);
+        await helpers.loginAndNavigateToPage(config.urls.fleetMainDashboard);
 
         // Click on alerts menu
         await expect(page.locator(config.selectors.navigation.alertsMenu)).toBeVisible();

@@ -64,7 +64,7 @@
         "testMatch": [
           "/auth\\.setup\\.js/"
         ],
-        "timeout": 30000
+        "timeout": 600000
       },
       {
         "outputDir": "C:/cypress-to-playwright-converted/test-results",
@@ -80,7 +80,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 600000
       }
     ],
     "shard": null,
@@ -113,43 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 101323,
+                  "duration": 953,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Authentication session expired (age: 343 minutes). Re-authenticating...\n"
-                    },
-                    {
-                      "text": "Performing authentication setup...\n"
-                    },
-                    {
-                      "text": "Login page loaded, filling credentials...\n"
-                    },
-                    {
-                      "text": "Username filled\n"
-                    },
-                    {
-                      "text": "Password filled\n"
-                    },
-                    {
-                      "text": "Submit clicked, waiting for login to complete...\n"
-                    },
-                    {
-                      "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php\n"
-                    },
-                    {
-                      "text": "Navigating to fleet dashboard...\n"
-                    },
-                    {
-                      "text": "Dashboard loaded, saving session state...\n"
-                    },
-                    {
-                      "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json\n"
+                      "text": "Valid authentication session found (age: 20 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-15T15:15:45.895Z",
+                  "startTime": "2025-12-16T19:16:53.579Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -165,20 +138,20 @@
       ]
     },
     {
-      "title": "TS018_createGeofencing.spec.js",
-      "file": "TS018_createGeofencing.spec.js",
+      "title": "TS024_createLandmark.spec.js",
+      "file": "TS024_createLandmark.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Create Geofencing",
-          "file": "TS018_createGeofencing.spec.js",
+          "title": "Create Landmark",
+          "file": "TS024_createLandmark.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should be able to create new Geofence",
+              "title": "should be able to create new Landmark",
               "ok": true,
               "tags": [],
               "tests": [
@@ -193,7 +166,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 139295,
+                      "duration": 89282,
                       "errors": [],
                       "stdout": [
                         {
@@ -215,19 +188,7 @@
                           "text": "Config validated successfully\n"
                         },
                         {
-                          "text": "  - geofencingMenu: .icon.icon--xl.icon--geofencing\n"
-                        },
-                        {
-                          "text": "  - creategeofencingMenu: #create-geofence-btn\n"
-                        },
-                        {
-                          "text": "  - geofencingAddress: San Ramon, CA\n"
-                        },
-                        {
-                          "text": "  - geofencingRadius: 600\n"
-                        },
-                        {
-                          "text": "Using unique geofence name: AutoTest_Geofence_1765811852646\n"
+                          "text": "Using unique landmark name: AutoTest_Landmark_1765912618501\n"
                         },
                         {
                           "text": "Using stored authentication session (skipping login)...\n"
@@ -248,16 +209,16 @@
                           "text": "Clicked Geofencing menu\n"
                         },
                         {
-                          "text": "Create Geofence submenu is visible\n"
+                          "text": "Clicked Landmarks accordion\n"
                         },
                         {
-                          "text": "Clicked Create Geofence submenu\n"
+                          "text": "Clicked Create Landmarks button\n"
                         },
                         {
-                          "text": "Create Geofence modal is visible\n"
+                          "text": "Create Landmark modal is visible\n"
                         },
                         {
-                          "text": "Entered geofence name: AutoTest_Geofence_1765811852646\n"
+                          "text": "Entered landmark name: AutoTest_Landmark_1765912618501\n"
                         },
                         {
                           "text": "Entered address: San Ramon, CA\n"
@@ -272,13 +233,13 @@
                           "text": "Clicked Submit button\n"
                         },
                         {
-                          "text": "Verifying geofence preview overlay...\n"
+                          "text": "Verifying landmark preview overlay...\n"
                         },
                         {
                           "text": "Preview overlay is visible\n"
                         },
                         {
-                          "text": "Preview Name: AutoTest_Geofence_1765811852646\n"
+                          "text": "Preview Name: AutoTest_Landmark_1765912618501\n"
                         },
                         {
                           "text": "Preview Radius: 600 feet\n"
@@ -287,34 +248,37 @@
                           "text": "Preview Address: San Ramon, CA, United States\n"
                         },
                         {
-                          "text": "Verifying radius label on the map...\n"
-                        },
-                        {
-                          "text": "Map radius label verified\n"
-                        },
-                        {
                           "text": "Clicking Save button on preview overlay...\n"
                         },
                         {
-                          "text": "Geofence save API called successfully\n"
+                          "text": "Landmark save API called successfully\n"
                         },
                         {
                           "text": "Success alert container is visible\n"
                         },
                         {
-                          "text": "Alert message: \n        \n        \n            Geofence Created\n            The geofence has been created successfully\n        \n        \n            \n        \n    \n"
+                          "text": "Alert message: \n        \n        \n            Landmark Created\n            The landmark has been created successfully\n        \n        \n            \n        \n    \n"
                         },
                         {
-                          "text": "Navigating to View/Delete Geofences...\n"
+                          "text": "Navigating to View/Edit Landmarks...\n"
                         },
                         {
-                          "text": "Verifying View Geofences modal...\n"
+                          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...\n"
                         },
                         {
-                          "text": "Available geofences: [\n  \u001b[32m'View All Geofences'\u001b[39m,\n  \u001b[32m'pan (Max, MN, United States)'\u001b[39m,\n  \u001b[32m'home (64 New Brighton Grv SE, Calgary, AB T2Z 1G4, Canada)'\u001b[39m,\n  \u001b[32m'PGP (Max, ND, United States)'\u001b[39m,\n  \u001b[32m'dur_geo (807 Centre St S, Calgary, AB T2G, Canada)'\u001b[39m,\n  \u001b[32m'Putest (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'homeware (1 S 6th St, San Jose, CA 95112, United States)'\u001b[39m,\n  \u001b[32m'PGPF (United States)'\u001b[39m,\n  \u001b[32m'PGPF (United States)'\u001b[39m,\n  \u001b[32m'Sales car1  Geofence (933 Howard St, San Francisco, CA 94103-4108, United States)'\u001b[39m,\n  \u001b[32m'Name 1 (11153 E Karen Dr, Scottsdale, AZ 85255-1840, United States)'\u001b[39m,\n  \u001b[32m'ddnewTest33 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'ddTest12345 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test A1 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'seank (3287 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'\u001b[39m,\n  \u001b[32m'sea (3289 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'\u001b[39m,\n  \u001b[32m'Office 2 (Calle Central, 20201 San Ramon, Costa Rica)'\u001b[39m,\n  \u001b[32m'Test21 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'ser (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'test (6556 Birds Landing Rd, Birds Landing, CA 94512-9511, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764109559362 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764109838178 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764110001717 (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764152796329_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764153240924_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764200723008_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764274855379_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764275311246_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1764277193016_Second (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'ddTest (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'ddTest123 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'ddTest (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'Test Auto Geofence (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)'\u001b[39m\n]\n"
+                          "text": "Force click did not open modal, trying JavaScript click...\n"
                         },
                         {
-                          "text": "Selected geofence: AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)\n"
+                          "text": "Verifying View Landmarks modal...\n"
+                        },
+                        {
+                          "text": "View Landmarks modal container is visible\n"
+                        },
+                        {
+                          "text": "Available landmarks: [\n  \u001b[32m'View All Landmarks'\u001b[39m,\n  \u001b[32m'Wrightsdown (85CX8737+4R)'\u001b[39m,\n  \u001b[32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'\u001b[39m,\n  \u001b[32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'\u001b[39m,\n  \u001b[32m'DtestLa (san ramon)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'rrLand (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'dtestt (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'\u001b[39m,\n  \u001b[32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)\n"
                         },
                         {
                           "text": "Checking Hide Vehicle Markers checkbox...\n"
@@ -326,34 +290,22 @@
                           "text": "Clicking Submit button...\n"
                         },
                         {
-                          "text": "Verifying geofence info overlay...\n"
+                          "text": "Verifying landmark info overlay...\n"
                         },
                         {
-                          "text": "Geofence info overlay is visible\n"
+                          "text": "Landmark info overlay is visible\n"
                         },
                         {
-                          "text": "Displayed geofence name: AutoTest_Geofence_1765811852646\n"
+                          "text": "Displayed landmark name: AutoTest_Landmark_1765912618501\n"
                         },
                         {
-                          "text": "Displayed geofence radius: 600\n"
+                          "text": "Displayed landmark radius: 600\n"
                         },
                         {
-                          "text": "Displayed geofence location: San Ramon, CA, United States\n"
+                          "text": "Displayed landmark location: San Ramon, CA, United States\n"
                         },
                         {
-                          "text": "Verifying geofence name label on map...\n"
-                        },
-                        {
-                          "text": "Geofence name label verified on map\n"
-                        },
-                        {
-                          "text": "Verifying radius label on map...\n"
-                        },
-                        {
-                          "text": "Radius label verified on map\n"
-                        },
-                        {
-                          "text": "Step 6: Editing the geofence...\n"
+                          "text": "Step 6: Editing the landmark...\n"
                         },
                         {
                           "text": "Clicked Edit button\n"
@@ -362,37 +314,37 @@
                           "text": "Edit mode is visible\n"
                         },
                         {
-                          "text": "Edited geofence name to: AutoTest_Geofence_1765811852646_Edited\n"
+                          "text": "Edited landmark name to: AutoTest_Landmark_1765912618501_Edited\n"
                         },
                         {
-                          "text": "Verified radius minimum value is 500\n"
+                          "text": "Verified radius minimum value is 100\n"
                         },
                         {
-                          "text": "Attempted to set radius to 400, actual value: 400\n"
+                          "text": "Attempted to set radius to 50, actual value: 50\n"
                         },
                         {
-                          "text": "Set radius to 510\n"
+                          "text": "Set radius to 150\n"
                         },
                         {
-                          "text": "Saving edited geofence...\n"
+                          "text": "Saving edited landmark...\n"
                         },
                         {
-                          "text": "Update geofence API called successfully\n"
+                          "text": "Update landmark API called successfully\n"
                         },
                         {
-                          "text": "Step 7: Verifying updated geofence details...\n"
+                          "text": "Step 7: Verifying updated landmark details...\n"
                         },
                         {
-                          "text": "Updated geofence name displayed: AutoTest_Geofence_1765811852646_Edited\n"
+                          "text": "Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited\n"
                         },
                         {
-                          "text": "Updated geofence radius displayed: 510\n"
+                          "text": "Updated landmark radius displayed: 150\n"
                         },
                         {
                           "text": "Verified updated name appears in dropdown\n"
                         },
                         {
-                          "text": "Step 8: Deleting the geofence...\n"
+                          "text": "Step 8: Deleting the landmark...\n"
                         },
                         {
                           "text": "Clicked Edit button\n"
@@ -410,21 +362,21 @@
                           "text": "Found 1 Delete button(s) in modal container\n"
                         },
                         {
-                          "text": "Delete geofence API called successfully\n"
+                          "text": "Delete landmark API called successfully\n"
                         },
                         {
-                          "text": "Step 9: Verifying geofence is deleted...\n"
+                          "text": "Step 9: Verifying landmark is deleted...\n"
                         },
                         {
-                          "text": "Verified deleted geofence is no longer in the dropdown\n"
+                          "text": "Verified deleted landmark is no longer in the dropdown\n"
                         },
                         {
-                          "text": "SUCCESS: Geofence creation, edit, and deletion completed successfully\n"
+                          "text": "SUCCESS: Landmark creation, edit, and deletion completed successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-15T15:17:30.732Z",
+                      "startTime": "2025-12-16T19:16:57.140Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -432,8 +384,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "318cbf53b6ed576fbf50-56d0e3e839ec9e8ed01c",
-              "file": "TS018_createGeofencing.spec.js",
+              "id": "0a9c53482a0b0ca49f2e-94d0b3fc6f384871d64c",
+              "file": "TS024_createLandmark.spec.js",
               "line": 23,
               "column": 5
             }
@@ -444,8 +396,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-15T15:15:44.246Z",
-    "duration": 248523.371,
+    "startTime": "2025-12-16T19:16:52.336Z",
+    "duration": 96377.099,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - auth - 17/12/2025</title>
+    <title>Test Report - afterHoursSettings - 16/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,10 +150,10 @@
     <div class="container">
         <div class="header">
             <h1>Test Execution Report</h1>
-            <div class="module-name">Module: auth</div>
+            <div class="module-name">Module: afterHoursSettings</div>
             <div class="subtitle">
-                Generated: 17/12/2025, 12:48:28 am |
-                Duration: 96.21s |
+                Generated: 16/12/2025, 4:35:58 am |
+                Duration: 327.01s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -207,15 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="auth.setup.js">
-                        <td><span class="test-case-no">TC-A</span></td>
-                        <td>auth.setup.js</td>
+                    <tr data-status="passed" data-module="After Hour Setting">
+                        <td><span class="test-case-no">TS017-A</span></td>
+                        <td>After Hour Setting</td>
                         <td>
-                            <strong>authenticate</strong>
+                            <strong>should edit the after hour settings of a device</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (1)</span>
+                                    <span>View Test Steps (8)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,7 +224,42 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 20 minutes). Skipping login.</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
                                     </div>
@@ -232,7 +267,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>0.95s</strong></td>
+                        <td><strong>64.59s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -286,7 +321,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.95s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -303,7 +338,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-16.csv';
+            link.download = 'test-report-2025-12-15.csv';
             link.click();
         }
     </script>

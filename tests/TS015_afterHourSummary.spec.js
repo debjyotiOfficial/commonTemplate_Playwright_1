@@ -64,7 +64,9 @@ test.describe('After Hour Summary', () => {
     await page.waitForTimeout(6000);
 
     // Extract and slice the first 2 digits from alerts count
+    // Use .first() since there may be multiple elements with this class
     const alertsCount = await page.locator('.after-hours__summary__count__num')
+      .first()
       .innerText();
     const trimmedCount = alertsCount.trim();
     const slicedCount = trimmedCount.slice(0, 2); // Get first 2 characters
@@ -105,11 +107,17 @@ test.describe('After Hour Summary', () => {
     await page.locator('#after-hours-summary-panel')
       .evaluate(el => el.scrollTo(0, el.scrollHeight));
 
+    // Wait for scroll to complete
+    await page.waitForTimeout(2000);
+
     // Click on show details button
     await page.locator(config.selectors.afterHoursSummary.showDetailsButton)
       .waitFor({ state: 'visible' });
     await page.locator(config.selectors.afterHoursSummary.showDetailsButton)
-      .click();
+      .scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await page.locator(config.selectors.afterHoursSummary.showDetailsButton)
+      .click({ force: true });
 
     await page.waitForTimeout(20000);
 
@@ -179,10 +187,10 @@ test.describe('After Hour Summary', () => {
       await page.locator('table#alerts-table.table--desktop.desktop-only')
         .waitFor({ state: 'visible' });
 
-      // Verify expected priority is visible in the table
-      await expect(page.locator('table#alerts-table.table--desktop.desktop-only tbody td'))
+      // Verify expected priority is visible in the table (use tbody to avoid strict mode)
+      await expect(page.locator('table#alerts-table.table--desktop.desktop-only tbody'))
         .toContainText(expectedPriority);
-      
+
       console.log(`✓ Verified ${expectedPriority} is visible for ${cardName}`);
 
       // Test pagination functionality
@@ -272,10 +280,10 @@ test.describe('After Hour Summary', () => {
       await page.locator('table#alerts-table.table--desktop.desktop-only')
         .waitFor({ state: 'visible' });
 
-      // Verify expected priority is visible in the table
-      await expect(page.locator('table#alerts-table.table--desktop.desktop-only tbody td'))
+      // Verify expected priority is visible in the table (use tbody to avoid strict mode)
+      await expect(page.locator('table#alerts-table.table--desktop.desktop-only tbody'))
         .toContainText(expectedPriority);
-      
+
       console.log(`✓ Verified ${expectedPriority} is visible for ${cardName}`);
 
       // Test pagination functionality (similar to above)

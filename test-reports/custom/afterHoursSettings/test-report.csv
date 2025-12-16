@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS017-A,"After Hour Setting","should edit the after hour settings of a device",PASSED,64.59,"",N/A,TS017_afterHoursSettings.spec.js,23

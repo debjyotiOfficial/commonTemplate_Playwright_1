@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 327014,
+    "startTime": "2025-12-15T23:00:31.944Z",
+    "endTime": "2025-12-15T23:05:58.958Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS015-A",
+      "module": "After Hour Summary",
+      "title": "should redirect to fleet demo page with demo credentials",
+      "description": "should redirect to fleet demo page with demo credentials",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 123886,
+      "failureReason": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": "table#alerts-table.table--desktop.desktop-only tbody td",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "5s",
+        "file": "TS015_afterHourSummary.spec.js",
+        "line": 23,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",
+        "fullMessage": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:\n    1) <td>Sales car1 </td> aka locator('#alerts-table > tbody > tr > td').first()\n    2) <td>10437 McDowell Mountain Ranch Rd, Scottsdale, AZ …</td> aka getByRole('cell', { name: '10437 McDowell Mountain Ranch' })\n    3) <td>2025-06-05</td> aka locator('td:nth-child(3)').first()\n    4) <td>07:45 AM - 07:48 AM</td> aka getByRole('cell', { name: ':45 AM - 07:48 AM' })\n    5) <td>00:03:02</td> aka getByRole('cell', { name: ':03:02' })\n    6) <td>High Priority</td> aka locator('td:nth-child(6)').first()\n    7) <td>Sales car1 </td> aka locator('tr:nth-child(2) > td').first()\n    8) <td>15640 105th St, Scottsdale, AZ 85259</td> aka getByRole('cell', { name: '105th St, Scottsdale, AZ 85259' })\n    9) <td>2025-06-05</td> aka locator('tr:nth-child(2) > td:nth-child(3)')\n    10) <td>07:48 AM - 07:48 AM</td> aka getByRole('cell', { name: ':48 AM - 07:48 AM' })\n    ...\n\nCall log:\n  - Expect \"toContainText\" with timeout 5000ms\n  - waiting for locator('table#alerts-table.table--desktop.desktop-only tbody td')\n",
+        "stackTrace": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:\n    1) <td>Sales car1 </td> aka locator('#alerts-table > tbody > tr > td').first()\n    2) <td>10437 McDowell Mountain Ranch Rd, Scottsdale, AZ …</td> aka getByRole('cell', { name: '10437 McDowell Mountain Ranch' })\n    3) <td>2025-06-05</td> aka locator('td:nth-child(3)').first()\n    4) <td>07:45 AM - 07:48 AM</td> aka getByRole('cell', { name: ':45 AM - 07:48 AM' })\n    5) <td>00:03:02</td> aka getByRole('cell', { name: ':03:02' })\n    6) <td>High Priority</td> aka locator('td:nth-child(6)').first()\n    7) <td>Sales car1 </td> aka locator('tr:nth-child(2) > td').first()\n    8) <td>15640 105th St, Scottsdale, AZ 85259</td> aka getByRole('cell', { name: '105th St, Scottsdale, AZ 85259' })\n    9) <td>2025-06-05</td> aka locator('tr:nth-child(2) > td:nth-child(3)')\n    10) <td>07:48 AM - 07:48 AM</td> aka getByRole('cell', { name: ':48 AM - 07:48 AM' })\n    ...\n\nCall log:\n  - Expect \"toContainText\" with timeout 5000ms\n  - waiting for locator('table#alerts-table.table--desktop.desktop-only tbody td')\n\n    at testAlertCardBasic (C:\\cypress-to-playwright-converted\\tests\\TS015_afterHourSummary.spec.js:186:10)\n    at C:\\cypress-to-playwright-converted\\tests\\TS015_afterHourSummary.spec.js:392:5"
+      },
+      "videoPath": "videos/TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm",
+      "videoIdentifier": "TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Original Alerts Count: 44",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sliced Alerts Count (first 2 digits): 44",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours Summary - Engine Off: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours Summary - Idling: 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours Summary - Outside Hours: 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alerts Overview - Engine Off: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored After Hours Summary - Engine Off: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Engine Off values match: 10 = 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alerts Overview - Idling: 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored After Hours Summary - Idling: 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Idling values match: 15 = 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alerts Overview - Outside Hours: 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored After Hours Summary - Outside Hours: 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Outside Hours values match: 17 = 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Outside Hours card basic functionality",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T23:01:41.329Z",
+      "endTime": "2025-12-15T23:03:45.215Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS015_afterHourSummary.spec.js",
+      "fileName": "TS015_afterHourSummary",
+      "line": 23
+    }
+  ]
+}

@@ -1,23 +1,14 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="248.52337100000003">
-<testsuite name="auth.setup.js" timestamp="2025-12-15T15:15:44.759Z" hostname="setup" tests="1" failures="0" skipped="0" time="101.323" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="101.323">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="96.377099">
+<testsuite name="auth.setup.js" timestamp="2025-12-16T19:16:52.635Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.953" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="0.953">
 <system-out>
-<![CDATA[Authentication session expired (age: 343 minutes). Re-authenticating...
-Performing authentication setup...
-Login page loaded, filling credentials...
-Username filled
-Password filled
-Submit clicked, waiting for login to complete...
-Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php
-Navigating to fleet dashboard...
-Dashboard loaded, saving session state...
-Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
+<![CDATA[Valid authentication session found (age: 20 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS018_createGeofencing.spec.js" timestamp="2025-12-15T15:15:44.759Z" hostname="chromium" tests="1" failures="0" skipped="0" time="139.295" errors="0">
-<testcase name="Create Geofencing › should be able to create new Geofence" classname="TS018_createGeofencing.spec.js" time="139.295">
+<testsuite name="TS024_createLandmark.spec.js" timestamp="2025-12-16T19:16:52.635Z" hostname="chromium" tests="1" failures="0" skipped="0" time="89.282" errors="0">
+<testcase name="Create Landmark › should be able to create new Landmark" classname="TS024_createLandmark.spec.js" time="89.282">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -25,131 +16,93 @@ Preserving cookies (using stored auth session)
 Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Config validated successfully
-  - geofencingMenu: .icon.icon--xl.icon--geofencing
-  - creategeofencingMenu: #create-geofence-btn
-  - geofencingAddress: San Ramon, CA
-  - geofencingRadius: 600
-Using unique geofence name: AutoTest_Geofence_1765811852646
+Using unique landmark name: AutoTest_Landmark_1765912618501
 Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Page loaded successfully
 Page loaded, proceeding...
 Geofencing menu is visible
 Clicked Geofencing menu
-Create Geofence submenu is visible
-Clicked Create Geofence submenu
-Create Geofence modal is visible
-Entered geofence name: AutoTest_Geofence_1765811852646
+Clicked Landmarks accordion
+Clicked Create Landmarks button
+Create Landmark modal is visible
+Entered landmark name: AutoTest_Landmark_1765912618501
 Entered address: San Ramon, CA
 Selected address suggestion
 Entered radius: 600
 Clicked Submit button
-Verifying geofence preview overlay...
+Verifying landmark preview overlay...
 Preview overlay is visible
-Preview Name: AutoTest_Geofence_1765811852646
+Preview Name: AutoTest_Landmark_1765912618501
 Preview Radius: 600 feet
 Preview Address: San Ramon, CA, United States
-Verifying radius label on the map...
-Map radius label verified
 Clicking Save button on preview overlay...
-Geofence save API called successfully
+Landmark save API called successfully
 Success alert container is visible
 Alert message: 
         
         
-            Geofence Created
-            The geofence has been created successfully
+            Landmark Created
+            The landmark has been created successfully
         
         
             
         
     
-Navigating to View/Delete Geofences...
-Verifying View Geofences modal...
-Available geofences: [
-  [32m'View All Geofences'[39m,
-  [32m'pan (Max, MN, United States)'[39m,
-  [32m'home (64 New Brighton Grv SE, Calgary, AB T2Z 1G4, Canada)'[39m,
-  [32m'PGP (Max, ND, United States)'[39m,
-  [32m'dur_geo (807 Centre St S, Calgary, AB T2G, Canada)'[39m,
-  [32m'Putest (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'homeware (1 S 6th St, San Jose, CA 95112, United States)'[39m,
-  [32m'PGPF (United States)'[39m,
-  [32m'PGPF (United States)'[39m,
-  [32m'Sales car1  Geofence (933 Howard St, San Francisco, CA 94103-4108, United States)'[39m,
-  [32m'Name 1 (11153 E Karen Dr, Scottsdale, AZ 85255-1840, United States)'[39m,
-  [32m'ddnewTest33 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'ddTest12345 (San Ramon, CA, United States)'[39m,
-  [32m'Test A1 (San Ramon, CA, United States)'[39m,
-  [32m'seank (3287 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'[39m,
-  [32m'sea (3289 Crow Canyon Rd, San Ramon, CA 94583-1303, United States)'[39m,
-  [32m'Office 2 (Calle Central, 20201 San Ramon, Costa Rica)'[39m,
-  [32m'Test21 (San Ramon, CA, United States)'[39m,
-  [32m'ser (San Ramon, CA, United States)'[39m,
-  [32m'test (6556 Birds Landing Rd, Birds Landing, CA 94512-9511, United States)'[39m,
-  [32m'AutoTest_Geofence_1764109559362 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764109838178 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764110001717 (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764152796329_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764153240924_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764200723008_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764274855379_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764275311246_Edited (2201 Camino Ramon, San Ramon, CA 94583, United States)'[39m,
-  [32m'AutoTest_Geofence_1764277193016_Second (San Ramon, CA, United States)'[39m,
-  [32m'ddTest (San Ramon, CA, United States)'[39m,
-  [32m'ddTest123 (San Ramon, CA, United States)'[39m,
-  [32m'ddTest (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence_Edited (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'Test Auto Geofence (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)'[39m
+Navigating to View/Edit Landmarks...
+Attempt 1: Trying to open View/Edit Landmarks modal...
+Force click did not open modal, trying JavaScript click...
+Verifying View Landmarks modal...
+View Landmarks modal container is visible
+Available landmarks: [
+  [32m'View All Landmarks'[39m,
+  [32m'Wrightsdown (85CX8737+4R)'[39m,
+  [32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'[39m,
+  [32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'[39m,
+  [32m'DtestLa (san ramon)'[39m,
+  [32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'[39m,
+  [32m'rrLand (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'[39m,
+  [32m'dtestt (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'[39m,
+  [32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'[39m
 ]
-Selected geofence: AutoTest_Geofence_1765811852646 (San Ramon, CA, United States)
+Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)
 Checking Hide Vehicle Markers checkbox...
 Hide Vehicle Markers checkbox checked
 Clicking Submit button...
-Verifying geofence info overlay...
-Geofence info overlay is visible
-Displayed geofence name: AutoTest_Geofence_1765811852646
-Displayed geofence radius: 600
-Displayed geofence location: San Ramon, CA, United States
-Verifying geofence name label on map...
-Geofence name label verified on map
-Verifying radius label on map...
-Radius label verified on map
-Step 6: Editing the geofence...
+Verifying landmark info overlay...
+Landmark info overlay is visible
+Displayed landmark name: AutoTest_Landmark_1765912618501
+Displayed landmark radius: 600
+Displayed landmark location: San Ramon, CA, United States
+Step 6: Editing the landmark...
 Clicked Edit button
 Edit mode is visible
-Edited geofence name to: AutoTest_Geofence_1765811852646_Edited
-Verified radius minimum value is 500
-Attempted to set radius to 400, actual value: 400
-Set radius to 510
-Saving edited geofence...
-Update geofence API called successfully
-Step 7: Verifying updated geofence details...
-Updated geofence name displayed: AutoTest_Geofence_1765811852646_Edited
-Updated geofence radius displayed: 510
+Edited landmark name to: AutoTest_Landmark_1765912618501_Edited
+Verified radius minimum value is 100
+Attempted to set radius to 50, actual value: 50
+Set radius to 150
+Saving edited landmark...
+Update landmark API called successfully
+Step 7: Verifying updated landmark details...
+Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited
+Updated landmark radius displayed: 150
 Verified updated name appears in dropdown
-Step 8: Deleting the geofence...
+Step 8: Deleting the landmark...
 Clicked Edit button
 Clicking Delete button...
 Confirming delete in modal...
 Delete confirmation modal is visible
 Found 1 Delete button(s) in modal container
-Delete geofence API called successfully
-Step 9: Verifying geofence is deleted...
-Verified deleted geofence is no longer in the dropdown
-SUCCESS: Geofence creation, edit, and deletion completed successfully
+Delete landmark API called successfully
+Step 9: Verifying landmark is deleted...
+Verified deleted landmark is no longer in the dropdown
+SUCCESS: Landmark creation, edit, and deletion completed successfully
 ]]>
 </system-out>
 </testcase>

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-15T15:32:15.647Z",
+  "lastUpdated": "2025-12-16T19:18:28.881Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 101323,
+      "duration": 953,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,67 +16,13 @@
       "steps": [
         {
           "number": "",
-          "text": "Authentication session expired (age: 343 minutes). Re-authenticating...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Performing authentication setup...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Login page loaded, filling credentials...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Username filled",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Password filled",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Submit clicked, waiting for login to complete...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating to fleet dashboard...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Dashboard loaded, saving session state...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json",
+          "text": "Valid authentication session found (age: 20 minutes). Skipping login.",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T15:15:46.837Z",
-      "endTime": "2025-12-15T15:17:28.167Z",
+      "startTime": "2025-12-16T19:16:54.537Z",
+      "endTime": "2025-12-16T19:16:55.490Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -292,19 +238,55 @@
     {
       "testCaseNo": "TS002-A",
       "module": "Add edit Device",
-      "title": "should add device with custom icon",
-      "description": "should add device with custom icon",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 209167,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
+      "title": "should add/edit a device",
+      "description": "should add/edit a device",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 94364,
+      "failureReason": "Error: expect(locator).toBeVisible() failed",
+      "parsedError": {
+        "type": "Element Not Visible",
+        "element": "'.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first(",
+        "expected": "Element should be visible on page",
+        "actual": "<element(s) not found>",
+        "timeout": "10s",
+        "file": "TS002_addEditDevices.spec.js",
+        "line": 36,
+        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
+        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
+        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n",
+        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js:77:41"
+      },
+      "videoPath": "videos/TS002_addEditDevices-should-add-edit-a-device.webm",
+      "videoIdentifier": "TS002_addEditDevices-should-add-edit-a-device.webm",
       "steps": [
         {
           "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -325,214 +307,91 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
-        },
+        }
+      ],
+      "startTime": "2025-12-15T23:01:42.751Z",
+      "endTime": "2025-12-15T23:03:17.115Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
+      "fileName": "TS002_addEditDevices",
+      "line": 36
+    },
+    {
+      "testCaseNo": "TS002-B",
+      "module": "Add edit Device",
+      "title": "should add device with custom icon",
+      "description": "should add device with custom icon",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 84336,
+      "failureReason": "Error: expect(locator).toBeVisible() failed",
+      "parsedError": {
+        "type": "Element Not Visible",
+        "element": "'.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first(",
+        "expected": "Element should be visible on page",
+        "actual": "<element(s) not found>",
+        "timeout": "10s",
+        "file": "TS002_addEditDevices.spec.js",
+        "line": 347,
+        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
+        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
+        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n",
+        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js:399:41"
+      },
+      "videoPath": "videos/TS002_addEditDevices-should-add-device-with-custom-icon.webm",
+      "videoIdentifier": "TS002_addEditDevices-should-add-device-with-custom-icon.webm",
+      "steps": [
         {
           "number": "",
-          "text": "Selected IMEI: 861492065082189",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Device name entered: CustomIconDevice",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Test image uploaded successfully",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Zoom adjusted",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Preview section is visible",
+          "text": "Using stored authentication session (skipping login)...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Save Icon button clicked",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "crop_image_upload_new.php API called successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Alert message: Custom icon saved successfully!",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icon uploaded and saved successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Selected \"Custom Icon\" from icon category dropdown",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "getCustomIconAll.php API called successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icons loaded in grid",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icon selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Add Device button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device added successfully with IMEI: 861492065082189",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device selected in Edit tab: CustomIconDevice",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device name changed to: CustomIconDeviceEdited",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Upload & Crop Custom Icon modal opened successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Test image uploaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Zoom adjusted",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Preview section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Save Icon button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "crop_image_upload_new.php API called successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Alert message: Custom icon saved successfully!",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icon uploaded and saved successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Selected \"Custom Icon\" from icon category dropdown",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "getCustomIconAll.php API called successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icons loaded in grid",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icon selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Update Device button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device updated successfully: CustomIconDeviceEdited",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device removed successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Custom icon device add/edit/remove test completed successfully",
+          "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T07:48:18.634Z",
-      "endTime": "2025-12-15T07:51:47.801Z",
+      "startTime": "2025-12-15T23:03:24.406Z",
+      "endTime": "2025-12-15T23:04:48.742Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
       "fileName": "TS002_addEditDevices",
@@ -575,6 +434,327 @@
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS008_alertsContact.spec.js",
       "fileName": "TS008_alertsContact",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS015-A",
+      "module": "After Hour Summary",
+      "title": "should redirect to fleet demo page with demo credentials",
+      "description": "should redirect to fleet demo page with demo credentials",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 123886,
+      "failureReason": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": "table#alerts-table.table--desktop.desktop-only tbody td",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "5s",
+        "file": "TS015_afterHourSummary.spec.js",
+        "line": 23,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",
+        "fullMessage": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:\n    1) <td>Sales car1 </td> aka locator('#alerts-table > tbody > tr > td').first()\n    2) <td>10437 McDowell Mountain Ranch Rd, Scottsdale, AZ …</td> aka getByRole('cell', { name: '10437 McDowell Mountain Ranch' })\n    3) <td>2025-06-05</td> aka locator('td:nth-child(3)').first()\n    4) <td>07:45 AM - 07:48 AM</td> aka getByRole('cell', { name: ':45 AM - 07:48 AM' })\n    5) <td>00:03:02</td> aka getByRole('cell', { name: ':03:02' })\n    6) <td>High Priority</td> aka locator('td:nth-child(6)').first()\n    7) <td>Sales car1 </td> aka locator('tr:nth-child(2) > td').first()\n    8) <td>15640 105th St, Scottsdale, AZ 85259</td> aka getByRole('cell', { name: '105th St, Scottsdale, AZ 85259' })\n    9) <td>2025-06-05</td> aka locator('tr:nth-child(2) > td:nth-child(3)')\n    10) <td>07:48 AM - 07:48 AM</td> aka getByRole('cell', { name: ':48 AM - 07:48 AM' })\n    ...\n\nCall log:\n  - Expect \"toContainText\" with timeout 5000ms\n  - waiting for locator('table#alerts-table.table--desktop.desktop-only tbody td')\n",
+        "stackTrace": "Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:\n    1) <td>Sales car1 </td> aka locator('#alerts-table > tbody > tr > td').first()\n    2) <td>10437 McDowell Mountain Ranch Rd, Scottsdale, AZ …</td> aka getByRole('cell', { name: '10437 McDowell Mountain Ranch' })\n    3) <td>2025-06-05</td> aka locator('td:nth-child(3)').first()\n    4) <td>07:45 AM - 07:48 AM</td> aka getByRole('cell', { name: ':45 AM - 07:48 AM' })\n    5) <td>00:03:02</td> aka getByRole('cell', { name: ':03:02' })\n    6) <td>High Priority</td> aka locator('td:nth-child(6)').first()\n    7) <td>Sales car1 </td> aka locator('tr:nth-child(2) > td').first()\n    8) <td>15640 105th St, Scottsdale, AZ 85259</td> aka getByRole('cell', { name: '105th St, Scottsdale, AZ 85259' })\n    9) <td>2025-06-05</td> aka locator('tr:nth-child(2) > td:nth-child(3)')\n    10) <td>07:48 AM - 07:48 AM</td> aka getByRole('cell', { name: ':48 AM - 07:48 AM' })\n    ...\n\nCall log:\n  - Expect \"toContainText\" with timeout 5000ms\n  - waiting for locator('table#alerts-table.table--desktop.desktop-only tbody td')\n\n    at testAlertCardBasic (C:\\cypress-to-playwright-converted\\tests\\TS015_afterHourSummary.spec.js:186:10)\n    at C:\\cypress-to-playwright-converted\\tests\\TS015_afterHourSummary.spec.js:392:5"
+      },
+      "videoPath": "videos/TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm",
+      "videoIdentifier": "TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Original Alerts Count: 44",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sliced Alerts Count (first 2 digits): 44",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours Summary - Engine Off: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours Summary - Idling: 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours Summary - Outside Hours: 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alerts Overview - Engine Off: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored After Hours Summary - Engine Off: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Engine Off values match: 10 = 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alerts Overview - Idling: 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored After Hours Summary - Idling: 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Idling values match: 15 = 15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alerts Overview - Outside Hours: 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored After Hours Summary - Outside Hours: 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Outside Hours values match: 17 = 17",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Outside Hours card basic functionality",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T23:01:41.329Z",
+      "endTime": "2025-12-15T23:03:45.215Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS015_afterHourSummary.spec.js",
+      "fileName": "TS015_afterHourSummary",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS016-A",
+      "module": "After Hour Insight",
+      "title": "should redirect to After Hour Insight",
+      "description": "should redirect to After Hour Insight",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 112909,
+      "failureReason": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": ".flatpickr-calendar.open .flatpickr-monthDropdown-months",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS016_afterHoursInsight.spec.js",
+        "line": 23,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months')\n",
+        "stackTrace": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js:47:88"
+      },
+      "videoPath": "videos/TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm",
+      "videoIdentifier": "TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T23:03:52.156Z",
+      "endTime": "2025-12-15T23:05:45.065Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js",
+      "fileName": "TS016_afterHoursInsight",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS017-A",
+      "module": "After Hour Setting",
+      "title": "should edit the after hour settings of a device",
+      "description": "should edit the after hour settings of a device",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 64593,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T23:04:52.963Z",
+      "endTime": "2025-12-15T23:05:57.557Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS017_afterHoursSettings.spec.js",
+      "fileName": "TS017_afterHoursSettings",
       "line": 23
     },
     {
@@ -1815,6 +1995,537 @@
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS021_currentGeofenceReport.spec.js",
       "fileName": "TS021_currentGeofenceReport",
       "line": 45
+    },
+    {
+      "testCaseNo": "TS024-A",
+      "module": "Create Landmark",
+      "title": "should be able to create new Landmark",
+      "description": "should be able to create new Landmark",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 89282,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config validated successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using unique landmark name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded, proceeding...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Geofencing menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Landmarks accordion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Create Landmarks button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Landmark modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered landmark name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered address: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected address suggestion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying landmark preview overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Radius: 600 feet",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Address: San Ramon, CA, United States",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Save button on preview overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark save API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Success alert container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark Created",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "The landmark has been created successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to View/Edit Landmarks...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying View Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "View Landmarks modal container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available landmarks: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'View All Landmarks'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Wrightsdown (85CX8737+4R)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'DtestLa (san ramon)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'rrLand (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'dtestt (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Hide Vehicle Markers checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Hide Vehicle Markers checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Submit button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying landmark info overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark info overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed landmark name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed landmark radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed landmark location: San Ramon, CA, United States",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Editing the landmark...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edited landmark name to: AutoTest_Landmark_1765912618501_Edited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified radius minimum value is 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempted to set radius to 50, actual value: 50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Set radius to 150",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Saving edited landmark...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update landmark API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying updated landmark details...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated landmark radius displayed: 150",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified updated name appears in dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Deleting the landmark...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Delete button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Confirming delete in modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete confirmation modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 Delete button(s) in modal container",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete landmark API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying landmark is deleted...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified deleted landmark is no longer in the dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SUCCESS: Landmark creation, edit, and deletion completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-16T19:16:58.407Z",
+      "endTime": "2025-12-16T19:18:27.689Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS024_createLandmark.spec.js",
+      "fileName": "TS024_createLandmark",
+      "line": 23
     },
     {
       "testCaseNo": "TS028-A",
@@ -5193,450 +5904,9 @@
       "module": "Account Health Summary Report",
       "title": "should display Account Health Summary report and verify device data with Historical Data",
       "description": "should display Account Health Summary report and verify device data with Historical Data",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 137110,
-      "failureReason": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
-      "parsedError": {
-        "type": "Timeout Error",
-        "element": "#iot-showNoUpdates",
-        "expected": "Operation should complete within time limit",
-        "actual": "Operation took too long",
-        "timeout": "30s",
-        "file": "TS057_accountHealthSummary.spec.js",
-        "line": 26,
-        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
-        "cleanMessage": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
-        "fullMessage": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#iot-showNoUpdates')\n",
-        "stackTrace": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#iot-showNoUpdates')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js:303:32"
-      },
-      "videoPath": "videos/TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm",
-      "videoIdentifier": "TS057_accountHealthSummary-should-display-Account-Health-Summary-report-and-v.webm",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 1: Getting driver count from Driver Card panel...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Number of drivers in Driver Card panel: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Driver names from Driver Card panel: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 2: Opening Account Health Summary report...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 3: Verifying Device Fleet Monitoring Dashboard...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device Fleet Monitoring Dashboard is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 4: Verifying total devices count...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Total devices monitored in report: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Device count matches: Driver Cards (2) = Report (2)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 5: Verifying Device Details table...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 6: Verifying table headers...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 12 table headers",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 1: Device IMEI",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 2: Driver Name",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 3: Device Type",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 4: Status",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 5: SIM Status",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 6: Battery/Voltage",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 7: GPS Satellites",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 8: Signal Quality",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 9: Last GPS Connect",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 10: Last Cell Connect",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 11: Renewal Date",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 12: Historical Data",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 7: Verifying table row count...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Table row count matches device count: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 8: Verifying driver names in table match Driver Card panel...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Driver names from table: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Sales Car1\" found in IoT Device table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Demo 1\" found in IoT Device table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 9: Verifying table data for each device...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Row 2: IMEI=220902734, Driver=Sales Car1, Type=XT2469, Status=Active",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 10: Clicking on Last 30 Days button for Sales Car1...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 11: Verifying Historical Data modal...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Historical Data modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal header shows: Historical Data - Sales Car1 (220902734)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 12: Verifying Historical Data chart...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Historical Data chart is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 13: Testing checkbox filters...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Battery/Voltage\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"GPS Satellites\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"No Update Days\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Battery/Voltage checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Battery/Voltage initial state: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Battery/Voltage after toggle: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Battery/Voltage checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing GPS Satellites checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "GPS Satellites initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "GPS Satellites after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ GPS Satellites checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Signal Quality (CSQ) checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Signal Quality (CSQ) initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Signal Quality (CSQ) after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Signal Quality (CSQ) checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Buffered Packets Only checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Buffered Packets Only initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Buffered Packets Only after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Buffered Packets Only checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing No Update Days checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "No Update Days initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T10:15:38.409Z",
-      "endTime": "2025-12-15T10:17:55.519Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 26
-    },
-    {
-      "testCaseNo": "TS057-B",
-      "module": "Account Health Summary Report",
-      "title": "should display Account Health Summary report and verify device data with Historical Data",
-      "description": "should display Account Health Summary report and verify device data with Historical Data",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 228775,
+      "duration": 227759,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -5644,7 +5914,31 @@
       "steps": [
         {
           "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -5902,6 +6196,12 @@
         },
         {
           "number": "",
+          "text": "Chart container not found, checking for alternate selectors...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ Historical Data chart is visible",
           "status": "info",
           "type": "log"
@@ -5914,37 +6214,43 @@
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"Battery/Voltage\" is visible",
+          "text": "✓ Checkbox \"Battery/Voltage\" is present",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"GPS Satellites\" is visible",
+          "text": "✓ Checkbox \"GPS Satellites\" is present",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is visible",
+          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is present",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
+          "text": "✓ Checkbox \"Buffered Packets Only\" is present",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"No Update Days\" is visible",
+          "text": "✓ Checkbox \"No Update Days\" is present",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
           "text": "Testing Battery/Voltage checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"Battery/Voltage\" is visible",
           "status": "info",
           "type": "log"
         },
@@ -5974,6 +6280,12 @@
         },
         {
           "number": "",
+          "text": "✓ Checkbox \"GPS Satellites\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "GPS Satellites initial state: unchecked",
           "status": "info",
           "type": "log"
@@ -5993,6 +6305,12 @@
         {
           "number": "",
           "text": "Testing Signal Quality (CSQ) checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is visible",
           "status": "info",
           "type": "log"
         },
@@ -6022,25 +6340,43 @@
         },
         {
           "number": "",
+          "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Buffered Packets Only initial state: unchecked",
           "status": "info",
           "type": "log"
         },
         {
+          "number": 1,
+          "text": "⚠ Error testing \"Buffered Packets Only\": locator.click: Timeout 30000ms exceeded.",
+          "status": "failed",
+          "type": "step"
+        },
+        {
           "number": "",
-          "text": "Buffered Packets Only after toggle: checked",
+          "text": "Call log:",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Buffered Packets Only checkbox toggle works",
+          "text": "\u001b[2m  - waiting for locator('#iot-showBuffered').first()\u001b[22m",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
           "text": "Testing No Update Days checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Checkbox \"No Update Days\" is visible",
           "status": "info",
           "type": "log"
         },
@@ -6111,21 +6447,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T10:18:10.912Z",
-      "endTime": "2025-12-15T10:21:59.688Z",
-      "retries": 1,
+      "startTime": "2025-12-15T20:54:01.331Z",
+      "endTime": "2025-12-15T20:57:49.091Z",
+      "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
       "line": 26
     },
     {
-      "testCaseNo": "TS057-C",
+      "testCaseNo": "TS057-B",
       "module": "Account Health Summary Report",
       "title": "should verify Fleet Status Summary cards and table filtering",
       "description": "should verify Fleet Status Summary cards and table filtering",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 92779,
+      "duration": 70197,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -6134,6 +6470,18 @@
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -6366,21 +6714,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T10:21:59.692Z",
-      "endTime": "2025-12-15T10:23:32.471Z",
+      "startTime": "2025-12-15T20:57:49.119Z",
+      "endTime": "2025-12-15T20:58:59.316Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 343
+      "line": 355
     },
     {
-      "testCaseNo": "TS057-D",
+      "testCaseNo": "TS057-C",
       "module": "Account Health Summary Report",
       "title": "should verify table sorting functionality",
       "description": "should verify table sorting functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 66452,
+      "duration": 52946,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -6389,6 +6737,18 @@
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -6453,21 +6813,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T10:23:32.504Z",
-      "endTime": "2025-12-15T10:24:38.956Z",
+      "startTime": "2025-12-15T20:58:59.424Z",
+      "endTime": "2025-12-15T20:59:52.370Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 445
+      "line": 457
     },
     {
-      "testCaseNo": "TS057-E",
+      "testCaseNo": "TS057-D",
       "module": "Account Health Summary Report",
       "title": "should verify export buttons and file downloads",
       "description": "should verify export buttons and file downloads",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 55043,
+      "duration": 86672,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -6476,6 +6836,18 @@
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -6511,6 +6883,12 @@
         },
         {
           "number": "",
+          "text": "✓ Export buttons container loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Testing CSV export...",
           "status": "info",
           "type": "log"
@@ -6518,6 +6896,18 @@
         {
           "number": "",
           "text": "✓ CSV export button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "Regular click failed for CSV, trying force click...",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV export button clicked",
           "status": "info",
           "type": "log"
         },
@@ -6547,6 +6937,12 @@
         },
         {
           "number": "",
+          "text": "✓ Excel export button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-15.xlsx",
           "status": "info",
           "type": "log"
@@ -6566,6 +6962,12 @@
         {
           "number": "",
           "text": "✓ PDF export button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF export button clicked",
           "status": "info",
           "type": "log"
         },
@@ -6606,21 +7008,21 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T10:24:38.991Z",
-      "endTime": "2025-12-15T10:25:34.034Z",
+      "startTime": "2025-12-15T20:59:52.520Z",
+      "endTime": "2025-12-15T21:01:19.192Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 508
+      "line": 520
     },
     {
-      "testCaseNo": "TS057-F",
+      "testCaseNo": "TS057-E",
       "module": "Account Health Summary Report",
       "title": "should verify search functionality in device table",
       "description": "should verify search functionality in device table",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 64437,
+      "duration": 79078,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -6629,6 +7031,18 @@
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -6687,12 +7101,12 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T10:25:34.082Z",
-      "endTime": "2025-12-15T10:26:38.519Z",
+      "startTime": "2025-12-15T21:01:19.489Z",
+      "endTime": "2025-12-15T21:02:38.569Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 647
+      "line": 692
     }
   ]
 }

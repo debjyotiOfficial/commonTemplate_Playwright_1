@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - addEditDevices - 15/12/2025</title>
+    <title>Test Report - addEditDevices - 16/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,23 +152,23 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: addEditDevices</div>
             <div class="subtitle">
-                Generated: 15/12/2025, 1:34:14 pm |
-                Duration: 1042.18s |
+                Generated: 16/12/2025, 4:35:58 am |
+                Duration: 327.01s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">1</div>
+                <div class="number">2</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">0</div>
+                <div class="number">2</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">100.0%</div>
+                <div class="number">0.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,15 +207,79 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="Add edit Device">
+                    <tr data-status="failed" data-module="Add edit Device">
                         <td><span class="test-case-no">TS002-A</span></td>
                         <td>Add edit Device</td>
                         <td>
-                            <strong>should add device with custom icon</strong>
+                            <strong>should add/edit a device</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(0)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-0" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Element Not Visible</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS002_addEditDevices.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">36</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Element:</span>
+                        <span class="error-value element-selector">&#039;.select2-results__option&#039;).filter({ hasText: /^\d{6,}$/ }).first(</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Timeout:</span>
+                        <span class="error-value">10s</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Element should be visible on page</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">&lt;element(s) not found&gt;</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check if the page loaded correctly, or if the selector has changed</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(locator).toBeVisible() failed
+
+Locator:  locator(&#039;.select2-results__option&#039;).filter({ hasText: /^\d{6,}$/ }).first()
+Expected: visible
+Received: &lt;element(s) not found&gt;
+Timeout:  10000ms
+
+Call log:
+  - Expect &quot;toBeVisible&quot; with timeout 10000ms
+  - waiting for locator(&#039;.select2-results__option&#039;).filter({ hasText: /^\d{6,}$/ }).first()
+</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (38)</span>
+                                    <span>View Test Steps (8)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,7 +288,27 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -242,184 +326,144 @@
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>94.36s</strong></td>
+                        <td>
+                            <a href="videos/TS002_addEditDevices-should-add-edit-a-device.webm" class="video-link" target="_blank">Video: TS002_addEditDevices-should-add-edit-a-device.webm</a>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="failed" data-module="Add edit Device">
+                        <td><span class="test-case-no">TS002-B</span></td>
+                        <td>Add edit Device</td>
+                        <td>
+                            <strong>should add device with custom icon</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(1)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-1" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Element Not Visible</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS002_addEditDevices.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">347</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Element:</span>
+                        <span class="error-value element-selector">&#039;.select2-results__option&#039;).filter({ hasText: /^\d{6,}$/ }).first(</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Timeout:</span>
+                        <span class="error-value">10s</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Element should be visible on page</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">&lt;element(s) not found&gt;</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check if the page loaded correctly, or if the selector has changed</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(locator).toBeVisible() failed
+
+Locator:  locator(&#039;.select2-results__option&#039;).filter({ hasText: /^\d{6,}$/ }).first()
+Expected: visible
+Received: &lt;element(s) not found&gt;
+Timeout:  10000ms
+
+Call log:
+  - Expect &quot;toBeVisible&quot; with timeout 10000ms
+  - waiting for locator(&#039;.select2-results__option&#039;).filter({ hasText: /^\d{6,}$/ }).first()
+</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(1)">
+                                    <span>View Test Steps (8)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-1" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Selected IMEI: 861492065082189</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Device name entered: CustomIconDevice</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Upload &amp; Crop Custom Icon modal opened successfully</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Test image uploaded successfully</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Zoom adjusted</span>
+                                                <span class="step-text">Config loaded successfully</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Preview section is visible</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Save Icon button clicked</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">crop_image_upload_new.php API called successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Alert message: Custom icon saved successfully!</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icon uploaded and saved successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Selected &quot;Custom Icon&quot; from icon category dropdown</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">getCustomIconAll.php API called successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icons loaded in grid</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icon selected</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Add Device button clicked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Device added successfully with IMEI: 861492065082189</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Device selected in Edit tab: CustomIconDevice</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Device name changed to: CustomIconDeviceEdited</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Upload &amp; Crop Custom Icon modal opened successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Test image uploaded successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Zoom adjusted</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Preview section is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Save Icon button clicked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">crop_image_upload_new.php API called successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Alert message: Custom icon saved successfully!</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icon uploaded and saved successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Selected &quot;Custom Icon&quot; from icon category dropdown</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">getCustomIconAll.php API called successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icons loaded in grid</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icon selected</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Update Device button clicked</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Device updated successfully: CustomIconDeviceEdited</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Device removed successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Custom icon device add/edit/remove test completed successfully</span>
+                                                <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status passed">PASSED</span></td>
-                        <td><strong>209.17s</strong></td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>84.34s</strong></td>
                         <td>
-                            <span class="no-video">No video</span>
+                            <a href="videos/TS002_addEditDevices-should-add-device-with-custom-icon.webm" class="video-link" target="_blank">Video: TS002_addEditDevices-should-add-device-with-custom-icon.webm</a>
                         </td>
                     </tr>
                     
@@ -471,7 +515,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add device with custom icon","status":"PASSED","duration":"209.17s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add/edit a device","status":"FAILED","duration":"94.36s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-edit-a-device.webm"},{"testCaseNo":"TS002-B","module":"Add edit Device","description":"should add device with custom icon","status":"FAILED","duration":"84.34s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-device-with-custom-icon.webm"}];
 
             data.forEach(row => {
                 csv.push([

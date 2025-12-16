@@ -1,2 +1,3 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS002-A,"Add edit Device","should add device with custom icon",PASSED,209.17,"",N/A,TS002_addEditDevices.spec.js,347
+TS002-A,"Add edit Device","should add/edit a device",FAILED,94.36,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-edit-a-device.webm,TS002_addEditDevices.spec.js,36
+TS002-B,"Add edit Device","should add device with custom icon",FAILED,84.34,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-device-with-custom-icon.webm,TS002_addEditDevices.spec.js,347

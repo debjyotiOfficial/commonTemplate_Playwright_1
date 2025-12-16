@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,89.28,"",N/A,TS024_createLandmark.spec.js,23

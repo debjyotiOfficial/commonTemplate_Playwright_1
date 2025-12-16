@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS016-A,"After Hour Insight","should redirect to After Hour Insight",FAILED,112.91,"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm,TS016_afterHoursInsight.spec.js,23

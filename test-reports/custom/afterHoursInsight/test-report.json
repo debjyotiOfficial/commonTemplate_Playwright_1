@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 327014,
+    "startTime": "2025-12-15T23:00:31.944Z",
+    "endTime": "2025-12-15T23:05:58.958Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS016-A",
+      "module": "After Hour Insight",
+      "title": "should redirect to After Hour Insight",
+      "description": "should redirect to After Hour Insight",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 112909,
+      "failureReason": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": ".flatpickr-calendar.open .flatpickr-monthDropdown-months",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS016_afterHoursInsight.spec.js",
+        "line": 23,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months')\n",
+        "stackTrace": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js:47:88"
+      },
+      "videoPath": "videos/TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm",
+      "videoIdentifier": "TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-15T23:03:52.156Z",
+      "endTime": "2025-12-15T23:05:45.065Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js",
+      "fileName": "TS016_afterHoursInsight",
+      "line": 23
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 96213,
+    "startTime": "2025-12-16T19:16:52.636Z",
+    "endTime": "2025-12-16T19:18:28.849Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS024-A",
+      "module": "Create Landmark",
+      "title": "should be able to create new Landmark",
+      "description": "should be able to create new Landmark",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 89282,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config validated successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using unique landmark name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded, proceeding...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofencing menu is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Geofencing menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Landmarks accordion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Create Landmarks button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Landmark modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered landmark name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered address: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected address suggestion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying landmark preview overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Radius: 600 feet",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview Address: San Ramon, CA, United States",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Save button on preview overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark save API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Success alert container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark Created",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "The landmark has been created successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to View/Edit Landmarks...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying View Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "View Landmarks modal container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available landmarks: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'View All Landmarks'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Wrightsdown (85CX8737+4R)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'DtestLa (san ramon)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'rrLand (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'dtestt (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Hide Vehicle Markers checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Hide Vehicle Markers checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Submit button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying landmark info overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark info overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed landmark name: AutoTest_Landmark_1765912618501",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed landmark radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Displayed landmark location: San Ramon, CA, United States",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Editing the landmark...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edited landmark name to: AutoTest_Landmark_1765912618501_Edited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified radius minimum value is 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempted to set radius to 50, actual value: 50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Set radius to 150",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Saving edited landmark...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update landmark API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying updated landmark details...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated landmark radius displayed: 150",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified updated name appears in dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Deleting the landmark...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking Delete button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Confirming delete in modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete confirmation modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 Delete button(s) in modal container",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete landmark API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying landmark is deleted...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified deleted landmark is no longer in the dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SUCCESS: Landmark creation, edit, and deletion completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-16T19:16:58.407Z",
+      "endTime": "2025-12-16T19:18:27.689Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS024_createLandmark.spec.js",
+      "fileName": "TS024_createLandmark",
+      "line": 23
+    }
+  ]
+}
