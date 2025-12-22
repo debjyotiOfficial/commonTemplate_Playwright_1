@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Test Report - All Modules - 17/12/2025</title>
+    <title>Master Test Report - All Modules - 20/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,21 +150,21 @@
     <div class="container">
         <div class="header">
             <h1>Master Test Execution Report</h1>
-            <div class="module-name">All Modules (21 modules, 27 tests)</div>
+            <div class="module-name">All Modules (23 modules, 29 tests)</div>
             <div class="subtitle">
-                Generated: 17/12/2025, 12:48:28 am |
-                Duration: 96.21s |
+                Generated: 20/12/2025, 3:17:19 am |
+                Duration: 98.13s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">27</div>
+                <div class="number">29</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">21</div>
+                <div class="number">23</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">77.8%</div>
+                <div class="number">79.3%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -192,7 +192,7 @@
             
             <select id="moduleFilter" onchange="filterTests()">
                 <option value="">All Modules</option>
-                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Add edit Device">Add edit Device</option><option value="After Hour Insight">After Hour Insight</option><option value="After Hour Setting">After Hour Setting</option><option value="After Hour Summary">After Hour Summary</option><option value="Alert Contact">Alert Contact</option><option value="Create Geofencing">Create Geofencing</option><option value="Create Landmark">Create Landmark</option><option value="Current geofence report">Current geofence report</option><option value="Dashcam Refresh">Dashcam Refresh</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Timezone">Timezone</option><option value="Travel Log Report">Travel Log Report</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option><option value="auth.setup.js">auth.setup.js</option>
+                <option value="30 Day Mileage Report">30 Day Mileage Report</option><option value="Account Health Summary Report">Account Health Summary Report</option><option value="Add Edit Maintenance Contact">Add Edit Maintenance Contact</option><option value="Add edit Device">Add edit Device</option><option value="After Hour Insight">After Hour Insight</option><option value="After Hour Setting">After Hour Setting</option><option value="After Hour Summary">After Hour Summary</option><option value="Alert Contact">Alert Contact</option><option value="Create Geofencing">Create Geofencing</option><option value="Create Landmark">Create Landmark</option><option value="Current geofence report">Current geofence report</option><option value="Dashcam Refresh">Dashcam Refresh</option><option value="Get Support">Get Support</option><option value="Last 24 Hours">Last 24 Hours</option><option value="List of Device">List of Device</option><option value="Low Voltage Device Report">Low Voltage Device Report</option><option value="Real Time Tracking">Real Time Tracking</option><option value="Subgroup">Subgroup</option><option value="Timezone">Timezone</option><option value="Travel Log Report">Travel Log Report</option><option value="Trip Report">Trip Report</option><option value="Weekly Geofencing reports">Weekly Geofencing reports</option><option value="auth.setup.js">auth.setup.js</option>
             </select>
             
             <button class="export-btn" onclick="exportToExcel()">Export to Excel</button>
@@ -229,7 +229,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 20 minutes). Skipping login.</span>
+                                                <span class="step-text">Valid authentication session found (age: 22 minutes). Skipping login.</span>
                                             </div>
                                         
                                     </div>
@@ -237,7 +237,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>0.95s</strong></td>
+                        <td><strong>0.33s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -684,6 +684,192 @@ Call log:
                         </td>
                     </tr>
                     
+                    <tr data-status="passed" data-module="Subgroup">
+                        <td><span class="test-case-no">TS005-A</span></td>
+                        <td>Subgroup</td>
+                        <td>
+                            <strong>should manage subgroups</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                    <span>View Test Steps (32)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-4" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">API ASSERTION: CREATE SUBGROUP</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Create Subgroup API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;New SubGroup Created Successfully&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">API ASSERTION: GET SUBGROUPS AFTER CREATE</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Get Subgroups API Response: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;testDEL&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Subgroup &quot;testDp&quot; exists in API response: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Modal close button visible: false, proceeding...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI ASSERTION: Subgroup &quot;testDp&quot; is visible in the subgroups list</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">API ASSERTION: GET DRIVERS TO SUBGROUP</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Get Drivers to Subgroup API Response: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API shows 5 unassigned drivers</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI shows 5 unassigned driver cards with Add button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API shows 3 assigned drivers</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">API ASSERTION: GET DRIVERS AFTER ADDING</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Get Drivers API Response after adding: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Subgroup panel is open: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 2 close icons in panel</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked close icon 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked exit subgroup button via JavaScript</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">API ASSERTION: DELETE SUBGROUP</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Delete Subgroup API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;Removed subgroup successfully.&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text">API ASSERTION: GET SUBGROUPS AFTER DELETE</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Get Subgroups API Response after delete: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;testDEL&quot;}]</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Subgroup &quot;testDp&quot; still exists after delete: false</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI ASSERTION: Subgroup &quot;testDp&quot; is no longer visible in the subgroups list</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>94.93s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="passed" data-module="Alert Contact">
                         <td><span class="test-case-no">TS008-A</span></td>
                         <td>Alert Contact</td>
@@ -691,11 +877,11 @@ Call log:
                             <strong>should add email and phone contacts and configure alert settings</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                <button class="steps-toggle" onclick="toggleSteps(5)">
                                     <span>View Test Steps (3)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-4" class="steps-panel">
+                                <div id="steps-5" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -725,17 +911,83 @@ Call log:
                         </td>
                     </tr>
                     
+                    <tr data-status="passed" data-module="Add Edit Maintenance Contact">
+                        <td><span class="test-case-no">TS011-A</span></td>
+                        <td>Add Edit Maintenance Contact</td>
+                        <td>
+                            <strong>should add the contact details</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(6)">
+                                    <span>View Test Steps (8)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-6" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>135.69s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
                     <tr data-status="failed" data-module="After Hour Summary">
                         <td><span class="test-case-no">TS015-A</span></td>
                         <td>After Hour Summary</td>
                         <td>
                             <strong>should redirect to fleet demo page with demo credentials</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(5)">
+                                <button class="error-toggle" onclick="toggleError(7)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-5" class="error-panel">
+                                <div id="error-7" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -802,11 +1054,11 @@ Call log:
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                <button class="steps-toggle" onclick="toggleSteps(7)">
                                     <span>View Test Steps (23)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-5" class="steps-panel">
+                                <div id="steps-7" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -942,11 +1194,11 @@ Call log:
                         <td>
                             <strong>should redirect to After Hour Insight</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(6)">
+                                <button class="error-toggle" onclick="toggleError(8)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-6" class="error-panel">
+                                <div id="error-8" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -1000,11 +1252,11 @@ Call log:
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(6)">
+                                <button class="steps-toggle" onclick="toggleSteps(8)">
                                     <span>View Test Steps (8)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-6" class="steps-panel">
+                                <div id="steps-8" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1066,11 +1318,11 @@ Call log:
                             <strong>should edit the after hour settings of a device</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(7)">
+                                <button class="steps-toggle" onclick="toggleSteps(9)">
                                     <span>View Test Steps (8)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-7" class="steps-panel">
+                                <div id="steps-9" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1132,11 +1384,11 @@ Call log:
                             <strong>should be able to create new Geofence</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(8)">
+                                <button class="steps-toggle" onclick="toggleSteps(10)">
                                     <span>View Test Steps (123)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-8" class="steps-panel">
+                                <div id="steps-10" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1773,11 +2025,11 @@ Call log:
                             <strong>should manage recent geofence report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(9)">
+                                <button class="steps-toggle" onclick="toggleSteps(11)">
                                     <span>View Test Steps (34)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-9" class="steps-panel">
+                                <div id="steps-11" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -1969,11 +2221,11 @@ Call log:
                             <strong>should manage recent geofence report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(10)">
+                                <button class="steps-toggle" onclick="toggleSteps(12)">
                                     <span>View Test Steps (39)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-10" class="steps-panel">
+                                <div id="steps-12" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2190,11 +2442,11 @@ Call log:
                             <strong>should be able to create new Landmark</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(11)">
+                                <button class="steps-toggle" onclick="toggleSteps(13)">
                                     <span>View Test Steps (85)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-11" class="steps-panel">
+                                <div id="steps-13" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2640,11 +2892,11 @@ Call log:
                         <td>
                             <strong>should verify Frequent Stops functionality with API validation</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(12)">
+                                <button class="error-toggle" onclick="toggleError(14)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-12" class="error-panel">
+                                <div id="error-14" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -2688,11 +2940,11 @@ Received:   76</pre></span>
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(12)">
+                                <button class="steps-toggle" onclick="toggleSteps(14)">
                                     <span>View Test Steps (26)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-12" class="steps-panel">
+                                <div id="steps-14" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -2844,11 +3096,11 @@ Received:   76</pre></span>
                             <strong>should be redirected to fleet demo page with demo credentials</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(13)">
+                                <button class="steps-toggle" onclick="toggleSteps(15)">
                                     <span>View Test Steps (59)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-13" class="steps-panel">
+                                <div id="steps-15" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3165,11 +3417,11 @@ Received:   76</pre></span>
                             <strong>should generate and validate trip report</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(14)">
+                                <button class="steps-toggle" onclick="toggleSteps(16)">
                                     <span>View Test Steps (31)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-14" class="steps-panel">
+                                <div id="steps-16" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3345,11 +3597,11 @@ Received:   76</pre></span>
                         <td>
                             <strong>should generate and validate low voltage device report</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(15)">
+                                <button class="error-toggle" onclick="toggleError(17)">
                                     View Error Details
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="error-15" class="error-panel">
+                                <div id="error-17" class="error-panel">
                                     
             <div class="error-details">
                 <div class="error-details-header">
@@ -3403,11 +3655,11 @@ Call log:
                                 </div>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(15)">
+                                <button class="steps-toggle" onclick="toggleSteps(17)">
                                     <span>View Test Steps (4)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-15" class="steps-panel">
+                                <div id="steps-17" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3449,11 +3701,11 @@ Call log:
                             <strong>should refresh dashcam functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(16)">
+                                <button class="steps-toggle" onclick="toggleSteps(18)">
                                     <span>View Test Steps (4)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-16" class="steps-panel">
+                                <div id="steps-18" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3495,11 +3747,11 @@ Call log:
                             <strong>should verify Engine Idling Events checkbox functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(17)">
+                                <button class="steps-toggle" onclick="toggleSteps(19)">
                                     <span>View Test Steps (11)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-17" class="steps-panel">
+                                <div id="steps-19" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -3576,11 +3828,11 @@ Call log:
                             <strong>should verify Geofence Events, Landmark Events, and Frequent Stops functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(18)">
+                                <button class="steps-toggle" onclick="toggleSteps(20)">
                                     <span>View Test Steps (150)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-18" class="steps-panel">
+                                <div id="steps-20" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4352,11 +4604,11 @@ Call log:
                             <strong>should verify real-time tracking timer and API data synchronization</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(19)">
+                                <button class="steps-toggle" onclick="toggleSteps(21)">
                                     <span>View Test Steps (18)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-19" class="steps-panel">
+                                <div id="steps-21" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4468,11 +4720,11 @@ Call log:
                             <strong>should verify Get Support and Insurance form functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(20)">
+                                <button class="steps-toggle" onclick="toggleSteps(22)">
                                     <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-20" class="steps-panel">
+                                <div id="steps-22" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -4539,11 +4791,11 @@ Call log:
                             <strong>should edit the timezone of users</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(21)">
+                                <button class="steps-toggle" onclick="toggleSteps(23)">
                                     <span>View Test Steps (211)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-21" class="steps-panel">
+                                <div id="steps-23" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -5620,11 +5872,11 @@ Call log:
                             <strong>should display Account Health Summary report and verify device data with Historical Data</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(22)">
+                                <button class="steps-toggle" onclick="toggleSteps(24)">
                                     <span>View Test Steps (89)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-22" class="steps-panel">
+                                <div id="steps-24" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -6091,11 +6343,11 @@ Call log:
                             <strong>should verify Fleet Status Summary cards and table filtering</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(23)">
+                                <button class="steps-toggle" onclick="toggleSteps(25)">
                                     <span>View Test Steps (41)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-23" class="steps-panel">
+                                <div id="steps-25" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -6322,11 +6574,11 @@ Call log:
                             <strong>should verify table sorting functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(24)">
+                                <button class="steps-toggle" onclick="toggleSteps(26)">
                                     <span>View Test Steps (13)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-24" class="steps-panel">
+                                <div id="steps-26" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -6413,11 +6665,11 @@ Call log:
                             <strong>should verify export buttons and file downloads</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(25)">
+                                <button class="steps-toggle" onclick="toggleSteps(27)">
                                     <span>View Test Steps (29)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-25" class="steps-panel">
+                                <div id="steps-27" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -6584,11 +6836,11 @@ Call log:
                             <strong>should verify search functionality in device table</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(26)">
+                                <button class="steps-toggle" onclick="toggleSteps(28)">
                                     <span>View Test Steps (12)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-26" class="steps-panel">
+                                <div id="steps-28" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -6711,7 +6963,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add/edit a device","status":"FAILED","duration":"94.36s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-edit-a-device.webm"},{"testCaseNo":"TS002-B","module":"Add edit Device","description":"should add device with custom icon","status":"FAILED","duration":"84.34s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-device-with-custom-icon.webm"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS015-A","module":"After Hour Summary","description":"should redirect to fleet demo page with demo credentials","status":"FAILED","duration":"123.89s","failureReason":"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:","videoIdentifier":"TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm"},{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"},{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS024-A","module":"Create Landmark","description":"should be able to create new Landmark","status":"PASSED","duration":"89.28s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.33s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add/edit a device","status":"FAILED","duration":"94.36s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-edit-a-device.webm"},{"testCaseNo":"TS002-B","module":"Add edit Device","description":"should add device with custom icon","status":"FAILED","duration":"84.34s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-device-with-custom-icon.webm"},{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"94.93s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS011-A","module":"Add Edit Maintenance Contact","description":"should add the contact details","status":"PASSED","duration":"135.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS015-A","module":"After Hour Summary","description":"should redirect to fleet demo page with demo credentials","status":"FAILED","duration":"123.89s","failureReason":"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:","videoIdentifier":"TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm"},{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"},{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS024-A","module":"Create Landmark","description":"should be able to create new Landmark","status":"PASSED","duration":"89.28s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -6728,7 +6980,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'master-test-report-2025-12-16.csv';
+            link.download = 'master-test-report-2025-12-19.csv';
             link.click();
         }
     </script>

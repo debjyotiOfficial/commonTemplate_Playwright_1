@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-16T19:18:28.881Z",
+  "lastUpdated": "2025-12-19T21:47:19.916Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 953,
+      "duration": 331,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,13 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 20 minutes). Skipping login.",
+          "text": "Valid authentication session found (age: 22 minutes). Skipping login.",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-16T19:16:54.537Z",
-      "endTime": "2025-12-16T19:16:55.490Z",
+      "startTime": "2025-12-19T21:45:42.975Z",
+      "endTime": "2025-12-19T21:45:43.306Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -398,6 +398,219 @@
       "line": 347
     },
     {
+      "testCaseNo": "TS005-A",
+      "module": "Subgroup",
+      "title": "should manage subgroups",
+      "description": "should manage subgroups",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 94931,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API ASSERTION: CREATE SUBGROUP",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Create Subgroup API Response: {\"status\":true,\"message\":\"New SubGroup Created Successfully\"}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API ASSERTION: GET SUBGROUPS AFTER CREATE",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Get Subgroups API Response: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"Subhash\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"testDEL\"},{\"name\":\"testDp\"}]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Subgroup \"testDp\" exists in API response: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal close button visible: false, proceeding...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI ASSERTION: Subgroup \"testDp\" is visible in the subgroups list",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API ASSERTION: GET DRIVERS TO SUBGROUP",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Get Drivers to Subgroup API Response: {\"assigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"},{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"}],\"unassigned\":[{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"},{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API shows 5 unassigned drivers",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI shows 5 unassigned driver cards with Add button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API shows 3 assigned drivers",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API ASSERTION: GET DRIVERS AFTER ADDING",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Get Drivers API Response after adding: {\"assigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"},{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"},{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"}],\"unassigned\":[{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Subgroup panel is open: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 2 close icons in panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked close icon 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked exit subgroup button via JavaScript",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API ASSERTION: DELETE SUBGROUP",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Delete Subgroup API Response: {\"status\":true,\"message\":\"Removed subgroup successfully.\"}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API ASSERTION: GET SUBGROUPS AFTER DELETE",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Get Subgroups API Response after delete: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"Subhash\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"testDEL\"}]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Subgroup \"testDp\" still exists after delete: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI ASSERTION: Subgroup \"testDp\" is no longer visible in the subgroups list",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-19T21:45:44.806Z",
+      "endTime": "2025-12-19T21:47:19.737Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS005_subgroup.spec.js",
+      "fileName": "TS005_subgroup",
+      "line": 32
+    },
+    {
       "testCaseNo": "TS008-A",
       "module": "Alert Contact",
       "title": "should add email and phone contacts and configure alert settings",
@@ -434,6 +647,75 @@
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS008_alertsContact.spec.js",
       "fileName": "TS008_alertsContact",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS011-A",
+      "module": "Add Edit Maintenance Contact",
+      "title": "should add the contact details",
+      "description": "should add the contact details",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 135690,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-18T17:27:10.801Z",
+      "endTime": "2025-12-18T17:29:26.491Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS011_addEditMaintenanceContact.spec.js",
+      "fileName": "TS011_addEditMaintenanceContact",
       "line": 23
     },
     {

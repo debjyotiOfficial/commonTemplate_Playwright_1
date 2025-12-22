@@ -1,108 +1,47 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="96.377099">
-<testsuite name="auth.setup.js" timestamp="2025-12-16T19:16:52.635Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.953" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="0.953">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="98.338083">
+<testsuite name="auth.setup.js" timestamp="2025-12-19T21:45:41.769Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.331" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="0.331">
 <system-out>
-<![CDATA[Valid authentication session found (age: 20 minutes). Skipping login.
+<![CDATA[Valid authentication session found (age: 22 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS024_createLandmark.spec.js" timestamp="2025-12-16T19:16:52.635Z" hostname="chromium" tests="1" failures="0" skipped="0" time="89.282" errors="0">
-<testcase name="Create Landmark › should be able to create new Landmark" classname="TS024_createLandmark.spec.js" time="89.282">
+<testsuite name="TS005_subgroup.spec.js" timestamp="2025-12-19T21:45:41.769Z" hostname="chromium" tests="1" failures="0" skipped="0" time="94.931" errors="0">
+<testcase name="Subgroup › should manage subgroups" classname="TS005_subgroup.spec.js" time="94.931">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Preserving cookies (using stored auth session)
 Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
-Config validated successfully
-Using unique landmark name: AutoTest_Landmark_1765912618501
 Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Page loaded successfully
-Page loaded, proceeding...
-Geofencing menu is visible
-Clicked Geofencing menu
-Clicked Landmarks accordion
-Clicked Create Landmarks button
-Create Landmark modal is visible
-Entered landmark name: AutoTest_Landmark_1765912618501
-Entered address: San Ramon, CA
-Selected address suggestion
-Entered radius: 600
-Clicked Submit button
-Verifying landmark preview overlay...
-Preview overlay is visible
-Preview Name: AutoTest_Landmark_1765912618501
-Preview Radius: 600 feet
-Preview Address: San Ramon, CA, United States
-Clicking Save button on preview overlay...
-Landmark save API called successfully
-Success alert container is visible
-Alert message: 
-        
-        
-            Landmark Created
-            The landmark has been created successfully
-        
-        
-            
-        
-    
-Navigating to View/Edit Landmarks...
-Attempt 1: Trying to open View/Edit Landmarks modal...
-Force click did not open modal, trying JavaScript click...
-Verifying View Landmarks modal...
-View Landmarks modal container is visible
-Available landmarks: [
-  [32m'View All Landmarks'[39m,
-  [32m'Wrightsdown (85CX8737+4R)'[39m,
-  [32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'[39m,
-  [32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'[39m,
-  [32m'DtestLa (san ramon)'[39m,
-  [32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'[39m,
-  [32m'rrLand (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'[39m,
-  [32m'dtestt (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'[39m,
-  [32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'[39m
-]
-Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)
-Checking Hide Vehicle Markers checkbox...
-Hide Vehicle Markers checkbox checked
-Clicking Submit button...
-Verifying landmark info overlay...
-Landmark info overlay is visible
-Displayed landmark name: AutoTest_Landmark_1765912618501
-Displayed landmark radius: 600
-Displayed landmark location: San Ramon, CA, United States
-Step 6: Editing the landmark...
-Clicked Edit button
-Edit mode is visible
-Edited landmark name to: AutoTest_Landmark_1765912618501_Edited
-Verified radius minimum value is 100
-Attempted to set radius to 50, actual value: 50
-Set radius to 150
-Saving edited landmark...
-Update landmark API called successfully
-Step 7: Verifying updated landmark details...
-Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited
-Updated landmark radius displayed: 150
-Verified updated name appears in dropdown
-Step 8: Deleting the landmark...
-Clicked Edit button
-Clicking Delete button...
-Confirming delete in modal...
-Delete confirmation modal is visible
-Found 1 Delete button(s) in modal container
-Delete landmark API called successfully
-Step 9: Verifying landmark is deleted...
-Verified deleted landmark is no longer in the dropdown
-SUCCESS: Landmark creation, edit, and deletion completed successfully
+========== API ASSERTION: CREATE SUBGROUP ==========
+Create Subgroup API Response: {"status":true,"message":"New SubGroup Created Successfully"}
+========== API ASSERTION: GET SUBGROUPS AFTER CREATE ==========
+Get Subgroups API Response: [{"name":"DeleteMe_1765969728183"},{"name":"DeleteMe_1766086431927"},{"name":"Subhash"},{"name":"TestSubgroup_1764703653790"},{"name":"TestSubgroup_1764773025336"},{"name":"TestSubgroup_1764799516204"},{"name":"TestSubgroup_1765957219213"},{"name":"testDEL"},{"name":"testDp"}]
+Subgroup "testDp" exists in API response: true
+Modal close button visible: false, proceeding...
+UI ASSERTION: Subgroup "testDp" is visible in the subgroups list
+========== API ASSERTION: GET DRIVERS TO SUBGROUP ==========
+Get Drivers to Subgroup API Response: {"assigned":[{"id":14,"imei":"860111051554966","deviceType":"MA9276-Portable","name":"Demo 1","color":"black"},{"id":15,"imei":"220902734","deviceType":"XT2469","name":"Sales Car1","color":"black"},{"id":16,"imei":"861492065082189","deviceType":"MA9276-Portable","name":"861492065082189","color":"red"}],"unassigned":[{"id":20,"imei":"866787675654345","deviceType":"MA3000","name":"866787675654345","color":"red"},{"id":18,"imei":"878787412547895","deviceType":"MA1285WT","name":"878787412547895","color":"red"},{"id":17,"imei":"895745123645789","deviceType":"MA1086","name":"895745123645789","color":"red"},{"id":21,"imei":"898956341243564","deviceType":"MA1085W","name":"898956341243564","color":"red"},{"id":19,"imei":"987452321457854","deviceType":"ST4345-REAL","name":"987452321457854","color":"red"}]}
+API shows 5 unassigned drivers
+UI shows 5 unassigned driver cards with Add button
+API shows 3 assigned drivers
+========== API ASSERTION: GET DRIVERS AFTER ADDING ==========
+Get Drivers API Response after adding: {"assigned":[{"id":14,"imei":"860111051554966","deviceType":"MA9276-Portable","name":"Demo 1","color":"black"},{"id":15,"imei":"220902734","deviceType":"XT2469","name":"Sales Car1","color":"black"},{"id":16,"imei":"861492065082189","deviceType":"MA9276-Portable","name":"861492065082189","color":"red"},{"id":20,"imei":"866787675654345","deviceType":"MA3000","name":"866787675654345","color":"red"}],"unassigned":[{"id":18,"imei":"878787412547895","deviceType":"MA1285WT","name":"878787412547895","color":"red"},{"id":17,"imei":"895745123645789","deviceType":"MA1086","name":"895745123645789","color":"red"},{"id":21,"imei":"898956341243564","deviceType":"MA1085W","name":"898956341243564","color":"red"},{"id":19,"imei":"987452321457854","deviceType":"ST4345-REAL","name":"987452321457854","color":"red"}]}
+Subgroup panel is open: true
+Found 2 close icons in panel
+Clicked close icon 1
+Clicked exit subgroup button via JavaScript
+========== API ASSERTION: DELETE SUBGROUP ==========
+Delete Subgroup API Response: {"status":true,"message":"Removed subgroup successfully."}
+========== API ASSERTION: GET SUBGROUPS AFTER DELETE ==========
+Get Subgroups API Response after delete: [{"name":"DeleteMe_1765969728183"},{"name":"DeleteMe_1766086431927"},{"name":"Subhash"},{"name":"TestSubgroup_1764703653790"},{"name":"TestSubgroup_1764773025336"},{"name":"TestSubgroup_1764799516204"},{"name":"TestSubgroup_1765957219213"},{"name":"testDEL"}]
+Subgroup "testDp" still exists after delete: false
+UI ASSERTION: Subgroup "testDp" is no longer visible in the subgroups list
 ]]>
 </system-out>
 </testcase>

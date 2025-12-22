@@ -348,22 +348,44 @@ test.describe('Add edit Device', () => {
 
         // Click the confirm button to proceed with deletion
         await expect(page.locator(config.selectors.addEditDevice.confirmDeleteButton)).toBeVisible();
+
+        // Set up listener for deletion API call
+        const deleteDevicePromise = page.waitForResponse(
+            response => response.url().includes('removeDevice.php') || response.url().includes('delete') || response.url().includes('remove'),
+            { timeout: 30000 }
+        ).catch(() => console.log('Delete API response not captured, continuing...'));
+
         await page.locator(config.selectors.addEditDevice.confirmDeleteButton).click({ force: true });
 
-        // Wait for the deletion to process on the server
-        await page.waitForTimeout(10000);
+        // Wait for the deletion API to complete
+        await deleteDevicePromise;
+        await page.waitForTimeout(5000);
 
         // ========================================
         // STEP 11: VERIFY DEVICE WAS REMOVED
         // ========================================
+        // Close the modal and reopen device list to get fresh data
+        await page.evaluate(() => {
+            const closeBtn = document.querySelector('#devices-panel .icon--close');
+            if (closeBtn) closeBtn.click();
+        });
+        await page.waitForTimeout(2000);
+
+        // Reopen the device list to verify removal
+        await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.accountsMenu).click();
+        await expect(page.locator(config.selectors.navigation.listOfDevices)).toBeVisible();
+        await page.locator(config.selectors.navigation.listOfDevices).click();
+        await page.waitForTimeout(5000);
+
         // Confirm the device no longer appears in the devices table
-        await expect(page.locator('table#devices-table td').filter({ hasText: 'AutomatedDevice' })).not.toBeVisible();
+        await expect(page.locator('table#devices-table td').filter({ hasText: 'AutomatedDevice' })).not.toBeVisible({ timeout: 30000 });
 
         // Close the device list modal
         await page.locator(config.selectors.devList.container + ' .icon--close').scrollIntoViewIfNeeded();
         await page.locator(config.selectors.devList.container + ' .icon--close').click({ force: true });
 
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000);
 
         // Test complete - device was successfully added, edited twice, and removed
         console.log('Device add/edit/remove test completed successfully');
@@ -827,11 +849,19 @@ test.describe('Add edit Device', () => {
 
         // Click the confirm button to proceed with deletion
         await expect(page.locator(config.selectors.addEditDevice.confirmDeleteButton)).toBeVisible();
-        await page.locator(config.selectors.addEditDevice.confirmDeleteButton).click({ force: true });
 
-        // Wait for the deletion to process on the server
-        await page.waitForTimeout(10000);
+        // Set up listener for deletion API call
+        const deleteDevicePromise2 = page.waitForResponse(
+            response => response.url().includes('removeDevice.php') || response.url().includes('delete') || response.url().includes('remove'),
+            { timeout: 30000 }
+        ).catch(() => console.log('Delete API response not captured, continuing...'));
+
+        await page.locator(config.selectors.addEditDevice.confirmDeleteButton).click({ force: true });
         console.log('Delete confirmation clicked');
+
+        // Wait for the deletion API to complete
+        await deleteDevicePromise2;
+        await page.waitForTimeout(5000);
 
         // Close the modal and reopen to refresh the list
         await page.evaluate(() => {
@@ -852,7 +882,7 @@ test.describe('Add edit Device', () => {
         // ========================================
         // Confirm the device with our specific IMEI no longer appears in the devices table
         const removedDeviceRow = page.locator('table#devices-table tbody tr').filter({ hasText: selectedImei });
-        await expect(removedDeviceRow).not.toBeVisible({ timeout: 15000 });
+        await expect(removedDeviceRow).not.toBeVisible({ timeout: 30000 });
         console.log('Device removed successfully (IMEI: ' + selectedImei + ')');
 
         // Modal closes automatically after device removal

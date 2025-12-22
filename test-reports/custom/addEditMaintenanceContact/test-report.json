@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 878227,
+    "startTime": "2025-12-18T17:27:05.764Z",
+    "endTime": "2025-12-18T17:41:43.991Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS011-A",
+      "module": "Add Edit Maintenance Contact",
+      "title": "should add the contact details",
+      "description": "should add the contact details",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 135690,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-18T17:27:10.801Z",
+      "endTime": "2025-12-18T17:29:26.491Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS011_addEditMaintenanceContact.spec.js",
+      "fileName": "TS011_addEditMaintenanceContact",
+      "line": 23
+    }
+  ]
+}
