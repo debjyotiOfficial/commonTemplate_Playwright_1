@@ -1,14 +1,14 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="98.338083">
-<testsuite name="auth.setup.js" timestamp="2025-12-19T21:45:41.769Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.331" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="0.331">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="118.964454">
+<testsuite name="auth.setup.js" timestamp="2025-12-23T19:43:23.471Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.173" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="1.173">
 <system-out>
-<![CDATA[Valid authentication session found (age: 22 minutes). Skipping login.
+<![CDATA[Valid authentication session found (age: 15 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS005_subgroup.spec.js" timestamp="2025-12-19T21:45:41.769Z" hostname="chromium" tests="1" failures="0" skipped="0" time="94.931" errors="0">
-<testcase name="Subgroup › should manage subgroups" classname="TS005_subgroup.spec.js" time="94.931">
+<testsuite name="TS005_subgroup.spec.js" timestamp="2025-12-23T19:43:23.471Z" hostname="chromium" tests="1" failures="0" skipped="0" time="112.698" errors="0">
+<testcase name="Subgroup › should manage subgroups" classname="TS005_subgroup.spec.js" time="112.698">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -17,31 +17,35 @@ Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
 Page loaded successfully
 ========== API ASSERTION: CREATE SUBGROUP ==========
 Create Subgroup API Response: {"status":true,"message":"New SubGroup Created Successfully"}
 ========== API ASSERTION: GET SUBGROUPS AFTER CREATE ==========
-Get Subgroups API Response: [{"name":"DeleteMe_1765969728183"},{"name":"DeleteMe_1766086431927"},{"name":"Subhash"},{"name":"TestSubgroup_1764703653790"},{"name":"TestSubgroup_1764773025336"},{"name":"TestSubgroup_1764799516204"},{"name":"TestSubgroup_1765957219213"},{"name":"testDEL"},{"name":"testDp"}]
-Subgroup "testDp" exists in API response: true
+Get Subgroups API Response: [{"name":"DeleteMe_1765969728183"},{"name":"DeleteMe_1766086431927"},{"name":"DeleteMe_1766420317776"},{"name":"Subhash"},{"name":"TestSG_1766515207453"},{"name":"TestSG_1766519008974"},{"name":"TestSubgroup_1764703653790"},{"name":"TestSubgroup_1764773025336"},{"name":"TestSubgroup_1764799516204"},{"name":"TestSubgroup_1765957219213"},{"name":"TestSubgroup_1766420134391"},{"name":"testDp"}]
+Subgroup "TestSG_1766519008974" exists in API response: true
 Modal close button visible: false, proceeding...
-UI ASSERTION: Subgroup "testDp" is visible in the subgroups list
+UI ASSERTION: Subgroup "TestSG_1766519008974" is visible in the subgroups list
 ========== API ASSERTION: GET DRIVERS TO SUBGROUP ==========
-Get Drivers to Subgroup API Response: {"assigned":[{"id":14,"imei":"860111051554966","deviceType":"MA9276-Portable","name":"Demo 1","color":"black"},{"id":15,"imei":"220902734","deviceType":"XT2469","name":"Sales Car1","color":"black"},{"id":16,"imei":"861492065082189","deviceType":"MA9276-Portable","name":"861492065082189","color":"red"}],"unassigned":[{"id":20,"imei":"866787675654345","deviceType":"MA3000","name":"866787675654345","color":"red"},{"id":18,"imei":"878787412547895","deviceType":"MA1285WT","name":"878787412547895","color":"red"},{"id":17,"imei":"895745123645789","deviceType":"MA1086","name":"895745123645789","color":"red"},{"id":21,"imei":"898956341243564","deviceType":"MA1085W","name":"898956341243564","color":"red"},{"id":19,"imei":"987452321457854","deviceType":"ST4345-REAL","name":"987452321457854","color":"red"}]}
-API shows 5 unassigned drivers
-UI shows 5 unassigned driver cards with Add button
-API shows 3 assigned drivers
+Get Drivers to Subgroup API Response: {"assigned":[],"unassigned":[{"id":14,"imei":"860111051554966","deviceType":"MA9276-Portable","name":"Demo 1","color":"black"},{"id":15,"imei":"220902734","deviceType":"XT2469","name":"Sales Car1","color":"black"},{"id":16,"imei":"861492065082189","deviceType":"MA9276-Portable","name":"861492065082189","color":"red"},{"id":20,"imei":"866787675654345","deviceType":"MA3000","name":"866787675654345","color":"red"},{"id":18,"imei":"878787412547895","deviceType":"MA1285WT","name":"878787412547895","color":"red"},{"id":17,"imei":"895745123645789","deviceType":"MA1086","name":"895745123645789","color":"red"},{"id":21,"imei":"898956341243564","deviceType":"MA1085W","name":"898956341243564","color":"red"},{"id":19,"imei":"987452321457854","deviceType":"ST4345-REAL","name":"987452321457854","color":"red"}]}
+API shows 8 unassigned drivers
+UI shows 8 unassigned driver cards with Add button
+API shows 0 assigned drivers
 ========== API ASSERTION: GET DRIVERS AFTER ADDING ==========
-Get Drivers API Response after adding: {"assigned":[{"id":14,"imei":"860111051554966","deviceType":"MA9276-Portable","name":"Demo 1","color":"black"},{"id":15,"imei":"220902734","deviceType":"XT2469","name":"Sales Car1","color":"black"},{"id":16,"imei":"861492065082189","deviceType":"MA9276-Portable","name":"861492065082189","color":"red"},{"id":20,"imei":"866787675654345","deviceType":"MA3000","name":"866787675654345","color":"red"}],"unassigned":[{"id":18,"imei":"878787412547895","deviceType":"MA1285WT","name":"878787412547895","color":"red"},{"id":17,"imei":"895745123645789","deviceType":"MA1086","name":"895745123645789","color":"red"},{"id":21,"imei":"898956341243564","deviceType":"MA1085W","name":"898956341243564","color":"red"},{"id":19,"imei":"987452321457854","deviceType":"ST4345-REAL","name":"987452321457854","color":"red"}]}
+Get Drivers API Response after adding: {"assigned":[{"id":14,"imei":"860111051554966","deviceType":"MA9276-Portable","name":"Demo 1","color":"black"}],"unassigned":[{"id":15,"imei":"220902734","deviceType":"XT2469","name":"Sales Car1","color":"black"},{"id":16,"imei":"861492065082189","deviceType":"MA9276-Portable","name":"861492065082189","color":"red"},{"id":20,"imei":"866787675654345","deviceType":"MA3000","name":"866787675654345","color":"red"},{"id":18,"imei":"878787412547895","deviceType":"MA1285WT","name":"878787412547895","color":"red"},{"id":17,"imei":"895745123645789","deviceType":"MA1086","name":"895745123645789","color":"red"},{"id":21,"imei":"898956341243564","deviceType":"MA1085W","name":"898956341243564","color":"red"},{"id":19,"imei":"987452321457854","deviceType":"ST4345-REAL","name":"987452321457854","color":"red"}]}
 Subgroup panel is open: true
 Found 2 close icons in panel
 Clicked close icon 1
-Clicked exit subgroup button via JavaScript
+Exit subgroup button visible: false
+Exit button not visible (desktop view), using alternative method...
+Driver card header text: Driver Card
+Successfully exited subgroup view
 ========== API ASSERTION: DELETE SUBGROUP ==========
 Delete Subgroup API Response: {"status":true,"message":"Removed subgroup successfully."}
 ========== API ASSERTION: GET SUBGROUPS AFTER DELETE ==========
-Get Subgroups API Response after delete: [{"name":"DeleteMe_1765969728183"},{"name":"DeleteMe_1766086431927"},{"name":"Subhash"},{"name":"TestSubgroup_1764703653790"},{"name":"TestSubgroup_1764773025336"},{"name":"TestSubgroup_1764799516204"},{"name":"TestSubgroup_1765957219213"},{"name":"testDEL"}]
-Subgroup "testDp" still exists after delete: false
-UI ASSERTION: Subgroup "testDp" is no longer visible in the subgroups list
+Get Subgroups API Response after delete: [{"name":"DeleteMe_1765969728183"},{"name":"DeleteMe_1766086431927"},{"name":"DeleteMe_1766420317776"},{"name":"Subhash"},{"name":"TestSG_1766515207453"},{"name":"TestSubgroup_1764703653790"},{"name":"TestSubgroup_1764773025336"},{"name":"TestSubgroup_1764799516204"},{"name":"TestSubgroup_1765957219213"},{"name":"TestSubgroup_1766420134391"},{"name":"testDp"}]
+Subgroup "TestSG_1766519008974" still exists after delete: false
+UI ASSERTION: Subgroup "TestSG_1766519008974" is no longer visible in the subgroups list
 ]]>
 </system-out>
 </testcase>

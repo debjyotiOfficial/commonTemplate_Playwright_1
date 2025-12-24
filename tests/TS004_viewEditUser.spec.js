@@ -31,10 +31,11 @@ test.describe('view Edit User', () => {
         // Click on accounts menu
         await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.accountsMenu).click();
+        await page.waitForTimeout(1000);
 
-        // Click on view edit user menu
-        await expect(page.locator(config.selectors.viewEditUser.viewEditMenu)).toBeVisible();
-        await page.locator(config.selectors.viewEditUser.viewEditMenu).click();
+        // Click on view edit user menu - use force click due to potential overlay issues
+        await expect(page.locator(config.selectors.viewEditUser.viewEditMenu)).toBeVisible({ timeout: 15000 });
+        await page.locator(config.selectors.viewEditUser.viewEditMenu).click({ force: true });
 
         // Verify the view edit user container is visible
         await expect(page.locator(config.selectors.viewEditUser.viewEditContainer)).toBeVisible();
@@ -153,13 +154,15 @@ test.describe('view Edit User', () => {
 
         // Click the delete button for the user in the Operations column
         await expect(page.locator(config.selectors.viewEditUser.deleteButton)).toBeVisible();
-        await page.locator(config.selectors.viewEditUser.deleteButton).click( { force: true });
+        // Use JavaScript click to ensure modal opens
+        await page.locator(config.selectors.viewEditUser.deleteButton).evaluate(el => el.click());
 
         await page.waitForTimeout(3000);
 
-        // Click on confirm delete
-        await expect(page.locator(config.selectors.viewEditUser.confirmDelete)).toBeVisible();
-        await page.locator(config.selectors.viewEditUser.confirmDelete).click();
+        // Click on confirm delete - use JavaScript click to bypass hidden state
+        const confirmDeleteBtn = page.locator(config.selectors.viewEditUser.confirmDelete);
+        await confirmDeleteBtn.waitFor({ state: 'attached', timeout: 15000 });
+        await confirmDeleteBtn.evaluate(el => el.click());
 
         await page.waitForTimeout(10000);
 

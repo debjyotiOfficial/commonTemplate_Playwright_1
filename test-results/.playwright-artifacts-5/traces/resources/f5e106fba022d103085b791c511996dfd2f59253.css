@@ -1,0 +1,593 @@
+/* --------------------------- This File Contains --------------------------- */
+/*                                   Navbar                                   */
+/*                                    Panel                                   */
+/*                                    Tabs                                    */
+/*                                 Bottom Nav                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                   Navbar                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 100dvh;
+  width: 76px;
+  z-index: 20;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--color-bg);
+  border-right: 1px solid var(--color-border);
+  color: var(--color-placeholder);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  left: -100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    left: 0;
+  }
+}
+
+/* Hover State and Open State */
+@media (min-width: 768px) {
+  .navbar:hover {
+    left: 0;
+    width: 275px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar--open {
+    left: 0;
+    width: 275px;
+  }
+}
+/* Navbar Logo Hover/Open - Default (matrack) */
+.navbar:hover .navbar__logo,
+.navbar--open .navbar__logo {
+  transform: translateX(-0.5rem) scale(2);
+  background-image: url("../GPSandTrack_logo.png");											   
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.navbar:hover .accordion__header .accordion__header__label2,
+.navbar--open .accordion__header .accordion__header__label2,
+.navbar:hover .accordion__header .accordion__header__label,
+.navbar--open .accordion__header .accordion__header__label {
+  display: block;
+}
+
+.navbar:hover .icon--chevron-down,
+.navbar--open .icon--chevron-down {
+  display: block;
+}
+
+/* Collapsed State */
+.navbar--collapsed .accordion__header + div {
+  max-height: 0 !important;
+  overflow: hidden;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar--collapsed .icon--chevron-down {
+  transform: rotate(0deg) !important;
+}
+
+/* Navbar Logo - Default (matrack) */
+.navbar__logo {
+  width: 5rem;
+  height: 4rem;
+  min-height: 4rem;
+  margin-left: 1rem;
+  transform: translateX(-0.5rem);
+  cursor: pointer;
+  align-self: center;
+  background-image: url("../logo_small.png");										 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+/* Platform-specific logo styles */
+
+/* GPSandFleet Platform */
+body.platform-gpsandfleet .navbar__logo {
+  background-image: url("../logo_small.png");
+}
+
+body.platform-gpsandfleet .navbar:hover .navbar__logo,
+body.platform-gpsandfleet .navbar--open .navbar__logo {
+  background-image: url("../GPSandTrack_logo.png");
+}
+
+/* Family1st Platform */
+body.platform-family1st .navbar__logo {
+  background-image: url("../logo_small.png");
+}
+
+body.platform-family1st .navbar:hover .navbar__logo,
+body.platform-family1st .navbar--open .navbar__logo {
+  background-image: url("../logo.png");
+}
+
+/* Matrack Platform (Default - uses existing images) */
+body.platform-matrack .navbar__logo {
+  background-image: url("../MTlogo.png");
+}
+
+body.platform-matrack .navbar:hover .navbar__logo,
+body.platform-matrack .navbar--open .navbar__logo {
+  background-image: url("../Matracklogo.png");
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Panel                                   */
+/* -------------------------------------------------------------------------- */
+
+.panel {
+  position: fixed;
+  top: 0;
+  height: 100dvh;
+  overflow-y: auto;
+  background-color: var(--color-bg);
+  padding: 1.5rem;
+  border-left: 1px solid #ebeef3;
+  border-right: 1px solid #ebeef3;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-panel);
+  z-index: 6;
+  right: -100%;
+  width: 100%;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .panel {
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+}
+
+.panel.panel--open {
+  right: 0;
+}
+
+/* Panel Sizes: Desktop Only */
+@media (min-width: 768px) {
+  .panel--full {
+    width: calc(100% - 76px) !important;
+  }
+
+  .panel--medium {
+    width: 685px !important;
+  }
+
+  .panel--small {
+    width: 450px !important;
+  }
+}
+
+.panel__row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Tabs                                    */
+/* -------------------------------------------------------------------------- */
+
+/* Tabs */
+.tabs {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 14px;
+  overflow-x: auto;
+  min-height: fit-content;
+  scrollbar-width: none;
+}
+
+/* Separator */
+.tabs__separator {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid var(--color-light);
+  height: 0.125rem;
+  width: calc(100% + 72px);
+  transform: translateX(-2.25rem);
+  z-index: -10;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Bottom Nav                                 */
+/* -------------------------------------------------------------------------- */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-bg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 12px 24px;
+  display: flex;
+  gap: 24px;
+  z-index: 6;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  transition: all 0.5s ease;
+}
+
+.bottom-nav.hidden {
+  display: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-placeholder);
+  font-size: 0.7rem;
+  transition: color 0.2s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: var(--color-primary);
+}
+
+.nav-item i {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.submenu {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 12px;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.submenu-item {
+  padding: 8px 16px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  color: var(--color-placeholder);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.submenu-item:hover {
+  background-color: var(--color-selected);
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .bottom-nav {
+    width: calc(100% - 32px);
+    padding: 12px 12px;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .nav-item {
+    font-size: 0.75rem;
+  }
+
+  .submenu {
+    display: none;
+    bottom: 130%;
+    left: -30%;
+    transform: none;
+    margin-bottom: 8px;
+    max-width: calc(100vw - 20px);
+  }
+
+  .nav-item:nth-child(3) .submenu,
+  .nav-item:nth-child(4) .submenu {
+    left: auto;
+    right: 0;
+  }
+
+  .nav-item.show-submenu .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-item.mobile-hidden {
+    display: none;
+  }
+
+  .submenu-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.submenu-item-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.vehicle-name {
+  font-weight: 500;
+}
+
+.vehicle-driver {
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.vehicle-activity {
+  color: #4b5563;
+  font-style: italic;
+}
+/*
+#bottom-nav-last-24-hours .submenu {
+  width: 220px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#bottom-nav-last-24-hours .submenu-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#bottom-nav-last-24-hours .submenu-item:last-child {
+  border-bottom: none;
+}
+*/
+
+
+/* ---------------------------- Vehicle Service Form ---------------------------- */
+/* Form styling */
+#vehicle-service-form-panel .form-group {
+  margin-bottom: 0.5rem;
+}
+
+#vehicle-service-form-panel .form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#vehicle-service-form-panel .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#vehicle-service-form-panel .form-control:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+#vehicle-service-form-panel textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Input type number - remove spinner arrows */
+#vehicle-service-form-panel .form-control[type="number"]::-webkit-inner-spin-button,
+#vehicle-service-form-panel .form-control[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#vehicle-service-form-panel .form-control[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#vehicle-service-form-panel .icon--close-frame {
+  -webkit-mask: url(../icons/maki--cross.svg) no-repeat center / contain;
+    mask: url(../icons/maki--cross.svg) no-repeat center / contain;
+}
+
+#weekly-alert-report-panel #weekly-alert-report-table .btn--sm {
+  padding: 0px 5px 0 5px;
+}
+
+#asset-checkin-report-panel{
+  overflow-x: auto !important;
+
+}
+
+/* Support Panel Specific Tab Container */
+#support-team-panel .tab-container {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f8f9fa;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Support Panel Specific Individual Tab */
+#support-team-panel .tab {
+    flex: 1;
+    padding: 12px 16px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#support-team-panel .tab:hover {
+    background: #e9ecef;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+#support-team-panel .tab.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.2);
+}
+
+/* Insurance Tab Special Styling */
+#support-team-panel .tab[data-tab="insurance"] {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white !important;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    animation: pulse-glow 2s infinite;
+}
+
+#support-team-panel .tab[data-tab="insurance"]:before {
+    content: "💰";
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+#support-team-panel .tab[data-tab="insurance"]:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+#support-team-panel .tab[data-tab="insurance"]:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+    color: white !important;
+}
+
+#support-team-panel .tab[data-tab="insurance"]:hover:after {
+    opacity: 1;
+    left: 100%;
+}
+
+#support-team-panel .tab[data-tab="insurance"].active {
+    background: linear-gradient(135deg, #155724, #1e7e34);
+    color: white !important;
+    border-bottom-color: #28a745;
+    box-shadow: 0 4px 20px rgba(40, 167, 69, 0.5);
+    transform: scale(1.02);
+}
+
+/* Pulse animation for insurance tab */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(40, 167, 69, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    }
+}
+
+/* Support Tab styling to balance */
+#support-team-panel .tab[data-tab="support"] {
+    border-radius: 8px;
+}
+
+#support-team-panel .tab[data-tab="support"]:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Support Panel Specific Tab Content Container */
+#support-team-panel .tab-content {
+    /* Your existing panel content styles will apply here */
+}
+
+/* Support Panel Specific Tab Panes */
+#support-team-panel .tab-pane {
+    display: none;
+}
+
+#support-team-panel .tab-pane.active {
+    display: block;
+}
+
+/* Insurance Savings Highlight */
+#support-team-panel .insurance-savings-highlight {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#support-team-panel .insurance-savings-highlight h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}

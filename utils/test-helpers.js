@@ -173,15 +173,15 @@ class TestHelpers {
 
     console.log(`Navigating to ${fullUrl}...`);
     await this.page.goto(fullUrl, {
-      waitUntil: 'load',
-      timeout: 120000
+      waitUntil: 'domcontentloaded',  // Faster than 'load'
+      timeout: 60000  // Reduced to 1 minute
     });
 
-    // Wait for page to load completely
-    await this.page.waitForLoadState('networkidle').catch(() => {
+    // Wait for page to load completely with shorter timeout
+    await this.page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {
       console.log('Network idle timeout after login, continuing...');
     });
-    await this.page.waitForTimeout(5000);
+    await this.page.waitForTimeout(3000);
 
     console.log('Page loaded successfully');
   }
@@ -232,7 +232,7 @@ class TestHelpers {
    * @param {string} pagePath - The URL to navigate to
    * @param {number} retries - Number of retry attempts for flaky network
    */
-  async navigateToPage(pagePath, retries = 3) {
+  async navigateToPage(pagePath, retries = 2) {
     if (!this.config) {
       this.config = await this.getConfig();
     }
@@ -245,16 +245,16 @@ class TestHelpers {
       try {
         console.log(`Navigating directly to ${fullUrl}...${attempt > 1 ? ` (attempt ${attempt})` : ''}`);
         await this.page.goto(fullUrl, {
-          waitUntil: 'load',  // Wait for full page load
-          timeout: 120000  // 2 minutes per attempt
+          waitUntil: 'domcontentloaded',  // Faster than 'load'
+          timeout: 60000  // 1 minute per attempt (allows fallback within test timeout)
         });
 
-        // Wait for network to settle, but don't fail if it takes too long
-        await this.page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {
+        // Wait for network to settle with shorter timeout
+        await this.page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {
           console.log('Network idle timeout, continuing...');
         });
 
-        await this.page.waitForTimeout(5000); // Wait for page to stabilize
+        await this.page.waitForTimeout(3000); // Wait for page to stabilize
         console.log('Page loaded successfully');
         return; // Success, exit the retry loop
       } catch (e) {
@@ -263,7 +263,7 @@ class TestHelpers {
           throw e; // Last attempt failed, rethrow
         }
         console.log('Retrying navigation...');
-        await this.page.waitForTimeout(3000); // Brief pause before retry
+        await this.page.waitForTimeout(2000); // Brief pause before retry
       }
     }
   }

@@ -64,7 +64,7 @@
         "testMatch": [
           "/auth\\.setup\\.js/"
         ],
-        "timeout": 200000
+        "timeout": 30000
       },
       {
         "outputDir": "C:/cypress-to-playwright-converted/test-results",
@@ -80,7 +80,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 200000
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -113,16 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 331,
+                  "duration": 1173,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 22 minutes). Skipping login.\n"
+                      "text": "Valid authentication session found (age: 15 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-19T21:45:42.756Z",
+                  "startTime": "2025-12-23T19:43:24.372Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -166,7 +166,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 94931,
+                      "duration": 112698,
                       "errors": [],
                       "stdout": [
                         {
@@ -191,6 +191,9 @@
                           "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
                         },
                         {
+                          "text": "Network idle timeout, continuing...\n"
+                        },
+                        {
                           "text": "Page loaded successfully\n"
                         },
                         {
@@ -203,37 +206,37 @@
                           "text": "========== API ASSERTION: GET SUBGROUPS AFTER CREATE ==========\n"
                         },
                         {
-                          "text": "Get Subgroups API Response: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"Subhash\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"testDEL\"},{\"name\":\"testDp\"}]\n"
+                          "text": "Get Subgroups API Response: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"DeleteMe_1766420317776\"},{\"name\":\"Subhash\"},{\"name\":\"TestSG_1766515207453\"},{\"name\":\"TestSG_1766519008974\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"TestSubgroup_1766420134391\"},{\"name\":\"testDp\"}]\n"
                         },
                         {
-                          "text": "Subgroup \"testDp\" exists in API response: true\n"
+                          "text": "Subgroup \"TestSG_1766519008974\" exists in API response: true\n"
                         },
                         {
                           "text": "Modal close button visible: false, proceeding...\n"
                         },
                         {
-                          "text": "UI ASSERTION: Subgroup \"testDp\" is visible in the subgroups list\n"
+                          "text": "UI ASSERTION: Subgroup \"TestSG_1766519008974\" is visible in the subgroups list\n"
                         },
                         {
                           "text": "========== API ASSERTION: GET DRIVERS TO SUBGROUP ==========\n"
                         },
                         {
-                          "text": "Get Drivers to Subgroup API Response: {\"assigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"},{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"}],\"unassigned\":[{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"},{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}\n"
+                          "text": "Get Drivers to Subgroup API Response: {\"assigned\":[],\"unassigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"},{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"},{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"},{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}\n"
                         },
                         {
-                          "text": "API shows 5 unassigned drivers\n"
+                          "text": "API shows 8 unassigned drivers\n"
                         },
                         {
-                          "text": "UI shows 5 unassigned driver cards with Add button\n"
+                          "text": "UI shows 8 unassigned driver cards with Add button\n"
                         },
                         {
-                          "text": "API shows 3 assigned drivers\n"
+                          "text": "API shows 0 assigned drivers\n"
                         },
                         {
                           "text": "========== API ASSERTION: GET DRIVERS AFTER ADDING ==========\n"
                         },
                         {
-                          "text": "Get Drivers API Response after adding: {\"assigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"},{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"},{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"}],\"unassigned\":[{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}\n"
+                          "text": "Get Drivers API Response after adding: {\"assigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"}],\"unassigned\":[{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"},{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"},{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}\n"
                         },
                         {
                           "text": "Subgroup panel is open: true\n"
@@ -245,7 +248,16 @@
                           "text": "Clicked close icon 1\n"
                         },
                         {
-                          "text": "Clicked exit subgroup button via JavaScript\n"
+                          "text": "Exit subgroup button visible: false\n"
+                        },
+                        {
+                          "text": "Exit button not visible (desktop view), using alternative method...\n"
+                        },
+                        {
+                          "text": "Driver card header text: Driver Card\n"
+                        },
+                        {
+                          "text": "Successfully exited subgroup view\n"
                         },
                         {
                           "text": "========== API ASSERTION: DELETE SUBGROUP ==========\n"
@@ -257,18 +269,18 @@
                           "text": "========== API ASSERTION: GET SUBGROUPS AFTER DELETE ==========\n"
                         },
                         {
-                          "text": "Get Subgroups API Response after delete: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"Subhash\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"testDEL\"}]\n"
+                          "text": "Get Subgroups API Response after delete: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"DeleteMe_1766420317776\"},{\"name\":\"Subhash\"},{\"name\":\"TestSG_1766515207453\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"TestSubgroup_1766420134391\"},{\"name\":\"testDp\"}]\n"
                         },
                         {
-                          "text": "Subgroup \"testDp\" still exists after delete: false\n"
+                          "text": "Subgroup \"TestSG_1766519008974\" still exists after delete: false\n"
                         },
                         {
-                          "text": "UI ASSERTION: Subgroup \"testDp\" is no longer visible in the subgroups list\n"
+                          "text": "UI ASSERTION: Subgroup \"TestSG_1766519008974\" is no longer visible in the subgroups list\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-19T21:45:44.367Z",
+                      "startTime": "2025-12-23T19:43:27.714Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -288,8 +300,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-19T21:45:41.508Z",
-    "duration": 98338.083,
+    "startTime": "2025-12-23T19:43:23.195Z",
+    "duration": 118964.454,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

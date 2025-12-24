@@ -1,0 +1,146 @@
+{
+    "billboard_exit-info_01_0.7.png": {
+        "x": 306,
+        "y": 212,
+        "width": 106,
+        "height": 52
+    },
+    "billboard_exit-info_01_1.png": {
+        "x": 0,
+        "y": 212,
+        "width": 152,
+        "height": 52
+    },
+    "billboard_exit-info_01_1.15.png": {
+        "x": 252,
+        "y": 106,
+        "width": 175,
+        "height": 52
+    },
+    "billboard_exit-info_01_1.35.png": {
+        "x": 252,
+        "y": 0,
+        "width": 205,
+        "height": 52
+    },
+    "billboard_exit-info_01_1.55.png": {
+        "x": 0,
+        "y": 106,
+        "width": 236,
+        "height": 52
+    },
+    "billboard_exit-info_01_1.65.png": {
+        "x": 0,
+        "y": 0,
+        "width": 251,
+        "height": 52
+    },
+    "billboard_exit-info_02_0.7.png": {
+        "x": 0,
+        "y": 265,
+        "width": 106,
+        "height": 52
+    },
+    "billboard_exit-info_02_1.png": {
+        "x": 153,
+        "y": 212,
+        "width": 152,
+        "height": 52
+    },
+    "billboard_exit-info_02_1.15.png": {
+        "x": 252,
+        "y": 159,
+        "width": 175,
+        "height": 52
+    },
+    "billboard_exit-info_02_1.35.png": {
+        "x": 252,
+        "y": 53,
+        "width": 205,
+        "height": 52
+    },
+    "billboard_exit-info_02_1.55.png": {
+        "x": 0,
+        "y": 159,
+        "width": 236,
+        "height": 52
+    },
+    "billboard_exit-info_02_1.65.png": {
+        "x": 0,
+        "y": 53,
+        "width": 251,
+        "height": 52
+    },
+    "shield_exit-info_01_0.7.png": {
+        "x": 413,
+        "y": 212,
+        "width": 34,
+        "height": 34
+    },
+    "shield_exit-info_01_1.png": {
+        "x": 244,
+        "y": 318,
+        "width": 48,
+        "height": 34
+    },
+    "shield_exit-info_01_1.15.png": {
+        "x": 132,
+        "y": 318,
+        "width": 55,
+        "height": 34
+    },
+    "shield_exit-info_01_1.35.png": {
+        "x": 0,
+        "y": 318,
+        "width": 65,
+        "height": 34
+    },
+    "shield_exit-info_01_1.55.png": {
+        "x": 267,
+        "y": 265,
+        "width": 74,
+        "height": 34
+    },
+    "shield_exit-info_01_1.65.png": {
+        "x": 107,
+        "y": 265,
+        "width": 79,
+        "height": 34
+    },
+    "shield_exit-info_02_0.7.png": {
+        "x": 417,
+        "y": 265,
+        "width": 34,
+        "height": 34
+    },
+    "shield_exit-info_02_1.png": {
+        "x": 293,
+        "y": 318,
+        "width": 48,
+        "height": 34
+    },
+    "shield_exit-info_02_1.15.png": {
+        "x": 188,
+        "y": 318,
+        "width": 55,
+        "height": 34
+    },
+    "shield_exit-info_02_1.35.png": {
+        "x": 66,
+        "y": 318,
+        "width": 65,
+        "height": 34
+    },
+    "shield_exit-info_02_1.55.png": {
+        "x": 342,
+        "y": 265,
+        "width": 74,
+        "height": 34
+    },
+    "shield_exit-info_02_1.65.png": {
+        "x": 187,
+        "y": 265,
+        "width": 79,
+        "height": 34
+    }
+}

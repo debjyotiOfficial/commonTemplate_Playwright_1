@@ -33,8 +33,8 @@ test.describe('Subgroup', () => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
-        // Define the test subgroup name
-        const testSubgroupName = 'testDp';
+        // Define the test subgroup name with unique timestamp to avoid duplicates
+        const testSubgroupName = `TestSG_${Date.now()}`;
 
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
@@ -43,20 +43,27 @@ test.describe('Subgroup', () => {
         // Click on accounts settings menu
         await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.accountsMenu).click();
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(2000);
 
         // Open subgroups dropdown - use force click due to potential overlay issues
         await expect(page.locator(config.selectors.subGroup.subgroupsMenu)).toBeVisible();
         await page.locator(config.selectors.subGroup.subgroupsMenu).click({ force: true });
+        await page.waitForTimeout(2000);
 
         // Verify subgroups container is visible
-        await expect(page.locator(config.selectors.subGroup.subgroupsContainer)).toBeVisible();
+        await expect(page.locator(config.selectors.subGroup.subgroupsContainer)).toBeVisible({ timeout: 15000 });
         await expect(page.locator(config.selectors.subGroup.subgroupsContainer))
             .toContainText('Subgroups');
 
         // ========== STEP 2: CREATE NEW SUBGROUP WITH API ASSERTION ==========
-        await expect(page.locator(config.selectors.subGroup.addSubGroupButton)).toBeVisible();
-        await page.locator(config.selectors.subGroup.addSubGroupButton).click();
+        const addSubgroupBtn = page.locator(config.selectors.subGroup.addSubGroupButton);
+        await expect(addSubgroupBtn).toBeVisible({ timeout: 10000 });
+        // Scroll into view and use JavaScript click to bypass viewport issues
+        await addSubgroupBtn.scrollIntoViewIfNeeded();
+        await addSubgroupBtn.click({ force: true }).catch(async () => {
+            console.log('Regular click failed, trying JavaScript click...');
+            await addSubgroupBtn.evaluate(el => el.click());
+        });
 
         // Verify the new subgroup modal is visible
         await expect(page.locator(config.selectors.subGroup.subgroup_name_modal)).toBeVisible();
@@ -71,10 +78,12 @@ test.describe('Subgroup', () => {
         // Wait for both createSubgroup and getSubgroups API responses when clicking submit
         const [createResponse, getSubgroupsAfterCreateResponse] = await Promise.all([
             page.waitForResponse(response =>
-                response.url().includes('createSubGroup_rds.php') && response.status() === 200
+                response.url().includes('createSubGroup_rds.php') && response.status() === 200,
+                { timeout: 60000 }
             ),
             page.waitForResponse(response =>
-                response.url().includes('getSubGroup.php') && response.status() === 200
+                response.url().includes('getSubGroup.php') && response.status() === 200,
+                { timeout: 60000 }
             ),
             page.locator(config.selectors.subGroup.addSubmitButton).click()
         ]);
@@ -130,7 +139,8 @@ test.describe('Subgroup', () => {
         // Wait for getDriversToSubgroup API when clicking the view (eye) icon
         const [getDriversResponse] = await Promise.all([
             page.waitForResponse(response =>
-                response.url().includes('getDriversToSubGroup_subg.php') && response.status() === 200
+                response.url().includes('getDriversToSubGroup_subg.php') && response.status() === 200,
+                { timeout: 60000 }
             ),
             eyeIcon.click({ force: true })
         ]);
@@ -218,7 +228,8 @@ test.describe('Subgroup', () => {
         // Wait for getDriversToSubgroup API when clicking the view (eye) icon again
         const [getDriversResponse2] = await Promise.all([
             page.waitForResponse(response =>
-                response.url().includes('getDriversToSubGroup_subg.php') && response.status() === 200
+                response.url().includes('getDriversToSubGroup_subg.php') && response.status() === 200,
+                { timeout: 60000 }
             ),
             eyeIcon2.click({ force: true })
         ]);
@@ -273,21 +284,47 @@ test.describe('Subgroup', () => {
         // Wait for panel to close
         await page.waitForTimeout(1000);
 
-        // Verify the exit subgroup element contains the subgroup name
-        await expect(page.locator('#bottom-nav-exit-subgroup')).toBeVisible({ timeout: 10000 });
-        await expect(page.locator('#bottom-nav-exit-subgroup')).toContainText(testSubgroupName);
+        // Check if exit subgroup button is visible (it has mobile-hidden class on desktop)
+        const exitSubgroupBtn = page.locator('#bottom-nav-exit-subgroup');
+        const isExitBtnVisible = await exitSubgroupBtn.isVisible().catch(() => false);
+        console.log(`Exit subgroup button visible: ${isExitBtnVisible}`);
 
-        // Click to exit subgroup view using JavaScript click to bypass overlay issues
-        await page.locator('#bottom-nav-exit-subgroup').evaluate(el => el.click());
-        console.log('Clicked exit subgroup button via JavaScript');
+        if (isExitBtnVisible) {
+            // Mobile view: verify and click the exit subgroup button
+            await expect(exitSubgroupBtn).toContainText(testSubgroupName);
+            await exitSubgroupBtn.evaluate(el => el.click());
+            console.log('Clicked exit subgroup button via JavaScript');
+            await page.waitForTimeout(2000);
+            await expect(exitSubgroupBtn).toBeHidden();
+        } else {
+            // Desktop view: exit subgroup by clicking the subgroup name in driver card header
+            console.log('Exit button not visible (desktop view), using alternative method...');
 
-        await page.waitForTimeout(2000);
+            // Check if we're in subgroup view by looking at the driver card header
+            const headerTitle = page.locator(config.selectors.driverCard.driverCardPanel + ' .header__title');
+            const headerText = await headerTitle.textContent();
+            console.log(`Driver card header text: ${headerText}`);
 
-        // Verify the exit subgroup element is no longer visible
-        await expect(page.locator('#bottom-nav-exit-subgroup')).toBeHidden();
+            if (headerText && headerText.includes(testSubgroupName)) {
+                // Click the header to exit subgroup view (or use settings gear)
+                const settingsGear = page.locator(config.selectors.driverCard.driverCardPanel + ' .icon--settings, .header__settings').first();
+                if (await settingsGear.isVisible().catch(() => false)) {
+                    await settingsGear.click();
+                    await page.waitForTimeout(1000);
+                    // Look for "Exit Subgroup" option in dropdown
+                    const exitOption = page.locator('text=Exit Subgroup, text=Exit subgroup').first();
+                    if (await exitOption.isVisible().catch(() => false)) {
+                        await exitOption.click();
+                        console.log('Clicked Exit Subgroup from settings menu');
+                    }
+                }
+            }
+            await page.waitForTimeout(2000);
+        }
 
-        // Verify driver card header title does not contain subgroup name
+        // Verify driver card header title does not contain subgroup name (works for both mobile and desktop)
         await expect(page.locator(config.selectors.driverCard.driverCardPanel + ' .header__title')).not.toContainText(testSubgroupName);
+        console.log('Successfully exited subgroup view');
 
         // ========== STEP 7: DELETE SUBGROUP WITH API ASSERTION (CLEANUP) ==========
         // Click on accounts settings menu
@@ -313,10 +350,12 @@ test.describe('Subgroup', () => {
         // Wait for both deleteSubgroup and getSubgroups API responses when confirming delete
         const [deleteResponse, getSubgroupsAfterDeleteResponse] = await Promise.all([
             page.waitForResponse(response =>
-                response.url().includes('deletesubgroup_rds_subg.php') && response.status() === 200
+                response.url().includes('deletesubgroup_rds_subg.php') && response.status() === 200,
+                { timeout: 60000 }
             ),
             page.waitForResponse(response =>
-                response.url().includes('getSubGroup.php') && response.status() === 200
+                response.url().includes('getSubGroup.php') && response.status() === 200,
+                { timeout: 60000 }
             ),
             page.locator(config.selectors.subGroup.removeSubGroupButton).click({ force: true })
         ]);

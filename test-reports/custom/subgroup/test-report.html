@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - subgroup - 20/12/2025</title>
+    <title>Test Report - subgroup - 24/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: subgroup</div>
             <div class="subtitle">
-                Generated: 20/12/2025, 3:17:19 am |
-                Duration: 98.13s |
+                Generated: 24/12/2025, 1:15:22 am |
+                Duration: 118.75s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -215,7 +215,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (32)</span>
+                                    <span>View Test Steps (36)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -259,6 +259,11 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
@@ -279,12 +284,12 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Subgroups API Response: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;testDEL&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
+                                                <span class="step-text">Get Subgroups API Response: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;DeleteMe_1766420317776&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSG_1766515207453&quot;},{&quot;name&quot;:&quot;TestSG_1766519008974&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;TestSubgroup_1766420134391&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Subgroup &quot;testDp&quot; exists in API response: true</span>
+                                                <span class="step-text">Subgroup &quot;TestSG_1766519008974&quot; exists in API response: true</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -294,7 +299,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">UI ASSERTION: Subgroup &quot;testDp&quot; is visible in the subgroups list</span>
+                                                <span class="step-text">UI ASSERTION: Subgroup &quot;TestSG_1766519008974&quot; is visible in the subgroups list</span>
                                             </div>
                                         
                                             <div class="step-item section section">
@@ -304,22 +309,22 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Drivers to Subgroup API Response: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
+                                                <span class="step-text">Get Drivers to Subgroup API Response: {&quot;assigned&quot;:[],&quot;unassigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">API shows 5 unassigned drivers</span>
+                                                <span class="step-text">API shows 8 unassigned drivers</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">UI shows 5 unassigned driver cards with Add button</span>
+                                                <span class="step-text">UI shows 8 unassigned driver cards with Add button</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">API shows 3 assigned drivers</span>
+                                                <span class="step-text">API shows 0 assigned drivers</span>
                                             </div>
                                         
                                             <div class="step-item section section">
@@ -329,7 +334,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Drivers API Response after adding: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
+                                                <span class="step-text">Get Drivers API Response after adding: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -349,7 +354,22 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Clicked exit subgroup button via JavaScript</span>
+                                                <span class="step-text">Exit subgroup button visible: false</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exit button not visible (desktop view), using alternative method...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Driver card header text: Driver Card</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Successfully exited subgroup view</span>
                                             </div>
                                         
                                             <div class="step-item section section">
@@ -369,17 +389,17 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Subgroups API Response after delete: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;testDEL&quot;}]</span>
+                                                <span class="step-text">Get Subgroups API Response after delete: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;DeleteMe_1766420317776&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSG_1766515207453&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;TestSubgroup_1766420134391&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Subgroup &quot;testDp&quot; still exists after delete: false</span>
+                                                <span class="step-text">Subgroup &quot;TestSG_1766519008974&quot; still exists after delete: false</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">UI ASSERTION: Subgroup &quot;testDp&quot; is no longer visible in the subgroups list</span>
+                                                <span class="step-text">UI ASSERTION: Subgroup &quot;TestSG_1766519008974&quot; is no longer visible in the subgroups list</span>
                                             </div>
                                         
                                     </div>
@@ -387,7 +407,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>94.93s</strong></td>
+                        <td><strong>112.70s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -441,7 +461,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"94.93s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"112.70s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -458,7 +478,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-19.csv';
+            link.download = 'test-report-2025-12-23.csv';
             link.click();
         }
     </script>

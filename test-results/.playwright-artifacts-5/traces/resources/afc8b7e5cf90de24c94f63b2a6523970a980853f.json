@@ -1,0 +1,1 @@
+{"status":true,"message":"SIM status retrieved successfully","sim_statuses":{"860111051554966":{"imei":"860111051554966","sim_status":"Active","renew_date":"10\/2024"},"220902734":{"imei":"220902734","sim_status":"Active","renew_date":"01\/2027"}},"statistics":{"total_imeis":2,"successful":2,"unavailable":0,"active":2,"inactive":0,"processing_time":0,"total_imeis_processed":2}}

@@ -1,9 +1,9 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,0.33,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,1.17,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,109.52,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add/edit a device",FAILED,94.36,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-edit-a-device.webm,TS002_addEditDevices,36
 TS002-B,"Add edit Device","should add device with custom icon",FAILED,84.34,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-device-with-custom-icon.webm,TS002_addEditDevices,347
-TS005-A,"Subgroup","should manage subgroups",PASSED,94.93,"",N/A,TS005_subgroup,32
+TS005-A,"Subgroup","should manage subgroups",PASSED,112.70,"",N/A,TS005_subgroup,32
 TS008-A,"Alert Contact","should add email and phone contacts and configure alert settings",PASSED,137.13,"",N/A,TS008_alertsContact,23
 TS011-A,"Add Edit Maintenance Contact","should add the contact details",PASSED,135.69,"",N/A,TS011_addEditMaintenanceContact,23
 TS015-A,"After Hour Summary","should redirect to fleet demo page with demo credentials",FAILED,123.89,"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm,TS015_afterHourSummary,23

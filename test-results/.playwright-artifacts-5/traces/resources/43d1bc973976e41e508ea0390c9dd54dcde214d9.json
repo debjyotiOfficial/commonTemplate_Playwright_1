@@ -1,0 +1,8588 @@
+{
+    "canada_a_nwt_01_1.png": {
+        "x": 2141,
+        "y": 301,
+        "width": 34,
+        "height": 46
+    },
+    "canada_a_nwt_01_1.15.png": {
+        "x": 2043,
+        "y": 1759,
+        "width": 39,
+        "height": 46
+    },
+    "canada_a_nwt_01_1.45.png": {
+        "x": 1915,
+        "y": 1538,
+        "width": 49,
+        "height": 46
+    },
+    "canada_a_nwt_01_1.65.png": {
+        "x": 1672,
+        "y": 1130,
+        "width": 56,
+        "height": 46
+    },
+    "canada_a_nwt_01_1.9.png": {
+        "x": 1672,
+        "y": 460,
+        "width": 65,
+        "height": 46
+    },
+    "canada_a_nwt_01_2.15.png": {
+        "x": 1438,
+        "y": 1195,
+        "width": 73,
+        "height": 46
+    },
+    "canada_a_nwt_01_2.4.png": {
+        "x": 1249,
+        "y": 898,
+        "width": 82,
+        "height": 46
+    },
+    "canada_a_nwt_01_2.65.png": {
+        "x": 1036,
+        "y": 544,
+        "width": 90,
+        "height": 46
+    },
+    "canada_a_nwt_01_2.9.png": {
+        "x": 0,
+        "y": 939,
+        "width": 99,
+        "height": 46
+    },
+    "canada_a_sk_02_1.png": {
+        "x": 2141,
+        "y": 348,
+        "width": 34,
+        "height": 46
+    },
+    "canada_a_sk_02_1.15.png": {
+        "x": 2043,
+        "y": 1806,
+        "width": 39,
+        "height": 46
+    },
+    "canada_a_sk_02_1.45.png": {
+        "x": 1915,
+        "y": 1585,
+        "width": 49,
+        "height": 46
+    },
+    "canada_a_sk_02_1.65.png": {
+        "x": 1672,
+        "y": 1177,
+        "width": 56,
+        "height": 46
+    },
+    "canada_a_sk_02_1.9.png": {
+        "x": 1672,
+        "y": 507,
+        "width": 65,
+        "height": 46
+    },
+    "canada_a_sk_02_2.15.png": {
+        "x": 1438,
+        "y": 1242,
+        "width": 73,
+        "height": 46
+    },
+    "canada_a_sk_02_2.4.png": {
+        "x": 1249,
+        "y": 945,
+        "width": 82,
+        "height": 46
+    },
+    "canada_a_sk_02_2.65.png": {
+        "x": 1036,
+        "y": 591,
+        "width": 90,
+        "height": 46
+    },
+    "canada_a_sk_02_2.9.png": {
+        "x": 100,
+        "y": 939,
+        "width": 99,
+        "height": 46
+    },
+    "canada_b_01_1.png": {
+        "x": 1915,
+        "y": 909,
+        "width": 48,
+        "height": 48
+    },
+    "canada_b_01_1.15.png": {
+        "x": 1823,
+        "y": 1247,
+        "width": 55,
+        "height": 48
+    },
+    "canada_b_01_1.45.png": {
+        "x": 1438,
+        "y": 1146,
+        "width": 70,
+        "height": 48
+    },
+    "canada_b_01_1.65.png": {
+        "x": 1249,
+        "y": 634,
+        "width": 79,
+        "height": 48
+    },
+    "canada_b_01_1.9.png": {
+        "x": 940,
+        "y": 149,
+        "width": 91,
+        "height": 48
+    },
+    "canada_b_01_2.15.png": {
+        "x": 738,
+        "y": 298,
+        "width": 103,
+        "height": 48
+    },
+    "canada_b_01_2.4.png": {
+        "x": 0,
+        "y": 575,
+        "width": 115,
+        "height": 48
+    },
+    "canada_b_01_2.65.png": {
+        "x": 0,
+        "y": 473,
+        "width": 127,
+        "height": 48
+    },
+    "canada_b_01_2.9.png": {
+        "x": 146,
+        "y": 318,
+        "width": 139,
+        "height": 48
+    },
+    "canada_c_ns_01_1.png": {
+        "x": 2181,
+        "y": 357,
+        "width": 34,
+        "height": 44
+    },
+    "canada_c_ns_01_1.15.png": {
+        "x": 0,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "canada_c_ns_01_1.45.png": {
+        "x": 1535,
+        "y": 1119,
+        "width": 49,
+        "height": 44
+    },
+    "canada_c_ns_01_1.65.png": {
+        "x": 1599,
+        "y": 639,
+        "width": 56,
+        "height": 44
+    },
+    "canada_c_ns_01_1.9.png": {
+        "x": 1746,
+        "y": 398,
+        "width": 65,
+        "height": 44
+    },
+    "canada_c_ns_01_2.15.png": {
+        "x": 0,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "canada_c_ns_01_2.4.png": {
+        "x": 1346,
+        "y": 41,
+        "width": 82,
+        "height": 44
+    },
+    "canada_c_ns_01_2.65.png": {
+        "x": 1138,
+        "y": 452,
+        "width": 90,
+        "height": 44
+    },
+    "canada_c_ns_01_2.9.png": {
+        "x": 200,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "canada_c_pe_01_1.png": {
+        "x": 2181,
+        "y": 402,
+        "width": 34,
+        "height": 44
+    },
+    "canada_c_pe_01_1.15.png": {
+        "x": 40,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "canada_c_pe_01_1.45.png": {
+        "x": 1535,
+        "y": 1164,
+        "width": 49,
+        "height": 44
+    },
+    "canada_c_pe_01_1.65.png": {
+        "x": 1599,
+        "y": 684,
+        "width": 56,
+        "height": 44
+    },
+    "canada_c_pe_01_1.9.png": {
+        "x": 1746,
+        "y": 443,
+        "width": 65,
+        "height": 44
+    },
+    "canada_c_pe_01_2.15.png": {
+        "x": 74,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "canada_c_pe_01_2.4.png": {
+        "x": 1346,
+        "y": 86,
+        "width": 82,
+        "height": 44
+    },
+    "canada_c_pe_01_2.65.png": {
+        "x": 1138,
+        "y": 497,
+        "width": 90,
+        "height": 44
+    },
+    "canada_c_pe_01_2.9.png": {
+        "x": 300,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "canada_d_sk_01_1.png": {
+        "x": 2181,
+        "y": 1099,
+        "width": 34,
+        "height": 42
+    },
+    "canada_d_sk_01_1.15.png": {
+        "x": 2141,
+        "y": 0,
+        "width": 39,
+        "height": 42
+    },
+    "canada_d_sk_01_1.45.png": {
+        "x": 1986,
+        "y": 392,
+        "width": 49,
+        "height": 42
+    },
+    "canada_d_sk_01_1.65.png": {
+        "x": 1915,
+        "y": 107,
+        "width": 56,
+        "height": 42
+    },
+    "canada_d_sk_01_1.9.png": {
+        "x": 1823,
+        "y": 434,
+        "width": 65,
+        "height": 42
+    },
+    "canada_d_sk_01_2.15.png": {
+        "x": 1672,
+        "y": 0,
+        "width": 73,
+        "height": 42
+    },
+    "canada_d_sk_01_2.4.png": {
+        "x": 1438,
+        "y": 310,
+        "width": 82,
+        "height": 42
+    },
+    "canada_d_sk_01_2.65.png": {
+        "x": 1249,
+        "y": 683,
+        "width": 90,
+        "height": 42
+    },
+    "canada_d_sk_01_2.9.png": {
+        "x": 1036,
+        "y": 266,
+        "width": 99,
+        "height": 42
+    },
+    "canada_d_sk_03_1.png": {
+        "x": 2181,
+        "y": 1142,
+        "width": 34,
+        "height": 42
+    },
+    "canada_d_sk_03_1.15.png": {
+        "x": 2141,
+        "y": 43,
+        "width": 39,
+        "height": 42
+    },
+    "canada_d_sk_03_1.45.png": {
+        "x": 1986,
+        "y": 435,
+        "width": 49,
+        "height": 42
+    },
+    "canada_d_sk_03_1.65.png": {
+        "x": 1915,
+        "y": 150,
+        "width": 56,
+        "height": 42
+    },
+    "canada_d_sk_03_1.9.png": {
+        "x": 1823,
+        "y": 477,
+        "width": 65,
+        "height": 42
+    },
+    "canada_d_sk_03_2.15.png": {
+        "x": 1672,
+        "y": 43,
+        "width": 73,
+        "height": 42
+    },
+    "canada_d_sk_03_2.4.png": {
+        "x": 1438,
+        "y": 353,
+        "width": 82,
+        "height": 42
+    },
+    "canada_d_sk_03_2.65.png": {
+        "x": 1249,
+        "y": 726,
+        "width": 90,
+        "height": 42
+    },
+    "canada_d_sk_03_2.9.png": {
+        "x": 1036,
+        "y": 309,
+        "width": 99,
+        "height": 42
+    },
+    "canada_e_qc_02_1.png": {
+        "x": 2141,
+        "y": 1076,
+        "width": 34,
+        "height": 36
+    },
+    "canada_e_qc_02_1.15.png": {
+        "x": 2181,
+        "y": 1271,
+        "width": 39,
+        "height": 36
+    },
+    "canada_e_qc_02_1.45.png": {
+        "x": 2043,
+        "y": 1853,
+        "width": 49,
+        "height": 36
+    },
+    "canada_e_qc_02_1.65.png": {
+        "x": 1986,
+        "y": 871,
+        "width": 56,
+        "height": 36
+    },
+    "canada_e_qc_02_1.9.png": {
+        "x": 1915,
+        "y": 454,
+        "width": 65,
+        "height": 36
+    },
+    "canada_e_qc_02_2.15.png": {
+        "x": 1823,
+        "y": 1527,
+        "width": 73,
+        "height": 36
+    },
+    "canada_e_qc_02_2.4.png": {
+        "x": 243,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "canada_e_qc_02_2.65.png": {
+        "x": 849,
+        "y": 769,
+        "width": 90,
+        "height": 36
+    },
+    "canada_e_qc_02_2.9.png": {
+        "x": 0,
+        "y": 1333,
+        "width": 99,
+        "height": 36
+    },
+    "canada_f_bc_01_1.png": {
+        "x": 2181,
+        "y": 1308,
+        "width": 38,
+        "height": 36
+    },
+    "canada_f_bc_01_1.15.png": {
+        "x": 211,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "canada_f_bc_01_1.45.png": {
+        "x": 1986,
+        "y": 951,
+        "width": 55,
+        "height": 36
+    },
+    "canada_f_bc_01_1.65.png": {
+        "x": 1915,
+        "y": 1168,
+        "width": 63,
+        "height": 36
+    },
+    "canada_f_bc_01_1.9.png": {
+        "x": 1746,
+        "y": 1530,
+        "width": 72,
+        "height": 36
+    },
+    "canada_f_bc_01_2.15.png": {
+        "x": 326,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "canada_f_bc_01_2.4.png": {
+        "x": 1346,
+        "y": 910,
+        "width": 91,
+        "height": 36
+    },
+    "canada_f_bc_01_2.65.png": {
+        "x": 582,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "canada_f_bc_01_2.9.png": {
+        "x": 1138,
+        "y": 0,
+        "width": 110,
+        "height": 36
+    },
+    "canada_g_qc_01_1.png": {
+        "x": 2181,
+        "y": 1678,
+        "width": 34,
+        "height": 40
+    },
+    "canada_g_qc_01_1.15.png": {
+        "x": 2141,
+        "y": 395,
+        "width": 39,
+        "height": 40
+    },
+    "canada_g_qc_01_1.45.png": {
+        "x": 2043,
+        "y": 154,
+        "width": 49,
+        "height": 40
+    },
+    "canada_g_qc_01_1.65.png": {
+        "x": 1915,
+        "y": 1737,
+        "width": 56,
+        "height": 40
+    },
+    "canada_g_qc_01_1.9.png": {
+        "x": 1823,
+        "y": 1681,
+        "width": 65,
+        "height": 40
+    },
+    "canada_g_qc_01_2.15.png": {
+        "x": 1672,
+        "y": 644,
+        "width": 73,
+        "height": 40
+    },
+    "canada_g_qc_01_2.4.png": {
+        "x": 1346,
+        "y": 1280,
+        "width": 82,
+        "height": 40
+    },
+    "canada_g_qc_01_2.65.png": {
+        "x": 1346,
+        "y": 401,
+        "width": 90,
+        "height": 40
+    },
+    "canada_g_qc_01_2.9.png": {
+        "x": 1138,
+        "y": 370,
+        "width": 99,
+        "height": 40
+    },
+    "canada_h_mb_03_1.png": {
+        "x": 2181,
+        "y": 1719,
+        "width": 40,
+        "height": 34
+    },
+    "canada_h_mb_03_1.15.png": {
+        "x": 661,
+        "y": 2125,
+        "width": 46,
+        "height": 34
+    },
+    "canada_h_mb_03_1.45.png": {
+        "x": 2043,
+        "y": 0,
+        "width": 58,
+        "height": 34
+    },
+    "canada_h_mb_03_1.65.png": {
+        "x": 1915,
+        "y": 1632,
+        "width": 66,
+        "height": 34
+    },
+    "canada_h_mb_03_1.9.png": {
+        "x": 1060,
+        "y": 1070,
+        "width": 76,
+        "height": 34
+    },
+    "canada_h_mb_03_2.15.png": {
+        "x": 1156,
+        "y": 1658,
+        "width": 86,
+        "height": 34
+    },
+    "canada_h_mb_03_2.4.png": {
+        "x": 0,
+        "y": 1471,
+        "width": 96,
+        "height": 34
+    },
+    "canada_h_mb_03_2.65.png": {
+        "x": 1077,
+        "y": 1218,
+        "width": 106,
+        "height": 34
+    },
+    "canada_h_mb_03_2.9.png": {
+        "x": 813,
+        "y": 1031,
+        "width": 116,
+        "height": 34
+    },
+    "canada_i_mb_01_1.png": {
+        "x": 2181,
+        "y": 1185,
+        "width": 34,
+        "height": 42
+    },
+    "canada_i_mb_01_1.15.png": {
+        "x": 2141,
+        "y": 86,
+        "width": 39,
+        "height": 42
+    },
+    "canada_i_mb_01_1.45.png": {
+        "x": 1986,
+        "y": 478,
+        "width": 49,
+        "height": 42
+    },
+    "canada_i_mb_01_1.65.png": {
+        "x": 1915,
+        "y": 193,
+        "width": 56,
+        "height": 42
+    },
+    "canada_i_mb_01_1.9.png": {
+        "x": 1823,
+        "y": 520,
+        "width": 65,
+        "height": 42
+    },
+    "canada_i_mb_01_2.15.png": {
+        "x": 1672,
+        "y": 86,
+        "width": 73,
+        "height": 42
+    },
+    "canada_i_mb_01_2.4.png": {
+        "x": 1438,
+        "y": 396,
+        "width": 82,
+        "height": 42
+    },
+    "canada_i_mb_01_2.65.png": {
+        "x": 1249,
+        "y": 769,
+        "width": 90,
+        "height": 42
+    },
+    "canada_i_mb_01_2.9.png": {
+        "x": 1036,
+        "y": 352,
+        "width": 99,
+        "height": 42
+    },
+    "canada_j_on_01_1.png": {
+        "x": 2181,
+        "y": 447,
+        "width": 34,
+        "height": 44
+    },
+    "canada_j_on_01_1.15.png": {
+        "x": 80,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "canada_j_on_01_1.45.png": {
+        "x": 1535,
+        "y": 1209,
+        "width": 49,
+        "height": 44
+    },
+    "canada_j_on_01_1.65.png": {
+        "x": 1599,
+        "y": 729,
+        "width": 56,
+        "height": 44
+    },
+    "canada_j_on_01_1.9.png": {
+        "x": 1746,
+        "y": 488,
+        "width": 65,
+        "height": 44
+    },
+    "canada_j_on_01_2.15.png": {
+        "x": 148,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "canada_j_on_01_2.4.png": {
+        "x": 1346,
+        "y": 131,
+        "width": 82,
+        "height": 44
+    },
+    "canada_j_on_01_2.65.png": {
+        "x": 1138,
+        "y": 542,
+        "width": 90,
+        "height": 44
+    },
+    "canada_j_on_01_2.9.png": {
+        "x": 400,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "circle_01_1.png": {
+        "x": 2141,
+        "y": 1212,
+        "width": 34,
+        "height": 34
+    },
+    "circle_01_1.15.png": {
+        "x": 2181,
+        "y": 1824,
+        "width": 39,
+        "height": 34
+    },
+    "circle_01_1.45.png": {
+        "x": 1195,
+        "y": 1179,
+        "width": 49,
+        "height": 34
+    },
+    "circle_01_1.65.png": {
+        "x": 2043,
+        "y": 322,
+        "width": 56,
+        "height": 34
+    },
+    "circle_01_1.9.png": {
+        "x": 1915,
+        "y": 1778,
+        "width": 65,
+        "height": 34
+    },
+    "circle_01_2.15.png": {
+        "x": 0,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "circle_01_2.4.png": {
+        "x": 81,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "circle_01_2.65.png": {
+        "x": 1047,
+        "y": 1031,
+        "width": 90,
+        "height": 34
+    },
+    "circle_01_2.9.png": {
+        "x": 204,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "circle_02_1.png": {
+        "x": 2141,
+        "y": 1247,
+        "width": 34,
+        "height": 34
+    },
+    "circle_02_1.15.png": {
+        "x": 2181,
+        "y": 1859,
+        "width": 39,
+        "height": 34
+    },
+    "circle_02_1.45.png": {
+        "x": 1291,
+        "y": 1218,
+        "width": 49,
+        "height": 34
+    },
+    "circle_02_1.65.png": {
+        "x": 2043,
+        "y": 357,
+        "width": 56,
+        "height": 34
+    },
+    "circle_02_1.9.png": {
+        "x": 1915,
+        "y": 1813,
+        "width": 65,
+        "height": 34
+    },
+    "circle_02_2.15.png": {
+        "x": 74,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "circle_02_2.4.png": {
+        "x": 164,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "circle_02_2.65.png": {
+        "x": 1012,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "circle_02_2.9.png": {
+        "x": 304,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "circle_03_1.png": {
+        "x": 2181,
+        "y": 789,
+        "width": 38,
+        "height": 38
+    },
+    "circle_03_1.15.png": {
+        "x": 366,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "circle_03_1.45.png": {
+        "x": 1986,
+        "y": 119,
+        "width": 55,
+        "height": 38
+    },
+    "circle_03_1.65.png": {
+        "x": 1599,
+        "y": 1445,
+        "width": 63,
+        "height": 38
+    },
+    "circle_03_1.9.png": {
+        "x": 1823,
+        "y": 161,
+        "width": 72,
+        "height": 38
+    },
+    "circle_03_2.15.png": {
+        "x": 680,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "circle_03_2.4.png": {
+        "x": 1438,
+        "y": 37,
+        "width": 91,
+        "height": 38
+    },
+    "circle_03_2.65.png": {
+        "x": 1138,
+        "y": 820,
+        "width": 101,
+        "height": 38
+    },
+    "circle_03_2.9.png": {
+        "x": 650,
+        "y": 986,
+        "width": 110,
+        "height": 38
+    },
+    "detailedshield_a_01_1.png": {
+        "x": 2181,
+        "y": 828,
+        "width": 38,
+        "height": 38
+    },
+    "detailedshield_a_01_1.15.png": {
+        "x": 411,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "detailedshield_a_01_1.45.png": {
+        "x": 1986,
+        "y": 158,
+        "width": 55,
+        "height": 38
+    },
+    "detailedshield_a_01_1.65.png": {
+        "x": 1599,
+        "y": 1484,
+        "width": 63,
+        "height": 38
+    },
+    "detailedshield_a_01_1.9.png": {
+        "x": 1823,
+        "y": 200,
+        "width": 72,
+        "height": 38
+    },
+    "detailedshield_a_01_2.15.png": {
+        "x": 763,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "detailedshield_a_01_2.4.png": {
+        "x": 1438,
+        "y": 76,
+        "width": 91,
+        "height": 38
+    },
+    "detailedshield_a_01_2.65.png": {
+        "x": 1138,
+        "y": 859,
+        "width": 101,
+        "height": 38
+    },
+    "detailedshield_a_01_2.9.png": {
+        "x": 761,
+        "y": 986,
+        "width": 110,
+        "height": 38
+    },
+    "detailedshield_a_02_1.png": {
+        "x": 2181,
+        "y": 867,
+        "width": 38,
+        "height": 38
+    },
+    "detailedshield_a_02_1.15.png": {
+        "x": 456,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "detailedshield_a_02_1.45.png": {
+        "x": 1986,
+        "y": 197,
+        "width": 55,
+        "height": 38
+    },
+    "detailedshield_a_02_1.65.png": {
+        "x": 1599,
+        "y": 1523,
+        "width": 63,
+        "height": 38
+    },
+    "detailedshield_a_02_1.9.png": {
+        "x": 1823,
+        "y": 239,
+        "width": 72,
+        "height": 38
+    },
+    "detailedshield_a_02_2.15.png": {
+        "x": 846,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "detailedshield_a_02_2.4.png": {
+        "x": 1438,
+        "y": 115,
+        "width": 91,
+        "height": 38
+    },
+    "detailedshield_a_02_2.65.png": {
+        "x": 1138,
+        "y": 898,
+        "width": 101,
+        "height": 38
+    },
+    "detailedshield_a_02_2.9.png": {
+        "x": 872,
+        "y": 986,
+        "width": 110,
+        "height": 38
+    },
+    "detailedshield_a_03_1.png": {
+        "x": 2181,
+        "y": 906,
+        "width": 38,
+        "height": 38
+    },
+    "detailedshield_a_03_1.15.png": {
+        "x": 501,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "detailedshield_a_03_1.45.png": {
+        "x": 1986,
+        "y": 236,
+        "width": 55,
+        "height": 38
+    },
+    "detailedshield_a_03_1.65.png": {
+        "x": 1535,
+        "y": 371,
+        "width": 63,
+        "height": 38
+    },
+    "detailedshield_a_03_1.9.png": {
+        "x": 1823,
+        "y": 278,
+        "width": 72,
+        "height": 38
+    },
+    "detailedshield_a_03_2.15.png": {
+        "x": 929,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "detailedshield_a_03_2.4.png": {
+        "x": 1438,
+        "y": 154,
+        "width": 91,
+        "height": 38
+    },
+    "detailedshield_a_03_2.65.png": {
+        "x": 1138,
+        "y": 937,
+        "width": 101,
+        "height": 38
+    },
+    "detailedshield_a_03_2.9.png": {
+        "x": 0,
+        "y": 1031,
+        "width": 110,
+        "height": 38
+    },
+    "detailedshield_b_01_1.png": {
+        "x": 2141,
+        "y": 512,
+        "width": 38,
+        "height": 34
+    },
+    "detailedshield_b_01_1.15.png": {
+        "x": 802,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "detailedshield_b_01_1.45.png": {
+        "x": 2043,
+        "y": 723,
+        "width": 55,
+        "height": 34
+    },
+    "detailedshield_b_01_1.65.png": {
+        "x": 1535,
+        "y": 1434,
+        "width": 63,
+        "height": 34
+    },
+    "detailedshield_b_01_1.9.png": {
+        "x": 1599,
+        "y": 954,
+        "width": 72,
+        "height": 34
+    },
+    "detailedshield_b_01_2.15.png": {
+        "x": 247,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "detailedshield_b_01_2.4.png": {
+        "x": 0,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "detailedshield_b_01_2.65.png": {
+        "x": 208,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "detailedshield_b_01_2.9.png": {
+        "x": 973,
+        "y": 1179,
+        "width": 110,
+        "height": 34
+    },
+    "detailedshield_c_01_business-loop_1.png": {
+        "x": 1986,
+        "y": 1321,
+        "width": 38,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_1.15.png": {
+        "x": 1915,
+        "y": 1009,
+        "width": 44,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_1.45.png": {
+        "x": 1746,
+        "y": 713,
+        "width": 55,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_1.65.png": {
+        "x": 849,
+        "y": 716,
+        "width": 63,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_1.9.png": {
+        "x": 1249,
+        "y": 1086,
+        "width": 72,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_2.15.png": {
+        "x": 940,
+        "y": 408,
+        "width": 82,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_2.4.png": {
+        "x": 738,
+        "y": 641,
+        "width": 91,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_2.65.png": {
+        "x": 399,
+        "y": 367,
+        "width": 101,
+        "height": 52
+    },
+    "detailedshield_c_01_business-loop_2.9.png": {
+        "x": 627,
+        "y": 0,
+        "width": 110,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_1.png": {
+        "x": 1986,
+        "y": 1374,
+        "width": 38,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_1.15.png": {
+        "x": 1915,
+        "y": 1062,
+        "width": 44,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_1.45.png": {
+        "x": 1746,
+        "y": 766,
+        "width": 55,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_1.65.png": {
+        "x": 292,
+        "y": 265,
+        "width": 63,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_1.9.png": {
+        "x": 1249,
+        "y": 1139,
+        "width": 72,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_2.15.png": {
+        "x": 940,
+        "y": 461,
+        "width": 82,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_2.4.png": {
+        "x": 0,
+        "y": 755,
+        "width": 91,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_2.65.png": {
+        "x": 311,
+        "y": 624,
+        "width": 101,
+        "height": 52
+    },
+    "detailedshield_c_01_business-ring_2.9.png": {
+        "x": 627,
+        "y": 53,
+        "width": 110,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_1.png": {
+        "x": 1746,
+        "y": 921,
+        "width": 54,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_1.15.png": {
+        "x": 1535,
+        "y": 53,
+        "width": 62,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_1.45.png": {
+        "x": 1036,
+        "y": 738,
+        "width": 78,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_1.65.png": {
+        "x": 849,
+        "y": 159,
+        "width": 89,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_1.9.png": {
+        "x": 627,
+        "y": 473,
+        "width": 103,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_2.15.png": {
+        "x": 0,
+        "y": 522,
+        "width": 116,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_2.4.png": {
+        "x": 268,
+        "y": 367,
+        "width": 130,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_2.65.png": {
+        "x": 357,
+        "y": 0,
+        "width": 143,
+        "height": 52
+    },
+    "detailedshield_c_01_loop_2.9.png": {
+        "x": 192,
+        "y": 106,
+        "width": 157,
+        "height": 52
+    },
+    "detailedshield_c_01_1.png": {
+        "x": 2141,
+        "y": 172,
+        "width": 38,
+        "height": 42
+    },
+    "detailedshield_c_01_1.15.png": {
+        "x": 2043,
+        "y": 1225,
+        "width": 44,
+        "height": 42
+    },
+    "detailedshield_c_01_1.45.png": {
+        "x": 1915,
+        "y": 780,
+        "width": 55,
+        "height": 42
+    },
+    "detailedshield_c_01_1.65.png": {
+        "x": 1823,
+        "y": 1036,
+        "width": 63,
+        "height": 42
+    },
+    "detailedshield_c_01_1.9.png": {
+        "x": 1672,
+        "y": 172,
+        "width": 72,
+        "height": 42
+    },
+    "detailedshield_c_01_2.15.png": {
+        "x": 1438,
+        "y": 439,
+        "width": 82,
+        "height": 42
+    },
+    "detailedshield_c_01_2.4.png": {
+        "x": 1249,
+        "y": 172,
+        "width": 91,
+        "height": 42
+    },
+    "detailedshield_c_01_2.65.png": {
+        "x": 1036,
+        "y": 0,
+        "width": 101,
+        "height": 42
+    },
+    "detailedshield_c_01_2.9.png": {
+        "x": 102,
+        "y": 892,
+        "width": 110,
+        "height": 42
+    },
+    "detailedshield_c_02_alternative_1.png": {
+        "x": 1986,
+        "y": 1427,
+        "width": 38,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_1.15.png": {
+        "x": 1915,
+        "y": 1115,
+        "width": 44,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_1.45.png": {
+        "x": 1746,
+        "y": 819,
+        "width": 55,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_1.65.png": {
+        "x": 1535,
+        "y": 0,
+        "width": 63,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_1.9.png": {
+        "x": 940,
+        "y": 661,
+        "width": 72,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_2.15.png": {
+        "x": 940,
+        "y": 514,
+        "width": 82,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_2.4.png": {
+        "x": 92,
+        "y": 755,
+        "width": 91,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_2.65.png": {
+        "x": 413,
+        "y": 624,
+        "width": 101,
+        "height": 52
+    },
+    "detailedshield_c_02_alternative_2.9.png": {
+        "x": 627,
+        "y": 106,
+        "width": 110,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_1.png": {
+        "x": 1535,
+        "y": 1013,
+        "width": 42,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_1.15.png": {
+        "x": 1599,
+        "y": 330,
+        "width": 48,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_1.45.png": {
+        "x": 1535,
+        "y": 265,
+        "width": 61,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_1.65.png": {
+        "x": 1346,
+        "y": 575,
+        "width": 69,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_1.9.png": {
+        "x": 1036,
+        "y": 438,
+        "width": 80,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_2.15.png": {
+        "x": 849,
+        "y": 0,
+        "width": 90,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_2.4.png": {
+        "x": 515,
+        "y": 624,
+        "width": 101,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_2.65.png": {
+        "x": 351,
+        "y": 522,
+        "width": 111,
+        "height": 52
+    },
+    "detailedshield_c_02_bypass_2.9.png": {
+        "x": 501,
+        "y": 53,
+        "width": 122,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_1.png": {
+        "x": 1746,
+        "y": 974,
+        "width": 54,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_1.15.png": {
+        "x": 1535,
+        "y": 106,
+        "width": 62,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_1.45.png": {
+        "x": 1036,
+        "y": 791,
+        "width": 78,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_1.65.png": {
+        "x": 849,
+        "y": 212,
+        "width": 89,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_1.9.png": {
+        "x": 0,
+        "y": 624,
+        "width": 103,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_2.15.png": {
+        "x": 117,
+        "y": 522,
+        "width": 116,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_2.4.png": {
+        "x": 0,
+        "y": 420,
+        "width": 130,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_2.65.png": {
+        "x": 357,
+        "y": 53,
+        "width": 143,
+        "height": 52
+    },
+    "detailedshield_c_02_connector_2.9.png": {
+        "x": 0,
+        "y": 159,
+        "width": 157,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_1.png": {
+        "x": 1535,
+        "y": 1066,
+        "width": 42,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_1.15.png": {
+        "x": 1599,
+        "y": 383,
+        "width": 48,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_1.45.png": {
+        "x": 1535,
+        "y": 318,
+        "width": 61,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_1.65.png": {
+        "x": 1346,
+        "y": 628,
+        "width": 69,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_1.9.png": {
+        "x": 1036,
+        "y": 491,
+        "width": 80,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_2.15.png": {
+        "x": 849,
+        "y": 53,
+        "width": 90,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_2.4.png": {
+        "x": 617,
+        "y": 624,
+        "width": 101,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_2.65.png": {
+        "x": 463,
+        "y": 522,
+        "width": 111,
+        "height": 52
+    },
+    "detailedshield_c_02_extension_2.9.png": {
+        "x": 501,
+        "y": 106,
+        "width": 122,
+        "height": 52
+    },
+    "detailedshield_c_02_link_1.png": {
+        "x": 1823,
+        "y": 1722,
+        "width": 50,
+        "height": 52
+    },
+    "detailedshield_c_02_link_1.15.png": {
+        "x": 1672,
+        "y": 301,
+        "width": 58,
+        "height": 52
+    },
+    "detailedshield_c_02_link_1.45.png": {
+        "x": 1249,
+        "y": 475,
+        "width": 73,
+        "height": 52
+    },
+    "detailedshield_c_02_link_1.65.png": {
+        "x": 940,
+        "y": 249,
+        "width": 83,
+        "height": 52
+    },
+    "detailedshield_c_02_link_1.9.png": {
+        "x": 738,
+        "y": 347,
+        "width": 95,
+        "height": 52
+    },
+    "detailedshield_c_02_link_2.15.png": {
+        "x": 627,
+        "y": 212,
+        "width": 108,
+        "height": 52
+    },
+    "detailedshield_c_02_link_2.4.png": {
+        "x": 501,
+        "y": 159,
+        "width": 120,
+        "height": 52
+    },
+    "detailedshield_c_02_link_2.65.png": {
+        "x": 357,
+        "y": 212,
+        "width": 133,
+        "height": 52
+    },
+    "detailedshield_c_02_link_2.9.png": {
+        "x": 150,
+        "y": 212,
+        "width": 145,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_1.png": {
+        "x": 1438,
+        "y": 693,
+        "width": 66,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_1.15.png": {
+        "x": 1138,
+        "y": 767,
+        "width": 76,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_1.45.png": {
+        "x": 738,
+        "y": 194,
+        "width": 96,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_1.65.png": {
+        "x": 627,
+        "y": 159,
+        "width": 109,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_1.9.png": {
+        "x": 501,
+        "y": 0,
+        "width": 125,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_2.15.png": {
+        "x": 357,
+        "y": 159,
+        "width": 142,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_2.4.png": {
+        "x": 192,
+        "y": 53,
+        "width": 158,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_2.65.png": {
+        "x": 0,
+        "y": 106,
+        "width": 175,
+        "height": 52
+    },
+    "detailedshield_c_02_scenic_2.9.png": {
+        "x": 0,
+        "y": 0,
+        "width": 191,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_1.png": {
+        "x": 1746,
+        "y": 1027,
+        "width": 54,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_1.15.png": {
+        "x": 1535,
+        "y": 159,
+        "width": 62,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_1.45.png": {
+        "x": 1036,
+        "y": 844,
+        "width": 78,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_1.65.png": {
+        "x": 849,
+        "y": 265,
+        "width": 89,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_1.9.png": {
+        "x": 104,
+        "y": 624,
+        "width": 103,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_2.15.png": {
+        "x": 234,
+        "y": 522,
+        "width": 116,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_2.4.png": {
+        "x": 131,
+        "y": 420,
+        "width": 130,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_2.65.png": {
+        "x": 357,
+        "y": 106,
+        "width": 143,
+        "height": 52
+    },
+    "detailedshield_c_02_spur_2.9.png": {
+        "x": 158,
+        "y": 159,
+        "width": 157,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_1.png": {
+        "x": 1746,
+        "y": 1424,
+        "width": 50,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_1.15.png": {
+        "x": 1672,
+        "y": 354,
+        "width": 58,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_1.45.png": {
+        "x": 1249,
+        "y": 528,
+        "width": 73,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_1.65.png": {
+        "x": 940,
+        "y": 302,
+        "width": 83,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_1.9.png": {
+        "x": 738,
+        "y": 400,
+        "width": 95,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_2.15.png": {
+        "x": 627,
+        "y": 265,
+        "width": 108,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_2.4.png": {
+        "x": 501,
+        "y": 212,
+        "width": 120,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_2.65.png": {
+        "x": 357,
+        "y": 265,
+        "width": 133,
+        "height": 52
+    },
+    "detailedshield_c_02_toll_2.9.png": {
+        "x": 0,
+        "y": 265,
+        "width": 145,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_1.png": {
+        "x": 1535,
+        "y": 212,
+        "width": 62,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_1.15.png": {
+        "x": 940,
+        "y": 763,
+        "width": 71,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_1.45.png": {
+        "x": 849,
+        "y": 106,
+        "width": 90,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_1.65.png": {
+        "x": 208,
+        "y": 624,
+        "width": 102,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_1.9.png": {
+        "x": 501,
+        "y": 318,
+        "width": 118,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_2.15.png": {
+        "x": 0,
+        "y": 367,
+        "width": 133,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_2.4.png": {
+        "x": 0,
+        "y": 212,
+        "width": 149,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_2.65.png": {
+        "x": 192,
+        "y": 0,
+        "width": 164,
+        "height": 52
+    },
+    "detailedshield_c_02_truck_2.9.png": {
+        "x": 0,
+        "y": 53,
+        "width": 180,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_1.png": {
+        "x": 1746,
+        "y": 1477,
+        "width": 50,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_1.15.png": {
+        "x": 1672,
+        "y": 407,
+        "width": 58,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_1.45.png": {
+        "x": 1249,
+        "y": 581,
+        "width": 73,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_1.65.png": {
+        "x": 940,
+        "y": 355,
+        "width": 83,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_1.9.png": {
+        "x": 738,
+        "y": 453,
+        "width": 95,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_2.15.png": {
+        "x": 627,
+        "y": 318,
+        "width": 108,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_2.4.png": {
+        "x": 501,
+        "y": 265,
+        "width": 120,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_2.65.png": {
+        "x": 134,
+        "y": 367,
+        "width": 133,
+        "height": 52
+    },
+    "detailedshield_c_02_turnpike_2.9.png": {
+        "x": 146,
+        "y": 265,
+        "width": 145,
+        "height": 52
+    },
+    "detailedshield_c_02_1.png": {
+        "x": 2141,
+        "y": 215,
+        "width": 38,
+        "height": 42
+    },
+    "detailedshield_c_02_1.15.png": {
+        "x": 2043,
+        "y": 1268,
+        "width": 44,
+        "height": 42
+    },
+    "detailedshield_c_02_1.45.png": {
+        "x": 1915,
+        "y": 823,
+        "width": 55,
+        "height": 42
+    },
+    "detailedshield_c_02_1.65.png": {
+        "x": 1823,
+        "y": 1079,
+        "width": 63,
+        "height": 42
+    },
+    "detailedshield_c_02_1.9.png": {
+        "x": 1672,
+        "y": 215,
+        "width": 72,
+        "height": 42
+    },
+    "detailedshield_c_02_2.15.png": {
+        "x": 1438,
+        "y": 482,
+        "width": 82,
+        "height": 42
+    },
+    "detailedshield_c_02_2.4.png": {
+        "x": 1249,
+        "y": 215,
+        "width": 91,
+        "height": 42
+    },
+    "detailedshield_c_02_2.65.png": {
+        "x": 1036,
+        "y": 43,
+        "width": 101,
+        "height": 42
+    },
+    "detailedshield_c_02_2.9.png": {
+        "x": 213,
+        "y": 892,
+        "width": 110,
+        "height": 42
+    },
+    "detailedshield_d_01_1.png": {
+        "x": 2141,
+        "y": 547,
+        "width": 38,
+        "height": 34
+    },
+    "detailedshield_d_01_1.15.png": {
+        "x": 847,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "detailedshield_d_01_1.45.png": {
+        "x": 2043,
+        "y": 758,
+        "width": 55,
+        "height": 34
+    },
+    "detailedshield_d_01_1.65.png": {
+        "x": 1535,
+        "y": 1469,
+        "width": 63,
+        "height": 34
+    },
+    "detailedshield_d_01_1.9.png": {
+        "x": 1599,
+        "y": 989,
+        "width": 72,
+        "height": 34
+    },
+    "detailedshield_d_01_2.15.png": {
+        "x": 330,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "detailedshield_d_01_2.4.png": {
+        "x": 92,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "detailedshield_d_01_2.65.png": {
+        "x": 310,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "detailedshield_d_01_2.9.png": {
+        "x": 1084,
+        "y": 1179,
+        "width": 110,
+        "height": 34
+    },
+    "detailedshield_e_01_1.png": {
+        "x": 2141,
+        "y": 1851,
+        "width": 36,
+        "height": 30
+    },
+    "detailedshield_e_01_1.15.png": {
+        "x": 1762,
+        "y": 2043,
+        "width": 41,
+        "height": 30
+    },
+    "detailedshield_e_01_1.45.png": {
+        "x": 1249,
+        "y": 2043,
+        "width": 52,
+        "height": 30
+    },
+    "detailedshield_e_01_1.65.png": {
+        "x": 1926,
+        "y": 1909,
+        "width": 59,
+        "height": 30
+    },
+    "detailedshield_e_01_1.9.png": {
+        "x": 1110,
+        "y": 1942,
+        "width": 68,
+        "height": 30
+    },
+    "detailedshield_e_01_2.15.png": {
+        "x": 821,
+        "y": 1874,
+        "width": 77,
+        "height": 30
+    },
+    "detailedshield_e_01_2.4.png": {
+        "x": 1823,
+        "y": 1775,
+        "width": 86,
+        "height": 30
+    },
+    "detailedshield_e_01_2.65.png": {
+        "x": 1351,
+        "y": 1623,
+        "width": 95,
+        "height": 30
+    },
+    "detailedshield_e_01_2.9.png": {
+        "x": 1329,
+        "y": 1333,
+        "width": 104,
+        "height": 30
+    },
+    "detailedshield_e_02_1.png": {
+        "x": 2141,
+        "y": 1882,
+        "width": 36,
+        "height": 30
+    },
+    "detailedshield_e_02_1.15.png": {
+        "x": 1804,
+        "y": 2043,
+        "width": 41,
+        "height": 30
+    },
+    "detailedshield_e_02_1.45.png": {
+        "x": 1302,
+        "y": 2043,
+        "width": 52,
+        "height": 30
+    },
+    "detailedshield_e_02_1.65.png": {
+        "x": 1871,
+        "y": 1977,
+        "width": 59,
+        "height": 30
+    },
+    "detailedshield_e_02_1.9.png": {
+        "x": 1179,
+        "y": 1942,
+        "width": 68,
+        "height": 30
+    },
+    "detailedshield_e_02_2.15.png": {
+        "x": 899,
+        "y": 1874,
+        "width": 77,
+        "height": 30
+    },
+    "detailedshield_e_02_2.4.png": {
+        "x": 0,
+        "y": 1808,
+        "width": 86,
+        "height": 30
+    },
+    "detailedshield_e_02_2.65.png": {
+        "x": 1447,
+        "y": 1623,
+        "width": 95,
+        "height": 30
+    },
+    "detailedshield_e_02_2.9.png": {
+        "x": 1428,
+        "y": 1405,
+        "width": 104,
+        "height": 30
+    },
+    "detailedshield_f_01_1.png": {
+        "x": 1986,
+        "y": 1513,
+        "width": 44,
+        "height": 40
+    },
+    "detailedshield_f_01_1.15.png": {
+        "x": 1986,
+        "y": 564,
+        "width": 51,
+        "height": 40
+    },
+    "detailedshield_f_01_1.45.png": {
+        "x": 1672,
+        "y": 1267,
+        "width": 64,
+        "height": 40
+    },
+    "detailedshield_f_01_1.65.png": {
+        "x": 1672,
+        "y": 685,
+        "width": 73,
+        "height": 40
+    },
+    "detailedshield_f_01_1.9.png": {
+        "x": 1438,
+        "y": 980,
+        "width": 84,
+        "height": 40
+    },
+    "detailedshield_f_01_2.15.png": {
+        "x": 1249,
+        "y": 301,
+        "width": 95,
+        "height": 40
+    },
+    "detailedshield_f_01_2.4.png": {
+        "x": 631,
+        "y": 575,
+        "width": 106,
+        "height": 40
+    },
+    "detailedshield_f_01_2.65.png": {
+        "x": 184,
+        "y": 755,
+        "width": 117,
+        "height": 40
+    },
+    "detailedshield_f_01_2.9.png": {
+        "x": 373,
+        "y": 575,
+        "width": 128,
+        "height": 40
+    },
+    "detailedshield_g_01_1.png": {
+        "x": 82,
+        "y": 2125,
+        "width": 42,
+        "height": 38
+    },
+    "detailedshield_g_01_1.15.png": {
+        "x": 2043,
+        "y": 1510,
+        "width": 48,
+        "height": 38
+    },
+    "detailedshield_g_01_1.45.png": {
+        "x": 1915,
+        "y": 663,
+        "width": 61,
+        "height": 38
+    },
+    "detailedshield_g_01_1.65.png": {
+        "x": 1823,
+        "y": 1564,
+        "width": 69,
+        "height": 38
+    },
+    "detailedshield_g_01_1.9.png": {
+        "x": 0,
+        "y": 1658,
+        "width": 80,
+        "height": 38
+    },
+    "detailedshield_g_01_2.15.png": {
+        "x": 1438,
+        "y": 746,
+        "width": 90,
+        "height": 38
+    },
+    "detailedshield_g_01_2.4.png": {
+        "x": 1138,
+        "y": 976,
+        "width": 101,
+        "height": 38
+    },
+    "detailedshield_g_01_2.65.png": {
+        "x": 314,
+        "y": 986,
+        "width": 111,
+        "height": 38
+    },
+    "detailedshield_g_01_2.9.png": {
+        "x": 538,
+        "y": 755,
+        "width": 122,
+        "height": 38
+    },
+    "detailedshield_h_01_1.png": {
+        "x": 2141,
+        "y": 436,
+        "width": 38,
+        "height": 40
+    },
+    "detailedshield_h_01_1.15.png": {
+        "x": 1986,
+        "y": 1554,
+        "width": 44,
+        "height": 40
+    },
+    "detailedshield_h_01_1.45.png": {
+        "x": 1535,
+        "y": 761,
+        "width": 55,
+        "height": 40
+    },
+    "detailedshield_h_01_1.65.png": {
+        "x": 1672,
+        "y": 1484,
+        "width": 63,
+        "height": 40
+    },
+    "detailedshield_h_01_1.9.png": {
+        "x": 1746,
+        "y": 234,
+        "width": 72,
+        "height": 40
+    },
+    "detailedshield_h_01_2.15.png": {
+        "x": 849,
+        "y": 318,
+        "width": 82,
+        "height": 40
+    },
+    "detailedshield_h_01_2.4.png": {
+        "x": 940,
+        "y": 816,
+        "width": 91,
+        "height": 40
+    },
+    "detailedshield_h_01_2.65.png": {
+        "x": 1036,
+        "y": 897,
+        "width": 101,
+        "height": 40
+    },
+    "detailedshield_h_01_2.9.png": {
+        "x": 341,
+        "y": 851,
+        "width": 110,
+        "height": 40
+    },
+    "hexagon_a_01_1.png": {
+        "x": 1411,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "hexagon_a_01_1.15.png": {
+        "x": 590,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "hexagon_a_01_1.45.png": {
+        "x": 561,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "hexagon_a_01_1.65.png": {
+        "x": 1915,
+        "y": 1848,
+        "width": 69,
+        "height": 32
+    },
+    "hexagon_a_01_1.9.png": {
+        "x": 154,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_a_01_2.15.png": {
+        "x": 231,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "hexagon_a_01_2.4.png": {
+        "x": 291,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "hexagon_a_01_2.65.png": {
+        "x": 515,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "hexagon_a_01_2.9.png": {
+        "x": 349,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "hexagon_a_02_1.png": {
+        "x": 1454,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "hexagon_a_02_1.15.png": {
+        "x": 639,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "hexagon_a_02_1.45.png": {
+        "x": 623,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "hexagon_a_02_1.65.png": {
+        "x": 514,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "hexagon_a_02_1.9.png": {
+        "x": 235,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_a_02_2.15.png": {
+        "x": 322,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "hexagon_a_02_2.4.png": {
+        "x": 393,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "hexagon_a_02_2.65.png": {
+        "x": 627,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "hexagon_a_02_2.9.png": {
+        "x": 472,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "hexagon_a_03_1.png": {
+        "x": 1497,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "hexagon_a_03_1.15.png": {
+        "x": 688,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "hexagon_a_03_1.45.png": {
+        "x": 685,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "hexagon_a_03_1.65.png": {
+        "x": 584,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "hexagon_a_03_1.9.png": {
+        "x": 316,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_a_03_2.15.png": {
+        "x": 413,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "hexagon_a_03_2.4.png": {
+        "x": 495,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "hexagon_a_03_2.65.png": {
+        "x": 739,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "hexagon_a_03_2.9.png": {
+        "x": 595,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "hexagon_a_04_1.png": {
+        "x": 1540,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "hexagon_a_04_1.15.png": {
+        "x": 737,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "hexagon_a_04_1.45.png": {
+        "x": 747,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "hexagon_a_04_1.65.png": {
+        "x": 654,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "hexagon_a_04_1.9.png": {
+        "x": 397,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_a_04_2.15.png": {
+        "x": 504,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "hexagon_a_04_2.4.png": {
+        "x": 597,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "hexagon_a_04_2.65.png": {
+        "x": 851,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "hexagon_a_04_2.9.png": {
+        "x": 718,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "hexagon_a_05_1.png": {
+        "x": 2102,
+        "y": 248,
+        "width": 30,
+        "height": 32
+    },
+    "hexagon_a_05_1.15.png": {
+        "x": 2141,
+        "y": 1686,
+        "width": 35,
+        "height": 32
+    },
+    "hexagon_a_05_1.45.png": {
+        "x": 1299,
+        "y": 1296,
+        "width": 44,
+        "height": 32
+    },
+    "hexagon_a_05_1.65.png": {
+        "x": 1693,
+        "y": 1658,
+        "width": 50,
+        "height": 32
+    },
+    "hexagon_a_05_1.9.png": {
+        "x": 2043,
+        "y": 1477,
+        "width": 57,
+        "height": 32
+    },
+    "hexagon_a_05_2.15.png": {
+        "x": 780,
+        "y": 1942,
+        "width": 65,
+        "height": 32
+    },
+    "hexagon_a_05_2.4.png": {
+        "x": 222,
+        "y": 1909,
+        "width": 72,
+        "height": 32
+    },
+    "hexagon_a_05_2.65.png": {
+        "x": 478,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_a_05_2.9.png": {
+        "x": 1658,
+        "y": 1771,
+        "width": 87,
+        "height": 32
+    },
+    "hexagon_a_06_1.png": {
+        "x": 1583,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "hexagon_a_06_1.15.png": {
+        "x": 786,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "hexagon_a_06_1.45.png": {
+        "x": 809,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "hexagon_a_06_1.65.png": {
+        "x": 724,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "hexagon_a_06_1.9.png": {
+        "x": 559,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_a_06_2.15.png": {
+        "x": 595,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "hexagon_a_06_2.4.png": {
+        "x": 699,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "hexagon_a_06_2.65.png": {
+        "x": 963,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "hexagon_a_06_2.9.png": {
+        "x": 841,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "hexagon_b_01_1.png": {
+        "x": 1626,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "hexagon_b_01_1.15.png": {
+        "x": 835,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "hexagon_b_01_1.45.png": {
+        "x": 871,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "hexagon_b_01_1.65.png": {
+        "x": 794,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "hexagon_b_01_1.9.png": {
+        "x": 640,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "hexagon_b_01_2.15.png": {
+        "x": 686,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "hexagon_b_01_2.4.png": {
+        "x": 801,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "hexagon_b_01_2.65.png": {
+        "x": 1075,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "hexagon_b_01_2.9.png": {
+        "x": 964,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "india_01_1.png": {
+        "x": 2181,
+        "y": 492,
+        "width": 34,
+        "height": 44
+    },
+    "india_01_1.15.png": {
+        "x": 120,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "india_01_1.45.png": {
+        "x": 1535,
+        "y": 1254,
+        "width": 49,
+        "height": 44
+    },
+    "india_01_1.65.png": {
+        "x": 1599,
+        "y": 774,
+        "width": 56,
+        "height": 44
+    },
+    "india_01_1.9.png": {
+        "x": 1746,
+        "y": 533,
+        "width": 65,
+        "height": 44
+    },
+    "india_01_2.15.png": {
+        "x": 222,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "india_01_2.4.png": {
+        "x": 1346,
+        "y": 176,
+        "width": 82,
+        "height": 44
+    },
+    "india_01_2.65.png": {
+        "x": 1138,
+        "y": 587,
+        "width": 90,
+        "height": 44
+    },
+    "india_01_2.9.png": {
+        "x": 500,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "india_02_1.png": {
+        "x": 2181,
+        "y": 537,
+        "width": 34,
+        "height": 44
+    },
+    "india_02_1.15.png": {
+        "x": 160,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "india_02_1.45.png": {
+        "x": 1535,
+        "y": 1299,
+        "width": 49,
+        "height": 44
+    },
+    "india_02_1.65.png": {
+        "x": 1599,
+        "y": 819,
+        "width": 56,
+        "height": 44
+    },
+    "india_02_1.9.png": {
+        "x": 1746,
+        "y": 578,
+        "width": 65,
+        "height": 44
+    },
+    "india_02_2.15.png": {
+        "x": 296,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "india_02_2.4.png": {
+        "x": 1346,
+        "y": 221,
+        "width": 82,
+        "height": 44
+    },
+    "india_02_2.65.png": {
+        "x": 1138,
+        "y": 632,
+        "width": 90,
+        "height": 44
+    },
+    "india_02_2.9.png": {
+        "x": 600,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "indonesia_01_1.png": {
+        "x": 2141,
+        "y": 582,
+        "width": 38,
+        "height": 34
+    },
+    "indonesia_01_1.15.png": {
+        "x": 892,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "indonesia_01_1.45.png": {
+        "x": 2043,
+        "y": 793,
+        "width": 55,
+        "height": 34
+    },
+    "indonesia_01_1.65.png": {
+        "x": 784,
+        "y": 755,
+        "width": 63,
+        "height": 34
+    },
+    "indonesia_01_1.9.png": {
+        "x": 1599,
+        "y": 1024,
+        "width": 72,
+        "height": 34
+    },
+    "indonesia_01_2.15.png": {
+        "x": 413,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "indonesia_01_2.4.png": {
+        "x": 184,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "indonesia_01_2.65.png": {
+        "x": 412,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "indonesia_01_2.9.png": {
+        "x": 300,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "netherlands_01_1.png": {
+        "x": 2141,
+        "y": 1113,
+        "width": 38,
+        "height": 32
+    },
+    "netherlands_01_1.15.png": {
+        "x": 1276,
+        "y": 2088,
+        "width": 44,
+        "height": 32
+    },
+    "netherlands_01_1.45.png": {
+        "x": 2043,
+        "y": 1933,
+        "width": 55,
+        "height": 32
+    },
+    "netherlands_01_1.65.png": {
+        "x": 369,
+        "y": 1977,
+        "width": 63,
+        "height": 32
+    },
+    "netherlands_01_1.9.png": {
+        "x": 295,
+        "y": 1909,
+        "width": 72,
+        "height": 32
+    },
+    "netherlands_01_2.15.png": {
+        "x": 1823,
+        "y": 1296,
+        "width": 82,
+        "height": 32
+    },
+    "netherlands_01_2.4.png": {
+        "x": 1417,
+        "y": 1658,
+        "width": 91,
+        "height": 32
+    },
+    "netherlands_01_2.65.png": {
+        "x": 903,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "netherlands_01_2.9.png": {
+        "x": 884,
+        "y": 1333,
+        "width": 110,
+        "height": 32
+    },
+    "octagon_01_1.png": {
+        "x": 1669,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "octagon_01_1.15.png": {
+        "x": 884,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "octagon_01_1.45.png": {
+        "x": 933,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "octagon_01_1.65.png": {
+        "x": 864,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "octagon_01_1.9.png": {
+        "x": 721,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "octagon_01_2.15.png": {
+        "x": 777,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "octagon_01_2.4.png": {
+        "x": 1005,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "octagon_01_2.65.png": {
+        "x": 1187,
+        "y": 1296,
+        "width": 111,
+        "height": 32
+    },
+    "octagon_01_2.9.png": {
+        "x": 1087,
+        "y": 1111,
+        "width": 122,
+        "height": 32
+    },
+    "octagon_02_1.png": {
+        "x": 1712,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "octagon_02_1.15.png": {
+        "x": 933,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "octagon_02_1.45.png": {
+        "x": 995,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "octagon_02_1.65.png": {
+        "x": 934,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "octagon_02_1.9.png": {
+        "x": 802,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "octagon_02_2.15.png": {
+        "x": 868,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "octagon_02_2.4.png": {
+        "x": 1107,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "octagon_02_2.65.png": {
+        "x": 100,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "octagon_02_2.9.png": {
+        "x": 0,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "octagon_03_1.png": {
+        "x": 1755,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "octagon_03_1.15.png": {
+        "x": 982,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "octagon_03_1.45.png": {
+        "x": 1057,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "octagon_03_1.65.png": {
+        "x": 1004,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "octagon_03_1.9.png": {
+        "x": 883,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "octagon_03_2.15.png": {
+        "x": 959,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "octagon_03_2.4.png": {
+        "x": 1209,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "octagon_03_2.65.png": {
+        "x": 212,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "octagon_03_2.9.png": {
+        "x": 123,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "octagon_04_1.png": {
+        "x": 1798,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "octagon_04_1.15.png": {
+        "x": 1031,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "octagon_04_1.45.png": {
+        "x": 1119,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "octagon_04_1.65.png": {
+        "x": 1074,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "octagon_04_1.9.png": {
+        "x": 964,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "octagon_04_2.15.png": {
+        "x": 1050,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "octagon_04_2.4.png": {
+        "x": 1311,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "octagon_04_2.65.png": {
+        "x": 324,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "octagon_04_2.9.png": {
+        "x": 246,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "octagon_05_1.png": {
+        "x": 1841,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "octagon_05_1.15.png": {
+        "x": 1080,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "octagon_05_1.45.png": {
+        "x": 1181,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "octagon_05_1.65.png": {
+        "x": 1144,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "octagon_05_1.9.png": {
+        "x": 1045,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "octagon_05_2.15.png": {
+        "x": 1141,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "octagon_05_2.4.png": {
+        "x": 1413,
+        "y": 1471,
+        "width": 101,
+        "height": 32
+    },
+    "octagon_05_2.65.png": {
+        "x": 436,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "octagon_05_2.9.png": {
+        "x": 369,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "oval_01_1.png": {
+        "x": 1633,
+        "y": 2043,
+        "width": 42,
+        "height": 30
+    },
+    "oval_01_1.15.png": {
+        "x": 1863,
+        "y": 1839,
+        "width": 48,
+        "height": 30
+    },
+    "oval_01_1.45.png": {
+        "x": 1685,
+        "y": 1977,
+        "width": 61,
+        "height": 30
+    },
+    "oval_01_1.65.png": {
+        "x": 1716,
+        "y": 1909,
+        "width": 69,
+        "height": 30
+    },
+    "oval_01_1.9.png": {
+        "x": 1701,
+        "y": 1839,
+        "width": 80,
+        "height": 30
+    },
+    "oval_01_2.15.png": {
+        "x": 1823,
+        "y": 781,
+        "width": 90,
+        "height": 30
+    },
+    "oval_01_2.4.png": {
+        "x": 637,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "oval_01_2.65.png": {
+        "x": 1217,
+        "y": 1333,
+        "width": 111,
+        "height": 30
+    },
+    "oval_01_2.9.png": {
+        "x": 861,
+        "y": 1146,
+        "width": 122,
+        "height": 30
+    },
+    "oval_02_1.png": {
+        "x": 1676,
+        "y": 2043,
+        "width": 42,
+        "height": 30
+    },
+    "oval_02_1.15.png": {
+        "x": 1355,
+        "y": 2043,
+        "width": 48,
+        "height": 30
+    },
+    "oval_02_1.45.png": {
+        "x": 1747,
+        "y": 1977,
+        "width": 61,
+        "height": 30
+    },
+    "oval_02_1.65.png": {
+        "x": 1786,
+        "y": 1909,
+        "width": 69,
+        "height": 30
+    },
+    "oval_02_1.9.png": {
+        "x": 1782,
+        "y": 1839,
+        "width": 80,
+        "height": 30
+    },
+    "oval_02_2.15.png": {
+        "x": 1823,
+        "y": 812,
+        "width": 90,
+        "height": 30
+    },
+    "oval_02_2.4.png": {
+        "x": 739,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "oval_02_2.65.png": {
+        "x": 1204,
+        "y": 1405,
+        "width": 111,
+        "height": 30
+    },
+    "oval_02_2.9.png": {
+        "x": 984,
+        "y": 1146,
+        "width": 122,
+        "height": 30
+    },
+    "oval_03_1.png": {
+        "x": 1719,
+        "y": 2043,
+        "width": 42,
+        "height": 30
+    },
+    "oval_03_1.15.png": {
+        "x": 1404,
+        "y": 2043,
+        "width": 48,
+        "height": 30
+    },
+    "oval_03_1.45.png": {
+        "x": 1809,
+        "y": 1977,
+        "width": 61,
+        "height": 30
+    },
+    "oval_03_1.65.png": {
+        "x": 1856,
+        "y": 1909,
+        "width": 69,
+        "height": 30
+    },
+    "oval_03_1.9.png": {
+        "x": 740,
+        "y": 1874,
+        "width": 80,
+        "height": 30
+    },
+    "oval_03_2.15.png": {
+        "x": 1823,
+        "y": 843,
+        "width": 90,
+        "height": 30
+    },
+    "oval_03_2.4.png": {
+        "x": 841,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "oval_03_2.65.png": {
+        "x": 1316,
+        "y": 1405,
+        "width": 111,
+        "height": 30
+    },
+    "oval_03_2.9.png": {
+        "x": 1107,
+        "y": 1146,
+        "width": 122,
+        "height": 30
+    },
+    "pentagon_01_1.png": {
+        "x": 2181,
+        "y": 0,
+        "width": 40,
+        "height": 38
+    },
+    "pentagon_01_1.15.png": {
+        "x": 1986,
+        "y": 1800,
+        "width": 46,
+        "height": 38
+    },
+    "pentagon_01_1.45.png": {
+        "x": 1535,
+        "y": 527,
+        "width": 58,
+        "height": 38
+    },
+    "pentagon_01_1.65.png": {
+        "x": 1599,
+        "y": 96,
+        "width": 66,
+        "height": 38
+    },
+    "pentagon_01_1.9.png": {
+        "x": 1746,
+        "y": 0,
+        "width": 76,
+        "height": 38
+    },
+    "pentagon_01_2.15.png": {
+        "x": 849,
+        "y": 482,
+        "width": 86,
+        "height": 38
+    },
+    "pentagon_01_2.4.png": {
+        "x": 0,
+        "y": 1257,
+        "width": 96,
+        "height": 38
+    },
+    "pentagon_01_2.65.png": {
+        "x": 306,
+        "y": 1070,
+        "width": 106,
+        "height": 38
+    },
+    "pentagon_01_2.9.png": {
+        "x": 235,
+        "y": 808,
+        "width": 116,
+        "height": 38
+    },
+    "pentagon_02_1.png": {
+        "x": 2181,
+        "y": 39,
+        "width": 40,
+        "height": 38
+    },
+    "pentagon_02_1.15.png": {
+        "x": 1986,
+        "y": 1839,
+        "width": 46,
+        "height": 38
+    },
+    "pentagon_02_1.45.png": {
+        "x": 1535,
+        "y": 566,
+        "width": 58,
+        "height": 38
+    },
+    "pentagon_02_1.65.png": {
+        "x": 1599,
+        "y": 135,
+        "width": 66,
+        "height": 38
+    },
+    "pentagon_02_1.9.png": {
+        "x": 1746,
+        "y": 39,
+        "width": 76,
+        "height": 38
+    },
+    "pentagon_02_2.15.png": {
+        "x": 849,
+        "y": 521,
+        "width": 86,
+        "height": 38
+    },
+    "pentagon_02_2.4.png": {
+        "x": 97,
+        "y": 1257,
+        "width": 96,
+        "height": 38
+    },
+    "pentagon_02_2.65.png": {
+        "x": 413,
+        "y": 1070,
+        "width": 106,
+        "height": 38
+    },
+    "pentagon_02_2.9.png": {
+        "x": 352,
+        "y": 808,
+        "width": 116,
+        "height": 38
+    },
+    "pentagon_03_1.png": {
+        "x": 2181,
+        "y": 78,
+        "width": 40,
+        "height": 38
+    },
+    "pentagon_03_1.15.png": {
+        "x": 1986,
+        "y": 1878,
+        "width": 46,
+        "height": 38
+    },
+    "pentagon_03_1.45.png": {
+        "x": 1535,
+        "y": 605,
+        "width": 58,
+        "height": 38
+    },
+    "pentagon_03_1.65.png": {
+        "x": 1599,
+        "y": 174,
+        "width": 66,
+        "height": 38
+    },
+    "pentagon_03_1.9.png": {
+        "x": 1746,
+        "y": 78,
+        "width": 76,
+        "height": 38
+    },
+    "pentagon_03_2.15.png": {
+        "x": 849,
+        "y": 560,
+        "width": 86,
+        "height": 38
+    },
+    "pentagon_03_2.4.png": {
+        "x": 194,
+        "y": 1257,
+        "width": 96,
+        "height": 38
+    },
+    "pentagon_03_2.65.png": {
+        "x": 520,
+        "y": 1070,
+        "width": 106,
+        "height": 38
+    },
+    "pentagon_03_2.9.png": {
+        "x": 469,
+        "y": 808,
+        "width": 116,
+        "height": 38
+    },
+    "pentagon_04_1.png": {
+        "x": 2181,
+        "y": 117,
+        "width": 40,
+        "height": 38
+    },
+    "pentagon_04_1.15.png": {
+        "x": 1986,
+        "y": 1917,
+        "width": 46,
+        "height": 38
+    },
+    "pentagon_04_1.45.png": {
+        "x": 1535,
+        "y": 644,
+        "width": 58,
+        "height": 38
+    },
+    "pentagon_04_1.65.png": {
+        "x": 1599,
+        "y": 213,
+        "width": 66,
+        "height": 38
+    },
+    "pentagon_04_1.9.png": {
+        "x": 1746,
+        "y": 117,
+        "width": 76,
+        "height": 38
+    },
+    "pentagon_04_2.15.png": {
+        "x": 849,
+        "y": 599,
+        "width": 86,
+        "height": 38
+    },
+    "pentagon_04_2.4.png": {
+        "x": 291,
+        "y": 1257,
+        "width": 96,
+        "height": 38
+    },
+    "pentagon_04_2.65.png": {
+        "x": 627,
+        "y": 1070,
+        "width": 106,
+        "height": 38
+    },
+    "pentagon_04_2.9.png": {
+        "x": 586,
+        "y": 808,
+        "width": 116,
+        "height": 38
+    },
+    "pentagon_05_1.png": {
+        "x": 2043,
+        "y": 1354,
+        "width": 46,
+        "height": 40
+    },
+    "pentagon_05_1.15.png": {
+        "x": 1986,
+        "y": 78,
+        "width": 53,
+        "height": 40
+    },
+    "pentagon_05_1.45.png": {
+        "x": 1823,
+        "y": 944,
+        "width": 67,
+        "height": 40
+    },
+    "pentagon_05_1.65.png": {
+        "x": 0,
+        "y": 1697,
+        "width": 76,
+        "height": 40
+    },
+    "pentagon_05_1.9.png": {
+        "x": 1346,
+        "y": 730,
+        "width": 87,
+        "height": 40
+    },
+    "pentagon_05_2.15.png": {
+        "x": 1138,
+        "y": 411,
+        "width": 99,
+        "height": 40
+    },
+    "pentagon_05_2.4.png": {
+        "x": 452,
+        "y": 851,
+        "width": 110,
+        "height": 40
+    },
+    "pentagon_05_2.65.png": {
+        "x": 252,
+        "y": 677,
+        "width": 122,
+        "height": 40
+    },
+    "pentagon_05_2.9.png": {
+        "x": 239,
+        "y": 575,
+        "width": 133,
+        "height": 40
+    },
+    "pill_01_1.png": {
+        "x": 2141,
+        "y": 1913,
+        "width": 38,
+        "height": 28
+    },
+    "pill_01_1.15.png": {
+        "x": 1933,
+        "y": 1942,
+        "width": 44,
+        "height": 28
+    },
+    "pill_01_1.45.png": {
+        "x": 512,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "pill_01_1.65.png": {
+        "x": 1613,
+        "y": 1942,
+        "width": 63,
+        "height": 28
+    },
+    "pill_01_1.9.png": {
+        "x": 1837,
+        "y": 1808,
+        "width": 72,
+        "height": 28
+    },
+    "pill_01_2.15.png": {
+        "x": 1007,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "pill_01_2.4.png": {
+        "x": 1443,
+        "y": 1440,
+        "width": 91,
+        "height": 28
+    },
+    "pill_01_2.65.png": {
+        "x": 1543,
+        "y": 1623,
+        "width": 101,
+        "height": 28
+    },
+    "pill_01_2.9.png": {
+        "x": 444,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_01_1.png": {
+        "x": 2141,
+        "y": 1942,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_01_1.15.png": {
+        "x": 1995,
+        "y": 1977,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_01_1.45.png": {
+        "x": 568,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_01_1.65.png": {
+        "x": 1677,
+        "y": 1942,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_01_1.9.png": {
+        "x": 1309,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_01_2.15.png": {
+        "x": 1090,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_01_2.4.png": {
+        "x": 1508,
+        "y": 1738,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_01_2.65.png": {
+        "x": 182,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_01_2.9.png": {
+        "x": 555,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_02_1.png": {
+        "x": 2141,
+        "y": 1971,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_02_1.15.png": {
+        "x": 1296,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_02_1.45.png": {
+        "x": 624,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_02_1.65.png": {
+        "x": 1741,
+        "y": 1942,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_02_1.9.png": {
+        "x": 1382,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_02_2.15.png": {
+        "x": 1173,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_02_2.4.png": {
+        "x": 1600,
+        "y": 1738,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_02_2.65.png": {
+        "x": 284,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_02_2.9.png": {
+        "x": 666,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_03_1.png": {
+        "x": 2141,
+        "y": 2000,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_03_1.15.png": {
+        "x": 1341,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_03_1.45.png": {
+        "x": 680,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_03_1.65.png": {
+        "x": 1805,
+        "y": 1942,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_03_1.9.png": {
+        "x": 1455,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_03_2.15.png": {
+        "x": 1256,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_03_2.4.png": {
+        "x": 1692,
+        "y": 1738,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_03_2.65.png": {
+        "x": 386,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_03_2.9.png": {
+        "x": 777,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_04_1.png": {
+        "x": 2141,
+        "y": 2029,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_04_1.15.png": {
+        "x": 1386,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_04_1.45.png": {
+        "x": 736,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_04_1.65.png": {
+        "x": 1869,
+        "y": 1942,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_04_1.9.png": {
+        "x": 1528,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_04_2.15.png": {
+        "x": 1339,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_04_2.4.png": {
+        "x": 87,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_04_2.65.png": {
+        "x": 488,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_04_2.9.png": {
+        "x": 888,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_05_1.png": {
+        "x": 2141,
+        "y": 2058,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_05_1.15.png": {
+        "x": 1431,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_05_1.45.png": {
+        "x": 792,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_05_1.65.png": {
+        "x": 1931,
+        "y": 1977,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_05_1.9.png": {
+        "x": 1601,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_05_2.15.png": {
+        "x": 1422,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_05_2.4.png": {
+        "x": 179,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_05_2.65.png": {
+        "x": 590,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_05_2.9.png": {
+        "x": 999,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_06_1.png": {
+        "x": 2141,
+        "y": 2087,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_06_1.15.png": {
+        "x": 1476,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_06_1.45.png": {
+        "x": 848,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_06_1.65.png": {
+        "x": 0,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_06_1.9.png": {
+        "x": 1674,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_06_2.15.png": {
+        "x": 1505,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_06_2.4.png": {
+        "x": 271,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_06_2.65.png": {
+        "x": 692,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_06_2.9.png": {
+        "x": 1110,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_07_1.png": {
+        "x": 2102,
+        "y": 45,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_07_1.15.png": {
+        "x": 1521,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_07_1.45.png": {
+        "x": 904,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_07_1.65.png": {
+        "x": 64,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_07_1.9.png": {
+        "x": 1747,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_07_2.15.png": {
+        "x": 1588,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_07_2.4.png": {
+        "x": 363,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_07_2.65.png": {
+        "x": 794,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_07_2.9.png": {
+        "x": 1221,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_08_1.png": {
+        "x": 2102,
+        "y": 74,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_08_1.15.png": {
+        "x": 1566,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_08_1.45.png": {
+        "x": 960,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_08_1.65.png": {
+        "x": 128,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_08_1.9.png": {
+        "x": 1820,
+        "y": 1874,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_08_2.15.png": {
+        "x": 1671,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_08_2.4.png": {
+        "x": 455,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_08_2.65.png": {
+        "x": 896,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_08_2.9.png": {
+        "x": 1332,
+        "y": 1440,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_09_1.png": {
+        "x": 2102,
+        "y": 103,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_09_1.15.png": {
+        "x": 1611,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_09_1.45.png": {
+        "x": 1016,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_09_1.65.png": {
+        "x": 192,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_09_1.9.png": {
+        "x": 1248,
+        "y": 1942,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_09_2.15.png": {
+        "x": 1754,
+        "y": 1808,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_09_2.4.png": {
+        "x": 547,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_09_2.65.png": {
+        "x": 998,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_09_2.9.png": {
+        "x": 1001,
+        "y": 1506,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_10_1.png": {
+        "x": 2102,
+        "y": 132,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_10_1.15.png": {
+        "x": 1656,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_10_1.45.png": {
+        "x": 1072,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_10_1.65.png": {
+        "x": 256,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_10_1.9.png": {
+        "x": 1321,
+        "y": 1942,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_10_2.15.png": {
+        "x": 977,
+        "y": 1874,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_10_2.4.png": {
+        "x": 639,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_10_2.65.png": {
+        "x": 1100,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_10_2.9.png": {
+        "x": 1112,
+        "y": 1506,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_11_1.png": {
+        "x": 2102,
+        "y": 161,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_11_1.15.png": {
+        "x": 1701,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_11_1.45.png": {
+        "x": 1128,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_11_1.65.png": {
+        "x": 320,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_11_1.9.png": {
+        "x": 1394,
+        "y": 1942,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_11_2.15.png": {
+        "x": 1060,
+        "y": 1874,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_11_2.4.png": {
+        "x": 731,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_11_2.65.png": {
+        "x": 1202,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_11_2.9.png": {
+        "x": 1223,
+        "y": 1506,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_12_1.png": {
+        "x": 2102,
+        "y": 190,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_12_1.15.png": {
+        "x": 1746,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_12_1.45.png": {
+        "x": 1184,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_12_1.65.png": {
+        "x": 384,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_12_1.9.png": {
+        "x": 1467,
+        "y": 1942,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_12_2.15.png": {
+        "x": 1143,
+        "y": 1874,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_12_2.4.png": {
+        "x": 823,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_12_2.65.png": {
+        "x": 1304,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_12_2.9.png": {
+        "x": 1334,
+        "y": 1506,
+        "width": 110,
+        "height": 28
+    },
+    "rectangle_13_1.png": {
+        "x": 2102,
+        "y": 219,
+        "width": 38,
+        "height": 28
+    },
+    "rectangle_13_1.15.png": {
+        "x": 1791,
+        "y": 2014,
+        "width": 44,
+        "height": 28
+    },
+    "rectangle_13_1.45.png": {
+        "x": 1240,
+        "y": 2014,
+        "width": 55,
+        "height": 28
+    },
+    "rectangle_13_1.65.png": {
+        "x": 448,
+        "y": 2014,
+        "width": 63,
+        "height": 28
+    },
+    "rectangle_13_1.9.png": {
+        "x": 1540,
+        "y": 1942,
+        "width": 72,
+        "height": 28
+    },
+    "rectangle_13_2.15.png": {
+        "x": 1226,
+        "y": 1874,
+        "width": 82,
+        "height": 28
+    },
+    "rectangle_13_2.4.png": {
+        "x": 915,
+        "y": 1808,
+        "width": 91,
+        "height": 28
+    },
+    "rectangle_13_2.65.png": {
+        "x": 1406,
+        "y": 1738,
+        "width": 101,
+        "height": 28
+    },
+    "rectangle_13_2.9.png": {
+        "x": 1445,
+        "y": 1506,
+        "width": 110,
+        "height": 28
+    },
+    "rhombus_01_1.png": {
+        "x": 1986,
+        "y": 687,
+        "width": 46,
+        "height": 44
+    },
+    "rhombus_01_1.15.png": {
+        "x": 1915,
+        "y": 491,
+        "width": 53,
+        "height": 44
+    },
+    "rhombus_01_1.45.png": {
+        "x": 1672,
+        "y": 554,
+        "width": 67,
+        "height": 44
+    },
+    "rhombus_01_1.65.png": {
+        "x": 1438,
+        "y": 1340,
+        "width": 76,
+        "height": 44
+    },
+    "rhombus_01_1.9.png": {
+        "x": 1249,
+        "y": 82,
+        "width": 87,
+        "height": 44
+    },
+    "rhombus_01_2.15.png": {
+        "x": 700,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "rhombus_01_2.4.png": {
+        "x": 738,
+        "y": 506,
+        "width": 110,
+        "height": 44
+    },
+    "rhombus_01_2.65.png": {
+        "x": 396,
+        "y": 473,
+        "width": 122,
+        "height": 44
+    },
+    "rhombus_01_2.9.png": {
+        "x": 128,
+        "y": 473,
+        "width": 133,
+        "height": 44
+    },
+    "rhombus_02_1.png": {
+        "x": 1986,
+        "y": 732,
+        "width": 46,
+        "height": 44
+    },
+    "rhombus_02_1.15.png": {
+        "x": 1915,
+        "y": 536,
+        "width": 53,
+        "height": 44
+    },
+    "rhombus_02_1.45.png": {
+        "x": 1672,
+        "y": 599,
+        "width": 67,
+        "height": 44
+    },
+    "rhombus_02_1.65.png": {
+        "x": 1346,
+        "y": 771,
+        "width": 76,
+        "height": 44
+    },
+    "rhombus_02_1.9.png": {
+        "x": 1249,
+        "y": 127,
+        "width": 87,
+        "height": 44
+    },
+    "rhombus_02_2.15.png": {
+        "x": 800,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "rhombus_02_2.4.png": {
+        "x": 738,
+        "y": 551,
+        "width": 110,
+        "height": 44
+    },
+    "rhombus_02_2.65.png": {
+        "x": 116,
+        "y": 575,
+        "width": 122,
+        "height": 44
+    },
+    "rhombus_02_2.9.png": {
+        "x": 262,
+        "y": 473,
+        "width": 133,
+        "height": 44
+    },
+    "rhombus_03_1.png": {
+        "x": 1599,
+        "y": 1396,
+        "width": 50,
+        "height": 48
+    },
+    "rhombus_03_1.15.png": {
+        "x": 1746,
+        "y": 1080,
+        "width": 58,
+        "height": 48
+    },
+    "rhombus_03_1.45.png": {
+        "x": 1346,
+        "y": 681,
+        "width": 73,
+        "height": 48
+    },
+    "rhombus_03_1.65.png": {
+        "x": 940,
+        "y": 612,
+        "width": 83,
+        "height": 48
+    },
+    "rhombus_03_1.9.png": {
+        "x": 940,
+        "y": 0,
+        "width": 95,
+        "height": 48
+    },
+    "rhombus_03_2.15.png": {
+        "x": 627,
+        "y": 526,
+        "width": 108,
+        "height": 48
+    },
+    "rhombus_03_2.4.png": {
+        "x": 501,
+        "y": 422,
+        "width": 120,
+        "height": 48
+    },
+    "rhombus_03_2.65.png": {
+        "x": 286,
+        "y": 318,
+        "width": 133,
+        "height": 48
+    },
+    "rhombus_03_2.9.png": {
+        "x": 0,
+        "y": 318,
+        "width": 145,
+        "height": 48
+    },
+    "saudiarabia_01_1.png": {
+        "x": 2141,
+        "y": 1282,
+        "width": 34,
+        "height": 34
+    },
+    "saudiarabia_01_1.15.png": {
+        "x": 2181,
+        "y": 1894,
+        "width": 39,
+        "height": 34
+    },
+    "saudiarabia_01_1.45.png": {
+        "x": 681,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "saudiarabia_01_1.65.png": {
+        "x": 2043,
+        "y": 392,
+        "width": 56,
+        "height": 34
+    },
+    "saudiarabia_01_1.9.png": {
+        "x": 782,
+        "y": 720,
+        "width": 65,
+        "height": 34
+    },
+    "saudiarabia_01_2.15.png": {
+        "x": 148,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "saudiarabia_01_2.4.png": {
+        "x": 496,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "saudiarabia_01_2.65.png": {
+        "x": 1103,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "saudiarabia_01_2.9.png": {
+        "x": 404,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "saudiarabia_02_1.png": {
+        "x": 2141,
+        "y": 1317,
+        "width": 34,
+        "height": 34
+    },
+    "saudiarabia_02_1.15.png": {
+        "x": 2181,
+        "y": 1929,
+        "width": 39,
+        "height": 34
+    },
+    "saudiarabia_02_1.45.png": {
+        "x": 731,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "saudiarabia_02_1.65.png": {
+        "x": 2043,
+        "y": 427,
+        "width": 56,
+        "height": 34
+    },
+    "saudiarabia_02_1.9.png": {
+        "x": 871,
+        "y": 892,
+        "width": 65,
+        "height": 34
+    },
+    "saudiarabia_02_2.15.png": {
+        "x": 222,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "saudiarabia_02_2.4.png": {
+        "x": 579,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "saudiarabia_02_2.65.png": {
+        "x": 1194,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "saudiarabia_02_2.9.png": {
+        "x": 504,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "saudiarabia_03_1.png": {
+        "x": 2141,
+        "y": 1352,
+        "width": 34,
+        "height": 34
+    },
+    "saudiarabia_03_1.15.png": {
+        "x": 2181,
+        "y": 1964,
+        "width": 39,
+        "height": 34
+    },
+    "saudiarabia_03_1.45.png": {
+        "x": 781,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "saudiarabia_03_1.65.png": {
+        "x": 2043,
+        "y": 462,
+        "width": 56,
+        "height": 34
+    },
+    "saudiarabia_03_1.9.png": {
+        "x": 0,
+        "y": 1942,
+        "width": 65,
+        "height": 34
+    },
+    "saudiarabia_03_2.15.png": {
+        "x": 296,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "saudiarabia_03_2.4.png": {
+        "x": 662,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "saudiarabia_03_2.65.png": {
+        "x": 1285,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "saudiarabia_03_2.9.png": {
+        "x": 604,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "simpleshield_a_01_1.png": {
+        "x": 2141,
+        "y": 1562,
+        "width": 38,
+        "height": 30
+    },
+    "simpleshield_a_01_1.15.png": {
+        "x": 1453,
+        "y": 2043,
+        "width": 44,
+        "height": 30
+    },
+    "simpleshield_a_01_1.45.png": {
+        "x": 1687,
+        "y": 1697,
+        "width": 55,
+        "height": 30
+    },
+    "simpleshield_a_01_1.65.png": {
+        "x": 1429,
+        "y": 1977,
+        "width": 63,
+        "height": 30
+    },
+    "simpleshield_a_01_1.9.png": {
+        "x": 1424,
+        "y": 1909,
+        "width": 72,
+        "height": 30
+    },
+    "simpleshield_a_01_2.15.png": {
+        "x": 1369,
+        "y": 1839,
+        "width": 82,
+        "height": 30
+    },
+    "simpleshield_a_01_2.4.png": {
+        "x": 1823,
+        "y": 0,
+        "width": 91,
+        "height": 30
+    },
+    "simpleshield_a_01_2.65.png": {
+        "x": 943,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "simpleshield_a_01_2.9.png": {
+        "x": 0,
+        "y": 1440,
+        "width": 110,
+        "height": 30
+    },
+    "simpleshield_a_02_1.png": {
+        "x": 2141,
+        "y": 1593,
+        "width": 38,
+        "height": 30
+    },
+    "simpleshield_a_02_1.15.png": {
+        "x": 1498,
+        "y": 2043,
+        "width": 44,
+        "height": 30
+    },
+    "simpleshield_a_02_1.45.png": {
+        "x": 1081,
+        "y": 2043,
+        "width": 55,
+        "height": 30
+    },
+    "simpleshield_a_02_1.65.png": {
+        "x": 1493,
+        "y": 1977,
+        "width": 63,
+        "height": 30
+    },
+    "simpleshield_a_02_1.9.png": {
+        "x": 1497,
+        "y": 1909,
+        "width": 72,
+        "height": 30
+    },
+    "simpleshield_a_02_2.15.png": {
+        "x": 1452,
+        "y": 1839,
+        "width": 82,
+        "height": 30
+    },
+    "simpleshield_a_02_2.4.png": {
+        "x": 1823,
+        "y": 31,
+        "width": 91,
+        "height": 30
+    },
+    "simpleshield_a_02_2.65.png": {
+        "x": 1045,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "simpleshield_a_02_2.9.png": {
+        "x": 111,
+        "y": 1440,
+        "width": 110,
+        "height": 30
+    },
+    "simpleshield_a_03_1.png": {
+        "x": 2141,
+        "y": 1624,
+        "width": 38,
+        "height": 30
+    },
+    "simpleshield_a_03_1.15.png": {
+        "x": 1543,
+        "y": 2043,
+        "width": 44,
+        "height": 30
+    },
+    "simpleshield_a_03_1.45.png": {
+        "x": 1137,
+        "y": 2043,
+        "width": 55,
+        "height": 30
+    },
+    "simpleshield_a_03_1.65.png": {
+        "x": 1557,
+        "y": 1977,
+        "width": 63,
+        "height": 30
+    },
+    "simpleshield_a_03_1.9.png": {
+        "x": 1570,
+        "y": 1909,
+        "width": 72,
+        "height": 30
+    },
+    "simpleshield_a_03_2.15.png": {
+        "x": 1535,
+        "y": 1839,
+        "width": 82,
+        "height": 30
+    },
+    "simpleshield_a_03_2.4.png": {
+        "x": 1823,
+        "y": 62,
+        "width": 91,
+        "height": 30
+    },
+    "simpleshield_a_03_2.65.png": {
+        "x": 1147,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "simpleshield_a_03_2.9.png": {
+        "x": 222,
+        "y": 1440,
+        "width": 110,
+        "height": 30
+    },
+    "simpleshield_a_04_1.png": {
+        "x": 2141,
+        "y": 1655,
+        "width": 38,
+        "height": 30
+    },
+    "simpleshield_a_04_1.15.png": {
+        "x": 1588,
+        "y": 2043,
+        "width": 44,
+        "height": 30
+    },
+    "simpleshield_a_04_1.45.png": {
+        "x": 1193,
+        "y": 2043,
+        "width": 55,
+        "height": 30
+    },
+    "simpleshield_a_04_1.65.png": {
+        "x": 1621,
+        "y": 1977,
+        "width": 63,
+        "height": 30
+    },
+    "simpleshield_a_04_1.9.png": {
+        "x": 1643,
+        "y": 1909,
+        "width": 72,
+        "height": 30
+    },
+    "simpleshield_a_04_2.15.png": {
+        "x": 1618,
+        "y": 1839,
+        "width": 82,
+        "height": 30
+    },
+    "simpleshield_a_04_2.4.png": {
+        "x": 1823,
+        "y": 93,
+        "width": 91,
+        "height": 30
+    },
+    "simpleshield_a_04_2.65.png": {
+        "x": 1249,
+        "y": 1623,
+        "width": 101,
+        "height": 30
+    },
+    "simpleshield_a_04_2.9.png": {
+        "x": 333,
+        "y": 1440,
+        "width": 110,
+        "height": 30
+    },
+    "simpleshield_b_01_1.png": {
+        "x": 2141,
+        "y": 1719,
+        "width": 34,
+        "height": 32
+    },
+    "simpleshield_b_01_1.15.png": {
+        "x": 2141,
+        "y": 944,
+        "width": 39,
+        "height": 32
+    },
+    "simpleshield_b_01_1.45.png": {
+        "x": 390,
+        "y": 2088,
+        "width": 49,
+        "height": 32
+    },
+    "simpleshield_b_01_1.65.png": {
+        "x": 2043,
+        "y": 1627,
+        "width": 56,
+        "height": 32
+    },
+    "simpleshield_b_01_1.9.png": {
+        "x": 846,
+        "y": 1942,
+        "width": 65,
+        "height": 32
+    },
+    "simpleshield_b_01_2.15.png": {
+        "x": 1746,
+        "y": 1771,
+        "width": 73,
+        "height": 32
+    },
+    "simpleshield_b_01_2.4.png": {
+        "x": 1823,
+        "y": 1329,
+        "width": 82,
+        "height": 32
+    },
+    "simpleshield_b_01_2.65.png": {
+        "x": 1232,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "simpleshield_b_01_2.9.png": {
+        "x": 601,
+        "y": 1506,
+        "width": 99,
+        "height": 32
+    },
+    "simpleshield_b_02_1.png": {
+        "x": 2141,
+        "y": 1752,
+        "width": 34,
+        "height": 32
+    },
+    "simpleshield_b_02_1.15.png": {
+        "x": 2141,
+        "y": 977,
+        "width": 39,
+        "height": 32
+    },
+    "simpleshield_b_02_1.45.png": {
+        "x": 440,
+        "y": 2088,
+        "width": 49,
+        "height": 32
+    },
+    "simpleshield_b_02_1.65.png": {
+        "x": 2043,
+        "y": 1660,
+        "width": 56,
+        "height": 32
+    },
+    "simpleshield_b_02_1.9.png": {
+        "x": 912,
+        "y": 1942,
+        "width": 65,
+        "height": 32
+    },
+    "simpleshield_b_02_2.15.png": {
+        "x": 0,
+        "y": 1909,
+        "width": 73,
+        "height": 32
+    },
+    "simpleshield_b_02_2.4.png": {
+        "x": 1823,
+        "y": 1362,
+        "width": 82,
+        "height": 32
+    },
+    "simpleshield_b_02_2.65.png": {
+        "x": 1323,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "simpleshield_b_02_2.9.png": {
+        "x": 701,
+        "y": 1506,
+        "width": 99,
+        "height": 32
+    },
+    "simpleshield_b_03_1.png": {
+        "x": 2141,
+        "y": 1785,
+        "width": 34,
+        "height": 32
+    },
+    "simpleshield_b_03_1.15.png": {
+        "x": 2141,
+        "y": 1010,
+        "width": 39,
+        "height": 32
+    },
+    "simpleshield_b_03_1.45.png": {
+        "x": 490,
+        "y": 2088,
+        "width": 49,
+        "height": 32
+    },
+    "simpleshield_b_03_1.65.png": {
+        "x": 2043,
+        "y": 1693,
+        "width": 56,
+        "height": 32
+    },
+    "simpleshield_b_03_1.9.png": {
+        "x": 978,
+        "y": 1942,
+        "width": 65,
+        "height": 32
+    },
+    "simpleshield_b_03_2.15.png": {
+        "x": 74,
+        "y": 1909,
+        "width": 73,
+        "height": 32
+    },
+    "simpleshield_b_03_2.4.png": {
+        "x": 1823,
+        "y": 1395,
+        "width": 82,
+        "height": 32
+    },
+    "simpleshield_b_03_2.65.png": {
+        "x": 1414,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "simpleshield_b_03_2.9.png": {
+        "x": 801,
+        "y": 1506,
+        "width": 99,
+        "height": 32
+    },
+    "simpleshield_c_01_1.png": {
+        "x": 2141,
+        "y": 1818,
+        "width": 34,
+        "height": 32
+    },
+    "simpleshield_c_01_1.15.png": {
+        "x": 2141,
+        "y": 1043,
+        "width": 39,
+        "height": 32
+    },
+    "simpleshield_c_01_1.45.png": {
+        "x": 540,
+        "y": 2088,
+        "width": 49,
+        "height": 32
+    },
+    "simpleshield_c_01_1.65.png": {
+        "x": 2043,
+        "y": 1726,
+        "width": 56,
+        "height": 32
+    },
+    "simpleshield_c_01_1.9.png": {
+        "x": 1044,
+        "y": 1942,
+        "width": 65,
+        "height": 32
+    },
+    "simpleshield_c_01_2.15.png": {
+        "x": 148,
+        "y": 1909,
+        "width": 73,
+        "height": 32
+    },
+    "simpleshield_c_01_2.4.png": {
+        "x": 1823,
+        "y": 1428,
+        "width": 82,
+        "height": 32
+    },
+    "simpleshield_c_01_2.65.png": {
+        "x": 1505,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "simpleshield_c_01_2.9.png": {
+        "x": 901,
+        "y": 1506,
+        "width": 99,
+        "height": 32
+    },
+    "simpleshield_d_01_1.png": {
+        "x": 2141,
+        "y": 1146,
+        "width": 38,
+        "height": 32
+    },
+    "simpleshield_d_01_1.15.png": {
+        "x": 1321,
+        "y": 2088,
+        "width": 44,
+        "height": 32
+    },
+    "simpleshield_d_01_1.45.png": {
+        "x": 2043,
+        "y": 1966,
+        "width": 55,
+        "height": 32
+    },
+    "simpleshield_d_01_1.65.png": {
+        "x": 433,
+        "y": 1977,
+        "width": 63,
+        "height": 32
+    },
+    "simpleshield_d_01_1.9.png": {
+        "x": 368,
+        "y": 1909,
+        "width": 72,
+        "height": 32
+    },
+    "simpleshield_d_01_2.15.png": {
+        "x": 1823,
+        "y": 1461,
+        "width": 82,
+        "height": 32
+    },
+    "simpleshield_d_01_2.4.png": {
+        "x": 1509,
+        "y": 1658,
+        "width": 91,
+        "height": 32
+    },
+    "simpleshield_d_01_2.65.png": {
+        "x": 91,
+        "y": 1506,
+        "width": 101,
+        "height": 32
+    },
+    "simpleshield_d_01_2.9.png": {
+        "x": 995,
+        "y": 1333,
+        "width": 110,
+        "height": 32
+    },
+    "simpleshield_d_02_1.png": {
+        "x": 2141,
+        "y": 1179,
+        "width": 38,
+        "height": 32
+    },
+    "simpleshield_d_02_1.15.png": {
+        "x": 1366,
+        "y": 2088,
+        "width": 44,
+        "height": 32
+    },
+    "simpleshield_d_02_1.45.png": {
+        "x": 1986,
+        "y": 1480,
+        "width": 55,
+        "height": 32
+    },
+    "simpleshield_d_02_1.65.png": {
+        "x": 497,
+        "y": 1977,
+        "width": 63,
+        "height": 32
+    },
+    "simpleshield_d_02_1.9.png": {
+        "x": 441,
+        "y": 1909,
+        "width": 72,
+        "height": 32
+    },
+    "simpleshield_d_02_2.15.png": {
+        "x": 1823,
+        "y": 1494,
+        "width": 82,
+        "height": 32
+    },
+    "simpleshield_d_02_2.4.png": {
+        "x": 1601,
+        "y": 1658,
+        "width": 91,
+        "height": 32
+    },
+    "simpleshield_d_02_2.65.png": {
+        "x": 193,
+        "y": 1506,
+        "width": 101,
+        "height": 32
+    },
+    "simpleshield_d_02_2.9.png": {
+        "x": 1106,
+        "y": 1333,
+        "width": 110,
+        "height": 32
+    },
+    "simpleshield_e_01_1.png": {
+        "x": 1207,
+        "y": 2125,
+        "width": 42,
+        "height": 34
+    },
+    "simpleshield_e_01_1.15.png": {
+        "x": 47,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "simpleshield_e_01_1.45.png": {
+        "x": 59,
+        "y": 1977,
+        "width": 61,
+        "height": 34
+    },
+    "simpleshield_e_01_1.65.png": {
+        "x": 1915,
+        "y": 279,
+        "width": 69,
+        "height": 34
+    },
+    "simpleshield_e_01_1.9.png": {
+        "x": 1823,
+        "y": 606,
+        "width": 80,
+        "height": 34
+    },
+    "simpleshield_e_01_2.15.png": {
+        "x": 1376,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "simpleshield_e_01_2.4.png": {
+        "x": 514,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "simpleshield_e_01_2.65.png": {
+        "x": 413,
+        "y": 1179,
+        "width": 111,
+        "height": 34
+    },
+    "simpleshield_e_01_2.9.png": {
+        "x": 536,
+        "y": 720,
+        "width": 122,
+        "height": 34
+    },
+    "simpleshield_e_02_1.png": {
+        "x": 1250,
+        "y": 2125,
+        "width": 42,
+        "height": 34
+    },
+    "simpleshield_e_02_1.15.png": {
+        "x": 96,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "simpleshield_e_02_1.45.png": {
+        "x": 121,
+        "y": 1977,
+        "width": 61,
+        "height": 34
+    },
+    "simpleshield_e_02_1.65.png": {
+        "x": 1915,
+        "y": 314,
+        "width": 69,
+        "height": 34
+    },
+    "simpleshield_e_02_1.9.png": {
+        "x": 1823,
+        "y": 641,
+        "width": 80,
+        "height": 34
+    },
+    "simpleshield_e_02_2.15.png": {
+        "x": 1467,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "simpleshield_e_02_2.4.png": {
+        "x": 616,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "simpleshield_e_02_2.65.png": {
+        "x": 525,
+        "y": 1179,
+        "width": 111,
+        "height": 34
+    },
+    "simpleshield_e_02_2.9.png": {
+        "x": 659,
+        "y": 720,
+        "width": 122,
+        "height": 34
+    },
+    "simpleshield_f_01_1.png": {
+        "x": 2181,
+        "y": 1345,
+        "width": 38,
+        "height": 36
+    },
+    "simpleshield_f_01_1.15.png": {
+        "x": 256,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "simpleshield_f_01_1.45.png": {
+        "x": 1986,
+        "y": 988,
+        "width": 55,
+        "height": 36
+    },
+    "simpleshield_f_01_1.65.png": {
+        "x": 1915,
+        "y": 1205,
+        "width": 63,
+        "height": 36
+    },
+    "simpleshield_f_01_1.9.png": {
+        "x": 1746,
+        "y": 1567,
+        "width": 72,
+        "height": 36
+    },
+    "simpleshield_f_01_2.15.png": {
+        "x": 409,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "simpleshield_f_01_2.4.png": {
+        "x": 1346,
+        "y": 947,
+        "width": 91,
+        "height": 36
+    },
+    "simpleshield_f_01_2.65.png": {
+        "x": 684,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "simpleshield_f_01_2.9.png": {
+        "x": 1138,
+        "y": 37,
+        "width": 110,
+        "height": 36
+    },
+    "simpleshield_f_02_1.png": {
+        "x": 2181,
+        "y": 1382,
+        "width": 38,
+        "height": 36
+    },
+    "simpleshield_f_02_1.15.png": {
+        "x": 301,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "simpleshield_f_02_1.45.png": {
+        "x": 1986,
+        "y": 1025,
+        "width": 55,
+        "height": 36
+    },
+    "simpleshield_f_02_1.65.png": {
+        "x": 1915,
+        "y": 1242,
+        "width": 63,
+        "height": 36
+    },
+    "simpleshield_f_02_1.9.png": {
+        "x": 1746,
+        "y": 1604,
+        "width": 72,
+        "height": 36
+    },
+    "simpleshield_f_02_2.15.png": {
+        "x": 492,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "simpleshield_f_02_2.4.png": {
+        "x": 1346,
+        "y": 984,
+        "width": 91,
+        "height": 36
+    },
+    "simpleshield_f_02_2.65.png": {
+        "x": 786,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "simpleshield_f_02_2.9.png": {
+        "x": 1138,
+        "y": 74,
+        "width": 110,
+        "height": 36
+    },
+    "simpleshield_g_01_1.png": {
+        "x": 2141,
+        "y": 617,
+        "width": 38,
+        "height": 34
+    },
+    "simpleshield_g_01_1.15.png": {
+        "x": 937,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "simpleshield_g_01_1.45.png": {
+        "x": 2043,
+        "y": 828,
+        "width": 55,
+        "height": 34
+    },
+    "simpleshield_g_01_1.65.png": {
+        "x": 396,
+        "y": 1942,
+        "width": 63,
+        "height": 34
+    },
+    "simpleshield_g_01_1.9.png": {
+        "x": 1599,
+        "y": 1059,
+        "width": 72,
+        "height": 34
+    },
+    "simpleshield_g_01_2.15.png": {
+        "x": 745,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "simpleshield_g_01_2.4.png": {
+        "x": 276,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "simpleshield_g_01_2.65.png": {
+        "x": 718,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "simpleshield_g_01_2.9.png": {
+        "x": 411,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "simpleshield_h_01_1.png": {
+        "x": 1877,
+        "y": 985,
+        "width": 36,
+        "height": 48
+    },
+    "simpleshield_h_01_1.15.png": {
+        "x": 2043,
+        "y": 105,
+        "width": 41,
+        "height": 48
+    },
+    "simpleshield_h_01_1.45.png": {
+        "x": 1599,
+        "y": 436,
+        "width": 52,
+        "height": 48
+    },
+    "simpleshield_h_01_1.65.png": {
+        "x": 1746,
+        "y": 872,
+        "width": 59,
+        "height": 48
+    },
+    "simpleshield_h_01_1.9.png": {
+        "x": 420,
+        "y": 318,
+        "width": 68,
+        "height": 48
+    },
+    "simpleshield_h_01_2.15.png": {
+        "x": 940,
+        "y": 714,
+        "width": 77,
+        "height": 48
+    },
+    "simpleshield_h_01_2.4.png": {
+        "x": 1036,
+        "y": 638,
+        "width": 86,
+        "height": 48
+    },
+    "simpleshield_h_01_2.65.png": {
+        "x": 940,
+        "y": 49,
+        "width": 95,
+        "height": 48
+    },
+    "simpleshield_h_01_2.9.png": {
+        "x": 738,
+        "y": 145,
+        "width": 104,
+        "height": 48
+    },
+    "southkorea_01_1.png": {
+        "x": 145,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "southkorea_01_1.15.png": {
+        "x": 2043,
+        "y": 863,
+        "width": 55,
+        "height": 34
+    },
+    "southkorea_01_1.45.png": {
+        "x": 1915,
+        "y": 0,
+        "width": 70,
+        "height": 34
+    },
+    "southkorea_01_1.65.png": {
+        "x": 1823,
+        "y": 874,
+        "width": 79,
+        "height": 34
+    },
+    "southkorea_01_1.9.png": {
+        "x": 368,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "southkorea_01_2.15.png": {
+        "x": 0,
+        "y": 1370,
+        "width": 103,
+        "height": 34
+    },
+    "southkorea_01_2.4.png": {
+        "x": 117,
+        "y": 1111,
+        "width": 115,
+        "height": 34
+    },
+    "southkorea_01_2.65.png": {
+        "x": 280,
+        "y": 720,
+        "width": 127,
+        "height": 34
+    },
+    "southkorea_01_2.9.png": {
+        "x": 0,
+        "y": 720,
+        "width": 139,
+        "height": 34
+    },
+    "southkorea_02_1.png": {
+        "x": 194,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "southkorea_02_1.15.png": {
+        "x": 2043,
+        "y": 898,
+        "width": 55,
+        "height": 34
+    },
+    "southkorea_02_1.45.png": {
+        "x": 1915,
+        "y": 35,
+        "width": 70,
+        "height": 34
+    },
+    "southkorea_02_1.65.png": {
+        "x": 1823,
+        "y": 909,
+        "width": 79,
+        "height": 34
+    },
+    "southkorea_02_1.9.png": {
+        "x": 460,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "southkorea_02_2.15.png": {
+        "x": 104,
+        "y": 1370,
+        "width": 103,
+        "height": 34
+    },
+    "southkorea_02_2.4.png": {
+        "x": 233,
+        "y": 1111,
+        "width": 115,
+        "height": 34
+    },
+    "southkorea_02_2.65.png": {
+        "x": 408,
+        "y": 720,
+        "width": 127,
+        "height": 34
+    },
+    "southkorea_02_2.9.png": {
+        "x": 140,
+        "y": 720,
+        "width": 139,
+        "height": 34
+    },
+    "square_01_1.png": {
+        "x": 2141,
+        "y": 1387,
+        "width": 34,
+        "height": 34
+    },
+    "square_01_1.15.png": {
+        "x": 2181,
+        "y": 1999,
+        "width": 39,
+        "height": 34
+    },
+    "square_01_1.45.png": {
+        "x": 831,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "square_01_1.65.png": {
+        "x": 2043,
+        "y": 497,
+        "width": 56,
+        "height": 34
+    },
+    "square_01_1.9.png": {
+        "x": 66,
+        "y": 1942,
+        "width": 65,
+        "height": 34
+    },
+    "square_01_2.15.png": {
+        "x": 370,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "square_01_2.4.png": {
+        "x": 828,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "square_01_2.65.png": {
+        "x": 1558,
+        "y": 1588,
+        "width": 90,
+        "height": 34
+    },
+    "square_01_2.9.png": {
+        "x": 704,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "square_02_1.png": {
+        "x": 2141,
+        "y": 1422,
+        "width": 34,
+        "height": 34
+    },
+    "square_02_1.15.png": {
+        "x": 2181,
+        "y": 2034,
+        "width": 39,
+        "height": 34
+    },
+    "square_02_1.45.png": {
+        "x": 881,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "square_02_1.65.png": {
+        "x": 2043,
+        "y": 532,
+        "width": 56,
+        "height": 34
+    },
+    "square_02_1.9.png": {
+        "x": 132,
+        "y": 1942,
+        "width": 65,
+        "height": 34
+    },
+    "square_02_2.15.png": {
+        "x": 444,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "square_02_2.4.png": {
+        "x": 911,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "square_02_2.65.png": {
+        "x": 0,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "square_02_2.9.png": {
+        "x": 804,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "square_03_1.png": {
+        "x": 2141,
+        "y": 1457,
+        "width": 34,
+        "height": 34
+    },
+    "square_03_1.15.png": {
+        "x": 2181,
+        "y": 2069,
+        "width": 39,
+        "height": 34
+    },
+    "square_03_1.45.png": {
+        "x": 931,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "square_03_1.65.png": {
+        "x": 2043,
+        "y": 567,
+        "width": 56,
+        "height": 34
+    },
+    "square_03_1.9.png": {
+        "x": 198,
+        "y": 1942,
+        "width": 65,
+        "height": 34
+    },
+    "square_03_2.15.png": {
+        "x": 518,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "square_03_2.4.png": {
+        "x": 994,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "square_03_2.65.png": {
+        "x": 91,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "square_03_2.9.png": {
+        "x": 904,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "square_04_1.png": {
+        "x": 2141,
+        "y": 1492,
+        "width": 34,
+        "height": 34
+    },
+    "square_04_1.15.png": {
+        "x": 2181,
+        "y": 2104,
+        "width": 39,
+        "height": 34
+    },
+    "square_04_1.45.png": {
+        "x": 981,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "square_04_1.65.png": {
+        "x": 2043,
+        "y": 602,
+        "width": 56,
+        "height": 34
+    },
+    "square_04_1.9.png": {
+        "x": 264,
+        "y": 1942,
+        "width": 65,
+        "height": 34
+    },
+    "square_04_2.15.png": {
+        "x": 592,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "square_04_2.4.png": {
+        "x": 1077,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "square_04_2.65.png": {
+        "x": 182,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "square_04_2.9.png": {
+        "x": 1004,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "square_05_1.png": {
+        "x": 2141,
+        "y": 1527,
+        "width": 34,
+        "height": 34
+    },
+    "square_05_1.15.png": {
+        "x": 2141,
+        "y": 477,
+        "width": 39,
+        "height": 34
+    },
+    "square_05_1.45.png": {
+        "x": 1031,
+        "y": 2043,
+        "width": 49,
+        "height": 34
+    },
+    "square_05_1.65.png": {
+        "x": 2043,
+        "y": 637,
+        "width": 56,
+        "height": 34
+    },
+    "square_05_1.9.png": {
+        "x": 330,
+        "y": 1942,
+        "width": 65,
+        "height": 34
+    },
+    "square_05_2.15.png": {
+        "x": 666,
+        "y": 1874,
+        "width": 73,
+        "height": 34
+    },
+    "square_05_2.4.png": {
+        "x": 1160,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "square_05_2.65.png": {
+        "x": 273,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "square_05_2.9.png": {
+        "x": 1104,
+        "y": 1405,
+        "width": 99,
+        "height": 34
+    },
+    "taiwan_01_1.png": {
+        "x": 2181,
+        "y": 156,
+        "width": 40,
+        "height": 38
+    },
+    "taiwan_01_1.15.png": {
+        "x": 575,
+        "y": 522,
+        "width": 46,
+        "height": 38
+    },
+    "taiwan_01_1.45.png": {
+        "x": 1535,
+        "y": 683,
+        "width": 58,
+        "height": 38
+    },
+    "taiwan_01_1.65.png": {
+        "x": 1599,
+        "y": 252,
+        "width": 66,
+        "height": 38
+    },
+    "taiwan_01_1.9.png": {
+        "x": 1746,
+        "y": 156,
+        "width": 76,
+        "height": 38
+    },
+    "taiwan_01_2.15.png": {
+        "x": 849,
+        "y": 638,
+        "width": 86,
+        "height": 38
+    },
+    "taiwan_01_2.4.png": {
+        "x": 388,
+        "y": 1257,
+        "width": 96,
+        "height": 38
+    },
+    "taiwan_01_2.65.png": {
+        "x": 734,
+        "y": 1070,
+        "width": 106,
+        "height": 38
+    },
+    "taiwan_01_2.9.png": {
+        "x": 703,
+        "y": 808,
+        "width": 116,
+        "height": 38
+    },
+    "thailand_01_1.png": {
+        "x": 2141,
+        "y": 652,
+        "width": 34,
+        "height": 38
+    },
+    "thailand_01_1.15.png": {
+        "x": 2181,
+        "y": 672,
+        "width": 39,
+        "height": 38
+    },
+    "thailand_01_1.45.png": {
+        "x": 2043,
+        "y": 1108,
+        "width": 49,
+        "height": 38
+    },
+    "thailand_01_1.65.png": {
+        "x": 296,
+        "y": 212,
+        "width": 56,
+        "height": 38
+    },
+    "thailand_01_1.9.png": {
+        "x": 1599,
+        "y": 522,
+        "width": 65,
+        "height": 38
+    },
+    "thailand_01_2.15.png": {
+        "x": 1746,
+        "y": 1129,
+        "width": 73,
+        "height": 38
+    },
+    "thailand_01_2.4.png": {
+        "x": 1012,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "thailand_01_2.65.png": {
+        "x": 1438,
+        "y": 785,
+        "width": 90,
+        "height": 38
+    },
+    "thailand_01_2.9.png": {
+        "x": 0,
+        "y": 1218,
+        "width": 99,
+        "height": 38
+    },
+    "thailand_02_1.png": {
+        "x": 2141,
+        "y": 691,
+        "width": 34,
+        "height": 38
+    },
+    "thailand_02_1.15.png": {
+        "x": 2181,
+        "y": 711,
+        "width": 39,
+        "height": 38
+    },
+    "thailand_02_1.45.png": {
+        "x": 2043,
+        "y": 1147,
+        "width": 49,
+        "height": 38
+    },
+    "thailand_02_1.65.png": {
+        "x": 1986,
+        "y": 0,
+        "width": 56,
+        "height": 38
+    },
+    "thailand_02_1.9.png": {
+        "x": 1599,
+        "y": 561,
+        "width": 65,
+        "height": 38
+    },
+    "thailand_02_2.15.png": {
+        "x": 1746,
+        "y": 1168,
+        "width": 73,
+        "height": 38
+    },
+    "thailand_02_2.4.png": {
+        "x": 1095,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "thailand_02_2.65.png": {
+        "x": 1438,
+        "y": 824,
+        "width": 90,
+        "height": 38
+    },
+    "thailand_02_2.9.png": {
+        "x": 100,
+        "y": 1218,
+        "width": 99,
+        "height": 38
+    },
+    "thailand_03_1.png": {
+        "x": 2141,
+        "y": 730,
+        "width": 34,
+        "height": 38
+    },
+    "thailand_03_1.15.png": {
+        "x": 2181,
+        "y": 750,
+        "width": 39,
+        "height": 38
+    },
+    "thailand_03_1.45.png": {
+        "x": 2043,
+        "y": 1186,
+        "width": 49,
+        "height": 38
+    },
+    "thailand_03_1.65.png": {
+        "x": 1986,
+        "y": 39,
+        "width": 56,
+        "height": 38
+    },
+    "thailand_03_1.9.png": {
+        "x": 1599,
+        "y": 600,
+        "width": 65,
+        "height": 38
+    },
+    "thailand_03_2.15.png": {
+        "x": 1746,
+        "y": 1207,
+        "width": 73,
+        "height": 38
+    },
+    "thailand_03_2.4.png": {
+        "x": 1178,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "thailand_03_2.65.png": {
+        "x": 1438,
+        "y": 863,
+        "width": 90,
+        "height": 38
+    },
+    "thailand_03_2.9.png": {
+        "x": 200,
+        "y": 1218,
+        "width": 99,
+        "height": 38
+    },
+    "trapeze_01_1.png": {
+        "x": 1884,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "trapeze_01_1.15.png": {
+        "x": 1129,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "trapeze_01_1.45.png": {
+        "x": 1243,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "trapeze_01_1.65.png": {
+        "x": 1214,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "trapeze_01_1.9.png": {
+        "x": 1126,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "trapeze_01_2.15.png": {
+        "x": 1596,
+        "y": 1697,
+        "width": 90,
+        "height": 32
+    },
+    "trapeze_01_2.4.png": {
+        "x": 295,
+        "y": 1506,
+        "width": 101,
+        "height": 32
+    },
+    "trapeze_01_2.65.png": {
+        "x": 548,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "trapeze_01_2.9.png": {
+        "x": 492,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "trapeze_02_1.png": {
+        "x": 1927,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "trapeze_02_1.15.png": {
+        "x": 1178,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "trapeze_02_1.45.png": {
+        "x": 1305,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "trapeze_02_1.65.png": {
+        "x": 1284,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "trapeze_02_1.9.png": {
+        "x": 1207,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "trapeze_02_2.15.png": {
+        "x": 0,
+        "y": 1738,
+        "width": 90,
+        "height": 32
+    },
+    "trapeze_02_2.4.png": {
+        "x": 397,
+        "y": 1506,
+        "width": 101,
+        "height": 32
+    },
+    "trapeze_02_2.65.png": {
+        "x": 660,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "trapeze_02_2.9.png": {
+        "x": 615,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "u_a_emirates_a_01_1.png": {
+        "x": 2043,
+        "y": 672,
+        "width": 38,
+        "height": 50
+    },
+    "u_a_emirates_a_01_1.15.png": {
+        "x": 1535,
+        "y": 925,
+        "width": 44,
+        "height": 50
+    },
+    "u_a_emirates_a_01_1.45.png": {
+        "x": 1746,
+        "y": 1373,
+        "width": 55,
+        "height": 50
+    },
+    "u_a_emirates_a_01_1.65.png": {
+        "x": 1599,
+        "y": 45,
+        "width": 63,
+        "height": 50
+    },
+    "u_a_emirates_a_01_1.9.png": {
+        "x": 1346,
+        "y": 524,
+        "width": 72,
+        "height": 50
+    },
+    "u_a_emirates_a_01_2.15.png": {
+        "x": 1036,
+        "y": 687,
+        "width": 82,
+        "height": 50
+    },
+    "u_a_emirates_a_01_2.4.png": {
+        "x": 940,
+        "y": 98,
+        "width": 91,
+        "height": 50
+    },
+    "u_a_emirates_a_01_2.65.png": {
+        "x": 738,
+        "y": 94,
+        "width": 101,
+        "height": 50
+    },
+    "u_a_emirates_a_01_2.9.png": {
+        "x": 627,
+        "y": 371,
+        "width": 110,
+        "height": 50
+    },
+    "u_a_emirates_b_01_1.png": {
+        "x": 2181,
+        "y": 582,
+        "width": 34,
+        "height": 44
+    },
+    "u_a_emirates_b_01_1.15.png": {
+        "x": 200,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "u_a_emirates_b_01_1.45.png": {
+        "x": 1535,
+        "y": 1344,
+        "width": 49,
+        "height": 44
+    },
+    "u_a_emirates_b_01_1.65.png": {
+        "x": 1599,
+        "y": 864,
+        "width": 56,
+        "height": 44
+    },
+    "u_a_emirates_b_01_1.9.png": {
+        "x": 1746,
+        "y": 623,
+        "width": 65,
+        "height": 44
+    },
+    "u_a_emirates_b_01_2.15.png": {
+        "x": 370,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "u_a_emirates_b_01_2.4.png": {
+        "x": 1346,
+        "y": 266,
+        "width": 82,
+        "height": 44
+    },
+    "u_a_emirates_b_01_2.65.png": {
+        "x": 1138,
+        "y": 677,
+        "width": 90,
+        "height": 44
+    },
+    "u_a_emirates_b_01_2.9.png": {
+        "x": 900,
+        "y": 939,
+        "width": 99,
+        "height": 44
+    },
+    "u_a_emirates_b_02_1.png": {
+        "x": 2181,
+        "y": 627,
+        "width": 34,
+        "height": 44
+    },
+    "u_a_emirates_b_02_1.15.png": {
+        "x": 240,
+        "y": 2043,
+        "width": 39,
+        "height": 44
+    },
+    "u_a_emirates_b_02_1.45.png": {
+        "x": 1535,
+        "y": 1389,
+        "width": 49,
+        "height": 44
+    },
+    "u_a_emirates_b_02_1.65.png": {
+        "x": 1599,
+        "y": 909,
+        "width": 56,
+        "height": 44
+    },
+    "u_a_emirates_b_02_1.9.png": {
+        "x": 1746,
+        "y": 668,
+        "width": 65,
+        "height": 44
+    },
+    "u_a_emirates_b_02_2.15.png": {
+        "x": 444,
+        "y": 1543,
+        "width": 73,
+        "height": 44
+    },
+    "u_a_emirates_b_02_2.4.png": {
+        "x": 1346,
+        "y": 311,
+        "width": 82,
+        "height": 44
+    },
+    "u_a_emirates_b_02_2.65.png": {
+        "x": 1138,
+        "y": 722,
+        "width": 90,
+        "height": 44
+    },
+    "u_a_emirates_b_02_2.9.png": {
+        "x": 0,
+        "y": 986,
+        "width": 99,
+        "height": 44
+    },
+    "u_a_emirates_c_01_1.png": {
+        "x": 1915,
+        "y": 958,
+        "width": 46,
+        "height": 50
+    },
+    "u_a_emirates_c_01_1.15.png": {
+        "x": 1823,
+        "y": 985,
+        "width": 53,
+        "height": 50
+    },
+    "u_a_emirates_c_01_1.45.png": {
+        "x": 1438,
+        "y": 1289,
+        "width": 67,
+        "height": 50
+    },
+    "u_a_emirates_c_01_1.65.png": {
+        "x": 1249,
+        "y": 424,
+        "width": 76,
+        "height": 50
+    },
+    "u_a_emirates_c_01_1.9.png": {
+        "x": 940,
+        "y": 198,
+        "width": 87,
+        "height": 50
+    },
+    "u_a_emirates_c_01_2.15.png": {
+        "x": 738,
+        "y": 247,
+        "width": 99,
+        "height": 50
+    },
+    "u_a_emirates_c_01_2.4.png": {
+        "x": 627,
+        "y": 422,
+        "width": 110,
+        "height": 50
+    },
+    "u_a_emirates_c_01_2.65.png": {
+        "x": 501,
+        "y": 371,
+        "width": 122,
+        "height": 50
+    },
+    "u_a_emirates_c_01_2.9.png": {
+        "x": 262,
+        "y": 420,
+        "width": 133,
+        "height": 50
+    },
+    "u_a_emirates_d_01_1.png": {
+        "x": 1874,
+        "y": 1722,
+        "width": 38,
+        "height": 46
+    },
+    "u_a_emirates_d_01_1.15.png": {
+        "x": 1986,
+        "y": 777,
+        "width": 44,
+        "height": 46
+    },
+    "u_a_emirates_d_01_1.45.png": {
+        "x": 1672,
+        "y": 1390,
+        "width": 55,
+        "height": 46
+    },
+    "u_a_emirates_d_01_1.65.png": {
+        "x": 1672,
+        "y": 851,
+        "width": 63,
+        "height": 46
+    },
+    "u_a_emirates_d_01_1.9.png": {
+        "x": 1346,
+        "y": 816,
+        "width": 72,
+        "height": 46
+    },
+    "u_a_emirates_d_01_2.15.png": {
+        "x": 1249,
+        "y": 992,
+        "width": 82,
+        "height": 46
+    },
+    "u_a_emirates_d_01_2.4.png": {
+        "x": 1036,
+        "y": 172,
+        "width": 91,
+        "height": 46
+    },
+    "u_a_emirates_d_01_2.65.png": {
+        "x": 396,
+        "y": 420,
+        "width": 101,
+        "height": 46
+    },
+    "u_a_emirates_d_01_2.9.png": {
+        "x": 738,
+        "y": 0,
+        "width": 110,
+        "height": 46
+    },
+    "usa_a_ak_01_1.png": {
+        "x": 2181,
+        "y": 1419,
+        "width": 38,
+        "height": 36
+    },
+    "usa_a_ak_01_1.15.png": {
+        "x": 346,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_a_ak_01_1.45.png": {
+        "x": 1986,
+        "y": 1062,
+        "width": 55,
+        "height": 36
+    },
+    "usa_a_ak_01_1.65.png": {
+        "x": 1915,
+        "y": 1279,
+        "width": 63,
+        "height": 36
+    },
+    "usa_a_ak_01_1.9.png": {
+        "x": 1746,
+        "y": 1641,
+        "width": 72,
+        "height": 36
+    },
+    "usa_a_ak_01_2.15.png": {
+        "x": 575,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_a_ak_01_2.4.png": {
+        "x": 1346,
+        "y": 1021,
+        "width": 91,
+        "height": 36
+    },
+    "usa_a_ak_01_2.65.png": {
+        "x": 888,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "usa_a_ak_01_2.9.png": {
+        "x": 1138,
+        "y": 111,
+        "width": 110,
+        "height": 36
+    },
+    "usa_a_il_01_1.png": {
+        "x": 2181,
+        "y": 1456,
+        "width": 38,
+        "height": 36
+    },
+    "usa_a_il_01_1.15.png": {
+        "x": 391,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_a_il_01_1.45.png": {
+        "x": 1986,
+        "y": 1099,
+        "width": 55,
+        "height": 36
+    },
+    "usa_a_il_01_1.65.png": {
+        "x": 1915,
+        "y": 1316,
+        "width": 63,
+        "height": 36
+    },
+    "usa_a_il_01_1.9.png": {
+        "x": 1746,
+        "y": 1678,
+        "width": 72,
+        "height": 36
+    },
+    "usa_a_il_01_2.15.png": {
+        "x": 658,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_a_il_01_2.4.png": {
+        "x": 1346,
+        "y": 1058,
+        "width": 91,
+        "height": 36
+    },
+    "usa_a_il_01_2.65.png": {
+        "x": 990,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "usa_a_il_01_2.9.png": {
+        "x": 1138,
+        "y": 148,
+        "width": 110,
+        "height": 36
+    },
+    "usa_a_in_01_1.png": {
+        "x": 2181,
+        "y": 1493,
+        "width": 38,
+        "height": 36
+    },
+    "usa_a_in_01_1.15.png": {
+        "x": 436,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_a_in_01_1.45.png": {
+        "x": 1986,
+        "y": 1136,
+        "width": 55,
+        "height": 36
+    },
+    "usa_a_in_01_1.65.png": {
+        "x": 1915,
+        "y": 1353,
+        "width": 63,
+        "height": 36
+    },
+    "usa_a_in_01_1.9.png": {
+        "x": 1672,
+        "y": 945,
+        "width": 72,
+        "height": 36
+    },
+    "usa_a_in_01_2.15.png": {
+        "x": 741,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_a_in_01_2.4.png": {
+        "x": 1346,
+        "y": 1095,
+        "width": 91,
+        "height": 36
+    },
+    "usa_a_in_01_2.65.png": {
+        "x": 1092,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "usa_a_in_01_2.9.png": {
+        "x": 1138,
+        "y": 185,
+        "width": 110,
+        "height": 36
+    },
+    "usa_a_mt_01_1.png": {
+        "x": 2181,
+        "y": 1530,
+        "width": 38,
+        "height": 36
+    },
+    "usa_a_mt_01_1.15.png": {
+        "x": 481,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_a_mt_01_1.45.png": {
+        "x": 1986,
+        "y": 1173,
+        "width": 55,
+        "height": 36
+    },
+    "usa_a_mt_01_1.65.png": {
+        "x": 1915,
+        "y": 1390,
+        "width": 63,
+        "height": 36
+    },
+    "usa_a_mt_01_1.9.png": {
+        "x": 1672,
+        "y": 982,
+        "width": 72,
+        "height": 36
+    },
+    "usa_a_mt_01_2.15.png": {
+        "x": 824,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_a_mt_01_2.4.png": {
+        "x": 1346,
+        "y": 1132,
+        "width": 91,
+        "height": 36
+    },
+    "usa_a_mt_01_2.65.png": {
+        "x": 1194,
+        "y": 1257,
+        "width": 101,
+        "height": 36
+    },
+    "usa_a_mt_01_2.9.png": {
+        "x": 1138,
+        "y": 222,
+        "width": 110,
+        "height": 36
+    },
+    "usa_a_ri_01_1.png": {
+        "x": 2181,
+        "y": 1567,
+        "width": 38,
+        "height": 36
+    },
+    "usa_a_ri_01_1.15.png": {
+        "x": 526,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_a_ri_01_1.45.png": {
+        "x": 1986,
+        "y": 1210,
+        "width": 55,
+        "height": 36
+    },
+    "usa_a_ri_01_1.65.png": {
+        "x": 1915,
+        "y": 1427,
+        "width": 63,
+        "height": 36
+    },
+    "usa_a_ri_01_1.9.png": {
+        "x": 1672,
+        "y": 1019,
+        "width": 72,
+        "height": 36
+    },
+    "usa_a_ri_01_2.15.png": {
+        "x": 907,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_a_ri_01_2.4.png": {
+        "x": 1346,
+        "y": 1169,
+        "width": 91,
+        "height": 36
+    },
+    "usa_a_ri_01_2.65.png": {
+        "x": 0,
+        "y": 1296,
+        "width": 101,
+        "height": 36
+    },
+    "usa_a_ri_01_2.9.png": {
+        "x": 1138,
+        "y": 259,
+        "width": 110,
+        "height": 36
+    },
+    "usa_a_wy_01_1.png": {
+        "x": 2181,
+        "y": 1604,
+        "width": 38,
+        "height": 36
+    },
+    "usa_a_wy_01_1.15.png": {
+        "x": 571,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_a_wy_01_1.45.png": {
+        "x": 1986,
+        "y": 1247,
+        "width": 55,
+        "height": 36
+    },
+    "usa_a_wy_01_1.65.png": {
+        "x": 1915,
+        "y": 1464,
+        "width": 63,
+        "height": 36
+    },
+    "usa_a_wy_01_1.9.png": {
+        "x": 1672,
+        "y": 1056,
+        "width": 72,
+        "height": 36
+    },
+    "usa_a_wy_01_2.15.png": {
+        "x": 990,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_a_wy_01_2.4.png": {
+        "x": 1346,
+        "y": 1206,
+        "width": 91,
+        "height": 36
+    },
+    "usa_a_wy_01_2.65.png": {
+        "x": 102,
+        "y": 1296,
+        "width": 101,
+        "height": 36
+    },
+    "usa_a_wy_01_2.9.png": {
+        "x": 1138,
+        "y": 296,
+        "width": 110,
+        "height": 36
+    },
+    "usa_b_hi_01_1.png": {
+        "x": 1293,
+        "y": 2125,
+        "width": 42,
+        "height": 34
+    },
+    "usa_b_hi_01_1.15.png": {
+        "x": 243,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "usa_b_hi_01_1.45.png": {
+        "x": 183,
+        "y": 1977,
+        "width": 61,
+        "height": 34
+    },
+    "usa_b_hi_01_1.65.png": {
+        "x": 1915,
+        "y": 349,
+        "width": 69,
+        "height": 34
+    },
+    "usa_b_hi_01_1.9.png": {
+        "x": 1823,
+        "y": 676,
+        "width": 80,
+        "height": 34
+    },
+    "usa_b_hi_01_2.15.png": {
+        "x": 364,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "usa_b_hi_01_2.4.png": {
+        "x": 820,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "usa_b_hi_01_2.65.png": {
+        "x": 637,
+        "y": 1179,
+        "width": 111,
+        "height": 34
+    },
+    "usa_b_hi_01_2.9.png": {
+        "x": 444,
+        "y": 1031,
+        "width": 122,
+        "height": 34
+    },
+    "usa_b_or_01_1.png": {
+        "x": 1336,
+        "y": 2125,
+        "width": 42,
+        "height": 34
+    },
+    "usa_b_or_01_1.15.png": {
+        "x": 292,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "usa_b_or_01_1.45.png": {
+        "x": 245,
+        "y": 1977,
+        "width": 61,
+        "height": 34
+    },
+    "usa_b_or_01_1.65.png": {
+        "x": 1915,
+        "y": 384,
+        "width": 69,
+        "height": 34
+    },
+    "usa_b_or_01_1.9.png": {
+        "x": 1823,
+        "y": 711,
+        "width": 80,
+        "height": 34
+    },
+    "usa_b_or_01_2.15.png": {
+        "x": 455,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "usa_b_or_01_2.4.png": {
+        "x": 922,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "usa_b_or_01_2.65.png": {
+        "x": 749,
+        "y": 1179,
+        "width": 111,
+        "height": 34
+    },
+    "usa_b_or_01_2.9.png": {
+        "x": 567,
+        "y": 1031,
+        "width": 122,
+        "height": 34
+    },
+    "usa_c_al_01_1.png": {
+        "x": 2181,
+        "y": 1641,
+        "width": 38,
+        "height": 36
+    },
+    "usa_c_al_01_1.15.png": {
+        "x": 616,
+        "y": 2125,
+        "width": 44,
+        "height": 36
+    },
+    "usa_c_al_01_1.45.png": {
+        "x": 1986,
+        "y": 1284,
+        "width": 55,
+        "height": 36
+    },
+    "usa_c_al_01_1.65.png": {
+        "x": 1915,
+        "y": 1501,
+        "width": 63,
+        "height": 36
+    },
+    "usa_c_al_01_1.9.png": {
+        "x": 1672,
+        "y": 1093,
+        "width": 72,
+        "height": 36
+    },
+    "usa_c_al_01_2.15.png": {
+        "x": 1073,
+        "y": 1658,
+        "width": 82,
+        "height": 36
+    },
+    "usa_c_al_01_2.4.png": {
+        "x": 1346,
+        "y": 1243,
+        "width": 91,
+        "height": 36
+    },
+    "usa_c_al_01_2.65.png": {
+        "x": 204,
+        "y": 1296,
+        "width": 101,
+        "height": 36
+    },
+    "usa_c_al_01_2.9.png": {
+        "x": 1138,
+        "y": 333,
+        "width": 110,
+        "height": 36
+    },
+    "usa_c_mo_01_1.png": {
+        "x": 2141,
+        "y": 769,
+        "width": 38,
+        "height": 34
+    },
+    "usa_c_mo_01_1.15.png": {
+        "x": 982,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "usa_c_mo_01_1.45.png": {
+        "x": 2043,
+        "y": 933,
+        "width": 55,
+        "height": 34
+    },
+    "usa_c_mo_01_1.65.png": {
+        "x": 460,
+        "y": 1942,
+        "width": 63,
+        "height": 34
+    },
+    "usa_c_mo_01_1.9.png": {
+        "x": 1599,
+        "y": 1094,
+        "width": 72,
+        "height": 34
+    },
+    "usa_c_mo_01_2.15.png": {
+        "x": 1243,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "usa_c_mo_01_2.4.png": {
+        "x": 552,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "usa_c_mo_01_2.65.png": {
+        "x": 1024,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "usa_c_mo_01_2.9.png": {
+        "x": 522,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "usa_c_sc_01_1.png": {
+        "x": 2141,
+        "y": 804,
+        "width": 38,
+        "height": 34
+    },
+    "usa_c_sc_01_1.15.png": {
+        "x": 1027,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "usa_c_sc_01_1.45.png": {
+        "x": 2043,
+        "y": 968,
+        "width": 55,
+        "height": 34
+    },
+    "usa_c_sc_01_1.65.png": {
+        "x": 524,
+        "y": 1942,
+        "width": 63,
+        "height": 34
+    },
+    "usa_c_sc_01_1.9.png": {
+        "x": 1599,
+        "y": 1129,
+        "width": 72,
+        "height": 34
+    },
+    "usa_c_sc_01_2.15.png": {
+        "x": 1326,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "usa_c_sc_01_2.4.png": {
+        "x": 644,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "usa_c_sc_01_2.65.png": {
+        "x": 1126,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "usa_c_sc_01_2.9.png": {
+        "x": 633,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "usa_c_sd_01_1.png": {
+        "x": 2141,
+        "y": 839,
+        "width": 38,
+        "height": 34
+    },
+    "usa_c_sd_01_1.15.png": {
+        "x": 1072,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "usa_c_sd_01_1.45.png": {
+        "x": 2043,
+        "y": 1003,
+        "width": 55,
+        "height": 34
+    },
+    "usa_c_sd_01_1.65.png": {
+        "x": 588,
+        "y": 1942,
+        "width": 63,
+        "height": 34
+    },
+    "usa_c_sd_01_1.9.png": {
+        "x": 1599,
+        "y": 1164,
+        "width": 72,
+        "height": 34
+    },
+    "usa_c_sd_01_2.15.png": {
+        "x": 1409,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "usa_c_sd_01_2.4.png": {
+        "x": 736,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "usa_c_sd_01_2.65.png": {
+        "x": 1228,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "usa_c_sd_01_2.9.png": {
+        "x": 744,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "usa_co_01_1.png": {
+        "x": 2181,
+        "y": 195,
+        "width": 38,
+        "height": 40
+    },
+    "usa_co_01_1.15.png": {
+        "x": 1986,
+        "y": 1595,
+        "width": 44,
+        "height": 40
+    },
+    "usa_co_01_1.45.png": {
+        "x": 1535,
+        "y": 802,
+        "width": 55,
+        "height": 40
+    },
+    "usa_co_01_1.65.png": {
+        "x": 1672,
+        "y": 1525,
+        "width": 63,
+        "height": 40
+    },
+    "usa_co_01_1.9.png": {
+        "x": 1746,
+        "y": 275,
+        "width": 72,
+        "height": 40
+    },
+    "usa_co_01_2.15.png": {
+        "x": 849,
+        "y": 359,
+        "width": 82,
+        "height": 40
+    },
+    "usa_co_01_2.4.png": {
+        "x": 940,
+        "y": 857,
+        "width": 91,
+        "height": 40
+    },
+    "usa_co_01_2.65.png": {
+        "x": 1036,
+        "y": 938,
+        "width": 101,
+        "height": 40
+    },
+    "usa_co_01_2.9.png": {
+        "x": 563,
+        "y": 851,
+        "width": 110,
+        "height": 40
+    },
+    "usa_d_ks_01_1.png": {
+        "x": 2181,
+        "y": 945,
+        "width": 38,
+        "height": 38
+    },
+    "usa_d_ks_01_1.15.png": {
+        "x": 546,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "usa_d_ks_01_1.45.png": {
+        "x": 1986,
+        "y": 275,
+        "width": 55,
+        "height": 38
+    },
+    "usa_d_ks_01_1.65.png": {
+        "x": 1535,
+        "y": 410,
+        "width": 63,
+        "height": 38
+    },
+    "usa_d_ks_01_1.9.png": {
+        "x": 1823,
+        "y": 317,
+        "width": 72,
+        "height": 38
+    },
+    "usa_d_ks_01_2.15.png": {
+        "x": 1261,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "usa_d_ks_01_2.4.png": {
+        "x": 1438,
+        "y": 193,
+        "width": 91,
+        "height": 38
+    },
+    "usa_d_ks_01_2.65.png": {
+        "x": 1138,
+        "y": 1015,
+        "width": 101,
+        "height": 38
+    },
+    "usa_d_ks_01_2.9.png": {
+        "x": 111,
+        "y": 1031,
+        "width": 110,
+        "height": 38
+    },
+    "usa_d_nm_01_1.png": {
+        "x": 2043,
+        "y": 1890,
+        "width": 42,
+        "height": 42
+    },
+    "usa_d_nm_01_1.15.png": {
+        "x": 1986,
+        "y": 908,
+        "width": 48,
+        "height": 42
+    },
+    "usa_d_nm_01_1.45.png": {
+        "x": 1672,
+        "y": 1224,
+        "width": 61,
+        "height": 42
+    },
+    "usa_d_nm_01_1.65.png": {
+        "x": 1672,
+        "y": 808,
+        "width": 69,
+        "height": 42
+    },
+    "usa_d_nm_01_1.9.png": {
+        "x": 1438,
+        "y": 1103,
+        "width": 80,
+        "height": 42
+    },
+    "usa_d_nm_01_2.15.png": {
+        "x": 1249,
+        "y": 812,
+        "width": 90,
+        "height": 42
+    },
+    "usa_d_nm_01_2.4.png": {
+        "x": 1036,
+        "y": 86,
+        "width": 101,
+        "height": 42
+    },
+    "usa_d_nm_01_2.65.png": {
+        "x": 0,
+        "y": 808,
+        "width": 111,
+        "height": 42
+    },
+    "usa_d_nm_01_2.9.png": {
+        "x": 0,
+        "y": 677,
+        "width": 122,
+        "height": 42
+    },
+    "usa_d_wi_01_1.png": {
+        "x": 2181,
+        "y": 984,
+        "width": 38,
+        "height": 38
+    },
+    "usa_d_wi_01_1.15.png": {
+        "x": 591,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "usa_d_wi_01_1.45.png": {
+        "x": 1986,
+        "y": 314,
+        "width": 55,
+        "height": 38
+    },
+    "usa_d_wi_01_1.65.png": {
+        "x": 1535,
+        "y": 449,
+        "width": 63,
+        "height": 38
+    },
+    "usa_d_wi_01_1.9.png": {
+        "x": 1823,
+        "y": 356,
+        "width": 72,
+        "height": 38
+    },
+    "usa_d_wi_01_2.15.png": {
+        "x": 1344,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "usa_d_wi_01_2.4.png": {
+        "x": 1438,
+        "y": 232,
+        "width": 91,
+        "height": 38
+    },
+    "usa_d_wi_01_2.65.png": {
+        "x": 1138,
+        "y": 1054,
+        "width": 101,
+        "height": 38
+    },
+    "usa_d_wi_01_2.9.png": {
+        "x": 222,
+        "y": 1031,
+        "width": 110,
+        "height": 38
+    },
+    "usa_dc_01_1.png": {
+        "x": 316,
+        "y": 159,
+        "width": 38,
+        "height": 46
+    },
+    "usa_dc_01_1.15.png": {
+        "x": 1986,
+        "y": 824,
+        "width": 44,
+        "height": 46
+    },
+    "usa_dc_01_1.45.png": {
+        "x": 1672,
+        "y": 1437,
+        "width": 55,
+        "height": 46
+    },
+    "usa_dc_01_1.65.png": {
+        "x": 1672,
+        "y": 898,
+        "width": 63,
+        "height": 46
+    },
+    "usa_dc_01_1.9.png": {
+        "x": 1346,
+        "y": 863,
+        "width": 72,
+        "height": 46
+    },
+    "usa_dc_01_2.15.png": {
+        "x": 1249,
+        "y": 1039,
+        "width": 82,
+        "height": 46
+    },
+    "usa_dc_01_2.4.png": {
+        "x": 1036,
+        "y": 219,
+        "width": 91,
+        "height": 46
+    },
+    "usa_dc_01_2.65.png": {
+        "x": 0,
+        "y": 892,
+        "width": 101,
+        "height": 46
+    },
+    "usa_dc_01_2.9.png": {
+        "x": 738,
+        "y": 47,
+        "width": 110,
+        "height": 46
+    },
+    "usa_e_ca_01_1.png": {
+        "x": 280,
+        "y": 2043,
+        "width": 42,
+        "height": 40
+    },
+    "usa_e_ca_01_1.15.png": {
+        "x": 2043,
+        "y": 240,
+        "width": 48,
+        "height": 40
+    },
+    "usa_e_ca_01_1.45.png": {
+        "x": 1599,
+        "y": 1269,
+        "width": 61,
+        "height": 40
+    },
+    "usa_e_ca_01_1.65.png": {
+        "x": 1746,
+        "y": 1291,
+        "width": 69,
+        "height": 40
+    },
+    "usa_e_ca_01_1.9.png": {
+        "x": 518,
+        "y": 1543,
+        "width": 80,
+        "height": 40
+    },
+    "usa_e_ca_01_2.15.png": {
+        "x": 1346,
+        "y": 442,
+        "width": 90,
+        "height": 40
+    },
+    "usa_e_ca_01_2.4.png": {
+        "x": 1036,
+        "y": 979,
+        "width": 101,
+        "height": 40
+    },
+    "usa_e_ca_01_2.65.png": {
+        "x": 117,
+        "y": 851,
+        "width": 111,
+        "height": 40
+    },
+    "usa_e_ca_01_2.9.png": {
+        "x": 375,
+        "y": 677,
+        "width": 122,
+        "height": 40
+    },
+    "usa_e_tn_01_1.png": {
+        "x": 125,
+        "y": 2125,
+        "width": 42,
+        "height": 38
+    },
+    "usa_e_tn_01_1.15.png": {
+        "x": 2043,
+        "y": 1549,
+        "width": 48,
+        "height": 38
+    },
+    "usa_e_tn_01_1.45.png": {
+        "x": 1915,
+        "y": 702,
+        "width": 61,
+        "height": 38
+    },
+    "usa_e_tn_01_1.65.png": {
+        "x": 1823,
+        "y": 1603,
+        "width": 69,
+        "height": 38
+    },
+    "usa_e_tn_01_1.9.png": {
+        "x": 81,
+        "y": 1658,
+        "width": 80,
+        "height": 38
+    },
+    "usa_e_tn_01_2.15.png": {
+        "x": 1438,
+        "y": 902,
+        "width": 90,
+        "height": 38
+    },
+    "usa_e_tn_01_2.4.png": {
+        "x": 0,
+        "y": 1179,
+        "width": 101,
+        "height": 38
+    },
+    "usa_e_tn_01_2.65.png": {
+        "x": 426,
+        "y": 986,
+        "width": 111,
+        "height": 38
+    },
+    "usa_e_tn_01_2.9.png": {
+        "x": 661,
+        "y": 755,
+        "width": 122,
+        "height": 38
+    },
+    "usa_f_la_01_1.png": {
+        "x": 2181,
+        "y": 1023,
+        "width": 38,
+        "height": 38
+    },
+    "usa_f_la_01_1.15.png": {
+        "x": 636,
+        "y": 2043,
+        "width": 44,
+        "height": 38
+    },
+    "usa_f_la_01_1.45.png": {
+        "x": 1986,
+        "y": 353,
+        "width": 55,
+        "height": 38
+    },
+    "usa_f_la_01_1.65.png": {
+        "x": 1535,
+        "y": 488,
+        "width": 63,
+        "height": 38
+    },
+    "usa_f_la_01_1.9.png": {
+        "x": 1823,
+        "y": 395,
+        "width": 72,
+        "height": 38
+    },
+    "usa_f_la_01_2.15.png": {
+        "x": 1427,
+        "y": 1543,
+        "width": 82,
+        "height": 38
+    },
+    "usa_f_la_01_2.4.png": {
+        "x": 1438,
+        "y": 271,
+        "width": 91,
+        "height": 38
+    },
+    "usa_f_la_01_2.65.png": {
+        "x": 102,
+        "y": 1179,
+        "width": 101,
+        "height": 38
+    },
+    "usa_f_la_01_2.9.png": {
+        "x": 333,
+        "y": 1031,
+        "width": 110,
+        "height": 38
+    },
+    "usa_f_nd_01_1.png": {
+        "x": 0,
+        "y": 2166,
+        "width": 42,
+        "height": 36
+    },
+    "usa_f_nd_01_1.15.png": {
+        "x": 1296,
+        "y": 1257,
+        "width": 48,
+        "height": 36
+    },
+    "usa_f_nd_01_1.45.png": {
+        "x": 1535,
+        "y": 976,
+        "width": 61,
+        "height": 36
+    },
+    "usa_f_nd_01_1.65.png": {
+        "x": 1599,
+        "y": 485,
+        "width": 69,
+        "height": 36
+    },
+    "usa_f_nd_01_1.9.png": {
+        "x": 0,
+        "y": 1771,
+        "width": 80,
+        "height": 36
+    },
+    "usa_f_nd_01_2.15.png": {
+        "x": 0,
+        "y": 1506,
+        "width": 90,
+        "height": 36
+    },
+    "usa_f_nd_01_2.4.png": {
+        "x": 306,
+        "y": 1296,
+        "width": 101,
+        "height": 36
+    },
+    "usa_f_nd_01_2.65.png": {
+        "x": 948,
+        "y": 1070,
+        "width": 111,
+        "height": 36
+    },
+    "usa_f_nd_01_2.9.png": {
+        "x": 674,
+        "y": 851,
+        "width": 122,
+        "height": 36
+    },
+    "usa_f_nv_01_1.png": {
+        "x": 2141,
+        "y": 258,
+        "width": 38,
+        "height": 42
+    },
+    "usa_f_nv_01_1.15.png": {
+        "x": 2043,
+        "y": 1311,
+        "width": 44,
+        "height": 42
+    },
+    "usa_f_nv_01_1.45.png": {
+        "x": 1915,
+        "y": 866,
+        "width": 55,
+        "height": 42
+    },
+    "usa_f_nv_01_1.65.png": {
+        "x": 1823,
+        "y": 1122,
+        "width": 63,
+        "height": 42
+    },
+    "usa_f_nv_01_1.9.png": {
+        "x": 1672,
+        "y": 258,
+        "width": 72,
+        "height": 42
+    },
+    "usa_f_nv_01_2.15.png": {
+        "x": 1438,
+        "y": 525,
+        "width": 82,
+        "height": 42
+    },
+    "usa_f_nv_01_2.4.png": {
+        "x": 1249,
+        "y": 258,
+        "width": 91,
+        "height": 42
+    },
+    "usa_f_nv_01_2.65.png": {
+        "x": 1036,
+        "y": 129,
+        "width": 101,
+        "height": 42
+    },
+    "usa_f_nv_01_2.9.png": {
+        "x": 324,
+        "y": 892,
+        "width": 110,
+        "height": 42
+    },
+    "usa_fl_01_1.png": {
+        "x": 1986,
+        "y": 1636,
+        "width": 44,
+        "height": 40
+    },
+    "usa_fl_01_1.15.png": {
+        "x": 1986,
+        "y": 605,
+        "width": 51,
+        "height": 40
+    },
+    "usa_fl_01_1.45.png": {
+        "x": 1672,
+        "y": 1308,
+        "width": 64,
+        "height": 40
+    },
+    "usa_fl_01_1.65.png": {
+        "x": 1672,
+        "y": 726,
+        "width": 73,
+        "height": 40
+    },
+    "usa_fl_01_1.9.png": {
+        "x": 1438,
+        "y": 1021,
+        "width": 84,
+        "height": 40
+    },
+    "usa_fl_01_2.15.png": {
+        "x": 1249,
+        "y": 342,
+        "width": 95,
+        "height": 40
+    },
+    "usa_fl_01_2.4.png": {
+        "x": 657,
+        "y": 892,
+        "width": 106,
+        "height": 40
+    },
+    "usa_fl_01_2.65.png": {
+        "x": 302,
+        "y": 755,
+        "width": 117,
+        "height": 40
+    },
+    "usa_fl_01_2.9.png": {
+        "x": 502,
+        "y": 575,
+        "width": 128,
+        "height": 40
+    },
+    "usa_g_oh_01_1.png": {
+        "x": 2181,
+        "y": 1754,
+        "width": 40,
+        "height": 34
+    },
+    "usa_g_oh_01_1.15.png": {
+        "x": 708,
+        "y": 2125,
+        "width": 46,
+        "height": 34
+    },
+    "usa_g_oh_01_1.45.png": {
+        "x": 2043,
+        "y": 35,
+        "width": 58,
+        "height": 34
+    },
+    "usa_g_oh_01_1.65.png": {
+        "x": 1915,
+        "y": 1667,
+        "width": 66,
+        "height": 34
+    },
+    "usa_g_oh_01_1.9.png": {
+        "x": 0,
+        "y": 1839,
+        "width": 76,
+        "height": 34
+    },
+    "usa_g_oh_01_2.15.png": {
+        "x": 1243,
+        "y": 1658,
+        "width": 86,
+        "height": 34
+    },
+    "usa_g_oh_01_2.4.png": {
+        "x": 97,
+        "y": 1471,
+        "width": 96,
+        "height": 34
+    },
+    "usa_g_oh_01_2.65.png": {
+        "x": 1184,
+        "y": 1218,
+        "width": 106,
+        "height": 34
+    },
+    "usa_g_oh_01_2.9.png": {
+        "x": 930,
+        "y": 1031,
+        "width": 116,
+        "height": 34
+    },
+    "usa_g_pa_01_1.png": {
+        "x": 2181,
+        "y": 1789,
+        "width": 40,
+        "height": 34
+    },
+    "usa_g_pa_01_1.15.png": {
+        "x": 755,
+        "y": 2125,
+        "width": 46,
+        "height": 34
+    },
+    "usa_g_pa_01_1.45.png": {
+        "x": 2043,
+        "y": 70,
+        "width": 58,
+        "height": 34
+    },
+    "usa_g_pa_01_1.65.png": {
+        "x": 1915,
+        "y": 1702,
+        "width": 66,
+        "height": 34
+    },
+    "usa_g_pa_01_1.9.png": {
+        "x": 77,
+        "y": 1839,
+        "width": 76,
+        "height": 34
+    },
+    "usa_g_pa_01_2.15.png": {
+        "x": 1330,
+        "y": 1658,
+        "width": 86,
+        "height": 34
+    },
+    "usa_g_pa_01_2.4.png": {
+        "x": 194,
+        "y": 1471,
+        "width": 96,
+        "height": 34
+    },
+    "usa_g_pa_01_2.65.png": {
+        "x": 408,
+        "y": 1296,
+        "width": 106,
+        "height": 34
+    },
+    "usa_g_pa_01_2.9.png": {
+        "x": 0,
+        "y": 1111,
+        "width": 116,
+        "height": 34
+    },
+    "usa_h_ny_01_1.png": {
+        "x": 2181,
+        "y": 1062,
+        "width": 40,
+        "height": 36
+    },
+    "usa_h_ny_01_1.15.png": {
+        "x": 0,
+        "y": 2088,
+        "width": 46,
+        "height": 36
+    },
+    "usa_h_ny_01_1.45.png": {
+        "x": 0,
+        "y": 1977,
+        "width": 58,
+        "height": 36
+    },
+    "usa_h_ny_01_1.65.png": {
+        "x": 1915,
+        "y": 70,
+        "width": 66,
+        "height": 36
+    },
+    "usa_h_ny_01_1.9.png": {
+        "x": 1823,
+        "y": 124,
+        "width": 76,
+        "height": 36
+    },
+    "usa_h_ny_01_2.15.png": {
+        "x": 1510,
+        "y": 1543,
+        "width": 86,
+        "height": 36
+    },
+    "usa_h_ny_01_2.4.png": {
+        "x": 1438,
+        "y": 0,
+        "width": 96,
+        "height": 36
+    },
+    "usa_h_ny_01_2.65.png": {
+        "x": 306,
+        "y": 1179,
+        "width": 106,
+        "height": 36
+    },
+    "usa_h_ny_01_2.9.png": {
+        "x": 797,
+        "y": 851,
+        "width": 116,
+        "height": 36
+    },
+    "usa_h_ut_01_1.png": {
+        "x": 0,
+        "y": 2125,
+        "width": 40,
+        "height": 40
+    },
+    "usa_h_ut_01_1.15.png": {
+        "x": 2043,
+        "y": 1395,
+        "width": 46,
+        "height": 40
+    },
+    "usa_h_ut_01_1.45.png": {
+        "x": 1915,
+        "y": 581,
+        "width": 58,
+        "height": 40
+    },
+    "usa_h_ut_01_1.65.png": {
+        "x": 1823,
+        "y": 1165,
+        "width": 66,
+        "height": 40
+    },
+    "usa_h_ut_01_1.9.png": {
+        "x": 77,
+        "y": 1697,
+        "width": 76,
+        "height": 40
+    },
+    "usa_h_ut_01_2.15.png": {
+        "x": 1438,
+        "y": 611,
+        "width": 86,
+        "height": 40
+    },
+    "usa_h_ut_01_2.4.png": {
+        "x": 1249,
+        "y": 0,
+        "width": 96,
+        "height": 40
+    },
+    "usa_h_ut_01_2.65.png": {
+        "x": 764,
+        "y": 892,
+        "width": 106,
+        "height": 40
+    },
+    "usa_h_ut_01_2.9.png": {
+        "x": 621,
+        "y": 677,
+        "width": 116,
+        "height": 40
+    },
+    "usa_i_ar_01_1.png": {
+        "x": 1379,
+        "y": 2125,
+        "width": 42,
+        "height": 34
+    },
+    "usa_i_ar_01_1.15.png": {
+        "x": 341,
+        "y": 2088,
+        "width": 48,
+        "height": 34
+    },
+    "usa_i_ar_01_1.45.png": {
+        "x": 307,
+        "y": 1977,
+        "width": 61,
+        "height": 34
+    },
+    "usa_i_ar_01_1.65.png": {
+        "x": 1915,
+        "y": 419,
+        "width": 69,
+        "height": 34
+    },
+    "usa_i_ar_01_1.9.png": {
+        "x": 1823,
+        "y": 746,
+        "width": 80,
+        "height": 34
+    },
+    "usa_i_ar_01_2.15.png": {
+        "x": 546,
+        "y": 1623,
+        "width": 90,
+        "height": 34
+    },
+    "usa_i_ar_01_2.4.png": {
+        "x": 1330,
+        "y": 1370,
+        "width": 101,
+        "height": 34
+    },
+    "usa_i_ar_01_2.65.png": {
+        "x": 861,
+        "y": 1179,
+        "width": 111,
+        "height": 34
+    },
+    "usa_i_ar_01_2.9.png": {
+        "x": 690,
+        "y": 1031,
+        "width": 122,
+        "height": 34
+    },
+    "usa_i_az_01_1.png": {
+        "x": 2141,
+        "y": 874,
+        "width": 38,
+        "height": 34
+    },
+    "usa_i_az_01_1.15.png": {
+        "x": 1117,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "usa_i_az_01_1.45.png": {
+        "x": 2043,
+        "y": 1038,
+        "width": 55,
+        "height": 34
+    },
+    "usa_i_az_01_1.65.png": {
+        "x": 652,
+        "y": 1942,
+        "width": 63,
+        "height": 34
+    },
+    "usa_i_az_01_1.9.png": {
+        "x": 1599,
+        "y": 1199,
+        "width": 72,
+        "height": 34
+    },
+    "usa_i_az_01_2.15.png": {
+        "x": 1492,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "usa_i_az_01_2.4.png": {
+        "x": 828,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "usa_i_az_01_2.65.png": {
+        "x": 0,
+        "y": 1405,
+        "width": 101,
+        "height": 34
+    },
+    "usa_i_az_01_2.9.png": {
+        "x": 855,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "usa_i_ga_01_1.png": {
+        "x": 2141,
+        "y": 909,
+        "width": 38,
+        "height": 34
+    },
+    "usa_i_ga_01_1.15.png": {
+        "x": 1162,
+        "y": 2125,
+        "width": 44,
+        "height": 34
+    },
+    "usa_i_ga_01_1.45.png": {
+        "x": 2043,
+        "y": 1073,
+        "width": 55,
+        "height": 34
+    },
+    "usa_i_ga_01_1.65.png": {
+        "x": 716,
+        "y": 1942,
+        "width": 63,
+        "height": 34
+    },
+    "usa_i_ga_01_1.9.png": {
+        "x": 1599,
+        "y": 1234,
+        "width": 72,
+        "height": 34
+    },
+    "usa_i_ga_01_2.15.png": {
+        "x": 1575,
+        "y": 1771,
+        "width": 82,
+        "height": 34
+    },
+    "usa_i_ga_01_2.4.png": {
+        "x": 920,
+        "y": 1588,
+        "width": 91,
+        "height": 34
+    },
+    "usa_i_ga_01_2.65.png": {
+        "x": 102,
+        "y": 1405,
+        "width": 101,
+        "height": 34
+    },
+    "usa_i_ga_01_2.9.png": {
+        "x": 966,
+        "y": 1218,
+        "width": 110,
+        "height": 34
+    },
+    "usa_id_01_1.png": {
+        "x": 2102,
+        "y": 0,
+        "width": 38,
+        "height": 44
+    },
+    "usa_id_01_1.15.png": {
+        "x": 2043,
+        "y": 195,
+        "width": 44,
+        "height": 44
+    },
+    "usa_id_01_1.45.png": {
+        "x": 1599,
+        "y": 1351,
+        "width": 55,
+        "height": 44
+    },
+    "usa_id_01_1.65.png": {
+        "x": 1746,
+        "y": 1246,
+        "width": 63,
+        "height": 44
+    },
+    "usa_id_01_1.9.png": {
+        "x": 1599,
+        "y": 0,
+        "width": 72,
+        "height": 44
+    },
+    "usa_id_01_2.15.png": {
+        "x": 1346,
+        "y": 356,
+        "width": 82,
+        "height": 44
+    },
+    "usa_id_01_2.4.png": {
+        "x": 940,
+        "y": 567,
+        "width": 91,
+        "height": 44
+    },
+    "usa_id_01_2.65.png": {
+        "x": 519,
+        "y": 473,
+        "width": 101,
+        "height": 44
+    },
+    "usa_id_01_2.9.png": {
+        "x": 738,
+        "y": 596,
+        "width": 110,
+        "height": 44
+    },
+    "usa_md_01_1.png": {
+        "x": 2181,
+        "y": 236,
+        "width": 38,
+        "height": 40
+    },
+    "usa_md_01_1.15.png": {
+        "x": 1986,
+        "y": 1677,
+        "width": 44,
+        "height": 40
+    },
+    "usa_md_01_1.45.png": {
+        "x": 1535,
+        "y": 843,
+        "width": 55,
+        "height": 40
+    },
+    "usa_md_01_1.65.png": {
+        "x": 1672,
+        "y": 1566,
+        "width": 63,
+        "height": 40
+    },
+    "usa_md_01_1.9.png": {
+        "x": 1746,
+        "y": 316,
+        "width": 72,
+        "height": 40
+    },
+    "usa_md_01_2.15.png": {
+        "x": 849,
+        "y": 400,
+        "width": 82,
+        "height": 40
+    },
+    "usa_md_01_2.4.png": {
+        "x": 940,
+        "y": 898,
+        "width": 91,
+        "height": 40
+    },
+    "usa_md_01_2.65.png": {
+        "x": 0,
+        "y": 1070,
+        "width": 101,
+        "height": 40
+    },
+    "usa_md_01_2.9.png": {
+        "x": 435,
+        "y": 892,
+        "width": 110,
+        "height": 40
+    },
+    "usa_mn_01_1.png": {
+        "x": 2181,
+        "y": 277,
+        "width": 38,
+        "height": 40
+    },
+    "usa_mn_01_1.15.png": {
+        "x": 1986,
+        "y": 1718,
+        "width": 44,
+        "height": 40
+    },
+    "usa_mn_01_1.45.png": {
+        "x": 1535,
+        "y": 884,
+        "width": 55,
+        "height": 40
+    },
+    "usa_mn_01_1.65.png": {
+        "x": 1672,
+        "y": 1607,
+        "width": 63,
+        "height": 40
+    },
+    "usa_mn_01_1.9.png": {
+        "x": 1746,
+        "y": 357,
+        "width": 72,
+        "height": 40
+    },
+    "usa_mn_01_2.15.png": {
+        "x": 849,
+        "y": 441,
+        "width": 82,
+        "height": 40
+    },
+    "usa_mn_01_2.4.png": {
+        "x": 1346,
+        "y": 0,
+        "width": 91,
+        "height": 40
+    },
+    "usa_mn_01_2.65.png": {
+        "x": 102,
+        "y": 1070,
+        "width": 101,
+        "height": 40
+    },
+    "usa_mn_01_2.9.png": {
+        "x": 546,
+        "y": 892,
+        "width": 110,
+        "height": 40
+    },
+    "usa_ne_01_1.png": {
+        "x": 1986,
+        "y": 1759,
+        "width": 44,
+        "height": 40
+    },
+    "usa_ne_01_1.15.png": {
+        "x": 1986,
+        "y": 646,
+        "width": 51,
+        "height": 40
+    },
+    "usa_ne_01_1.45.png": {
+        "x": 1672,
+        "y": 1349,
+        "width": 64,
+        "height": 40
+    },
+    "usa_ne_01_1.65.png": {
+        "x": 1672,
+        "y": 767,
+        "width": 73,
+        "height": 40
+    },
+    "usa_ne_01_1.9.png": {
+        "x": 1438,
+        "y": 1062,
+        "width": 84,
+        "height": 40
+    },
+    "usa_ne_01_2.15.png": {
+        "x": 1249,
+        "y": 383,
+        "width": 95,
+        "height": 40
+    },
+    "usa_ne_01_2.4.png": {
+        "x": 100,
+        "y": 986,
+        "width": 106,
+        "height": 40
+    },
+    "usa_ne_01_2.65.png": {
+        "x": 420,
+        "y": 755,
+        "width": 117,
+        "height": 40
+    },
+    "usa_ne_01_2.9.png": {
+        "x": 123,
+        "y": 677,
+        "width": 128,
+        "height": 40
+    },
+    "usa_nh_01_1.png": {
+        "x": 1970,
+        "y": 2088,
+        "width": 42,
+        "height": 32
+    },
+    "usa_nh_01_1.15.png": {
+        "x": 1227,
+        "y": 2088,
+        "width": 48,
+        "height": 32
+    },
+    "usa_nh_01_1.45.png": {
+        "x": 1367,
+        "y": 1977,
+        "width": 61,
+        "height": 32
+    },
+    "usa_nh_01_1.65.png": {
+        "x": 1354,
+        "y": 1909,
+        "width": 69,
+        "height": 32
+    },
+    "usa_nh_01_1.9.png": {
+        "x": 1288,
+        "y": 1839,
+        "width": 80,
+        "height": 32
+    },
+    "usa_nh_01_2.15.png": {
+        "x": 91,
+        "y": 1738,
+        "width": 90,
+        "height": 32
+    },
+    "usa_nh_01_2.4.png": {
+        "x": 499,
+        "y": 1506,
+        "width": 101,
+        "height": 32
+    },
+    "usa_nh_01_2.65.png": {
+        "x": 772,
+        "y": 1333,
+        "width": 111,
+        "height": 32
+    },
+    "usa_nh_01_2.9.png": {
+        "x": 738,
+        "y": 1146,
+        "width": 122,
+        "height": 32
+    },
+    "usa_ok_01_1.png": {
+        "x": 168,
+        "y": 2125,
+        "width": 42,
+        "height": 38
+    },
+    "usa_ok_01_1.15.png": {
+        "x": 2043,
+        "y": 1588,
+        "width": 48,
+        "height": 38
+    },
+    "usa_ok_01_1.45.png": {
+        "x": 1915,
+        "y": 741,
+        "width": 61,
+        "height": 38
+    },
+    "usa_ok_01_1.65.png": {
+        "x": 1823,
+        "y": 1642,
+        "width": 69,
+        "height": 38
+    },
+    "usa_ok_01_1.9.png": {
+        "x": 162,
+        "y": 1658,
+        "width": 80,
+        "height": 38
+    },
+    "usa_ok_01_2.15.png": {
+        "x": 1438,
+        "y": 941,
+        "width": 90,
+        "height": 38
+    },
+    "usa_ok_01_2.4.png": {
+        "x": 204,
+        "y": 1179,
+        "width": 101,
+        "height": 38
+    },
+    "usa_ok_01_2.65.png": {
+        "x": 538,
+        "y": 986,
+        "width": 111,
+        "height": 38
+    },
+    "usa_ok_01_2.9.png": {
+        "x": 112,
+        "y": 808,
+        "width": 122,
+        "height": 38
+    },
+    "usa_tx_01_1.png": {
+        "x": 2181,
+        "y": 318,
+        "width": 40,
+        "height": 38
+    },
+    "usa_tx_01_1.15.png": {
+        "x": 983,
+        "y": 986,
+        "width": 46,
+        "height": 38
+    },
+    "usa_tx_01_1.45.png": {
+        "x": 1535,
+        "y": 722,
+        "width": 58,
+        "height": 38
+    },
+    "usa_tx_01_1.65.png": {
+        "x": 1599,
+        "y": 291,
+        "width": 66,
+        "height": 38
+    },
+    "usa_tx_01_1.9.png": {
+        "x": 1746,
+        "y": 195,
+        "width": 76,
+        "height": 38
+    },
+    "usa_tx_01_2.15.png": {
+        "x": 849,
+        "y": 677,
+        "width": 86,
+        "height": 38
+    },
+    "usa_tx_01_2.4.png": {
+        "x": 485,
+        "y": 1257,
+        "width": 96,
+        "height": 38
+    },
+    "usa_tx_01_2.65.png": {
+        "x": 841,
+        "y": 1070,
+        "width": 106,
+        "height": 38
+    },
+    "usa_tx_01_2.9.png": {
+        "x": 820,
+        "y": 808,
+        "width": 116,
+        "height": 38
+    },
+    "usa_vt_01_1.png": {
+        "x": 41,
+        "y": 2125,
+        "width": 40,
+        "height": 40
+    },
+    "usa_vt_01_1.15.png": {
+        "x": 2043,
+        "y": 1436,
+        "width": 46,
+        "height": 40
+    },
+    "usa_vt_01_1.45.png": {
+        "x": 1915,
+        "y": 622,
+        "width": 58,
+        "height": 40
+    },
+    "usa_vt_01_1.65.png": {
+        "x": 1823,
+        "y": 1206,
+        "width": 66,
+        "height": 40
+    },
+    "usa_vt_01_1.9.png": {
+        "x": 154,
+        "y": 1697,
+        "width": 76,
+        "height": 40
+    },
+    "usa_vt_01_2.15.png": {
+        "x": 1438,
+        "y": 652,
+        "width": 86,
+        "height": 40
+    },
+    "usa_vt_01_2.4.png": {
+        "x": 1249,
+        "y": 41,
+        "width": 96,
+        "height": 40
+    },
+    "usa_vt_01_2.65.png": {
+        "x": 207,
+        "y": 986,
+        "width": 106,
+        "height": 40
+    },
+    "usa_vt_01_2.9.png": {
+        "x": 0,
+        "y": 851,
+        "width": 116,
+        "height": 40
+    },
+    "usa_wa_01_1.png": {
+        "x": 323,
+        "y": 2043,
+        "width": 42,
+        "height": 40
+    },
+    "usa_wa_01_1.15.png": {
+        "x": 2043,
+        "y": 281,
+        "width": 48,
+        "height": 40
+    },
+    "usa_wa_01_1.45.png": {
+        "x": 1599,
+        "y": 1310,
+        "width": 61,
+        "height": 40
+    },
+    "usa_wa_01_1.65.png": {
+        "x": 1746,
+        "y": 1332,
+        "width": 69,
+        "height": 40
+    },
+    "usa_wa_01_1.9.png": {
+        "x": 599,
+        "y": 1543,
+        "width": 80,
+        "height": 40
+    },
+    "usa_wa_01_2.15.png": {
+        "x": 1346,
+        "y": 483,
+        "width": 90,
+        "height": 40
+    },
+    "usa_wa_01_2.4.png": {
+        "x": 204,
+        "y": 1070,
+        "width": 101,
+        "height": 40
+    },
+    "usa_wa_01_2.65.png": {
+        "x": 229,
+        "y": 851,
+        "width": 111,
+        "height": 40
+    },
+    "usa_wa_01_2.9.png": {
+        "x": 498,
+        "y": 677,
+        "width": 122,
+        "height": 40
+    },
+    "venezuela_01_1.png": {
+        "x": 2181,
+        "y": 1228,
+        "width": 34,
+        "height": 42
+    },
+    "venezuela_01_1.15.png": {
+        "x": 2141,
+        "y": 129,
+        "width": 39,
+        "height": 42
+    },
+    "venezuela_01_1.45.png": {
+        "x": 1986,
+        "y": 521,
+        "width": 49,
+        "height": 42
+    },
+    "venezuela_01_1.65.png": {
+        "x": 1915,
+        "y": 236,
+        "width": 56,
+        "height": 42
+    },
+    "venezuela_01_1.9.png": {
+        "x": 1823,
+        "y": 563,
+        "width": 65,
+        "height": 42
+    },
+    "venezuela_01_2.15.png": {
+        "x": 1672,
+        "y": 129,
+        "width": 73,
+        "height": 42
+    },
+    "venezuela_01_2.4.png": {
+        "x": 1438,
+        "y": 568,
+        "width": 82,
+        "height": 42
+    },
+    "venezuela_01_2.65.png": {
+        "x": 1249,
+        "y": 855,
+        "width": 90,
+        "height": 42
+    },
+    "venezuela_01_2.9.png": {
+        "x": 1036,
+        "y": 395,
+        "width": 99,
+        "height": 42
+    }
+}

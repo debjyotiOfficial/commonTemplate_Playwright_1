@@ -1,0 +1,2968 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic:
+        - generic [ref=e8] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]:
+              - img [ref=e14] [cursor=pointer]
+              - generic [ref=e15] [cursor=pointer]: "N"
+            - paragraph [ref=e16] [cursor=pointer]: 0.0 mph
+        - generic [ref=e19] [cursor=pointer]:
+          - img [ref=e21] [cursor=pointer]
+          - generic [ref=e22] [cursor=pointer]:
+            - generic [ref=e23] [cursor=pointer]:
+              - img [ref=e24] [cursor=pointer]
+              - generic [ref=e25] [cursor=pointer]: NW
+            - paragraph [ref=e26] [cursor=pointer]: 0.0 mph
+    - generic:
+      - generic:
+        - img
+      - generic:
+        - link "Terms of use" [ref=e28] [cursor=pointer]:
+          - /url: https://legal.here.com/us-en/terms/here-end-user-terms
+        - generic: © 1987–2025 HERE
+    - generic [ref=e29]:
+      - generic:
+        - generic [ref=e30]:
+          - img [ref=e32] [cursor=pointer]
+          - img [ref=e36] [cursor=pointer]
+        - img [ref=e40] [cursor=pointer]
+  - navigation [ref=e47]:
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic: Account Settings
+      - generic:
+        - paragraph [ref=e53] [cursor=pointer]: List Of Devices
+        - paragraph [ref=e54] [cursor=pointer]: Add/Edit Device
+        - paragraph [ref=e55] [cursor=pointer]: Change Password
+        - paragraph [ref=e56] [cursor=pointer]: Change Timezone
+        - paragraph [ref=e57] [cursor=pointer]: View/Edit Users
+        - paragraph [ref=e58] [cursor=pointer]: Subgroups
+        - paragraph [ref=e59] [cursor=pointer]: Pulsing Icon Settings
+        - paragraph [ref=e60] [cursor=pointer]: Custom Logo
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic: Alerts
+      - generic:
+        - paragraph [ref=e65] [cursor=pointer]: Alerts Contacts
+        - paragraph [ref=e66] [cursor=pointer]: Change Alerts Settings
+        - paragraph [ref=e67] [cursor=pointer]: Scheduled Reports
+        - paragraph [ref=e68] [cursor=pointer]: Add/Edit Maintenance Contact
+        - paragraph [ref=e69] [cursor=pointer]: Maintenance Report
+        - paragraph [ref=e70] [cursor=pointer]: View Vehicle Service
+        - paragraph [ref=e71] [cursor=pointer]: Weekly After Hours Alert Summary
+        - paragraph [ref=e72] [cursor=pointer]: After Hours Summary
+        - paragraph [ref=e73] [cursor=pointer]: After Hours Insights
+        - paragraph [ref=e74] [cursor=pointer]: After Hours Settings
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic: Geofencing
+      - generic:
+        - paragraph [ref=e79] [cursor=pointer]: Create Geofencing Area
+        - paragraph [ref=e80] [cursor=pointer]: View/Delete Geofences
+        - generic [ref=e81]:
+          - generic [ref=e83] [cursor=pointer]: Geofence Reports
+          - generic:
+            - paragraph [ref=e85] [cursor=pointer]: Weekly Geofence Report
+            - paragraph [ref=e86] [cursor=pointer]: Current Geofence Report
+            - paragraph [ref=e87] [cursor=pointer]: Recent Geofence Report
+        - generic [ref=e88]:
+          - generic [ref=e90] [cursor=pointer]: Landmarks
+          - generic:
+            - paragraph [ref=e92] [cursor=pointer]: Create Landmarks
+            - paragraph [ref=e93] [cursor=pointer]: View/Edit Landmarks
+            - paragraph [ref=e94] [cursor=pointer]: Landmarks Report
+    - generic [ref=e95]:
+      - generic: Track History
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - generic: Dashcam
+      - generic:
+        - paragraph [ref=e101] [cursor=pointer]: Dashcam Refresh
+        - paragraph [ref=e102] [cursor=pointer]: Alert Report
+        - paragraph [ref=e103] [cursor=pointer]: Alert Settings
+        - paragraph [ref=e104] [cursor=pointer]: Track History
+        - paragraph [ref=e105] [cursor=pointer]:
+          - text: Dashcam Safety Report
+          - generic [ref=e106] [cursor=pointer]: 
+        - paragraph [ref=e107] [cursor=pointer]: Video On Demand
+        - paragraph [ref=e108] [cursor=pointer]:
+          - text: Snapshots
+          - generic [ref=e109] [cursor=pointer]: 
+        - paragraph [ref=e110] [cursor=pointer]: Live Video Stream
+    - generic [ref=e111]:
+      - generic [ref=e112] [cursor=pointer]:
+        - generic: Reports
+      - generic:
+        - paragraph [ref=e115] [cursor=pointer]: Travel Log Report
+        - paragraph [ref=e116] [cursor=pointer]: Current Location Report
+        - paragraph [ref=e117] [cursor=pointer]: Account Health Summary
+        - generic [ref=e118]:
+          - generic [ref=e120] [cursor=pointer]: Fleet Reports
+          - generic:
+            - paragraph [ref=e122] [cursor=pointer]: Mileage Report
+            - paragraph [ref=e123] [cursor=pointer]: State Mileage Report
+            - paragraph [ref=e124] [cursor=pointer]: 30 Day Mileage Report
+            - paragraph [ref=e125] [cursor=pointer]: Posted Speed Report
+            - paragraph [ref=e126] [cursor=pointer]: Trip Report
+            - paragraph [ref=e127] [cursor=pointer]: Engine On Report
+            - paragraph [ref=e128] [cursor=pointer]: Idling Report
+            - paragraph [ref=e129] [cursor=pointer]: Low Voltage Device Report
+            - paragraph [ref=e130] [cursor=pointer]: Driver Safety Report
+        - generic [ref=e131]:
+          - generic [ref=e133] [cursor=pointer]: Analytics
+          - paragraph [ref=e135] [cursor=pointer]: Weekly Utilization Report
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - generic [ref=e138]: F
+        - generic [ref=e139]: fleetdemo
+      - generic:
+        - paragraph [ref=e141] [cursor=pointer]: Get Support
+        - paragraph [ref=e143] [cursor=pointer]: Online Manual
+        - paragraph [ref=e145] [cursor=pointer]: Logout
+  - text:  
+  - generic [ref=e147]:
+    - heading "Driver Card" [level=2] [ref=e149]
+    - generic [ref=e154]:
+      - textbox "Search" [ref=e157]
+      - generic [ref=e158]:
+        - paragraph [ref=e159]: 2 Drivers
+        - paragraph [ref=e161] [cursor=pointer]: Sort
+    - generic [ref=e163]:
+      - generic [ref=e164] [cursor=pointer]:
+        - img [ref=e166] [cursor=pointer]
+        - generic [ref=e168] [cursor=pointer]:
+          - generic [ref=e170] [cursor=pointer]:
+            - heading "Sales Car1" [level=5] [ref=e171] [cursor=pointer]
+            - generic [ref=e172] [cursor=pointer]: Vehicle Is Off
+          - generic [ref=e173] [cursor=pointer]:
+            - generic [ref=e174] [cursor=pointer]:
+              - paragraph [ref=e175] [cursor=pointer]: 11239 E Karen Dr, Scottsdale, AZ 85255
+              - link [ref=e176] [cursor=pointer]:
+                - /url: http://maps.google.com/?q=33.624219,-111.840228
+            - generic [ref=e177] [cursor=pointer]: 49 min 26 secs ago
+      - generic [ref=e178] [cursor=pointer]:
+        - img [ref=e180] [cursor=pointer]
+        - generic [ref=e182] [cursor=pointer]:
+          - generic [ref=e184] [cursor=pointer]:
+            - heading "Demo 1" [level=5] [ref=e185] [cursor=pointer]
+            - generic [ref=e186] [cursor=pointer]: Vehicle Is Off
+          - generic [ref=e187] [cursor=pointer]:
+            - generic [ref=e188] [cursor=pointer]:
+              - paragraph [ref=e189] [cursor=pointer]: 11223 E Karen Dr, Scottsdale, AZ 85255
+              - link [ref=e190] [cursor=pointer]:
+                - /url: http://maps.google.com/?q=33.624113,-111.840568
+            - generic [ref=e191] [cursor=pointer]: 79 min 23 secs ago
+  - generic [ref=e192]:
+    - heading "List Of Devices" [level=2] [ref=e194]
+    - generic [ref=e197]:
+      - textbox "Search" [ref=e200]
+      - generic [ref=e202]:
+        - generic [ref=e203]: Show
+        - combobox "Show Devices" [ref=e204]:
+          - option "All" [selected]
+          - option "Only Assigned"
+          - option "Only Unassigned"
+        - generic [ref=e205]: Devices
+      - generic [ref=e207]:
+        - generic [ref=e208]: Show
+        - combobox "Show entries" [ref=e209]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e210]: entries
+      - button "Copy" [ref=e211] [cursor=pointer]
+      - button "Save file as" [ref=e213] [cursor=pointer]: Save file as
+    - table [ref=e216]:
+      - rowgroup [ref=e217]:
+        - row "No Devices to Display" [ref=e218]:
+          - cell "No Devices to Display" [ref=e219] [cursor=pointer]
+    - paragraph [ref=e221]: Showing 0 to 0 of 0 entries
+  - generic [ref=e225]:
+    - heading "Add/Edit Device" [level=2] [ref=e227]
+    - generic [ref=e230]:
+      - button "Add Device" [ref=e232] [cursor=pointer]
+      - button "Edit Device" [ref=e233] [cursor=pointer]
+    - generic [ref=e234]:
+      - generic [ref=e235]:
+        - generic [ref=e236]: "IMEI:"
+        - combobox [ref=e237]
+        - combobox "Search Available Devices" [ref=e240] [cursor=pointer]:
+          - generic [ref=e242] [cursor=pointer]: Search Available Devices
+      - generic [ref=e243]:
+        - generic [ref=e244]: "Device Name:"
+        - textbox "Device Name:" [ref=e245]
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - generic [ref=e249]: "Select Icon:"
+            - combobox "Select Icon:" [ref=e250]:
+              - option "All" [selected]
+              - option "Custom Icon"
+              - option "Default"
+              - option "Cars"
+              - option "Motorbikes"
+              - option "Vans"
+              - option "Box Trucks"
+              - option "Tractors"
+              - option "Tractor Trailers"
+              - option "Trucks"
+              - option "UTV"
+              - option "Golf Cart"
+              - option "Fire Trucks"
+              - option "Bus"
+              - option "Boat"
+              - option "ATV"
+              - option "Trailers"
+              - option "Heavy"
+              - option "Markers"
+              - option "Special"
+          - button "Add Device" [ref=e251] [cursor=pointer]
+        - generic [ref=e252]:
+          - generic [ref=e254] [cursor=pointer]:
+            - radio "icon0.png" [checked] [ref=e255]
+            - img "icon0.png" [ref=e256] [cursor=pointer]
+          - generic [ref=e258] [cursor=pointer]:
+            - radio "icon337.png" [ref=e259]
+            - img "icon337.png" [ref=e260] [cursor=pointer]
+          - generic [ref=e262] [cursor=pointer]:
+            - radio "icon338.png" [ref=e263]
+            - img "icon338.png" [ref=e264] [cursor=pointer]
+          - generic [ref=e266] [cursor=pointer]:
+            - radio "icon339.png" [ref=e267]
+            - img "icon339.png" [ref=e268] [cursor=pointer]
+          - generic [ref=e270] [cursor=pointer]:
+            - radio "icon340.png" [ref=e271]
+            - img "icon340.png" [ref=e272] [cursor=pointer]
+          - generic [ref=e274] [cursor=pointer]:
+            - radio "icon341.png" [ref=e275]
+            - img "icon341.png" [ref=e276] [cursor=pointer]
+          - generic [ref=e278] [cursor=pointer]:
+            - radio "icon342.png" [ref=e279]
+            - img "icon342.png" [ref=e280] [cursor=pointer]
+          - generic [ref=e282] [cursor=pointer]:
+            - radio "icon343.png" [ref=e283]
+            - img "icon343.png" [ref=e284] [cursor=pointer]
+          - generic [ref=e286] [cursor=pointer]:
+            - radio "icon1.png" [ref=e287]
+            - img "icon1.png" [ref=e288] [cursor=pointer]
+          - generic [ref=e290] [cursor=pointer]:
+            - radio "icon5.png" [ref=e291]
+            - img "icon5.png" [ref=e292] [cursor=pointer]
+          - generic [ref=e294] [cursor=pointer]:
+            - radio "icon6.png" [ref=e295]
+            - img "icon6.png" [ref=e296] [cursor=pointer]
+          - generic [ref=e298] [cursor=pointer]:
+            - radio "icon8.png" [ref=e299]
+            - img "icon8.png" [ref=e300] [cursor=pointer]
+          - generic [ref=e302] [cursor=pointer]:
+            - radio "icon9.png" [ref=e303]
+            - img "icon9.png" [ref=e304] [cursor=pointer]
+          - generic [ref=e306] [cursor=pointer]:
+            - radio "icon11.png" [ref=e307]
+            - img "icon11.png" [ref=e308] [cursor=pointer]
+          - generic [ref=e310] [cursor=pointer]:
+            - radio "icon15.png" [ref=e311]
+            - img "icon15.png" [ref=e312] [cursor=pointer]
+          - generic [ref=e314] [cursor=pointer]:
+            - radio "icon16.png" [ref=e315]
+            - img "icon16.png" [ref=e316] [cursor=pointer]
+          - generic [ref=e318] [cursor=pointer]:
+            - radio "icon18.png" [ref=e319]
+            - img "icon18.png" [ref=e320] [cursor=pointer]
+          - generic [ref=e322] [cursor=pointer]:
+            - radio "icon19.png" [ref=e323]
+            - img "icon19.png" [ref=e324] [cursor=pointer]
+          - generic [ref=e326] [cursor=pointer]:
+            - radio "icon30.png" [ref=e327]
+            - img "icon30.png" [ref=e328] [cursor=pointer]
+          - generic [ref=e330] [cursor=pointer]:
+            - radio "icon344.png" [ref=e331]
+            - img "icon344.png" [ref=e332] [cursor=pointer]
+          - generic [ref=e334] [cursor=pointer]:
+            - radio "icon345.png" [ref=e335]
+            - img "icon345.png" [ref=e336] [cursor=pointer]
+          - generic [ref=e338] [cursor=pointer]:
+            - radio "icon346.png" [ref=e339]
+            - img "icon346.png" [ref=e340] [cursor=pointer]
+          - generic [ref=e342] [cursor=pointer]:
+            - radio "icon347.png" [ref=e343]
+            - img "icon347.png" [ref=e344] [cursor=pointer]
+          - generic [ref=e346] [cursor=pointer]:
+            - radio "icon348.png" [ref=e347]
+            - img "icon348.png" [ref=e348] [cursor=pointer]
+          - generic [ref=e350] [cursor=pointer]:
+            - radio "icon349.png" [ref=e351]
+            - img "icon349.png" [ref=e352] [cursor=pointer]
+          - generic [ref=e354] [cursor=pointer]:
+            - radio "icon350.png" [ref=e355]
+            - img "icon350.png" [ref=e356] [cursor=pointer]
+          - generic [ref=e358] [cursor=pointer]:
+            - radio "icon351.png" [ref=e359]
+            - img "icon351.png" [ref=e360] [cursor=pointer]
+          - generic [ref=e362] [cursor=pointer]:
+            - radio "icon352.png" [ref=e363]
+            - img "icon352.png" [ref=e364] [cursor=pointer]
+          - generic [ref=e366] [cursor=pointer]:
+            - radio "icon21.png" [ref=e367]
+            - img "icon21.png" [ref=e368] [cursor=pointer]
+          - generic [ref=e370] [cursor=pointer]:
+            - radio "icon22.png" [ref=e371]
+            - img "icon22.png" [ref=e372] [cursor=pointer]
+          - generic [ref=e374] [cursor=pointer]:
+            - radio "icon23.png" [ref=e375]
+            - img "icon23.png" [ref=e376] [cursor=pointer]
+          - generic [ref=e378] [cursor=pointer]:
+            - radio "icon310.png" [ref=e379]
+            - img "icon310.png" [ref=e380] [cursor=pointer]
+          - generic [ref=e382] [cursor=pointer]:
+            - radio "icon311.png" [ref=e383]
+            - img "icon311.png" [ref=e384] [cursor=pointer]
+          - generic [ref=e386] [cursor=pointer]:
+            - radio "icon312.png" [ref=e387]
+            - img "icon312.png" [ref=e388] [cursor=pointer]
+          - generic [ref=e390] [cursor=pointer]:
+            - radio "icon313.png" [ref=e391]
+            - img "icon313.png"
+          - generic [ref=e393] [cursor=pointer]:
+            - radio "icon314.png" [ref=e394]
+            - img "icon314.png" [ref=e395] [cursor=pointer]
+          - generic [ref=e397] [cursor=pointer]:
+            - radio "icon315.png" [ref=e398]
+            - img "icon315.png" [ref=e399] [cursor=pointer]
+          - generic [ref=e401] [cursor=pointer]:
+            - radio "icon316.png" [ref=e402]
+            - img "icon316.png" [ref=e403] [cursor=pointer]
+          - generic [ref=e405] [cursor=pointer]:
+            - radio "icon317.png" [ref=e406]
+            - img "icon317.png"
+          - generic [ref=e408] [cursor=pointer]:
+            - radio "icon318.png" [ref=e409]
+            - img "icon318.png"
+          - generic [ref=e411] [cursor=pointer]:
+            - radio "icon17.png" [ref=e412]
+            - img "icon17.png"
+          - generic [ref=e414] [cursor=pointer]:
+            - radio "icon43.png" [ref=e415]
+            - img "icon43.png"
+          - generic [ref=e417] [cursor=pointer]:
+            - radio "icon44.png" [ref=e418]
+            - img "icon44.png"
+          - generic [ref=e420] [cursor=pointer]:
+            - radio "icon45.png" [ref=e421]
+            - img "icon45.png"
+          - generic [ref=e423] [cursor=pointer]:
+            - radio "icon64.png" [ref=e424]
+            - img "icon64.png"
+          - generic [ref=e426] [cursor=pointer]:
+            - radio "icon65.png" [ref=e427]
+            - img "icon65.png"
+          - generic [ref=e429] [cursor=pointer]:
+            - radio "icon66.png" [ref=e430]
+            - img "icon66.png"
+          - generic [ref=e432] [cursor=pointer]:
+            - radio "icon67.png" [ref=e433]
+            - img "icon67.png"
+          - generic [ref=e435] [cursor=pointer]:
+            - radio "icon20.png" [ref=e436]
+            - img "icon20.png"
+          - generic [ref=e438] [cursor=pointer]:
+            - radio "icon31.png" [ref=e439]
+            - img "icon31.png"
+          - generic [ref=e441] [cursor=pointer]:
+            - radio "icon32.png" [ref=e442]
+            - img "icon32.png"
+          - generic [ref=e444] [cursor=pointer]:
+            - radio "icon33.png" [ref=e445]
+            - img "icon33.png"
+          - generic [ref=e447] [cursor=pointer]:
+            - radio "icon34.png" [ref=e448]
+            - img "icon34.png"
+          - generic [ref=e450] [cursor=pointer]:
+            - radio "icon35.png" [ref=e451]
+            - img "icon35.png"
+          - generic [ref=e453] [cursor=pointer]:
+            - radio "icon36.png" [ref=e454]
+            - img "icon36.png"
+          - generic [ref=e456] [cursor=pointer]:
+            - radio "icon37.png" [ref=e457]
+            - img "icon37.png"
+          - generic [ref=e459] [cursor=pointer]:
+            - radio "icon38.png" [ref=e460]
+            - img "icon38.png"
+          - generic [ref=e462] [cursor=pointer]:
+            - radio "icon46.png" [ref=e463]
+            - img "icon46.png"
+          - generic [ref=e465] [cursor=pointer]:
+            - radio "icon47.png" [ref=e466]
+            - img "icon47.png"
+          - generic [ref=e468] [cursor=pointer]:
+            - radio "icon48.png" [ref=e469]
+            - img "icon48.png"
+          - generic [ref=e471] [cursor=pointer]:
+            - radio "icon49.png" [ref=e472]
+            - img "icon49.png"
+          - generic [ref=e474] [cursor=pointer]:
+            - radio "icon50.png" [ref=e475]
+            - img "icon50.png"
+          - generic [ref=e477] [cursor=pointer]:
+            - radio "icon51.png" [ref=e478]
+            - img "icon51.png"
+          - generic [ref=e480] [cursor=pointer]:
+            - radio "icon52.png" [ref=e481]
+            - img "icon52.png"
+          - generic [ref=e483] [cursor=pointer]:
+            - radio "icon13.png" [ref=e484]
+            - img "icon13.png"
+          - generic [ref=e486] [cursor=pointer]:
+            - radio "icon53.png" [ref=e487]
+            - img "icon53.png"
+          - generic [ref=e489] [cursor=pointer]:
+            - radio "icon54.png" [ref=e490]
+            - img "icon54.png"
+          - generic [ref=e492] [cursor=pointer]:
+            - radio "icon55.png" [ref=e493]
+            - img "icon55.png"
+          - generic [ref=e495] [cursor=pointer]:
+            - radio "icon56.png" [ref=e496]
+            - img "icon56.png"
+          - generic [ref=e498] [cursor=pointer]:
+            - radio "icon57.png" [ref=e499]
+            - img "icon57.png"
+          - generic [ref=e501] [cursor=pointer]:
+            - radio "icon58.png" [ref=e502]
+            - img "icon58.png"
+          - generic [ref=e504] [cursor=pointer]:
+            - radio "icon283.png" [ref=e505]
+            - img "icon283.png"
+          - generic [ref=e507] [cursor=pointer]:
+            - radio "icon284.png" [ref=e508]
+            - img "icon284.png"
+          - generic [ref=e510] [cursor=pointer]:
+            - radio "icon285.png" [ref=e511]
+            - img "icon285.png"
+          - generic [ref=e513] [cursor=pointer]:
+            - radio "icon286.png" [ref=e514]
+            - img "icon286.png"
+          - generic [ref=e516] [cursor=pointer]:
+            - radio "icon287.png" [ref=e517]
+            - img "icon287.png"
+          - generic [ref=e519] [cursor=pointer]:
+            - radio "icon288.png" [ref=e520]
+            - img "icon288.png"
+          - generic [ref=e522] [cursor=pointer]:
+            - radio "icon289.png" [ref=e523]
+            - img "icon289.png"
+          - generic [ref=e525] [cursor=pointer]:
+            - radio "icon290.png" [ref=e526]
+            - img "icon290.png"
+          - generic [ref=e528] [cursor=pointer]:
+            - radio "icon291.png" [ref=e529]
+            - img "icon291.png"
+          - generic [ref=e531] [cursor=pointer]:
+            - radio "icon10.png" [ref=e532]
+            - img "icon10.png"
+          - generic [ref=e534] [cursor=pointer]:
+            - radio "icon59.png" [ref=e535]
+            - img "icon59.png"
+          - generic [ref=e537] [cursor=pointer]:
+            - radio "icon60.png" [ref=e538]
+            - img "icon60.png"
+          - generic [ref=e540] [cursor=pointer]:
+            - radio "icon61.png" [ref=e541]
+            - img "icon61.png"
+          - generic [ref=e543] [cursor=pointer]:
+            - radio "icon62.png" [ref=e544]
+            - img "icon62.png"
+          - generic [ref=e546] [cursor=pointer]:
+            - radio "icon63.png" [ref=e547]
+            - img "icon63.png"
+          - generic [ref=e549] [cursor=pointer]:
+            - radio "icon292.png" [ref=e550]
+            - img "icon292.png"
+          - generic [ref=e552] [cursor=pointer]:
+            - radio "icon293.png" [ref=e553]
+            - img "icon293.png"
+          - generic [ref=e555] [cursor=pointer]:
+            - radio "icon294.png" [ref=e556]
+            - img "icon294.png"
+          - generic [ref=e558] [cursor=pointer]:
+            - radio "icon295.png" [ref=e559]
+            - img "icon295.png"
+          - generic [ref=e561] [cursor=pointer]:
+            - radio "icon296.png" [ref=e562]
+            - img "icon296.png"
+          - generic [ref=e564] [cursor=pointer]:
+            - radio "icon297.png" [ref=e565]
+            - img "icon297.png"
+          - generic [ref=e567] [cursor=pointer]:
+            - radio "icon298.png" [ref=e568]
+            - img "icon298.png"
+          - generic [ref=e570] [cursor=pointer]:
+            - radio "icon299.png" [ref=e571]
+            - img "icon299.png"
+          - generic [ref=e573] [cursor=pointer]:
+            - radio "icon300.png" [ref=e574]
+            - img "icon300.png"
+          - generic [ref=e576] [cursor=pointer]:
+            - radio "icon301.png" [ref=e577]
+            - img "icon301.png"
+          - generic [ref=e579] [cursor=pointer]:
+            - radio "icon302.png" [ref=e580]
+            - img "icon302.png"
+          - generic [ref=e582] [cursor=pointer]:
+            - radio "icon303.png" [ref=e583]
+            - img "icon303.png"
+          - generic [ref=e585] [cursor=pointer]:
+            - radio "icon304.png" [ref=e586]
+            - img "icon304.png"
+          - generic [ref=e588] [cursor=pointer]:
+            - radio "icon305.png" [ref=e589]
+            - img "icon305.png"
+          - generic [ref=e591] [cursor=pointer]:
+            - radio "icon306.png" [ref=e592]
+            - img "icon306.png"
+          - generic [ref=e594] [cursor=pointer]:
+            - radio "icon307.png" [ref=e595]
+            - img "icon307.png"
+          - generic [ref=e597] [cursor=pointer]:
+            - radio "icon308.png" [ref=e598]
+            - img "icon308.png"
+          - generic [ref=e600] [cursor=pointer]:
+            - radio "icon309.png" [ref=e601]
+            - img "icon309.png"
+          - generic [ref=e603] [cursor=pointer]:
+            - radio "icon319.png" [ref=e604]
+            - img "icon319.png"
+          - generic [ref=e606] [cursor=pointer]:
+            - radio "icon320.png" [ref=e607]
+            - img "icon320.png"
+          - generic [ref=e609] [cursor=pointer]:
+            - radio "icon321.png" [ref=e610]
+            - img "icon321.png"
+          - generic [ref=e612] [cursor=pointer]:
+            - radio "icon322.png" [ref=e613]
+            - img "icon322.png"
+          - generic [ref=e615] [cursor=pointer]:
+            - radio "icon323.png" [ref=e616]
+            - img "icon323.png"
+          - generic [ref=e618] [cursor=pointer]:
+            - radio "icon324.png" [ref=e619]
+            - img "icon324.png"
+          - generic [ref=e621] [cursor=pointer]:
+            - radio "icon325.png" [ref=e622]
+            - img "icon325.png"
+          - generic [ref=e624] [cursor=pointer]:
+            - radio "icon326.png" [ref=e625]
+            - img "icon326.png"
+          - generic [ref=e627] [cursor=pointer]:
+            - radio "icon327.png" [ref=e628]
+            - img "icon327.png"
+          - generic [ref=e630] [cursor=pointer]:
+            - radio "icon328.png" [ref=e631]
+            - img "icon328.png"
+          - generic [ref=e633] [cursor=pointer]:
+            - radio "icon329.png" [ref=e634]
+            - img "icon329.png"
+          - generic [ref=e636] [cursor=pointer]:
+            - radio "icon330.png" [ref=e637]
+            - img "icon330.png"
+          - generic [ref=e639] [cursor=pointer]:
+            - radio "icon331.png" [ref=e640]
+            - img "icon331.png"
+          - generic [ref=e642] [cursor=pointer]:
+            - radio "icon332.png" [ref=e643]
+            - img "icon332.png"
+          - generic [ref=e645] [cursor=pointer]:
+            - radio "icon333.png" [ref=e646]
+            - img "icon333.png"
+          - generic [ref=e648] [cursor=pointer]:
+            - radio "icon334.png" [ref=e649]
+            - img "icon334.png"
+          - generic [ref=e651] [cursor=pointer]:
+            - radio "icon335.png" [ref=e652]
+            - img "icon335.png"
+          - generic [ref=e654] [cursor=pointer]:
+            - radio "icon336.png" [ref=e655]
+            - img "icon336.png"
+          - generic [ref=e657] [cursor=pointer]:
+            - radio "icon353.png" [ref=e658]
+            - img "icon353.png"
+          - generic [ref=e660] [cursor=pointer]:
+            - radio "icon354.png" [ref=e661]
+            - img "icon354.png"
+          - generic [ref=e663] [cursor=pointer]:
+            - radio "icon355.png" [ref=e664]
+            - img "icon355.png"
+          - generic [ref=e666] [cursor=pointer]:
+            - radio "icon356.png" [ref=e667]
+            - img "icon356.png"
+          - generic [ref=e669] [cursor=pointer]:
+            - radio "icon357.png" [ref=e670]
+            - img "icon357.png"
+          - generic [ref=e672] [cursor=pointer]:
+            - radio "icon358.png" [ref=e673]
+            - img "icon358.png"
+          - generic [ref=e675] [cursor=pointer]:
+            - radio "icon359.png" [ref=e676]
+            - img "icon359.png"
+          - generic [ref=e678] [cursor=pointer]:
+            - radio "icon360.png" [ref=e679]
+            - img "icon360.png"
+          - generic [ref=e681] [cursor=pointer]:
+            - radio "icon361.png" [ref=e682]
+            - img "icon361.png"
+          - generic [ref=e684] [cursor=pointer]:
+            - radio "icon362.png" [ref=e685]
+            - img "icon362.png"
+          - generic [ref=e687] [cursor=pointer]:
+            - radio "icon363.png" [ref=e688]
+            - img "icon363.png"
+          - generic [ref=e690] [cursor=pointer]:
+            - radio "icon364.png" [ref=e691]
+            - img "icon364.png"
+          - generic [ref=e693] [cursor=pointer]:
+            - radio "icon365.png" [ref=e694]
+            - img "icon365.png"
+          - generic [ref=e696] [cursor=pointer]:
+            - radio "icon366.png" [ref=e697]
+            - img "icon366.png"
+          - generic [ref=e699] [cursor=pointer]:
+            - radio "icon367.png" [ref=e700]
+            - img "icon367.png"
+          - generic [ref=e702] [cursor=pointer]:
+            - radio "icon368.png" [ref=e703]
+            - img "icon368.png"
+          - generic [ref=e705] [cursor=pointer]:
+            - radio "icon369.png" [ref=e706]
+            - img "icon369.png"
+          - generic [ref=e708] [cursor=pointer]:
+            - radio "icon370.png" [ref=e709]
+            - img "icon370.png"
+          - generic [ref=e711] [cursor=pointer]:
+            - radio "icon371.png" [ref=e712]
+            - img "icon371.png"
+          - generic [ref=e714] [cursor=pointer]:
+            - radio "icon372.png" [ref=e715]
+            - img "icon372.png"
+          - generic [ref=e717] [cursor=pointer]:
+            - radio "icon373.png" [ref=e718]
+            - img "icon373.png"
+          - generic [ref=e720] [cursor=pointer]:
+            - radio "icon374.png" [ref=e721]
+            - img "icon374.png"
+          - generic [ref=e723] [cursor=pointer]:
+            - radio "icon375.png" [ref=e724]
+            - img "icon375.png"
+          - generic [ref=e726] [cursor=pointer]:
+            - radio "icon376.png" [ref=e727]
+            - img "icon376.png"
+          - generic [ref=e729] [cursor=pointer]:
+            - radio "icon377.png" [ref=e730]
+            - img "icon377.png"
+          - generic [ref=e732] [cursor=pointer]:
+            - radio "icon378.png" [ref=e733]
+            - img "icon378.png"
+          - generic [ref=e735] [cursor=pointer]:
+            - radio "icon379.png" [ref=e736]
+            - img "icon379.png"
+          - generic [ref=e738] [cursor=pointer]:
+            - radio "icon39.png" [ref=e739]
+            - img "icon39.png"
+          - generic [ref=e741] [cursor=pointer]:
+            - radio "icon40.png" [ref=e742]
+            - img "icon40.png"
+          - generic [ref=e744] [cursor=pointer]:
+            - radio "icon41.png" [ref=e745]
+            - img "icon41.png"
+          - generic [ref=e747] [cursor=pointer]:
+            - radio "icon42.png" [ref=e748]
+            - img "icon42.png"
+          - generic [ref=e750] [cursor=pointer]:
+            - radio "icon87.png" [ref=e751]
+            - img "icon87.png"
+          - generic [ref=e753] [cursor=pointer]:
+            - radio "icon88.png" [ref=e754]
+            - img "icon88.png"
+          - generic [ref=e756] [cursor=pointer]:
+            - radio "icon89.png" [ref=e757]
+            - img "icon89.png"
+          - generic [ref=e759] [cursor=pointer]:
+            - radio "icon90.png" [ref=e760]
+            - img "icon90.png"
+          - generic [ref=e762] [cursor=pointer]:
+            - radio "icon91.png" [ref=e763]
+            - img "icon91.png"
+          - generic [ref=e765] [cursor=pointer]:
+            - radio "icon92.png" [ref=e766]
+            - img "icon92.png"
+          - generic [ref=e768] [cursor=pointer]:
+            - radio "icon93.png" [ref=e769]
+            - img "icon93.png"
+          - generic [ref=e771] [cursor=pointer]:
+            - radio "icon94.png" [ref=e772]
+            - img "icon94.png"
+          - generic [ref=e774] [cursor=pointer]:
+            - radio "icon95.png" [ref=e775]
+            - img "icon95.png"
+          - generic [ref=e777] [cursor=pointer]:
+            - radio "icon96.png" [ref=e778]
+            - img "icon96.png"
+          - generic [ref=e780] [cursor=pointer]:
+            - radio "icon2.png" [ref=e781]
+            - img "icon2.png"
+          - generic [ref=e783] [cursor=pointer]:
+            - radio "icon4.png" [ref=e784]
+            - img "icon4.png"
+          - generic [ref=e786] [cursor=pointer]:
+            - radio "icon7.png" [ref=e787]
+            - img "icon7.png"
+          - generic [ref=e789] [cursor=pointer]:
+            - radio "icon12.png" [ref=e790]
+            - img "icon12.png"
+          - generic [ref=e792] [cursor=pointer]:
+            - radio "icon14.png" [ref=e793]
+            - img "icon14.png"
+          - generic [ref=e795] [cursor=pointer]:
+            - radio "icon82.png" [ref=e796]
+            - img "icon82.png"
+          - generic [ref=e798] [cursor=pointer]:
+            - radio "icon83.png" [ref=e799]
+            - img "icon83.png"
+          - generic [ref=e801] [cursor=pointer]:
+            - radio "icon84.png" [ref=e802]
+            - img "icon84.png"
+          - generic [ref=e804] [cursor=pointer]:
+            - radio "icon85.png" [ref=e805]
+            - img "icon85.png"
+          - generic [ref=e807] [cursor=pointer]:
+            - radio "icon86.png" [ref=e808]
+            - img "icon86.png"
+          - generic [ref=e810] [cursor=pointer]:
+            - radio "icon97.png" [ref=e811]
+            - img "icon97.png"
+          - generic [ref=e813] [cursor=pointer]:
+            - radio "icon98.png" [ref=e814]
+            - img "icon98.png"
+          - generic [ref=e816] [cursor=pointer]:
+            - radio "icon99.png" [ref=e817]
+            - img "icon99.png"
+          - generic [ref=e819] [cursor=pointer]:
+            - radio "icon100.png" [ref=e820]
+            - img "icon100.png"
+          - generic [ref=e822] [cursor=pointer]:
+            - radio "icon101.png" [ref=e823]
+            - img "icon101.png"
+          - generic [ref=e825] [cursor=pointer]:
+            - radio "icon102.png" [ref=e826]
+            - img "icon102.png"
+          - generic [ref=e828] [cursor=pointer]:
+            - radio "icon103.png" [ref=e829]
+            - img "icon103.png"
+          - generic [ref=e831] [cursor=pointer]:
+            - radio "icon104.png" [ref=e832]
+            - img "icon104.png"
+          - generic [ref=e834] [cursor=pointer]:
+            - radio "icon105.png" [ref=e835]
+            - img "icon105.png"
+          - generic [ref=e837] [cursor=pointer]:
+            - radio "icon106.png" [ref=e838]
+            - img "icon106.png"
+          - generic [ref=e840] [cursor=pointer]:
+            - radio "icon107.png" [ref=e841]
+            - img "icon107.png"
+          - generic [ref=e843] [cursor=pointer]:
+            - radio "icon108.png" [ref=e844]
+            - img "icon108.png"
+          - generic [ref=e846] [cursor=pointer]:
+            - radio "icon109.png" [ref=e847]
+            - img "icon109.png"
+          - generic [ref=e849] [cursor=pointer]:
+            - radio "icon110.png" [ref=e850]
+            - img "icon110.png"
+          - generic [ref=e852] [cursor=pointer]:
+            - radio "icon111.png" [ref=e853]
+            - img "icon111.png"
+          - generic [ref=e855] [cursor=pointer]:
+            - radio "icon112.png" [ref=e856]
+            - img "icon112.png"
+          - generic [ref=e858] [cursor=pointer]:
+            - radio "icon113.png" [ref=e859]
+            - img "icon113.png"
+          - generic [ref=e861] [cursor=pointer]:
+            - radio "icon114.png" [ref=e862]
+            - img "icon114.png"
+          - generic [ref=e864] [cursor=pointer]:
+            - radio "icon115.png" [ref=e865]
+            - img "icon115.png"
+          - generic [ref=e867] [cursor=pointer]:
+            - radio "icon116.png" [ref=e868]
+            - img "icon116.png"
+          - generic [ref=e870] [cursor=pointer]:
+            - radio "icon117.png" [ref=e871]
+            - img "icon117.png"
+          - generic [ref=e873] [cursor=pointer]:
+            - radio "icon118.png" [ref=e874]
+            - img "icon118.png"
+          - generic [ref=e876] [cursor=pointer]:
+            - radio "icon119.png" [ref=e877]
+            - img "icon119.png"
+          - generic [ref=e879] [cursor=pointer]:
+            - radio "icon120.png" [ref=e880]
+            - img "icon120.png"
+          - generic [ref=e882] [cursor=pointer]:
+            - radio "icon121.png" [ref=e883]
+            - img "icon121.png"
+          - generic [ref=e885] [cursor=pointer]:
+            - radio "icon122.png" [ref=e886]
+            - img "icon122.png"
+          - generic [ref=e888] [cursor=pointer]:
+            - radio "icon123.png" [ref=e889]
+            - img "icon123.png"
+          - generic [ref=e891] [cursor=pointer]:
+            - radio "icon124.png" [ref=e892]
+            - img "icon124.png"
+          - generic [ref=e894] [cursor=pointer]:
+            - radio "icon125.png" [ref=e895]
+            - img "icon125.png"
+          - generic [ref=e897] [cursor=pointer]:
+            - radio "icon126.png" [ref=e898]
+            - img "icon126.png"
+          - generic [ref=e900] [cursor=pointer]:
+            - radio "icon127.png" [ref=e901]
+            - img "icon127.png"
+          - generic [ref=e903] [cursor=pointer]:
+            - radio "icon128.png" [ref=e904]
+            - img "icon128.png"
+          - generic [ref=e906] [cursor=pointer]:
+            - radio "icon129.png" [ref=e907]
+            - img "icon129.png"
+          - generic [ref=e909] [cursor=pointer]:
+            - radio "icon130.png" [ref=e910]
+            - img "icon130.png"
+          - generic [ref=e912] [cursor=pointer]:
+            - radio "icon131.png" [ref=e913]
+            - img "icon131.png"
+          - generic [ref=e915] [cursor=pointer]:
+            - radio "icon132.png" [ref=e916]
+            - img "icon132.png"
+          - generic [ref=e918] [cursor=pointer]:
+            - radio "icon0.png" [ref=e919]
+            - img "icon0.png" [ref=e920] [cursor=pointer]
+          - generic [ref=e922] [cursor=pointer]:
+            - radio "icon24.png" [ref=e923]
+            - img "icon24.png"
+          - generic [ref=e925] [cursor=pointer]:
+            - radio "icon25.png" [ref=e926]
+            - img "icon25.png"
+          - generic [ref=e928] [cursor=pointer]:
+            - radio "icon26.png" [ref=e929]
+            - img "icon26.png"
+          - generic [ref=e931] [cursor=pointer]:
+            - radio "icon27.png" [ref=e932]
+            - img "icon27.png"
+          - generic [ref=e934] [cursor=pointer]:
+            - radio "icon28.png" [ref=e935]
+            - img "icon28.png"
+          - generic [ref=e937] [cursor=pointer]:
+            - radio "icon29.png" [ref=e938]
+            - img "icon29.png"
+          - generic [ref=e940] [cursor=pointer]:
+            - radio "icon68.png" [ref=e941]
+            - img "icon68.png"
+          - generic [ref=e943] [cursor=pointer]:
+            - radio "icon69.png" [ref=e944]
+            - img "icon69.png"
+          - generic [ref=e946] [cursor=pointer]:
+            - radio "icon70.png" [ref=e947]
+            - img "icon70.png"
+          - generic [ref=e949] [cursor=pointer]:
+            - radio "icon71.png" [ref=e950]
+            - img "icon71.png"
+          - generic [ref=e952] [cursor=pointer]:
+            - radio "icon72.png" [ref=e953]
+            - img "icon72.png"
+          - generic [ref=e955] [cursor=pointer]:
+            - radio "icon73.png" [ref=e956]
+            - img "icon73.png"
+          - generic [ref=e958] [cursor=pointer]:
+            - radio "icon74.png" [ref=e959]
+            - img "icon74.png"
+          - generic [ref=e961] [cursor=pointer]:
+            - radio "icon75.png" [ref=e962]
+            - img "icon75.png"
+          - generic [ref=e964] [cursor=pointer]:
+            - radio "icon76.png" [ref=e965]
+            - img "icon76.png"
+          - generic [ref=e967] [cursor=pointer]:
+            - radio "icon77.png" [ref=e968]
+            - img "icon77.png"
+          - generic [ref=e970] [cursor=pointer]:
+            - radio "icon78.png" [ref=e971]
+            - img "icon78.png"
+          - generic [ref=e973] [cursor=pointer]:
+            - radio "icon79.png" [ref=e974]
+            - img "icon79.png"
+          - generic [ref=e976] [cursor=pointer]:
+            - radio "icon80.png" [ref=e977]
+            - img "icon80.png"
+          - generic [ref=e979] [cursor=pointer]:
+            - radio "icon81.png" [ref=e980]
+            - img "icon81.png"
+      - button "Upload Icon" [ref=e982] [cursor=pointer]
+    - text: 
+  - generic [ref=e983]:
+    - heading "Change Password" [level=2] [ref=e985]
+    - list [ref=e988]:
+      - listitem [ref=e989]: None of the password fields should be blank.
+      - listitem [ref=e990]: New password and confirm new password should be the same.
+      - listitem [ref=e991]: Passwords should not contain &,#, or $ symbols.
+    - generic [ref=e992]:
+      - generic [ref=e993]:
+        - generic [ref=e994]: "Old Password:"
+        - textbox "Old Password:" [ref=e995]
+      - generic [ref=e996]:
+        - generic [ref=e997]: "New Password:"
+        - textbox "New Password:" [ref=e998]
+      - generic [ref=e999]:
+        - generic [ref=e1000]: "Confirm New Password:"
+        - textbox "Confirm New Password:" [ref=e1001]
+    - button "Submit" [ref=e1003] [cursor=pointer]
+  - generic [ref=e1004]:
+    - heading "Change Timezone" [level=2] [ref=e1006]
+    - generic [ref=e1009]:
+      - paragraph
+      - list [ref=e1010]:
+        - listitem [ref=e1011]: For EDT, select GMT-4.
+        - listitem [ref=e1012]: For EST or CDT, select GMT-5.
+        - listitem [ref=e1013]: For CST or MDT, select GMT-6.
+        - listitem [ref=e1014]: For MST or PDT, select GMT-7.
+        - listitem [ref=e1015]: For PST, select GMT-8.
+    - generic [ref=e1016]:
+      - generic [ref=e1017]:
+        - radio "GMT -4" [ref=e1018]
+        - text: GMT -4
+      - generic [ref=e1019]:
+        - radio "GMT -5" [ref=e1020]
+        - text: GMT -5
+      - generic [ref=e1021]:
+        - radio "GMT -6" [ref=e1022]
+        - text: GMT -6
+      - generic [ref=e1023]:
+        - radio "GMT -7" [ref=e1024]
+        - text: GMT -7
+      - generic [ref=e1025]:
+        - radio "GMT -8" [checked] [ref=e1026]
+        - text: GMT -8
+      - generic [ref=e1027]:
+        - radio "GMT -9" [ref=e1028]
+        - text: GMT -9
+      - generic [ref=e1029]:
+        - radio "GMT -10" [ref=e1030]
+        - text: GMT -10
+      - generic [ref=e1031]:
+        - radio "GMT -11" [ref=e1032]
+        - text: GMT -11
+    - button "Submit" [ref=e1034] [cursor=pointer]
+  - generic [ref=e1035]:
+    - generic [ref=e1036]:
+      - heading " View/Edit Users" [level=2] [ref=e1037]:
+        - generic [ref=e1038]: 
+        - text: View/Edit Users
+      - paragraph [ref=e1039]: Manage subuser accounts and permissions
+    - generic [ref=e1042]:
+      - generic [ref=e1043]:
+        - heading " Subusers" [level=3] [ref=e1045]:
+          - generic [ref=e1046]: 
+          - text: Subusers
+        - generic [ref=e1048]:
+          - generic [ref=e1049]: 
+          - textbox "Search users..." [ref=e1050]
+        - generic [ref=e1051]:
+          - generic [ref=e1052] [cursor=pointer]:
+            - generic [ref=e1053] [cursor=pointer]: P
+            - generic [ref=e1054] [cursor=pointer]:
+              - generic [ref=e1055] [cursor=pointer]: paq1
+              - generic [ref=e1056] [cursor=pointer]: paq1@gmail.com
+          - generic [ref=e1057] [cursor=pointer]:
+            - generic [ref=e1058] [cursor=pointer]: A
+            - generic [ref=e1059] [cursor=pointer]:
+              - generic [ref=e1060] [cursor=pointer]: arun77
+              - generic [ref=e1061] [cursor=pointer]: arun.r@sievanetworks2.com
+          - generic [ref=e1062] [cursor=pointer]:
+            - generic [ref=e1063] [cursor=pointer]: D
+            - generic [ref=e1064] [cursor=pointer]:
+              - generic [ref=e1065] [cursor=pointer]: d123456
+              - generic [ref=e1066] [cursor=pointer]: d@gmail.com
+          - generic [ref=e1067] [cursor=pointer]:
+            - generic [ref=e1068] [cursor=pointer]: K
+            - generic [ref=e1069] [cursor=pointer]:
+              - generic [ref=e1070] [cursor=pointer]: kilay
+              - generic [ref=e1071] [cursor=pointer]: kilay@gmail.com
+          - generic [ref=e1072] [cursor=pointer]:
+            - generic [ref=e1073] [cursor=pointer]: J
+            - generic [ref=e1074] [cursor=pointer]:
+              - generic [ref=e1075] [cursor=pointer]: justin17
+              - generic [ref=e1076] [cursor=pointer]: Jusjohn@gmail.com
+          - generic [ref=e1077] [cursor=pointer]:
+            - generic [ref=e1078] [cursor=pointer]: P
+            - generic [ref=e1079] [cursor=pointer]:
+              - generic [ref=e1080] [cursor=pointer]: punamgava
+              - generic [ref=e1081] [cursor=pointer]: punam.gavali@sievanetworks2.com
+          - generic [ref=e1082] [cursor=pointer]:
+            - generic [ref=e1083] [cursor=pointer]: P
+            - generic [ref=e1084] [cursor=pointer]:
+              - generic [ref=e1085] [cursor=pointer]: punamtest1
+              - generic [ref=e1086] [cursor=pointer]: punam.gavali@sievanetworks2.com
+          - generic [ref=e1087] [cursor=pointer]:
+            - generic [ref=e1088] [cursor=pointer]: D
+            - generic [ref=e1089] [cursor=pointer]:
+              - generic [ref=e1090] [cursor=pointer]: d112233
+              - generic [ref=e1091] [cursor=pointer]: d11@gmail.com
+          - generic [ref=e1092] [cursor=pointer]:
+            - generic [ref=e1093] [cursor=pointer]: T
+            - generic [ref=e1094] [cursor=pointer]:
+              - generic [ref=e1095] [cursor=pointer]: testDD123
+              - generic [ref=e1096] [cursor=pointer]: debjyoti@sievanetworks2.com
+          - generic [ref=e1097] [cursor=pointer]:
+            - generic [ref=e1098] [cursor=pointer]: D
+            - generic [ref=e1099] [cursor=pointer]:
+              - generic [ref=e1100] [cursor=pointer]: deb4567
+              - generic [ref=e1101] [cursor=pointer]: testDD@gmail.com
+          - generic [ref=e1102] [cursor=pointer]:
+            - generic [ref=e1103] [cursor=pointer]: A
+            - generic [ref=e1104] [cursor=pointer]:
+              - generic [ref=e1105] [cursor=pointer]: AutomatedUsername2
+              - generic [ref=e1106] [cursor=pointer]: testingAuto@gmail.com
+          - generic [ref=e1107] [cursor=pointer]:
+            - generic [ref=e1108] [cursor=pointer]: A
+            - generic [ref=e1109] [cursor=pointer]:
+              - generic [ref=e1110] [cursor=pointer]: AutoUser_1764262677836
+              - generic [ref=e1111] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1112] [cursor=pointer]:
+            - generic [ref=e1113] [cursor=pointer]: E
+            - generic [ref=e1114] [cursor=pointer]:
+              - generic [ref=e1115] [cursor=pointer]: EditTest_1764263062066
+              - generic [ref=e1116] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1117] [cursor=pointer]:
+            - generic [ref=e1118] [cursor=pointer]: E
+            - generic [ref=e1119] [cursor=pointer]:
+              - generic [ref=e1120] [cursor=pointer]: EditTest_1764263401302
+              - generic [ref=e1121] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1122] [cursor=pointer]:
+            - generic [ref=e1123] [cursor=pointer]: A
+            - generic [ref=e1124] [cursor=pointer]:
+              - generic [ref=e1125] [cursor=pointer]: AutoUser_1764264353497
+              - generic [ref=e1126] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1127] [cursor=pointer]:
+            - generic [ref=e1128] [cursor=pointer]: E
+            - generic [ref=e1129] [cursor=pointer]:
+              - generic [ref=e1130] [cursor=pointer]: EditTest_1764264521671
+              - generic [ref=e1131] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1132] [cursor=pointer]:
+            - generic [ref=e1133] [cursor=pointer]: E
+            - generic [ref=e1134] [cursor=pointer]:
+              - generic [ref=e1135] [cursor=pointer]: EditTest_1764264628731
+              - generic [ref=e1136] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1137] [cursor=pointer]:
+            - generic [ref=e1138] [cursor=pointer]: A
+            - generic [ref=e1139] [cursor=pointer]:
+              - generic [ref=e1140] [cursor=pointer]: AutoUser_1764266870703
+              - generic [ref=e1141] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1142] [cursor=pointer]:
+            - generic [ref=e1143] [cursor=pointer]: E
+            - generic [ref=e1144] [cursor=pointer]:
+              - generic [ref=e1145] [cursor=pointer]: EditTest_1764267132415
+              - generic [ref=e1146] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1147] [cursor=pointer]:
+            - generic [ref=e1148] [cursor=pointer]: E
+            - generic [ref=e1149] [cursor=pointer]:
+              - generic [ref=e1150] [cursor=pointer]: EditTest_1764267132459
+              - generic [ref=e1151] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1152] [cursor=pointer]:
+            - generic [ref=e1153] [cursor=pointer]: E
+            - generic [ref=e1154] [cursor=pointer]:
+              - generic [ref=e1155] [cursor=pointer]: EditTest_1764267462873
+              - generic [ref=e1156] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1157] [cursor=pointer]:
+            - generic [ref=e1158] [cursor=pointer]: D
+            - generic [ref=e1159] [cursor=pointer]:
+              - generic [ref=e1160] [cursor=pointer]: DeleteTest_1764267527369
+              - generic [ref=e1161] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e1162] [cursor=pointer]:
+            - generic [ref=e1163] [cursor=pointer]: R
+            - generic [ref=e1164] [cursor=pointer]:
+              - generic [ref=e1165] [cursor=pointer]: Restricted_1764267559118
+              - generic [ref=e1166] [cursor=pointer]: restricted@test.com
+          - generic [ref=e1167] [cursor=pointer]:
+            - generic [ref=e1168] [cursor=pointer]: A
+            - generic [ref=e1169] [cursor=pointer]:
+              - generic [ref=e1170] [cursor=pointer]: AutoUser_1764268626488
+              - generic [ref=e1171] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1172] [cursor=pointer]:
+            - generic [ref=e1173] [cursor=pointer]: E
+            - generic [ref=e1174] [cursor=pointer]:
+              - generic [ref=e1175] [cursor=pointer]: EditTest_1764268953067
+              - generic [ref=e1176] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1177] [cursor=pointer]:
+            - generic [ref=e1178] [cursor=pointer]: E
+            - generic [ref=e1179] [cursor=pointer]:
+              - generic [ref=e1180] [cursor=pointer]: EditTest_1764269013187
+              - generic [ref=e1181] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1182] [cursor=pointer]:
+            - generic [ref=e1183] [cursor=pointer]: E
+            - generic [ref=e1184] [cursor=pointer]:
+              - generic [ref=e1185] [cursor=pointer]: EditTest_1764269066443
+              - generic [ref=e1186] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1187] [cursor=pointer]:
+            - generic [ref=e1188] [cursor=pointer]: D
+            - generic [ref=e1189] [cursor=pointer]:
+              - generic [ref=e1190] [cursor=pointer]: DeleteTest_1764269192636
+              - generic [ref=e1191] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e1192] [cursor=pointer]:
+            - generic [ref=e1193] [cursor=pointer]: R
+            - generic [ref=e1194] [cursor=pointer]:
+              - generic [ref=e1195] [cursor=pointer]: Restricted_1764269322616
+              - generic [ref=e1196] [cursor=pointer]: restricted@test.com
+          - generic [ref=e1197] [cursor=pointer]:
+            - generic [ref=e1198] [cursor=pointer]: A
+            - generic [ref=e1199] [cursor=pointer]:
+              - generic [ref=e1200] [cursor=pointer]: AutoUser_1764269696346
+              - generic [ref=e1201] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1202] [cursor=pointer]:
+            - generic [ref=e1203] [cursor=pointer]: E
+            - generic [ref=e1204] [cursor=pointer]:
+              - generic [ref=e1205] [cursor=pointer]: EditTest_1764269814040
+              - generic [ref=e1206] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1207] [cursor=pointer]:
+            - generic [ref=e1208] [cursor=pointer]: E
+            - generic [ref=e1209] [cursor=pointer]:
+              - generic [ref=e1210] [cursor=pointer]: EditTest_1764269890009
+              - generic [ref=e1211] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1212] [cursor=pointer]:
+            - generic [ref=e1213] [cursor=pointer]: E
+            - generic [ref=e1214] [cursor=pointer]:
+              - generic [ref=e1215] [cursor=pointer]: EditTest_1764269966291
+              - generic [ref=e1216] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1217] [cursor=pointer]:
+            - generic [ref=e1218] [cursor=pointer]: D
+            - generic [ref=e1219] [cursor=pointer]:
+              - generic [ref=e1220] [cursor=pointer]: DeleteTest_1764270126028
+              - generic [ref=e1221] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e1222] [cursor=pointer]:
+            - generic [ref=e1223] [cursor=pointer]: R
+            - generic [ref=e1224] [cursor=pointer]:
+              - generic [ref=e1225] [cursor=pointer]: Restricted_1764270194454
+              - generic [ref=e1226] [cursor=pointer]: restricted@test.com
+          - generic [ref=e1227] [cursor=pointer]:
+            - generic [ref=e1228] [cursor=pointer]: A
+            - generic [ref=e1229] [cursor=pointer]:
+              - generic [ref=e1230] [cursor=pointer]: AutoUser_1764270496429
+              - generic [ref=e1231] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1232] [cursor=pointer]:
+            - generic [ref=e1233] [cursor=pointer]: E
+            - generic [ref=e1234] [cursor=pointer]:
+              - generic [ref=e1235] [cursor=pointer]: EditTest_1764270616659
+              - generic [ref=e1236] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1237] [cursor=pointer]:
+            - generic [ref=e1238] [cursor=pointer]: E
+            - generic [ref=e1239] [cursor=pointer]:
+              - generic [ref=e1240] [cursor=pointer]: EditTest_1764270685064
+              - generic [ref=e1241] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1242] [cursor=pointer]:
+            - generic [ref=e1243] [cursor=pointer]: A
+            - generic [ref=e1244] [cursor=pointer]:
+              - generic [ref=e1245] [cursor=pointer]: AutoUser_1764270972418
+              - generic [ref=e1246] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1247] [cursor=pointer]:
+            - generic [ref=e1248] [cursor=pointer]: E
+            - generic [ref=e1249] [cursor=pointer]:
+              - generic [ref=e1250] [cursor=pointer]: EditTest_1764271081405
+              - generic [ref=e1251] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1252] [cursor=pointer]:
+            - generic [ref=e1253] [cursor=pointer]: E
+            - generic [ref=e1254] [cursor=pointer]:
+              - generic [ref=e1255] [cursor=pointer]: EditTest_1764271152500
+              - generic [ref=e1256] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1257] [cursor=pointer]:
+            - generic [ref=e1258] [cursor=pointer]: A
+            - generic [ref=e1259] [cursor=pointer]:
+              - generic [ref=e1260] [cursor=pointer]: AutoUser_1764271566786
+              - generic [ref=e1261] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1262] [cursor=pointer]:
+            - generic [ref=e1263] [cursor=pointer]: E
+            - generic [ref=e1264] [cursor=pointer]:
+              - generic [ref=e1265] [cursor=pointer]: EditTest_1764271691111
+              - generic [ref=e1266] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1267] [cursor=pointer]:
+            - generic [ref=e1268] [cursor=pointer]: E
+            - generic [ref=e1269] [cursor=pointer]:
+              - generic [ref=e1270] [cursor=pointer]: EditTest_1764271761783
+              - generic [ref=e1271] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1272] [cursor=pointer]:
+            - generic [ref=e1273] [cursor=pointer]: E
+            - generic [ref=e1274] [cursor=pointer]:
+              - generic [ref=e1275] [cursor=pointer]: EditTest_1764271866751
+              - generic [ref=e1276] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1277] [cursor=pointer]:
+            - generic [ref=e1278] [cursor=pointer]: D
+            - generic [ref=e1279] [cursor=pointer]:
+              - generic [ref=e1280] [cursor=pointer]: DeleteTest_1764272034576
+              - generic [ref=e1281] [cursor=pointer]: deleteuser@test.com
+          - generic [ref=e1282] [cursor=pointer]:
+            - generic [ref=e1283] [cursor=pointer]: R
+            - generic [ref=e1284] [cursor=pointer]:
+              - generic [ref=e1285] [cursor=pointer]: Restricted_1764272142903
+              - generic [ref=e1286] [cursor=pointer]: restricted@test.com
+          - generic [ref=e1287] [cursor=pointer]:
+            - generic [ref=e1288] [cursor=pointer]: A
+            - generic [ref=e1289] [cursor=pointer]:
+              - generic [ref=e1290] [cursor=pointer]: AutoUser_1764272460259
+              - generic [ref=e1291] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1292] [cursor=pointer]:
+            - generic [ref=e1293] [cursor=pointer]: E
+            - generic [ref=e1294] [cursor=pointer]:
+              - generic [ref=e1295] [cursor=pointer]: EditTest_1764272578334
+              - generic [ref=e1296] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1297] [cursor=pointer]:
+            - generic [ref=e1298] [cursor=pointer]: E
+            - generic [ref=e1299] [cursor=pointer]:
+              - generic [ref=e1300] [cursor=pointer]: EditTest_1764272646858
+              - generic [ref=e1301] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1302] [cursor=pointer]:
+            - generic [ref=e1303] [cursor=pointer]: A
+            - generic [ref=e1304] [cursor=pointer]:
+              - generic [ref=e1305] [cursor=pointer]: AutoUser_1764273579826
+              - generic [ref=e1306] [cursor=pointer]: testuser@automation.com
+          - generic [ref=e1307] [cursor=pointer]:
+            - generic [ref=e1308] [cursor=pointer]: E
+            - generic [ref=e1309] [cursor=pointer]:
+              - generic [ref=e1310] [cursor=pointer]: EditTest_1764273725947
+              - generic [ref=e1311] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1312] [cursor=pointer]:
+            - generic [ref=e1313] [cursor=pointer]: E
+            - generic [ref=e1314] [cursor=pointer]:
+              - generic [ref=e1315] [cursor=pointer]: EditTest_1764273807193
+              - generic [ref=e1316] [cursor=pointer]: edituser@test.com
+          - generic [ref=e1317] [cursor=pointer]:
+            - generic [ref=e1318] [cursor=pointer]: E
+            - generic [ref=e1319] [cursor=pointer]:
+              - generic [ref=e1320] [cursor=pointer]: EditTest_1764273893174
+              - generic [ref=e1321] [cursor=pointer]: edituser@test.com
+        - button " Add New User" [ref=e1323] [cursor=pointer]:
+          - generic [ref=e1324] [cursor=pointer]: 
+          - text: Add New User
+      - generic [ref=e1325]:
+        - generic [ref=e1327]:
+          - generic [ref=e1328]:
+            - generic [ref=e1329]: Select a User
+            - generic [ref=e1330]: Choose a user from the list to view details
+          - generic:  
+        - generic [ref=e1331]:
+          - generic [ref=e1332]:
+            - generic [ref=e1333]: 
+            - heading "No User Selected" [level=3] [ref=e1334]
+            - paragraph [ref=e1335]: Select a user from the list to view and edit their details
+          - text:         
+  - generic [ref=e1337]:
+    - heading "Subgroups " [level=2] [ref=e1339]:
+      - text: Subgroups
+      - generic [ref=e1340] [cursor=pointer]: 
+    - generic [ref=e1343]:
+      - generic [ref=e1344]:
+        - textbox "Search" [ref=e1347]
+        - button "Add" [ref=e1348] [cursor=pointer]:
+          - generic [ref=e1350] [cursor=pointer]: Add
+      - generic [ref=e1351]:
+        - generic [ref=e1352] [cursor=pointer]:
+          - heading "DeleteMe_1765969728183" [level=3] [ref=e1354] [cursor=pointer]
+          - generic [ref=e1355] [cursor=pointer]:
+            - button [ref=e1356] [cursor=pointer]
+            - button [ref=e1358] [cursor=pointer]
+        - generic [ref=e1360] [cursor=pointer]:
+          - heading "DeleteMe_1766086431927" [level=3] [ref=e1362] [cursor=pointer]
+          - generic [ref=e1363] [cursor=pointer]:
+            - button [ref=e1364] [cursor=pointer]
+            - button [ref=e1366] [cursor=pointer]
+        - generic [ref=e1368] [cursor=pointer]:
+          - heading "DeleteMe_1766420317776" [level=3] [ref=e1370] [cursor=pointer]
+          - generic [ref=e1371] [cursor=pointer]:
+            - button [ref=e1372] [cursor=pointer]
+            - button [ref=e1374] [cursor=pointer]
+        - generic [ref=e1376] [cursor=pointer]:
+          - heading "Subhash" [level=3] [ref=e1378] [cursor=pointer]
+          - generic [ref=e1379] [cursor=pointer]:
+            - button [ref=e1380] [cursor=pointer]
+            - button [ref=e1382] [cursor=pointer]
+        - generic [ref=e1384] [cursor=pointer]:
+          - heading "testDp" [level=3] [ref=e1386] [cursor=pointer]
+          - generic [ref=e1387] [cursor=pointer]:
+            - button [ref=e1388] [cursor=pointer]
+            - button [ref=e1390] [cursor=pointer]
+        - generic [ref=e1392] [cursor=pointer]:
+          - heading "TestSG_1766515207453" [level=3] [ref=e1394] [cursor=pointer]
+          - generic [ref=e1395] [cursor=pointer]:
+            - button [ref=e1396] [cursor=pointer]
+            - button [ref=e1398] [cursor=pointer]
+        - generic [ref=e1400] [cursor=pointer]:
+          - heading "TestSubgroup_1764703653790" [level=3] [ref=e1402] [cursor=pointer]
+          - generic [ref=e1403] [cursor=pointer]:
+            - button [ref=e1404] [cursor=pointer]
+            - button [ref=e1406] [cursor=pointer]
+        - generic [ref=e1408] [cursor=pointer]:
+          - heading "TestSubgroup_1764773025336" [level=3] [ref=e1410] [cursor=pointer]
+          - generic [ref=e1411] [cursor=pointer]:
+            - button [ref=e1412] [cursor=pointer]
+            - button [ref=e1414] [cursor=pointer]
+        - generic [ref=e1416] [cursor=pointer]:
+          - heading "TestSubgroup_1764799516204" [level=3] [ref=e1418] [cursor=pointer]
+          - generic [ref=e1419] [cursor=pointer]:
+            - button [ref=e1420] [cursor=pointer]
+            - button [ref=e1422] [cursor=pointer]
+        - generic [ref=e1424] [cursor=pointer]:
+          - heading "TestSubgroup_1765957219213" [level=3] [ref=e1426] [cursor=pointer]
+          - generic [ref=e1427] [cursor=pointer]:
+            - button [ref=e1428] [cursor=pointer]
+            - button [ref=e1430] [cursor=pointer]
+        - generic [ref=e1432] [cursor=pointer]:
+          - heading "TestSubgroup_1766420134391" [level=3] [ref=e1434] [cursor=pointer]
+          - generic [ref=e1435] [cursor=pointer]:
+            - button [ref=e1436] [cursor=pointer]
+            - button [ref=e1438] [cursor=pointer]
+  - generic [ref=e1440]:
+    - heading "Track Info Display Options" [level=2] [ref=e1442]
+    - paragraph [ref=e1445]: Please select from the options below to change the Information Box’s size and the amount of device information of the GPS & Fleet Tracking Platform.
+    - generic [ref=e1446]:
+      - generic [ref=e1447]:
+        - radio "Standard" [checked] [ref=e1448]
+        - text: Standard
+      - generic [ref=e1449]:
+        - radio "Driver Card" [ref=e1450]
+        - text: Driver Card
+      - generic [ref=e1451]:
+        - radio "Small" [ref=e1452]
+        - text: Small
+      - generic [ref=e1453]:
+        - radio "Name Only" [ref=e1454]
+        - text: Name Only
+      - generic [ref=e1455]:
+        - radio "No Information Box" [ref=e1456]
+        - text: No Information Box
+    - button "Submit" [ref=e1458] [cursor=pointer]
+  - generic [ref=e1459]:
+    - heading "Account Health Summary " [level=2] [ref=e1461]:
+      - text: Account Health Summary
+      - generic [ref=e1462] [cursor=pointer]: 
+    - generic [ref=e1465]:
+      - generic [ref=e1466]:
+        - heading "Account Health Summary Dashboard" [level=1] [ref=e1467]
+        - generic [ref=e1468]:
+          - text: Report generated on
+          - generic [ref=e1469]: 12/24/2025
+        - generic [ref=e1470]:
+          - text: "Total devices monitored:"
+          - generic [ref=e1471]: "2"
+      - generic [ref=e1472]:
+        - generic [ref=e1473]: Fleet Status Summary
+        - generic [ref=e1474]:
+          - generic [ref=e1475] [cursor=pointer]:
+            - generic [ref=e1476] [cursor=pointer]: "2"
+            - generic [ref=e1477] [cursor=pointer]: TOTAL DEVICES
+            - generic [ref=e1478] [cursor=pointer]: 100% of fleet
+          - generic [ref=e1479] [cursor=pointer]:
+            - generic [ref=e1480] [cursor=pointer]: "1"
+            - generic [ref=e1481] [cursor=pointer]: ONLINE & ACTIVE
+            - generic [ref=e1482] [cursor=pointer]: 50.0% of fleet
+          - generic [ref=e1483] [cursor=pointer]:
+            - generic [ref=e1484] [cursor=pointer]: "0"
+            - generic [ref=e1485] [cursor=pointer]: DUE FOR RENEWAL
+            - generic [ref=e1486] [cursor=pointer]: 0.0% of fleet
+          - generic [ref=e1487] [cursor=pointer]:
+            - button "Get Support" [ref=e1488] [cursor=pointer]:
+              - img [ref=e1489] [cursor=pointer]
+            - generic [ref=e1492] [cursor=pointer]: "1"
+            - generic [ref=e1493] [cursor=pointer]: NEEDS REVIEW
+            - generic [ref=e1494] [cursor=pointer]: 50.0% of fleet
+      - generic [ref=e1495]:
+        - generic [ref=e1496]: Device Details
+        - generic [ref=e1498]: Showing all 2 devices
+        - generic [ref=e1500]:
+          - generic [ref=e1501]:
+            - button "📊 CSV" [ref=e1502] [cursor=pointer]:
+              - generic [ref=e1503] [cursor=pointer]: 📊 CSV
+            - button "📈 Excel" [ref=e1504] [cursor=pointer]:
+              - generic [ref=e1505] [cursor=pointer]: 📈 Excel
+            - button "📄 PDF" [ref=e1506] [cursor=pointer]:
+              - generic [ref=e1507] [cursor=pointer]: 📄 PDF
+          - generic [ref=e1509]:
+            - text: "Search devices:"
+            - searchbox "Search devices:" [ref=e1510]
+          - generic [ref=e1511]:
+            - table [ref=e1514]:
+              - rowgroup [ref=e1515]:
+                - row [ref=e1516]:
+                  - 'cell "Driver Name: activate to sort column descending: activate to sort column descending: activate to sort column descending" [ref=e1517] [cursor=pointer]': Driver Name
+                  - 'cell "Device IMEI: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending" [ref=e1518] [cursor=pointer]': Device IMEI
+                  - 'cell "Device Type: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending" [ref=e1519] [cursor=pointer]': Device Type
+                  - 'cell "Status: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending" [ref=e1520] [cursor=pointer]': Status
+                  - 'cell "Battery/Voltage: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending" [ref=e1521] [cursor=pointer]': Battery/Voltage
+                  - 'cell "GPS Satellites: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending" [ref=e1522] [cursor=pointer]': GPS Satellites
+                  - 'cell "Signal Quality : activate to sort column ascending: activate to sort column ascending: activate to sort column ascending" [ref=e1523] [cursor=pointer]':
+                    - text: Signal Quality
+                    - generic [ref=e1524] [cursor=pointer]: 
+                  - cell "Last GPS Connect" [ref=e1525]:
+                    - text: Last GPS Connect
+                    - generic [ref=e1526] [cursor=pointer]: 
+                  - cell "Last Cell Connect" [ref=e1527]
+                  - cell "SIM Status" [ref=e1528]
+                  - cell "Renewal Date" [ref=e1529]
+                  - cell "Date Added" [ref=e1530]
+                  - cell "Historical Data" [ref=e1531]
+            - table [ref=e1533]:
+              - rowgroup:
+                - row:
+                  - 'cell "Driver Name: activate to sort column descending: activate to sort column descending: activate to sort column descending"':
+                    - generic: Driver Name
+                  - 'cell "Device IMEI: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending"':
+                    - generic: Device IMEI
+                  - 'cell "Device Type: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending"':
+                    - generic: Device Type
+                  - 'cell "Status: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending"':
+                    - generic: Status
+                  - 'cell "Battery/Voltage: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending"':
+                    - generic: Battery/Voltage
+                  - 'cell "GPS Satellites: activate to sort column ascending: activate to sort column ascending: activate to sort column ascending"':
+                    - generic: GPS Satellites
+                  - 'cell "Signal Quality : activate to sort column ascending: activate to sort column ascending: activate to sort column ascending"':
+                    - generic:
+                      - text: Signal Quality
+                      - generic [ref=e1534] [cursor=pointer]: 
+                  - cell "Last GPS Connect":
+                    - generic:
+                      - text: Last GPS Connect
+                      - generic [ref=e1535] [cursor=pointer]: 
+                  - cell "Last Cell Connect":
+                    - generic: Last Cell Connect
+                  - cell "SIM Status":
+                    - generic: SIM Status
+                  - cell "Renewal Date":
+                    - generic: Renewal Date
+                  - cell "Date Added":
+                    - generic: Date Added
+                  - cell "Historical Data":
+                    - generic: Historical Data
+              - rowgroup [ref=e1536]:
+                - row "Demo 1 860111051554966 MA9276-Portable Blocked Satellite 100% 2 sats 12 CSQ 12/24/2025 12:17 AM 12/24/2025 09:46 AM Loading... Loading... 10/06/2023 Last 30 Days" [ref=e1537]:
+                  - cell "Demo 1" [ref=e1538]
+                  - cell "860111051554966" [ref=e1539]:
+                    - generic [ref=e1540]: "860111051554966"
+                  - cell "MA9276-Portable" [ref=e1541]
+                  - cell "Blocked Satellite" [ref=e1542]:
+                    - generic [ref=e1543]: Blocked Satellite
+                  - cell "100%" [ref=e1544]:
+                    - generic [ref=e1545]: 100%
+                  - cell "2 sats" [ref=e1546]:
+                    - generic [ref=e1547]: 2 sats
+                  - cell "12 CSQ" [ref=e1548]:
+                    - generic [ref=e1549]: 12 CSQ
+                  - cell "12/24/2025 12:17 AM" [ref=e1550]:
+                    - generic [ref=e1551]:
+                      - text: 12/24/2025
+                      - text: 12:17 AM
+                  - cell "12/24/2025 09:46 AM" [ref=e1552]:
+                    - generic [ref=e1553]:
+                      - text: 12/24/2025
+                      - text: 09:46 AM
+                  - cell "Loading..." [ref=e1554]:
+                    - generic [ref=e1555]: Loading...
+                  - cell "Loading..." [ref=e1556]:
+                    - generic [ref=e1557]: Loading...
+                  - cell "10/06/2023" [ref=e1558]:
+                    - generic [ref=e1559]: 10/06/2023
+                  - cell "Last 30 Days" [ref=e1560]:
+                    - button "Last 30 Days" [ref=e1561] [cursor=pointer]
+                - row "Sales Car1 220902734 XT2469 Active 12V 11 sats 0 CSQ NA NA 12/24/2025 10:16 AM Loading... Loading... 07/13/2023 Last 30 Days" [ref=e1562]:
+                  - cell "Sales Car1" [ref=e1563]
+                  - cell "220902734" [ref=e1564]:
+                    - generic [ref=e1565]: "220902734"
+                  - cell "XT2469" [ref=e1566]
+                  - cell "Active" [ref=e1567]:
+                    - generic [ref=e1568]: Active
+                  - cell "12V" [ref=e1569]:
+                    - generic [ref=e1570]: 12V
+                  - cell "11 sats" [ref=e1571]:
+                    - generic [ref=e1572]: 11 sats
+                  - cell "0 CSQ" [ref=e1573]:
+                    - generic [ref=e1574]: 0 CSQ
+                  - cell "NA NA" [ref=e1575]:
+                    - generic [ref=e1576]:
+                      - text: NA
+                      - text: NA
+                  - cell "12/24/2025 10:16 AM" [ref=e1577]:
+                    - generic [ref=e1578]:
+                      - text: 12/24/2025
+                      - text: 10:16 AM
+                  - cell "Loading..." [ref=e1579]:
+                    - generic [ref=e1580]: Loading...
+                  - cell "Loading..." [ref=e1581]:
+                    - generic [ref=e1582]: Loading...
+                  - cell "07/13/2023" [ref=e1583]:
+                    - generic [ref=e1584]: 07/13/2023
+                  - cell "Last 30 Days" [ref=e1585]:
+                    - button "Last 30 Days" [ref=e1586] [cursor=pointer]
+          - status [ref=e1587]: Showing 1 to 2 of 2 devices
+          - generic [ref=e1588]:
+            - link "Previous" [disabled] [ref=e1589]
+            - link "1" [ref=e1591] [cursor=pointer]
+            - link "Next" [disabled] [ref=e1592]
+      - generic [ref=e1593]:
+        - paragraph [ref=e1594]:
+          - strong [ref=e1595]: Device Fleet Monitoring Dashboard
+          - text: "- Generated automatically"
+        - paragraph [ref=e1596]: For technical support, contact your system administrator
+  - generic [ref=e1597]:
+    - heading "Asset Tracker Settings" [level=2] [ref=e1599]
+    - generic [ref=e1602]:
+      - button "Change Update Frequency" [ref=e1604] [cursor=pointer]
+      - button "Aggressive Mode/Change Intervals" [ref=e1605] [cursor=pointer]
+      - button "Set Timed Updates For MA1086" [ref=e1606] [cursor=pointer]
+    - generic [ref=e1607]:
+      - generic [ref=e1608]:
+        - generic [ref=e1609]: "Select Device:"
+        - 'combobox "Select Device: Select Device:" [ref=e1610]'
+      - generic [ref=e1611]:
+        - generic [ref=e1612]: "Pings Per Day:"
+        - combobox "Pings Per Day:" [ref=e1613]:
+          - option "1 Pings Per Day" [selected]
+          - option "2 Pings Per Day"
+          - option "3 Pings Per Day"
+      - paragraph [ref=e1614]: Please check the box below if you have a movement based tracker.
+      - generic [ref=e1615]:
+        - checkbox "Send Movement Commands " [ref=e1616]
+        - text: Send Movement Commands
+        - generic [ref=e1617] [cursor=pointer]: 
+      - button "Update Frequency" [ref=e1619] [cursor=pointer]
+    - text:    
+  - generic [ref=e1620]:
+    - heading "Alerts Contacts" [level=2] [ref=e1622]
+    - generic [ref=e1625]:
+      - button "Email" [ref=e1627] [cursor=pointer]
+      - button "Phone Number" [ref=e1628] [cursor=pointer]
+    - generic [ref=e1629]:
+      - generic [ref=e1630]:
+        - generic [ref=e1631]: "Email:"
+        - textbox "Email:" [ref=e1632]
+      - generic [ref=e1633]:
+        - button "Submit" [ref=e1634] [cursor=pointer]
+        - button "Change Alerts Settings" [ref=e1635] [cursor=pointer]
+      - table [ref=e1636]:
+        - rowgroup [ref=e1637]:
+          - row "No Email Contacts to Display" [ref=e1638]:
+            - cell "No Email Contacts to Display" [ref=e1639] [cursor=pointer]
+    - text: 
+  - generic [ref=e1640]:
+    - heading "Change Alerts Settings" [level=2] [ref=e1642]
+    - generic [ref=e1645]:
+      - generic [ref=e1646]:
+        - generic [ref=e1647]: "Select Device/Subgroup:"
+        - combobox [ref=e1648]
+        - combobox "Search Device" [ref=e1651] [cursor=pointer]:
+          - generic [ref=e1653] [cursor=pointer]: Search Device
+      - text: 
+      - generic [ref=e1655]:
+        - button "Alerts Contacts" [ref=e1656] [cursor=pointer]
+        - button "After Hour Alerts" [ref=e1657] [cursor=pointer]
+  - generic [ref=e1658]:
+    - heading "Scheduled Reports" [level=2] [ref=e1660]
+    - generic [ref=e1663]:
+      - button "Add New" [ref=e1665] [cursor=pointer]
+      - button "Edit" [ref=e1666] [cursor=pointer]
+    - generic [ref=e1667]:
+      - generic [ref=e1668]:
+        - generic [ref=e1669]: "Add Email:"
+        - textbox "Add Email:" [ref=e1670]
+      - generic [ref=e1671]:
+        - paragraph [ref=e1672]: "Select Schedule Reports:"
+        - generic [ref=e1673]:
+          - checkbox "Blocked Satellite Signals (Asset Only) ?" [ref=e1674]
+          - text: Blocked Satellite Signals (Asset Only)
+          - generic [ref=e1675]: "?"
+        - generic [ref=e1676]:
+          - checkbox "Check-in Reports (Asset Only) ?" [ref=e1677]
+          - text: Check-in Reports (Asset Only)
+          - generic [ref=e1678]: "?"
+        - generic [ref=e1679]:
+          - checkbox "Geofence Weekly/Daily Email ?" [ref=e1680]
+          - text: Geofence Weekly/Daily Email
+          - generic [ref=e1681]: "?"
+        - generic [ref=e1682]:
+          - checkbox "Weekly Alert Summary ?" [ref=e1683]
+          - text: Weekly Alert Summary
+          - generic [ref=e1684]: "?"
+        - generic [ref=e1685]:
+          - checkbox "15 Days Or More Outside The Geofence" [ref=e1686]
+          - text: 15 Days Or More Outside The Geofence
+        - generic [ref=e1687]:
+          - checkbox "15 Days Or More Inside The Geofence" [ref=e1688]
+          - text: 15 Days Or More Inside The Geofence
+        - generic [ref=e1689]:
+          - checkbox "30 Days Or More Outside The Geofence" [ref=e1690]
+          - text: 30 Days Or More Outside The Geofence
+        - generic [ref=e1691]:
+          - checkbox "30 Days Or More Inside The Geofence" [ref=e1692]
+          - text: 30 Days Or More Inside The Geofence
+        - generic [ref=e1693]:
+          - checkbox "60 Days Or More Outside The Geofence" [ref=e1694]
+          - text: 60 Days Or More Outside The Geofence
+        - generic [ref=e1695]:
+          - checkbox "60 Days Or More Inside The Geofence" [ref=e1696]
+          - text: 60 Days Or More Inside The Geofence
+      - button "Submit" [ref=e1698] [cursor=pointer]
+      - generic [ref=e1699]:
+        - generic [ref=e1700]:
+          - generic [ref=e1701]: "Select Time:"
+          - 'textbox "Select Time: From: To: From:: To::" [ref=e1702]'
+        - button "Submit" [ref=e1703] [cursor=pointer]
+  - generic [ref=e1704]:
+    - heading "Add/Edit Maintenance Contact " [level=2] [ref=e1706]:
+      - text: Add/Edit Maintenance Contact
+      - generic [ref=e1707] [cursor=pointer]: 
+    - generic [ref=e1710]:
+      - generic [ref=e1711]: Add Maintenance Contact
+      - textbox "Add Maintenance Contact" [ref=e1712]
+    - button "Submit" [ref=e1714] [cursor=pointer]
+    - table [ref=e1715]:
+      - rowgroup [ref=e1716]:
+        - row "No Email Contacts to Display" [ref=e1717]:
+          - cell "No Email Contacts to Display" [ref=e1718] [cursor=pointer]
+  - generic [ref=e1719]:
+    - heading "Maintenance Report " [level=2] [ref=e1721]:
+      - text: Maintenance Report
+      - generic [ref=e1722] [cursor=pointer]: 
+    - generic [ref=e1725]:
+      - textbox "Search" [ref=e1728]
+      - generic [ref=e1730]:
+        - generic [ref=e1731]: Show
+        - combobox "Show entries" [ref=e1732]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e1733]: entries
+      - button "Copy" [ref=e1734] [cursor=pointer]
+      - button "Save file as" [ref=e1736] [cursor=pointer]: Save file as
+    - table [ref=e1739]:
+      - rowgroup [ref=e1740]:
+        - row "No Maintenance Reports to Display" [ref=e1741]:
+          - cell "No Maintenance Reports to Display" [ref=e1742] [cursor=pointer]
+    - paragraph [ref=e1744]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e1749] [cursor=pointer]
+  - generic [ref=e1750]:
+    - heading "View Vehicle Service " [level=2] [ref=e1752]:
+      - text: View Vehicle Service
+      - generic [ref=e1753] [cursor=pointer]: 
+    - generic [ref=e1756]:
+      - generic [ref=e1757]: "Select Device:"
+      - combobox [ref=e1758]
+    - button "Shortcut To Maintenance Report" [ref=e1759] [cursor=pointer]
+  - generic [ref=e1761]:
+    - heading "Add New/Edit Service Type" [level=2] [ref=e1763]
+    - generic [ref=e1765]:
+      - generic [ref=e1766]:
+        - generic [ref=e1767]: Service Type
+        - textbox "Service Type Service Type" [ref=e1768]
+      - generic [ref=e1769]:
+        - generic [ref=e1770]: Last Service Mileage
+        - spinbutton "Last Service Mileage Last Service Mileage" [ref=e1771]
+      - generic [ref=e1772]:
+        - generic [ref=e1773]: Service Frequency (Mileage)
+        - spinbutton "Service Frequency (Mileage) Service Frequency (Mileage)" [ref=e1774]
+      - generic [ref=e1775]:
+        - generic [ref=e1776]: Service Frequency (Days)
+        - spinbutton "Service Frequency (Days) Service Frequency (Days)" [ref=e1777]
+      - generic [ref=e1778]:
+        - generic [ref=e1779]: Last Service Date
+        - textbox "Last Service Date Last Service Date" [ref=e1780]
+      - generic [ref=e1781]:
+        - generic [ref=e1782]: Notes
+        - textbox "Notes Notes" [ref=e1783]
+      - generic [ref=e1784]:
+        - button "Submit" [ref=e1785] [cursor=pointer]
+        - button "Close" [ref=e1786] [cursor=pointer]
+  - generic [ref=e1787]:
+    - heading "Vehicle Service Change Log" [level=2] [ref=e1789]
+    - table [ref=e1792]:
+      - rowgroup [ref=e1793]:
+        - row "No Service Log Data to Display" [ref=e1794]:
+          - cell "No Service Log Data to Display" [ref=e1795] [cursor=pointer]
+    - paragraph [ref=e1797]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e1802] [cursor=pointer]
+  - generic [ref=e1803]:
+    - heading "Vehicle Service Form" [level=2] [ref=e1805]
+    - generic [ref=e1808]:
+      - generic [ref=e1809]:
+        - generic [ref=e1810]: Service Type
+        - textbox [disabled] [ref=e1811]
+      - generic [ref=e1812]:
+        - generic [ref=e1813]: Last Service Mileage
+        - spinbutton [ref=e1814]
+      - generic [ref=e1815]:
+        - generic [ref=e1816]: Service Frequency (Mileage)
+        - spinbutton [ref=e1817]
+      - generic [ref=e1818]:
+        - generic [ref=e1819]: Service Frequency (Days)
+        - spinbutton [ref=e1820]
+      - generic [ref=e1821]:
+        - generic [ref=e1822]: Last Service Date
+        - textbox [ref=e1823]
+      - generic [ref=e1824]:
+        - generic [ref=e1825]: Notes
+        - textbox [ref=e1826]
+      - button "Submit" [ref=e1828] [cursor=pointer]
+  - generic [ref=e1829]:
+    - heading "Weekly After Hours Alert Summary" [level=2] [ref=e1831]
+    - generic [ref=e1834]:
+      - textbox "Search" [ref=e1837]
+      - button "Copy" [ref=e1838] [cursor=pointer]
+      - button "Save file as" [ref=e1840] [cursor=pointer]: Save file as
+    - table [ref=e1843]:
+      - rowgroup [ref=e1844]:
+        - row "No Weekly Alert Reports to Display" [ref=e1845]:
+          - cell "No Weekly Alert Reports to Display" [ref=e1846] [cursor=pointer]
+    - button "Close" [ref=e1848] [cursor=pointer]
+  - generic [ref=e1849]:
+    - heading "After Hours Summary" [level=2] [ref=e1851]
+    - generic [ref=e1856]:
+      - textbox [ref=e1858]: 2025-12-24
+      - button "Submit" [ref=e1859] [cursor=pointer]
+    - paragraph [ref=e1860]: "Last Update : Not Updated"
+    - generic [ref=e1861]:
+      - generic [ref=e1862]:
+        - paragraph [ref=e1863]: "0"
+        - paragraph [ref=e1864]: Alerts
+      - generic [ref=e1865]:
+        - generic [ref=e1866]:
+          - paragraph [ref=e1868]: Low Priority Alerts
+          - paragraph [ref=e1869]: "0"
+        - generic [ref=e1870]:
+          - paragraph [ref=e1872]: Medium Priority Alerts
+          - paragraph [ref=e1873]: "0"
+        - generic [ref=e1874]:
+          - paragraph [ref=e1876]: High Priority Alerts
+          - paragraph [ref=e1877]: "0"
+    - generic [ref=e1878]:
+      - generic [ref=e1879]:
+        - paragraph [ref=e1880]: "0"
+        - paragraph [ref=e1881]: Actively Transmitting
+      - generic [ref=e1882]:
+        - paragraph [ref=e1883]: "0"
+        - paragraph [ref=e1884]: Engine Off
+      - generic [ref=e1885]:
+        - paragraph [ref=e1886]: "0"
+        - paragraph [ref=e1887]: Idling
+      - generic [ref=e1888]:
+        - paragraph [ref=e1889]: "0"
+        - paragraph [ref=e1890]: Outside Hours
+      - generic [ref=e1891]:
+        - paragraph [ref=e1892]: "0"
+        - paragraph [ref=e1893]: Hard Acceleration
+      - generic [ref=e1894]:
+        - paragraph [ref=e1895]: "0"
+        - paragraph [ref=e1896]: Hard Braking
+    - generic [ref=e1897]:
+      - paragraph [ref=e1898]: Update Alerts
+      - paragraph [ref=e1900]: 1 devices didn't update over 2 days
+    - generic [ref=e1901]:
+      - paragraph [ref=e1902]: Speed Limit Violation
+      - paragraph [ref=e1904]: 0 after hours alerts triggered today!
+    - button "Show Details" [ref=e1905] [cursor=pointer]
+  - generic [ref=e1906]:
+    - heading "Alerts Overview" [level=2] [ref=e1908]
+    - generic [ref=e1911]:
+      - generic [ref=e1912]:
+        - generic [ref=e1913]:
+          - generic [ref=e1914]:
+            - generic [ref=e1915]:
+              - paragraph [ref=e1916]: "0"
+              - paragraph [ref=e1917]: Alerts
+            - generic [ref=e1918]:
+              - generic [ref=e1919]:
+                - paragraph [ref=e1921]: Low Priority Alerts
+                - paragraph [ref=e1922]: "0"
+              - generic [ref=e1923]:
+                - paragraph [ref=e1925]: Medium Priority Alerts
+                - paragraph [ref=e1926]: "0"
+              - generic [ref=e1927]:
+                - paragraph [ref=e1929]: High Priority Alerts
+                - paragraph [ref=e1930]: "0"
+          - generic [ref=e1931] [cursor=pointer]:
+            - paragraph [ref=e1932] [cursor=pointer]: "0"
+            - paragraph [ref=e1933] [cursor=pointer]: Actively Transmitting
+          - generic [ref=e1934] [cursor=pointer]:
+            - paragraph [ref=e1935] [cursor=pointer]: "0"
+            - paragraph [ref=e1936] [cursor=pointer]: Engine Off
+          - generic [ref=e1937] [cursor=pointer]:
+            - paragraph [ref=e1938] [cursor=pointer]: "0"
+            - paragraph [ref=e1939] [cursor=pointer]: Idling
+        - generic [ref=e1941]:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - link "Terms of use" [ref=e1945] [cursor=pointer]:
+                - /url: https://legal.here.com/us-en/terms/here-end-user-terms
+              - generic: © 1987–2025 HERE
+          - generic [ref=e1946]:
+            - generic:
+              - generic [ref=e1947]:
+                - img [ref=e1949] [cursor=pointer]
+                - img [ref=e1953] [cursor=pointer]
+              - img [ref=e1957] [cursor=pointer]
+        - heading "Vehicle Alerts" [level=2] [ref=e1959]
+        - generic [ref=e1960]:
+          - textbox "Search" [ref=e1963]
+          - button "Copy" [ref=e1964] [cursor=pointer]
+          - button "Save file as" [ref=e1966] [cursor=pointer]: Save file as
+        - table [ref=e1969]:
+          - rowgroup [ref=e1970]:
+            - row "Device Name Location Date Posted Speed Speed Over The Speed Limit" [ref=e1971]:
+              - cell "Device Name" [ref=e1972] [cursor=pointer]:
+                - paragraph [ref=e1974] [cursor=pointer]: Device Name
+              - cell "Location" [ref=e1976] [cursor=pointer]:
+                - paragraph [ref=e1978] [cursor=pointer]: Location
+              - cell "Date" [ref=e1980] [cursor=pointer]:
+                - paragraph [ref=e1982] [cursor=pointer]: Date
+              - cell "Posted Speed" [ref=e1984] [cursor=pointer]:
+                - paragraph [ref=e1986] [cursor=pointer]: Posted Speed
+              - cell "Speed" [ref=e1988] [cursor=pointer]:
+                - paragraph [ref=e1990] [cursor=pointer]: Speed
+              - cell "Over The Speed Limit" [ref=e1992] [cursor=pointer]:
+                - paragraph [ref=e1994] [cursor=pointer]: Over The Speed Limit
+          - rowgroup [ref=e1996]:
+            - row "PR OBD1 2345 South Fort Apache Rd, Las Vegas, NV 89117 05-10-2021 50 56 6" [ref=e1997]:
+              - cell "PR OBD1" [ref=e1998] [cursor=pointer]
+              - cell "2345 South Fort Apache Rd, Las Vegas, NV 89117" [ref=e1999] [cursor=pointer]:
+                - paragraph [ref=e2001] [cursor=pointer]: 2345 South Fort Apache Rd, Las Vegas, NV 89117
+              - cell "05-10-2021" [ref=e2003] [cursor=pointer]
+              - cell "50" [ref=e2004] [cursor=pointer]
+              - cell "56" [ref=e2005] [cursor=pointer]
+              - cell "6" [ref=e2006] [cursor=pointer]
+            - row "PR OBD2 9876 West Flamingo Rd, Las Vegas, NV 89147 05-11-2021 40 40 0" [ref=e2007]:
+              - cell "PR OBD2" [ref=e2008] [cursor=pointer]
+              - cell "9876 West Flamingo Rd, Las Vegas, NV 89147" [ref=e2009] [cursor=pointer]:
+                - paragraph [ref=e2011] [cursor=pointer]: 9876 West Flamingo Rd, Las Vegas, NV 89147
+              - cell "05-11-2021" [ref=e2013] [cursor=pointer]
+              - cell "40" [ref=e2014] [cursor=pointer]
+              - cell "40" [ref=e2015] [cursor=pointer]
+              - cell "0" [ref=e2016] [cursor=pointer]
+            - row "PR OBD3 1388 October Oak Ave, Paradise, NV 89123 04-30-2021 30 34 12" [ref=e2017]:
+              - cell "PR OBD3" [ref=e2018] [cursor=pointer]
+              - cell "1388 October Oak Ave, Paradise, NV 89123" [ref=e2019] [cursor=pointer]:
+                - paragraph [ref=e2021] [cursor=pointer]: 1388 October Oak Ave, Paradise, NV 89123
+              - cell "04-30-2021" [ref=e2023] [cursor=pointer]
+              - cell "30" [ref=e2024] [cursor=pointer]
+              - cell "34" [ref=e2025] [cursor=pointer]
+              - cell "12" [ref=e2026] [cursor=pointer]
+            - row "PR OBD4 2456 Maple Ridge Rd, Boulder City, NV 89005 05-01-2021 40 40 0" [ref=e2027]:
+              - cell "PR OBD4" [ref=e2028] [cursor=pointer]
+              - cell "2456 Maple Ridge Rd, Boulder City, NV 89005" [ref=e2029] [cursor=pointer]:
+                - paragraph [ref=e2031] [cursor=pointer]: 2456 Maple Ridge Rd, Boulder City, NV 89005
+              - cell "05-01-2021" [ref=e2033] [cursor=pointer]
+              - cell "40" [ref=e2034] [cursor=pointer]
+              - cell "40" [ref=e2035] [cursor=pointer]
+              - cell "0" [ref=e2036] [cursor=pointer]
+            - row "PR OBD5 1234 Sunset Blvd, Las Vegas, NV 89119 05-02-2021 0 0 0" [ref=e2037]:
+              - cell "PR OBD5" [ref=e2038] [cursor=pointer]
+              - cell "1234 Sunset Blvd, Las Vegas, NV 89119" [ref=e2039] [cursor=pointer]:
+                - paragraph [ref=e2041] [cursor=pointer]: 1234 Sunset Blvd, Las Vegas, NV 89119
+              - cell "05-02-2021" [ref=e2043] [cursor=pointer]
+              - cell "0" [ref=e2044] [cursor=pointer]
+              - cell "0" [ref=e2045] [cursor=pointer]
+              - cell "0" [ref=e2046] [cursor=pointer]
+            - row "PR OBD6 7890 East Sahara Ave, Las Vegas, NV 89117 05-03-2021 50 55 5" [ref=e2047]:
+              - cell "PR OBD6" [ref=e2048] [cursor=pointer]
+              - cell "7890 East Sahara Ave, Las Vegas, NV 89117" [ref=e2049] [cursor=pointer]:
+                - paragraph [ref=e2051] [cursor=pointer]: 7890 East Sahara Ave, Las Vegas, NV 89117
+              - cell "05-03-2021" [ref=e2053] [cursor=pointer]
+              - cell "50" [ref=e2054] [cursor=pointer]
+              - cell "55" [ref=e2055] [cursor=pointer]
+              - cell "5" [ref=e2056] [cursor=pointer]
+            - row "PR OBD7 5678 West Charleston Blvd, Las Vegas, NV 89146 05-04-2021 25 30 5" [ref=e2057]:
+              - cell "PR OBD7" [ref=e2058] [cursor=pointer]
+              - cell "5678 West Charleston Blvd, Las Vegas, NV 89146" [ref=e2059] [cursor=pointer]:
+                - paragraph [ref=e2061] [cursor=pointer]: 5678 West Charleston Blvd, Las Vegas, NV 89146
+              - cell "05-04-2021" [ref=e2063] [cursor=pointer]
+              - cell "25" [ref=e2064] [cursor=pointer]
+              - cell "30" [ref=e2065] [cursor=pointer]
+              - cell "5" [ref=e2066] [cursor=pointer]
+            - row "PR OBD8 4321 Fremont St, Las Vegas, NV 89104 05-05-2021 45 50 5" [ref=e2067]:
+              - cell "PR OBD8" [ref=e2068] [cursor=pointer]
+              - cell "4321 Fremont St, Las Vegas, NV 89104" [ref=e2069] [cursor=pointer]:
+                - paragraph [ref=e2071] [cursor=pointer]: 4321 Fremont St, Las Vegas, NV 89104
+              - cell "05-05-2021" [ref=e2073] [cursor=pointer]
+              - cell "45" [ref=e2074] [cursor=pointer]
+              - cell "50" [ref=e2075] [cursor=pointer]
+              - cell "5" [ref=e2076] [cursor=pointer]
+            - row "PR OBD9 8765 Tropicana Ave, Las Vegas, NV 89147 05-06-2021 60 70 10" [ref=e2077]:
+              - cell "PR OBD9" [ref=e2078] [cursor=pointer]
+              - cell "8765 Tropicana Ave, Las Vegas, NV 89147" [ref=e2079] [cursor=pointer]:
+                - paragraph [ref=e2081] [cursor=pointer]: 8765 Tropicana Ave, Las Vegas, NV 89147
+              - cell "05-06-2021" [ref=e2083] [cursor=pointer]
+              - cell "60" [ref=e2084] [cursor=pointer]
+              - cell "70" [ref=e2085] [cursor=pointer]
+              - cell "10" [ref=e2086] [cursor=pointer]
+            - row "PR OBD10 1234 Las Vegas Blvd, Las Vegas, NV 89109 05-07-2021 40 44 4" [ref=e2087]:
+              - cell "PR OBD10" [ref=e2088] [cursor=pointer]
+              - cell "1234 Las Vegas Blvd, Las Vegas, NV 89109" [ref=e2089] [cursor=pointer]:
+                - paragraph [ref=e2091] [cursor=pointer]: 1234 Las Vegas Blvd, Las Vegas, NV 89109
+              - cell "05-07-2021" [ref=e2093] [cursor=pointer]
+              - cell "40" [ref=e2094] [cursor=pointer]
+              - cell "44" [ref=e2095] [cursor=pointer]
+              - cell "4" [ref=e2096] [cursor=pointer]
+            - row "PR OBD11 3456 North Decatur Blvd, Las Vegas, NV 89130 05-08-2021 55 60 5" [ref=e2097]:
+              - cell "PR OBD11" [ref=e2098] [cursor=pointer]
+              - cell "3456 North Decatur Blvd, Las Vegas, NV 89130" [ref=e2099] [cursor=pointer]:
+                - paragraph [ref=e2101] [cursor=pointer]: 3456 North Decatur Blvd, Las Vegas, NV 89130
+              - cell "05-08-2021" [ref=e2103] [cursor=pointer]
+              - cell "55" [ref=e2104] [cursor=pointer]
+              - cell "60" [ref=e2105] [cursor=pointer]
+              - cell "5" [ref=e2106] [cursor=pointer]
+            - row "PR OBD12 6789 South Rainbow Blvd, Las Vegas, NV 89118 05-09-2021 30 35 5" [ref=e2107]:
+              - cell "PR OBD12" [ref=e2108] [cursor=pointer]
+              - cell "6789 South Rainbow Blvd, Las Vegas, NV 89118" [ref=e2109] [cursor=pointer]:
+                - paragraph [ref=e2111] [cursor=pointer]: 6789 South Rainbow Blvd, Las Vegas, NV 89118
+              - cell "05-09-2021" [ref=e2113] [cursor=pointer]
+              - cell "30" [ref=e2114] [cursor=pointer]
+              - cell "35" [ref=e2115] [cursor=pointer]
+              - cell "5" [ref=e2116] [cursor=pointer]
+        - paragraph [ref=e2118]: Showing 0 to 0 of 0 entries
+      - generic [ref=e2122]:
+        - generic [ref=e2123] [cursor=pointer]:
+          - paragraph [ref=e2124] [cursor=pointer]: "0"
+          - paragraph [ref=e2125] [cursor=pointer]: Outside Hours
+        - generic [ref=e2126] [cursor=pointer]:
+          - paragraph [ref=e2127] [cursor=pointer]: "0"
+          - paragraph [ref=e2128] [cursor=pointer]: Hard Braking
+        - generic [ref=e2129] [cursor=pointer]:
+          - paragraph [ref=e2130] [cursor=pointer]: "0"
+          - paragraph [ref=e2131] [cursor=pointer]: Hard Acceleration
+        - generic [ref=e2132] [cursor=pointer]:
+          - paragraph [ref=e2133] [cursor=pointer]: "0"
+          - generic [ref=e2134] [cursor=pointer]:
+            - paragraph [ref=e2135] [cursor=pointer]: Speed Limit Violations
+            - paragraph [ref=e2136] [cursor=pointer]: Posted Today
+        - generic [ref=e2137] [cursor=pointer]:
+          - paragraph [ref=e2138] [cursor=pointer]: "0"
+          - paragraph [ref=e2140] [cursor=pointer]: Devices That Have Not Updated In 2 Days
+  - generic [ref=e2141]:
+    - heading "After Hours Insights " [level=2] [ref=e2143]:
+      - text: After Hours Insights
+      - generic [ref=e2144] [cursor=pointer]: 
+    - generic [ref=e2147]:
+      - generic [ref=e2148]:
+        - button "Choose Period" [ref=e2149] [cursor=pointer]:
+          - generic [ref=e2150] [cursor=pointer]: Choose Period
+        - textbox [ref=e2152] [cursor=pointer]
+      - button "Submit" [ref=e2153] [cursor=pointer]
+    - textbox "Search" [ref=e2157]
+    - heading "No vehicles found" [level=3] [ref=e2161]
+  - generic [ref=e2162]:
+    - heading "Authorized Hours" [level=2] [ref=e2164]
+    - generic [ref=e2167]:
+      - generic [ref=e2168]:
+        - generic [ref=e2169]:
+          - paragraph [ref=e2170]: Authorized
+          - generic [ref=e2171]:
+            - generic [ref=e2172]:
+              - paragraph [ref=e2173]: 00:29:46
+              - paragraph [ref=e2176]: Working Hours
+            - generic [ref=e2177]:
+              - paragraph [ref=e2178]: "8.06"
+              - paragraph [ref=e2181]: Miles
+        - img [ref=e2182]
+      - generic [ref=e2183]:
+        - generic [ref=e2184]:
+          - paragraph [ref=e2185]: Unauthorized
+          - generic [ref=e2186]:
+            - generic [ref=e2187]:
+              - paragraph [ref=e2188]: 00:32:16
+              - paragraph [ref=e2191]: Working Hours
+            - generic [ref=e2192]:
+              - paragraph [ref=e2193]: "14.26"
+              - paragraph [ref=e2196]: Miles
+        - img [ref=e2197]
+    - generic [ref=e2198]:
+      - generic [ref=e2199]:
+        - generic [ref=e2200]:
+          - button "All" [ref=e2202] [cursor=pointer]
+          - button "Authorized" [ref=e2203] [cursor=pointer]
+          - button "Unauthorized" [ref=e2204] [cursor=pointer]
+        - table [ref=e2205]:
+          - rowgroup [ref=e2206]:
+            - row "Date Day Of The Week Time Range Location Duration" [ref=e2207]:
+              - cell "Date" [ref=e2208] [cursor=pointer]:
+                - paragraph [ref=e2210] [cursor=pointer]: Date
+              - cell "Day Of The Week" [ref=e2212] [cursor=pointer]:
+                - paragraph [ref=e2214] [cursor=pointer]: Day Of The Week
+              - cell "Time Range" [ref=e2216] [cursor=pointer]:
+                - paragraph [ref=e2218] [cursor=pointer]: Time Range
+              - cell "Location" [ref=e2220] [cursor=pointer]:
+                - paragraph [ref=e2222] [cursor=pointer]: Location
+              - cell "Duration" [ref=e2224] [cursor=pointer]:
+                - paragraph [ref=e2226] [cursor=pointer]: Duration
+          - rowgroup
+        - generic [ref=e2228]:
+          - paragraph [ref=e2229]: Showing 0 to 0 of 0 entries
+          - paragraph [ref=e2232] [cursor=pointer]: "1"
+      - generic [ref=e2236]:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - link "Terms of use" [ref=e2240] [cursor=pointer]:
+              - /url: https://legal.here.com/us-en/terms/here-end-user-terms
+            - generic: © 1987–2025 HERE
+        - generic [ref=e2241]:
+          - generic:
+            - generic [ref=e2242]:
+              - img [ref=e2244] [cursor=pointer]
+              - img [ref=e2248] [cursor=pointer]
+            - img [ref=e2252] [cursor=pointer]
+  - generic [ref=e2254]:
+    - heading "After Hours Settings " [level=2] [ref=e2256]:
+      - text: After Hours Settings
+      - generic [ref=e2257] [cursor=pointer]: 
+    - generic [ref=e2260]:
+      - generic [ref=e2261]: "Select Device:"
+      - combobox [ref=e2262]:
+        - 'option "Trailer 1 (IMEI: 861492065103241)" [selected]'
+        - 'option "Trailer 2 (IMEI: ...)"'
+    - generic [ref=e2263]:
+      - paragraph [ref=e2264]: "Working Hours:"
+      - generic [ref=e2265]:
+        - generic [ref=e2266]:
+          - radio "All Days" [checked] [ref=e2267]
+          - text: All Days
+        - generic [ref=e2268]:
+          - radio "Custom Days" [ref=e2269]
+          - text: Custom Days
+        - generic [ref=e2270]:
+          - radio "Weekdays" [ref=e2271]
+          - text: Weekdays
+    - generic [ref=e2272]:
+      - generic [ref=e2273]:
+        - generic [ref=e2274]: "From:"
+        - textbox [ref=e2275]
+      - generic [ref=e2276]:
+        - generic [ref=e2277]: "To:"
+        - textbox [ref=e2278]
+    - button "Advanced Settings" [ref=e2281] [cursor=pointer]
+    - button "Submit" [ref=e2283] [cursor=pointer]
+  - generic [ref=e2284]:
+    - heading "Landmarks Report " [level=2] [ref=e2286]:
+      - text: Landmarks Report
+      - generic [ref=e2287] [cursor=pointer]: 
+    - generic [ref=e2290]:
+      - textbox "Search" [ref=e2293]
+      - button "Copy" [ref=e2294] [cursor=pointer]
+      - button "Save file as" [ref=e2296] [cursor=pointer]: Save file as
+    - table [ref=e2299]:
+      - rowgroup [ref=e2300]:
+        - row "No Landmarks to Display" [ref=e2301]:
+          - cell "No Landmarks to Display" [ref=e2302] [cursor=pointer]
+  - generic [ref=e2303]:
+    - heading "Pulsing Icon Settings" [level=2] [ref=e2305]
+    - generic [ref=e2308]:
+      - heading "Marker Pulse Scale" [level=3] [ref=e2309]
+      - paragraph [ref=e2310]: Choose the scale for marker pulse animation.
+      - combobox [ref=e2312] [cursor=pointer]:
+        - option "Small - Default" [selected]
+        - option "Medium"
+        - option "Large"
+    - button "Save Settings" [ref=e2313] [cursor=pointer]
+  - generic [ref=e2314]:
+    - heading "Recent Geofence Report" [level=2] [ref=e2316]
+    - generic [ref=e2319]:
+      - combobox [ref=e2321]:
+        - option "Select Status" [disabled] [selected]
+        - option "Inside Geofence"
+        - option "Outside Geofence"
+      - combobox [ref=e2323]:
+        - option "Select Geofence" [disabled] [selected]
+      - combobox [ref=e2325]:
+        - option "Select Time Range" [disabled] [selected]
+        - option "More than 15 Days"
+        - option "More than 30 Days"
+        - option "More than 45 Days"
+      - button "Submit" [ref=e2326] [cursor=pointer]
+    - generic [ref=e2327]:
+      - textbox "Search" [ref=e2330]
+      - button "Copy" [ref=e2331] [cursor=pointer]
+      - button "Save file as" [ref=e2333] [cursor=pointer]: Save file as
+    - table [ref=e2336]:
+      - rowgroup [ref=e2337]:
+        - row "Please select filters and click Submit" [ref=e2338]:
+          - cell "Please select filters and click Submit" [ref=e2339] [cursor=pointer]
+  - generic [ref=e2340]:
+    - heading "View / Edit Aggressive Geofence" [level=2] [ref=e2342]
+    - iframe [ref=e2346]:
+      
+    - generic [ref=e2347]:
+      - generic [ref=e2348]:
+        - button "Activate" [ref=e2349] [cursor=pointer]
+        - button "Edit" [ref=e2350] [cursor=pointer]
+        - button "Deactivate" [ref=e2351] [cursor=pointer]
+        - button "Delete" [ref=e2352] [cursor=pointer]
+      - button "Back" [ref=e2354] [cursor=pointer]
+  - generic [ref=e2355]:
+    - heading "Aggressive Geofence Report " [level=2] [ref=e2357]:
+      - text: Aggressive Geofence Report
+      - generic [ref=e2358] [cursor=pointer]: 
+    - generic [ref=e2361]:
+      - textbox "Search" [ref=e2364]
+      - generic [ref=e2365]:
+        - checkbox [ref=e2367]
+        - generic [ref=e2368]: Click here to show only aggressive geofences created on the account.
+      - button "Copy" [ref=e2369] [cursor=pointer]
+      - button "Save file as" [ref=e2371] [cursor=pointer]: Save file as
+    - table [ref=e2374]:
+      - rowgroup [ref=e2375]:
+        - row "No Aggressive Geofences to Display" [ref=e2376]:
+          - cell "No Aggressive Geofences to Display" [ref=e2377] [cursor=pointer]
+  - generic [ref=e2378]:
+    - heading "Current Geofence Report " [level=2] [ref=e2380]:
+      - text: Current Geofence Report
+      - generic [ref=e2381] [cursor=pointer]: 
+    - generic [ref=e2384]:
+      - combobox [ref=e2385]:
+        - option "Show All Status" [selected]
+        - option "Inside Geofence"
+        - option "Outside Geofence"
+      - combobox [ref=e2386]:
+        - option "Show All Geofences" [selected]
+      - combobox [ref=e2387]:
+        - option "Show All Subgroups" [selected]
+    - generic [ref=e2388]:
+      - textbox "Search" [ref=e2391]
+      - button "Copy" [ref=e2392] [cursor=pointer]
+      - button "Save file as" [ref=e2394] [cursor=pointer]: Save file as
+    - table [ref=e2397]:
+      - rowgroup [ref=e2398]:
+        - row "No Geofences to Display" [ref=e2399]:
+          - cell "No Geofences to Display" [ref=e2400] [cursor=pointer]
+  - generic [ref=e2401]:
+    - heading "Weekly Geofence Report (12/21/2025 to 12/27/2025) " [level=2] [ref=e2403]:
+      - text: Weekly Geofence Report
+      - generic [ref=e2404]: (12/21/2025 to 12/27/2025)
+      - generic [ref=e2405] [cursor=pointer]: 
+    - generic [ref=e2408]:
+      - generic [ref=e2409]:
+        - textbox [ref=e2410] [cursor=pointer]: 12/21/2025 to 12/27/2025
+        - button [ref=e2411] [cursor=pointer]
+      - combobox [ref=e2413]:
+        - option "All Devices" [selected]
+        - option "Demo 1"
+        - option "Sales Car1"
+      - combobox [ref=e2414]:
+        - option "All Geofences" [selected]
+        - option "In Geofence 49 ( Name 1 )"
+        - option "Not In Geofence"
+      - button "View Chart" [ref=e2415] [cursor=pointer]
+    - generic [ref=e2416]:
+      - textbox "Search" [ref=e2419]
+      - button "Copy" [ref=e2420] [cursor=pointer]
+      - button "Save file as" [ref=e2422] [cursor=pointer]: Save file as
+    - table [ref=e2425]:
+      - rowgroup [ref=e2426]:
+        - row "Device Name Geofence Time Spent In Geofence (HH:MM) Percentage of Time Spent In Geofence Actions" [ref=e2427]:
+          - cell "Device Name" [ref=e2428] [cursor=pointer]: Device Name
+          - cell "Geofence" [ref=e2429] [cursor=pointer]: Geofence
+          - cell "Time Spent In Geofence (HH:MM)" [ref=e2430] [cursor=pointer]: Time Spent In Geofence (HH:MM)
+          - cell "Percentage of Time Spent In Geofence" [ref=e2431] [cursor=pointer]: Percentage of Time Spent In Geofence
+          - cell "Actions" [ref=e2432] [cursor=pointer]
+      - rowgroup [ref=e2433]:
+        - row "Sales Car1 In Geofence 49 ( Name 1 ) 45H:48M 63.61% View Details" [ref=e2434]:
+          - cell "Sales Car1" [ref=e2435] [cursor=pointer]
+          - cell "In Geofence 49 ( Name 1 )" [ref=e2436] [cursor=pointer]
+          - cell "45H:48M" [ref=e2437] [cursor=pointer]
+          - cell "63.61%" [ref=e2438] [cursor=pointer]
+          - cell "View Details" [ref=e2439] [cursor=pointer]:
+            - button "View Details" [ref=e2440] [cursor=pointer]
+        - row "Sales Car1 Not In Geofence 26H:12M 36.39% View Details" [ref=e2441]:
+          - cell "Sales Car1" [ref=e2442] [cursor=pointer]
+          - cell "Not In Geofence" [ref=e2443] [cursor=pointer]
+          - cell "26H:12M" [ref=e2444] [cursor=pointer]
+          - cell "36.39%" [ref=e2445] [cursor=pointer]
+          - cell "View Details" [ref=e2446] [cursor=pointer]:
+            - button "View Details" [ref=e2447] [cursor=pointer]
+        - row "Demo 1 In Geofence 49 ( Name 1 ) 72H:00M 100% View Details" [ref=e2448]:
+          - cell "Demo 1" [ref=e2449] [cursor=pointer]
+          - cell "In Geofence 49 ( Name 1 )" [ref=e2450] [cursor=pointer]
+          - cell "72H:00M" [ref=e2451] [cursor=pointer]
+          - cell "100%" [ref=e2452] [cursor=pointer]
+          - cell "View Details" [ref=e2453] [cursor=pointer]:
+            - button "View Details" [ref=e2454] [cursor=pointer]
+  - text:  Track History ✕
+  - generic [ref=e2455]:
+    - heading "Travel Log Report " [level=2] [ref=e2457]:
+      - text: Travel Log Report
+      - generic [ref=e2458] [cursor=pointer]: 
+    - generic [ref=e2461]:
+      - generic [ref=e2462]:
+        - button "Choose Period" [ref=e2463] [cursor=pointer]:
+          - generic [ref=e2464] [cursor=pointer]: Choose Period
+        - textbox [ref=e2466] [cursor=pointer]
+      - generic:
+        - combobox:
+          - option "Select Device" [selected]
+      - button "Submit" [ref=e2467] [cursor=pointer]
+    - generic [ref=e2468]:
+      - button "Travel Log Report" [ref=e2470] [cursor=pointer]
+      - button "Travel Log Report With Map" [ref=e2471] [cursor=pointer]
+      - button "Travel Log Frequent Stops" [ref=e2472] [cursor=pointer]
+      - generic [ref=e2473] [cursor=pointer]: 
+    - generic [ref=e2474]:
+      - textbox "Search" [ref=e2477]
+      - text:  
+      - button "Copy" [ref=e2478] [cursor=pointer]
+      - button "Save file as" [ref=e2480] [cursor=pointer]: Save file as
+    - generic [ref=e2485]:
+      - table [ref=e2487]:
+        - rowgroup [ref=e2488]:
+          - row "No records to display. Please select a date and driver, then click Submit." [ref=e2489]:
+            - cell "No records to display. Please select a date and driver, then click Submit." [ref=e2490] [cursor=pointer]
+      - generic:
+        - paragraph
+  - generic [ref=e2492]:
+    - heading "Asset Tracker Check-In Report " [level=2] [ref=e2494]:
+      - text: Asset Tracker Check-In Report
+      - generic [ref=e2495] [cursor=pointer]: 
+    - generic [ref=e2498]:
+      - generic [ref=e2499]: "Filter by:"
+      - combobox [ref=e2500]:
+        - option "All" [selected]
+        - option "Start Movement"
+        - option "Stop Movement"
+        - option "Aggressive"
+        - option "No Satellite"
+    - table [ref=e2501]:
+      - rowgroup [ref=e2502]:
+        - row "No data available" [ref=e2503]:
+          - cell "No data available" [ref=e2504] [cursor=pointer]
+    - generic [ref=e2506]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e2511] [cursor=pointer]
+  - generic [ref=e2512]:
+    - heading "Mileage Report " [level=2] [ref=e2514]:
+      - text: Mileage Report
+      - generic [ref=e2515] [cursor=pointer]: 
+    - generic [ref=e2518]:
+      - generic [ref=e2519]:
+        - button "Choose Period" [ref=e2520] [cursor=pointer]:
+          - generic [ref=e2521] [cursor=pointer]: Choose Period
+        - textbox [ref=e2523] [cursor=pointer]
+      - combobox [ref=e2525]
+    - generic [ref=e2526]:
+      - paragraph [ref=e2527]: "Select Report Type:"
+      - generic [ref=e2528]:
+        - generic [ref=e2529]:
+          - radio "Mileage" [checked] [ref=e2530]
+          - text: Mileage
+        - generic [ref=e2531]:
+          - radio "Speed" [ref=e2532]
+          - text: Speed
+    - generic [ref=e2533]:
+      - checkbox "Specify Time Frame" [ref=e2534]
+      - text: Specify Time Frame
+    - generic [ref=e2535]:
+      - paragraph [ref=e2536]: "Select Time Range:"
+      - generic [ref=e2537]:
+        - textbox [ref=e2538]
+        - textbox [ref=e2539]
+    - button "Submit" [ref=e2541] [cursor=pointer]
+  - generic [ref=e2542]:
+    - heading "30 Day Mileage Report " [level=2] [ref=e2544]:
+      - text: 30 Day Mileage Report
+      - generic [ref=e2545] [cursor=pointer]: 
+    - generic [ref=e2548]:
+      - generic [ref=e2549]:
+        - button "Choose Period" [ref=e2550] [cursor=pointer]:
+          - generic [ref=e2551] [cursor=pointer]: Choose Period
+        - textbox [ref=e2553] [cursor=pointer]
+      - combobox [ref=e2555]
+      - generic [ref=e2556]:
+        - checkbox "All" [ref=e2557]
+        - text: All
+      - button "Submit" [ref=e2558] [cursor=pointer]
+    - textbox "Search" [ref=e2562]
+    - table [ref=e2563]:
+      - rowgroup [ref=e2564]:
+        - row "Report Not Generated" [ref=e2565]:
+          - cell "Report Not Generated" [ref=e2566] [cursor=pointer]
+  - generic [ref=e2567]:
+    - heading "30 Day Mileage Report" [level=2] [ref=e2569]
+    - table [ref=e2572]:
+      - rowgroup [ref=e2573]:
+        - row "No Data to Display" [ref=e2574]:
+          - cell "No Data to Display" [ref=e2575] [cursor=pointer]
+  - generic [ref=e2576]:
+    - heading "Current Location Report " [level=2] [ref=e2578]:
+      - text: Current Location Report
+      - generic [ref=e2579] [cursor=pointer]: 
+    - generic [ref=e2582]:
+      - textbox "Search" [ref=e2585]
+      - generic [ref=e2587]:
+        - generic [ref=e2588]: Show
+        - combobox "Show entries" [ref=e2589]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e2590]: entries
+      - button "Copy" [ref=e2591] [cursor=pointer]
+      - button "Save file as" [ref=e2593] [cursor=pointer]: Save file as
+    - table [ref=e2596]:
+      - rowgroup [ref=e2597]:
+        - row "No Data to Display" [ref=e2598]:
+          - cell "No Data to Display" [ref=e2599] [cursor=pointer]
+    - generic [ref=e2600]:
+      - paragraph [ref=e2601]: Showing 0 to 0 of 0 entries
+      - paragraph [ref=e2604] [cursor=pointer]: "1"
+  - generic [ref=e2606]:
+    - heading "State Mileage Report " [level=2] [ref=e2608]:
+      - text: State Mileage Report
+      - generic [ref=e2609] [cursor=pointer]: 
+    - generic [ref=e2612]:
+      - generic [ref=e2613]:
+        - button "Choose Period" [ref=e2614] [cursor=pointer]:
+          - generic [ref=e2615] [cursor=pointer]: Choose Period
+        - textbox [ref=e2617] [cursor=pointer]
+      - combobox [ref=e2619]:
+        - option "Select Device" [selected]
+      - generic [ref=e2620]:
+        - checkbox "All Devices" [ref=e2621]
+        - generic [ref=e2622]: All Devices
+      - generic [ref=e2623]:
+        - button "Submit" [ref=e2624] [cursor=pointer]
+        - button "Refresh" [ref=e2626] [cursor=pointer]: Refresh
+    - generic [ref=e2628]:
+      - heading "Requests Table" [level=4] [ref=e2629]
+      - table [ref=e2630]:
+        - rowgroup [ref=e2631]:
+          - row "No Reports Generated" [ref=e2632]:
+            - cell "No Reports Generated" [ref=e2633] [cursor=pointer]
+    - button "Close" [ref=e2634] [cursor=pointer]
+  - generic [ref=e2635]:
+    - heading "Trip Report " [level=2] [ref=e2637]:
+      - text: Trip Report
+      - generic [ref=e2638] [cursor=pointer]: 
+    - generic [ref=e2641]:
+      - generic [ref=e2642]:
+        - generic [ref=e2643]: "Select Device:"
+        - combobox "Select Device:" [ref=e2644]
+      - generic [ref=e2645]:
+        - generic [ref=e2646]: "Select Date:"
+        - textbox [ref=e2647]: 2025-12-24
+      - button "Submit" [ref=e2648] [cursor=pointer]
+    - table [ref=e2649]:
+      - rowgroup [ref=e2650]:
+        - row "Report Not Generated" [ref=e2651]:
+          - cell "Report Not Generated" [ref=e2652] [cursor=pointer]
+  - generic [ref=e2653]:
+    - heading "Driver Safety Report " [level=2] [ref=e2655]:
+      - text: Driver Safety Report
+      - generic [ref=e2656] [cursor=pointer]: 
+    - generic [ref=e2659]:
+      - generic [ref=e2660]: "Select Device:"
+      - combobox "Select Device:" [ref=e2661]
+    - button "Submit" [ref=e2663] [cursor=pointer]
+  - generic [ref=e2664]:
+    - heading "Posted Speed Report " [level=2] [ref=e2666]:
+      - text: Posted Speed Report
+      - generic [ref=e2667] [cursor=pointer]: 
+    - paragraph [ref=e2670]:
+      - strong [ref=e2671]: "Instructions:"
+      - text: Select your date range (maximum 30 days). Then select the Device Name and select the Posted Speed Limit (mph). This is the maximum mph allowed over the speed limit before it is considered a violation. E.g., if you choose 10, you will see a violation when your drivers go 10 mph over the posted speed limit. Finally, click Submit. The report will be queued up and may take up to 10 minutes to load. You can come back to this page to check the status.
+    - generic [ref=e2672]:
+      - generic [ref=e2673]:
+        - button "Choose Period" [ref=e2674] [cursor=pointer]:
+          - generic [ref=e2675] [cursor=pointer]: Choose Period
+        - textbox [ref=e2677] [cursor=pointer]
+      - combobox [ref=e2679]
+      - textbox "Enter Posted Speed Limit (MPH)" [ref=e2681]
+      - button "Submit" [ref=e2682] [cursor=pointer]
+      - button "Refresh" [ref=e2683] [cursor=pointer]
+    - generic [ref=e2684]:
+      - textbox "Search" [ref=e2687]
+      - generic [ref=e2689]:
+        - generic [ref=e2690]: Show
+        - combobox "Show entries" [ref=e2691]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - generic [ref=e2692]: entries
+      - button "Copy" [ref=e2693] [cursor=pointer]
+      - button "Save file as" [ref=e2695] [cursor=pointer]: Save file as
+    - table [ref=e2698]:
+      - rowgroup [ref=e2699]:
+        - row "No Data to Display" [ref=e2700]:
+          - cell "No Data to Display" [ref=e2701] [cursor=pointer]
+    - generic [ref=e2703]: Showing 0 to 0 of 0 entries
+    - button "Close" [ref=e2708] [cursor=pointer]
+  - generic [ref=e2709]:
+    - heading "Engine On Report " [level=2] [ref=e2711]:
+      - text: Engine On Report
+      - generic [ref=e2712] [cursor=pointer]: 
+    - generic [ref=e2715]:
+      - generic [ref=e2716]:
+        - button "Choose Period" [ref=e2717] [cursor=pointer]:
+          - generic [ref=e2718] [cursor=pointer]: Choose Period
+        - textbox [ref=e2720] [cursor=pointer]
+      - combobox [ref=e2722]
+      - button "Submit" [ref=e2723] [cursor=pointer]
+  - generic [ref=e2724]:
+    - heading "Idling Report " [level=2] [ref=e2726]:
+      - text: Idling Report
+      - generic [ref=e2727] [cursor=pointer]: 
+    - generic [ref=e2730]:
+      - generic [ref=e2731]:
+        - button "Choose Period" [ref=e2732] [cursor=pointer]:
+          - generic [ref=e2733] [cursor=pointer]: Choose Period
+        - textbox [ref=e2735] [cursor=pointer]
+      - combobox [ref=e2737]
+      - button "Submit" [ref=e2738] [cursor=pointer]
+  - generic [ref=e2739]:
+    - heading "Low Voltage Device Report " [level=2] [ref=e2741]:
+      - text: Low Voltage Device Report
+      - generic [ref=e2742] [cursor=pointer]: 
+    - generic [ref=e2745]:
+      - generic [ref=e2746]: "Select Data Point:"
+      - generic [ref=e2747]:
+        - generic [ref=e2748]:
+          - radio "Speed more than 80 MPH" [checked] [ref=e2749]
+          - text: Speed more than 80 MPH
+        - generic [ref=e2750]:
+          - radio "Voltage lower than 12V" [ref=e2751]
+          - text: Voltage lower than 12V
+    - generic [ref=e2752]:
+      - generic [ref=e2753]: "Select Duration:"
+      - generic [ref=e2754]:
+        - generic [ref=e2755]:
+          - radio "Current" [checked] [ref=e2756]
+          - text: Current
+        - generic [ref=e2757]:
+          - radio "Last 24 hours" [ref=e2758]
+          - text: Last 24 hours
+        - generic [ref=e2759]:
+          - radio "Last 3 days" [ref=e2760]
+          - text: Last 3 days
+        - generic [ref=e2761]:
+          - radio "Last 7 days" [ref=e2762]
+          - text: Last 7 days
+    - button "Submit" [ref=e2764] [cursor=pointer]
+    - generic [ref=e2765]:
+      - textbox "Search" [ref=e2768]
+      - button "Copy" [ref=e2769] [cursor=pointer]
+      - button "Save file as" [ref=e2771] [cursor=pointer]: Save file as
+    - table [ref=e2774]:
+      - rowgroup [ref=e2775]:
+        - row "No Data to Display" [ref=e2776]:
+          - cell "No Data to Display" [ref=e2777] [cursor=pointer]
+  - generic [ref=e2778]:
+    - heading "Asset Ping Program Report " [level=2] [ref=e2780]:
+      - text: Asset Ping Program Report
+      - generic [ref=e2781] [cursor=pointer]: 
+    - generic [ref=e2784]:
+      - generic [ref=e2785]: "Select Device:"
+      - combobox "Select Device:" [ref=e2786]
+    - button "Submit" [ref=e2788] [cursor=pointer]
+    - generic [ref=e2789]:
+      - textbox "Search" [ref=e2792]
+      - button "Copy" [ref=e2793] [cursor=pointer]
+      - button "Save file as" [ref=e2795] [cursor=pointer]: Save file as
+    - table [ref=e2798]:
+      - rowgroup [ref=e2799]:
+        - row "Report Not Generated" [ref=e2800]:
+          - cell "Report Not Generated" [ref=e2801] [cursor=pointer]
+  - generic [ref=e2802]:
+    - heading "Vehicle Utilization Report " [level=2] [ref=e2804]:
+      - text: Vehicle Utilization Report
+      - generic [ref=e2805] [cursor=pointer]: 
+    - generic [ref=e2808]:
+      - generic [ref=e2810]:
+        - textbox [ref=e2811]
+        - textbox [ref=e2812]
+      - button "Submit" [ref=e2813] [cursor=pointer]
+    - generic [ref=e2814]:
+      - generic [ref=e2815]:
+        - heading "Summary" [level=4] [ref=e2816]
+        - generic [ref=e2817]:
+          - paragraph [ref=e2818]: Mar 1, 2025 12:00 AM - Mar 31, 2025 11:59 PM
+          - paragraph [ref=e2819]: 0%
+        - generic [ref=e2820]:
+          - paragraph [ref=e2821]: "Average Utilization:"
+          - paragraph [ref=e2822]: 0%
+        - generic [ref=e2823]:
+          - paragraph [ref=e2824]: "Average Hours Used (per day):"
+          - paragraph [ref=e2825]: 00:00
+        - generic [ref=e2826]:
+          - paragraph [ref=e2827]: "Trailers Used:"
+          - paragraph [ref=e2828]: 0 of 5
+      - generic [ref=e2829]:
+        - heading "Average Utilization" [level=4] [ref=e2830]
+        - heading "Feb 25, 2025 12:00 AM - Mar 3, 2025 11:59 PM" [level=5] [ref=e2832]
+    - generic [ref=e2835]:
+      - textbox "Search" [ref=e2838]
+      - button "Copy" [ref=e2839] [cursor=pointer]
+      - button "Save file as" [ref=e2841] [cursor=pointer]: Save file as
+    - table [ref=e2844]:
+      - rowgroup [ref=e2845]:
+        - row "No Data Available" [ref=e2846]:
+          - cell "No Data Available" [ref=e2847] [cursor=pointer]
+  - generic [ref=e2848]:
+    - heading "Exit Report " [level=2] [ref=e2850]:
+      - text: Exit Report
+      - generic [ref=e2851] [cursor=pointer]: 
+    - generic [ref=e2854]:
+      - heading "Get the Latest Report" [level=2] [ref=e2855]
+      - paragraph [ref=e2856]: Click the button below to fetch the most recent up-to-date report for your account.
+      - button "Get Latest Report" [ref=e2857] [cursor=pointer]
+    - heading "Requests Table" [level=4] [ref=e2858]
+    - table [ref=e2859]:
+      - rowgroup [ref=e2860]:
+        - row "No Reports Generated" [ref=e2861]:
+          - cell "No Reports Generated" [ref=e2862] [cursor=pointer]
+  - generic [ref=e2863]:
+    - heading "Utilization Report " [level=2] [ref=e2865]:
+      - text: Utilization Report
+      - generic [ref=e2866] [cursor=pointer]: 
+    - generic [ref=e2869]:
+      - generic [ref=e2870]:
+        - generic [ref=e2871]: "Account Name:"
+        - textbox "Account Name:" [disabled] [ref=e2872]
+      - generic [ref=e2873]:
+        - generic [ref=e2874]: "Select Date Range:"
+        - button "Choose Period" [ref=e2875] [cursor=pointer]:
+          - generic [ref=e2876] [cursor=pointer]: Choose Period
+        - textbox [ref=e2878] [cursor=pointer]
+      - button "Submit" [ref=e2879] [cursor=pointer]
+    - heading "Requests Table" [level=4] [ref=e2880]
+    - table [ref=e2881]:
+      - rowgroup [ref=e2882]:
+        - row "No Reports Generated" [ref=e2883]:
+          - cell "No Reports Generated" [ref=e2884] [cursor=pointer]
+  - generic [ref=e2885]:
+    - heading "Day of the Week Report " [level=2] [ref=e2887]:
+      - text: Day of the Week Report
+      - generic [ref=e2888] [cursor=pointer]: 
+    - generic [ref=e2891]:
+      - heading "Get the Latest Report" [level=2] [ref=e2892]
+      - paragraph [ref=e2893]: Click the button below to fetch the most recent up-to-date report for your account.
+      - button "Get Latest Report" [ref=e2894] [cursor=pointer]
+    - heading "Requests Table" [level=4] [ref=e2895]
+    - table [ref=e2896]:
+      - rowgroup [ref=e2897]:
+        - row "No Reports Generated" [ref=e2898]:
+          - cell "No Reports Generated" [ref=e2899] [cursor=pointer]
+  - generic [ref=e2900]:
+    - heading "Alert Report " [level=2] [ref=e2902]:
+      - text: Alert Report
+      - generic [ref=e2903] [cursor=pointer]: 
+    - generic [ref=e2906]:
+      - generic [ref=e2907]:
+        - button "Choose Period" [ref=e2908] [cursor=pointer]:
+          - generic [ref=e2909] [cursor=pointer]: Choose Period
+        - textbox [ref=e2911] [cursor=pointer]
+      - combobox [ref=e2913]
+      - button "Submit" [ref=e2914] [cursor=pointer]
+    - table [ref=e2915]:
+      - rowgroup [ref=e2916]:
+        - row "Report Not Generated" [ref=e2917]:
+          - cell "Report Not Generated" [ref=e2918] [cursor=pointer]
+    - button "Close" [ref=e2919] [cursor=pointer]
+  - generic [ref=e2920]:
+    - heading "Dashcam Refresh " [level=2] [ref=e2922]:
+      - text: Dashcam Refresh
+      - generic [ref=e2923] [cursor=pointer]: 
+    - combobox [ref=e2928]
+    - button "Refresh Dashcam" [ref=e2931] [cursor=pointer]
+  - generic [ref=e2932]:
+    - heading "Alert Settings " [level=2] [ref=e2934]:
+      - text: Alert Settings
+      - generic [ref=e2935] [cursor=pointer]: 
+    - generic [ref=e2938]:
+      - generic [ref=e2939]: "Select Dashcam:"
+      - 'combobox "Select Dashcam: Select Dashcam:" [ref=e2940]'
+  - generic [ref=e2942]:
+    - heading "Dashcam Device Settings" [level=2] [ref=e2944]
+    - generic [ref=e2947]:
+      - generic [ref=e2949]:
+        - generic [ref=e2950]:
+          - generic [ref=e2951]: "Configuration Mode:"
+          - combobox [ref=e2952] [cursor=pointer]:
+            - option "Single Device"
+            - option "Multiple Devices" [selected]
+        - generic [ref=e2954]:
+          - generic [ref=e2955]: "Select Devices:"
+          - generic [ref=e2957] [cursor=pointer]:
+            - generic [ref=e2958] [cursor=pointer]: No devices selected
+            - img [ref=e2959] [cursor=pointer]
+      - generic [ref=e2962]:
+        - button "Device Settings" [disabled] [ref=e2963]
+        - button "Event Settings" [disabled] [ref=e2964]
+      - generic [ref=e2965]:
+        - img [ref=e2966]
+        - heading "No Devices Selected" [level=2] [ref=e2968]
+        - paragraph [ref=e2969]: Please select one or more devices from the dropdown above to configure their settings. You can search for specific devices or use the quick selection buttons.
+        - button "Select Devices" [ref=e2970] [cursor=pointer]:
+          - img [ref=e2971] [cursor=pointer]
+          - text: Select Devices
+      - generic [ref=e2974]:
+        - generic [ref=e2975]:
+          - generic [ref=e2976]:
+            - img [ref=e2978]
+            - heading "General Settings" [level=3] [ref=e2981]
+          - generic [ref=e2983]:
+            - generic [ref=e2984]:
+              - generic [ref=e2985]:
+                - generic [ref=e2986]: Enable Live Video
+                - generic [ref=e2987]: Allow real-time video streaming
+              - button [ref=e2989] [cursor=pointer]
+            - generic [ref=e2990]:
+              - generic [ref=e2991]:
+                - generic [ref=e2992]: Virtual Ignition
+                - generic [ref=e2993]: Automatically detect vehicle ignition
+              - button [ref=e2995] [cursor=pointer]
+            - generic [ref=e2996]:
+              - generic [ref=e2997]:
+                - generic [ref=e2998]: Enable LED
+                - generic [ref=e2999]: Show LED status indicators
+              - button [ref=e3001] [cursor=pointer]
+            - generic [ref=e3002]:
+              - generic [ref=e3003]:
+                - generic [ref=e3004]: Passenger Limit
+                - generic [ref=e3005]: Maximum number of passengers allowed
+              - spinbutton [ref=e3008]: "4"
+            - generic [ref=e3009]:
+              - generic [ref=e3010]:
+                - generic [ref=e3011]: Idle Minutes to Standby
+                - generic [ref=e3012]: Time before device enters standby mode
+              - generic [ref=e3014]:
+                - spinbutton [ref=e3015]: "10"
+                - generic [ref=e3016]: min
+            - generic [ref=e3017]:
+              - generic [ref=e3018]:
+                - generic [ref=e3019]: Screen Timeout
+                - generic [ref=e3020]: Screen timeout duration
+              - generic [ref=e3022]:
+                - spinbutton [ref=e3023]: "120"
+                - generic [ref=e3024]: sec
+            - generic [ref=e3025]:
+              - generic [ref=e3026]:
+                - generic [ref=e3027]: Wake up Message
+                - generic [ref=e3028]: Show message when device wakes up
+              - button [ref=e3030] [cursor=pointer]
+            - generic [ref=e3031]:
+              - generic [ref=e3032]:
+                - generic [ref=e3033]: Wake up Message Timeout
+                - generic [ref=e3034]: Duration to show wakeup message
+              - generic [ref=e3036]:
+                - spinbutton [ref=e3037]: "10"
+                - generic [ref=e3038]: sec
+        - generic [ref=e3039]:
+          - generic [ref=e3040]:
+            - img [ref=e3042]
+            - heading "Video Settings" [level=3] [ref=e3044]
+          - generic [ref=e3046]:
+            - generic [ref=e3047]:
+              - generic [ref=e3048]:
+                - generic [ref=e3049]: Enable Driver Camera
+                - generic [ref=e3050]: Record driver-facing camera
+              - button [ref=e3052] [cursor=pointer]
+            - generic [ref=e3053]:
+              - generic [ref=e3054]:
+                - generic [ref=e3055]: In-Cabin Camera Recording
+                - generic [ref=e3056]: Record interior cabin activity
+              - button [ref=e3058] [cursor=pointer]
+            - generic [ref=e3059]:
+              - generic [ref=e3060]:
+                - generic [ref=e3061]: Video Text Overlay
+                - generic [ref=e3062]: Display information overlay on video
+              - button [ref=e3064] [cursor=pointer]
+            - generic [ref=e3065]:
+              - generic [ref=e3066]:
+                - generic [ref=e3067]: Recording Encryption
+                - generic [ref=e3068]: Encrypt recorded video files
+              - button [ref=e3070] [cursor=pointer]
+        - generic [ref=e3071]:
+          - generic [ref=e3072]:
+            - img [ref=e3074]
+            - heading "Audio Settings" [level=3] [ref=e3076]
+          - generic [ref=e3078]:
+            - generic [ref=e3079]:
+              - generic [ref=e3080]:
+                - generic [ref=e3081]: Audio Recording
+                - generic [ref=e3082]: Record audio with video
+              - button [ref=e3084] [cursor=pointer]
+            - generic [ref=e3085]:
+              - generic [ref=e3086]:
+                - generic [ref=e3087]: Voice Recording
+                - generic [ref=e3088]: Enable voice command recording
+              - button [ref=e3090] [cursor=pointer]
+            - generic [ref=e3091]:
+              - generic [ref=e3092]:
+                - generic [ref=e3093]: Enable Audio Alerts
+                - generic [ref=e3094]: Play audio notifications and alerts
+              - button [ref=e3096] [cursor=pointer]
+        - generic [ref=e3097]:
+          - generic [ref=e3098]:
+            - img [ref=e3100]
+            - heading "Safety Settings" [level=3] [ref=e3102]
+          - generic [ref=e3104]:
+            - generic [ref=e3105]:
+              - generic [ref=e3106]:
+                - generic [ref=e3107]: Enable Distracted Driver Detection
+                - generic [ref=e3108]: Monitor driver attention and alertness
+              - button [ref=e3110] [cursor=pointer]
+            - generic [ref=e3111]:
+              - generic [ref=e3112]:
+                - generic [ref=e3113]: Driver Position
+                - generic [ref=e3114]: Vehicle driver seat position
+              - combobox [ref=e3117] [cursor=pointer]:
+                - option "Left" [selected]
+                - option "Right"
+            - generic [ref=e3118]:
+              - generic [ref=e3119]:
+                - generic [ref=e3120]: Driver Identification
+                - generic [ref=e3121]: Method for driver identification
+              - combobox [ref=e3124] [cursor=pointer]:
+                - option "Off" [selected]
+                - option "PIN Code"
+                - option "QR Code"
+            - generic [ref=e3125]:
+              - generic [ref=e3126]:
+                - generic [ref=e3127]: Driver Prompt
+                - generic [ref=e3128]: Prompt driver to check in
+              - button [ref=e3130] [cursor=pointer]
+            - generic [ref=e3131]:
+              - generic [ref=e3132]:
+                - generic [ref=e3133]: Driver Prompt Audio Alert
+                - generic [ref=e3134]: Enable audio beeps for driver prompt
+              - button [ref=e3136] [cursor=pointer]
+        - generic [ref=e3137]:
+          - generic [ref=e3138]:
+            - img [ref=e3140]
+            - heading "Display Settings" [level=3] [ref=e3142]
+          - generic [ref=e3144]:
+            - generic [ref=e3145]:
+              - generic [ref=e3146]:
+                - generic [ref=e3147]: Speed Units
+                - generic [ref=e3148]: Speed measurement units
+              - combobox [ref=e3151] [cursor=pointer]:
+                - option "MPH" [selected]
+                - option "KMPH"
+            - generic [ref=e3152]:
+              - generic [ref=e3153]:
+                - generic [ref=e3154]: Time Format
+                - generic [ref=e3155]: Time display format
+              - generic [ref=e3158]:
+                - generic [ref=e3159] [cursor=pointer]:
+                  - radio [checked] [ref=e3160]
+                  - generic [ref=e3161] [cursor=pointer]: 12 Hour
+                - generic [ref=e3162] [cursor=pointer]:
+                  - radio [ref=e3163]
+                  - generic [ref=e3164] [cursor=pointer]: 24 Hour
+  - generic [ref=e3165]:
+    - heading "Alert Settings " [level=2] [ref=e3167]:
+      - text: Alert Settings
+      - generic [ref=e3168] [cursor=pointer]: 
+    - generic [ref=e3171]:
+      - generic [ref=e3172]: "Select Dashcam:"
+      - combobox [ref=e3173]
+    - generic [ref=e3175]:
+      - checkbox [ref=e3176]
+      - generic [ref=e3177]: Select/Unselect All Alerts
+    - generic [ref=e3178]:
+      - button "Volume On" [ref=e3179] [cursor=pointer]
+      - button "Submit" [ref=e3180] [cursor=pointer]
+      - button "Alerts Contacts" [ref=e3181] [cursor=pointer]
+  - generic [ref=e3182]:
+    - heading "Video On Demand " [level=2] [ref=e3184]:
+      - text: Video On Demand
+      - generic [ref=e3185] [cursor=pointer]: 
+    - generic [ref=e3188]:
+      - heading "Select Dashcam" [level=3] [ref=e3190]
+      - generic [ref=e3191]:
+        - generic [ref=e3192]: Dashcam Device
+        - combobox "Dashcam Device" [ref=e3193] [cursor=pointer]:
+          - option "-- Select a Dashcam --" [selected]
+      - button "Refresh Status" [ref=e3195] [cursor=pointer]
+      - generic [ref=e3196]:
+        - generic [ref=e3197]: 
+        - text: Choose the vehicle dashcam you want to retrieve video from
+      - text: 
+    - generic [ref=e3198]:
+      - heading "Request New Video" [level=3] [ref=e3200]
+      - generic [ref=e3201]:
+        - generic [ref=e3202]:
+          - generic [ref=e3203]: "Start Date:"
+          - textbox "Start Date:" [ref=e3204] [cursor=pointer]: 2025-12-24
+        - generic [ref=e3205]:
+          - generic [ref=e3206]: "Start Time:"
+          - textbox "Start Time:" [ref=e3207]: 00:00
+          - button "×" [ref=e3208] [cursor=pointer]
+        - generic [ref=e3209]:
+          - generic [ref=e3210]: "End Date:"
+          - textbox "End Date:" [ref=e3211] [cursor=pointer]: 2025-12-24
+        - generic [ref=e3212]:
+          - generic [ref=e3213]: "End Time:"
+          - textbox "End Time:" [ref=e3214]: 23:59
+          - button "×" [ref=e3215] [cursor=pointer]
+    - generic [ref=e3216]:
+      - generic [ref=e3218]:
+        - generic [ref=e3219]:
+          - checkbox "Cabin View" [checked] [ref=e3220]
+          - text: Cabin View
+        - generic [ref=e3221]:
+          - checkbox "Dash View" [checked] [ref=e3222]
+          - text: Dash View
+      - button "Refresh" [ref=e3224] [cursor=pointer]
+    - table [ref=e3225]:
+      - rowgroup [ref=e3226]:
+        - row "Report Not Generated" [ref=e3227]:
+          - cell "Report Not Generated" [ref=e3228] [cursor=pointer]
+    - button "Close" [ref=e3230] [cursor=pointer]
+  - generic [ref=e3231]:
+    - heading "Live Video Stream " [level=2] [ref=e3233]:
+      - text: Live Video Stream
+      - generic [ref=e3234] [cursor=pointer]: 
+    - generic [ref=e3237]:
+      - generic [ref=e3238]: "Select Dashcam:"
+      - combobox "Select Dashcam:" [ref=e3239]:
+        - option "Vehicle 1" [selected]
+        - option "Vehicle 2"
+        - option "Vehicle 3"
+    - button "Refresh Status" [ref=e3241] [cursor=pointer]
+    - button "Submit" [ref=e3243] [cursor=pointer]
+    - heading "Live Video Stream" [level=2] [ref=e3246]
+  - generic [ref=e3250]:
+    - heading "Snapshots Of Camera Images" [level=2] [ref=e3252]
+    - generic [ref=e3255]:
+      - generic [ref=e3256]: "Select Dashcam:"
+      - combobox "Select Dashcam:" [ref=e3257]
+    - generic [ref=e3258]:
+      - generic [ref=e3259]:
+        - checkbox "Cabin View" [checked] [ref=e3260]
+        - text: Cabin View
+      - generic [ref=e3261]:
+        - checkbox "Dashcam View" [checked] [ref=e3262]
+        - text: Dashcam View
+    - button "Submit" [ref=e3264] [cursor=pointer]
+    - generic [ref=e3265]:
+      - heading "Snapshots Of Camera Images " [level=2] [ref=e3267]:
+        - text: Snapshots Of Camera Images
+        - generic [ref=e3268] [cursor=pointer]: 
+      - paragraph [ref=e3271]:
+        - strong [ref=e3272]: "Status:"
+        - text: Dashcam images will refresh every 60 seconds
+      - generic [ref=e3274] [cursor=pointer]:
+        - checkbox "Show Images In Color" [ref=e3275]
+        - text: Show Images In Color
+  - generic [ref=e3277]:
+    - heading "Get Support" [level=2] [ref=e3279]
+    - generic [ref=e3282]:
+      - generic [ref=e3283] [cursor=pointer]: Get Support
+      - generic [ref=e3284] [cursor=pointer]: 💰Save up to 20% on fleet insurance from our partners
+    - generic [ref=e3286]:
+      - paragraph [ref=e3287]:
+        - text: You can call us at
+        - strong [ref=e3288]: 800-578-1809
+        - text: during business hours
+        - strong [ref=e3289]: Monday-Friday 8AM-5PM (MST)
+        - text: . Email support is available 24/7. You can email
+        - strong [ref=e3290]: support@gpsandfleet.com
+        - text: "or fill out this form below:"
+      - generic [ref=e3291]:
+        - generic [ref=e3293]:
+          - generic [ref=e3294]: "First Name:"
+          - textbox "First Name:" [ref=e3295]
+        - generic [ref=e3297]:
+          - generic [ref=e3298]: "Last Name:"
+          - textbox "Last Name:" [ref=e3299]
+        - generic [ref=e3301]:
+          - generic [ref=e3302]: "Email:"
+          - textbox [ref=e3303]
+        - generic [ref=e3305]:
+          - generic [ref=e3306]: "Phone:"
+          - textbox "Phone:" [ref=e3307]
+        - generic [ref=e3309]:
+          - generic [ref=e3310]: "Comments:"
+          - textbox "Comments:" [ref=e3311]
+      - button "Submit" [ref=e3313] [cursor=pointer]
+  - generic [ref=e3314]:
+    - heading "Get Support" [level=2] [ref=e3316]
+    - generic [ref=e3319]:
+      - paragraph [ref=e3320]: Kindly enter your information and query below and an agent will email you back soon. Our normal response time is within 15 minutes.
+      - generic [ref=e3321]:
+        - generic [ref=e3323]:
+          - generic [ref=e3324]: "First Name:"
+          - textbox "First Name:" [ref=e3325]
+        - generic [ref=e3327]:
+          - generic [ref=e3328]: "Last Name:"
+          - textbox "Last Name:" [ref=e3329]
+        - generic [ref=e3331]:
+          - generic [ref=e3332]: "Email:"
+          - textbox "Email:" [ref=e3333]
+        - generic [ref=e3335]:
+          - generic [ref=e3336]: "Phone:"
+          - textbox "Phone:" [ref=e3337]
+        - generic [ref=e3339]:
+          - generic [ref=e3340]: "Comments:"
+          - textbox "Comments:" [ref=e3341]
+      - button "Submit" [ref=e3343] [cursor=pointer]
+  - generic [ref=e3344]:
+    - heading "Posted Speed Map Report" [level=2] [ref=e3346]
+    - generic [ref=e3350]:
+      - textbox "Search" [ref=e3353]
+      - button "Copy" [ref=e3354] [cursor=pointer]
+      - button "Save file as" [ref=e3356] [cursor=pointer]: Save file as
+    - table [ref=e3359]:
+      - rowgroup [ref=e3360]:
+        - row "Date Location Posted Speed (mph) Speed (mph) Over The Speed Limit (mph)" [ref=e3361]:
+          - cell "Date" [ref=e3362] [cursor=pointer]
+          - cell "Location" [ref=e3363] [cursor=pointer]
+          - cell "Posted Speed (mph)" [ref=e3364] [cursor=pointer]
+          - cell "Speed (mph)" [ref=e3365] [cursor=pointer]
+          - cell "Over The Speed Limit (mph)" [ref=e3366] [cursor=pointer]
+      - rowgroup [ref=e3367]:
+        - row "No Data to Display" [ref=e3368] [cursor=pointer]:
+          - cell "No Data to Display" [ref=e3369] [cursor=pointer]
+  - generic [ref=e3370]:
+    - heading "Test Alerts" [level=2] [ref=e3372]
+    - generic [ref=e3375]:
+      - heading "Alert Types" [level=3] [ref=e3376]
+      - generic [ref=e3377]:
+        - button "Success Alert" [ref=e3378] [cursor=pointer]: Success Alert
+        - button "Error Alert" [ref=e3380] [cursor=pointer]: Error Alert
+        - button "Warning Alert" [ref=e3382] [cursor=pointer]: Warning Alert
+        - button "Info Alert" [ref=e3384] [cursor=pointer]: Info Alert
+    - generic [ref=e3386]:
+      - heading "Duration Options" [level=3] [ref=e3387]
+      - generic [ref=e3388]:
+        - button "2s Duration" [ref=e3389] [cursor=pointer]: 2s Duration
+        - button "5s Duration" [ref=e3391] [cursor=pointer]: 5s Duration
+        - button "No Auto-close" [ref=e3393] [cursor=pointer]: No Auto-close
+    - generic [ref=e3395]:
+      - heading "Mobile Info Box" [level=3] [ref=e3396]
+      - generic [ref=e3397]:
+        - button "Location Info" [ref=e3398] [cursor=pointer]: Location Info
+        - button "Speed Info" [ref=e3400] [cursor=pointer]: Speed Info
+        - button "Status Info" [ref=e3402] [cursor=pointer]: Status Info
+  - text:  
+```

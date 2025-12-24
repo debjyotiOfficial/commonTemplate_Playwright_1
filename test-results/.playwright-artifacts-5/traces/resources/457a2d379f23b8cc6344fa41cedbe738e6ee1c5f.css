@@ -1,0 +1,239 @@
+.driver-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.driver-card__container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    /* margin-bottom: 12px; */
+}
+
+.driver-card__divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e5e7eb;
+    /* margin-bottom: 12px; */
+}
+
+.driver-card--highlighted .driver-card__divider {
+    background-color: #d1d5db;
+}
+
+.driver-card__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.driver-card__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.driver-card__name-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.driver-card__name {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+
+.driver-card__status {
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    width: 120px !important; /* Fixed width for alignment */
+    text-align: center !important;
+}
+
+.driver-card__info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.driver-card__address {
+    margin: 0;
+    /* flex: 1; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.driver-card__activity {
+    /* margin: 0 8px; */
+    white-space: nowrap;
+    flex: 1; /* Take available space instead of using spacer */
+}
+
+.driver-card__speed {
+    margin: 0 !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    width: 110px !important; /* SAME FIXED WIDTH - ensures speed aligns with status */
+    text-align: center !important; /* LEFT ALIGN - so speed text starts at same position as status */
+    margin-right: 8px !important; /* Consistent spacing before zoom button */
+}
+
+/* Stats Grid Layout */
+.driver-card__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.driver-card__stat-item {
+    text-align: center;
+}
+
+.driver-card__stat-label {
+    font-size: 13px;
+    color: black;
+    margin: 0 0 4px 0;
+    font-weight: normal;
+}
+
+.driver-card__stat-value {
+    font-size: 12px;
+    font-weight: 400;
+    color: #111827;
+    margin: 0;
+}
+
+/* Actions Grid Layout */
+.driver-card__actions {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+.driver-card__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.driver-card__action img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+
+.driver-card__action p {
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+.driver-card__action:hover img {
+    opacity: 1;
+}
+
+/* Expanded Content */
+.driver-card__expanded {
+    display: none;
+    width: 100%;
+}
+
+.driver-card--highlighted .driver-card__expanded {
+    display: block;
+}
+
+.spacer {
+    flex: 1;
+} 
+
+.popup-container .popup-header__location {
+    display: flex;
+}
+
+.driver-card__zoom-controls {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    margin-right: 8px;
+}
+
+/* .zoom-btn {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #4b5563;
+    line-height: 1;
+}
+
+.zoom-btn:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    color: #1f2937;
+}
+
+.zoom-btn:active {
+    background: #e5e7eb;
+    transform: scale(0.95);
+} */
+
+/* .zoom-btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.zoom-btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+} */
+
+/* Prevent driver card expansion when clicking zoom controls */
+.driver-card__zoom-controls {
+    pointer-events: auto;
+}
+
+.driver-card-clickable {
+    cursor: pointer;
+}
+
+.driver-card-clickable .driver-card__zoom-controls {
+    cursor: default;
+}

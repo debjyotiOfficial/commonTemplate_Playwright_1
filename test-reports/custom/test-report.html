@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Test Report - All Modules - 20/12/2025</title>
+    <title>Master Test Report - All Modules - 24/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Master Test Execution Report</h1>
             <div class="module-name">All Modules (23 modules, 29 tests)</div>
             <div class="subtitle">
-                Generated: 20/12/2025, 3:17:19 am |
-                Duration: 98.13s |
+                Generated: 24/12/2025, 1:15:22 am |
+                Duration: 118.75s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -229,7 +229,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 22 minutes). Skipping login.</span>
+                                                <span class="step-text">Valid authentication session found (age: 15 minutes). Skipping login.</span>
                                             </div>
                                         
                                     </div>
@@ -237,7 +237,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>0.33s</strong></td>
+                        <td><strong>1.17s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -692,7 +692,7 @@ Call log:
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(4)">
-                                    <span>View Test Steps (32)</span>
+                                    <span>View Test Steps (36)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-4" class="steps-panel">
@@ -736,6 +736,11 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
@@ -756,12 +761,12 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Subgroups API Response: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;testDEL&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
+                                                <span class="step-text">Get Subgroups API Response: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;DeleteMe_1766420317776&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSG_1766515207453&quot;},{&quot;name&quot;:&quot;TestSG_1766519008974&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;TestSubgroup_1766420134391&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Subgroup &quot;testDp&quot; exists in API response: true</span>
+                                                <span class="step-text">Subgroup &quot;TestSG_1766519008974&quot; exists in API response: true</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -771,7 +776,7 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">UI ASSERTION: Subgroup &quot;testDp&quot; is visible in the subgroups list</span>
+                                                <span class="step-text">UI ASSERTION: Subgroup &quot;TestSG_1766519008974&quot; is visible in the subgroups list</span>
                                             </div>
                                         
                                             <div class="step-item section section">
@@ -781,22 +786,22 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Drivers to Subgroup API Response: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
+                                                <span class="step-text">Get Drivers to Subgroup API Response: {&quot;assigned&quot;:[],&quot;unassigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">API shows 5 unassigned drivers</span>
+                                                <span class="step-text">API shows 8 unassigned drivers</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">UI shows 5 unassigned driver cards with Add button</span>
+                                                <span class="step-text">UI shows 8 unassigned driver cards with Add button</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">API shows 3 assigned drivers</span>
+                                                <span class="step-text">API shows 0 assigned drivers</span>
                                             </div>
                                         
                                             <div class="step-item section section">
@@ -806,7 +811,7 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Drivers API Response after adding: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
+                                                <span class="step-text">Get Drivers API Response after adding: {&quot;assigned&quot;:[{&quot;id&quot;:14,&quot;imei&quot;:&quot;860111051554966&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;Demo 1&quot;,&quot;color&quot;:&quot;black&quot;}],&quot;unassigned&quot;:[{&quot;id&quot;:15,&quot;imei&quot;:&quot;220902734&quot;,&quot;deviceType&quot;:&quot;XT2469&quot;,&quot;name&quot;:&quot;Sales Car1&quot;,&quot;color&quot;:&quot;black&quot;},{&quot;id&quot;:16,&quot;imei&quot;:&quot;861492065082189&quot;,&quot;deviceType&quot;:&quot;MA9276-Portable&quot;,&quot;name&quot;:&quot;861492065082189&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:20,&quot;imei&quot;:&quot;866787675654345&quot;,&quot;deviceType&quot;:&quot;MA3000&quot;,&quot;name&quot;:&quot;866787675654345&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:18,&quot;imei&quot;:&quot;878787412547895&quot;,&quot;deviceType&quot;:&quot;MA1285WT&quot;,&quot;name&quot;:&quot;878787412547895&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:17,&quot;imei&quot;:&quot;895745123645789&quot;,&quot;deviceType&quot;:&quot;MA1086&quot;,&quot;name&quot;:&quot;895745123645789&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:21,&quot;imei&quot;:&quot;898956341243564&quot;,&quot;deviceType&quot;:&quot;MA1085W&quot;,&quot;name&quot;:&quot;898956341243564&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;id&quot;:19,&quot;imei&quot;:&quot;987452321457854&quot;,&quot;deviceType&quot;:&quot;ST4345-REAL&quot;,&quot;name&quot;:&quot;987452321457854&quot;,&quot;color&quot;:&quot;red&quot;}]}</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -826,7 +831,22 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Clicked exit subgroup button via JavaScript</span>
+                                                <span class="step-text">Exit subgroup button visible: false</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Exit button not visible (desktop view), using alternative method...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Driver card header text: Driver Card</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Successfully exited subgroup view</span>
                                             </div>
                                         
                                             <div class="step-item section section">
@@ -846,17 +866,17 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Get Subgroups API Response after delete: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;testDEL&quot;}]</span>
+                                                <span class="step-text">Get Subgroups API Response after delete: [{&quot;name&quot;:&quot;DeleteMe_1765969728183&quot;},{&quot;name&quot;:&quot;DeleteMe_1766086431927&quot;},{&quot;name&quot;:&quot;DeleteMe_1766420317776&quot;},{&quot;name&quot;:&quot;Subhash&quot;},{&quot;name&quot;:&quot;TestSG_1766515207453&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764703653790&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764773025336&quot;},{&quot;name&quot;:&quot;TestSubgroup_1764799516204&quot;},{&quot;name&quot;:&quot;TestSubgroup_1765957219213&quot;},{&quot;name&quot;:&quot;TestSubgroup_1766420134391&quot;},{&quot;name&quot;:&quot;testDp&quot;}]</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Subgroup &quot;testDp&quot; still exists after delete: false</span>
+                                                <span class="step-text">Subgroup &quot;TestSG_1766519008974&quot; still exists after delete: false</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">UI ASSERTION: Subgroup &quot;testDp&quot; is no longer visible in the subgroups list</span>
+                                                <span class="step-text">UI ASSERTION: Subgroup &quot;TestSG_1766519008974&quot; is no longer visible in the subgroups list</span>
                                             </div>
                                         
                                     </div>
@@ -864,7 +884,7 @@ Call log:
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>94.93s</strong></td>
+                        <td><strong>112.70s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -6963,7 +6983,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.33s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add/edit a device","status":"FAILED","duration":"94.36s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-edit-a-device.webm"},{"testCaseNo":"TS002-B","module":"Add edit Device","description":"should add device with custom icon","status":"FAILED","duration":"84.34s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-device-with-custom-icon.webm"},{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"94.93s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS011-A","module":"Add Edit Maintenance Contact","description":"should add the contact details","status":"PASSED","duration":"135.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS015-A","module":"After Hour Summary","description":"should redirect to fleet demo page with demo credentials","status":"FAILED","duration":"123.89s","failureReason":"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:","videoIdentifier":"TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm"},{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"},{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS024-A","module":"Create Landmark","description":"should be able to create new Landmark","status":"PASSED","duration":"89.28s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"1.17s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add/edit a device","status":"FAILED","duration":"94.36s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-edit-a-device.webm"},{"testCaseNo":"TS002-B","module":"Add edit Device","description":"should add device with custom icon","status":"FAILED","duration":"84.34s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS002_addEditDevices-should-add-device-with-custom-icon.webm"},{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"112.70s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS011-A","module":"Add Edit Maintenance Contact","description":"should add the contact details","status":"PASSED","duration":"135.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS015-A","module":"After Hour Summary","description":"should redirect to fleet demo page with demo credentials","status":"FAILED","duration":"123.89s","failureReason":"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:","videoIdentifier":"TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm"},{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"},{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS024-A","module":"Create Landmark","description":"should be able to create new Landmark","status":"PASSED","duration":"89.28s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"FAILED","duration":"131.14s","failureReason":"Error: expect(received).toBeLessThan(expected)","videoIdentifier":"TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -6980,7 +7000,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'master-test-report-2025-12-19.csv';
+            link.download = 'master-test-report-2025-12-23.csv';
             link.click();
         }
     </script>
