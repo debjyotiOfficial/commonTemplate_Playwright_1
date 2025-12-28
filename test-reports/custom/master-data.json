@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-23T19:45:22.252Z",
+  "lastUpdated": "2025-12-28T09:23:17.104Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 1173,
+      "duration": 786,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,13 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 15 minutes). Skipping login.",
+          "text": "Valid authentication session found (age: 9 minutes). Skipping login.",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-23T19:43:25.267Z",
-      "endTime": "2025-12-23T19:43:26.440Z",
+      "startTime": "2025-12-28T09:06:37.532Z",
+      "endTime": "2025-12-28T09:06:38.318Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -672,6 +672,801 @@
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS008_alertsContact.spec.js",
       "fileName": "TS008_alertsContact",
       "line": 23
+    },
+    {
+      "testCaseNo": "TS009-A",
+      "module": "Change Alert Settings",
+      "title": "should configure after hours settings",
+      "description": "should configure after hours settings",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 132690,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Starting After Hours Settings configuration test...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Change Alert Settings modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected device: Sales car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Custom Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Toggled W, TH, F checkboxes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying custom days are visually selected",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Wednesday (W) checkbox state: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Thursday (TH) checkbox state: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Friday (F) checkbox state: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom days checkboxes verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced Settings expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced settings values entered (Unlimited checkboxes unchecked)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying advanced settings values are set correctly",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00 (expected: 02:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Hours: 03:00 (expected: 03:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Count: 5 (expected: 5)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Post Speed Limit: 40 (expected: 40)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced settings values verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying success message after submit",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Success message displayed:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying settings persist after reopening modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal reopened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Idling Hours: 02:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Stop Hours: 03:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Stop Count: 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Post Speed Limit: 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Settings persistence check completed for Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Configuring Demo 1 with Weekdays option",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected device: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Weekdays option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered From time: 08:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered To time: 18:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced Settings expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 Advanced settings values entered:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Working Hours Limit: 23:59",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unauthorized Hours Grace Period: 23:58",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 02:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 03:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked for Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API call to setDeviceSettings_here_prop.php",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API call successful: https://www.gpsandfleet3.net/gpsandfleet/insights/SaveData_RDS/setDeviceSettings_here_prop.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying success message for Demo 1",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Success message displayed for Demo 1:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Verifying settings for both devices",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal reopened for final verification",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Sales Car1 settings",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 persisted values:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00 (expected: 02:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Hours: 03:00 (expected: 03:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Count: 5 (expected: 5)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Post Speed Limit: 40 (expected: 40)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 settings verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Demo 1 settings",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 persisted values:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 02:00 (expected: 02:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 03:00 (expected: 03:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 5 (expected: 5)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 8 (expected: 8)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 settings verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Configuring All Days Working Hours",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected Sales Car1 to verify previous settings",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying previously set values are automatically loaded",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Custom Days radio selected: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Previously set values loaded:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Hours: 03:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Count: 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Post Speed Limit: 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Previous values verified successfully - device retained its settings",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Changing to All Days option",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected All Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days radio selected: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered From time: 07:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered To time: 20:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days Advanced settings values entered (Unlimited checkboxes unchecked):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 01:30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 02:30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked for All Days configuration",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API call for All Days configuration",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API call successful: https://www.gpsandfleet3.net/gpsandfleet/insights/SaveData_RDS/setDeviceSettings_here_prop.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying success message for All Days",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Success message displayed for All Days:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Reopening modal to verify All Days changes",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal reopened for All Days verification",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Sales Car1 to verify All Days changes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days radio is selected after reopen: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days persisted values:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 01:30 (expected: 01:30)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 02:30 (expected: 02:30)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 10 (expected: 10)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 50 (expected: 50)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days settings verified successfully - changes have been applied",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== AFTER HOURS SETTINGS TEST SUMMARY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "Sales Car1 Configuration (Custom Days):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Custom Days selected (W, TH, F)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings configured and verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 2,
+          "text": "Demo 1 Configuration (Weekdays):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Weekdays selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- From/To time configured",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings configured and verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 3,
+          "text": "Sales Car1 Configuration (All Days):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Previously set values verified on load",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Changed to All Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- New From/To time configured (07:00 - 20:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- New Advanced settings configured and verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Call Verification: VERIFIED for all configurations",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Settings Persistence: VERIFIED for all devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "After Hours Settings configuration test completed successfully!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-24T23:17:42.426Z",
+      "endTime": "2025-12-24T23:19:55.116Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS009_changeAlertSettings.spec.js",
+      "fileName": "TS009_changeAlertSettings",
+      "line": 306
     },
     {
       "testCaseNo": "TS011-A",
@@ -2836,31 +3631,115 @@
     {
       "testCaseNo": "TS028-A",
       "module": "Travel Log Report",
+      "title": "should display TLR",
+      "description": "should display TLR",
+      "status": "skipped",
+      "statusDisplay": "SKIPPED",
+      "duration": 0,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [],
+      "startTime": "2025-12-26T22:34:54.035Z",
+      "endTime": "2025-12-26T22:34:54.035Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 80
+    },
+    {
+      "testCaseNo": "TS028-B",
+      "module": "Travel Log Report",
+      "title": "should verify Engine Idling checkbox functionality",
+      "description": "should verify Engine Idling checkbox functionality",
+      "status": "skipped",
+      "statusDisplay": "SKIPPED",
+      "duration": 0,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [],
+      "startTime": "2025-12-26T22:34:54.036Z",
+      "endTime": "2025-12-26T22:34:54.036Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 553
+    },
+    {
+      "testCaseNo": "TS028-C",
+      "module": "Travel Log Report",
+      "title": "should verify search functionality in TLR",
+      "description": "should verify search functionality in TLR",
+      "status": "skipped",
+      "statusDisplay": "SKIPPED",
+      "duration": 0,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [],
+      "startTime": "2025-12-26T22:34:54.036Z",
+      "endTime": "2025-12-26T22:34:54.036Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 678
+    },
+    {
+      "testCaseNo": "TS028-D",
+      "module": "Travel Log Report",
       "title": "should verify Frequent Stops functionality with API validation",
       "description": "should verify Frequent Stops functionality with API validation",
       "status": "failed",
       "statusDisplay": "FAILED",
-      "duration": 131142,
-      "failureReason": "Error: expect(received).toBeLessThan(expected)",
+      "duration": 0,
+      "failureReason": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
       "parsedError": {
-        "type": "Assertion Failed",
+        "type": "Unknown Error",
         "element": null,
-        "expected": "Values should be equal",
-        "actual": "76",
+        "expected": null,
+        "actual": null,
         "timeout": null,
         "file": "TS028_travelLogReport.spec.js",
         "line": 815,
-        "suggestion": "Check the expected vs actual values in the assertion",
-        "cleanMessage": "Error: expect(received).toBeLessThan(expected)",
-        "fullMessage": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 76\nReceived:   76",
-        "stackTrace": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 76\nReceived:   76\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js:1041:35"
+        "suggestion": null,
+        "cleanMessage": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
+        "fullMessage": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
+        "stackTrace": ""
       },
-      "videoPath": "videos/TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm",
-      "videoIdentifier": "TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm",
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -2878,145 +3757,19 @@
         },
         {
           "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Frequent Stops functionality with API validation...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying Loading Modal",
-          "status": "info",
-          "type": "subsection"
-        },
-        {
-          "number": "",
-          "text": "✓ Loading modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Loading modal title shows \"Loading Travel Report...\"",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading time estimate: ⏱️ Loading 3 days of data...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Loading modal shows correct \"3 days\" estimate",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "API Response captured: [{\"id\":160833,\"idIndex\":0,\"date\":\"12/01/2025\",\"duration\":355,\"time\":\"02:08 AM\",\"lat\":\"33.624222\",\"lng\":\"-111.840185\",\"location\":\"\",\"tripType\":\"\",\"battery\":\"12\",\"speed\":\"0.0\",\"mileage\":\"1166.238\",\"dire...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Loading modal disappeared after data loaded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying API response matches table data...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 76 rows in Frequent Stops table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "API returned 76 records",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Row 1: First cell = 12/01/2025",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Row 2: First cell = 12/01/2025",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Row 3: First cell = 12/01/2025",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verified: Frequent Stops table data matches API response",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Sort functionality in Frequent Stops",
-          "status": "info",
-          "type": "subsection"
-        },
-        {
-          "number": "",
-          "text": "Testing Date column sort...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Time column sort...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Search functionality in Frequent Stops",
-          "status": "info",
-          "type": "subsection"
-        },
-        {
-          "number": "",
-          "text": "Total visible rows before search: 76",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Searching for \"02:08 AM\"...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 76 visible rows after searching \"02:08 AM\"",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-09T21:32:20.346Z",
-      "endTime": "2025-12-09T21:34:31.488Z",
+      "startTime": "2025-12-26T22:36:43.816Z",
+      "endTime": "2025-12-26T22:36:43.816Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
@@ -3662,6 +4415,333 @@
       "line": 23
     },
     {
+      "testCaseNo": "TS039-A",
+      "module": "Weekly Utilization Report",
+      "title": "should generate and validate weekly utilization report",
+      "description": "should generate and validate weekly utilization report",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 253090,
+      "failureReason": "TimeoutError: locator.hover: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": ".fa-question-circle",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS039_weeklyUtilizationReport.spec.js",
+        "line": 23,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.hover: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.fa-question-circle').first()\n    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\n  - attempting hover action\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n    - waiting 20ms\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 100ms\n    8 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n    - waiting for element to be visible and stable\n    - element is visible and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n  - retrying hover action\n    - waiting 500ms\n",
+        "stackTrace": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.fa-question-circle').first()\n    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\n  - attempting hover action\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n    - waiting 20ms\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 100ms\n    8 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n    - waiting for element to be visible and stable\n    - element is visible and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n  - retrying hover action\n    - waiting 500ms\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js:306:41"
+      },
+      "videoPath": "videos/TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm",
+      "videoIdentifier": "TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Opening menu and navigating to Weekly Utilization Report",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weekly Utilization Report menu item is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Menu item href: \u001b[1mnull\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Click did not open new tab, trying middle click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weekly Utilization Report middle-clicked - new tab opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New page loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Selecting Report Duration (Last 7 Days) and Capturing API Response",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Report Duration set to \"Last 7 Days\" - report auto-generating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured from getTrackReportGeo_Next_uti.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Report Generated",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Verifying Summary Section",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Total Utilization section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Trackers: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Vehicle Analytics Table",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Vehicle Analytics Table is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table has 2 row(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First row - Driver: Sales Car1, Efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on first row in Vehicle Analytics table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 stored efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked row efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Efficiencies match (within 0.1% tolerance)!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Validating API Response Data Against UI",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API Total Utilization: 100%, UI: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Inside Landmarks: 0%, UI: 0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Total Trackers: 2, UI: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Devices Count: 2, UI Table Rows: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying Inside Landmarks Section",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Inside Landmarks: 0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying Charts Visibility",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Location Distribution chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location Distribution heading is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Efficiency Trend chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Efficiency Trend heading is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Activity Timeline chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Activity Timeline heading is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying Legend Containers",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Location Distribution legend container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying Tooltips",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Efficiency tooltip icon is visible",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-28T09:06:41.348Z",
+      "endTime": "2025-12-28T09:10:54.440Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
+      "fileName": "TS039_weeklyUtilizationReport",
+      "line": 23
+    },
+    {
       "testCaseNo": "TS043-A",
       "module": "Dashcam Refresh",
       "title": "should refresh dashcam functionality",
@@ -3704,6 +4784,105 @@
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS043_dashcamRefresh.spec.js",
       "fileName": "TS043_dashcamRefresh",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS046-A",
+      "module": "Dashcam Track History",
+      "title": "displays dashcam track history with different tracking options",
+      "description": "displays dashcam track history with different tracking options",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 54514,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing with \"Show Tracking With Alerts\" option...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Info box opened for original marker with alerts",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing with \"Show Tracking Only\" option...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ All tracking history tests completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-26T20:49:44.874Z",
+      "endTime": "2025-12-26T20:50:39.388Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS046_dashcamTrackHistory.spec.js",
+      "fileName": "TS046_dashcamTrackHistory",
       "line": 23
     },
     {

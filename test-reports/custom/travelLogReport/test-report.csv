@@ -1,2 +1,5 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,131.14,"Error: expect(received).toBeLessThan(expected)",TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm,TS028_travelLogReport.spec.js,815
+TS028-A,"Travel Log Report","should display TLR",SKIPPED,0.00,"",N/A,TS028_travelLogReport.spec.js,80
+TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",SKIPPED,0.00,"",N/A,TS028_travelLogReport.spec.js,553
+TS028-C,"Travel Log Report","should verify search functionality in TLR",SKIPPED,0.00,"",N/A,TS028_travelLogReport.spec.js,678
+TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,0.00,"Error: worker process exited unexpectedly (code=3221226505, signal=null)",N/A,TS028_travelLogReport.spec.js,815

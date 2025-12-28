@@ -1,10 +1,11 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,1.17,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,0.79,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,109.52,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add/edit a device",FAILED,94.36,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-edit-a-device.webm,TS002_addEditDevices,36
 TS002-B,"Add edit Device","should add device with custom icon",FAILED,84.34,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-device-with-custom-icon.webm,TS002_addEditDevices,347
 TS005-A,"Subgroup","should manage subgroups",PASSED,112.70,"",N/A,TS005_subgroup,32
 TS008-A,"Alert Contact","should add email and phone contacts and configure alert settings",PASSED,137.13,"",N/A,TS008_alertsContact,23
+TS009-A,"Change Alert Settings","should configure after hours settings",PASSED,132.69,"",N/A,TS009_changeAlertSettings,306
 TS011-A,"Add Edit Maintenance Contact","should add the contact details",PASSED,135.69,"",N/A,TS011_addEditMaintenanceContact,23
 TS015-A,"After Hour Summary","should redirect to fleet demo page with demo credentials",FAILED,123.89,"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:",TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm,TS015_afterHourSummary,23
 TS016-A,"After Hour Insight","should redirect to After Hour Insight",FAILED,112.91,"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm,TS016_afterHoursInsight,23
@@ -13,11 +14,16 @@ TS018-A,"Create Geofencing","should be able to create new Geofence",PASSED,139.2
 TS020-A,"Weekly Geofencing reports","should manage recent geofence report",PASSED,102.42,"",N/A,TS020_weeklyGeofenceReport,48
 TS021-A,"Current geofence report","should manage recent geofence report",PASSED,121.73,"",N/A,TS021_currentGeofenceReport,45
 TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,89.28,"",N/A,TS024_createLandmark,23
-TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,131.14,"Error: expect(received).toBeLessThan(expected)",TS028_travelLogReport-should-verify-Frequent-Stops-functionality-with-AP.webm,TS028_travelLogReport,815
+TS028-A,"Travel Log Report","should display TLR",SKIPPED,0.00,"",N/A,TS028_travelLogReport,80
+TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",SKIPPED,0.00,"",N/A,TS028_travelLogReport,553
+TS028-C,"Travel Log Report","should verify search functionality in TLR",SKIPPED,0.00,"",N/A,TS028_travelLogReport,678
+TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,0.00,"Error: worker process exited unexpectedly (code=3221226505, signal=null)",N/A,TS028_travelLogReport,815
 TS032-A,"30 Day Mileage Report","should be redirected to fleet demo page with demo credentials",PASSED,98.20,"",N/A,TS032_30DayMileageReport,46
 TS034-A,"Trip Report","should generate and validate trip report",PASSED,112.47,"",N/A,TS034_tripReport,43
 TS037-A,"Low Voltage Device Report","should generate and validate low voltage device report",FAILED,81.84,"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.",TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm,TS037_lowVoltageDeviceReport,23
+TS039-A,"Weekly Utilization Report","should generate and validate weekly utilization report",FAILED,253.09,"TimeoutError: locator.hover: Timeout 30000ms exceeded.",TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm,TS039_weeklyUtilizationReport,23
 TS043-A,"Dashcam Refresh","should refresh dashcam functionality",PASSED,103.15,"",N/A,TS043_dashcamRefresh,23
+TS046-A,"Dashcam Track History","displays dashcam track history with different tracking options",PASSED,54.51,"",N/A,TS046_dashcamTrackHistory,23
 TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",PASSED,153.74,"",N/A,TS050_last24hrs,39
 TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Frequent Stops functionality",PASSED,131.61,"",N/A,TS050_last24hrs,338
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23

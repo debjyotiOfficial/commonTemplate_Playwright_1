@@ -30,9 +30,9 @@ test.describe('Driver Safety Report', () => {
         // Click on reports menu
         await expect(page.locator(config.selectors.navigation.reportMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.reportMenu).click();
-        
+
         await page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Fleet' }).click();
-        
+
         // Click on driver safety report menu
         await page.locator(config.selectors.driverSafetyReport.driverSafetyMenu).scrollIntoViewIfNeeded();
         await page.locator(config.selectors.driverSafetyReport.driverSafetyMenu).click({ force: true });

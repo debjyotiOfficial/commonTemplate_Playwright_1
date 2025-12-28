@@ -1,0 +1,808 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 881235,
+    "startTime": "2025-12-24T23:17:37.283Z",
+    "endTime": "2025-12-24T23:32:18.518Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS009-A",
+      "module": "Change Alert Settings",
+      "title": "should configure after hours settings",
+      "description": "should configure after hours settings",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 132690,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Starting After Hours Settings configuration test...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Change Alert Settings modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected device: Sales car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Custom Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Toggled W, TH, F checkboxes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying custom days are visually selected",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Wednesday (W) checkbox state: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Thursday (TH) checkbox state: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Friday (F) checkbox state: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom days checkboxes verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced Settings expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced settings values entered (Unlimited checkboxes unchecked)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying advanced settings values are set correctly",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00 (expected: 02:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Hours: 03:00 (expected: 03:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Count: 5 (expected: 5)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Post Speed Limit: 40 (expected: 40)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced settings values verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying success message after submit",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Success message displayed:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying settings persist after reopening modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal reopened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Idling Hours: 02:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Stop Hours: 03:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Stop Count: 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Persisted Post Speed Limit: 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Settings persistence check completed for Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Configuring Demo 1 with Weekdays option",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected device: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Weekdays option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered From time: 08:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered To time: 18:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced Settings expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 Advanced settings values entered:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Working Hours Limit: 23:59",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unauthorized Hours Grace Period: 23:58",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 02:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 03:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked for Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API call to setDeviceSettings_here_prop.php",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API call successful: https://www.gpsandfleet3.net/gpsandfleet/insights/SaveData_RDS/setDeviceSettings_here_prop.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying success message for Demo 1",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Success message displayed for Demo 1:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Verifying settings for both devices",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal reopened for final verification",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Sales Car1 settings",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 persisted values:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00 (expected: 02:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Hours: 03:00 (expected: 03:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Count: 5 (expected: 5)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Post Speed Limit: 40 (expected: 40)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 settings verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Demo 1 settings",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 persisted values:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 02:00 (expected: 02:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 03:00 (expected: 03:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 5 (expected: 5)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 8 (expected: 8)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Demo 1 settings verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Configuring All Days Working Hours",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected Sales Car1 to verify previous settings",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying previously set values are automatically loaded",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Custom Days radio selected: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Previously set values loaded:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Hours: 03:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stop Count: 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Post Speed Limit: 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Previous values verified successfully - device retained its settings",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Changing to All Days option",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected All Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days radio selected: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered From time: 07:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered To time: 20:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days Advanced settings values entered (Unlimited checkboxes unchecked):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 01:30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 02:30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit button clicked for All Days configuration",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API call for All Days configuration",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API call successful: https://www.gpsandfleet3.net/gpsandfleet/insights/SaveData_RDS/setDeviceSettings_here_prop.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying success message for All Days",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Success message displayed for All Days:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Reopening modal to verify All Days changes",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal reopened for All Days verification",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Sales Car1 to verify All Days changes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days radio is selected after reopen: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days persisted values:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Idling Duration: 01:30 (expected: 01:30)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Maximum Stop Duration: 02:30 (expected: 02:30)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number Of Stops: 10 (expected: 10)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Posted Speed Limit: 50 (expected: 50)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days settings verified successfully - changes have been applied",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== AFTER HOURS SETTINGS TEST SUMMARY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "Sales Car1 Configuration (Custom Days):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Custom Days selected (W, TH, F)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings configured and verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 2,
+          "text": "Demo 1 Configuration (Weekdays):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Weekdays selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- From/To time configured",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings configured and verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 3,
+          "text": "Sales Car1 Configuration (All Days):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Previously set values verified on load",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Changed to All Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- New From/To time configured (07:00 - 20:00)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- New Advanced settings configured and verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Call Verification: VERIFIED for all configurations",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Settings Persistence: VERIFIED for all devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "After Hours Settings configuration test completed successfully!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-24T23:17:42.426Z",
+      "endTime": "2025-12-24T23:19:55.116Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS009_changeAlertSettings.spec.js",
+      "fileName": "TS009_changeAlertSettings",
+      "line": 306
+    }
+  ]
+}

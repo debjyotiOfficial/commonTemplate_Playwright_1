@@ -113,16 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1173,
+                  "duration": 786,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 15 minutes). Skipping login.\n"
+                      "text": "Valid authentication session found (age: 9 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-23T19:43:24.372Z",
+                  "startTime": "2025-12-28T09:06:36.797Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -138,25 +138,25 @@
       ]
     },
     {
-      "title": "TS005_subgroup.spec.js",
-      "file": "TS005_subgroup.spec.js",
+      "title": "TS039_weeklyUtilizationReport.spec.js",
+      "file": "TS039_weeklyUtilizationReport.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Subgroup",
-          "file": "TS005_subgroup.spec.js",
+          "title": "Weekly Utilization Report",
+          "file": "TS039_weeklyUtilizationReport.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should manage subgroups",
-              "ok": true,
+              "title": "should generate and validate weekly utilization report",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 200000,
+                  "timeout": 600000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -165,9 +165,28 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 112698,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 253090,
+                      "error": {
+                        "message": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.fa-question-circle').first()\u001b[22m\n\u001b[2m    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.fa-question-circle').first()\u001b[22m\n\u001b[2m    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js:306:41",
+                        "location": {
+                          "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
+                          "column": 41,
+                          "line": 306
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 304 |\u001b[39m\n \u001b[90m 305 |\u001b[39m             \u001b[90m// Hover over the tooltip icon to trigger tooltip\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 306 |\u001b[39m             \u001b[36mawait\u001b[39m efficiencyTooltipIcon\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 307 |\u001b[39m             \u001b[36mawait\u001b[39m newPage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 308 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Hovered over efficiency tooltip icon'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 309 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
+                            "column": 41,
+                            "line": 306
+                          },
+                          "message": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.fa-question-circle').first()\u001b[22m\n\u001b[2m    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 304 |\u001b[39m\n \u001b[90m 305 |\u001b[39m             \u001b[90m// Hover over the tooltip icon to trigger tooltip\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 306 |\u001b[39m             \u001b[36mawait\u001b[39m efficiencyTooltipIcon\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 307 |\u001b[39m             \u001b[36mawait\u001b[39m newPage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 308 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Hovered over efficiency tooltip icon'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 309 |\u001b[39m         }\u001b[0m\n\u001b[2m    at C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js:306:41\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
@@ -197,100 +216,300 @@
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "========== API ASSERTION: CREATE SUBGROUP ==========\n"
+                          "text": "--- Step 1: Opening menu and navigating to Weekly Utilization Report ---\n"
                         },
                         {
-                          "text": "Create Subgroup API Response: {\"status\":true,\"message\":\"New SubGroup Created Successfully\"}\n"
+                          "text": "Weekly Utilization Report menu item is visible\n"
                         },
                         {
-                          "text": "========== API ASSERTION: GET SUBGROUPS AFTER CREATE ==========\n"
+                          "text": "Menu item href: \u001b[1mnull\u001b[22m\n"
                         },
                         {
-                          "text": "Get Subgroups API Response: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"DeleteMe_1766420317776\"},{\"name\":\"Subhash\"},{\"name\":\"TestSG_1766515207453\"},{\"name\":\"TestSG_1766519008974\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"TestSubgroup_1766420134391\"},{\"name\":\"testDp\"}]\n"
+                          "text": "Click did not open new tab, trying middle click...\n"
                         },
                         {
-                          "text": "Subgroup \"TestSG_1766519008974\" exists in API response: true\n"
+                          "text": "Weekly Utilization Report middle-clicked - new tab opened\n"
                         },
                         {
-                          "text": "Modal close button visible: false, proceeding...\n"
+                          "text": "New page loaded\n"
                         },
                         {
-                          "text": "UI ASSERTION: Subgroup \"TestSG_1766519008974\" is visible in the subgroups list\n"
+                          "text": "--- Step 2: Selecting Report Duration (Last 7 Days) and Capturing API Response ---\n"
                         },
                         {
-                          "text": "========== API ASSERTION: GET DRIVERS TO SUBGROUP ==========\n"
+                          "text": "Report Duration set to \"Last 7 Days\" - report auto-generating...\n"
                         },
                         {
-                          "text": "Get Drivers to Subgroup API Response: {\"assigned\":[],\"unassigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"},{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"},{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"},{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}\n"
+                          "text": "API Response captured from getTrackReportGeo_Next_uti.php\n"
                         },
                         {
-                          "text": "API shows 8 unassigned drivers\n"
+                          "text": "--- Step 3: Report Generated ---\n"
                         },
                         {
-                          "text": "UI shows 8 unassigned driver cards with Add button\n"
+                          "text": "--- Step 4: Verifying Summary Section ---\n"
                         },
                         {
-                          "text": "API shows 0 assigned drivers\n"
+                          "text": "Total Utilization section is visible\n"
                         },
                         {
-                          "text": "========== API ASSERTION: GET DRIVERS AFTER ADDING ==========\n"
+                          "text": "Total Trackers: 2\n"
                         },
                         {
-                          "text": "Get Drivers API Response after adding: {\"assigned\":[{\"id\":14,\"imei\":\"860111051554966\",\"deviceType\":\"MA9276-Portable\",\"name\":\"Demo 1\",\"color\":\"black\"}],\"unassigned\":[{\"id\":15,\"imei\":\"220902734\",\"deviceType\":\"XT2469\",\"name\":\"Sales Car1\",\"color\":\"black\"},{\"id\":16,\"imei\":\"861492065082189\",\"deviceType\":\"MA9276-Portable\",\"name\":\"861492065082189\",\"color\":\"red\"},{\"id\":20,\"imei\":\"866787675654345\",\"deviceType\":\"MA3000\",\"name\":\"866787675654345\",\"color\":\"red\"},{\"id\":18,\"imei\":\"878787412547895\",\"deviceType\":\"MA1285WT\",\"name\":\"878787412547895\",\"color\":\"red\"},{\"id\":17,\"imei\":\"895745123645789\",\"deviceType\":\"MA1086\",\"name\":\"895745123645789\",\"color\":\"red\"},{\"id\":21,\"imei\":\"898956341243564\",\"deviceType\":\"MA1085W\",\"name\":\"898956341243564\",\"color\":\"red\"},{\"id\":19,\"imei\":\"987452321457854\",\"deviceType\":\"ST4345-REAL\",\"name\":\"987452321457854\",\"color\":\"red\"}]}\n"
+                          "text": "--- Step 5: Verifying Vehicle Analytics Table ---\n"
                         },
                         {
-                          "text": "Subgroup panel is open: true\n"
+                          "text": "Vehicle Analytics Table is visible\n"
                         },
                         {
-                          "text": "Found 2 close icons in panel\n"
+                          "text": "Table has 2 row(s)\n"
                         },
                         {
-                          "text": "Clicked close icon 1\n"
+                          "text": "First row - Driver: Sales Car1, Efficiency: 100%\n"
                         },
                         {
-                          "text": "Exit subgroup button visible: false\n"
+                          "text": "Sales Car1 efficiency: 100%\n"
                         },
                         {
-                          "text": "Exit button not visible (desktop view), using alternative method...\n"
+                          "text": "Clicked on first row in Vehicle Analytics table\n"
                         },
                         {
-                          "text": "Driver card header text: Driver Card\n"
+                          "text": "Sales Car1 stored efficiency: 100%\n"
                         },
                         {
-                          "text": "Successfully exited subgroup view\n"
+                          "text": "Clicked row efficiency: 100%\n"
                         },
                         {
-                          "text": "========== API ASSERTION: DELETE SUBGROUP ==========\n"
+                          "text": "Efficiencies match (within 0.1% tolerance)!\n"
                         },
                         {
-                          "text": "Delete Subgroup API Response: {\"status\":true,\"message\":\"Removed subgroup successfully.\"}\n"
+                          "text": "--- Step 6: Validating API Response Data Against UI ---\n"
                         },
                         {
-                          "text": "========== API ASSERTION: GET SUBGROUPS AFTER DELETE ==========\n"
+                          "text": "API Total Utilization: 100%, UI: 100%\n"
                         },
                         {
-                          "text": "Get Subgroups API Response after delete: [{\"name\":\"DeleteMe_1765969728183\"},{\"name\":\"DeleteMe_1766086431927\"},{\"name\":\"DeleteMe_1766420317776\"},{\"name\":\"Subhash\"},{\"name\":\"TestSG_1766515207453\"},{\"name\":\"TestSubgroup_1764703653790\"},{\"name\":\"TestSubgroup_1764773025336\"},{\"name\":\"TestSubgroup_1764799516204\"},{\"name\":\"TestSubgroup_1765957219213\"},{\"name\":\"TestSubgroup_1766420134391\"},{\"name\":\"testDp\"}]\n"
+                          "text": "API Inside Landmarks: 0%, UI: 0%\n"
                         },
                         {
-                          "text": "Subgroup \"TestSG_1766519008974\" still exists after delete: false\n"
+                          "text": "API Total Trackers: 2, UI: 2\n"
                         },
                         {
-                          "text": "UI ASSERTION: Subgroup \"TestSG_1766519008974\" is no longer visible in the subgroups list\n"
+                          "text": "API Devices Count: 2, UI Table Rows: 2\n"
+                        },
+                        {
+                          "text": "--- Step 7: Verifying Inside Landmarks Section ---\n"
+                        },
+                        {
+                          "text": "Inside Landmarks: 0%\n"
+                        },
+                        {
+                          "text": "--- Step 8: Verifying Charts Visibility ---\n"
+                        },
+                        {
+                          "text": "Location Distribution chart is visible\n"
+                        },
+                        {
+                          "text": "Location Distribution heading is visible\n"
+                        },
+                        {
+                          "text": "Efficiency Trend chart is visible\n"
+                        },
+                        {
+                          "text": "Efficiency Trend heading is visible\n"
+                        },
+                        {
+                          "text": "Device Activity Timeline chart is visible\n"
+                        },
+                        {
+                          "text": "Device Activity Timeline heading is visible\n"
+                        },
+                        {
+                          "text": "--- Step 9: Verifying Legend Containers ---\n"
+                        },
+                        {
+                          "text": "Location Distribution legend container is visible\n"
+                        },
+                        {
+                          "text": "--- Step 10: Verifying Tooltips ---\n"
+                        },
+                        {
+                          "text": "Efficiency tooltip icon is visible\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-23T19:43:27.714Z",
+                      "startTime": "2025-12-28T09:06:39.376Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-4.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-5.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-10.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-11.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-7.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-13.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-12.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-8.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-9.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-6.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-14.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-3.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-5.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-2.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-4.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-6.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-7.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-8.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-11.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-10.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-9.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-12.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-15.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-13.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-14.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-16.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
+                        "column": 41,
+                        "line": 306
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "accabe667635b1716bfd-1ae01df8132493cc579d",
-              "file": "TS005_subgroup.spec.js",
-              "line": 32,
+              "id": "8685944af1fcd1cb5f15-4d60464be5b236f66685",
+              "file": "TS039_weeklyUtilizationReport.spec.js",
+              "line": 23,
               "column": 5
             }
           ]
@@ -300,11 +519,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T19:43:23.195Z",
-    "duration": 118964.454,
-    "expected": 2,
+    "startTime": "2025-12-28T09:06:35.873Z",
+    "duration": 258739.808,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS039-A,"Weekly Utilization Report","should generate and validate weekly utilization report",FAILED,253.09,"TimeoutError: locator.hover: Timeout 30000ms exceeded.",TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm,TS039_weeklyUtilizationReport.spec.js,23

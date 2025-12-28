@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - auth - 28/12/2025</title>
+    <title>Test Report - dashcamTrackHistory - 27/12/2025</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,10 +150,10 @@
     <div class="container">
         <div class="header">
             <h1>Test Execution Report</h1>
-            <div class="module-name">Module: auth</div>
+            <div class="module-name">Module: dashcamTrackHistory</div>
             <div class="subtitle">
-                Generated: 28/12/2025, 2:53:17 pm |
-                Duration: 1001.09s |
+                Generated: 27/12/2025, 2:20:40 am |
+                Duration: 61.52s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -207,15 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="auth.setup.js">
-                        <td><span class="test-case-no">TC-A</span></td>
-                        <td>auth.setup.js</td>
+                    <tr data-status="passed" data-module="Dashcam Track History">
+                        <td><span class="test-case-no">TS046-A</span></td>
+                        <td>Dashcam Track History</td>
                         <td>
-                            <strong>authenticate</strong>
+                            <strong>displays dashcam track history with different tracking options</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (1)</span>
+                                    <span>View Test Steps (13)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,7 +224,67 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 9 minutes). Skipping login.</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing with &quot;Show Tracking With Alerts&quot; option...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Info box opened for original marker with alerts</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing with &quot;Show Tracking Only&quot; option...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✅ All tracking history tests completed successfully</span>
                                             </div>
                                         
                                     </div>
@@ -232,7 +292,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>0.79s</strong></td>
+                        <td><strong>54.51s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -286,7 +346,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.79s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS046-A","module":"Dashcam Track History","description":"displays dashcam track history with different tracking options","status":"PASSED","duration":"54.51s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -303,7 +363,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-28.csv';
+            link.download = 'test-report-2025-12-26.csv';
             link.click();
         }
     </script>

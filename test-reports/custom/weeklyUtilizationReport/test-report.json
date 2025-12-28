@@ -1,0 +1,340 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 1001086,
+    "startTime": "2025-12-28T09:06:35.982Z",
+    "endTime": "2025-12-28T09:23:17.068Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS039-A",
+      "module": "Weekly Utilization Report",
+      "title": "should generate and validate weekly utilization report",
+      "description": "should generate and validate weekly utilization report",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 253090,
+      "failureReason": "TimeoutError: locator.hover: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": ".fa-question-circle",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS039_weeklyUtilizationReport.spec.js",
+        "line": 23,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.hover: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.fa-question-circle').first()\n    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\n  - attempting hover action\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n    - waiting 20ms\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 100ms\n    8 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n    - waiting for element to be visible and stable\n    - element is visible and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n  - retrying hover action\n    - waiting 500ms\n",
+        "stackTrace": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.fa-question-circle').first()\n    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\n  - attempting hover action\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n    - waiting 20ms\n    2 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 100ms\n    8 × waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n      - waiting for element to be visible and stable\n      - element is visible and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\n    - retrying hover action\n      - waiting 500ms\n    - waiting for element to be visible and stable\n    - element is visible and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\n  - retrying hover action\n    - waiting 500ms\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js:306:41"
+      },
+      "videoPath": "videos/TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm",
+      "videoIdentifier": "TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Opening menu and navigating to Weekly Utilization Report",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weekly Utilization Report menu item is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Menu item href: \u001b[1mnull\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Click did not open new tab, trying middle click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weekly Utilization Report middle-clicked - new tab opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New page loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Selecting Report Duration (Last 7 Days) and Capturing API Response",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Report Duration set to \"Last 7 Days\" - report auto-generating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured from getTrackReportGeo_Next_uti.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Report Generated",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Verifying Summary Section",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Total Utilization section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Trackers: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Vehicle Analytics Table",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Vehicle Analytics Table is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table has 2 row(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First row - Driver: Sales Car1, Efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on first row in Vehicle Analytics table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sales Car1 stored efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked row efficiency: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Efficiencies match (within 0.1% tolerance)!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Validating API Response Data Against UI",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API Total Utilization: 100%, UI: 100%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Inside Landmarks: 0%, UI: 0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Total Trackers: 2, UI: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Devices Count: 2, UI Table Rows: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying Inside Landmarks Section",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Inside Landmarks: 0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying Charts Visibility",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Location Distribution chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location Distribution heading is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Efficiency Trend chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Efficiency Trend heading is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Activity Timeline chart is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Activity Timeline heading is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying Legend Containers",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Location Distribution legend container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying Tooltips",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Efficiency tooltip icon is visible",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-28T09:06:41.348Z",
+      "endTime": "2025-12-28T09:10:54.440Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
+      "fileName": "TS039_weeklyUtilizationReport",
+      "line": 23
+    }
+  ]
+}

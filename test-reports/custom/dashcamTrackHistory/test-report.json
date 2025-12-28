@@ -1,0 +1,112 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 61521,
+    "startTime": "2025-12-26T20:49:38.880Z",
+    "endTime": "2025-12-26T20:50:40.401Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS046-A",
+      "module": "Dashcam Track History",
+      "title": "displays dashcam track history with different tracking options",
+      "description": "displays dashcam track history with different tracking options",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 54514,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing with \"Show Tracking With Alerts\" option...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Info box opened for original marker with alerts",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing with \"Show Tracking Only\" option...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ All tracking history tests completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2025-12-26T20:49:44.874Z",
+      "endTime": "2025-12-26T20:50:39.388Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS046_dashcamTrackHistory.spec.js",
+      "fileName": "TS046_dashcamTrackHistory",
+      "line": 23
+    }
+  ]
+}
