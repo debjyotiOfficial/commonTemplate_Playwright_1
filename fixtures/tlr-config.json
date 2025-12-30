@@ -137,9 +137,9 @@
         "viewLandmarkButton": ".view-landmark-btn"
       },
       "viewDeleteGeofencing": {
-        "viewDeleteContainer": "#edit-geofence-modal",
-        "geoList": "#geofences-list",
-        "submitButton": "#submit-edit-geofence-modal-btn",
+        "viewDeleteContainer": "#view-delete-geofences-modal",
+        "geoList": "#geofence-device-select",
+        "submitButton": "#view-geofence",
         "controlContainer": "#geofence-controls-container",
         "editButton": "#geofence-edit-btn",
         "inputField": "#geolabel_id",
@@ -174,14 +174,23 @@
         "confirmLogoutButton": "#confirm-userlogoutModal-btn "
       },
       "viewEditLandmarks": {
-        "viewEditContainer": "#edit-landmark-modal",
-        "landmarkList": "#landmarks-list",
-        "landmarkNameInput": ".txtCreateLandmarkName",
-        "submitButton": "#submit-edit-landmark-modal-btn",
-        "controlContainer": "#landmark-controls-container",
-        "editButton": "#landmark-edit-btn",
-        "inputField": "#landmarklabel_id",
-        "confirmationButton": "#submit-save-landmark-modal-btn"
+        "viewEditContainer": "#view-edit-landmarks-modal",
+        "landmarkSelect": "#landmark-select",
+        "submitButton": "#view-landmark",
+        "hideVehicleMarkersCheckbox": "#hide-vehicle-markers-landmark",
+        "landmarkInfoOverlay": "#landmark-info-overlay",
+        "landmarkTitleDropdown": "#landmark-title select",
+        "editLandmarkButton": "#edit-landmark",
+        "closeLandmarkOverlay": "#close-landmark-overlay",
+        "landmarkViewMode": "#landmark-view-mode",
+        "landmarkName": "#landmark-name1",
+        "landmarkRadius": "#landmark-radius",
+        "landmarkLocation": "#landmark-location",
+        "landmarkEditMode": "#landmark-edit-mode",
+        "landmarkNameEdit": "#landmark-name-edit",
+        "landmarkRadiusEdit": "#landmark-radius-edit",
+        "saveLandmarkEdit": "#save-landmark-edit",
+        "deleteLandmark": "#delete-landmark"
       },
       "weeklyAfterHour": {
         "weeklyAfterHourMenu": "#weekly-alert-summary-btn",

@@ -5,265 +5,361 @@ test.describe('view delete geofence', () => {
     let config;
     let helpers;
 
-  test.beforeAll(async ({ browser }) => {
+    test.beforeAll(async ({ browser }) => {
         const page = await browser.newPage();
         helpers = new TestHelpers(page);
         config = await helpers.getConfig();
         await page.close();
     });
 
-  test.beforeEach(async ({ page }) => {
+    test.beforeEach(async ({ page }) => {
         helpers = new TestHelpers(page);
         await helpers.clearStorageAndSetTimeouts();
-        
+
         // Set timeouts
         test.setTimeout(600000); // 10 minutes for long test
     });
 
-    test('should be able to edit/delete geofence', async ({ page }) => {
+    test('should be able to view, edit and delete geofence', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
-        // Hover over "geofencing menu"
+        // Step 1: Navigate to View Geofences
         await page.locator(config.selectors.navigation.geofencingMenu).hover();
-
         await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.geofencingMenu).click();
 
-        await page.waitForTimeout(2000); // Wait for element to be ready
+        await page.waitForTimeout(2000);
 
         await expect(page.locator(config.selectors.navigation.viewDeleteGeofencingMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.viewDeleteGeofencingMenu).click({ force: true });
 
-        // Wait for navigation/modal transition to complete
-        await page.waitForTimeout(3000);
-
-        // Verify the view delete geofencing container is visible
-        await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer)).toBeVisible();
+        // Step 2: Wait for View Geofences modal
+        await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer)).toBeVisible({ timeout: 10000 });
         await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer))
-            .toContainText('View/Delete Geofences');
+            .toContainText('View Geofences');
 
-        // Select geofence from the list
+        // Step 3: Keep "View All Geofences" selected and click Submit
         await expect(page.locator(config.selectors.viewDeleteGeofencing.geoList)).toBeVisible();
-        await page.locator(config.selectors.viewDeleteGeofencing.geoList).selectOption('testtttUpdated (57606 CR-4, Max, MN 56659-2001, United States)');
-
-        // Click on submit button
         await expect(page.locator(config.selectors.viewDeleteGeofencing.submitButton)).toBeVisible();
         await page.locator(config.selectors.viewDeleteGeofencing.submitButton).click();
 
-        await page.waitForTimeout(2000); // Wait for geofence list to load
+        // Step 4: Wait for map to load with geofence markers
+        await page.waitForTimeout(3000);
+        console.log('Map loaded, looking for "Test Auto Geofence" marker...');
 
-        // Verify the geo container is visible
-        await expect(page.locator(config.selectors.viewDeleteGeofencing.controlContainer)).toBeVisible();
+        // Step 5: Click on the geofence marker for "Test Auto Geofence"
+        // Find the label and then click on the nearby marker (SVG element)
+        console.log('Looking for "Test Auto Geofence" marker...');
 
-        await page.locator(config.selectors.viewDeleteGeofencing.inputField).clear({ force: true });
-        await page.locator(config.selectors.viewDeleteGeofencing.inputField).fill('testtttUpdated', { force: true });
+        // Find the geofence marker that has "Test Auto Geofence" label nearby
+        // The marker is a sibling div with class "geofence-marker" containing an SVG
+        const geofenceMarker = page.locator('div:has(> div:text-is("Test Auto Geofence")) .geofence-marker').first();
 
-        //click on down arrow of driver card
-        await expect(page.locator(config.selectors.driverCard.driverCardArrow)).toBeVisible();
-
-        await page.locator(config.selectors.driverCard.driverCardArrow).click();
-
-        // Click on save button plotted on the map - Multiple approaches (same as createGeofencing.spec.js)
-        console.log('Attempting to click on save button on the map...');
-
-        // Wait for the map and save button to be fully loaded
-        await page.waitForTimeout(5000);
-
-        let saveButtonClicked = false;
-
-        // Approach 1: Try to find iframe-based maps and interact within them
-        try {
-            console.log('Approach 1: Looking for map iframe...');
-            const mapFrames = page.frameLocator('iframe');
-            const frameCount = await page.locator('iframe').count();
-
-            if (frameCount > 0) {
-                console.log(`Found ${frameCount} iframes, checking for map content...`);
-                for (let i = 0; i < frameCount; i++) {
-                    try {
-                        const frame = page.frameLocator(`iframe >> nth=${i}`);
-                        // Look for save button in frame
-                        const saveButton = frame.locator('text="Save", button:has-text("Save"), [title*="Save"], [alt*="Save"]').first();
-                        await saveButton.click({ timeout: 3000 });
-                        console.log(`Approach 1: Successfully clicked save button in iframe ${i}`);
-                        saveButtonClicked = true;
-                        break;
-                    } catch (e) {
-                        console.log(`Frame ${i} approach failed: ${e.message}`);
-                    }
-                }
-            }
-        } catch (error) {
-            console.log(`Approach 1 failed: ${error.message}`);
-        }
-
-        // Approach 2: Systematic grid search across the entire map area
-        if (!saveButtonClicked) {
-            try {
-                console.log('Approach 2: Systematic grid search...');
-
-                // Wait for any animations to settle
-                await page.waitForTimeout(3000);
-
-                // Reset zoom to default level first
-                try {
-                    await page.keyboard.press('Control+0'); // Reset zoom
-                    await page.waitForTimeout(1000);
-                    console.log('Reset page zoom');
-                } catch (e) {
-                    console.log('Could not reset zoom');
-                }
-
-                // Take screenshot to analyze current state
-                await page.screenshot({ path: 'grid-search-before.png', fullPage: true });
-                console.log('Screenshot saved: grid-search-before.png');
-
-                // Use viewport dimensions since map detection is failing
-                const mapArea = await page.evaluate(() => {
-                    return {
-                        left: 0,
-                        top: 0,
-                        width: window.innerWidth,
-                        height: window.innerHeight
-                    };
+        if (await geofenceMarker.isVisible({ timeout: 5000 }).catch(() => false)) {
+            console.log('Found geofence marker, clicking on it...');
+            await geofenceMarker.click({ force: true });
+        } else {
+            // Alternative: Find label and click the marker near it
+            console.log('Trying alternative approach - clicking marker near label...');
+            const label = page.locator('div:text-is("Test Auto Geofence")').first();
+            if (await label.isVisible({ timeout: 5000 })) {
+                // Click on the parent container which should contain both label and marker
+                const parentContainer = label.locator('xpath=ancestor::div[contains(@style, "position")]').first();
+                await parentContainer.locator('.geofence-marker').click({ force: true }).catch(async () => {
+                    // Last fallback - just click any geofence marker
+                    console.log('Clicking first available geofence marker...');
+                    await page.locator('.geofence-marker').first().click({ force: true });
                 });
-
-                console.log('Using viewport dimensions:', mapArea);
-
-                // Create a comprehensive grid search across the main map area
-                const gridCoordinates = [];
-                const stepSize = 30; // 30 pixel steps for better coverage
-
-                // Based on your screenshots, the map appears to be in the center-left area
-                // Cover the entire likely map area where Save button could be
-                const startX = 200;  // Start from left side of map
-                const endX = 1000;   // Cover most of the screen width
-                const startY = 150;  // Start from top of map area
-                const endY = 600;    // Cover upper portion where Save button should be
-
-                // Priority coordinates - successful coordinate and nearby backups
-                const priorityCoordinates = [
-                    [680, 270], // Confirmed working coordinate
-                    [675, 270], [685, 270], [680, 265], [680, 275], // Close neighbors
-                    [670, 270], [690, 270], [680, 260], [680, 280]  // Slightly further backups
-                ];
-
-                // Then add systematic grid
-                for (let x = startX; x <= endX; x += stepSize) {
-                    for (let y = startY; y <= endY; y += stepSize) {
-                        gridCoordinates.push([x, y]);
-                    }
-                }
-
-                // Combine priority coordinates first, then grid
-                const allCoordinates = [...priorityCoordinates, ...gridCoordinates];
-
-                console.log(`Created search plan: ${priorityCoordinates.length} priority + ${gridCoordinates.length} grid = ${allCoordinates.length} total coordinates`);
-
-                // Search through all coordinates systematically
-                for (let i = 0; i < allCoordinates.length; i++) {
-                    const [x, y] = allCoordinates[i];
-                    try {
-                        await page.mouse.click(x, y);
-                        await page.waitForTimeout(300);
-
-                        // Log progress every 10 clicks for priority, every 30 for grid
-                        const logInterval = i < priorityCoordinates.length ? 5 : 30;
-                        if (i % logInterval === 0) {
-                            const coordType = i < priorityCoordinates.length ? 'PRIORITY' : 'GRID';
-                            console.log(`${coordType} search progress: ${i + 1}/${allCoordinates.length} - current: (${x}, ${y})`);
-                        }
-
-                        // Check for success indicators and confirmation modal
-                        if (i % 3 === 0) {
-                            try {
-                                // Check if confirmation modal appeared (means Save was clicked)
-                                const confirmModal = await page.locator(config.selectors.confirmButton || '#submit-save-confirmation-modal-btn').isVisible({ timeout: 500 });
-                                if (confirmModal) {
-                                    console.log(`SUCCESS! Save button clicked at coordinate: (${x}, ${y}) - Confirmation modal appeared`);
-
-                                    // Click the confirmation button to complete the save
-                                    await page.locator(config.selectors.confirmButton || '#submit-save-confirmation-modal-btn').click();
-                                    console.log('Clicked confirmation button to complete geofence save');
-
-                                    await page.waitForTimeout(2000);
-                                    saveButtonClicked = true;
-                                    break;
-                                }
-
-                                // Also check for other success indicators
-                                const successCheck = await page.locator('text=/saved/i, text=/success/i, .success, .confirmation').first().isVisible({ timeout: 300 });
-                                if (successCheck) {
-                                    console.log(`SUCCESS found at grid coordinate: (${x}, ${y})`);
-                                    saveButtonClicked = true;
-                                    break;
-                                }
-                            } catch (e) {
-                                // Continue searching
-                            }
-                        }
-
-                        // Reset zoom every 30 clicks to prevent excessive zooming
-                        if (i % 30 === 0 && i > 0) {
-                            try {
-                                await page.keyboard.press('Control+0');
-                                await page.waitForTimeout(300);
-                            } catch (e) {
-                                // Continue without zoom reset
-                            }
-                        }
-
-                    } catch (e) {
-                        continue;
-                    }
-                }
-
-                console.log('Approach 2: Systematic grid search completed');
-                if (!saveButtonClicked) {
-                    console.log('Grid search did not find success indicators, but continuing...');
-                }
-                saveButtonClicked = true;
-            } catch (error) {
-                console.log(`Approach 2 failed: ${error.message}`);
+            } else {
+                // Fallback: click first geofence marker
+                console.log('Label not found, clicking first .geofence-marker...');
+                await page.locator('.geofence-marker').first().click({ force: true, timeout: 10000 });
             }
-        }    
-
-        if (!saveButtonClicked) {
-            console.log('Warning: Could not confirm save button interaction, but proceeding with test...');
         }
 
-        await page.waitForTimeout(5000); // Wait for element to be ready
+        await page.waitForTimeout(2000);
 
-        // await page.locator(config.selectors.navigation.geofencingMenu).hover();
+        // Step 6: Verify the geofence info panel is showing with full details
+        console.log('Waiting for geofence info panel to expand...');
 
-        // await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
-        // await page.locator(config.selectors.navigation.geofencingMenu).click();
+        // The overlay should show Name, Radius, Location - check for the view mode content
+        const infoOverlay = page.locator('#geofence-info-overlay');
+        await expect(infoOverlay).toBeVisible({ timeout: 10000 });
 
-        // await page.waitForTimeout(2000); // Wait for element to be ready
+        // Wait for the overlay to be fully expanded (not collapsed)
+        // Check if edit button is visible, if not, click on the overlay to expand
+        const editButton = page.locator(config.selectors.viewDeleteGeofencing.editGeofenceButton);
 
-        // await expect(page.locator(config.selectors.navigation.viewDeleteGeofencingMenu)).toBeVisible();
-        // await page.locator(config.selectors.navigation.viewDeleteGeofencingMenu).click({ force: true });
+        if (!await editButton.isVisible({ timeout: 3000 }).catch(() => false)) {
+            console.log('Edit button not visible, clicking overlay to expand...');
+            // Click on the geofence name in the dropdown to select it
+            const geofenceDropdown = page.locator('#geofence-title select');
+            if (await geofenceDropdown.isVisible({ timeout: 2000 })) {
+                // Select "Test Auto Geofence" from dropdown
+                await geofenceDropdown.selectOption({ label: 'Test Auto Geofence' });
+                await page.waitForTimeout(1000);
+            }
+        }
 
-        // // Wait for navigation/modal transition to complete
-        // await page.waitForTimeout(3000);
+        console.log('Geofence info panel is visible');
 
-        // // Verify the view delete geofencing container is visible
-        // await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer)).toBeVisible();
-        // await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer))
-        //     .toContainText('View/Delete Geofences');
+        // ==================== EDIT GEOFENCE ====================
 
-        // // Select geofence from the list
-        // await expect(page.locator(config.selectors.viewDeleteGeofencing.geoList)).toBeVisible();
-        // await page.locator(config.selectors.viewDeleteGeofencing.geoList).selectOption('testtttUpdated (57606 CR-4, Max, MN 56659-2001, United States)');
+        // Step 7: Click the edit button (pencil icon) to enter edit mode
+        await expect(editButton).toBeVisible({ timeout: 5000 });
+        await editButton.click();
+        console.log('Clicked edit button');
 
-        // // Click on submit button
-        // await expect(page.locator(config.selectors.viewDeleteGeofencing.submitButton)).toBeVisible();
-        // await page.locator(config.selectors.viewDeleteGeofencing.submitButton).click();
+        await page.waitForTimeout(1000);
 
-        // await page.waitForTimeout(2000); // Wait for geofence list to load
+        // Step 8: Verify edit mode is visible with input fields
+        const geofenceEditMode = page.locator('#geofence-edit-mode');
+        await expect(geofenceEditMode).toBeVisible({ timeout: 5000 });
+        console.log('Edit mode is visible');
+
+        // Step 9: Edit the geofence name
+        const geofenceNameInput = page.locator(config.selectors.viewDeleteGeofencing.geofenceNameEdit);
+        await expect(geofenceNameInput).toBeVisible({ timeout: 5000 });
+        await geofenceNameInput.clear();
+        const editedGeofenceName = `Test Auto Geofence_Edited_${Date.now()}`;
+        await geofenceNameInput.fill(editedGeofenceName);
+        console.log(`Updated geofence name to: ${editedGeofenceName}`);
+
+        // Step 10: Edit the radius
+        const geofenceRadiusInput = page.locator(config.selectors.viewDeleteGeofencing.geofenceRadiusEdit);
+        await expect(geofenceRadiusInput).toBeVisible({ timeout: 5000 });
+        await geofenceRadiusInput.clear();
+        await geofenceRadiusInput.fill('700');
+        console.log('Updated geofence radius to: 700');
+
+        // Step 11: Click Save button and wait for API calls
+        const saveButton = page.locator(config.selectors.viewDeleteGeofencing.saveGeofenceEdit);
+        await expect(saveButton).toBeVisible({ timeout: 5000 });
+
+        // Set up API response listeners before clicking save
+        const updateApiPromise = page.waitForResponse(
+            response => response.url().includes('updategeofence_rds.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+        const getGeofenceApiPromise = page.waitForResponse(
+            response => response.url().includes('getGeofence.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+
+        await saveButton.click();
+        console.log('Clicked save button');
+
+        // Wait for both API calls to complete
+        const updateResponse = await updateApiPromise;
+        console.log('Update API called:', updateResponse.url());
+
+        const getGeofenceResponse = await getGeofenceApiPromise;
+        console.log('Get Geofence API called:', getGeofenceResponse.url());
+
+        await page.waitForTimeout(2000);
+        console.log('Geofence edit completed successfully');
+
+        // ==================== DELETE GEOFENCE ====================
+
+        // Step 12: Click the edit button (pencil icon) again to enter edit mode
+        await expect(editButton).toBeVisible({ timeout: 5000 });
+        await editButton.click();
+        console.log('Clicked edit button again for delete');
+
+        await page.waitForTimeout(1000);
+
+        // Step 13: Verify edit mode is visible
+        await expect(geofenceEditMode).toBeVisible({ timeout: 5000 });
+        console.log('Edit mode is visible');
+
+        // Step 14: Click the delete button
+        const deleteButton = page.locator(config.selectors.viewDeleteGeofencing.deleteGeofence);
+        await expect(deleteButton).toBeVisible({ timeout: 5000 });
+        await deleteButton.click();
+        console.log('Clicked delete button');
+
+        await page.waitForTimeout(1000);
+
+        // Step 15: Confirmation modal appears - click Delete button to confirm
+        console.log('Waiting for delete confirmation modal...');
+
+        // Wait for the modal to be visible
+        const deleteModal = page.locator('.modal-overlay:not(.hidden), .modal:visible, [class*="modal"]:visible').first();
+        await expect(deleteModal).toBeVisible({ timeout: 5000 });
+
+        // Click the Delete button inside the confirmation modal
+        const confirmDeleteButton = page.locator('.modal-overlay:not(.hidden) button.btn--danger, .modal button.btn--danger').first();
+        await expect(confirmDeleteButton).toBeVisible({ timeout: 5000 });
+
+        // Set up API response listeners before confirming delete
+        const deleteApiPromise = page.waitForResponse(
+            response => response.url().includes('deletegeofence_rds.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+        const getGeofenceAfterDeletePromise = page.waitForResponse(
+            response => response.url().includes('getGeofence.php') && response.status() === 200,
+            { timeout: 30000 }
+        );
+
+        await confirmDeleteButton.click();
+        console.log('Confirmed deletion by clicking Delete button');
+
+        // Step 16: Wait for delete API calls and verify geofence is removed
+        const deleteResponse = await deleteApiPromise;
+        console.log('Delete API called:', deleteResponse.url());
+
+        const getGeofenceAfterDeleteResponse = await getGeofenceAfterDeletePromise;
+        console.log('Get Geofence API called after delete:', getGeofenceAfterDeleteResponse.url());
+
+        // Verify the deleted geofence is not in the API response
+        const geofenceData = await getGeofenceAfterDeleteResponse.json();
+        console.log('Verifying deleted geofence is not in API response...');
+
+        // Check that the edited geofence name is not in the response
+        const geofenceNames = JSON.stringify(geofenceData);
+        expect(geofenceNames).not.toContain(editedGeofenceName);
+        console.log(`API Verified: "${editedGeofenceName}" is not in the geofence list`);
+
+        await page.waitForTimeout(2000);
+
+        // Step 17: Verify in UI - Click on geofence dropdown and check deleted geofence is not there
+        console.log('Verifying deleted geofence is not in UI dropdown...');
+        const geofenceDropdown = page.locator('#geofence-title select');
+        await expect(geofenceDropdown).toBeVisible({ timeout: 5000 });
+
+        // Get all options from the dropdown
+        const dropdownOptions = await geofenceDropdown.locator('option').allTextContents();
+        console.log('Dropdown options:', dropdownOptions.length);
+
+        // Verify the deleted geofence name is not in the dropdown
+        const isGeofenceInDropdown = dropdownOptions.some(option => option.includes(editedGeofenceName));
+        expect(isGeofenceInDropdown).toBe(false);
+        console.log(`UI Verified: "${editedGeofenceName}" is not in the geofence dropdown`);
+
+        console.log('Geofence deletion completed and verified successfully');
+    });
+
+    test('should be able to toggle Hide Vehicle Markers', async ({ page }) => {
+        const helpers = new TestHelpers(page);
+        config = await helpers.getConfig();
+
+        // Use fast login helper
+        await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
+
+        // ==================== PART 1: UNCHECKED - VEHICLE MARKERS VISIBLE ====================
+
+        // Step 1: Navigate to View Geofences
+        console.log('PART 1: Testing with Hide Vehicle Markers UNCHECKED');
+        await page.locator(config.selectors.navigation.geofencingMenu).hover();
+        await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.geofencingMenu).click();
+
+        await page.waitForTimeout(2000);
+
+        await expect(page.locator(config.selectors.navigation.viewDeleteGeofencingMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.viewDeleteGeofencingMenu).click({ force: true });
+
+        // Step 2: Wait for View Geofences modal
+        await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer)).toBeVisible({ timeout: 10000 });
+
+        // Step 3: Verify "Hide Vehicle Markers" checkbox is initially unchecked
+        const hideVehicleMarkersCheckbox = page.locator('#view-delete-geofences-modal input[type="checkbox"]');
+        await expect(hideVehicleMarkersCheckbox).toBeVisible({ timeout: 5000 });
+
+        const isChecked = await hideVehicleMarkersCheckbox.isChecked();
+        expect(isChecked).toBe(false);
+        console.log('Verified: Hide Vehicle Markers checkbox is initially unchecked');
+
+        // Step 4: Click Submit button
+        await expect(page.locator(config.selectors.viewDeleteGeofencing.submitButton)).toBeVisible();
+        await page.locator(config.selectors.viewDeleteGeofencing.submitButton).click();
+
+        await page.waitForTimeout(3000);
+        console.log('Clicked Submit with checkbox unchecked');
+
+        // Step 5: Verify device marker is visible
+        const deviceMarker = page.locator('.marker-info').first();
+        await expect(deviceMarker).toBeVisible({ timeout: 10000 });
+        console.log('Verified: Device marker is visible');
+
+        // Step 6: Click on the device marker
+        await deviceMarker.click({ force: true });
+        console.log('Clicked on device marker');
+
+        await page.waitForTimeout(2000);
+
+        // Step 7: Verify realtime-tracking-timer opens up
+        const realtimeTrackingTimer = page.locator('#realtime-tracking-timer');
+        await expect(realtimeTrackingTimer).toBeVisible({ timeout: 10000 });
+        console.log('Verified: Realtime tracking timer is visible');
+
+        // Verify timer text and vehicle name are present
+        await expect(page.locator('#realtime-tracking-timer-text')).toBeVisible();
+        await expect(page.locator('#realtime-tracking-vehicle-name')).toBeVisible();
+        console.log('Verified: Timer text and vehicle name are displayed');
+
+        // Step 8: Click close button
+        const closeButton = page.locator(config.selectors.viewDeleteGeofencing.closeGeofenceOverlay);
+        await expect(closeButton).toBeVisible({ timeout: 5000 });
+        await closeButton.click();
+        console.log('Clicked close button');
+
+        await page.waitForTimeout(2000);
+
+        // ==================== PART 2: CHECKED - VEHICLE MARKERS HIDDEN ====================
+
+        console.log('PART 2: Testing with Hide Vehicle Markers CHECKED');
+
+        // Wait for page to stabilize after closing overlay
+        await page.waitForTimeout(3000);
+
+        // Step 9: Open View Geofences modal again
+        // First click to expand the Geofencing menu section
+        const geofencingMenu = page.locator(config.selectors.navigation.geofencingMenu);
+        await geofencingMenu.scrollIntoViewIfNeeded();
+        await expect(geofencingMenu).toBeVisible({ timeout: 5000 });
+        await geofencingMenu.click();
+        console.log('Clicked Geofencing menu');
+
+        await page.waitForTimeout(2000);
+
+        // Click on View/Delete Geofences submenu
+        const viewDeleteMenu = page.locator(config.selectors.navigation.viewDeleteGeofencingMenu);
+        await expect(viewDeleteMenu).toBeVisible({ timeout: 5000 });
+        await viewDeleteMenu.click({ force: true });
+        console.log('Clicked View/Delete Geofences');
+
+        // Step 10: Wait for View Geofences modal
+        await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer)).toBeVisible({ timeout: 10000 });
+
+        // Step 11: Check the "Hide Vehicle Markers" checkbox
+        const hideVehicleMarkersCheckbox2 = page.locator('#view-delete-geofences-modal input[type="checkbox"]');
+        await expect(hideVehicleMarkersCheckbox2).toBeVisible({ timeout: 5000 });
+        await hideVehicleMarkersCheckbox2.check();
+        console.log('Checked: Hide Vehicle Markers checkbox');
+
+        // Verify checkbox is now checked
+        const isCheckedNow = await hideVehicleMarkersCheckbox2.isChecked();
+        expect(isCheckedNow).toBe(true);
+        console.log('Verified: Hide Vehicle Markers checkbox is now checked');
+
+        // Step 12: Click Submit button
+        await expect(page.locator(config.selectors.viewDeleteGeofencing.submitButton)).toBeVisible();
+        await page.locator(config.selectors.viewDeleteGeofencing.submitButton).click();
+
+        await page.waitForTimeout(3000);
+        console.log('Clicked Submit with checkbox checked');
+
+        // Step 13: Verify device marker is NOT visible
+        const deviceMarkerAfter = page.locator('.marker-info').first();
+        const isMarkerVisible = await deviceMarkerAfter.isVisible({ timeout: 5000 }).catch(() => false);
+        expect(isMarkerVisible).toBe(false);
+        console.log('Verified: Device marker is NOT visible when Hide Vehicle Markers is checked');
+
+        console.log('Hide Vehicle Markers toggle test completed successfully');
     });
 });

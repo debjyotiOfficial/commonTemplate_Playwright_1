@@ -10,7 +10,12 @@
       "Bash(timeout:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(C:/Users/debjy/AppData/Local/Programs/Python/Python313/python.exe -c \"\nimport pandas as pd\ndf = pd.read_excel\\(r''C:\\\\Users\\\\debjy\\\\Downloads\\\\New Fleet Test Cases.xlsx'', sheet_name=''Desktop''\\)\n\n# Search for Account Health Summary\nmatches = df[df[''Category''].astype\\(str\\).str.contains\\(''Account Health Summary'', case=False, na=False\\)]\nprint\\(''Found Account Health Summary entries:''\\)\nprint\\(matches[[''Test Case ID'', ''Category'', ''Scenario'', ''Test Step'']].to_string\\(\\)\\)\n\")",
+      "Bash(rm:*)",
+      "Bash(C:/Users/debjy/AppData/Local/Programs/Python/Python313/python.exe:*)"
     ],
     "deny": [],
     "ask": []
