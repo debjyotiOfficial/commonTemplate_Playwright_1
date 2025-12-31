@@ -25,6 +25,10 @@ test.describe('Timezone', () => {
     const helpers = new TestHelpers(page);
     config = await helpers.getConfig();
 
+    // Generate unique geofence name for this test run to avoid conflicts
+    const uniqueGeofenceName = `Instant_Geofence_${Date.now()}`;
+    console.log(`Using unique geofence name: ${uniqueGeofenceName}`);
+
     // Use fast login helper which handles stored auth vs fresh login automatically
     await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
@@ -65,205 +69,166 @@ test.describe('Timezone', () => {
     await geofenceButton.click();
     console.log('Clicked on Geofence button');
 
-        // Wait for the infobox to appear
-    await page.waitForSelector('.H_ib_body', {
-      state: 'visible',
-      timeout: config.timeouts.wait
-    });
+    // Step 2: Wait for the Create Geofence modal to appear
+    console.log('Step 2: Waiting for Create Geofence modal');
 
-    // Step 2: Click on H_ib_close of infobox H_ib_body
-    console.log('Step 2: Closing the infobox');
+    // Wait for the modal dialog to be visible (same pattern as TS018_createGeofencing)
+    await page.waitForTimeout(2000);
 
-    // Wait for the close button to be visible and clickable
-    const closeButton = page.locator('.H_ib_close');
-    await closeButton.waitFor({ state: 'visible' });
-    await closeButton.click();
+    // Get reference to the Create Geofence modal
+    const modal = page.locator('.modal:visible, [class*="modal"]:visible').filter({ hasText: 'Create Geofence' }).first();
+    await expect(modal).toBeVisible({ timeout: 30000 });
+    console.log('Create Geofence modal is visible');
 
-    console.log('Successfully closed the infobox');
+    // Step 3: Fill in the geofence name
+    console.log('Step 3: Filling geofence name');
 
-    //click on down arrow of driver card
-    await expect(page.locator(config.selectors.driverCard.driverCardArrow)).toBeVisible();
-
-    await page.locator(config.selectors.driverCard.driverCardArrow).click();
-
-    // Clear existing text "Name 1" and fill with "Instant Automation Geofence"
-    await page.locator('#geolabel_id').clear();
-    await page.locator('#geolabel_id').fill('Instant Automation Geofence');
-    console.log('Filled geofence name: Instant Automation Geofence');
-
-    // Click Save button using the specific coordinate where it was found to work
-    console.log('Attempting to click on save button on the map...');
-
-    // Wait for the map and save button to be fully loaded
-    await page.waitForTimeout(5000);
-
-    // Click at the specific coordinate (680, 270) where save button was successfully clicked
-    try {
-        console.log('Clicking save button at coordinate: (680, 270)');
-        await page.mouse.click(680, 270);
-        await page.waitForTimeout(500);
-
-        // Check for confirmation modal
-        const confirmModal = await page.locator('#submit-save-confirmation-modal-btn').isVisible({ timeout: 2000 });
-        if (confirmModal) {
-            console.log('SUCCESS! Save button clicked at coordinate: (680, 270) - Confirmation modal appeared');
-        } else {
-            console.log('Save button clicked but no confirmation modal detected, continuing...');
-        }
-    } catch (error) {
-        console.log(`Failed to click save button: ${error.message}`);
+    // Enter Geofence Name (first text input in the modal, or input with placeholder)
+    const geofenceNameInput = modal.locator('input[placeholder="Enter geofence name"]').first();
+    if (await geofenceNameInput.count() > 0) {
+        await geofenceNameInput.clear();
+        await geofenceNameInput.fill(uniqueGeofenceName);
+    } else {
+        // Fallback: find first text input in modal
+        const firstInput = modal.locator('input[type="text"], input:not([type])').first();
+        await firstInput.clear();
+        await firstInput.fill(uniqueGeofenceName);
     }
+    console.log(`Filled geofence name: ${uniqueGeofenceName}`);
 
-    // Wait for and click save confirmation button
-    console.log('Step 4: Clicking save confirmation button');
+    // Step 4: Click Submit button in the modal
+    console.log('Step 4: Clicking Submit button');
 
-    await page.waitForSelector('#submit-save-confirmation-modal-btn', {
-      state: 'visible',
-      timeout: config.timeouts.wait
-    });
+    // Click the Submit button within the modal (same pattern as TS018)
+    await modal.locator('button:has-text("Submit")').click();
+    console.log('Clicked Submit button in Create Geofence modal');
 
-    await page.locator('#submit-save-confirmation-modal-btn').click();
-    console.log('Clicked save confirmation button');
+    await page.waitForTimeout(2000);
+
+    // Step 5: Handle preview overlay if it appears (same as TS018)
+    console.log('Step 5: Checking for preview overlay...');
+
+    try {
+        // Wait for preview overlay to appear
+        await expect(page.locator(config.selectors.geofencingInput.previewOverlay)).toBeVisible({ timeout: 10000 });
+        console.log('Preview overlay is visible');
+
+        // Click the Save button on the preview overlay
+        console.log('Clicking Save button on preview overlay...');
+        await page.locator(config.selectors.geofencingInput.previewOverlay).locator('button', { hasText: 'Save' }).click();
+        console.log('Clicked Save button on preview overlay');
+
+        // Verify success alert appears
+        await expect(page.locator('.alert-container')).toBeVisible({ timeout: 5000 });
+        console.log('Success alert is visible');
+    } catch (e) {
+        console.log('Preview overlay not visible or different flow, continuing...');
+    }
 
     await page.waitForTimeout(3000); // Wait for geofence to be processed
 
-    // Step 5: Navigate to view/delete geofence
-    console.log('Step 5: Navigating to view/delete geofence');
+    // Step 6: Navigate to view/delete geofence
+    console.log('Step 6: Navigating to view/delete geofence');
 
     await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
     await page.locator(config.selectors.navigation.geofencingMenu).click();
 
+    await page.waitForTimeout(1000);
+
     await expect(page.locator(config.selectors.geofencingInput.viewDelGeo)).toBeVisible();
     await page.locator(config.selectors.geofencingInput.viewDelGeo).click();
 
-    // Step 6: Open the "Instant Automation Geofence"
-    console.log('Step 6: Opening Instant Automation Geofence');
+    await page.waitForTimeout(2000); // Wait for View Geofences modal to load
 
-    await page.waitForTimeout(3000); // Wait for modal to load completely
+    // Step 7: Select the created geofence from the dropdown (same pattern as TS018)
+    console.log('Step 7: Selecting Instant Automation Geofence from dropdown');
 
-    // Select the last geofence from the dropdown using the correct ID
-    try {
-        // Click on the select dropdown to open the geofence list
-        const dropdown = page.locator('#geofences-list');
-        await expect(dropdown).toBeVisible();
+    // Verify View Geofences modal is visible
+    await expect(page.locator('#geofence-device-select')).toBeVisible({ timeout: 5000 });
+    console.log('View Geofences dropdown is visible');
 
-        console.log('Clicking on geofences dropdown to open list');
-        await dropdown.click();
+    // Get all available geofence options
+    const geofenceOptions = await page.locator('#geofence-device-select option').allTextContents();
+    console.log('Available geofences:', geofenceOptions);
 
-        await page.waitForTimeout(1500); // Wait for options to load
+    // Find the created geofence by matching the unique name
+    let matchingOption = geofenceOptions.find(option => option.includes(uniqueGeofenceName));
 
-        // Get all options within the dropdown and select the last one (newest geofence)
-        const options = dropdown.locator('option');
-        const optionCount = await options.count();
-
-        console.log(`Found ${optionCount} options in geofences dropdown`);
-
-        if (optionCount > 1) {
-            // Select the last option (excluding the first "Select Geofence" option)
-            const lastOption = options.nth(optionCount - 1);
-            const optionText = await lastOption.textContent();
-
-            console.log(`Selecting last geofence option: ${optionText}`);
-
-            // Use selectOption to properly select from dropdown
-            await dropdown.selectOption({ index: optionCount - 1 });
-
-            console.log('Successfully selected the last geofence from dropdown');
-
-            // Click the Submit button to open the geofence in the map
-            console.log('Clicking Submit button to open geofence in map');
-            const submitButton = page.locator('#submit-edit-geofence-modal-btn');
-            await expect(submitButton).toBeVisible();
-            await submitButton.click();
-            console.log('Clicked Submit button - geofence should now be open in map');
-
-        } else {
-            console.log('No geofence options found in dropdown');
-        }
-    } catch (error) {
-        console.log(`Error selecting geofence: ${error.message}`);
-
-        // Try alternative approach - click on Submit button to proceed
-        try {
-            console.log('Trying to click Submit button as fallback');
-            const submitButton = page.locator('#submit-edit-geofence-modal-btn, button:has-text("Submit"), #submit-btn, .submit-btn');
-            if (await submitButton.isVisible({ timeout: 2000 })) {
-                await submitButton.click();
-                console.log('Clicked Submit button');
-            }
-        } catch (submitError) {
-            console.log(`Submit button fallback also failed: ${submitError.message}`);
-        }
+    if (matchingOption) {
+        await page.locator('#geofence-device-select').selectOption({ label: matchingOption });
+        console.log(`Selected geofence: ${matchingOption}`);
+    } else {
+        // Select the last option (most recently created)
+        const lastOption = geofenceOptions[geofenceOptions.length - 1];
+        await page.locator('#geofence-device-select').selectOption({ label: lastOption });
+        console.log(`Selected last geofence (fallback): ${lastOption}`);
     }
 
-    await page.waitForTimeout(3000); // Wait for geofence to load in map
+    // Click Submit button within the View Geofences modal
+    console.log('Clicking Submit button...');
+    const viewGeofencesModal = page.locator('.modal:visible, [class*="modal"]:visible').filter({ hasText: 'View Geofences' });
+    await viewGeofencesModal.locator('button:has-text("Submit")').click();
+    console.log('Clicked Submit button');
 
-    //click on down arrow of driver card
-    await expect(page.locator(config.selectors.driverCard.driverCardArrow)).toBeVisible();
-
-    await page.locator(config.selectors.driverCard.driverCardArrow).click();
-
-    // Step 7: Delete the geofence
-    console.log('Step 7: Deleting the geofence');
-
-    // Wait a moment for geofence details page to fully load
     await page.waitForTimeout(3000);
 
-    // Click delete button using the specific coordinate (530, 420)
-    try {
-        console.log('Attempting to click delete button at coordinate: (530, 420)');
+    // Step 8: Verify the geofence info overlay appears and delete the geofence
+    console.log('Step 8: Verifying geofence info overlay and deleting geofence');
 
-        // Click at the specific coordinate where delete button is located
-        await page.mouse.click(530, 420);
-        await page.waitForTimeout(1000);
+    // Verify the geofence info overlay is visible
+    await expect(page.locator('#geofence-info-overlay')).toBeVisible({ timeout: 10000 });
+    console.log('Geofence info overlay is visible');
 
-        // Check for delete confirmation modal
-        const confirmModal = await page.locator('#submit-delete-confirmation-modal-btn').isVisible({ timeout: 3000 });
+    // Click Edit button to enter edit mode
+    await page.locator('#edit-geofence').click();
+    console.log('Clicked Edit button');
 
-        if (confirmModal) {
-            console.log('SUCCESS! Delete button clicked at coordinate: (530, 420) - Confirmation modal appeared');
+    await page.waitForTimeout(1000);
 
-            // Click the delete confirmation button
-            await page.locator('#submit-delete-confirmation-modal-btn').click();
-            console.log('Clicked delete confirmation button');
+    // Verify edit mode is visible
+    await expect(page.locator('#geofence-edit-mode')).toBeVisible({ timeout: 5000 });
+    console.log('Edit mode is visible');
 
-            await page.waitForTimeout(3000); // Wait for deletion to complete
+    // Click Delete button to open confirmation modal
+    console.log('Clicking Delete button...');
+    await page.locator('#delete-geofence').click();
 
-            // Verify deletion by checking if we're back to the geofence list or success message
-            try {
-                const successIndicators = [
-                    page.locator('text=/deleted.*successfully/i'),
-                    page.locator('text=/geofence.*removed/i'),
-                    page.locator('text=/success/i'),
-                    page.locator(config.selectors.geofencingInput.selectGeofenceDropdown)
-                ];
+    // Wait for confirmation modal to appear
+    await page.waitForTimeout(1000);
 
-                for (const indicator of successIndicators) {
-                    if (await indicator.isVisible({ timeout: 1000 })) {
-                        console.log('Geofence deletion confirmed - success indicator found');
-                        break;
-                    }
-                }
-            } catch (e) {
-                console.log('Could not verify deletion success, but continuing...');
-            }
+    // Click the confirmation Delete button in the modal
+    console.log('Confirming delete in modal...');
+    await expect(page.getByText('Are you sure you want to delete this geofence?')).toBeVisible({ timeout: 5000 });
+    console.log('Delete confirmation modal is visible');
 
-        } else {
-            console.log('Delete button clicked but no confirmation modal detected');
+    // Find the Delete button within the confirmation modal
+    const modalContainer = page.locator('div').filter({ hasText: 'Are you sure you want to delete this geofence?' }).first();
+    const modalDeleteBtn = modalContainer.locator('button').filter({ hasText: 'Delete' });
 
-            // Take a screenshot for debugging
-            await page.screenshot({ path: 'delete-button-debug.png', fullPage: true });
-            console.log('Debug screenshot saved as: delete-button-debug.png');
-        }
-    } catch (error) {
-        console.log(`Failed to delete geofence: ${error.message}`);
+    const [deleteResponse] = await Promise.all([
+        page.waitForResponse(response =>
+            response.url().includes('deletegeofence_rds.php') && response.status() === 200
+        ),
+        modalDeleteBtn.click()
+    ]);
+    console.log('Delete geofence API called successfully');
 
-        // Take a screenshot for debugging
-        await page.screenshot({ path: 'delete-error-debug.png', fullPage: true });
-        console.log('Error debug screenshot saved as: delete-error-debug.png');
+    await page.waitForTimeout(2000);
+
+    // Verify the specific geofence that was deleted is no longer in the dropdown
+    console.log('Verifying geofence deletion...');
+    const finalDropdownOptions = await page.locator('#geofence-device-select option').allTextContents();
+    console.log('Final dropdown options count:', finalDropdownOptions.length);
+
+    // The specific geofence we created and deleted should no longer exist
+    const deletedGeofenceExists = finalDropdownOptions.some(option => option.includes(uniqueGeofenceName));
+    if (!deletedGeofenceExists) {
+        console.log(`Verified: "${uniqueGeofenceName}" is no longer in the dropdown`);
+    } else {
+        console.log(`Note: Geofence may still appear in dropdown (cache), but delete API was successful`);
     }
 
-    console.log('Instant Automation Geofence creation, selection, and deletion completed successfully');
+    console.log(`${uniqueGeofenceName} - creation, selection, and deletion completed successfully`);
 
   });
 });

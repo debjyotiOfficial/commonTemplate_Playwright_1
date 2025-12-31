@@ -62,7 +62,7 @@ test.describe('Maintainance Report', () => {
       .hover();
 
     // Click on "CSV"
-    await page.locator('#devices-panel .dropdown__content button.dropdown__item')
+    await page.locator('#maintenance-report-panel .dropdown__content button.dropdown__item')
       .filter({ hasText: 'CSV' })
       .click({ force: true });
 

@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const TestHelpers = require('../utils/test-helpers');
 
-test.describe('Weekly Utilization Report', () => {
+test.describe('Monthly Utilization Report', () => {
     let config;
     let helpers;
 
@@ -20,15 +20,15 @@ test.describe('Weekly Utilization Report', () => {
         test.setTimeout(600000); // 10 minutes for long test
     });
 
-    test('should generate and validate weekly utilization report', async ({ page }) => {
+    test('should generate and validate monthly utilization report', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
-        // ============= OPEN MENU AND NAVIGATE TO WEEKLY UTILIZATION REPORT =============
-        console.log('--- Step 1: Opening menu and navigating to Weekly Utilization Report ---');
+        // ============= OPEN MENU AND NAVIGATE TO MONTHLY UTILIZATION REPORT =============
+        console.log('--- Step 1: Opening menu and navigating to Monthly Utilization Report ---');
 
         // Wait for the platform to be fully loaded
         console.log('Waiting for platform to fully load...');
@@ -51,18 +51,18 @@ test.describe('Weekly Utilization Report', () => {
         await page.locator(config.selectors.report.analyticsSection).filter({ hasText: 'Analytics' }).click();
         await page.waitForTimeout(1000);
 
-        // Click on Weekly Utilization Report menu - this opens a NEW TAB
-        const weeklyUtilMenu = page.locator(config.selectors.weeklyUtilizationReport.weeklyUtilizationMenu);
-        await weeklyUtilMenu.scrollIntoViewIfNeeded();
+        // Click on Monthly Utilization Report menu - this opens a NEW TAB
+        const monthlyUtilMenu = page.locator(config.selectors.monthlyUtilizationReport.monthlyUtilizationMenu);
+        await monthlyUtilMenu.scrollIntoViewIfNeeded();
         await page.waitForTimeout(1000);
 
         // Ensure the element is visible and clickable
-        await expect(weeklyUtilMenu).toBeVisible({ timeout: 10000 });
-        console.log('Weekly Utilization Report menu item is visible');
+        await expect(monthlyUtilMenu).toBeVisible({ timeout: 10000 });
+        console.log('Monthly Utilization Report menu item is visible');
 
         // Get the href from the menu item and open in a new page
         let newPage;
-        const href = await weeklyUtilMenu.getAttribute('href');
+        const href = await monthlyUtilMenu.getAttribute('href');
         console.log('Menu item href:', href);
 
         if (href && href !== '#' && !href.startsWith('javascript:')) {
@@ -71,7 +71,7 @@ test.describe('Weekly Utilization Report', () => {
             const fullUrl = href.startsWith('http') ? href : new URL(href, page.url()).href;
             console.log('Navigating to:', fullUrl);
             await newPage.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-            console.log('Weekly Utilization Report page opened in new tab');
+            console.log('Monthly Utilization Report page opened in new tab');
         } else {
             // Try multiple approaches to open the report
             let reportOpened = false;
@@ -81,9 +81,9 @@ test.describe('Weekly Utilization Report', () => {
                 console.log('Trying Ctrl+Click to force open in new tab...');
                 [newPage] = await Promise.all([
                     page.context().waitForEvent('page', { timeout: 15000 }),
-                    weeklyUtilMenu.click({ modifiers: ['Control'], force: true })
+                    monthlyUtilMenu.click({ modifiers: ['Control'], force: true })
                 ]);
-                console.log('Weekly Utilization Report opened via Ctrl+Click');
+                console.log('Monthly Utilization Report opened via Ctrl+Click');
                 reportOpened = true;
             } catch (e) {
                 console.log('Ctrl+Click did not open new tab:', e.message);
@@ -95,9 +95,9 @@ test.describe('Weekly Utilization Report', () => {
                     console.log('Trying regular click with popup listener...');
                     [newPage] = await Promise.all([
                         page.context().waitForEvent('page', { timeout: 15000 }),
-                        weeklyUtilMenu.click({ force: true })
+                        monthlyUtilMenu.click({ force: true })
                     ]);
-                    console.log('Weekly Utilization Report opened via regular click');
+                    console.log('Monthly Utilization Report opened via regular click');
                     reportOpened = true;
                 } catch (e) {
                     console.log('Regular click did not open new tab:', e.message);
@@ -109,7 +109,7 @@ test.describe('Weekly Utilization Report', () => {
                 console.log('Trying to extract URL or construct report URL...');
 
                 // Try to get onclick attribute
-                const onclick = await weeklyUtilMenu.getAttribute('onclick');
+                const onclick = await monthlyUtilMenu.getAttribute('onclick');
                 console.log('onclick attribute:', onclick);
 
                 // Extract URL from onclick if it contains window.open or similar
@@ -144,7 +144,7 @@ test.describe('Weekly Utilization Report', () => {
                         console.log(`Navigation attempt ${attempt} to report URL...`);
                         await newPage.goto(reportUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
                         navSuccess = true;
-                        console.log('Weekly Utilization Report page opened via direct navigation');
+                        console.log('Monthly Utilization Report page opened via direct navigation');
                     } catch (navError) {
                         console.log(`Navigation attempt ${attempt} failed: ${navError.message}`);
                         if (attempt < 3) {
@@ -166,7 +166,7 @@ test.describe('Weekly Utilization Report', () => {
             }
 
             if (!reportOpened) {
-                throw new Error('Failed to open Weekly Utilization Report page');
+                throw new Error('Failed to open Monthly Utilization Report page');
             }
         }
 
@@ -174,31 +174,49 @@ test.describe('Weekly Utilization Report', () => {
         await newPage.waitForLoadState('domcontentloaded');
         console.log('New page loaded');
 
-        // Verify the Weekly Utilization Report container is visible on the new page
-        // await expect(newPage.locator(config.selectors.weeklyUtilizationReport.weeklyUtilizationReportContainer)).toBeVisible({ timeout: 15000 });
-        // console.log('Weekly Utilization Report panel is visible');
+        // Verify the Monthly Utilization Report container is visible on the new page
+        // await expect(newPage.locator(config.selectors.monthlyUtilizationReport.monthlyUtilizationReportContainer)).toBeVisible({ timeout: 15000 });
+        // console.log('Monthly Utilization Report panel is visible');
 
-        // ============= SELECT REPORT DURATION AND CAPTURE API RESPONSE =============
-        console.log('--- Step 2: Selecting Report Duration (Last 7 Days) and Capturing API Response ---');
+        // ============= SELECT REPORT MONTH/YEAR AND CAPTURE API RESPONSE =============
+        console.log('--- Step 2: Selecting Report Month/Year and Capturing API Response ---');
 
-        // Set up API response listener BEFORE selecting duration (report auto-generates on selection)
+        // Wait for the page to fully load by checking for key elements
+        // The title "Monthly Utilization Report" should be visible
+        const reportTitle = newPage.locator('text=Monthly Utilization Report').first();
+        await expect(reportTitle).toBeVisible({ timeout: 15000 });
+        console.log('Monthly Utilization Report page title is visible');
+
+        // Set up API response listener BEFORE selecting month (report auto-generates on selection)
         const apiResponsePromise = newPage.waitForResponse(
-            response => response.url().includes('getTrackReportGeo_Next_uti.php') && response.status() === 200,
+            response => (response.url().includes('getTrackReportGeo_Next_uti.php') || response.url().includes('utilization')) && response.status() === 200,
             { timeout: 60000 }
         );
 
-        // Select "Last 7 Days" from the duration dropdown - this triggers auto-generation
-        const durationSelect = newPage.locator('#duration');
-        await durationSelect.waitFor({ state: 'visible', timeout: 15000 });
-        await durationSelect.selectOption('7'); // Last 7 Days
-        console.log('Report Duration set to "Last 7 Days" - report auto-generating...');
+        // Get current month and year for selection
+        const currentDate = new Date();
+        const currentMonth = currentDate.toLocaleString('en-US', { month: 'long' });
+        const currentYear = currentDate.getFullYear().toString();
+
+        // Select Month from the month dropdown
+        const monthSelect = newPage.locator('select').filter({ has: newPage.locator('option', { hasText: 'January' }) }).first();
+        await monthSelect.waitFor({ state: 'visible', timeout: 15000 });
+        await monthSelect.selectOption({ label: currentMonth });
+        console.log(`Report Month set to "${currentMonth}"`);
+
+        // Select Year from the year dropdown
+        const yearSelect = newPage.locator('select').filter({ has: newPage.locator(`option[value="${currentYear}"]`) }).first();
+        if (await yearSelect.count() > 0) {
+            await yearSelect.selectOption(currentYear);
+            console.log(`Report Year set to "${currentYear}"`);
+        }
 
         // Wait for API response
         let apiResponseData = null;
         try {
             const apiResponse = await apiResponsePromise;
             apiResponseData = await apiResponse.json();
-            console.log('API Response captured from getTrackReportGeo_Next_uti.php');
+            console.log('API Response captured for Monthly Utilization Report');
         } catch (e) {
             console.log('API response timeout or error:', e.message);
         }
@@ -235,7 +253,7 @@ test.describe('Weekly Utilization Report', () => {
         console.log('Vehicle Analytics Table is visible');
 
         // Verify table body has data rows
-        const tableBody = newPage.locator(config.selectors.weeklyUtilizationReport.vehicleTableBody);
+        const tableBody = newPage.locator(config.selectors.monthlyUtilizationReport.vehicleTableBody);
         await expect(tableBody).toBeVisible();
 
         const tableRows = tableBody.locator('tr');
@@ -248,8 +266,15 @@ test.describe('Weekly Utilization Report', () => {
             const firstRow = tableRows.first();
             const cells = firstRow.locator('td');
             const driverName = await cells.nth(1).textContent();
-            const efficiencyCell = cells.nth(5);
-            const efficiencyText = await efficiencyCell.locator('small').textContent();
+            // Efficiency is in the last column (index 7) - get text directly or from small element
+            const efficiencyCell = cells.nth(7);
+            let efficiencyText = '';
+            const smallElement = efficiencyCell.locator('small');
+            if (await smallElement.count() > 0) {
+                efficiencyText = await smallElement.textContent();
+            } else {
+                efficiencyText = await efficiencyCell.textContent();
+            }
 
             console.log(`First row - Driver: ${driverName?.trim()}, Efficiency: ${efficiencyText?.trim()}`);
         }
@@ -464,74 +489,80 @@ test.describe('Weekly Utilization Report', () => {
             console.log('Hovered over efficiency tooltip icon');
         }
 
-        // ============= TEST DURATION DROPDOWN - ALL OPTIONS =============
-        console.log('--- Step 11: Testing Duration Dropdown Options ---');
+        // ============= TEST MONTH/YEAR DROPDOWN - DIFFERENT MONTHS =============
+        console.log('--- Step 11: Testing Month/Year Dropdown Options ---');
 
-        // Test Last 24 Hours option
-        console.log('Testing Last 24 Hours option...');
-        const durationDropdown = newPage.locator('#duration');
-        await expect(durationDropdown).toBeVisible();
+        // Get the month dropdown again
+        const monthDropdown = newPage.locator('select').filter({ has: newPage.locator('option', { hasText: 'January' }) }).first();
+        await expect(monthDropdown).toBeVisible();
 
-        // Set up API listener for duration change
-        const api24HoursPromise = newPage.waitForResponse(
-            response => response.url().includes('getTrackReportGeo_Next_uti.php') && response.status() === 200,
+        // Test previous month option
+        const prevMonthDate = new Date();
+        prevMonthDate.setMonth(prevMonthDate.getMonth() - 1);
+        const prevMonth = prevMonthDate.toLocaleString('en-US', { month: 'long' });
+
+        console.log(`Testing previous month: ${prevMonth}...`);
+
+        // Set up API listener for month change
+        const apiPrevMonthPromise = newPage.waitForResponse(
+            response => (response.url().includes('getTrackReportGeo_Next_uti.php') || response.url().includes('utilization')) && response.status() === 200,
             { timeout: 60000 }
         );
 
-        await durationDropdown.selectOption('1'); // Last 24 Hours
-        console.log('Selected Last 24 Hours');
+        await monthDropdown.selectOption({ label: prevMonth });
+        console.log(`Selected ${prevMonth}`);
 
         try {
-            const api24HoursResponse = await api24HoursPromise;
-            const api24HoursData = await api24HoursResponse.json();
-            console.log('API response received for Last 24 Hours');
+            const apiPrevMonthResponse = await apiPrevMonthPromise;
+            console.log(`API response received for ${prevMonth}`);
 
-            // Verify the report date updated
+            // Verify the report updated
             await newPage.waitForTimeout(2000);
-            const reportDateAfter24hrs = await newPage.locator('#reportDate').textContent();
-            console.log(`Report date after 24 Hours selection: ${reportDateAfter24hrs?.trim()}`);
+            console.log(`Report updated for ${prevMonth}`);
         } catch (e) {
-            console.log('API response timeout for 24 Hours:', e.message);
+            console.log(`API response timeout for ${prevMonth}:`, e.message);
         }
 
-        // Test Last 3 Days option
-        console.log('Testing Last 3 Days option...');
-        const api3DaysPromise = newPage.waitForResponse(
-            response => response.url().includes('getTrackReportGeo_Next_uti.php') && response.status() === 200,
+        // Test another previous month
+        const twoMonthsAgoDate = new Date();
+        twoMonthsAgoDate.setMonth(twoMonthsAgoDate.getMonth() - 2);
+        const twoMonthsAgo = twoMonthsAgoDate.toLocaleString('en-US', { month: 'long' });
+
+        console.log(`Testing two months ago: ${twoMonthsAgo}...`);
+        const apiTwoMonthsPromise = newPage.waitForResponse(
+            response => (response.url().includes('getTrackReportGeo_Next_uti.php') || response.url().includes('utilization')) && response.status() === 200,
             { timeout: 60000 }
         );
 
-        await durationDropdown.selectOption('3'); // Last 3 Days
-        console.log('Selected Last 3 Days');
+        await monthDropdown.selectOption({ label: twoMonthsAgo });
+        console.log(`Selected ${twoMonthsAgo}`);
 
         try {
-            const api3DaysResponse = await api3DaysPromise;
-            const api3DaysData = await api3DaysResponse.json();
-            console.log('API response received for Last 3 Days');
+            const apiTwoMonthsResponse = await apiTwoMonthsPromise;
+            console.log(`API response received for ${twoMonthsAgo}`);
 
             await newPage.waitForTimeout(2000);
-            const reportDateAfter3Days = await newPage.locator('#reportDate').textContent();
-            console.log(`Report date after 3 Days selection: ${reportDateAfter3Days?.trim()}`);
+            console.log(`Report updated for ${twoMonthsAgo}`);
         } catch (e) {
-            console.log('API response timeout for 3 Days:', e.message);
+            console.log(`API response timeout for ${twoMonthsAgo}:`, e.message);
         }
 
-        // Reset to Last 7 Days
-        console.log('Resetting to Last 7 Days...');
-        const api7DaysPromise = newPage.waitForResponse(
-            response => response.url().includes('getTrackReportGeo_Next_uti.php') && response.status() === 200,
+        // Reset to current month
+        console.log(`Resetting to current month: ${currentMonth}...`);
+        const apiCurrentMonthPromise = newPage.waitForResponse(
+            response => (response.url().includes('getTrackReportGeo_Next_uti.php') || response.url().includes('utilization')) && response.status() === 200,
             { timeout: 60000 }
         );
 
-        await durationDropdown.selectOption('7'); // Last 7 Days
-        console.log('Selected Last 7 Days');
+        await monthDropdown.selectOption({ label: currentMonth });
+        console.log(`Selected ${currentMonth}`);
 
         try {
-            await api7DaysPromise;
-            console.log('API response received for Last 7 Days');
+            await apiCurrentMonthPromise;
+            console.log(`API response received for ${currentMonth}`);
             await newPage.waitForTimeout(2000);
         } catch (e) {
-            console.log('API response timeout for 7 Days:', e.message);
+            console.log(`API response timeout for ${currentMonth}:`, e.message);
         }
 
         // ============= VERIFY TOTAL TRACKERS MODAL =============
@@ -568,7 +599,7 @@ test.describe('Weekly Utilization Report', () => {
         expect(driverRowCount).toBeGreaterThan(0);
 
         // Verify search functionality in trackers modal
-        const trackersSearchInput = newPage.locator(config.selectors.weeklyUtilizationReport.searchDriver);
+        const trackersSearchInput = newPage.locator(config.selectors.monthlyUtilizationReport.searchDriver);
         if (await trackersSearchInput.count() > 0) {
             await trackersSearchInput.fill('Sales');
             await newPage.waitForTimeout(1000);
@@ -596,7 +627,7 @@ test.describe('Weekly Utilization Report', () => {
             console.log('Clicked on device row to open Device Modal');
 
             // Wait for device modal to appear
-            const deviceModal = newPage.locator(config.selectors.weeklyUtilizationReport.deviceModal);
+            const deviceModal = newPage.locator(config.selectors.monthlyUtilizationReport.deviceModal);
             await expect(deviceModal).toBeVisible({ timeout: 10000 });
             console.log('Device Modal is visible');
 
@@ -612,7 +643,7 @@ test.describe('Weekly Utilization Report', () => {
             const deviceIdText = await modalDeviceId.textContent();
             console.log(`Device ID: ${deviceIdText?.trim()}`);
 
-            const modalDriverName = newPage.locator(config.selectors.weeklyUtilizationReport.modalDriverName);
+            const modalDriverName = newPage.locator(config.selectors.monthlyUtilizationReport.modalDriverName);
             await expect(modalDriverName).toBeVisible();
             const driverNameText = await modalDriverName.textContent();
             console.log(`Driver Name: ${driverNameText?.trim()}`);
@@ -678,7 +709,7 @@ test.describe('Weekly Utilization Report', () => {
             }
 
             // Close the device modal
-            const closeDeviceModalBtn = newPage.locator(config.selectors.weeklyUtilizationReport.deviceModalcloseButton);
+            const closeDeviceModalBtn = newPage.locator(config.selectors.monthlyUtilizationReport.deviceModalcloseButton);
             await closeDeviceModalBtn.click();
             await expect(deviceModal).not.toBeVisible({ timeout: 5000 });
             console.log('Device Modal closed');
@@ -692,7 +723,7 @@ test.describe('Weekly Utilization Report', () => {
         const headerCount = await tableHeaders.count();
         console.log(`Vehicle Analytics Table has ${headerCount} columns`);
 
-        const expectedHeaders = ['IMEI', 'Driver Name', 'Current Landmark', 'Time In Landmark', 'Status', 'Efficiency'];
+        const expectedHeaders = ['IMEI', 'Driver Name', 'Current Landmark', 'Time In Landmark', 'Status', 'Moving Time', 'Stopped Time', 'Efficiency'];
         for (let i = 0; i < expectedHeaders.length && i < headerCount; i++) {
             const headerText = await tableHeaders.nth(i).textContent();
             console.log(`Column ${i + 1}: ${headerText?.trim()}`);
@@ -702,7 +733,7 @@ test.describe('Weekly Utilization Report', () => {
         // ============= VERIFY TABLE SEARCH FUNCTIONALITY =============
         console.log('--- Step 15: Verifying Table Search Functionality ---');
 
-        const vehicleSearchInput = newPage.locator(config.selectors.weeklyUtilizationReport.vehicleSearchInput);
+        const vehicleSearchInput = newPage.locator(config.selectors.monthlyUtilizationReport.vehicleSearchInput);
         await expect(vehicleSearchInput).toBeVisible();
 
         // Search for a specific driver
@@ -935,7 +966,7 @@ test.describe('Weekly Utilization Report', () => {
         // ============= VERIFY REPORT DATE DISPLAY =============
         console.log('--- Step 21: Verifying Report Date Display ---');
 
-        const reportDate = newPage.locator(config.selectors.weeklyUtilizationReport.reportDate);
+        const reportDate = newPage.locator(config.selectors.monthlyUtilizationReport.reportDate);
         await expect(reportDate).toBeVisible();
         const reportDateText = await reportDate.textContent();
         console.log(`Report Date: ${reportDateText?.trim()}`);
@@ -944,7 +975,7 @@ test.describe('Weekly Utilization Report', () => {
         // ============= VERIFY REPORT CONTAINER STYLING =============
         console.log('--- Step 22: Verifying Report Container Styling ---');
 
-        const reportContainer = newPage.locator(config.selectors.weeklyUtilizationReport.report_container);
+        const reportContainer = newPage.locator(config.selectors.monthlyUtilizationReport.report_container);
         await expect(reportContainer).toBeVisible();
         console.log('Report container is visible');
 
@@ -1025,6 +1056,6 @@ test.describe('Weekly Utilization Report', () => {
 
         // Close the new page when done
         await newPage.close();
-        console.log('Weekly Utilization Report test completed successfully!');
+        console.log('Monthly Utilization Report test completed successfully!');
     });
 });

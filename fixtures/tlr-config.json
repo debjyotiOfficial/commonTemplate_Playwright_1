@@ -699,6 +699,24 @@
         "vehicleSearchInput": "#vehicleAnalyticsTable_filter input[type=\"search\"]",
         "vehicleTableBody": "#vehicleTableBody"
       },
+      "monthlyUtilizationReport": {
+        "monthlyUtilizationMenu": "#vehicle-utilization-report-btn",
+        "monthlyUtilizationReportContainer": ".report-container",
+        "viewAlertSettingsButton": "#viewAlertSettings",
+        "alertSettingsContainer": "#container_Alerts",
+        "saveAlertChangesButton": "#saveAlertChanges",
+        "reportDate": "#reportDate",
+        "totalTrackers": "#totalTrackers",
+        "trackersModal": "#trackersModal",
+        "searchDriver": "#trackersModal input[aria-controls='driversTable']",
+        "trackersTableBody": "#trackersTableBody",
+        "deviceModal": "#deviceModal",
+        "deviceModalcloseButton": "#deviceModal .btn-close",
+        "modalDriverName": "#modalDriverName",
+        "report_container": ".report-container",
+        "vehicleSearchInput": "#vehicleAnalyticsTable_filter input[type=\"search\"]",
+        "vehicleTableBody": "#vehicleTableBody"
+      },
       "subGroup": {
         "subgroupsMenu": "#subgroups-btn",
         "subgroupsContainer": "#subgroups-panel",
