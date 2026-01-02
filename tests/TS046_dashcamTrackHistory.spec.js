@@ -59,7 +59,10 @@ test.describe('Dashcam Track History', () => {
         await page.locator('#dashcam-track-history-date-range-picker').click({ force: true });
 
         // Navigate to 2025 (data year) since calendar defaults to current year (2026)
-        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        const yearInput = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+        await yearInput.click();
+        await yearInput.fill('2025');
+        await yearInput.press('Enter');
         await page.waitForTimeout(500);
 
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('December');

@@ -43,7 +43,10 @@ test.describe('Track History Tests', () => {
             await page.locator('#track-history-date-range-picker').click();
 
             // Navigate to 2025 (data year) since calendar defaults to current year (2026)
-            await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+            const yearInput = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+            await yearInput.click();
+            await yearInput.fill('2025');
+            await yearInput.press('Enter');
             await page.waitForTimeout(500);
 
             await page.selectOption('.flatpickr-calendar.open .flatpickr-monthDropdown-months', 'August');
@@ -447,7 +450,10 @@ test.describe('Track History Tests', () => {
         await page.locator('input#track-history-date-range-picker').click();
 
         // Navigate to 2025 (data year) since calendar defaults to current year (2026)
-        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        const yearInput2 = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+        await yearInput2.click();
+        await yearInput2.fill('2025');
+        await yearInput2.press('Enter');
         await page.waitForTimeout(500);
 
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('June');
