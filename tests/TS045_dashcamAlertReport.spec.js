@@ -48,6 +48,10 @@ test.describe('Dashcam Alert Report', () => {
         // Date selection
         await page.locator('#dashcam-alert-report-panel-calendar-btn').click({ force: true });
 
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('May');
 
         // Select May 23, 2025

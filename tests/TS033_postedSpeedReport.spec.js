@@ -81,6 +81,11 @@ test.describe('Posted Speed Report', () => {
             await page.locator(config.selectors.postedSpeedReport.DateInput).click({ force: true });
             await page.waitForSelector('.flatpickr-calendar.open', { timeout: 5000 });
         }
+
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('July');
 
         // Select July 1, 2025

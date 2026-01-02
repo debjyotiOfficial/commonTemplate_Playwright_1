@@ -43,12 +43,16 @@ test.describe('Idling Report', () => {
         // Date selection
         await page.locator('#idling-report-panel-calendar-btn').scrollIntoViewIfNeeded();
         await page.locator('#idling-report-panel-calendar-btn').click({ force: true });
-        
+
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('July');
-        
+
         // Select July 1, 2025
         await page.locator('.flatpickr-day[aria-label="July 1, 2025"]').click({ force: true });
-        
+
         // Select July 10, 2025 (as end date)
         await page.locator('.flatpickr-day[aria-label="July 10, 2025"]').click({ force: true });
         

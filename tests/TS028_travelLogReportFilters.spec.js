@@ -51,6 +51,13 @@ test.describe('Travel Log Report - Filters', () => {
         });
         await page.waitForTimeout(1000);
 
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        const yearInput = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+        await yearInput.click();
+        await yearInput.fill('2025');
+        await yearInput.press('Enter');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('December');
         await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="December 1, 2025"]').click({ force: true });
         await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="December 3, 2025"]').click({ force: true });

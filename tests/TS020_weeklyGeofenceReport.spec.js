@@ -95,6 +95,14 @@ test.describe('Weekly Geofencing reports', () => {
             const isCalendarVisible = await flatpickrCalendar.isVisible();
 
             if (isCalendarVisible) {
+                // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+                const yearInput = flatpickrCalendar.locator('.numInputWrapper .cur-year');
+                if (await yearInput.isVisible()) {
+                    await yearInput.fill('2025');
+                    await page.waitForTimeout(500);
+                    console.log(' Year selected: 2025');
+                }
+
                 // Select month using index (5 = June, 0-indexed)
                 const monthDropdown = flatpickrCalendar.locator('.flatpickr-monthDropdown-months');
                 if (await monthDropdown.isVisible()) {

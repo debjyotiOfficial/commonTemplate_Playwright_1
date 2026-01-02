@@ -93,6 +93,10 @@ test.describe('Utilization Report', () => {
         // Click the date range picker to open the calendar
         await page.locator(config.selectors.UtilizationReport.datePicker).click();
 
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('June');
 
         // Select the 1st of June 2025

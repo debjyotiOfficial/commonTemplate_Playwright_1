@@ -97,6 +97,18 @@ test.describe('After Hour Insight', () => {
         }
 
         if (calendarFound) {
+            // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+            try {
+                const yearInput = page.locator(`${calendarSelector} .numInputWrapper .cur-year`).first();
+                if (await yearInput.isVisible({ timeout: 3000 }).catch(() => false)) {
+                    await yearInput.fill('2025');
+                    await page.waitForTimeout(500);
+                    console.log('Year set to 2025');
+                }
+            } catch (e) {
+                console.log('Year selection failed:', e.message);
+            }
+
             // Select month - use try-catch for different calendar structures
             try {
                 const monthDropdown = page.locator(`${calendarSelector} .flatpickr-monthDropdown-months, ${calendarSelector} select.flatpickr-monthDropdown-months`).first();

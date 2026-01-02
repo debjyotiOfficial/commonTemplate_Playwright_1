@@ -41,12 +41,17 @@ test.describe('Track History Tests', () => {
         // await page.locator('.flatpickr-day[aria-label="August 3, 2025"]').click({ force: true });
 
             await page.locator('#track-history-date-range-picker').click();
+
+            // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+            await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+            await page.waitForTimeout(500);
+
             await page.selectOption('.flatpickr-calendar.open .flatpickr-monthDropdown-months', 'August');
 
-            // Select August 10, 2025
+            // Select August 1, 2025
             await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="August 1, 2025"]').click({ force: true });
 
-            // Select August 15, 2025 (as end date)
+            // Select August 3, 2025 (as end date)
             await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="August 3, 2025"]').click({ force: true });
 
         
@@ -441,13 +446,17 @@ test.describe('Track History Tests', () => {
         // Click the date picker input
         await page.locator('input#track-history-date-range-picker').click();
 
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('June');
 
         // Select June 1, 2025
-        await page.locator('.flatpickr-day[aria-label="June 1, 2025"]').click({ force: true });
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="June 1, 2025"]').click({ force: true });
 
         // Select June 10, 2025 (as end date)
-        await page.locator('.flatpickr-day[aria-label="June 10, 2025"]').click({ force: true });
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="June 10, 2025"]').click({ force: true });
 
         // Submit June data
         await expect(page.locator(config.selectors.trackHistoryReport.submitButton)).toBeVisible();

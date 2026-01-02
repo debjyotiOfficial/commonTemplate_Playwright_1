@@ -89,6 +89,11 @@ test.describe('Last 24 Hours', () => {
         const datePickerInput = page.locator('#travel-log-report-panel #date-range-picker');
         await expect(datePickerInput).toBeVisible({ timeout: 15000 });
         await datePickerInput.click();
+
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('June');
         await page.locator('.flatpickr-day[aria-label="June 1, 2025"]').click();
         await page.locator('.flatpickr-day[aria-label="June 2, 2025"]').click();
@@ -369,6 +374,11 @@ test.describe('Last 24 Hours', () => {
         const datePickerInput = page.locator('#travel-log-report-panel #date-range-picker');
         await expect(datePickerInput).toBeVisible({ timeout: 15000 });
         await datePickerInput.click();
+
+        // Navigate to 2025 (data year) since calendar defaults to current year (2026)
+        await page.locator('.flatpickr-calendar.open .numInputWrapper .cur-year').fill('2025');
+        await page.waitForTimeout(500);
+
         await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('June');
         await page.locator('.flatpickr-day[aria-label="June 1, 2025"]').click();
         await page.locator('.flatpickr-day[aria-label="June 2, 2025"]').click();
