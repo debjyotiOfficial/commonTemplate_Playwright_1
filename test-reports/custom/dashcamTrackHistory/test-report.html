@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - dashcamTrackHistory - 27/12/2025</title>
+    <title>Test Report - dashcamTrackHistory - 3/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: dashcamTrackHistory</div>
             <div class="subtitle">
-                Generated: 27/12/2025, 2:20:40 am |
-                Duration: 61.52s |
+                Generated: 3/1/2026, 2:09:51 am |
+                Duration: 824.43s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -292,7 +292,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>54.51s</strong></td>
+                        <td><strong>74.45s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -346,7 +346,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS046-A","module":"Dashcam Track History","description":"displays dashcam track history with different tracking options","status":"PASSED","duration":"54.51s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS046-A","module":"Dashcam Track History","description":"displays dashcam track history with different tracking options","status":"PASSED","duration":"74.45s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -363,7 +363,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-26.csv';
+            link.download = 'test-report-2026-01-02.csv';
             link.click();
         }
     </script>

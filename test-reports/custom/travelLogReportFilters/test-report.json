@@ -1,0 +1,142 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 163285,
+    "startTime": "2026-01-02T17:28:38.676Z",
+    "endTime": "2026-01-02T17:31:21.961Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS028-A",
+      "module": "Travel Log Report - Filters",
+      "title": "should verify Geofence Events checkbox functionality",
+      "description": "should verify Geofence Events checkbox functionality",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 151429,
+      "failureReason": "Error: expect(received).toBeFalsy()",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "true",
+        "timeout": null,
+        "file": "TS028_travelLogReportFilters.spec.js",
+        "line": 84,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBeFalsy()",
+        "fullMessage": "Error: expect(received).toBeFalsy()\n\nReceived: true",
+        "stackTrace": "Error: expect(received).toBeFalsy()\n\nReceived: true\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReportFilters.spec.js:183:46"
+      },
+      "videoPath": "videos/TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm",
+      "videoIdentifier": "TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Geofence Events checkbox functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence Events checkbox initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Geofence Events checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Geofence In events are visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 0 Geofence In events",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: No Geofence In events in current data set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unchecking Geofence Events checkbox...",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T17:28:50.236Z",
+      "endTime": "2026-01-02T17:31:21.666Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReportFilters.spec.js",
+      "fileName": "TS028_travelLogReportFilters",
+      "line": 84
+    }
+  ]
+}

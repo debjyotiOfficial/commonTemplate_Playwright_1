@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 118966,
-    "startTime": "2025-12-07T15:10:56.713Z",
-    "endTime": "2025-12-07T15:12:55.679Z"
+    "duration": 1184034,
+    "startTime": "2026-01-02T17:39:35.802Z",
+    "endTime": "2026-01-02T17:59:19.836Z"
   },
   "tests": [
     {
@@ -16,12 +16,42 @@
       "description": "should generate and validate trip report",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 112469,
+      "duration": 125861,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
       "videoIdentifier": "N/A",
       "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
         {
           "number": "",
           "text": "Step 1: Login and navigate to fleet dashboard",
@@ -30,13 +60,19 @@
         },
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Using stored authentication session (skipping login)...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
           "status": "info",
           "type": "log"
         },
@@ -209,8 +245,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-07T15:11:02.472Z",
-      "endTime": "2025-12-07T15:12:54.941Z",
+      "startTime": "2026-01-02T17:39:47.718Z",
+      "endTime": "2026-01-02T17:41:53.579Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS034_tripReport.spec.js",
       "fileName": "TS034_tripReport",

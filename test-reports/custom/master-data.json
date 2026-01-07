@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-28T09:23:17.104Z",
+  "lastUpdated": "2026-01-07T19:16:41.726Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 786,
+      "duration": 1654,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,13 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 9 minutes). Skipping login.",
+          "text": "Valid authentication session found (age: 57 minutes). Skipping login.",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-28T09:06:37.532Z",
-      "endTime": "2025-12-28T09:06:38.318Z",
+      "startTime": "2026-01-07T19:00:15.446Z",
+      "endTime": "2026-01-07T19:00:17.100Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -238,108 +238,15 @@
     {
       "testCaseNo": "TS002-A",
       "module": "Add edit Device",
-      "title": "should add/edit a device",
-      "description": "should add/edit a device",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 94364,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "'.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first(",
-        "expected": "Element should be visible on page",
-        "actual": "<element(s) not found>",
-        "timeout": "10s",
-        "file": "TS002_addEditDevices.spec.js",
-        "line": 36,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js:77:41"
-      },
-      "videoPath": "videos/TS002_addEditDevices-should-add-edit-a-device.webm",
-      "videoIdentifier": "TS002_addEditDevices-should-add-edit-a-device.webm",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T23:01:42.751Z",
-      "endTime": "2025-12-15T23:03:17.115Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
-      "fileName": "TS002_addEditDevices",
-      "line": 36
-    },
-    {
-      "testCaseNo": "TS002-B",
-      "module": "Add edit Device",
       "title": "should add device with custom icon",
       "description": "should add device with custom icon",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 84336,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "'.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first(",
-        "expected": "Element should be visible on page",
-        "actual": "<element(s) not found>",
-        "timeout": "10s",
-        "file": "TS002_addEditDevices.spec.js",
-        "line": 347,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js:399:41"
-      },
-      "videoPath": "videos/TS002_addEditDevices-should-add-device-with-custom-icon.webm",
-      "videoIdentifier": "TS002_addEditDevices-should-add-device-with-custom-icon.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 239543,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -385,17 +292,245 @@
         },
         {
           "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 7 IMEI options available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name entered: CustomIconDevice",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "getCustomIconAll.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Add Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device added successfully with IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device selected in Edit tab: CustomIconDevice (IMEI: 861492065082189)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name changed to: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response timeout, but continuing as icons may have loaded...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device updated successfully: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device selected for removal (IMEI: 861492065082189)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete confirmation clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device removed successfully: CustomIconDeviceEdited (IMEI: 861492065082189)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon device add/edit/remove test completed successfully",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T23:03:24.406Z",
-      "endTime": "2025-12-15T23:04:48.742Z",
+      "startTime": "2026-01-07T19:00:19.712Z",
+      "endTime": "2026-01-07T19:04:19.255Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
       "fileName": "TS002_addEditDevices",
-      "line": 347
+      "line": 394
     },
     {
       "testCaseNo": "TS005-A",
@@ -3104,7 +3239,7 @@
       "description": "should be able to create new Landmark",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 89282,
+      "duration": 113686,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -3148,7 +3283,7 @@
         },
         {
           "number": "",
-          "text": "Using unique landmark name: AutoTest_Landmark_1765912618501",
+          "text": "Using unique landmark name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -3161,6 +3296,12 @@
         {
           "number": "",
           "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
           "status": "info",
           "type": "log"
         },
@@ -3208,7 +3349,7 @@
         },
         {
           "number": "",
-          "text": "Entered landmark name: AutoTest_Landmark_1765912618501",
+          "text": "Entered landmark name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -3250,7 +3391,7 @@
         },
         {
           "number": "",
-          "text": "Preview Name: AutoTest_Landmark_1765912618501",
+          "text": "Preview Name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -3346,91 +3487,13 @@
         },
         {
           "number": "",
-          "text": "\u001b[32m'Wrightsdown (85CX8737+4R)'\u001b[39m,",
+          "text": "\u001b[32m'AutoTest_Landmark_1767804548243 (San Ramon, CA, United States)'\u001b[39m",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "\u001b[32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'DtestLa (san ramon)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'rrLand (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'dtestt (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'\u001b[39m",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)",
+          "text": "Selected landmark: AutoTest_Landmark_1767804548243 (San Ramon, CA, United States)",
           "status": "info",
           "type": "log"
         },
@@ -3466,7 +3529,7 @@
         },
         {
           "number": "",
-          "text": "Displayed landmark name: AutoTest_Landmark_1765912618501",
+          "text": "Displayed landmark name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -3502,7 +3565,7 @@
         },
         {
           "number": "",
-          "text": "Edited landmark name to: AutoTest_Landmark_1765912618501_Edited",
+          "text": "Edited landmark name to: AutoTest_Landmark_1767804548243_Edited",
           "status": "info",
           "type": "log"
         },
@@ -3544,7 +3607,7 @@
         },
         {
           "number": "",
-          "text": "Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited",
+          "text": "Updated landmark name displayed: AutoTest_Landmark_1767804548243_Edited",
           "status": "info",
           "type": "log"
         },
@@ -3621,95 +3684,1160 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-16T19:16:58.407Z",
-      "endTime": "2025-12-16T19:18:27.689Z",
+      "startTime": "2026-01-07T16:49:08.106Z",
+      "endTime": "2026-01-07T16:51:01.792Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS024_createLandmark.spec.js",
       "fileName": "TS024_createLandmark",
       "line": 23
     },
     {
+      "testCaseNo": "TS026-A",
+      "module": "view edit landmark",
+      "title": "should be able to view, edit and delete landmark",
+      "description": "should be able to view, edit and delete landmark",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 128387,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No landmarks exist - need to create one first",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No landmarks found, creating one first...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Creating landmark: AutoTest_ViewEdit_1767809048040",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Landmark - Attempt 1: Trying to open modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Landmark modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered landmark name: AutoTest_ViewEdit_1767809048040",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered address: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected address suggestion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "View Landmarks modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map loaded, looking for landmark marker...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Label not found, trying .landmark-marker or .geofence-marker...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for landmark info overlay...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark info overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated landmark name to: AutoTest_Landmark_Edited_1767809092965",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated landmark radius to: 500",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked save button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/SaveData_RDS/updatelandmark.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Get Landmark API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getLandmarks.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark edit completed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked edit button again for delete",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked delete button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for delete confirmation modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Confirmed deletion by clicking Delete button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/SaveData_RDS/deletelandmark.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Get Landmark API called after delete: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getLandmarks.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying deleted landmark is not in API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Verified: \"AutoTest_Landmark_Edited_1767809092965\" is not in the landmark list",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying deleted landmark is not in UI dropdown...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark deletion completed and verified successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-07T18:02:59.858Z",
+      "endTime": "2026-01-07T18:05:08.245Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS026_viewEditLandmark.spec.js",
+      "fileName": "TS026_viewEditLandmark",
+      "line": 238
+    },
+    {
+      "testCaseNo": "TS026-B",
+      "module": "view edit landmark",
+      "title": "should be able to toggle Hide Vehicle Markers for landmarks",
+      "description": "should be able to toggle Hide Vehicle Markers for landmarks",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 125985,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PART 1: Testing with Hide Vehicle Markers UNCHECKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No landmarks exist - need to create one first",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No landmarks found, creating one first...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Creating landmark: AutoTest_ViewEdit_1767809170459",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Landmark - Attempt 1: Trying to open modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Create Landmark modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered landmark name: AutoTest_ViewEdit_1767809170459",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered address: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected address suggestion",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered radius: 600",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview overlay is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Landmark saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Hide Vehicle Markers checkbox is initially unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit with checkbox unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "No device markers visible in current view - this is expected if no vehicles in landmark area",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked close button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PART 2: Testing with Hide Vehicle Markers CHECKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Attempt 1: Trying to open View/Edit Landmarks modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Force click did not open modal, trying JavaScript click...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked View/Edit Landmarks",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checked: Hide Vehicle Markers checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Hide Vehicle Markers checkbox is now checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit with checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: No device markers visible when Hide Vehicle Markers is checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Hide Vehicle Markers toggle test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-07T18:05:08.302Z",
+      "endTime": "2026-01-07T18:07:14.288Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS026_viewEditLandmark.spec.js",
+      "fileName": "TS026_viewEditLandmark",
+      "line": 451
+    },
+    {
+      "testCaseNo": "TS027-A",
+      "module": "Track History Tests",
+      "title": "should verify HERE Maps car marker animation functionality",
+      "description": "should verify HERE Maps car marker animation functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 224130,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Track History Length: 14 Stops",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING HERE MAPS CAR MARKER ANIMATION ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PAUSE BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ RESUME BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SPEED UP BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SPEED DOWN BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ RESTART BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SEGMENT 2 SELECTED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SEGMENT 1 SELECTED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING WITH DIFFERENT DATE RANGE (JUNE DATA) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "June Track History Length: 54 Stops",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Complete car marker animation test finished",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== ALL TESTS COMPLETED IN SINGLE SESSION ===",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T20:02:21.892Z",
+      "endTime": "2026-01-02T20:06:06.022Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS027_trackHistory.spec.js",
+      "fileName": "TS027_trackHistory",
+      "line": 23
+    },
+    {
       "testCaseNo": "TS028-A",
-      "module": "Travel Log Report",
-      "title": "should display TLR",
-      "description": "should display TLR",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2025-12-26T22:34:54.035Z",
-      "endTime": "2025-12-26T22:34:54.035Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 80
-    },
-    {
-      "testCaseNo": "TS028-B",
-      "module": "Travel Log Report",
-      "title": "should verify Engine Idling checkbox functionality",
-      "description": "should verify Engine Idling checkbox functionality",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2025-12-26T22:34:54.036Z",
-      "endTime": "2025-12-26T22:34:54.036Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 553
-    },
-    {
-      "testCaseNo": "TS028-C",
-      "module": "Travel Log Report",
-      "title": "should verify search functionality in TLR",
-      "description": "should verify search functionality in TLR",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2025-12-26T22:34:54.036Z",
-      "endTime": "2025-12-26T22:34:54.036Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 678
-    },
-    {
-      "testCaseNo": "TS028-D",
       "module": "Travel Log Report",
       "title": "should verify Frequent Stops functionality with API validation",
       "description": "should verify Frequent Stops functionality with API validation",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 118142,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Frequent Stops functionality with API validation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Loading Modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal title shows \"Loading Travel Report...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading time estimate: ⏱️ Loading 3 days of data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal shows correct \"3 days\" estimate",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: [{\"id\":160833,\"idIndex\":0,\"date\":\"12/01/2025\",\"duration\":355,\"time\":\"02:08 AM\",\"lat\":\"33.624222\",\"lng\":\"-111.840185\",\"location\":\"\",\"tripType\":\"\",\"battery\":\"12\",\"speed\":\"0.0\",\"mileage\":\"1166.238\",\"dire...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal disappeared after data loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API response matches table data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 76 rows in Frequent Stops table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API returned 76 records",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 1: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Frequent Stops table data matches API response",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sort functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Time column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Search functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "DataTables filter not found, using general search input",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total visible rows before search: 76",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"02:08 AM\"...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 visible rows after searching \"02:08 AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search filtered results: 1 rows (down from 76)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 1 rows containing \"02:08 AM\" out of 1 visible rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 76 rows returned after clearing search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Export functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ \"Save file as\" dropdown button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Excel export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dropdown content is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Excel file downloaded: track_frequent_stops.xlsx",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing CSV export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV file downloaded: track_frequent_stops.csv",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing PDF export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF file downloaded: track_frequent_stops.pdf",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All export buttons (Excel, CSV, PDF) verified in Frequent Stops tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Frequent Stops functionality test completed!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T20:14:30.600Z",
+      "endTime": "2026-01-02T20:16:28.743Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 829
+    },
+    {
+      "testCaseNo": "TS028-A",
+      "module": "Travel Log Report - Filters",
+      "title": "should verify Geofence Events checkbox functionality",
+      "description": "should verify Geofence Events checkbox functionality",
       "status": "failed",
       "statusDisplay": "FAILED",
-      "duration": 0,
-      "failureReason": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
+      "duration": 151429,
+      "failureReason": "Error: expect(received).toBeFalsy()",
       "parsedError": {
-        "type": "Unknown Error",
+        "type": "Assertion Failed",
         "element": null,
-        "expected": null,
-        "actual": null,
+        "expected": "Values should be equal",
+        "actual": "true",
         "timeout": null,
-        "file": "TS028_travelLogReport.spec.js",
-        "line": 815,
-        "suggestion": null,
-        "cleanMessage": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
-        "fullMessage": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
-        "stackTrace": ""
+        "file": "TS028_travelLogReportFilters.spec.js",
+        "line": 84,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBeFalsy()",
+        "fullMessage": "Error: expect(received).toBeFalsy()\n\nReceived: true",
+        "stackTrace": "Error: expect(received).toBeFalsy()\n\nReceived: true\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReportFilters.spec.js:183:46"
       },
+      "videoPath": "videos/TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm",
+      "videoIdentifier": "TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Geofence Events checkbox functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence Events checkbox initial state: unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Geofence Events checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Geofence In events are visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 0 Geofence In events",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: No Geofence In events in current data set",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unchecking Geofence Events checkbox...",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T17:28:50.236Z",
+      "endTime": "2026-01-02T17:31:21.666Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReportFilters.spec.js",
+      "fileName": "TS028_travelLogReportFilters",
+      "line": 84
+    },
+    {
+      "testCaseNo": "TS030-A",
+      "module": "Mileage Report",
+      "title": "should display start and end mileage of devices",
+      "description": "should display start and end mileage of devices",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 88195,
+      "failureReason": "",
+      "parsedError": null,
       "videoPath": null,
       "videoIdentifier": "N/A",
       "steps": [
@@ -3768,12 +4896,12 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-26T22:36:43.816Z",
-      "endTime": "2025-12-26T22:36:43.816Z",
+      "startTime": "2026-01-02T20:20:55.605Z",
+      "endTime": "2026-01-02T20:22:23.800Z",
       "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 815
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS030_mileageReport.spec.js",
+      "fileName": "TS030_mileageReport",
+      "line": 23
     },
     {
       "testCaseNo": "TS032-A",
@@ -4157,12 +5285,42 @@
       "description": "should generate and validate trip report",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 112469,
+      "duration": 125861,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
       "videoIdentifier": "N/A",
       "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
         {
           "number": "",
           "text": "Step 1: Login and navigate to fleet dashboard",
@@ -4171,13 +5329,19 @@
         },
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Using stored authentication session (skipping login)...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
           "status": "info",
           "type": "log"
         },
@@ -4350,8 +5514,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-07T15:11:02.472Z",
-      "endTime": "2025-12-07T15:12:54.941Z",
+      "startTime": "2026-01-02T17:39:47.718Z",
+      "endTime": "2026-01-02T17:41:53.579Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS034_tripReport.spec.js",
       "fileName": "TS034_tripReport",
@@ -4793,7 +5957,7 @@
       "description": "displays dashcam track history with different tracking options",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 54514,
+      "duration": 74447,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -4878,12 +6042,237 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-26T20:49:44.874Z",
-      "endTime": "2025-12-26T20:50:39.388Z",
+      "startTime": "2026-01-02T20:26:14.008Z",
+      "endTime": "2026-01-02T20:27:28.455Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS046_dashcamTrackHistory.spec.js",
       "fileName": "TS046_dashcamTrackHistory",
       "line": 23
+    },
+    {
+      "testCaseNo": "TS047-A",
+      "module": "Dashcam Alert Settings",
+      "title": "should verify alert settings panel and save settings",
+      "description": "should verify alert settings panel and save settings",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 64348,
+      "failureReason": "Error: locator.check: Element is not visible",
+      "parsedError": {
+        "type": "Unknown Error",
+        "element": "#select-all-alerts",
+        "expected": null,
+        "actual": null,
+        "timeout": null,
+        "file": "TS047_dashcamAlertSettings.spec.js",
+        "line": 57,
+        "suggestion": null,
+        "cleanMessage": "Error: locator.check: Element is not visible",
+        "fullMessage": "Error: locator.check: Element is not visible\nCall log:\n  - waiting for locator('#select-all-alerts').first()\n    - locator resolved to <input type=\"checkbox\" id=\"select-all-alerts\"/>\n  - attempting click action\n    - scrolling into view if needed\n",
+        "stackTrace": "Error: locator.check: Element is not visible\nCall log:\n  - waiting for locator('#select-all-alerts').first()\n    - locator resolved to <input type=\"checkbox\" id=\"select-all-alerts\"/>\n  - attempting click action\n    - scrolling into view if needed\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js:78:37"
+      },
+      "videoPath": "videos/TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm",
+      "videoIdentifier": "TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-05T23:08:20.022Z",
+      "endTime": "2026-01-05T23:09:24.370Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
+      "fileName": "TS047_dashcamAlertSettings",
+      "line": 57
+    },
+    {
+      "testCaseNo": "TS047-B",
+      "module": "Dashcam Alert Settings",
+      "title": "should add and delete alerts contacts (email and phone)",
+      "description": "should add and delete alerts contacts (email and phone)",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 158453,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-05T23:09:28.072Z",
+      "endTime": "2026-01-05T23:12:06.525Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
+      "fileName": "TS047_dashcamAlertSettings",
+      "line": 90
+    },
+    {
+      "testCaseNo": "TS047-C",
+      "module": "Dashcam Alert Settings",
+      "title": "should configure after hours settings",
+      "description": "should configure after hours settings",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 61041,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-05T23:12:06.542Z",
+      "endTime": "2026-01-05T23:13:07.583Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
+      "fileName": "TS047_dashcamAlertSettings",
+      "line": 170
     },
     {
       "testCaseNo": "TS050-A",
@@ -8592,6 +9981,714 @@
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
       "line": 692
+    },
+    {
+      "testCaseNo": "TS058-A",
+      "module": "Dashcam Data Usage",
+      "title": "should display Dashcam Data Usage report",
+      "description": "should display Dashcam Data Usage report",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 56741,
+      "failureReason": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",
+      "parsedError": {
+        "type": "Element Not Visible",
+        "element": "div",
+        "expected": "Element should be visible on page",
+        "actual": "Element was not found or not visible",
+        "timeout": "5s",
+        "file": "TS058_dashcamDataUsage.spec.js",
+        "line": 23,
+        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
+        "cleanMessage": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",
+        "fullMessage": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:\n    1) <div class=\"device-id\">862798051102933</div> aka locator('#du-selectedDeviceDisplay').getByText('862798051102933')\n    2) <div class=\"device-item-id\">862798051102933</div> aka locator('#du-deviceList').getByText('862798051102933')\n    3) <div class=\"device-item-name\">M4000-Training3 Off </div> aka locator('#du-deviceList').getByText('M4000-Training3 Off')\n    4) <div class=\"data-usage-device-id\">862798051102933</div> aka getByText('862798051102933').nth(2)\n    5) <button data-period=\"30d\" class=\"period-btn active\">30 Days</button> aka getByRole('button', { name: '30 Days' })\n    6) <div id=\"du-totalUsage\" class=\"total-usage\">↵                        0 B Mobile Data↵        …</div> aka getByText('B Mobile Data')\n    7) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).first()\n    8) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(1)\n    9) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(2)\n    10) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(3)\n    ...\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0')\n",
+        "stackTrace": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:\n    1) <div class=\"device-id\">862798051102933</div> aka locator('#du-selectedDeviceDisplay').getByText('862798051102933')\n    2) <div class=\"device-item-id\">862798051102933</div> aka locator('#du-deviceList').getByText('862798051102933')\n    3) <div class=\"device-item-name\">M4000-Training3 Off </div> aka locator('#du-deviceList').getByText('M4000-Training3 Off')\n    4) <div class=\"data-usage-device-id\">862798051102933</div> aka getByText('862798051102933').nth(2)\n    5) <button data-period=\"30d\" class=\"period-btn active\">30 Days</button> aka getByRole('button', { name: '30 Days' })\n    6) <div id=\"du-totalUsage\" class=\"total-usage\">↵                        0 B Mobile Data↵        …</div> aka getByText('B Mobile Data')\n    7) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).first()\n    8) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(1)\n    9) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(2)\n    10) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(3)\n    ...\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS058_dashcamDataUsage.spec.js:140:86"
+      },
+      "videoPath": "videos/TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm",
+      "videoIdentifier": "TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashcam Data Usage panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Select Device label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device dropdown is open",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"test 1\" device",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"imei\": \"862798051102933\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"deviceType\": \"JC400\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"isLynx\": false,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalMobileData\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalMobileDataFormatted\": \"0 B\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"videoOnDemandCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"liveVideoCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"alertsCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"videoFilesCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"simType\": \"null\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"planName\": \"\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"accStatus\": \"ON\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"powerLevel\": \"6\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"gsmSignal\": \"4\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"lastUpdated\": \"2023-03-20 16:44:42\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"month\": \"January 2026\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"billingPeriod\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"startDate\": \"2026-01-01\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"endDate\": \"2026-01-02\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response status verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data Usage Report title is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "IMEI not displayed on page (optional field)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name and IMEI verification completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Period filter buttons are visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing API response with UI values...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Mobile Data verified: 0 B",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T22:42:55.696Z",
+      "endTime": "2026-01-02T22:43:52.438Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS058_dashcamDataUsage.spec.js",
+      "fileName": "TS058_dashcamDataUsage",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TC-A",
+      "module": "view Edit User",
+      "title": "should create user and edit them",
+      "description": "should create user and edit them",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 320507,
+      "failureReason": "Error: expect(received).toBeFalsy()",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "true",
+        "timeout": null,
+        "file": "viewEditUser.spec.js",
+        "line": 24,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBeFalsy()",
+        "fullMessage": "Error: expect(received).toBeFalsy()\n\nReceived: true",
+        "stackTrace": "Error: expect(received).toBeFalsy()\n\nReceived: true\n    at C:\\cypress-to-playwright-converted\\tests\\viewEditUser.spec.js:667:32"
+      },
+      "videoPath": "videos/viewEditUser-should-create-user-and-edit-them.webm",
+      "videoIdentifier": "viewEditUser-should-create-user-and-edit-them.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Collapsing side menu to access modal elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on modal to collapse side menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ℹ️ Entries per page dropdown not found, using default pagination",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📊 Total number of device rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📱 Row 1: Device Name = \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📱 Row 2: Device Name = \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 3: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 4: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 5: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 6: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 7: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 8: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 9: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 10: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📈 Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total device rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows with device names: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows without device names: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Percentage with device names: 20.0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Extracted device names: [Sales Car1, Demo 1]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Device table contains data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "Logout modal visibility check failed, proceeding...",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Current URL after login: https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver Card panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⏳ Waiting for driver card data to populate...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver cards are now loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🔍 Verifying device names in Driver Card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📋 Found 2 driver cards in the panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 1: \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 2: \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Device \"Sales Car1\" found in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Device \"Demo 1\" found in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📊 Driver Card Verification Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Extracted device names: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver cards found: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Matched devices: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unmatched devices: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match percentage: 100.0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ At least one device name from list appears in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ New user logged in successfully - skipping device comparison (new user has limited permissions)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Checked device: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📋 Total devices checked for user access: [Demo 1]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver Card panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⏳ Waiting for driver card data to populate...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver cards are now loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🔍 Verifying checked devices from user access settings in Driver Card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📋 Found 2 driver cards in the panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 1: \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 2: \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Checked device \"Demo 1\" found in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📊 User Access Device Verification Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Devices checked for user access: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver cards found: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Matched devices: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unmatched devices: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match percentage: 100.0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ All checked devices from user access settings appear in driver card",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T20:36:50.402Z",
+      "endTime": "2026-01-02T20:42:10.909Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\viewEditUser.spec.js",
+      "fileName": "viewEditUser",
+      "line": 24
     }
   ]
 }

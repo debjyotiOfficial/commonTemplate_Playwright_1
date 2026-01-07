@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS030-A,"Mileage Report","should display start and end mileage of devices",PASSED,88.19,"",N/A,TS030_mileageReport.spec.js,23

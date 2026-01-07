@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "total": 3,
+    "passed": 2,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 1043895,
+    "startTime": "2026-01-05T23:08:07.031Z",
+    "endTime": "2026-01-05T23:25:30.926Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS047-A",
+      "module": "Dashcam Alert Settings",
+      "title": "should verify alert settings panel and save settings",
+      "description": "should verify alert settings panel and save settings",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 64348,
+      "failureReason": "Error: locator.check: Element is not visible",
+      "parsedError": {
+        "type": "Unknown Error",
+        "element": "#select-all-alerts",
+        "expected": null,
+        "actual": null,
+        "timeout": null,
+        "file": "TS047_dashcamAlertSettings.spec.js",
+        "line": 57,
+        "suggestion": null,
+        "cleanMessage": "Error: locator.check: Element is not visible",
+        "fullMessage": "Error: locator.check: Element is not visible\nCall log:\n  - waiting for locator('#select-all-alerts').first()\n    - locator resolved to <input type=\"checkbox\" id=\"select-all-alerts\"/>\n  - attempting click action\n    - scrolling into view if needed\n",
+        "stackTrace": "Error: locator.check: Element is not visible\nCall log:\n  - waiting for locator('#select-all-alerts').first()\n    - locator resolved to <input type=\"checkbox\" id=\"select-all-alerts\"/>\n  - attempting click action\n    - scrolling into view if needed\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js:78:37"
+      },
+      "videoPath": "videos/TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm",
+      "videoIdentifier": "TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-05T23:08:20.022Z",
+      "endTime": "2026-01-05T23:09:24.370Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
+      "fileName": "TS047_dashcamAlertSettings",
+      "line": 57
+    },
+    {
+      "testCaseNo": "TS047-B",
+      "module": "Dashcam Alert Settings",
+      "title": "should add and delete alerts contacts (email and phone)",
+      "description": "should add and delete alerts contacts (email and phone)",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 158453,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-05T23:09:28.072Z",
+      "endTime": "2026-01-05T23:12:06.525Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
+      "fileName": "TS047_dashcamAlertSettings",
+      "line": 90
+    },
+    {
+      "testCaseNo": "TS047-C",
+      "module": "Dashcam Alert Settings",
+      "title": "should configure after hours settings",
+      "description": "should configure after hours settings",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 61041,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-05T23:12:06.542Z",
+      "endTime": "2026-01-05T23:13:07.583Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
+      "fileName": "TS047_dashcamAlertSettings",
+      "line": 170
+    }
+  ]
+}

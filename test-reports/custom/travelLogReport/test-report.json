@@ -1,96 +1,24 @@
 {
   "summary": {
-    "total": 4,
-    "passed": 0,
-    "failed": 1,
-    "skipped": 3,
-    "duration": 116380,
-    "startTime": "2025-12-26T22:34:47.543Z",
-    "endTime": "2025-12-26T22:36:43.923Z"
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 868065,
+    "startTime": "2026-01-02T20:14:24.552Z",
+    "endTime": "2026-01-02T20:28:52.617Z"
   },
   "tests": [
     {
       "testCaseNo": "TS028-A",
       "module": "Travel Log Report",
-      "title": "should display TLR",
-      "description": "should display TLR",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2025-12-26T22:34:54.035Z",
-      "endTime": "2025-12-26T22:34:54.035Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 80
-    },
-    {
-      "testCaseNo": "TS028-B",
-      "module": "Travel Log Report",
-      "title": "should verify Engine Idling checkbox functionality",
-      "description": "should verify Engine Idling checkbox functionality",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2025-12-26T22:34:54.036Z",
-      "endTime": "2025-12-26T22:34:54.036Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 553
-    },
-    {
-      "testCaseNo": "TS028-C",
-      "module": "Travel Log Report",
-      "title": "should verify search functionality in TLR",
-      "description": "should verify search functionality in TLR",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2025-12-26T22:34:54.036Z",
-      "endTime": "2025-12-26T22:34:54.036Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
-      "fileName": "TS028_travelLogReport",
-      "line": 678
-    },
-    {
-      "testCaseNo": "TS028-D",
-      "module": "Travel Log Report",
       "title": "should verify Frequent Stops functionality with API validation",
       "description": "should verify Frequent Stops functionality with API validation",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 0,
-      "failureReason": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
-      "parsedError": {
-        "type": "Unknown Error",
-        "element": null,
-        "expected": null,
-        "actual": null,
-        "timeout": null,
-        "file": "TS028_travelLogReport.spec.js",
-        "line": 815,
-        "suggestion": null,
-        "cleanMessage": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
-        "fullMessage": "Error: worker process exited unexpectedly (code=3221226505, signal=null)",
-        "stackTrace": ""
-      },
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 118142,
+      "failureReason": "",
+      "parsedError": null,
       "videoPath": null,
       "videoIdentifier": "N/A",
       "steps": [
@@ -147,14 +75,236 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Frequent Stops functionality with API validation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Loading Modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal title shows \"Loading Travel Report...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading time estimate: ⏱️ Loading 3 days of data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal shows correct \"3 days\" estimate",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: [{\"id\":160833,\"idIndex\":0,\"date\":\"12/01/2025\",\"duration\":355,\"time\":\"02:08 AM\",\"lat\":\"33.624222\",\"lng\":\"-111.840185\",\"location\":\"\",\"tripType\":\"\",\"battery\":\"12\",\"speed\":\"0.0\",\"mileage\":\"1166.238\",\"dire...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal disappeared after data loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API response matches table data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 76 rows in Frequent Stops table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API returned 76 records",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 1: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Frequent Stops table data matches API response",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sort functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Time column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Search functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "DataTables filter not found, using general search input",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total visible rows before search: 76",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"02:08 AM\"...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 visible rows after searching \"02:08 AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search filtered results: 1 rows (down from 76)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 1 rows containing \"02:08 AM\" out of 1 visible rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 76 rows returned after clearing search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Export functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ \"Save file as\" dropdown button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Excel export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dropdown content is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Excel file downloaded: track_frequent_stops.xlsx",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing CSV export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV file downloaded: track_frequent_stops.csv",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing PDF export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF file downloaded: track_frequent_stops.pdf",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All export buttons (Excel, CSV, PDF) verified in Frequent Stops tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Frequent Stops functionality test completed!",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2025-12-26T22:36:43.816Z",
-      "endTime": "2025-12-26T22:36:43.816Z",
+      "startTime": "2026-01-02T20:14:30.600Z",
+      "endTime": "2026-01-02T20:16:28.743Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
-      "line": 815
+      "line": 829
     }
   ]
 }

@@ -1,0 +1,442 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 1072631,
+    "startTime": "2026-01-02T20:36:41.888Z",
+    "endTime": "2026-01-02T20:54:34.519Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TC-A",
+      "module": "view Edit User",
+      "title": "should create user and edit them",
+      "description": "should create user and edit them",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 320507,
+      "failureReason": "Error: expect(received).toBeFalsy()",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "true",
+        "timeout": null,
+        "file": "viewEditUser.spec.js",
+        "line": 24,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBeFalsy()",
+        "fullMessage": "Error: expect(received).toBeFalsy()\n\nReceived: true",
+        "stackTrace": "Error: expect(received).toBeFalsy()\n\nReceived: true\n    at C:\\cypress-to-playwright-converted\\tests\\viewEditUser.spec.js:667:32"
+      },
+      "videoPath": "videos/viewEditUser-should-create-user-and-edit-them.webm",
+      "videoIdentifier": "viewEditUser-should-create-user-and-edit-them.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Collapsing side menu to access modal elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on modal to collapse side menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ℹ️ Entries per page dropdown not found, using default pagination",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📊 Total number of device rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📱 Row 1: Device Name = \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📱 Row 2: Device Name = \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 3: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 4: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 5: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 6: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 7: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 8: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 9: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "❌ Row 10: Device Not Assigned",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📈 Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total device rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows with device names: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows without device names: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Percentage with device names: 20.0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Extracted device names: [Sales Car1, Demo 1]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Device table contains data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "Logout modal visibility check failed, proceeding...",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Current URL after login: https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver Card panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⏳ Waiting for driver card data to populate...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver cards are now loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🔍 Verifying device names in Driver Card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📋 Found 2 driver cards in the panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 1: \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 2: \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Device \"Sales Car1\" found in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Device \"Demo 1\" found in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📊 Driver Card Verification Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Extracted device names: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver cards found: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Matched devices: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unmatched devices: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match percentage: 100.0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ At least one device name from list appears in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ New user logged in successfully - skipping device comparison (new user has limited permissions)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Checked device: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📋 Total devices checked for user access: [Demo 1]",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver Card panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⏳ Waiting for driver card data to populate...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Driver cards are now loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🔍 Verifying checked devices from user access settings in Driver Card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📋 Found 2 driver cards in the panel",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 1: \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "🚗 Driver Card 2: \"Demo 1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ Checked device \"Demo 1\" found in driver card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "📊 User Access Device Verification Summary:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Devices checked for user access: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver cards found: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Matched devices: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unmatched devices: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match percentage: 100.0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✅ All checked devices from user access settings appear in driver card",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T20:36:50.402Z",
+      "endTime": "2026-01-02T20:42:10.909Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\viewEditUser.spec.js",
+      "fileName": "viewEditUser",
+      "line": 24
+    }
+  ]
+}

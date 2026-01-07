@@ -1,2 +1,2 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS034-A,"Trip Report","should generate and validate trip report",PASSED,112.47,"",N/A,TS034_tripReport.spec.js,43
+TS034-A,"Trip Report","should generate and validate trip report",PASSED,125.86,"",N/A,TS034_tripReport.spec.js,43

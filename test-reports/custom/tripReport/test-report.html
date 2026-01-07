@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - tripReport - 7/12/2025</title>
+    <title>Test Report - tripReport - 2/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: tripReport</div>
             <div class="subtitle">
-                Generated: 7/12/2025, 8:42:55 pm |
-                Duration: 118.97s |
+                Generated: 2/1/2026, 11:29:19 pm |
+                Duration: 1184.03s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -215,12 +215,37 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (31)</span>
+                                    <span>View Test Steps (37)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
                                         
                                             <div class="step-item info subsection">
                                                 <span class="step-icon">-</span>
@@ -229,12 +254,17 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -382,7 +412,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>112.47s</strong></td>
+                        <td><strong>125.86s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -436,7 +466,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"112.47s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"125.86s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -453,7 +483,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-07.csv';
+            link.download = 'test-report-2026-01-02.csv';
             link.click();
         }
     </script>

@@ -1,8 +1,7 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,0.79,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,1.65,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,109.52,"",N/A,TS001_listOfDevice,10
-TS002-A,"Add edit Device","should add/edit a device",FAILED,94.36,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-edit-a-device.webm,TS002_addEditDevices,36
-TS002-B,"Add edit Device","should add device with custom icon",FAILED,84.34,"Error: expect(locator).toBeVisible() failed",TS002_addEditDevices-should-add-device-with-custom-icon.webm,TS002_addEditDevices,347
+TS002-A,"Add edit Device","should add device with custom icon",PASSED,239.54,"",N/A,TS002_addEditDevices,394
 TS005-A,"Subgroup","should manage subgroups",PASSED,112.70,"",N/A,TS005_subgroup,32
 TS008-A,"Alert Contact","should add email and phone contacts and configure alert settings",PASSED,137.13,"",N/A,TS008_alertsContact,23
 TS009-A,"Change Alert Settings","should configure after hours settings",PASSED,132.69,"",N/A,TS009_changeAlertSettings,306
@@ -13,17 +12,22 @@ TS017-A,"After Hour Setting","should edit the after hour settings of a device",P
 TS018-A,"Create Geofencing","should be able to create new Geofence",PASSED,139.29,"",N/A,TS018_createGeofencing,23
 TS020-A,"Weekly Geofencing reports","should manage recent geofence report",PASSED,102.42,"",N/A,TS020_weeklyGeofenceReport,48
 TS021-A,"Current geofence report","should manage recent geofence report",PASSED,121.73,"",N/A,TS021_currentGeofenceReport,45
-TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,89.28,"",N/A,TS024_createLandmark,23
-TS028-A,"Travel Log Report","should display TLR",SKIPPED,0.00,"",N/A,TS028_travelLogReport,80
-TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",SKIPPED,0.00,"",N/A,TS028_travelLogReport,553
-TS028-C,"Travel Log Report","should verify search functionality in TLR",SKIPPED,0.00,"",N/A,TS028_travelLogReport,678
-TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",FAILED,0.00,"Error: worker process exited unexpectedly (code=3221226505, signal=null)",N/A,TS028_travelLogReport,815
+TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,113.69,"",N/A,TS024_createLandmark,23
+TS026-A,"view edit landmark","should be able to view, edit and delete landmark",PASSED,128.39,"",N/A,TS026_viewEditLandmark,238
+TS026-B,"view edit landmark","should be able to toggle Hide Vehicle Markers for landmarks",PASSED,125.98,"",N/A,TS026_viewEditLandmark,451
+TS027-A,"Track History Tests","should verify HERE Maps car marker animation functionality",PASSED,224.13,"",N/A,TS027_trackHistory,23
+TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,118.14,"",N/A,TS028_travelLogReport,829
+TS028-A,"Travel Log Report - Filters","should verify Geofence Events checkbox functionality",FAILED,151.43,"Error: expect(received).toBeFalsy()",TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm,TS028_travelLogReportFilters,84
+TS030-A,"Mileage Report","should display start and end mileage of devices",PASSED,88.19,"",N/A,TS030_mileageReport,23
 TS032-A,"30 Day Mileage Report","should be redirected to fleet demo page with demo credentials",PASSED,98.20,"",N/A,TS032_30DayMileageReport,46
-TS034-A,"Trip Report","should generate and validate trip report",PASSED,112.47,"",N/A,TS034_tripReport,43
+TS034-A,"Trip Report","should generate and validate trip report",PASSED,125.86,"",N/A,TS034_tripReport,43
 TS037-A,"Low Voltage Device Report","should generate and validate low voltage device report",FAILED,81.84,"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.",TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm,TS037_lowVoltageDeviceReport,23
 TS039-A,"Weekly Utilization Report","should generate and validate weekly utilization report",FAILED,253.09,"TimeoutError: locator.hover: Timeout 30000ms exceeded.",TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm,TS039_weeklyUtilizationReport,23
 TS043-A,"Dashcam Refresh","should refresh dashcam functionality",PASSED,103.15,"",N/A,TS043_dashcamRefresh,23
-TS046-A,"Dashcam Track History","displays dashcam track history with different tracking options",PASSED,54.51,"",N/A,TS046_dashcamTrackHistory,23
+TS046-A,"Dashcam Track History","displays dashcam track history with different tracking options",PASSED,74.45,"",N/A,TS046_dashcamTrackHistory,23
+TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",FAILED,64.35,"Error: locator.check: Element is not visible",TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm,TS047_dashcamAlertSettings,57
+TS047-B,"Dashcam Alert Settings","should add and delete alerts contacts (email and phone)",PASSED,158.45,"",N/A,TS047_dashcamAlertSettings,90
+TS047-C,"Dashcam Alert Settings","should configure after hours settings",PASSED,61.04,"",N/A,TS047_dashcamAlertSettings,170
 TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",PASSED,153.74,"",N/A,TS050_last24hrs,39
 TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Frequent Stops functionality",PASSED,131.61,"",N/A,TS050_last24hrs,338
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
@@ -34,3 +38,5 @@ TS057-B,"Account Health Summary Report","should verify Fleet Status Summary card
 TS057-C,"Account Health Summary Report","should verify table sorting functionality",PASSED,52.95,"",N/A,TS057_accountHealthSummary,457
 TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,86.67,"",N/A,TS057_accountHealthSummary,520
 TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,79.08,"",N/A,TS057_accountHealthSummary,692
+TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",FAILED,56.74,"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm,TS058_dashcamDataUsage,23
+TC-A,"view Edit User","should create user and edit them",FAILED,320.51,"Error: expect(received).toBeFalsy()",viewEditUser-should-create-user-and-edit-them.webm,viewEditUser,24

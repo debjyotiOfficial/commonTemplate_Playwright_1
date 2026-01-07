@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",FAILED,56.74,"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm,TS058_dashcamDataUsage.spec.js,23

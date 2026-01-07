@@ -1,119 +1,26 @@
 {
   "summary": {
-    "total": 2,
-    "passed": 0,
-    "failed": 2,
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
     "skipped": 0,
-    "duration": 327014,
-    "startTime": "2025-12-15T23:00:31.944Z",
-    "endTime": "2025-12-15T23:05:58.958Z"
+    "duration": 988345,
+    "startTime": "2026-01-07T19:00:13.346Z",
+    "endTime": "2026-01-07T19:16:41.691Z"
   },
   "tests": [
     {
       "testCaseNo": "TS002-A",
       "module": "Add edit Device",
-      "title": "should add/edit a device",
-      "description": "should add/edit a device",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 94364,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "'.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first(",
-        "expected": "Element should be visible on page",
-        "actual": "<element(s) not found>",
-        "timeout": "10s",
-        "file": "TS002_addEditDevices.spec.js",
-        "line": 36,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js:77:41"
-      },
-      "videoPath": "videos/TS002_addEditDevices-should-add-edit-a-device.webm",
-      "videoIdentifier": "TS002_addEditDevices-should-add-edit-a-device.webm",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T23:01:42.751Z",
-      "endTime": "2025-12-15T23:03:17.115Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
-      "fileName": "TS002_addEditDevices",
-      "line": 36
-    },
-    {
-      "testCaseNo": "TS002-B",
-      "module": "Add edit Device",
       "title": "should add device with custom icon",
       "description": "should add device with custom icon",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 84336,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "'.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first(",
-        "expected": "Element should be visible on page",
-        "actual": "<element(s) not found>",
-        "timeout": "10s",
-        "file": "TS002_addEditDevices.spec.js",
-        "line": 347,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('.select2-results__option').filter({ hasText: /^\\d{6,}$/ }).first()\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js:399:41"
-      },
-      "videoPath": "videos/TS002_addEditDevices-should-add-device-with-custom-icon.webm",
-      "videoIdentifier": "TS002_addEditDevices-should-add-device-with-custom-icon.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 239543,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -159,17 +66,245 @@
         },
         {
           "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 7 IMEI options available",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name entered: CustomIconDevice",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "getCustomIconAll.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Add Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device added successfully with IMEI: 861492065082189",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device selected in Edit tab: CustomIconDevice (IMEI: 861492065082189)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name changed to: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Upload & Crop Custom Icon modal opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Test image uploaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Zoom adjusted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Save Icon button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "crop_image_upload_new.php API called successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert message: Custom icon saved successfully!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon uploaded and saved successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"Custom Icon\" from icon category dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response timeout, but continuing as icons may have loaded...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icons loaded in grid",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update Device button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device updated successfully: CustomIconDeviceEdited",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device selected for removal (IMEI: 861492065082189)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete confirmation clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device removed successfully: CustomIconDeviceEdited (IMEI: 861492065082189)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Custom icon device add/edit/remove test completed successfully",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T23:03:24.406Z",
-      "endTime": "2025-12-15T23:04:48.742Z",
+      "startTime": "2026-01-07T19:00:19.712Z",
+      "endTime": "2026-01-07T19:04:19.255Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS002_addEditDevices.spec.js",
       "fileName": "TS002_addEditDevices",
-      "line": 347
+      "line": 394
     }
   ]
 }

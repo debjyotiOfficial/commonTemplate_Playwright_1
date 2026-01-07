@@ -1,0 +1,166 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 1053297,
+    "startTime": "2026-01-02T20:01:15.589Z",
+    "endTime": "2026-01-02T20:18:48.886Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS027-A",
+      "module": "Track History Tests",
+      "title": "should verify HERE Maps car marker animation functionality",
+      "description": "should verify HERE Maps car marker animation functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 224130,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Track History Length: 14 Stops",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING HERE MAPS CAR MARKER ANIMATION ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PAUSE BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ RESUME BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SPEED UP BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SPEED DOWN BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ RESTART BUTTON CLICKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SEGMENT 2 SELECTED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ SEGMENT 1 SELECTED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING WITH DIFFERENT DATE RANGE (JUNE DATA) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "June Track History Length: 54 Stops",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Complete car marker animation test finished",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== ALL TESTS COMPLETED IN SINGLE SESSION ===",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T20:02:21.892Z",
+      "endTime": "2026-01-02T20:06:06.022Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS027_trackHistory.spec.js",
+      "fileName": "TS027_trackHistory",
+      "line": 23
+    }
+  ]
+}

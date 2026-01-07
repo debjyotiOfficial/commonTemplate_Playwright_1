@@ -1,0 +1,10 @@
+{
+  "api_url": "https://staging-dealerpro.matrackinc.com/project-tracker-v2.21-dev/api/ai-prompt-logs.php",
+  "api_token": "pt_fefd052b7ef686f67c53bc719de8eb1565f54fa70a9227282d6d4d213d1299fe",
+  "device_id": "Ronik Asus",
+  "active_task_id": null,
+  "sync_enabled": true,
+  "local_backup": true,
+  "capture_context": true,
+  "context_chars": 65000
+}

@@ -113,16 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 786,
+                  "duration": 1654,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 9 minutes). Skipping login.\n"
+                      "text": "Valid authentication session found (age: 57 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-28T09:06:36.797Z",
+                  "startTime": "2026-01-07T19:00:14.309Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -138,21 +138,21 @@
       ]
     },
     {
-      "title": "TS039_weeklyUtilizationReport.spec.js",
-      "file": "TS039_weeklyUtilizationReport.spec.js",
+      "title": "TS002_addEditDevices.spec.js",
+      "file": "TS002_addEditDevices.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Weekly Utilization Report",
-          "file": "TS039_weeklyUtilizationReport.spec.js",
-          "line": 4,
+          "title": "Add edit Device",
+          "file": "TS002_addEditDevices.spec.js",
+          "line": 14,
           "column": 6,
           "specs": [
             {
-              "title": "should generate and validate weekly utilization report",
-              "ok": false,
+              "title": "should add device with custom icon",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -165,28 +165,9 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 253090,
-                      "error": {
-                        "message": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.fa-question-circle').first()\u001b[22m\n\u001b[2m    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n",
-                        "stack": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.fa-question-circle').first()\u001b[22m\n\u001b[2m    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js:306:41",
-                        "location": {
-                          "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
-                          "column": 41,
-                          "line": 306
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 304 |\u001b[39m\n \u001b[90m 305 |\u001b[39m             \u001b[90m// Hover over the tooltip icon to trigger tooltip\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 306 |\u001b[39m             \u001b[36mawait\u001b[39m efficiencyTooltipIcon\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 307 |\u001b[39m             \u001b[36mawait\u001b[39m newPage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 308 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Hovered over efficiency tooltip icon'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 309 |\u001b[39m         }\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
-                            "column": 41,
-                            "line": 306
-                          },
-                          "message": "TimeoutError: locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.fa-question-circle').first()\u001b[22m\n\u001b[2m    - locator resolved to <i title=\"\" data-bs-html=\"true\" data-bs-placement=\"top\" data-bs-toggle=\"tooltip\" class=\"fas fa-question-circle\" data-bs-original-title=\"Shows the percentage of time spent at different locations\">↵                    </i>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"card-body\">…</div> from <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div tabindex=\"-1\" role=\"dialog\" id=\"deviceModal\" aria-modal=\"true\" class=\"modal fade show\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 304 |\u001b[39m\n \u001b[90m 305 |\u001b[39m             \u001b[90m// Hover over the tooltip icon to trigger tooltip\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 306 |\u001b[39m             \u001b[36mawait\u001b[39m efficiencyTooltipIcon\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 307 |\u001b[39m             \u001b[36mawait\u001b[39m newPage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 308 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Hovered over efficiency tooltip icon'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 309 |\u001b[39m         }\u001b[0m\n\u001b[2m    at C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js:306:41\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 239543,
+                      "errors": [],
                       "stdout": [
                         {
                           "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
@@ -216,300 +197,130 @@
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "--- Step 1: Opening menu and navigating to Weekly Utilization Report ---\n"
+                          "text": "Found 7 IMEI options available\n"
                         },
                         {
-                          "text": "Weekly Utilization Report menu item is visible\n"
+                          "text": "Selected IMEI: 861492065082189\n"
                         },
                         {
-                          "text": "Menu item href: \u001b[1mnull\u001b[22m\n"
+                          "text": "Device name entered: CustomIconDevice\n"
                         },
                         {
-                          "text": "Click did not open new tab, trying middle click...\n"
+                          "text": "Upload & Crop Custom Icon modal opened successfully\n"
                         },
                         {
-                          "text": "Weekly Utilization Report middle-clicked - new tab opened\n"
+                          "text": "Test image uploaded successfully\n"
                         },
                         {
-                          "text": "New page loaded\n"
+                          "text": "Zoom adjusted\n"
                         },
                         {
-                          "text": "--- Step 2: Selecting Report Duration (Last 7 Days) and Capturing API Response ---\n"
+                          "text": "Preview section is visible\n"
                         },
                         {
-                          "text": "Report Duration set to \"Last 7 Days\" - report auto-generating...\n"
+                          "text": "Save Icon button clicked\n"
                         },
                         {
-                          "text": "API Response captured from getTrackReportGeo_Next_uti.php\n"
+                          "text": "crop_image_upload_new.php API called successfully\n"
                         },
                         {
-                          "text": "--- Step 3: Report Generated ---\n"
+                          "text": "Alert message: Custom icon saved successfully!\n"
                         },
                         {
-                          "text": "--- Step 4: Verifying Summary Section ---\n"
+                          "text": "Custom icon uploaded and saved successfully\n"
                         },
                         {
-                          "text": "Total Utilization section is visible\n"
+                          "text": "Selected \"Custom Icon\" from icon category dropdown\n"
                         },
                         {
-                          "text": "Total Trackers: 2\n"
+                          "text": "getCustomIconAll.php API called successfully\n"
                         },
                         {
-                          "text": "--- Step 5: Verifying Vehicle Analytics Table ---\n"
+                          "text": "Custom icons loaded in grid\n"
                         },
                         {
-                          "text": "Vehicle Analytics Table is visible\n"
+                          "text": "Custom icon selected\n"
                         },
                         {
-                          "text": "Table has 2 row(s)\n"
+                          "text": "Add Device button clicked\n"
                         },
                         {
-                          "text": "First row - Driver: Sales Car1, Efficiency: 100%\n"
+                          "text": "Device added successfully with IMEI: 861492065082189\n"
                         },
                         {
-                          "text": "Sales Car1 efficiency: 100%\n"
+                          "text": "Device selected in Edit tab: CustomIconDevice (IMEI: 861492065082189)\n"
                         },
                         {
-                          "text": "Clicked on first row in Vehicle Analytics table\n"
+                          "text": "Device name changed to: CustomIconDeviceEdited\n"
                         },
                         {
-                          "text": "Sales Car1 stored efficiency: 100%\n"
+                          "text": "Upload & Crop Custom Icon modal opened successfully\n"
                         },
                         {
-                          "text": "Clicked row efficiency: 100%\n"
+                          "text": "Test image uploaded successfully\n"
                         },
                         {
-                          "text": "Efficiencies match (within 0.1% tolerance)!\n"
+                          "text": "Zoom adjusted\n"
                         },
                         {
-                          "text": "--- Step 6: Validating API Response Data Against UI ---\n"
+                          "text": "Preview section is visible\n"
                         },
                         {
-                          "text": "API Total Utilization: 100%, UI: 100%\n"
+                          "text": "Save Icon button clicked\n"
                         },
                         {
-                          "text": "API Inside Landmarks: 0%, UI: 0%\n"
+                          "text": "crop_image_upload_new.php API called successfully\n"
                         },
                         {
-                          "text": "API Total Trackers: 2, UI: 2\n"
+                          "text": "Alert message: Custom icon saved successfully!\n"
                         },
                         {
-                          "text": "API Devices Count: 2, UI Table Rows: 2\n"
+                          "text": "Custom icon uploaded and saved successfully\n"
                         },
                         {
-                          "text": "--- Step 7: Verifying Inside Landmarks Section ---\n"
+                          "text": "Selected \"Custom Icon\" from icon category dropdown\n"
                         },
                         {
-                          "text": "Inside Landmarks: 0%\n"
+                          "text": "API response timeout, but continuing as icons may have loaded...\n"
                         },
                         {
-                          "text": "--- Step 8: Verifying Charts Visibility ---\n"
+                          "text": "Custom icons loaded in grid\n"
                         },
                         {
-                          "text": "Location Distribution chart is visible\n"
+                          "text": "Custom icon selected\n"
                         },
                         {
-                          "text": "Location Distribution heading is visible\n"
+                          "text": "Update Device button clicked\n"
                         },
                         {
-                          "text": "Efficiency Trend chart is visible\n"
+                          "text": "Device updated successfully: CustomIconDeviceEdited\n"
                         },
                         {
-                          "text": "Efficiency Trend heading is visible\n"
+                          "text": "Device selected for removal (IMEI: 861492065082189)\n"
                         },
                         {
-                          "text": "Device Activity Timeline chart is visible\n"
+                          "text": "Delete confirmation clicked\n"
                         },
                         {
-                          "text": "Device Activity Timeline heading is visible\n"
+                          "text": "Device removed successfully: CustomIconDeviceEdited (IMEI: 861492065082189)\n"
                         },
                         {
-                          "text": "--- Step 9: Verifying Legend Containers ---\n"
-                        },
-                        {
-                          "text": "Location Distribution legend container is visible\n"
-                        },
-                        {
-                          "text": "--- Step 10: Verifying Tooltips ---\n"
-                        },
-                        {
-                          "text": "Efficiency tooltip icon is visible\n"
+                          "text": "Custom icon device add/edit/remove test completed successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-28T09:06:39.376Z",
+                      "startTime": "2026-01-07T19:00:18.414Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-2.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-3.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-4.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-5.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-10.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-11.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-7.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-13.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-12.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-8.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-9.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-6.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-14.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-3.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-5.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-1.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-2.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-4.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-6.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-7.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-8.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-11.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-10.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-9.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-12.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-15.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-13.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\video-14.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\\test-failed-16.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\cypress-to-playwright-converted\\tests\\TS039_weeklyUtilizationReport.spec.js",
-                        "column": 41,
-                        "line": 306
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "8685944af1fcd1cb5f15-4d60464be5b236f66685",
-              "file": "TS039_weeklyUtilizationReport.spec.js",
-              "line": 23,
+              "id": "d268d3312c13f8e344eb-8c23c0d024ff721bf833",
+              "file": "TS002_addEditDevices.spec.js",
+              "line": 394,
               "column": 5
             }
           ]
@@ -519,11 +330,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-28T09:06:35.873Z",
-    "duration": 258739.808,
-    "expected": 1,
+    "startTime": "2026-01-07T19:00:12.996Z",
+    "duration": 247053.609,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

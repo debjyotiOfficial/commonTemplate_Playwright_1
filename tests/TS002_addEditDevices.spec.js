@@ -880,10 +880,9 @@ test.describe('Add edit Device', () => {
         // ========================================
         // STEP 18: VERIFY DEVICE WAS REMOVED
         // ========================================
-        // Confirm the device with our specific IMEI no longer appears in the devices table
-        const removedDeviceRow = page.locator('table#devices-table tbody tr').filter({ hasText: selectedImei });
-        await expect(removedDeviceRow).not.toBeVisible({ timeout: 30000 });
-        console.log('Device removed successfully (IMEI: ' + selectedImei + ')');
+        // Confirm the device no longer appears in the devices table (verify by device name like first test)
+        await expect(page.locator('table#devices-table td').filter({ hasText: 'CustomIconDeviceEdited' })).not.toBeVisible({ timeout: 30000 });
+        console.log('Device removed successfully: CustomIconDeviceEdited (IMEI: ' + selectedImei + ')');
 
         // Modal closes automatically after device removal
 

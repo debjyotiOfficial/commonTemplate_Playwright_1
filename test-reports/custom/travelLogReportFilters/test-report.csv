@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS028-A,"Travel Log Report - Filters","should verify Geofence Events checkbox functionality",FAILED,151.43,"Error: expect(received).toBeFalsy()",TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm,TS028_travelLogReportFilters.spec.js,84

@@ -1,0 +1,3 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS026-A,"view edit landmark","should be able to view, edit and delete landmark",PASSED,128.39,"",N/A,TS026_viewEditLandmark.spec.js,238
+TS026-B,"view edit landmark","should be able to toggle Hide Vehicle Markers for landmarks",PASSED,125.98,"",N/A,TS026_viewEditLandmark.spec.js,451

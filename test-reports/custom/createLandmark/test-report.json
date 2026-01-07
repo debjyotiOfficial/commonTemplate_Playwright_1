@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 96213,
-    "startTime": "2025-12-16T19:16:52.636Z",
-    "endTime": "2025-12-16T19:18:28.849Z"
+    "duration": 216986,
+    "startTime": "2026-01-07T16:47:25.631Z",
+    "endTime": "2026-01-07T16:51:02.617Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "should be able to create new Landmark",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 89282,
+      "duration": 113686,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -60,7 +60,7 @@
         },
         {
           "number": "",
-          "text": "Using unique landmark name: AutoTest_Landmark_1765912618501",
+          "text": "Using unique landmark name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -73,6 +73,12 @@
         {
           "number": "",
           "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
           "status": "info",
           "type": "log"
         },
@@ -120,7 +126,7 @@
         },
         {
           "number": "",
-          "text": "Entered landmark name: AutoTest_Landmark_1765912618501",
+          "text": "Entered landmark name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -162,7 +168,7 @@
         },
         {
           "number": "",
-          "text": "Preview Name: AutoTest_Landmark_1765912618501",
+          "text": "Preview Name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -258,91 +264,13 @@
         },
         {
           "number": "",
-          "text": "\u001b[32m'Wrightsdown (85CX8737+4R)'\u001b[39m,",
+          "text": "\u001b[32m'AutoTest_Landmark_1767804548243 (San Ramon, CA, United States)'\u001b[39m",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "\u001b[32m'durga_test (721 1 St SE, Calgary, AB T2G 2G9, Canada)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'Landmark in Travel Log Test (18955 N Tatum Blvd, Phoenix, AZ 85050, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'DtestLa (san ramon)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764200537604_Edited (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764265627700 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764268505675 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'rrLand (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1764278038284 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'dtestt (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765907616652 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765908323997 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765911446150 (San Ramon, CA, United States)'\u001b[39m,",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[32m'AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)'\u001b[39m",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Selected landmark: AutoTest_Landmark_1765912618501 (San Ramon, CA, United States)",
+          "text": "Selected landmark: AutoTest_Landmark_1767804548243 (San Ramon, CA, United States)",
           "status": "info",
           "type": "log"
         },
@@ -378,7 +306,7 @@
         },
         {
           "number": "",
-          "text": "Displayed landmark name: AutoTest_Landmark_1765912618501",
+          "text": "Displayed landmark name: AutoTest_Landmark_1767804548243",
           "status": "info",
           "type": "log"
         },
@@ -414,7 +342,7 @@
         },
         {
           "number": "",
-          "text": "Edited landmark name to: AutoTest_Landmark_1765912618501_Edited",
+          "text": "Edited landmark name to: AutoTest_Landmark_1767804548243_Edited",
           "status": "info",
           "type": "log"
         },
@@ -456,7 +384,7 @@
         },
         {
           "number": "",
-          "text": "Updated landmark name displayed: AutoTest_Landmark_1765912618501_Edited",
+          "text": "Updated landmark name displayed: AutoTest_Landmark_1767804548243_Edited",
           "status": "info",
           "type": "log"
         },
@@ -533,8 +461,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-16T19:16:58.407Z",
-      "endTime": "2025-12-16T19:18:27.689Z",
+      "startTime": "2026-01-07T16:49:08.106Z",
+      "endTime": "2026-01-07T16:51:01.792Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS024_createLandmark.spec.js",
       "fileName": "TS024_createLandmark",

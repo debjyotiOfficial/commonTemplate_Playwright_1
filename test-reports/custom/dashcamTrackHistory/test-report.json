@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 61521,
-    "startTime": "2025-12-26T20:49:38.880Z",
-    "endTime": "2025-12-26T20:50:40.401Z"
+    "duration": 824431,
+    "startTime": "2026-01-02T20:26:07.259Z",
+    "endTime": "2026-01-02T20:39:51.690Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "displays dashcam track history with different tracking options",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 54514,
+      "duration": 74447,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -101,8 +101,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-26T20:49:44.874Z",
-      "endTime": "2025-12-26T20:50:39.388Z",
+      "startTime": "2026-01-02T20:26:14.008Z",
+      "endTime": "2026-01-02T20:27:28.455Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS046_dashcamTrackHistory.spec.js",
       "fileName": "TS046_dashcamTrackHistory",

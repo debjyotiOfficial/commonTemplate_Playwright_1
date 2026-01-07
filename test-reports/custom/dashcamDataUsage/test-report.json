@@ -1,0 +1,292 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 805316,
+    "startTime": "2026-01-02T22:42:50.389Z",
+    "endTime": "2026-01-02T22:56:15.705Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS058-A",
+      "module": "Dashcam Data Usage",
+      "title": "should display Dashcam Data Usage report",
+      "description": "should display Dashcam Data Usage report",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 56741,
+      "failureReason": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",
+      "parsedError": {
+        "type": "Element Not Visible",
+        "element": "div",
+        "expected": "Element should be visible on page",
+        "actual": "Element was not found or not visible",
+        "timeout": "5s",
+        "file": "TS058_dashcamDataUsage.spec.js",
+        "line": 23,
+        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
+        "cleanMessage": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",
+        "fullMessage": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:\n    1) <div class=\"device-id\">862798051102933</div> aka locator('#du-selectedDeviceDisplay').getByText('862798051102933')\n    2) <div class=\"device-item-id\">862798051102933</div> aka locator('#du-deviceList').getByText('862798051102933')\n    3) <div class=\"device-item-name\">M4000-Training3 Off </div> aka locator('#du-deviceList').getByText('M4000-Training3 Off')\n    4) <div class=\"data-usage-device-id\">862798051102933</div> aka getByText('862798051102933').nth(2)\n    5) <button data-period=\"30d\" class=\"period-btn active\">30 Days</button> aka getByRole('button', { name: '30 Days' })\n    6) <div id=\"du-totalUsage\" class=\"total-usage\">↵                        0 B Mobile Data↵        …</div> aka getByText('B Mobile Data')\n    7) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).first()\n    8) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(1)\n    9) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(2)\n    10) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(3)\n    ...\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0')\n",
+        "stackTrace": "Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:\n    1) <div class=\"device-id\">862798051102933</div> aka locator('#du-selectedDeviceDisplay').getByText('862798051102933')\n    2) <div class=\"device-item-id\">862798051102933</div> aka locator('#du-deviceList').getByText('862798051102933')\n    3) <div class=\"device-item-name\">M4000-Training3 Off </div> aka locator('#du-deviceList').getByText('M4000-Training3 Off')\n    4) <div class=\"data-usage-device-id\">862798051102933</div> aka getByText('862798051102933').nth(2)\n    5) <button data-period=\"30d\" class=\"period-btn active\">30 Days</button> aka getByRole('button', { name: '30 Days' })\n    6) <div id=\"du-totalUsage\" class=\"total-usage\">↵                        0 B Mobile Data↵        …</div> aka getByText('B Mobile Data')\n    7) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).first()\n    8) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(1)\n    9) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(2)\n    10) <div class=\"usage-item-value count zero\">↵                        0↵                    </div> aka locator('#dashcam-data-usage-panel').getByText('0', { exact: true }).nth(3)\n    ...\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS058_dashcamDataUsage.spec.js:140:86"
+      },
+      "videoPath": "videos/TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm",
+      "videoIdentifier": "TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashcam Data Usage panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Select Device label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device dropdown is open",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected \"test 1\" device",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"imei\": \"862798051102933\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"deviceType\": \"JC400\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"isLynx\": false,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalMobileData\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalMobileDataFormatted\": \"0 B\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"videoOnDemandCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"liveVideoCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"alertsCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"videoFilesCount\": 0,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"simType\": \"null\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"planName\": \"\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"accStatus\": \"ON\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"powerLevel\": \"6\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"gsmSignal\": \"4\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"lastUpdated\": \"2023-03-20 16:44:42\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"month\": \"January 2026\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"billingPeriod\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"startDate\": \"2026-01-01\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"endDate\": \"2026-01-02\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API response status verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data Usage Report title is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "IMEI not displayed on page (optional field)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device name and IMEI verification completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Period filter buttons are visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing API response with UI values...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Mobile Data verified: 0 B",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-02T22:42:55.696Z",
+      "endTime": "2026-01-02T22:43:52.438Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS058_dashcamDataUsage.spec.js",
+      "fileName": "TS058_dashcamDataUsage",
+      "line": 23
+    }
+  ]
+}

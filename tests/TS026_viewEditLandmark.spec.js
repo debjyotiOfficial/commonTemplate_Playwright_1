@@ -20,6 +20,221 @@ test.describe('view edit landmark', () => {
         test.setTimeout(600000); // 10 minutes for long test
     });
 
+    // Helper function to create a landmark if none exist
+    async function createLandmarkIfNeeded(page, config) {
+        const uniqueLandmarkName = `AutoTest_ViewEdit_${Date.now()}`;
+        console.log(`Creating landmark: ${uniqueLandmarkName}`);
+
+        // Click on Geofencing menu to expand submenu
+        await page.locator(config.selectors.navigation.geofencingMenu).click();
+        await page.waitForTimeout(2000);
+
+        // Click on the "Landmarks" accordion button
+        await page.locator('.accordion__button.accordion--nested').filter({ hasText: 'Landmarks' }).click({ force: true });
+        await page.waitForTimeout(2000);
+
+        // Click on Create Landmarks with retry logic
+        let modalVisible = false;
+        for (let attempt = 1; attempt <= 3; attempt++) {
+            console.log(`Create Landmark - Attempt ${attempt}: Trying to open modal...`);
+
+            await expect(page.locator('#create-landmarks-btn')).toBeVisible({ timeout: 10000 });
+            await page.locator('#create-landmarks-btn').scrollIntoViewIfNeeded();
+            await page.waitForTimeout(500);
+            await page.locator('#create-landmarks-btn').click({ force: true });
+            await page.waitForTimeout(3000);
+
+            // Check if modal is visible and not hidden
+            try {
+                const modal = page.locator('#create-landmark-modal');
+                const isVisible = await modal.isVisible();
+                const hasHiddenClass = await modal.evaluate(el => el.classList.contains('hidden'));
+                if (isVisible && !hasHiddenClass) {
+                    modalVisible = true;
+                    break;
+                }
+            } catch (e) {
+                // Continue trying
+            }
+
+            // If modal didn't open, try JavaScript click
+            if (!modalVisible) {
+                console.log('Force click did not open modal, trying JavaScript click...');
+                await page.locator('#create-landmarks-btn').evaluate(el => el.click());
+                await page.waitForTimeout(3000);
+
+                try {
+                    const modal = page.locator('#create-landmark-modal');
+                    const isVisible = await modal.isVisible();
+                    const hasHiddenClass = await modal.evaluate(el => el.classList.contains('hidden'));
+                    if (isVisible && !hasHiddenClass) {
+                        modalVisible = true;
+                        break;
+                    }
+                } catch (e) {
+                    // Continue
+                }
+            }
+
+            // Re-expand the menu before retry
+            if (!modalVisible && attempt < 3) {
+                console.log('Modal still not open, re-expanding menu...');
+                await page.locator(config.selectors.navigation.geofencingMenu).click({ force: true });
+                await page.waitForTimeout(1500);
+                await page.locator('.accordion__button.accordion--nested').filter({ hasText: 'Landmarks' }).click({ force: true });
+                await page.waitForTimeout(1500);
+            }
+        }
+
+        if (!modalVisible) {
+            throw new Error('Create Landmark modal did not appear after 3 attempts');
+        }
+        console.log('Create Landmark modal is visible');
+
+        // Get reference to the Create Landmark modal
+        const modal = page.locator('#create-landmark-modal');
+
+        // Enter Landmark Name
+        const landmarkNameInput = modal.locator('#landmark-name');
+        await expect(landmarkNameInput).toBeVisible();
+        await landmarkNameInput.clear();
+        await landmarkNameInput.fill(uniqueLandmarkName);
+        console.log(`Entered landmark name: ${uniqueLandmarkName}`);
+
+        // Enter Address
+        const addressInput = modal.locator('#landmark-address');
+        await expect(addressInput).toBeVisible();
+        await addressInput.clear();
+        await addressInput.fill(config.testData.geofencingAddress);
+        console.log(`Entered address: ${config.testData.geofencingAddress}`);
+
+        // Wait for address suggestions to appear
+        await page.waitForTimeout(3000);
+
+        // Click on address suggestion if visible
+        const addressSuggestion = page.locator('.ui-menu-item').filter({ hasText: 'San Ramon' }).first();
+        try {
+            await addressSuggestion.click({ timeout: 5000 });
+            console.log('Selected address suggestion');
+        } catch (e) {
+            console.log('No address suggestion dropdown, continuing...');
+        }
+
+        // Enter Radius
+        const radiusInput = modal.locator('#landmark-radius-input');
+        await expect(radiusInput).toBeVisible();
+        await radiusInput.clear();
+        await radiusInput.fill(config.testData.geofencingRadius);
+        console.log(`Entered radius: ${config.testData.geofencingRadius}`);
+
+        // Click the Submit button
+        await modal.locator('#submit-landmark').click();
+        console.log('Clicked Submit button');
+
+        await page.waitForTimeout(2000);
+
+        // Wait for preview overlay and click Save
+        await expect(page.locator('#geofence-preview-overlay')).toBeVisible({ timeout: 10000 });
+        console.log('Preview overlay is visible');
+
+        // Click the Save button on the preview overlay
+        const [saveResponse] = await Promise.all([
+            page.waitForResponse(response =>
+                response.url().includes('addlandmark.php') && response.status() === 200
+            ),
+            page.locator('#geofence-preview-overlay').locator('button.btn--primary', { hasText: 'Save' }).click()
+        ]);
+        console.log('Landmark saved successfully');
+
+        // Wait for success alert
+        await expect(page.locator('.alert-container')).toBeVisible({ timeout: 5000 });
+        await page.waitForTimeout(3000);
+
+        return uniqueLandmarkName;
+    }
+
+    // Helper function to open View/Edit Landmarks modal with retry logic
+    async function openViewEditLandmarksModal(page, config) {
+        let viewEditModalOpened = false;
+        let noDataAlert = false;
+
+        for (let attempt = 1; attempt <= 3; attempt++) {
+            console.log(`Attempt ${attempt}: Trying to open View/Edit Landmarks modal...`);
+
+            // Open Geofencing menu
+            await page.locator(config.selectors.navigation.geofencingMenu).hover();
+            await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
+            await page.locator(config.selectors.navigation.geofencingMenu).click();
+            await page.waitForTimeout(2000);
+
+            // Click on the "Landmarks" accordion button
+            await page.locator('.accordion__button.accordion--nested').filter({ hasText: 'Landmarks' }).click({ force: true });
+            await page.waitForTimeout(2000);
+
+            await expect(page.locator('#view-edit-landmarks-btn')).toBeVisible();
+            await page.locator('#view-edit-landmarks-btn').scrollIntoViewIfNeeded();
+            await page.waitForTimeout(500);
+
+            // Try force click first
+            await page.locator('#view-edit-landmarks-btn').click({ force: true });
+            await page.waitForTimeout(2000);
+
+            // Check for "No Data" alert (no landmarks exist)
+            const noDataAlertLocator = page.locator('.alert-container').filter({ hasText: 'No Data' });
+            if (await noDataAlertLocator.isVisible({ timeout: 2000 }).catch(() => false)) {
+                console.log('No landmarks exist - need to create one first');
+                noDataAlert = true;
+                break;
+            }
+
+            // Check if modal opened
+            try {
+                const modalVisible = await page.locator('#view-edit-landmarks-modal').isVisible();
+                const hasHiddenClass = await page.locator('#view-edit-landmarks-modal').evaluate(el => el.classList.contains('hidden'));
+                if (modalVisible && !hasHiddenClass) {
+                    viewEditModalOpened = true;
+                    break;
+                }
+            } catch (e) {
+                // Continue trying
+            }
+
+            // If modal didn't open, try JavaScript click
+            if (!viewEditModalOpened) {
+                console.log('Force click did not open modal, trying JavaScript click...');
+                await page.locator('#view-edit-landmarks-btn').evaluate(el => el.click());
+                await page.waitForTimeout(2000);
+
+                // Check for "No Data" alert again
+                if (await noDataAlertLocator.isVisible({ timeout: 2000 }).catch(() => false)) {
+                    console.log('No landmarks exist - need to create one first');
+                    noDataAlert = true;
+                    break;
+                }
+
+                try {
+                    const modalVisible = await page.locator('#view-edit-landmarks-modal').isVisible();
+                    const hasHiddenClass = await page.locator('#view-edit-landmarks-modal').evaluate(el => el.classList.contains('hidden'));
+                    if (modalVisible && !hasHiddenClass) {
+                        viewEditModalOpened = true;
+                        break;
+                    }
+                } catch (e) {
+                    // Continue
+                }
+            }
+
+            // Re-expand the menu before retry
+            if (!viewEditModalOpened && attempt < 3) {
+                console.log('Modal still not open, re-expanding menu...');
+                await page.locator(config.selectors.navigation.geofencingMenu).click({ force: true });
+                await page.waitForTimeout(1500);
+            }
+        }
+
+        return { viewEditModalOpened, noDataAlert };
+    }
+
     test('should be able to view, edit and delete landmark', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
@@ -27,20 +242,19 @@ test.describe('view edit landmark', () => {
         // Use fast login helper which handles stored auth vs fresh login automatically
         await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
-        // Step 1: Navigate to View Landmarks
-        await page.locator(config.selectors.navigation.geofencingMenu).hover();
-        await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.geofencingMenu).click();
+        // Step 1: Try to open View/Edit Landmarks modal
+        let { viewEditModalOpened, noDataAlert } = await openViewEditLandmarksModal(page, config);
 
-        await page.waitForTimeout(2000);
+        // If no landmarks exist, create one first
+        if (noDataAlert) {
+            console.log('No landmarks found, creating one first...');
+            await page.waitForTimeout(3000); // Wait for alert to dismiss
+            await createLandmarkIfNeeded(page, config);
 
-        // Click on the "Landmarks" accordion button in the Geofencing menu
-        await page.locator('.accordion__button.accordion--nested').filter({ hasText: 'Landmarks' }).click({ force: true });
-
-        await page.waitForTimeout(1000);
-
-        await expect(page.locator(config.selectors.navigation.editLandmarkMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.editLandmarkMenu).click();
+            // Now try to open the modal again
+            const result = await openViewEditLandmarksModal(page, config);
+            viewEditModalOpened = result.viewEditModalOpened;
+        }
 
         // Step 2: Wait for View Landmarks modal
         await expect(page.locator(config.selectors.viewEditLandmarks.viewEditContainer)).toBeVisible({ timeout: 10000 });
@@ -243,21 +457,20 @@ test.describe('view edit landmark', () => {
 
         // ==================== PART 1: UNCHECKED - VEHICLE MARKERS VISIBLE ====================
 
-        // Step 1: Navigate to View Landmarks
+        // Step 1: Try to open View/Edit Landmarks modal
         console.log('PART 1: Testing with Hide Vehicle Markers UNCHECKED');
-        await page.locator(config.selectors.navigation.geofencingMenu).hover();
-        await expect(page.locator(config.selectors.navigation.geofencingMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.geofencingMenu).click();
+        let { viewEditModalOpened, noDataAlert } = await openViewEditLandmarksModal(page, config);
 
-        await page.waitForTimeout(2000);
+        // If no landmarks exist, create one first
+        if (noDataAlert) {
+            console.log('No landmarks found, creating one first...');
+            await page.waitForTimeout(3000); // Wait for alert to dismiss
+            await createLandmarkIfNeeded(page, config);
 
-        // Click on the "Landmarks" accordion button
-        await page.locator('.accordion__button.accordion--nested').filter({ hasText: 'Landmarks' }).click({ force: true });
-
-        await page.waitForTimeout(1000);
-
-        await expect(page.locator(config.selectors.navigation.editLandmarkMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.editLandmarkMenu).click();
+            // Now try to open the modal again
+            const result = await openViewEditLandmarksModal(page, config);
+            viewEditModalOpened = result.viewEditModalOpened;
+        }
 
         // Step 2: Wait for View Landmarks modal
         await expect(page.locator(config.selectors.viewEditLandmarks.viewEditContainer)).toBeVisible({ timeout: 10000 });
@@ -319,27 +532,8 @@ test.describe('view edit landmark', () => {
         // Wait for page to stabilize after closing overlay
         await page.waitForTimeout(3000);
 
-        // Step 9: Open View Landmarks modal again
-        const geofencingMenu = page.locator(config.selectors.navigation.geofencingMenu);
-        await geofencingMenu.scrollIntoViewIfNeeded();
-        await expect(geofencingMenu).toBeVisible({ timeout: 5000 });
-        await geofencingMenu.click();
-        console.log('Clicked Geofencing menu');
-
-        await page.waitForTimeout(2000);
-
-        // Click on the "Landmarks" accordion button to expand it
-        const landmarksAccordion = page.locator('.accordion__button.accordion--nested').filter({ hasText: 'Landmarks' });
-        await expect(landmarksAccordion).toBeVisible({ timeout: 5000 });
-        await landmarksAccordion.click();
-        console.log('Clicked Landmarks accordion');
-
-        await page.waitForTimeout(2000);
-
-        // Click on View/Edit Landmarks using JavaScript click to bypass overlay issues
-        const viewEditMenu = page.locator(config.selectors.navigation.editLandmarkMenu);
-        await expect(viewEditMenu).toBeVisible({ timeout: 5000 });
-        await viewEditMenu.evaluate(el => el.click());
+        // Step 9: Open View Landmarks modal again using helper function
+        const result2 = await openViewEditLandmarksModal(page, config);
         console.log('Clicked View/Edit Landmarks');
 
         // Step 10: Wait for View Landmarks modal

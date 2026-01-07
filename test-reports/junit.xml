@@ -1,207 +1,14 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="258.739808">
-<testsuite name="auth.setup.js" timestamp="2025-12-28T09:06:35.978Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.786" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="0.786">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="247.053609">
+<testsuite name="auth.setup.js" timestamp="2026-01-07T19:00:13.345Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.654" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="1.654">
 <system-out>
-<![CDATA[Valid authentication session found (age: 9 minutes). Skipping login.
+<![CDATA[Valid authentication session found (age: 57 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS039_weeklyUtilizationReport.spec.js" timestamp="2025-12-28T09:06:35.978Z" hostname="chromium" tests="1" failures="1" skipped="0" time="253.09" errors="0">
-<testcase name="Weekly Utilization Report › should generate and validate weekly utilization report" classname="TS039_weeklyUtilizationReport.spec.js" time="253.09">
-<failure message="TS039_weeklyUtilizationReport.spec.js:23:5 should generate and validate weekly utilization report" type="FAILURE">
-<![CDATA[  [chromium] › TS039_weeklyUtilizationReport.spec.js:23:5 › Weekly Utilization Report › should generate and validate weekly utilization report 
-
-    TimeoutError: locator.hover: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('.fa-question-circle').first()
-        - locator resolved to <i title="" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" class="fas fa-question-circle" data-bs-original-title="Shows the percentage of time spent at different locations">↵                    </i>
-      - attempting hover action
-        2 × waiting for element to be visible and stable
-          - element is visible and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div class="card-body">…</div> from <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> subtree intercepts pointer events
-        - retrying hover action
-        - waiting 20ms
-        2 × waiting for element to be visible and stable
-          - element is visible and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div class="card-body">…</div> from <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> subtree intercepts pointer events
-        - retrying hover action
-          - waiting 100ms
-        8 × waiting for element to be visible and stable
-          - element is visible and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> intercepts pointer events
-        - retrying hover action
-          - waiting 500ms
-          - waiting for element to be visible and stable
-          - element is visible and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> intercepts pointer events
-        - retrying hover action
-          - waiting 500ms
-          - waiting for element to be visible and stable
-          - element is visible and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div class="card-body">…</div> from <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> subtree intercepts pointer events
-        - retrying hover action
-          - waiting 500ms
-          - waiting for element to be visible and stable
-          - element is visible and stable
-          - scrolling into view if needed
-          - done scrolling
-          - <div class="card-body">…</div> from <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> subtree intercepts pointer events
-        - retrying hover action
-          - waiting 500ms
-        - waiting for element to be visible and stable
-        - element is visible and stable
-        - scrolling into view if needed
-        - done scrolling
-        - <div tabindex="-1" role="dialog" id="deviceModal" aria-modal="true" class="modal fade show">…</div> intercepts pointer events
-      - retrying hover action
-        - waiting 500ms
-
-
-      304 |
-      305 |             // Hover over the tooltip icon to trigger tooltip
-    > 306 |             await efficiencyTooltipIcon.hover();
-          |                                         ^
-      307 |             await newPage.waitForTimeout(500);
-      308 |             console.log('Hovered over efficiency tooltip icon');
-      309 |         }
-        at C:\cypress-to-playwright-converted\tests\TS039_weeklyUtilizationReport.spec.js:306:41
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-2.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-3.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-4.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-5.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-10.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-11.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-7.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-13.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #10: screenshot (image/png) ─────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-12.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #11: screenshot (image/png) ─────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-8.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #12: screenshot (image/png) ─────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-9.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #13: screenshot (image/png) ─────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-6.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #14: screenshot (image/png) ─────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-14.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #15: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-3.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #16: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-5.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #17: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-1.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #18: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-2.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #19: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-4.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #20: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-6.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #21: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #22: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-7.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #23: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-8.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #24: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-11.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #25: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-10.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #26: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-9.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #27: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-12.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #28: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-15.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #29: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-13.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #30: video (video/webm) ─────────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-14.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #31: screenshot (image/png) ─────────────────────────────────────────────────────────
-    ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-16.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuite name="TS002_addEditDevices.spec.js" timestamp="2026-01-07T19:00:13.345Z" hostname="chromium" tests="1" failures="0" skipped="0" time="239.543" errors="0">
+<testcase name="Add edit Device › should add device with custom icon" classname="TS002_addEditDevices.spec.js" time="239.543">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -212,82 +19,45 @@ Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Network idle timeout, continuing...
 Page loaded successfully
---- Step 1: Opening menu and navigating to Weekly Utilization Report ---
-Weekly Utilization Report menu item is visible
-Menu item href: [1mnull[22m
-Click did not open new tab, trying middle click...
-Weekly Utilization Report middle-clicked - new tab opened
-New page loaded
---- Step 2: Selecting Report Duration (Last 7 Days) and Capturing API Response ---
-Report Duration set to "Last 7 Days" - report auto-generating...
-API Response captured from getTrackReportGeo_Next_uti.php
---- Step 3: Report Generated ---
---- Step 4: Verifying Summary Section ---
-Total Utilization section is visible
-Total Trackers: 2
---- Step 5: Verifying Vehicle Analytics Table ---
-Vehicle Analytics Table is visible
-Table has 2 row(s)
-First row - Driver: Sales Car1, Efficiency: 100%
-Sales Car1 efficiency: 100%
-Clicked on first row in Vehicle Analytics table
-Sales Car1 stored efficiency: 100%
-Clicked row efficiency: 100%
-Efficiencies match (within 0.1% tolerance)!
---- Step 6: Validating API Response Data Against UI ---
-API Total Utilization: 100%, UI: 100%
-API Inside Landmarks: 0%, UI: 0%
-API Total Trackers: 2, UI: 2
-API Devices Count: 2, UI Table Rows: 2
---- Step 7: Verifying Inside Landmarks Section ---
-Inside Landmarks: 0%
---- Step 8: Verifying Charts Visibility ---
-Location Distribution chart is visible
-Location Distribution heading is visible
-Efficiency Trend chart is visible
-Efficiency Trend heading is visible
-Device Activity Timeline chart is visible
-Device Activity Timeline heading is visible
---- Step 9: Verifying Legend Containers ---
-Location Distribution legend container is visible
---- Step 10: Verifying Tooltips ---
-Efficiency tooltip icon is visible
+Found 7 IMEI options available
+Selected IMEI: 861492065082189
+Device name entered: CustomIconDevice
+Upload & Crop Custom Icon modal opened successfully
+Test image uploaded successfully
+Zoom adjusted
+Preview section is visible
+Save Icon button clicked
+crop_image_upload_new.php API called successfully
+Alert message: Custom icon saved successfully!
+Custom icon uploaded and saved successfully
+Selected "Custom Icon" from icon category dropdown
+getCustomIconAll.php API called successfully
+Custom icons loaded in grid
+Custom icon selected
+Add Device button clicked
+Device added successfully with IMEI: 861492065082189
+Device selected in Edit tab: CustomIconDevice (IMEI: 861492065082189)
+Device name changed to: CustomIconDeviceEdited
+Upload & Crop Custom Icon modal opened successfully
+Test image uploaded successfully
+Zoom adjusted
+Preview section is visible
+Save Icon button clicked
+crop_image_upload_new.php API called successfully
+Alert message: Custom icon saved successfully!
+Custom icon uploaded and saved successfully
+Selected "Custom Icon" from icon category dropdown
+API response timeout, but continuing as icons may have loaded...
+Custom icons loaded in grid
+Custom icon selected
+Update Device button clicked
+Device updated successfully: CustomIconDeviceEdited
+Device selected for removal (IMEI: 861492065082189)
+Delete confirmation clicked
+Device removed successfully: CustomIconDeviceEdited (IMEI: 861492065082189)
+Custom icon device add/edit/remove test completed successfully
 ]]>
 </system-out>
-<system-err>
-<![CDATA[
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-2.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-1.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-3.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-4.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-5.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-10.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-11.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-7.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-13.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-12.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-8.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-9.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-6.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-14.png is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-3.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-5.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-1.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-2.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-4.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-6.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-7.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-8.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-11.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-10.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-9.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-12.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-15.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-13.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\video-14.webm is missing
-Warning: attachment ..\test-results\TS039_weeklyUtilizationRep-e422c-e-weekly-utilization-report-chromium\test-failed-16.png is missing]]>
-</system-err>
 </testcase>
 </testsuite>
 </testsuites>
