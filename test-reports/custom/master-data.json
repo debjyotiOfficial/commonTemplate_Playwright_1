@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-07T19:16:41.726Z",
+  "lastUpdated": "2026-01-09T23:13:23.934Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 1654,
+      "duration": 776,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,13 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 57 minutes). Skipping login.",
+          "text": "Valid authentication session found (age: 59 minutes). Skipping login.",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-07T19:00:15.446Z",
-      "endTime": "2026-01-07T19:00:17.100Z",
+      "startTime": "2026-01-09T22:59:58.555Z",
+      "endTime": "2026-01-09T22:59:59.332Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -35,7 +35,7 @@
       "description": "should show list of all devices in the platform",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 109524,
+      "duration": 4244727,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -43,13 +43,37 @@
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
           "status": "info",
           "type": "log"
         },
@@ -85,7 +109,7 @@
         },
         {
           "number": "",
-          "text": "Found 6 devices in the table",
+          "text": "Found 10 devices in the table",
           "status": "info",
           "type": "log"
         },
@@ -127,7 +151,7 @@
         },
         {
           "number": "",
-          "text": "✓ Found 51 devices in the list",
+          "text": "✓ Found 55 devices in the list",
           "status": "info",
           "type": "log"
         },
@@ -175,7 +199,7 @@
         },
         {
           "number": "",
-          "text": "✓ Device name input value: \"Sales Car1\"",
+          "text": "✓ Device name input value: \"\"",
           "status": "info",
           "type": "log"
         },
@@ -228,8 +252,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-07T16:09:01.864Z",
-      "endTime": "2025-12-07T16:10:51.389Z",
+      "startTime": "2026-01-08T20:53:02.485Z",
+      "endTime": "2026-01-08T22:03:47.212Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS001_listOfDevice.spec.js",
       "fileName": "TS001_listOfDevice",
@@ -10260,6 +10284,177 @@
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS058_dashcamDataUsage.spec.js",
       "fileName": "TS058_dashcamDataUsage",
       "line": 23
+    },
+    {
+      "testCaseNo": "TS061-A",
+      "module": "Custom Logo",
+      "title": "should open Custom Logo Settings modal and verify UI elements",
+      "description": "should open Custom Logo Settings modal and verify UI elements",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 59029,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ get_custom_logo API called (status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo Settings modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo Settings modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Small Logo (Collapsed Navbar) section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Large Logo (Expanded Navbar) section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 4 Upload buttons",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Collapsed preview label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Expanded preview label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Reset to Default button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Cancel button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Close (X) button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All Custom Logo Settings UI elements verified successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-09T23:00:02.712Z",
+      "endTime": "2026-01-09T23:01:01.741Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
+      "fileName": "TS061_customLogo",
+      "line": 119
     },
     {
       "testCaseNo": "TC-A",

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - listOfDevice - 7/12/2025</title>
+    <title>Test Report - listOfDevice - 9/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: listOfDevice</div>
             <div class="subtitle">
-                Generated: 7/12/2025, 9:40:51 pm |
-                Duration: 111.67s |
+                Generated: 9/1/2026, 3:33:48 am |
+                Duration: 4440.27s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -215,7 +215,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (31)</span>
+                                    <span>View Test Steps (35)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,12 +224,32 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Performing login...</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -259,7 +279,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Found 6 devices in the table</span>
+                                                <span class="step-text">Found 10 devices in the table</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -294,7 +314,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Found 51 devices in the list</span>
+                                                <span class="step-text">✓ Found 55 devices in the list</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -334,7 +354,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Device name input value: &quot;Sales Car1&quot;</span>
+                                                <span class="step-text">✓ Device name input value: &quot;&quot;</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -382,7 +402,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>109.52s</strong></td>
+                        <td><strong>4244.73s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -436,7 +456,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"109.52s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"4244.73s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -453,7 +473,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-07.csv';
+            link.download = 'test-report-2026-01-08.csv';
             link.click();
         }
     </script>

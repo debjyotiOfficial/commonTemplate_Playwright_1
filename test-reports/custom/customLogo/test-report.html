@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - auth - 10/1/2026</title>
+    <title>Test Report - customLogo - 10/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -150,7 +150,7 @@
     <div class="container">
         <div class="header">
             <h1>Test Execution Report</h1>
-            <div class="module-name">Module: auth</div>
+            <div class="module-name">Module: customLogo</div>
             <div class="subtitle">
                 Generated: 10/1/2026, 4:43:23 am |
                 Duration: 810.90s |
@@ -207,15 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="auth.setup.js">
-                        <td><span class="test-case-no">TC-A</span></td>
-                        <td>auth.setup.js</td>
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-A</span></td>
+                        <td>Custom Logo</td>
                         <td>
-                            <strong>authenticate</strong>
+                            <strong>should open Custom Logo Settings modal and verify UI elements</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (1)</span>
+                                    <span>View Test Steps (25)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,7 +224,127 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 59 minutes). Skipping login.</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small Logo (Collapsed Navbar) section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small Logo recommended size (80x64 pixels) is displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large Logo (Expanded Navbar) section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large Logo recommended size (200x64 pixels) is displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found 4 Upload buttons</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Preview section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Collapsed preview label is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Expanded preview label is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Reset to Default button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Cancel button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Save button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Close (X) button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All Custom Logo Settings UI elements verified successfully</span>
                                             </div>
                                         
                                     </div>
@@ -232,7 +352,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>0.78s</strong></td>
+                        <td><strong>59.03s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -286,7 +406,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.78s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should open Custom Logo Settings modal and verify UI elements","status":"PASSED","duration":"59.03s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([

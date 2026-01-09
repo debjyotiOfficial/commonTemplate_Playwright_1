@@ -1,14 +1,14 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="247.053609">
-<testsuite name="auth.setup.js" timestamp="2026-01-07T19:00:13.345Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.654" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="1.654">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="69.29802200000002">
+<testsuite name="auth.setup.js" timestamp="2026-01-09T22:59:52.989Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.776" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="0.776">
 <system-out>
-<![CDATA[Valid authentication session found (age: 57 minutes). Skipping login.
+<![CDATA[Valid authentication session found (age: 59 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS002_addEditDevices.spec.js" timestamp="2026-01-07T19:00:13.345Z" hostname="chromium" tests="1" failures="0" skipped="0" time="239.543" errors="0">
-<testcase name="Add edit Device › should add device with custom icon" classname="TS002_addEditDevices.spec.js" time="239.543">
+<testsuite name="TS061_customLogo.spec.js" timestamp="2026-01-09T22:59:52.989Z" hostname="chromium" tests="1" failures="0" skipped="0" time="59.029" errors="0">
+<testcase name="Custom Logo › should open Custom Logo Settings modal and verify UI elements" classname="TS061_customLogo.spec.js" time="59.029">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -19,43 +19,22 @@ Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Network idle timeout, continuing...
 Page loaded successfully
-Found 7 IMEI options available
-Selected IMEI: 861492065082189
-Device name entered: CustomIconDevice
-Upload & Crop Custom Icon modal opened successfully
-Test image uploaded successfully
-Zoom adjusted
-Preview section is visible
-Save Icon button clicked
-crop_image_upload_new.php API called successfully
-Alert message: Custom icon saved successfully!
-Custom icon uploaded and saved successfully
-Selected "Custom Icon" from icon category dropdown
-getCustomIconAll.php API called successfully
-Custom icons loaded in grid
-Custom icon selected
-Add Device button clicked
-Device added successfully with IMEI: 861492065082189
-Device selected in Edit tab: CustomIconDevice (IMEI: 861492065082189)
-Device name changed to: CustomIconDeviceEdited
-Upload & Crop Custom Icon modal opened successfully
-Test image uploaded successfully
-Zoom adjusted
-Preview section is visible
-Save Icon button clicked
-crop_image_upload_new.php API called successfully
-Alert message: Custom icon saved successfully!
-Custom icon uploaded and saved successfully
-Selected "Custom Icon" from icon category dropdown
-API response timeout, but continuing as icons may have loaded...
-Custom icons loaded in grid
-Custom icon selected
-Update Device button clicked
-Device updated successfully: CustomIconDeviceEdited
-Device selected for removal (IMEI: 861492065082189)
-Delete confirmation clicked
-Device removed successfully: CustomIconDeviceEdited (IMEI: 861492065082189)
-Custom icon device add/edit/remove test completed successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Custom Logo Settings modal is visible
+✓ Small Logo (Collapsed Navbar) section is visible
+✓ Small Logo recommended size (80x64 pixels) is displayed
+✓ Large Logo (Expanded Navbar) section is visible
+✓ Large Logo recommended size (200x64 pixels) is displayed
+✓ Found 4 Upload buttons
+✓ Preview section is visible
+✓ Collapsed preview label is visible
+✓ Expanded preview label is visible
+✓ Reset to Default button is visible
+✓ Cancel button is visible
+✓ Save button is visible
+✓ Close (X) button is visible
+✓ All Custom Logo Settings UI elements verified successfully
 ]]>
 </system-out>
 </testcase>

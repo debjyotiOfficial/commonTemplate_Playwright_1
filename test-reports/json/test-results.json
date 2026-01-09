@@ -113,16 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1654,
+                  "duration": 776,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 57 minutes). Skipping login.\n"
+                      "text": "Valid authentication session found (age: 59 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-07T19:00:14.309Z",
+                  "startTime": "2026-01-09T22:59:55.193Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -138,25 +138,25 @@
       ]
     },
     {
-      "title": "TS002_addEditDevices.spec.js",
-      "file": "TS002_addEditDevices.spec.js",
+      "title": "TS061_customLogo.spec.js",
+      "file": "TS061_customLogo.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Add edit Device",
-          "file": "TS002_addEditDevices.spec.js",
-          "line": 14,
+          "title": "Custom Logo",
+          "file": "TS061_customLogo.spec.js",
+          "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "should add device with custom icon",
+              "title": "should open Custom Logo Settings modal and verify UI elements",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 600000,
+                  "timeout": 500000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -166,7 +166,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 239543,
+                      "duration": 59029,
                       "errors": [],
                       "stdout": [
                         {
@@ -197,120 +197,57 @@
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "Found 7 IMEI options available\n"
+                          "text": "✓ get_custom_logo API called (status: 200)\n"
                         },
                         {
-                          "text": "Selected IMEI: 861492065082189\n"
+                          "text": "✓ Custom Logo Settings modal opened\n"
                         },
                         {
-                          "text": "Device name entered: CustomIconDevice\n"
+                          "text": "✓ Custom Logo Settings modal is visible\n"
                         },
                         {
-                          "text": "Upload & Crop Custom Icon modal opened successfully\n"
+                          "text": "✓ Small Logo (Collapsed Navbar) section is visible\n"
                         },
                         {
-                          "text": "Test image uploaded successfully\n"
+                          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed\n"
                         },
                         {
-                          "text": "Zoom adjusted\n"
+                          "text": "✓ Large Logo (Expanded Navbar) section is visible\n"
                         },
                         {
-                          "text": "Preview section is visible\n"
+                          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed\n"
                         },
                         {
-                          "text": "Save Icon button clicked\n"
+                          "text": "✓ Found 4 Upload buttons\n"
                         },
                         {
-                          "text": "crop_image_upload_new.php API called successfully\n"
+                          "text": "✓ Preview section is visible\n"
                         },
                         {
-                          "text": "Alert message: Custom icon saved successfully!\n"
+                          "text": "✓ Collapsed preview label is visible\n"
                         },
                         {
-                          "text": "Custom icon uploaded and saved successfully\n"
+                          "text": "✓ Expanded preview label is visible\n"
                         },
                         {
-                          "text": "Selected \"Custom Icon\" from icon category dropdown\n"
+                          "text": "✓ Reset to Default button is visible\n"
                         },
                         {
-                          "text": "getCustomIconAll.php API called successfully\n"
+                          "text": "✓ Cancel button is visible\n"
                         },
                         {
-                          "text": "Custom icons loaded in grid\n"
+                          "text": "✓ Save button is visible\n"
                         },
                         {
-                          "text": "Custom icon selected\n"
+                          "text": "✓ Close (X) button is visible\n"
                         },
                         {
-                          "text": "Add Device button clicked\n"
-                        },
-                        {
-                          "text": "Device added successfully with IMEI: 861492065082189\n"
-                        },
-                        {
-                          "text": "Device selected in Edit tab: CustomIconDevice (IMEI: 861492065082189)\n"
-                        },
-                        {
-                          "text": "Device name changed to: CustomIconDeviceEdited\n"
-                        },
-                        {
-                          "text": "Upload & Crop Custom Icon modal opened successfully\n"
-                        },
-                        {
-                          "text": "Test image uploaded successfully\n"
-                        },
-                        {
-                          "text": "Zoom adjusted\n"
-                        },
-                        {
-                          "text": "Preview section is visible\n"
-                        },
-                        {
-                          "text": "Save Icon button clicked\n"
-                        },
-                        {
-                          "text": "crop_image_upload_new.php API called successfully\n"
-                        },
-                        {
-                          "text": "Alert message: Custom icon saved successfully!\n"
-                        },
-                        {
-                          "text": "Custom icon uploaded and saved successfully\n"
-                        },
-                        {
-                          "text": "Selected \"Custom Icon\" from icon category dropdown\n"
-                        },
-                        {
-                          "text": "API response timeout, but continuing as icons may have loaded...\n"
-                        },
-                        {
-                          "text": "Custom icons loaded in grid\n"
-                        },
-                        {
-                          "text": "Custom icon selected\n"
-                        },
-                        {
-                          "text": "Update Device button clicked\n"
-                        },
-                        {
-                          "text": "Device updated successfully: CustomIconDeviceEdited\n"
-                        },
-                        {
-                          "text": "Device selected for removal (IMEI: 861492065082189)\n"
-                        },
-                        {
-                          "text": "Delete confirmation clicked\n"
-                        },
-                        {
-                          "text": "Device removed successfully: CustomIconDeviceEdited (IMEI: 861492065082189)\n"
-                        },
-                        {
-                          "text": "Custom icon device add/edit/remove test completed successfully\n"
+                          "text": "✓ All Custom Logo Settings UI elements verified successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-07T19:00:18.414Z",
+                      "startTime": "2026-01-09T23:00:01.747Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -318,9 +255,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "d268d3312c13f8e344eb-8c23c0d024ff721bf833",
-              "file": "TS002_addEditDevices.spec.js",
-              "line": 394,
+              "id": "3c3b7c2fe9ae52a64cb2-00ca5bc34d288dbdb01b",
+              "file": "TS061_customLogo.spec.js",
+              "line": 119,
               "column": 5
             }
           ]
@@ -330,8 +267,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-07T19:00:12.996Z",
-    "duration": 247053.609,
+    "startTime": "2026-01-09T22:59:52.680Z",
+    "duration": 69298.02200000001,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

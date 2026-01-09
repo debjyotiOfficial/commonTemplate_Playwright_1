@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 988345,
-    "startTime": "2026-01-07T19:00:13.346Z",
-    "endTime": "2026-01-07T19:16:41.691Z"
+    "duration": 810899,
+    "startTime": "2026-01-09T22:59:52.992Z",
+    "endTime": "2026-01-09T23:13:23.891Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 1654,
+      "duration": 776,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -24,13 +24,13 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 57 minutes). Skipping login.",
+          "text": "Valid authentication session found (age: 59 minutes). Skipping login.",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-07T19:00:15.446Z",
-      "endTime": "2026-01-07T19:00:17.100Z",
+      "startTime": "2026-01-09T22:59:58.555Z",
+      "endTime": "2026-01-09T22:59:59.332Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",

@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS061-A,"Custom Logo","should open Custom Logo Settings modal and verify UI elements",PASSED,59.03,"",N/A,TS061_customLogo.spec.js,119

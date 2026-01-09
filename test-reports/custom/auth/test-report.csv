@@ -1,2 +1,2 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,1.65,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,0.78,"",N/A,auth.setup.js,10

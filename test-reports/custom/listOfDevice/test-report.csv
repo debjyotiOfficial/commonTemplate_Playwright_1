@@ -1,2 +1,2 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS001-A,"List of Device","should show list of all devices in the platform",PASSED,109.52,"",N/A,TS001_listOfDevice.spec.js,10
+TS001-A,"List of Device","should show list of all devices in the platform",PASSED,4244.73,"",N/A,TS001_listOfDevice.spec.js,10

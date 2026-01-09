@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 810899,
+    "startTime": "2026-01-09T22:59:52.992Z",
+    "endTime": "2026-01-09T23:13:23.891Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS061-A",
+      "module": "Custom Logo",
+      "title": "should open Custom Logo Settings modal and verify UI elements",
+      "description": "should open Custom Logo Settings modal and verify UI elements",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 59029,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ get_custom_logo API called (status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo Settings modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo Settings modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Small Logo (Collapsed Navbar) section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Large Logo (Expanded Navbar) section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 4 Upload buttons",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Preview section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Collapsed preview label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Expanded preview label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Reset to Default button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Cancel button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Close (X) button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All Custom Logo Settings UI elements verified successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-09T23:00:02.712Z",
+      "endTime": "2026-01-09T23:01:01.741Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
+      "fileName": "TS061_customLogo",
+      "line": 119
+    }
+  ]
+}

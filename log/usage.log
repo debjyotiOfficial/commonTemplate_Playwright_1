@@ -73,3 +73,28 @@
 2025-12-16 14:22:28 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop
 2025-12-16 14:22:28 - [32minfo[39m: key-metrics.json file not found, skipping processing for event for cli.
 2025-12-16 14:22:28 - [32minfo[39m: key-metrics.json file not found, skipping processing for event for cli.
+2026-01-10 04:51:32 - [32minfo[39m: Reading configs from C:\cypress-to-playwright-converted\browserstack.yml
+2026-01-10 04:51:32 - [32minfo[39m: Log Directory has been set to C:\cypress-to-playwright-converted\log
+2026-01-10 04:51:32 - [32minfo[39m: Log Directory has been set to C:\cypress-to-playwright-converted\log
+2026-01-10 04:51:32 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\bin\runner.js playwright test tests/TS061_customLogo.spec.js
+2026-01-10 04:51:32 - [32minfo[39m: SDK run started with id: a7e4f571-1317-41e1-a03e-a3e9df959af0
+2026-01-10 04:51:32 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2026-01-10 04:51:34 - [31merror[39m: Error: LocalError: Couldn't find binary file
+    at BrowserStackSetup.setupBrowserstackLocal (C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\helpers\BrowserStackSetup.js:1:17763)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async BrowserStackSetup.initialize (C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\helpers\BrowserStackSetup.js:1:15054)
+    at async C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\bin\playwright\command.js:2:7708
+2026-01-10 04:51:32 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\bin\runner.js playwright test tests/TS061_customLogo.spec.js
+2026-01-10 04:51:32 - [32minfo[39m: SDK run started with id: a7e4f571-1317-41e1-a03e-a3e9df959af0
+2026-01-10 04:51:32 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2026-01-10 04:51:34 - [31merror[39m: Error: LocalError: Couldn't find binary file
+    at BrowserStackSetup.setupBrowserstackLocal (C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\helpers\BrowserStackSetup.js:1:17763)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async BrowserStackSetup.initialize (C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\helpers\BrowserStackSetup.js:1:15054)
+    at async C:\cypress-to-playwright-converted\node_modules\browserstack-node-sdk\src\bin\playwright\command.js:2:7708
+2026-01-10 04:51:37 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop
+2026-01-10 04:51:37 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop
+2026-01-10 04:51:37 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop
+2026-01-10 04:51:37 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop
+2026-01-10 04:51:37 - [32minfo[39m: key-metrics.json file not found, skipping processing for event for cli.
+2026-01-10 04:51:37 - [32minfo[39m: key-metrics.json file not found, skipping processing for event for cli.

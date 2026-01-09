@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 111668,
-    "startTime": "2025-12-07T16:09:00.137Z",
-    "endTime": "2025-12-07T16:10:51.805Z"
+    "duration": 4440273,
+    "startTime": "2026-01-08T20:49:48.465Z",
+    "endTime": "2026-01-08T22:03:48.738Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "should show list of all devices in the platform",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 109524,
+      "duration": 4244727,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -24,13 +24,37 @@
       "steps": [
         {
           "number": "",
-          "text": "Performing login...",
+          "text": "Preserving cookies (using stored auth session)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
           "status": "info",
           "type": "log"
         },
@@ -66,7 +90,7 @@
         },
         {
           "number": "",
-          "text": "Found 6 devices in the table",
+          "text": "Found 10 devices in the table",
           "status": "info",
           "type": "log"
         },
@@ -108,7 +132,7 @@
         },
         {
           "number": "",
-          "text": "✓ Found 51 devices in the list",
+          "text": "✓ Found 55 devices in the list",
           "status": "info",
           "type": "log"
         },
@@ -156,7 +180,7 @@
         },
         {
           "number": "",
-          "text": "✓ Device name input value: \"Sales Car1\"",
+          "text": "✓ Device name input value: \"\"",
           "status": "info",
           "type": "log"
         },
@@ -209,8 +233,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2025-12-07T16:09:01.864Z",
-      "endTime": "2025-12-07T16:10:51.389Z",
+      "startTime": "2026-01-08T20:53:02.485Z",
+      "endTime": "2026-01-08T22:03:47.212Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS001_listOfDevice.spec.js",
       "fileName": "TS001_listOfDevice",
