@@ -64,7 +64,7 @@
         "testMatch": [
           "/auth\\.setup\\.js/"
         ],
-        "timeout": 30000
+        "timeout": 600000
       },
       {
         "outputDir": "C:/cypress-to-playwright-converted/test-results",
@@ -80,7 +80,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 600000
       }
     ],
     "shard": null,
@@ -113,16 +113,43 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 776,
+                  "duration": 81522,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 59 minutes). Skipping login.\n"
+                      "text": "Authentication session expired (age: 114 minutes). Re-authenticating...\n"
+                    },
+                    {
+                      "text": "Performing authentication setup...\n"
+                    },
+                    {
+                      "text": "Login page loaded, filling credentials...\n"
+                    },
+                    {
+                      "text": "Username filled\n"
+                    },
+                    {
+                      "text": "Password filled\n"
+                    },
+                    {
+                      "text": "Submit clicked, waiting for login to complete...\n"
+                    },
+                    {
+                      "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php\n"
+                    },
+                    {
+                      "text": "Navigating to fleet dashboard...\n"
+                    },
+                    {
+                      "text": "Dashboard loaded, saving session state...\n"
+                    },
+                    {
+                      "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-09T22:59:55.193Z",
+                  "startTime": "2026-01-12T21:23:35.775Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -151,8 +178,8 @@
           "column": 6,
           "specs": [
             {
-              "title": "should open Custom Logo Settings modal and verify UI elements",
-              "ok": true,
+              "title": "should reset logos to default using Reset to Default button",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -165,9 +192,28 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 59029,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 83843,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mC\u001b[27mustom logos rese\u001b[7mt to defaul\u001b[27mt\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mNo c\u001b[27mustom logos \u001b[7mto \u001b[27mreset\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mC\u001b[27mustom logos rese\u001b[7mt to defaul\u001b[27mt\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mNo c\u001b[27mustom logos \u001b[7mto \u001b[27mreset\"\u001b[39m\n    at C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js:638:47",
+                        "location": {
+                          "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
+                          "column": 47,
+                          "line": 638
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 636 |\u001b[39m         expect(initResetApiResponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 637 |\u001b[39m         expect(initResetResponseBody\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 638 |\u001b[39m         expect(initResetResponseBody\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoBe(\u001b[32m'Custom logos reset to default'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 639 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✓ Initial reset API verified: {\"status\":true,\"message\":\"Custom logos reset to default\"}'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 640 |\u001b[39m\n \u001b[90m 641 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
+                            "column": 47,
+                            "line": 638
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mC\u001b[27mustom logos rese\u001b[7mt to defaul\u001b[27mt\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mNo c\u001b[27mustom logos \u001b[7mto \u001b[27mreset\"\u001b[39m\n\n  636 |         expect(initResetApiResponse.status()).toBe(200);\n  637 |         expect(initResetResponseBody.status).toBe(true);\n> 638 |         expect(initResetResponseBody.message).toBe('Custom logos reset to default');\n      |                                               ^\n  639 |         console.log('✓ Initial reset API verified: {\"status\":true,\"message\":\"Custom logos reset to default\"}');\n  640 |\n  641 |         await page.waitForTimeout(2000);\n    at C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js:638:47"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
@@ -197,67 +243,61 @@
                           "text": "Page loaded successfully\n"
                         },
                         {
+                          "text": "=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===\n"
+                        },
+                        {
                           "text": "✓ get_custom_logo API called (status: 200)\n"
                         },
                         {
                           "text": "✓ Custom Logo Settings modal opened\n"
                         },
                         {
-                          "text": "✓ Custom Logo Settings modal is visible\n"
+                          "text": "✓ Dialog appeared: \"Are you sure you want to reset to the default logo?\"\n"
                         },
                         {
-                          "text": "✓ Small Logo (Collapsed Navbar) section is visible\n"
+                          "text": "✓ Dialog accepted (clicked OK)\n"
                         },
                         {
-                          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed\n"
+                          "text": "✓ Initial Reset to Default clicked (cleaning any previous custom logos)\n"
                         },
                         {
-                          "text": "✓ Large Logo (Expanded Navbar) section is visible\n"
-                        },
-                        {
-                          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed\n"
-                        },
-                        {
-                          "text": "✓ Found 4 Upload buttons\n"
-                        },
-                        {
-                          "text": "✓ Preview section is visible\n"
-                        },
-                        {
-                          "text": "✓ Collapsed preview label is visible\n"
-                        },
-                        {
-                          "text": "✓ Expanded preview label is visible\n"
-                        },
-                        {
-                          "text": "✓ Reset to Default button is visible\n"
-                        },
-                        {
-                          "text": "✓ Cancel button is visible\n"
-                        },
-                        {
-                          "text": "✓ Save button is visible\n"
-                        },
-                        {
-                          "text": "✓ Close (X) button is visible\n"
-                        },
-                        {
-                          "text": "✓ All Custom Logo Settings UI elements verified successfully\n"
+                          "text": "✓ API Response: {\"status\":true,\"message\":\"No custom logos to reset\"}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-09T23:00:01.747Z",
+                      "startTime": "2026-01-12T21:25:05.642Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\cypress-to-playwright-converted\\test-results\\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
+                        "column": 47,
+                        "line": 638
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "3c3b7c2fe9ae52a64cb2-00ca5bc34d288dbdb01b",
+              "id": "3c3b7c2fe9ae52a64cb2-9d2fbb8393e292b5c151",
               "file": "TS061_customLogo.spec.js",
-              "line": 119,
+              "line": 602,
               "column": 5
             }
           ]
@@ -267,11 +307,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-09T22:59:52.680Z",
-    "duration": 69298.02200000001,
-    "expected": 2,
+    "startTime": "2026-01-12T21:23:32.140Z",
+    "duration": 178729.406,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

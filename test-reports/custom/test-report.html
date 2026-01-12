@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Test Report - All Modules - 10/1/2026</title>
+    <title>Master Test Report - All Modules - 13/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Master Test Execution Report</h1>
             <div class="module-name">All Modules (34 modules, 42 tests)</div>
             <div class="subtitle">
-                Generated: 10/1/2026, 4:43:23 am |
-                Duration: 810.90s |
+                Generated: 13/1/2026, 3:08:53 am |
+                Duration: 920.97s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -164,11 +164,11 @@
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">34</div>
+                <div class="number">33</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">8</div>
+                <div class="number">9</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">81.0%</div>
+                <div class="number">78.6%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -220,7 +220,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (1)</span>
+                                    <span>View Test Steps (10)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -229,7 +229,52 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 59 minutes). Skipping login.</span>
+                                                <span class="step-text">Authentication session expired (age: 114 minutes). Re-authenticating...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing authentication setup...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Login page loaded, filling credentials...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Username filled</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Password filled</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit clicked, waiting for login to complete...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to fleet dashboard...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Dashboard loaded, saving session state...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json</span>
                                             </div>
                                         
                                     </div>
@@ -237,7 +282,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>0.78s</strong></td>
+                        <td><strong>81.52s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -9510,15 +9555,62 @@ Call log:
                         </td>
                     </tr>
                     
-                    <tr data-status="passed" data-module="Custom Logo">
+                    <tr data-status="failed" data-module="Custom Logo">
                         <td><span class="test-case-no">TS061-A</span></td>
                         <td>Custom Logo</td>
                         <td>
-                            <strong>should open Custom Logo Settings modal and verify UI elements</strong>
+                            <strong>should reset logos to default using Reset to Default button</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(40)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-40" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Assertion Failed</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS061_customLogo.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">602</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Values should be equal</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">&quot;No custom logos to reset&quot;</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check the expected vs actual values in the assertion</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;Custom logos reset to default&quot;
+Received: &quot;No custom logos to reset&quot;</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(40)">
-                                    <span>View Test Steps (25)</span>
+                                    <span>View Test Steps (16)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-40" class="steps-panel">
@@ -9572,6 +9664,11 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
                                             </div>
                                         
@@ -9582,82 +9679,32 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                                <span class="step-text">✓ Dialog appeared: &quot;Are you sure you want to reset to the default logo?&quot;</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Small Logo (Collapsed Navbar) section is visible</span>
+                                                <span class="step-text">✓ Dialog accepted (clicked OK)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Small Logo recommended size (80x64 pixels) is displayed</span>
+                                                <span class="step-text">✓ Initial Reset to Default clicked (cleaning any previous custom logos)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Large Logo (Expanded Navbar) section is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Large Logo recommended size (200x64 pixels) is displayed</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Found 4 Upload buttons</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Preview section is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Collapsed preview label is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Expanded preview label is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Reset to Default button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Cancel button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Save button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Close (X) button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ All Custom Logo Settings UI elements verified successfully</span>
+                                                <span class="step-text">✓ API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;No custom logos to reset&quot;}</span>
                                             </div>
                                         
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status passed">PASSED</span></td>
-                        <td><strong>59.03s</strong></td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>83.84s</strong></td>
                         <td>
-                            <span class="no-video">No video</span>
+                            <a href="videos/TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm" class="video-link" target="_blank">Video: TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm</a>
                         </td>
                     </tr>
                     
@@ -10111,7 +10158,7 @@ Received: true</pre></span>
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.78s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"4244.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add device with custom icon","status":"PASSED","duration":"239.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"112.70s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS009-A","module":"Change Alert Settings","description":"should configure after hours settings","status":"PASSED","duration":"132.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS011-A","module":"Add Edit Maintenance Contact","description":"should add the contact details","status":"PASSED","duration":"135.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS015-A","module":"After Hour Summary","description":"should redirect to fleet demo page with demo credentials","status":"FAILED","duration":"123.89s","failureReason":"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:","videoIdentifier":"TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm"},{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"},{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS024-A","module":"Create Landmark","description":"should be able to create new Landmark","status":"PASSED","duration":"113.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS026-A","module":"view edit landmark","description":"should be able to view, edit and delete landmark","status":"PASSED","duration":"128.39s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS026-B","module":"view edit landmark","description":"should be able to toggle Hide Vehicle Markers for landmarks","status":"PASSED","duration":"125.98s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS027-A","module":"Track History Tests","description":"should verify HERE Maps car marker animation functionality","status":"PASSED","duration":"224.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"PASSED","duration":"118.14s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report - Filters","description":"should verify Geofence Events checkbox functionality","status":"FAILED","duration":"151.43s","failureReason":"Error: expect(received).toBeFalsy()","videoIdentifier":"TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm"},{"testCaseNo":"TS030-A","module":"Mileage Report","description":"should display start and end mileage of devices","status":"PASSED","duration":"88.19s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"125.86s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS039-A","module":"Weekly Utilization Report","description":"should generate and validate weekly utilization report","status":"FAILED","duration":"253.09s","failureReason":"TimeoutError: locator.hover: Timeout 30000ms exceeded.","videoIdentifier":"TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS046-A","module":"Dashcam Track History","description":"displays dashcam track history with different tracking options","status":"PASSED","duration":"74.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS047-A","module":"Dashcam Alert Settings","description":"should verify alert settings panel and save settings","status":"FAILED","duration":"64.35s","failureReason":"Error: locator.check: Element is not visible","videoIdentifier":"TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm"},{"testCaseNo":"TS047-B","module":"Dashcam Alert Settings","description":"should add and delete alerts contacts (email and phone)","status":"PASSED","duration":"158.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS047-C","module":"Dashcam Alert Settings","description":"should configure after hours settings","status":"PASSED","duration":"61.04s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS058-A","module":"Dashcam Data Usage","description":"should display Dashcam Data Usage report","status":"FAILED","duration":"56.74s","failureReason":"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:","videoIdentifier":"TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm"},{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should open Custom Logo Settings modal and verify UI elements","status":"PASSED","duration":"59.03s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TC-A","module":"view Edit User","description":"should create user and edit them","status":"FAILED","duration":"320.51s","failureReason":"Error: expect(received).toBeFalsy()","videoIdentifier":"viewEditUser-should-create-user-and-edit-them.webm"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"81.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS001-A","module":"List of Device","description":"should show list of all devices in the platform","status":"PASSED","duration":"4244.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS002-A","module":"Add edit Device","description":"should add device with custom icon","status":"PASSED","duration":"239.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS005-A","module":"Subgroup","description":"should manage subgroups","status":"PASSED","duration":"112.70s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS008-A","module":"Alert Contact","description":"should add email and phone contacts and configure alert settings","status":"PASSED","duration":"137.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS009-A","module":"Change Alert Settings","description":"should configure after hours settings","status":"PASSED","duration":"132.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS011-A","module":"Add Edit Maintenance Contact","description":"should add the contact details","status":"PASSED","duration":"135.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS015-A","module":"After Hour Summary","description":"should redirect to fleet demo page with demo credentials","status":"FAILED","duration":"123.89s","failureReason":"Error: expect.toContainText: Error: strict mode violation: locator('table#alerts-table.table--desktop.desktop-only tbody td') resolved to 60 elements:","videoIdentifier":"TS015_afterHourSummary-should-redirect-to-fleet-demo-page-with-demo-crede.webm"},{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"},{"testCaseNo":"TS017-A","module":"After Hour Setting","description":"should edit the after hour settings of a device","status":"PASSED","duration":"64.59s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS018-A","module":"Create Geofencing","description":"should be able to create new Geofence","status":"PASSED","duration":"139.29s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS020-A","module":"Weekly Geofencing reports","description":"should manage recent geofence report","status":"PASSED","duration":"102.42s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS021-A","module":"Current geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"121.73s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS024-A","module":"Create Landmark","description":"should be able to create new Landmark","status":"PASSED","duration":"113.69s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS026-A","module":"view edit landmark","description":"should be able to view, edit and delete landmark","status":"PASSED","duration":"128.39s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS026-B","module":"view edit landmark","description":"should be able to toggle Hide Vehicle Markers for landmarks","status":"PASSED","duration":"125.98s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS027-A","module":"Track History Tests","description":"should verify HERE Maps car marker animation functionality","status":"PASSED","duration":"224.13s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"PASSED","duration":"118.14s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-A","module":"Travel Log Report - Filters","description":"should verify Geofence Events checkbox functionality","status":"FAILED","duration":"151.43s","failureReason":"Error: expect(received).toBeFalsy()","videoIdentifier":"TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm"},{"testCaseNo":"TS030-A","module":"Mileage Report","description":"should display start and end mileage of devices","status":"PASSED","duration":"88.19s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS032-A","module":"30 Day Mileage Report","description":"should be redirected to fleet demo page with demo credentials","status":"PASSED","duration":"98.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS034-A","module":"Trip Report","description":"should generate and validate trip report","status":"PASSED","duration":"125.86s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS037-A","module":"Low Voltage Device Report","description":"should generate and validate low voltage device report","status":"FAILED","duration":"81.84s","failureReason":"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.","videoIdentifier":"TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm"},{"testCaseNo":"TS039-A","module":"Weekly Utilization Report","description":"should generate and validate weekly utilization report","status":"FAILED","duration":"253.09s","failureReason":"TimeoutError: locator.hover: Timeout 30000ms exceeded.","videoIdentifier":"TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm"},{"testCaseNo":"TS043-A","module":"Dashcam Refresh","description":"should refresh dashcam functionality","status":"PASSED","duration":"103.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS046-A","module":"Dashcam Track History","description":"displays dashcam track history with different tracking options","status":"PASSED","duration":"74.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS047-A","module":"Dashcam Alert Settings","description":"should verify alert settings panel and save settings","status":"FAILED","duration":"64.35s","failureReason":"Error: locator.check: Element is not visible","videoIdentifier":"TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm"},{"testCaseNo":"TS047-B","module":"Dashcam Alert Settings","description":"should add and delete alerts contacts (email and phone)","status":"PASSED","duration":"158.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS047-C","module":"Dashcam Alert Settings","description":"should configure after hours settings","status":"PASSED","duration":"61.04s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-A","module":"Last 24 Hours","description":"should verify Engine Idling Events checkbox functionality","status":"PASSED","duration":"153.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS050-B","module":"Last 24 Hours","description":"should verify Geofence Events, Landmark Events, and Frequent Stops functionality","status":"PASSED","duration":"131.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS051-A","module":"Real Time Tracking","description":"should verify real-time tracking timer and API data synchronization","status":"PASSED","duration":"120.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS052-A","module":"Get Support","description":"should verify Get Support and Insurance form functionality","status":"PASSED","duration":"58.27s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS055-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"122.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-A","module":"Account Health Summary Report","description":"should display Account Health Summary report and verify device data with Historical Data","status":"PASSED","duration":"227.76s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-B","module":"Account Health Summary Report","description":"should verify Fleet Status Summary cards and table filtering","status":"PASSED","duration":"70.20s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-C","module":"Account Health Summary Report","description":"should verify table sorting functionality","status":"PASSED","duration":"52.95s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-D","module":"Account Health Summary Report","description":"should verify export buttons and file downloads","status":"PASSED","duration":"86.67s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS057-E","module":"Account Health Summary Report","description":"should verify search functionality in device table","status":"PASSED","duration":"79.08s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS058-A","module":"Dashcam Data Usage","description":"should display Dashcam Data Usage report","status":"FAILED","duration":"56.74s","failureReason":"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:","videoIdentifier":"TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm"},{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should reset logos to default using Reset to Default button","status":"FAILED","duration":"83.84s","failureReason":"Error: expect(received).toBe(expected) // Object.is equality","videoIdentifier":"TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm"},{"testCaseNo":"TC-A","module":"view Edit User","description":"should create user and edit them","status":"FAILED","duration":"320.51s","failureReason":"Error: expect(received).toBeFalsy()","videoIdentifier":"viewEditUser-should-create-user-and-edit-them.webm"}];
 
             data.forEach(row => {
                 csv.push([
@@ -10128,7 +10175,7 @@ Received: true</pre></span>
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'master-test-report-2026-01-09.csv';
+            link.download = 'master-test-report-2026-01-12.csv';
             link.click();
         }
     </script>

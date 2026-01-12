@@ -1,14 +1,51 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="69.29802200000002">
-<testsuite name="auth.setup.js" timestamp="2026-01-09T22:59:52.989Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.776" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="0.776">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="178.72940599999998">
+<testsuite name="auth.setup.js" timestamp="2026-01-12T21:23:32.557Z" hostname="setup" tests="1" failures="0" skipped="0" time="81.522" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="81.522">
 <system-out>
-<![CDATA[Valid authentication session found (age: 59 minutes). Skipping login.
+<![CDATA[Authentication session expired (age: 114 minutes). Re-authenticating...
+Performing authentication setup...
+Login page loaded, filling credentials...
+Username filled
+Password filled
+Submit clicked, waiting for login to complete...
+Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php
+Navigating to fleet dashboard...
+Dashboard loaded, saving session state...
+Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS061_customLogo.spec.js" timestamp="2026-01-09T22:59:52.989Z" hostname="chromium" tests="1" failures="0" skipped="0" time="59.029" errors="0">
-<testcase name="Custom Logo › should open Custom Logo Settings modal and verify UI elements" classname="TS061_customLogo.spec.js" time="59.029">
+<testsuite name="TS061_customLogo.spec.js" timestamp="2026-01-12T21:23:32.557Z" hostname="chromium" tests="1" failures="1" skipped="0" time="83.843" errors="0">
+<testcase name="Custom Logo › should reset logos to default using Reset to Default button" classname="TS061_customLogo.spec.js" time="83.843">
+<failure message="TS061_customLogo.spec.js:602:5 should reset logos to default using Reset to Default button" type="FAILURE">
+<![CDATA[  [chromium] › TS061_customLogo.spec.js:602:5 › Custom Logo › should reset logos to default using Reset to Default button 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Custom logos reset to default"
+    Received: "No custom logos to reset"
+
+      636 |         expect(initResetApiResponse.status()).toBe(200);
+      637 |         expect(initResetResponseBody.status).toBe(true);
+    > 638 |         expect(initResetResponseBody.message).toBe('Custom logos reset to default');
+          |                                               ^
+      639 |         console.log('✓ Initial reset API verified: {"status":true,"message":"Custom logos reset to default"}');
+      640 |
+      641 |         await page.waitForTimeout(2000);
+        at C:\cypress-to-playwright-converted\tests\TS061_customLogo.spec.js:638:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\error-context.md
+]]>
+</failure>
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -19,22 +56,19 @@ Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Network idle timeout, continuing...
 Page loaded successfully
+=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===
 ✓ get_custom_logo API called (status: 200)
 ✓ Custom Logo Settings modal opened
-✓ Custom Logo Settings modal is visible
-✓ Small Logo (Collapsed Navbar) section is visible
-✓ Small Logo recommended size (80x64 pixels) is displayed
-✓ Large Logo (Expanded Navbar) section is visible
-✓ Large Logo recommended size (200x64 pixels) is displayed
-✓ Found 4 Upload buttons
-✓ Preview section is visible
-✓ Collapsed preview label is visible
-✓ Expanded preview label is visible
-✓ Reset to Default button is visible
-✓ Cancel button is visible
-✓ Save button is visible
-✓ Close (X) button is visible
-✓ All Custom Logo Settings UI elements verified successfully
+✓ Dialog appeared: "Are you sure you want to reset to the default logo?"
+✓ Dialog accepted (clicked OK)
+✓ Initial Reset to Default clicked (cleaning any previous custom logos)
+✓ API Response: {"status":true,"message":"No custom logos to reset"}
+
+[[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>

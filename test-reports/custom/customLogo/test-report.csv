@@ -1,2 +1,2 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS061-A,"Custom Logo","should open Custom Logo Settings modal and verify UI elements",PASSED,59.03,"",N/A,TS061_customLogo.spec.js,119
+TS061-A,"Custom Logo","should reset logos to default using Reset to Default button",FAILED,83.84,"Error: expect(received).toBe(expected) // Object.is equality",TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm,TS061_customLogo.spec.js,602

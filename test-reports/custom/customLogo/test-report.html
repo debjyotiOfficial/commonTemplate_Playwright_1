@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - customLogo - 10/1/2026</title>
+    <title>Test Report - customLogo - 13/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: customLogo</div>
             <div class="subtitle">
-                Generated: 10/1/2026, 4:43:23 am |
-                Duration: 810.90s |
+                Generated: 13/1/2026, 3:08:53 am |
+                Duration: 920.97s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -164,11 +164,11 @@
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">0</div>
+                <div class="number">1</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">100.0%</div>
+                <div class="number">0.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,15 +207,62 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="Custom Logo">
+                    <tr data-status="failed" data-module="Custom Logo">
                         <td><span class="test-case-no">TS061-A</span></td>
                         <td>Custom Logo</td>
                         <td>
-                            <strong>should open Custom Logo Settings modal and verify UI elements</strong>
+                            <strong>should reset logos to default using Reset to Default button</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(0)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-0" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Assertion Failed</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS061_customLogo.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">602</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Values should be equal</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">&quot;No custom logos to reset&quot;</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check the expected vs actual values in the assertion</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;Custom logos reset to default&quot;
+Received: &quot;No custom logos to reset&quot;</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (25)</span>
+                                    <span>View Test Steps (16)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -269,6 +316,11 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
                                             </div>
                                         
@@ -279,82 +331,32 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                                <span class="step-text">✓ Dialog appeared: &quot;Are you sure you want to reset to the default logo?&quot;</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Small Logo (Collapsed Navbar) section is visible</span>
+                                                <span class="step-text">✓ Dialog accepted (clicked OK)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Small Logo recommended size (80x64 pixels) is displayed</span>
+                                                <span class="step-text">✓ Initial Reset to Default clicked (cleaning any previous custom logos)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Large Logo (Expanded Navbar) section is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Large Logo recommended size (200x64 pixels) is displayed</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Found 4 Upload buttons</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Preview section is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Collapsed preview label is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Expanded preview label is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Reset to Default button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Cancel button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Save button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Close (X) button is visible</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">✓ All Custom Logo Settings UI elements verified successfully</span>
+                                                <span class="step-text">✓ API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;No custom logos to reset&quot;}</span>
                                             </div>
                                         
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status passed">PASSED</span></td>
-                        <td><strong>59.03s</strong></td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>83.84s</strong></td>
                         <td>
-                            <span class="no-video">No video</span>
+                            <a href="videos/TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm" class="video-link" target="_blank">Video: TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm</a>
                         </td>
                     </tr>
                     
@@ -406,7 +408,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should open Custom Logo Settings modal and verify UI elements","status":"PASSED","duration":"59.03s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should reset logos to default using Reset to Default button","status":"FAILED","duration":"83.84s","failureReason":"Error: expect(received).toBe(expected) // Object.is equality","videoIdentifier":"TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm"}];
 
             data.forEach(row => {
                 csv.push([
@@ -423,7 +425,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-09.csv';
+            link.download = 'test-report-2026-01-12.csv';
             link.click();
         }
     </script>

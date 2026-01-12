@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-09T23:13:23.934Z",
+  "lastUpdated": "2026-01-12T21:38:53.611Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 776,
+      "duration": 81522,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,67 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 59 minutes). Skipping login.",
+          "text": "Authentication session expired (age: 114 minutes). Re-authenticating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Performing authentication setup...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login page loaded, filling credentials...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked, waiting for login to complete...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to fleet dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashboard loaded, saving session state...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-09T22:59:58.555Z",
-      "endTime": "2026-01-09T22:59:59.332Z",
+      "startTime": "2026-01-12T21:23:40.742Z",
+      "endTime": "2026-01-12T21:25:02.280Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -10288,15 +10342,27 @@
     {
       "testCaseNo": "TS061-A",
       "module": "Custom Logo",
-      "title": "should open Custom Logo Settings modal and verify UI elements",
-      "description": "should open Custom Logo Settings modal and verify UI elements",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 59029,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
+      "title": "should reset logos to default using Reset to Default button",
+      "description": "should reset logos to default using Reset to Default button",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 83843,
+      "failureReason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "\"No custom logos to reset\"",
+        "timeout": null,
+        "file": "TS061_customLogo.spec.js",
+        "line": 602,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBe(expected) // Object.is equality",
+        "fullMessage": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Custom logos reset to default\"\nReceived: \"No custom logos to reset\"",
+        "stackTrace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Custom logos reset to default\"\nReceived: \"No custom logos to reset\"\n    at C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js:638:47"
+      },
+      "videoPath": "videos/TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm",
+      "videoIdentifier": "TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm",
       "steps": [
         {
           "number": "",
@@ -10354,6 +10420,12 @@
         },
         {
           "number": "",
+          "text": "=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ get_custom_logo API called (status: 200)",
           "status": "info",
           "type": "log"
@@ -10366,95 +10438,35 @@
         },
         {
           "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
+          "text": "✓ Dialog appeared: \"Are you sure you want to reset to the default logo?\"",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Small Logo (Collapsed Navbar) section is visible",
+          "text": "✓ Dialog accepted (clicked OK)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed",
+          "text": "✓ Initial Reset to Default clicked (cleaning any previous custom logos)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Large Logo (Expanded Navbar) section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Found 4 Upload buttons",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Preview section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed preview label is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded preview label is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Reset to Default button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Cancel button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Save button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Close (X) button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ All Custom Logo Settings UI elements verified successfully",
+          "text": "✓ API Response: {\"status\":true,\"message\":\"No custom logos to reset\"}",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-09T23:00:02.712Z",
-      "endTime": "2026-01-09T23:01:01.741Z",
+      "startTime": "2026-01-12T21:25:06.960Z",
+      "endTime": "2026-01-12T21:26:30.803Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
       "fileName": "TS061_customLogo",
-      "line": 119
+      "line": 602
     },
     {
       "testCaseNo": "TC-A",

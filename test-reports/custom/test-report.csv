@@ -1,5 +1,5 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,0.78,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,81.52,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,4244.73,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add device with custom icon",PASSED,239.54,"",N/A,TS002_addEditDevices,394
 TS005-A,"Subgroup","should manage subgroups",PASSED,112.70,"",N/A,TS005_subgroup,32
@@ -39,5 +39,5 @@ TS057-C,"Account Health Summary Report","should verify table sorting functionali
 TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,86.67,"",N/A,TS057_accountHealthSummary,520
 TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,79.08,"",N/A,TS057_accountHealthSummary,692
 TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",FAILED,56.74,"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm,TS058_dashcamDataUsage,23
-TS061-A,"Custom Logo","should open Custom Logo Settings modal and verify UI elements",PASSED,59.03,"",N/A,TS061_customLogo,119
+TS061-A,"Custom Logo","should reset logos to default using Reset to Default button",FAILED,83.84,"Error: expect(received).toBe(expected) // Object.is equality",TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm,TS061_customLogo,602
 TC-A,"view Edit User","should create user and edit them",FAILED,320.51,"Error: expect(received).toBeFalsy()",viewEditUser-should-create-user-and-edit-them.webm,viewEditUser,24

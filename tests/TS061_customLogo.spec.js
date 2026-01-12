@@ -605,10 +605,70 @@ test.describe('Custom Logo', () => {
 
         await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
 
+        console.log('=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===');
+
         // Navigate to Custom Logo Settings
         await navigateToCustomLogoSettings(page, config);
 
-        console.log('=== Step 1: Upload Custom Logos First ===');
+        // Set up handler for native browser confirm dialog
+        page.on('dialog', async dialog => {
+            console.log(`✓ Dialog appeared: "${dialog.message()}"`);
+            await dialog.accept(); // Click OK
+            console.log('✓ Dialog accepted (clicked OK)');
+        });
+
+        // Set up API response listener for reset
+        const resetApiPromise = page.waitForResponse(
+            response => response.url().includes('save_custom_logo.php'),
+            { timeout: 30000 }
+        );
+
+        // Click Reset to Default to ensure we start with actual default logo
+        const resetButtonInit = page.locator('#custom-logo-reset-btn');
+        await expect(resetButtonInit).toBeVisible();
+        await resetButtonInit.click();
+        console.log('✓ Initial Reset to Default clicked (cleaning any previous custom logos)');
+
+        // Wait for API response after dialog is accepted
+        const initResetApiResponse = await resetApiPromise;
+        const initResetResponseBody = await initResetApiResponse.json();
+        console.log(`✓ API Response: ${JSON.stringify(initResetResponseBody)}`);
+        expect(initResetApiResponse.status()).toBe(200);
+        expect(initResetResponseBody.status).toBe(true);
+        expect(initResetResponseBody.message).toBe('Custom logos reset to default');
+        console.log('✓ Initial reset API verified: {"status":true,"message":"Custom logos reset to default"}');
+
+        await page.waitForTimeout(2000);
+
+        // Refresh page to ensure default logo loads
+        await page.reload();
+        await page.waitForTimeout(3000);
+
+        console.log('=== Step 1: Capture DEFAULT Navbar Logo (After Reset) ===');
+
+        // Capture the actual default navbar logo
+        const navbarLogo = page.locator('.navbar__logo');
+        await expect(navbarLogo).toBeVisible();
+        const defaultLogoBackground = await navbarLogo.evaluate(el => window.getComputedStyle(el).backgroundImage);
+        console.log(`Default navbar logo captured: ${defaultLogoBackground.substring(0, 100)}...`);
+
+        // Verify this is the ACTUAL default logo (should NOT be a custom base64 data URL)
+        // Default logo should be a URL path to an image file, not a base64 encoded custom logo
+        const isActualDefault = !defaultLogoBackground.includes('data:image/png;base64');
+        console.log(`Is actual default logo (not custom base64): ${isActualDefault}`);
+
+        // CRITICAL: If logo is still base64 after reset, the Reset to Default button is NOT working
+        if (!isActualDefault) {
+            console.log('⚠️ WARNING: Reset to Default button did NOT reset the logo!');
+            console.log('⚠️ Logo is still a base64 custom logo instead of default file logo');
+        }
+        expect(isActualDefault).toBe(true);
+        console.log('✓ Verified logo is actual default (file URL, not base64 custom logo)');
+
+        // Navigate to Custom Logo Settings
+        await navigateToCustomLogoSettings(page, config);
+
+        console.log('=== Step 2: Upload Custom Logos ===');
 
         // Upload Small Logo
         const uploadButtons = page.locator('button:has-text("Upload")');
@@ -645,15 +705,50 @@ test.describe('Custom Logo', () => {
         await expect(expandedPreview).toBeVisible();
         console.log('✓ Preview section visible with Collapsed and Expanded');
 
+        // Capture the custom logo preview images before saving
+        const smallPreviewImg = page.locator('.custom-logo-modal__preview-item').first().locator('img');
+        const largePreviewImg = page.locator('.custom-logo-modal__preview-item').nth(1).locator('img');
+
+        const smallPreviewSrc = await smallPreviewImg.getAttribute('src').catch(() => null);
+        const largePreviewSrc = await largePreviewImg.getAttribute('src').catch(() => null);
+        console.log(`Custom small logo preview: ${smallPreviewSrc ? smallPreviewSrc.substring(0, 50) + '...' : 'N/A'}`);
+        console.log(`Custom large logo preview: ${largePreviewSrc ? largePreviewSrc.substring(0, 50) + '...' : 'N/A'}`);
+
         // Save the custom logos with API verification
         await saveCustomLogo(page);
         console.log('✓ Custom logos saved');
         await page.waitForTimeout(1000);
 
-        console.log('=== Step 2: Re-open Modal and Reset to Default ===');
+        console.log('=== Step 3: Verify Custom Logo is Now in Navbar ===');
+
+        // Verify the navbar logo changed to custom logo (different from default)
+        const customLogoBackground = await navbarLogo.evaluate(el => window.getComputedStyle(el).backgroundImage);
+        console.log(`Custom navbar logo: ${customLogoBackground.substring(0, 100)}...`);
+
+        // Custom logo should be different from default (base64 data URL for custom)
+        expect(customLogoBackground).not.toBe(defaultLogoBackground);
+        console.log('✓ Navbar logo changed to custom logo (different from default)');
+
+        // Verify custom logo contains base64 data (uploaded image)
+        const hasCustomBase64 = customLogoBackground.includes('data:image');
+        console.log(`Custom logo is base64 encoded: ${hasCustomBase64}`);
+
+        console.log('=== Step 4: Re-open Modal and Reset to Default ===');
 
         // Re-open Custom Logo Settings modal
         await navigateToCustomLogoSettings(page, config);
+
+        // Capture the uploaded logo sources BEFORE reset
+        const smallPreviewBeforeReset = await page.locator('.custom-logo-modal__preview-item').first().locator('img').getAttribute('src').catch(() => null);
+        const largePreviewBeforeReset = await page.locator('.custom-logo-modal__preview-item').nth(1).locator('img').getAttribute('src').catch(() => null);
+        console.log(`Small logo preview BEFORE reset: ${smallPreviewBeforeReset ? 'Custom uploaded image present' : 'N/A'}`);
+        console.log(`Large logo preview BEFORE reset: ${largePreviewBeforeReset ? 'Custom uploaded image present' : 'N/A'}`);
+
+        // Set up API response listener for the reset action
+        const resetApiPromise2 = page.waitForResponse(
+            response => response.url().includes('save_custom_logo.php'),
+            { timeout: 30000 }
+        );
 
         // Click Reset to Default button (using specific ID)
         const resetButton = page.locator('#custom-logo-reset-btn');
@@ -661,19 +756,40 @@ test.describe('Custom Logo', () => {
         await resetButton.click();
         console.log('✓ Reset to Default button clicked');
 
+        // The dialog handler set earlier will automatically accept the confirm dialog
+        // Wait for API response
+        const resetApiResponse = await resetApiPromise2;
+        const resetResponseBody = await resetApiResponse.json();
+        console.log(`✓ Reset API Response: ${JSON.stringify(resetResponseBody)}`);
+
+        // Verify API response
+        expect(resetApiResponse.status()).toBe(200);
+        expect(resetResponseBody.status).toBe(true);
+        expect(resetResponseBody.message).toBe('Custom logos reset to default');
+        console.log('✓ Reset API verified: {"status":true,"message":"Custom logos reset to default"}');
+
         await page.waitForTimeout(1000);
 
-        // Handle confirmation dialog if present
-        const confirmButton = page.locator('button:has-text("Confirm"), button:has-text("Yes"), button:has-text("OK")').first();
-        if (await confirmButton.isVisible({ timeout: 2000 }).catch(() => false)) {
-            await confirmButton.click();
-            console.log('✓ Confirmation dialog accepted');
-            await page.waitForTimeout(1000);
+        console.log('=== Step 5: Verify Uploaded Icons Are Replaced with Platform Logo ===');
+
+        // Verify Preview section shows platform/default logos (NOT our uploaded custom logos)
+        const smallPreviewAfterReset = await page.locator('.custom-logo-modal__preview-item').first().locator('img').getAttribute('src').catch(() => null);
+        const largePreviewAfterReset = await page.locator('.custom-logo-modal__preview-item').nth(1).locator('img').getAttribute('src').catch(() => null);
+
+        console.log(`Small logo preview AFTER reset: ${smallPreviewAfterReset ? smallPreviewAfterReset.substring(0, 80) + '...' : 'N/A'}`);
+        console.log(`Large logo preview AFTER reset: ${largePreviewAfterReset ? largePreviewAfterReset.substring(0, 80) + '...' : 'N/A'}`);
+
+        // Verify the preview images changed (uploaded icons should be replaced)
+        if (smallPreviewBeforeReset && smallPreviewAfterReset) {
+            expect(smallPreviewAfterReset).not.toBe(smallPreviewBeforeReset);
+            console.log('✓ Small logo preview changed - uploaded icon replaced with platform logo');
+        }
+        if (largePreviewBeforeReset && largePreviewAfterReset) {
+            expect(largePreviewAfterReset).not.toBe(largePreviewBeforeReset);
+            console.log('✓ Large logo preview changed - uploaded icon replaced with platform logo');
         }
 
-        console.log('=== Step 3: Verify Reset in Preview Section ===');
-
-        // Verify Preview section still shows labels (may show default or empty)
+        // Verify Preview section still shows labels
         const collapsedPreviewAfter = page.getByText('Collapsed', { exact: true });
         const expandedPreviewAfter = page.getByText('Expanded', { exact: true });
 
@@ -681,29 +797,47 @@ test.describe('Custom Logo', () => {
         await expect(expandedPreviewAfter).toBeVisible();
         console.log('✓ Preview section visible after reset');
 
-        console.log('=== Step 4: Save Reset ===');
-
-        // Save the reset with API verification
-        await saveCustomLogo(page);
-        console.log('✓ Reset saved');
-        await page.waitForTimeout(1000);
-
-        console.log('=== Step 5: Verify Reset Persisted ===');
-
-        // Re-open modal to confirm reset persisted
-        await navigateToCustomLogoSettings(page, config);
-
-        // Verify modal opened successfully
-        const modalTitle = page.locator('text=Custom Logo Settings');
-        await expect(modalTitle).toBeVisible();
-        console.log('✓ Modal re-opened after reset');
-
-        // Close modal using Cancel button
-        const cancelButton = page.locator('#custom-logo-cancel-btn, button.btn:has-text("Cancel")').first();
-        await cancelButton.click();
+        // Close modal
+        const closeButton = page.locator('.custom-logo-modal__close');
+        await closeButton.click();
         await page.waitForTimeout(500);
 
-        console.log('✓ Reset to Default functionality verified');
+        console.log('=== Step 6: Verify Navbar Logo Reset to Default ===');
+
+        // CRITICAL: Verify the navbar logo is now back to the DEFAULT logo
+        const resetLogoBackground = await navbarLogo.evaluate(el => window.getComputedStyle(el).backgroundImage);
+        console.log(`Reset navbar logo: ${resetLogoBackground.substring(0, 100)}...`);
+
+        // The reset logo should match the original default logo
+        expect(resetLogoBackground).toBe(defaultLogoBackground);
+        console.log('✓ Navbar logo has been reset to DEFAULT logo');
+
+        // Additional verification: Logo should NOT be a base64 data URL (custom logos use base64)
+        const isDefaultLogo = !resetLogoBackground.includes('data:image/png;base64') ||
+                             resetLogoBackground === defaultLogoBackground;
+        expect(isDefaultLogo).toBe(true);
+        console.log('✓ Confirmed navbar shows default logo (not custom base64 logo)');
+
+        // Verify uploaded icons are no longer present
+        const uploadedIconsGone = resetLogoBackground !== customLogoBackground;
+        expect(uploadedIconsGone).toBe(true);
+        console.log('✓ Confirmed uploaded custom icons are no longer displayed');
+
+        console.log('=== Step 7: Verify Reset Persisted After Page Refresh ===');
+
+        // Refresh page to ensure reset persisted
+        await page.reload();
+        await page.waitForTimeout(3000);
+
+        // Verify logo is still default after refresh
+        const refreshedLogoBackground = await navbarLogo.evaluate(el => window.getComputedStyle(el).backgroundImage);
+        console.log(`Logo after refresh: ${refreshedLogoBackground.substring(0, 100)}...`);
+        expect(refreshedLogoBackground).toBe(defaultLogoBackground);
+        console.log('✓ Default logo persisted after page refresh');
+        console.log('✓ Uploaded icons remain replaced with platform default after refresh');
+
+        console.log('✓ Reset to Default functionality fully verified');
+        console.log('✓ Summary: Uploaded icons successfully replaced with platform logos');
     });
 
     test('should cancel changes using Cancel button', async ({ page }) => {
