@@ -1,8 +1,8 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="178.72940599999998">
-<testsuite name="auth.setup.js" timestamp="2026-01-12T21:23:32.557Z" hostname="setup" tests="1" failures="0" skipped="0" time="81.522" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="81.522">
+<testsuites id="" name="" tests="19" failures="1" skipped="3" errors="0" time="1130.932509">
+<testsuite name="auth.setup.js" timestamp="2026-01-19T23:05:17.953Z" hostname="setup" tests="1" failures="0" skipped="0" time="68.722" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="68.722">
 <system-out>
-<![CDATA[Authentication session expired (age: 114 minutes). Re-authenticating...
+<![CDATA[Authentication session expired (age: 180 minutes). Re-authenticating...
 Performing authentication setup...
 Login page loaded, filling credentials...
 Username filled
@@ -16,24 +16,225 @@ Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS061_customLogo.spec.js" timestamp="2026-01-12T21:23:32.557Z" hostname="chromium" tests="1" failures="1" skipped="0" time="83.843" errors="0">
-<testcase name="Custom Logo › should reset logos to default using Reset to Default button" classname="TS061_customLogo.spec.js" time="83.843">
-<failure message="TS061_customLogo.spec.js:602:5 should reset logos to default using Reset to Default button" type="FAILURE">
-<![CDATA[  [chromium] › TS061_customLogo.spec.js:602:5 › Custom Logo › should reset logos to default using Reset to Default button 
+<testsuite name="TS061_customLogo.spec.js" timestamp="2026-01-19T23:05:17.953Z" hostname="chromium" tests="18" failures="1" skipped="3" time="1051.836" errors="0">
+<testcase name="Custom Logo › should open Custom Logo Settings modal and verify UI elements" classname="TS061_customLogo.spec.js" time="38.609">
+<system-out>
+<![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Custom Logo Settings modal is visible
+✓ Small Logo (Collapsed Navbar) section is visible
+✓ Small Logo recommended size (80x64 pixels) is displayed
+✓ Large Logo (Expanded Navbar) section is visible
+✓ Large Logo recommended size (200x64 pixels) is displayed
+✓ Found 4 Upload buttons
+✓ Preview section is visible
+✓ Collapsed preview label is visible
+✓ Expanded preview label is visible
+✓ Reset to Default button is visible
+✓ Cancel button is visible
+✓ Save button is visible
+✓ Close (X) button is visible
+✓ All Custom Logo Settings UI elements verified successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should upload Small Logo (Collapsed Navbar) - 80x64 pixels" classname="TS061_customLogo.spec.js" time="48.745">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Small logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Custom Logo Settings modal is visible
+✓ Collapsed navbar preview section visible
+✓ Small Logo upload successful
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should upload Large Logo (Expanded Navbar) - 200x64 pixels" classname="TS061_customLogo.spec.js" time="50.859">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Large logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Custom Logo Settings modal is visible
+✓ Expanded navbar preview section visible
+✓ Large Logo upload successful
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should upload both logos and verify previews (Collapsed &amp; Expanded)" classname="TS061_customLogo.spec.js" time="60.307">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+=== Uploading Small Logo (80x64 pixels) ===
+✓ Small logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+=== Uploading Large Logo (200x64 pixels) ===
+✓ Large logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+=== Verifying Preview Section ===
+✓ Collapsed preview label visible
+✓ Expanded preview label visible
+✓ Preview section visible with both Collapsed and Expanded labels
+=== Saving Logo Settings ===
+✓ save_custom_logo API called (status: 200)
+✓ Modal closed after save
+✓ Both logos uploaded and previews verified successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should verify logos display in actual navbar (Collapsed and Expanded states)" classname="TS061_customLogo.spec.js" time="67.476">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+=== Step 1: Upload Custom Logos ===
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Small logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Large logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ save_custom_logo API called (status: 200)
+✓ Logos saved
+=== Step 2: Verify CUSTOM Logo in Collapsed Navbar ===
+Navbar collapsed state: true
+✓ Navbar logo container is visible
+Collapsed logo dimensions: 80x64
+✓ Collapsed logo dimensions match small logo size (~80x64)
+✓ Custom small logo is displayed in collapsed navbar
+Collapsed logo source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...
+=== Step 3: Hover to Expand Navbar and Verify Large Logo ===
+Navbar expanded after hover: true
+Account Settings label not immediately visible, but navbar expanded
+Expanded logo dimensions: 160x128
+✓ Expanded logo is wider than collapsed logo
+✓ Custom large logo is displayed in expanded navbar
+✓ Expanded logo is DIFFERENT from collapsed logo (different images for small/large)
+=== Step 4: Move Hover Away and Verify Collapsed State ===
+Navbar collapsed after moving hover away: true
+Final collapsed logo dimensions: 80x64
+✓ Navbar logo display verification completed (Collapsed -> Expanded -> Collapsed)
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should display logos on login page" classname="TS061_customLogo.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Custom Logo › should replace existing Small Logo with new one" classname="TS061_customLogo.spec.js" time="61.523">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Replacement small logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Custom Logo Settings modal is visible
+✓ Logo uploaded (preview may be in different format)
+✓ save_custom_logo API called (status: 200)
+✓ Small Logo replacement completed successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should replace existing Large Logo with new one" classname="TS061_customLogo.spec.js" time="81.825">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+Original large logo src: 
+✓ Replacement large logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Custom Logo Settings modal is visible
+✓ Large logo has been replaced
+✓ save_custom_logo API called (status: 200)
+✓ Large Logo replacement completed successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should reset logos to default using Reset to Default button" classname="TS061_customLogo.spec.js" time="311.476">
+<failure message="TS061_customLogo.spec.js:617:5 should reset logos to default using Reset to Default button" type="FAILURE">
+<![CDATA[  [chromium] › TS061_customLogo.spec.js:617:5 › Custom Logo › should reset logos to default using Reset to Default button 
 
-    Error: expect(received).toBe(expected) // Object.is equality
+    Error: expect(locator).toBeVisible() failed
 
-    Expected: "Custom logos reset to default"
-    Received: "No custom logos to reset"
+    Locator:  getByText('Collapsed', { exact: true })
+    Expected: visible
+    Received: hidden
+    Timeout:  10000ms
 
-      636 |         expect(initResetApiResponse.status()).toBe(200);
-      637 |         expect(initResetResponseBody.status).toBe(true);
-    > 638 |         expect(initResetResponseBody.message).toBe('Custom logos reset to default');
-          |                                               ^
-      639 |         console.log('✓ Initial reset API verified: {"status":true,"message":"Custom logos reset to default"}');
-      640 |
-      641 |         await page.waitForTimeout(2000);
-        at C:\cypress-to-playwright-converted\tests\TS061_customLogo.spec.js:638:47
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for getByText('Collapsed', { exact: true })
+        12 × locator resolved to <p>Collapsed</p>
+           - unexpected value "hidden"
+
+
+      817 |
+      818 |         await collapsedPreviewAfter.scrollIntoViewIfNeeded().catch(() => {});
+    > 819 |         await expect(collapsedPreviewAfter).toBeVisible({ timeout: 10000 });
+          |                                             ^
+      820 |
+      821 |         await expandedPreviewAfter.scrollIntoViewIfNeeded().catch(() => {});
+      822 |         await expect(expandedPreviewAfter).toBeVisible({ timeout: 10000 });
+        at C:\cypress-to-playwright-converted\tests\TS061_customLogo.spec.js:819:45
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\test-failed-1.png
@@ -47,9 +248,7 @@ Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
 ]]>
 </failure>
 <system-out>
-<![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Preserving cookies (using stored auth session)
+<![CDATA[Preserving cookies (using stored auth session)
 Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Using stored authentication session (skipping login)...
@@ -62,13 +261,192 @@ Page loaded successfully
 ✓ Dialog appeared: "Are you sure you want to reset to the default logo?"
 ✓ Dialog accepted (clicked OK)
 ✓ Initial Reset to Default clicked (cleaning any previous custom logos)
-✓ API Response: {"status":true,"message":"No custom logos to reset"}
+✓ API Response: {"status":true,"message":"Custom logos reset to default"}
+✓ Initial reset API verified: {"status":true,"message":"Custom logos reset to default"}
+=== Step 1: Capture DEFAULT Navbar Logo (After Reset) ===
+Default navbar logo captured: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png")...
+Is actual default logo (not custom base64): true
+✓ Verified logo is actual default (file URL, not base64 custom logo)
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+=== Step 2: Upload Custom Logos ===
+✓ Small logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Large logo file selected
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Preview section visible with Collapsed and Expanded
+Custom small logo preview: N/A
+Custom large logo preview: N/A
+✓ save_custom_logo API called (status: 200)
+✓ Custom logos saved
+=== Step 3: Verify Custom Logo is Now in Navbar ===
+Custom navbar logo: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...
+✓ Navbar logo changed to custom logo (different from default)
+Custom logo is base64 encoded: true
+=== Step 4: Re-open Modal and Reset to Default ===
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+Small logo preview BEFORE reset: N/A
+Large logo preview BEFORE reset: N/A
+✓ Dialog appeared: "Are you sure you want to reset to the default logo?"
+✓ Dialog accepted (clicked OK)
+✓ Reset to Default button clicked
+✓ Reset API Response: {"status":true,"message":"Custom logos reset to default"}
+✓ Reset API verified: {"status":true,"message":"Custom logos reset to default"}
+=== Step 5: Verify Uploaded Icons Are Replaced with Platform Logo ===
+Small logo preview AFTER reset: N/A
+Large logo preview AFTER reset: N/A
 
 [[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\test-failed-1.png]]
 
 [[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\video.webm]]
 
 [[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should cancel changes using Cancel button" classname="TS061_customLogo.spec.js" time="53.608">
+<system-out>
+<![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ New logo file selected (not saved yet)
+✓ Crop modal appeared
+✓ Crop Apply button clicked
+✓ Cancel button clicked
+✓ Modal closed without saving
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Verified changes were discarded
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should reject invalid file type upload for Small Logo" classname="TS061_customLogo.spec.js" time="39.719">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Attempted to upload invalid file type
+✓ Error message displayed for invalid file type
+✓ Modal remains functional after invalid file upload
+✓ Invalid file type rejection test passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should reject oversized file upload for Large Logo" classname="TS061_customLogo.spec.js" time="39.582">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Attempted to upload oversized file (>2MB)
+✓ Error message displayed for oversized file
+✓ Modal remains functional after oversized file upload
+✓ Oversized file handling test passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should deny access for non-admin user" classname="TS061_customLogo.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Custom Logo › should persist logos after page refresh" classname="TS061_customLogo.spec.js" time="49.07">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+Original navbar logo background: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...
+✓ Navbar logo container visible after refresh
+Refreshed navbar logo background: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...
+✓ Logo background matches after refresh
+✓ Logo persistence verified
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should display fallback default logo when custom logo fails to load" classname="TS061_customLogo.spec.js" time="68.496">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ Navbar logo container is visible
+Logo background after blocking: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...
+✓ Fallback/default logo is displayed
+✓ Fallback logo handling verified
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should include custom logo in PDF report generation" classname="TS061_customLogo.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Custom Logo › should handle corrupted image file gracefully" classname="TS061_customLogo.spec.js" time="38.186">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Attempted to upload corrupted image file
+✓ System handled corrupted file upload
+✓ System remains stable after corrupted file upload
+]]>
+</system-out>
+</testcase>
+<testcase name="Custom Logo › should close modal using X button" classname="TS061_customLogo.spec.js" time="42.355">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout, continuing...
+Page loaded successfully
+✓ get_custom_logo API called (status: 200)
+✓ Custom Logo Settings modal opened
+✓ Modal is open
+✓ X button clicked
+✓ Modal closed via X button
 ]]>
 </system-out>
 </testcase>

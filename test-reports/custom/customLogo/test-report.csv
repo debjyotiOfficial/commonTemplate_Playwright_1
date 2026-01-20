@@ -1,2 +1,19 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS061-A,"Custom Logo","should reset logos to default using Reset to Default button",FAILED,83.84,"Error: expect(received).toBe(expected) // Object.is equality",TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm,TS061_customLogo.spec.js,602
+TS061-A,"Custom Logo","should open Custom Logo Settings modal and verify UI elements",PASSED,38.61,"",N/A,TS061_customLogo.spec.js,134
+TS061-B,"Custom Logo","should upload Small Logo (Collapsed Navbar) - 80x64 pixels",PASSED,48.74,"",N/A,TS061_customLogo.spec.js,209
+TS061-C,"Custom Logo","should upload Large Logo (Expanded Navbar) - 200x64 pixels",PASSED,50.86,"",N/A,TS061_customLogo.spec.js,248
+TS061-D,"Custom Logo","should upload both logos and verify previews (Collapsed & Expanded)",PASSED,60.31,"",N/A,TS061_customLogo.spec.js,287
+TS061-E,"Custom Logo","should verify logos display in actual navbar (Collapsed and Expanded states)",PASSED,67.48,"",N/A,TS061_customLogo.spec.js,364
+TS061-F,"Custom Logo","should display logos on login page",SKIPPED,0.00,"",N/A,TS061_customLogo.spec.js,504
+TS061-G,"Custom Logo","should replace existing Small Logo with new one",PASSED,61.52,"",N/A,TS061_customLogo.spec.js,531
+TS061-H,"Custom Logo","should replace existing Large Logo with new one",PASSED,81.83,"",N/A,TS061_customLogo.spec.js,575
+TS061-I,"Custom Logo","should reset logos to default using Reset to Default button",FAILED,311.48,"Error: expect(locator).toBeVisible() failed",TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm,TS061_customLogo.spec.js,617
+TS061-J,"Custom Logo","should cancel changes using Cancel button",PASSED,53.61,"",N/A,TS061_customLogo.spec.js,868
+TS061-K,"Custom Logo","should reject invalid file type upload for Small Logo",PASSED,39.72,"",N/A,TS061_customLogo.spec.js,910
+TS061-L,"Custom Logo","should reject oversized file upload for Large Logo",PASSED,39.58,"",N/A,TS061_customLogo.spec.js,954
+TS061-M,"Custom Logo","should deny access for non-admin user",SKIPPED,0.00,"",N/A,TS061_customLogo.spec.js,998
+TS061-N,"Custom Logo","should persist logos after page refresh",PASSED,49.07,"",N/A,TS061_customLogo.spec.js,1040
+TS061-O,"Custom Logo","should display fallback default logo when custom logo fails to load",PASSED,68.50,"",N/A,TS061_customLogo.spec.js,1074
+TS061-P,"Custom Logo","should include custom logo in PDF report generation",SKIPPED,0.00,"",N/A,TS061_customLogo.spec.js,1109
+TS061-Q,"Custom Logo","should handle corrupted image file gracefully",PASSED,38.19,"",N/A,TS061_customLogo.spec.js,1142
+TS061-R,"Custom Logo","should close modal using X button",PASSED,42.35,"",N/A,TS061_customLogo.spec.js,1181

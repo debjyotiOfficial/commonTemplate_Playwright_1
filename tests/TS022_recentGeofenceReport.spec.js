@@ -56,7 +56,7 @@ test.describe('Recent geofence report', () => {
             }
         }
         
-        await page.locator('#time-range-dropdown').selectOption('More than 45 Days');
+        await page.locator('#time-range-dropdown').selectOption('More than 30 Days');
 
         // Click on submit button
         await expect(page.locator(config.selectors.recentGeofenceReport.submitButton)).toBeVisible();

@@ -1,2 +1,2 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,118.14,"",N/A,TS028_travelLogReport.spec.js,829
+TS028-A,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,71.87,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport.spec.js,1213

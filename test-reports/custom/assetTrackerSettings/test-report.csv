@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS062-A,"Asset Tracker Settings","should test Aggressive Mode/Change Intervals tab functionality",FAILED,72.96,"Error: expect(locator).toBeVisible() failed",TS062_AssetTrackerSettings-should-test-Aggressive-Mode-Change-Intervals-tab-f.webm,TS062_AssetTrackerSettings.spec.js,250

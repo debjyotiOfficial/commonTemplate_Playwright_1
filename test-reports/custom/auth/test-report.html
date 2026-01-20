@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - auth - 13/1/2026</title>
+    <title>Test Report - auth - 20/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: auth</div>
             <div class="subtitle">
-                Generated: 13/1/2026, 3:08:53 am |
-                Duration: 920.97s |
+                Generated: 20/1/2026, 5:06:30 am |
+                Duration: 1872.44s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -224,7 +224,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Authentication session expired (age: 114 minutes). Re-authenticating...</span>
+                                                <span class="step-text">Authentication session expired (age: 180 minutes). Re-authenticating...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -277,7 +277,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>81.52s</strong></td>
+                        <td><strong>68.72s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -331,7 +331,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"81.52s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"68.72s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -348,7 +348,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-12.csv';
+            link.download = 'test-report-2026-01-19.csv';
             link.click();
         }
     </script>

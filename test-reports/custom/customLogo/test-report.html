@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - customLogo - 13/1/2026</title>
+    <title>Test Report - customLogo - 20/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,19 +152,19 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: customLogo</div>
             <div class="subtitle">
-                Generated: 13/1/2026, 3:08:53 am |
-                Duration: 920.97s |
+                Generated: 20/1/2026, 5:06:30 am |
+                Duration: 1872.44s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">1</div>
+                <div class="number">18</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">0</div>
+                <div class="number">14</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
@@ -172,11 +172,11 @@
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
-                <div class="number">0</div>
+                <div class="number">3</div>
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">0.0%</div>
+                <div class="number">77.8%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,62 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="failed" data-module="Custom Logo">
+                    <tr data-status="passed" data-module="Custom Logo">
                         <td><span class="test-case-no">TS061-A</span></td>
                         <td>Custom Logo</td>
                         <td>
-                            <strong>should reset logos to default using Reset to Default button</strong>
-                            
-                                <button class="error-toggle" onclick="toggleError(0)">
-                                    View Error Details
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="error-0" class="error-panel">
-                                    
-            <div class="error-details">
-                <div class="error-details-header">
-                    <span class="error-type-badge">Assertion Failed</span>
-                </div>
-                <div class="error-details-body">
-                    <div class="error-row">
-                        <span class="error-label">File:</span>
-                        <span class="error-value">TS061_customLogo.spec.js</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Line:</span>
-                        <span class="error-value">602</span>
-                    </div>
-                    
-                    
-                    <div class="error-row">
-                        <span class="error-label">Expected:</span>
-                        <span class="error-value">Values should be equal</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Actual:</span>
-                        <span class="error-value error-actual">&quot;No custom logos to reset&quot;</span>
-                    </div>
-                    
-                    <div class="error-row suggestion">
-                        <span class="error-label">Suggestion:</span>
-                        <span class="error-value">Check the expected vs actual values in the assertion</span>
-                    </div>
-                    
-                    <div class="error-row full-error">
-                        <span class="error-label">Full Error:</span>
-                        <span class="error-value"><pre>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: &quot;Custom logos reset to default&quot;
-Received: &quot;No custom logos to reset&quot;</pre></span>
-                    </div>
-                </div>
-            </div>
-        
-                                </div>
+                            <strong>should open Custom Logo Settings modal and verify UI elements</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (16)</span>
+                                    <span>View Test Steps (25)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -278,6 +231,1015 @@ Received: &quot;No custom logos to reset&quot;</pre></span>
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Config loaded successfully</span>
                                             </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small Logo (Collapsed Navbar) section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small Logo recommended size (80x64 pixels) is displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large Logo (Expanded Navbar) section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large Logo recommended size (200x64 pixels) is displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Found 4 Upload buttons</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Preview section is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Collapsed preview label is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Expanded preview label is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Reset to Default button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Cancel button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Save button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Close (X) button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All Custom Logo Settings UI elements verified successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>38.61s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-B</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should upload Small Logo (Collapsed Navbar) - 80x64 pixels</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(1)">
+                                    <span>View Test Steps (15)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-1" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Collapsed navbar preview section visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small Logo upload successful</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>48.74s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-C</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should upload Large Logo (Expanded Navbar) - 200x64 pixels</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(2)">
+                                    <span>View Test Steps (15)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-2" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Expanded navbar preview section visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large Logo upload successful</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>50.86s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-D</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should upload both logos and verify previews (Collapsed &amp; Expanded)</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(3)">
+                                    <span>View Test Steps (25)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-3" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Uploading Small Logo (80x64 pixels) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Uploading Large Logo (200x64 pixels) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Verifying Preview Section ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Collapsed preview label visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Expanded preview label visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Preview section visible with both Collapsed and Expanded labels</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Saving Logo Settings ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ save_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal closed after save</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Both logos uploaded and previews verified successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>60.31s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-E</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should verify logos display in actual navbar (Collapsed and Expanded states)</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(4)">
+                                    <span>View Test Steps (36)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-4" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 1: Upload Custom Logos ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ save_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Logos saved</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 2: Verify CUSTOM Logo in Collapsed Navbar ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navbar collapsed state: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Navbar logo container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Collapsed logo dimensions: 80x64</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Collapsed logo dimensions match small logo size (~80x64)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom small logo is displayed in collapsed navbar</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Collapsed logo source: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 3: Hover to Expand Navbar and Verify Large Logo ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navbar expanded after hover: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Account Settings label not immediately visible, but navbar expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expanded logo dimensions: 160x128</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Expanded logo is wider than collapsed logo</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom large logo is displayed in expanded navbar</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Expanded logo is DIFFERENT from collapsed logo (different images for small/large)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 4: Move Hover Away and Verify Collapsed State ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navbar collapsed after moving hover away: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final collapsed logo dimensions: 80x64</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Navbar logo display verification completed (Collapsed -&gt; Expanded -&gt; Collapsed)</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>67.48s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="skipped" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-F</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should display logos on login page</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(5)">
+                                    <span>View Test Steps (0)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-5" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        <div class="step-item info"><span class="step-text">No detailed steps captured for this test</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status skipped">SKIPPED</span></td>
+                        <td><strong>0.00s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-G</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should replace existing Small Logo with new one</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(6)">
+                                    <span>View Test Steps (16)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-6" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Replacement small logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Logo uploaded (preview may be in different format)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ save_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small Logo replacement completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>61.52s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-H</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should replace existing Large Logo with new one</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(7)">
+                                    <span>View Test Steps (17)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-7" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Original large logo src:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Replacement large logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large logo has been replaced</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ save_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large Logo replacement completed successfully</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>81.83s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="failed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-I</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should reset logos to default using Reset to Default button</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(8)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-8" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Element Not Visible</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS061_customLogo.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">617</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Element:</span>
+                        <span class="error-value element-selector">getByText(&#039;Collapsed&#039;, { exact: true }</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Timeout:</span>
+                        <span class="error-value">10s</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Element should be visible on page</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">hidden</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check if the page loaded correctly, or if the selector has changed</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(locator).toBeVisible() failed
+
+Locator:  getByText(&#039;Collapsed&#039;, { exact: true })
+Expected: visible
+Received: hidden
+Timeout:  10000ms
+
+Call log:
+  - Expect &quot;toBeVisible&quot; with timeout 10000ms
+  - waiting for getByText(&#039;Collapsed&#039;, { exact: true })
+    12 × locator resolved to &lt;p&gt;Collapsed&lt;/p&gt;
+       - unexpected value &quot;hidden&quot;
+</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(8)">
+                                    <span>View Test Steps (50)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-8" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
@@ -346,7 +1308,187 @@ Received: &quot;No custom logos to reset&quot;</pre></span>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;No custom logos to reset&quot;}</span>
+                                                <span class="step-text">✓ API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;Custom logos reset to default&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Initial reset API verified: {&quot;status&quot;:true,&quot;message&quot;:&quot;Custom logos reset to default&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 1: Capture DEFAULT Navbar Logo (After Reset) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Default navbar logo captured: url(&quot;https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png&quot;)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Is actual default logo (not custom base64): true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Verified logo is actual default (file URL, not base64 custom logo)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 2: Upload Custom Logos ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Small logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Large logo file selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Preview section visible with Collapsed and Expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom small logo preview: N/A</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom large logo preview: N/A</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ save_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom logos saved</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 3: Verify Custom Logo is Now in Navbar ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom navbar logo: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Navbar logo changed to custom logo (different from default)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Custom logo is base64 encoded: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 4: Re-open Modal and Reset to Default ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Small logo preview BEFORE reset: N/A</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Large logo preview BEFORE reset: N/A</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Dialog appeared: &quot;Are you sure you want to reset to the default logo?&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Dialog accepted (clicked OK)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Reset to Default button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Reset API Response: {&quot;status&quot;:true,&quot;message&quot;:&quot;Custom logos reset to default&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Reset API verified: {&quot;status&quot;:true,&quot;message&quot;:&quot;Custom logos reset to default&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Step 5: Verify Uploaded Icons Are Replaced with Platform Logo ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Small logo preview AFTER reset: N/A</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Large logo preview AFTER reset: N/A</span>
                                             </div>
                                         
                                     </div>
@@ -354,9 +1496,703 @@ Received: &quot;No custom logos to reset&quot;</pre></span>
                             </div>
                         </td>
                         <td><span class="status failed">FAILED</span></td>
-                        <td><strong>83.84s</strong></td>
+                        <td><strong>311.48s</strong></td>
                         <td>
                             <a href="videos/TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm" class="video-link" target="_blank">Video: TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm</a>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-J</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should cancel changes using Cancel button</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(9)">
+                                    <span>View Test Steps (19)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-9" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ New logo file selected (not saved yet)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop modal appeared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Crop Apply button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Cancel button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal closed without saving</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Verified changes were discarded</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>53.61s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-K</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should reject invalid file type upload for Small Logo</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(10)">
+                                    <span>View Test Steps (13)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-10" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Attempted to upload invalid file type</span>
+                                            </div>
+                                        
+                                            <div class="step-item failed step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">✓ Error message displayed for invalid file type</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal remains functional after invalid file upload</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Invalid file type rejection test passed</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>39.72s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-L</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should reject oversized file upload for Large Logo</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(11)">
+                                    <span>View Test Steps (13)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-11" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Attempted to upload oversized file (&gt;2MB)</span>
+                                            </div>
+                                        
+                                            <div class="step-item failed step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">✓ Error message displayed for oversized file</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal remains functional after oversized file upload</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Oversized file handling test passed</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>39.58s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="skipped" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-M</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should deny access for non-admin user</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(12)">
+                                    <span>View Test Steps (0)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-12" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        <div class="step-item info"><span class="step-text">No detailed steps captured for this test</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status skipped">SKIPPED</span></td>
+                        <td><strong>0.00s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-N</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should persist logos after page refresh</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(13)">
+                                    <span>View Test Steps (12)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-13" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Original navbar logo background: url(&quot;https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Navbar logo container visible after refresh</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Refreshed navbar logo background: url(&quot;https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Logo background matches after refresh</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Logo persistence verified</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>49.07s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-O</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should display fallback default logo when custom logo fails to load</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(14)">
+                                    <span>View Test Steps (11)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-14" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Navbar logo container is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Logo background after blocking: url(&quot;https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Fallback/default logo is displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Fallback logo handling verified</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>68.50s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="skipped" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-P</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should include custom logo in PDF report generation</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(15)">
+                                    <span>View Test Steps (0)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-15" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        <div class="step-item info"><span class="step-text">No detailed steps captured for this test</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status skipped">SKIPPED</span></td>
+                        <td><strong>0.00s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-Q</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should handle corrupted image file gracefully</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(16)">
+                                    <span>View Test Steps (12)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-16" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Attempted to upload corrupted image file</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ System handled corrupted file upload</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ System remains stable after corrupted file upload</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>38.19s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="Custom Logo">
+                        <td><span class="test-case-no">TS061-R</span></td>
+                        <td>Custom Logo</td>
+                        <td>
+                            <strong>should close modal using X button</strong>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(17)">
+                                    <span>View Test Steps (12)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-17" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ get_custom_logo API called (status: 200)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Custom Logo Settings modal opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal is open</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ X button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal closed via X button</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>42.35s</strong></td>
+                        <td>
+                            <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
@@ -408,7 +2244,7 @@ Received: &quot;No custom logos to reset&quot;</pre></span>
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should reset logos to default using Reset to Default button","status":"FAILED","duration":"83.84s","failureReason":"Error: expect(received).toBe(expected) // Object.is equality","videoIdentifier":"TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm"}];
+            const data = [{"testCaseNo":"TS061-A","module":"Custom Logo","description":"should open Custom Logo Settings modal and verify UI elements","status":"PASSED","duration":"38.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-B","module":"Custom Logo","description":"should upload Small Logo (Collapsed Navbar) - 80x64 pixels","status":"PASSED","duration":"48.74s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-C","module":"Custom Logo","description":"should upload Large Logo (Expanded Navbar) - 200x64 pixels","status":"PASSED","duration":"50.86s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-D","module":"Custom Logo","description":"should upload both logos and verify previews (Collapsed & Expanded)","status":"PASSED","duration":"60.31s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-E","module":"Custom Logo","description":"should verify logos display in actual navbar (Collapsed and Expanded states)","status":"PASSED","duration":"67.48s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-F","module":"Custom Logo","description":"should display logos on login page","status":"SKIPPED","duration":"0.00s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-G","module":"Custom Logo","description":"should replace existing Small Logo with new one","status":"PASSED","duration":"61.52s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-H","module":"Custom Logo","description":"should replace existing Large Logo with new one","status":"PASSED","duration":"81.83s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-I","module":"Custom Logo","description":"should reset logos to default using Reset to Default button","status":"FAILED","duration":"311.48s","failureReason":"Error: expect(locator).toBeVisible() failed","videoIdentifier":"TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm"},{"testCaseNo":"TS061-J","module":"Custom Logo","description":"should cancel changes using Cancel button","status":"PASSED","duration":"53.61s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-K","module":"Custom Logo","description":"should reject invalid file type upload for Small Logo","status":"PASSED","duration":"39.72s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-L","module":"Custom Logo","description":"should reject oversized file upload for Large Logo","status":"PASSED","duration":"39.58s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-M","module":"Custom Logo","description":"should deny access for non-admin user","status":"SKIPPED","duration":"0.00s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-N","module":"Custom Logo","description":"should persist logos after page refresh","status":"PASSED","duration":"49.07s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-O","module":"Custom Logo","description":"should display fallback default logo when custom logo fails to load","status":"PASSED","duration":"68.50s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-P","module":"Custom Logo","description":"should include custom logo in PDF report generation","status":"SKIPPED","duration":"0.00s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-Q","module":"Custom Logo","description":"should handle corrupted image file gracefully","status":"PASSED","duration":"38.19s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS061-R","module":"Custom Logo","description":"should close modal using X button","status":"PASSED","duration":"42.35s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -425,7 +2261,7 @@ Received: &quot;No custom logos to reset&quot;</pre></span>
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-12.csv';
+            link.download = 'test-report-2026-01-19.csv';
             link.click();
         }
     </script>

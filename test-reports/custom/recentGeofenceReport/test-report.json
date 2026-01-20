@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 811351,
+    "startTime": "2026-01-19T18:57:41.927Z",
+    "endTime": "2026-01-19T19:11:13.278Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS022-A",
+      "module": "Recent geofence report",
+      "title": "should manage recent geofence report",
+      "description": "should manage recent geofence report",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 64486,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-19T18:57:47.555Z",
+      "endTime": "2026-01-19T18:58:52.042Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS022_recentGeofenceReport.spec.js",
+      "fileName": "TS022_recentGeofenceReport",
+      "line": 23
+    }
+  ]
+}

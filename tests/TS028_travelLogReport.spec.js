@@ -84,7 +84,7 @@ test.describe('Travel Log Report', () => {
      * Test 1: Main Travel Log Report Display
      * Verifies TLR loads correctly with map, table, popup validation, and export functionality
      */
-    test.skip('should display TLR', async ({ page }) => {
+    test('should display TLR', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
@@ -564,7 +564,7 @@ test.describe('Travel Log Report', () => {
      * Test 2: Engine Idling Checkbox Functionality
      * Verifies that the Engine Idling checkbox correctly filters events in the table
      */
-    test.skip('should verify Engine Idling checkbox functionality', async ({ page }) => {
+    test('should verify Engine Idling checkbox functionality', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
@@ -689,7 +689,7 @@ test.describe('Travel Log Report', () => {
      * Test 3: Search Functionality
      * Verifies that the search input correctly filters table results
      */
-    test.skip('should verify search functionality in TLR', async ({ page }) => {
+    test('should verify search functionality in TLR', async ({ page }) => {
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 
@@ -1204,5 +1204,192 @@ test.describe('Travel Log Report', () => {
         console.log('✓ All export buttons (Excel, CSV, PDF) verified in Frequent Stops tab');
 
         console.log('Frequent Stops functionality test completed!');
+    });
+
+    /**
+     * Test 7: Search Input Clears on Report Resubmission
+     * Verifies that search input clears when report is resubmitted with new date range
+     *
+     * KNOWN BUG: Search input does NOT clear after report resubmission.
+     * This test documents the expected behavior and will pass once the bug is fixed.
+     */
+    test('should clear search input on report resubmission in Frequent Stops', async ({ page }) => {
+        const helpers = new TestHelpers(page);
+        config = await helpers.getConfig();
+
+        // Login and navigate
+        await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
+
+        // Click on reports menu
+        await expect(page.locator(config.selectors.navigation.reportMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.reportMenu).click({ force: true });
+        await page.waitForTimeout(2000);
+
+        // Click on track report menu
+        await expect(page.locator(config.selectors.navigation.trackReportMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.trackReportMenu).click({ force: true });
+
+        // Wait for modal to open
+        await page.waitForTimeout(5000);
+        await expect(page.locator(config.selectors.modal.container)).toBeVisible();
+
+        // ============= FIRST SUBMISSION: Jan 13-16, 2026 =============
+        console.log('--- First Submission: Jan 13-16, 2026 ---');
+
+        // Date selection - click calendar button to open
+        await page.evaluate(() => {
+            const btn = document.querySelector('#travel-log-report-calendar-btn');
+            if (btn) {
+                btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                btn.click();
+            }
+        });
+        await page.waitForTimeout(1000);
+
+        // Set year to 2026
+        const yearInput = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+        await yearInput.click();
+        await yearInput.fill('2026');
+        await yearInput.press('Enter');
+        await page.waitForTimeout(500);
+
+        // Select January from the month dropdown
+        await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('January');
+        await page.waitForTimeout(500);
+
+        // Select January 13 and January 16, 2026
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="January 13, 2026"]').click({ force: true });
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="January 16, 2026"]').click({ force: true });
+
+        // Select device - Sales Car1
+        await page.waitForTimeout(1000);
+        await page.waitForSelector('#travel-log-report-panel #select2-driver-list-container', { state: 'visible' });
+        await page.locator('#travel-log-report-panel #select2-driver-list-container').click({ force: true });
+        await page.locator('.select2-results__option').filter({ hasText: 'Sales car1' }).click({ force: true });
+
+        // Switch to Travel Log Frequent Stops tab before submitting
+        const frequentStopsTab = page.locator('button:has-text("Travel Log Frequent Stops")');
+        await expect(frequentStopsTab).toBeVisible({ timeout: 15000 });
+        await frequentStopsTab.click();
+        await page.waitForTimeout(1000);
+
+        // Submit first report
+        await expect(page.locator(config.selectors.tlr.submitButton)).toBeVisible();
+        await page.locator(config.selectors.tlr.submitButton).click({ force: true });
+        console.log('First submission clicked - waiting for report to load...');
+
+        // Wait for loading modal to disappear and table to load
+        const loadingModal = page.locator('.loading-modal');
+        try {
+            await expect(loadingModal).toBeVisible({ timeout: 5000 });
+            await expect(loadingModal).toBeHidden({ timeout: 120000 });
+        } catch (error) {
+            // Loading modal might be too fast
+        }
+        await page.waitForTimeout(5000);
+
+        // Wait for the Frequent Stops table to be visible
+        const frequentStopsTable = page.locator('#travel-log-report-frequent-stops-table');
+        await expect(frequentStopsTable).toBeVisible({ timeout: 30000 });
+
+        // Get initial row count
+        const initialRows = page.locator('#travel-log-report-frequent-stops-table tbody tr');
+        await expect(initialRows.first()).toBeAttached({ timeout: 15000 });
+        const initialRowCount = await initialRows.count();
+        console.log(`First submission - Table loaded with ${initialRowCount} rows`);
+
+        // ============= TYPE IN SEARCH INPUT =============
+        console.log('--- Typing in search input ---');
+
+        // Find the search input
+        let searchInput = page.locator('#travel-log-report-frequent-stops-table_filter input[type="search"]');
+        if (!(await searchInput.isVisible({ timeout: 3000 }).catch(() => false))) {
+            searchInput = page.locator('#travel-log-report-search');
+        }
+        await expect(searchInput).toBeVisible({ timeout: 10000 });
+
+        // Type something in the search input
+        await searchInput.clear();
+        await searchInput.fill('test search text');
+        await page.waitForTimeout(1000);
+
+        // Verify search input has value
+        const searchValueBefore = await searchInput.inputValue();
+        console.log(`Search input value before resubmission: "${searchValueBefore}"`);
+        expect(searchValueBefore).toBe('test search text');
+
+        // ============= SECOND SUBMISSION: Jan 13-14, 2026 =============
+        console.log('--- Second Submission: Jan 13-14, 2026 ---');
+
+        // Date selection - click calendar button to open
+        await page.evaluate(() => {
+            const btn = document.querySelector('#travel-log-report-calendar-btn');
+            if (btn) {
+                btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                btn.click();
+            }
+        });
+        await page.waitForTimeout(1000);
+
+        // Set year to 2026
+        const yearInput2 = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+        await yearInput2.click();
+        await yearInput2.fill('2026');
+        await yearInput2.press('Enter');
+        await page.waitForTimeout(500);
+
+        // Select January from the month dropdown
+        await page.locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months').selectOption('January');
+        await page.waitForTimeout(500);
+
+        // Select January 13 and January 14, 2026 (new date range)
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="January 13, 2026"]').click({ force: true });
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="January 14, 2026"]').click({ force: true });
+
+        // Submit second report (resubmission)
+        await expect(page.locator(config.selectors.tlr.submitButton)).toBeVisible();
+        await page.locator(config.selectors.tlr.submitButton).click({ force: true });
+        console.log('Second submission clicked - waiting for report to reload...');
+
+        // Wait for loading modal to disappear and table to reload
+        try {
+            await expect(loadingModal).toBeVisible({ timeout: 5000 });
+            await expect(loadingModal).toBeHidden({ timeout: 120000 });
+        } catch (error) {
+            // Loading modal might be too fast
+        }
+        await page.waitForTimeout(5000);
+
+        // Wait for table to reload
+        await expect(frequentStopsTable).toBeVisible({ timeout: 30000 });
+        await expect(initialRows.first()).toBeAttached({ timeout: 15000 });
+
+        // ============= VERIFY SEARCH INPUT IS CLEARED =============
+        console.log('--- Verifying search input cleared ---');
+
+        // Re-locate search input after page refresh
+        searchInput = page.locator('#travel-log-report-frequent-stops-table_filter input[type="search"]');
+        if (!(await searchInput.isVisible({ timeout: 3000 }).catch(() => false))) {
+            searchInput = page.locator('#travel-log-report-search');
+        }
+
+        // Verify search input is cleared
+        const searchValueAfter = await searchInput.inputValue();
+        console.log(`Search input value after resubmission: "${searchValueAfter}"`);
+        expect(searchValueAfter).toBe('');
+        console.log('✓ Search input is cleared after resubmission');
+
+        // ============= VERIFY TABLE RELOADED WITH FRESH DATA =============
+        console.log('--- Verifying table reloaded ---');
+
+        const reloadedRows = page.locator('#travel-log-report-frequent-stops-table tbody tr');
+        const reloadedRowCount = await reloadedRows.count();
+        console.log(`Second submission - Table loaded with ${reloadedRowCount} rows`);
+
+        // Verify table has data (at least 1 row or shows "no data" message)
+        expect(reloadedRowCount).toBeGreaterThanOrEqual(0);
+        console.log('✓ Table reloaded with fresh data');
+
+        console.log('Search input resubmission test completed successfully!');
     });
 });

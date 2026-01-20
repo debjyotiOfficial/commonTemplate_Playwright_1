@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 920966,
-    "startTime": "2026-01-12T21:23:32.561Z",
-    "endTime": "2026-01-12T21:38:53.527Z"
+    "duration": 1872437,
+    "startTime": "2026-01-19T23:05:17.954Z",
+    "endTime": "2026-01-19T23:36:30.391Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 81522,
+      "duration": 68722,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -24,7 +24,7 @@
       "steps": [
         {
           "number": "",
-          "text": "Authentication session expired (age: 114 minutes). Re-authenticating...",
+          "text": "Authentication session expired (age: 180 minutes). Re-authenticating...",
           "status": "info",
           "type": "log"
         },
@@ -83,8 +83,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2026-01-12T21:23:40.742Z",
-      "endTime": "2026-01-12T21:25:02.280Z",
+      "startTime": "2026-01-19T23:05:20.979Z",
+      "endTime": "2026-01-19T23:06:29.701Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",

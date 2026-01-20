@@ -1,5 +1,5 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,81.52,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,68.72,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,4244.73,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add device with custom icon",PASSED,239.54,"",N/A,TS002_addEditDevices,394
 TS005-A,"Subgroup","should manage subgroups",PASSED,112.70,"",N/A,TS005_subgroup,32
@@ -12,11 +12,12 @@ TS017-A,"After Hour Setting","should edit the after hour settings of a device",P
 TS018-A,"Create Geofencing","should be able to create new Geofence",PASSED,139.29,"",N/A,TS018_createGeofencing,23
 TS020-A,"Weekly Geofencing reports","should manage recent geofence report",PASSED,102.42,"",N/A,TS020_weeklyGeofenceReport,48
 TS021-A,"Current geofence report","should manage recent geofence report",PASSED,121.73,"",N/A,TS021_currentGeofenceReport,45
+TS022-A,"Recent geofence report","should manage recent geofence report",PASSED,64.49,"",N/A,TS022_recentGeofenceReport,23
 TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,113.69,"",N/A,TS024_createLandmark,23
 TS026-A,"view edit landmark","should be able to view, edit and delete landmark",PASSED,128.39,"",N/A,TS026_viewEditLandmark,238
 TS026-B,"view edit landmark","should be able to toggle Hide Vehicle Markers for landmarks",PASSED,125.98,"",N/A,TS026_viewEditLandmark,451
 TS027-A,"Track History Tests","should verify HERE Maps car marker animation functionality",PASSED,224.13,"",N/A,TS027_trackHistory,23
-TS028-A,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,118.14,"",N/A,TS028_travelLogReport,829
+TS028-A,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,71.87,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport,1213
 TS028-A,"Travel Log Report - Filters","should verify Geofence Events checkbox functionality",FAILED,151.43,"Error: expect(received).toBeFalsy()",TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm,TS028_travelLogReportFilters,84
 TS030-A,"Mileage Report","should display start and end mileage of devices",PASSED,88.19,"",N/A,TS030_mileageReport,23
 TS032-A,"30 Day Mileage Report","should be redirected to fleet demo page with demo credentials",PASSED,98.20,"",N/A,TS032_30DayMileageReport,46
@@ -31,7 +32,7 @@ TS047-C,"Dashcam Alert Settings","should configure after hours settings",PASSED,
 TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",PASSED,153.74,"",N/A,TS050_last24hrs,39
 TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Frequent Stops functionality",PASSED,131.61,"",N/A,TS050_last24hrs,338
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
-TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,58.27,"",N/A,TS052_getSupport,23
+TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,70.68,"",N/A,TS052_getSupport,23
 TS055-A,"Timezone","should edit the timezone of users",PASSED,122.58,"",N/A,TS055_appearanceSettings,24
 TS057-A,"Account Health Summary Report","should display Account Health Summary report and verify device data with Historical Data",PASSED,227.76,"",N/A,TS057_accountHealthSummary,26
 TS057-B,"Account Health Summary Report","should verify Fleet Status Summary cards and table filtering",PASSED,70.20,"",N/A,TS057_accountHealthSummary,355
@@ -39,5 +40,23 @@ TS057-C,"Account Health Summary Report","should verify table sorting functionali
 TS057-D,"Account Health Summary Report","should verify export buttons and file downloads",PASSED,86.67,"",N/A,TS057_accountHealthSummary,520
 TS057-E,"Account Health Summary Report","should verify search functionality in device table",PASSED,79.08,"",N/A,TS057_accountHealthSummary,692
 TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",FAILED,56.74,"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm,TS058_dashcamDataUsage,23
-TS061-A,"Custom Logo","should reset logos to default using Reset to Default button",FAILED,83.84,"Error: expect(received).toBe(expected) // Object.is equality",TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm,TS061_customLogo,602
+TS061-A,"Custom Logo","should open Custom Logo Settings modal and verify UI elements",PASSED,38.61,"",N/A,TS061_customLogo,134
+TS061-B,"Custom Logo","should upload Small Logo (Collapsed Navbar) - 80x64 pixels",PASSED,48.74,"",N/A,TS061_customLogo,209
+TS061-C,"Custom Logo","should upload Large Logo (Expanded Navbar) - 200x64 pixels",PASSED,50.86,"",N/A,TS061_customLogo,248
+TS061-D,"Custom Logo","should upload both logos and verify previews (Collapsed & Expanded)",PASSED,60.31,"",N/A,TS061_customLogo,287
+TS061-E,"Custom Logo","should verify logos display in actual navbar (Collapsed and Expanded states)",PASSED,67.48,"",N/A,TS061_customLogo,364
+TS061-F,"Custom Logo","should display logos on login page",SKIPPED,0.00,"",N/A,TS061_customLogo,504
+TS061-G,"Custom Logo","should replace existing Small Logo with new one",PASSED,61.52,"",N/A,TS061_customLogo,531
+TS061-H,"Custom Logo","should replace existing Large Logo with new one",PASSED,81.83,"",N/A,TS061_customLogo,575
+TS061-I,"Custom Logo","should reset logos to default using Reset to Default button",FAILED,311.48,"Error: expect(locator).toBeVisible() failed",TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm,TS061_customLogo,617
+TS061-J,"Custom Logo","should cancel changes using Cancel button",PASSED,53.61,"",N/A,TS061_customLogo,868
+TS061-K,"Custom Logo","should reject invalid file type upload for Small Logo",PASSED,39.72,"",N/A,TS061_customLogo,910
+TS061-L,"Custom Logo","should reject oversized file upload for Large Logo",PASSED,39.58,"",N/A,TS061_customLogo,954
+TS061-M,"Custom Logo","should deny access for non-admin user",SKIPPED,0.00,"",N/A,TS061_customLogo,998
+TS061-N,"Custom Logo","should persist logos after page refresh",PASSED,49.07,"",N/A,TS061_customLogo,1040
+TS061-O,"Custom Logo","should display fallback default logo when custom logo fails to load",PASSED,68.50,"",N/A,TS061_customLogo,1074
+TS061-P,"Custom Logo","should include custom logo in PDF report generation",SKIPPED,0.00,"",N/A,TS061_customLogo,1109
+TS061-Q,"Custom Logo","should handle corrupted image file gracefully",PASSED,38.19,"",N/A,TS061_customLogo,1142
+TS061-R,"Custom Logo","should close modal using X button",PASSED,42.35,"",N/A,TS061_customLogo,1181
+TS062-A,"Asset Tracker Settings","should test Aggressive Mode/Change Intervals tab functionality",FAILED,72.96,"Error: expect(locator).toBeVisible() failed",TS062_AssetTrackerSettings-should-test-Aggressive-Mode-Change-Intervals-tab-f.webm,TS062_AssetTrackerSettings,250
 TC-A,"view Edit User","should create user and edit them",FAILED,320.51,"Error: expect(received).toBeFalsy()",viewEditUser-should-create-user-and-edit-them.webm,viewEditUser,24

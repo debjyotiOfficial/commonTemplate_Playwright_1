@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS022-A,"Recent geofence report","should manage recent geofence report",PASSED,64.49,"",N/A,TS022_recentGeofenceReport.spec.js,23

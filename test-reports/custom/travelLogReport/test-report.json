@@ -1,26 +1,38 @@
 {
   "summary": {
     "total": 1,
-    "passed": 1,
-    "failed": 0,
+    "passed": 0,
+    "failed": 1,
     "skipped": 0,
-    "duration": 868065,
-    "startTime": "2026-01-02T20:14:24.552Z",
-    "endTime": "2026-01-02T20:28:52.617Z"
+    "duration": 875271,
+    "startTime": "2026-01-19T20:04:25.535Z",
+    "endTime": "2026-01-19T20:19:00.806Z"
   },
   "tests": [
     {
       "testCaseNo": "TS028-A",
       "module": "Travel Log Report",
-      "title": "should verify Frequent Stops functionality with API validation",
-      "description": "should verify Frequent Stops functionality with API validation",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 118142,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
+      "title": "should clear search input on report resubmission in Frequent Stops",
+      "description": "should clear search input on report resubmission in Frequent Stops",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 71873,
+      "failureReason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "\"test search text\"",
+        "timeout": null,
+        "file": "TS028_travelLogReport.spec.js",
+        "line": 1213,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBe(expected) // Object.is equality",
+        "fullMessage": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"test search text\"",
+        "stackTrace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"test search text\"\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js:1376:34"
+      },
+      "videoPath": "videos/TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm",
+      "videoIdentifier": "TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm",
       "steps": [
         {
           "number": "",
@@ -78,233 +90,65 @@
         },
         {
           "number": "",
-          "text": "Testing Frequent Stops functionality with API validation...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying Loading Modal",
+          "text": "First Submission: Jan 1316, 2026",
           "status": "info",
           "type": "subsection"
         },
         {
           "number": "",
-          "text": "✓ Loading modal is visible",
+          "text": "First submission clicked - waiting for report to load...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Loading modal title shows \"Loading Travel Report...\"",
+          "text": "First submission - Table loaded with 61 rows",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Loading time estimate: ⏱️ Loading 3 days of data...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Loading modal shows correct \"3 days\" estimate",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "API Response captured: [{\"id\":160833,\"idIndex\":0,\"date\":\"12/01/2025\",\"duration\":355,\"time\":\"02:08 AM\",\"lat\":\"33.624222\",\"lng\":\"-111.840185\",\"location\":\"\",\"tripType\":\"\",\"battery\":\"12\",\"speed\":\"0.0\",\"mileage\":\"1166.238\",\"dire...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Loading modal disappeared after data loaded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying API response matches table data...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 76 rows in Frequent Stops table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "API returned 76 records",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Row 1: First cell = 12/01/2025",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Row 2: First cell = 12/01/2025",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Row 3: First cell = 12/01/2025",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verified: Frequent Stops table data matches API response",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Sort functionality in Frequent Stops",
+          "text": "Typing in search input",
           "status": "info",
           "type": "subsection"
         },
         {
           "number": "",
-          "text": "Testing Date column sort...",
+          "text": "Search input value before resubmission: \"test search text\"",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing Time column sort...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Search functionality in Frequent Stops",
+          "text": "Second Submission: Jan 1314, 2026",
           "status": "info",
           "type": "subsection"
         },
         {
           "number": "",
-          "text": "DataTables filter not found, using general search input",
+          "text": "Second submission clicked - waiting for report to reload...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Total visible rows before search: 76",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Searching for \"02:08 AM\"...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 1 visible rows after searching \"02:08 AM\"",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Search filtered results: 1 rows (down from 76)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Found 1 rows containing \"02:08 AM\" out of 1 visible rows",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ All 76 rows returned after clearing search",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Export functionality in Frequent Stops",
+          "text": "Verifying search input cleared",
           "status": "info",
           "type": "subsection"
         },
         {
           "number": "",
-          "text": "✓ \"Save file as\" dropdown button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Excel export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Dropdown content is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel file downloaded: track_frequent_stops.xlsx",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing CSV export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV file downloaded: track_frequent_stops.csv",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing PDF export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF file downloaded: track_frequent_stops.pdf",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ All export buttons (Excel, CSV, PDF) verified in Frequent Stops tab",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Frequent Stops functionality test completed!",
+          "text": "Search input value after resubmission: \"test search text\"",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-02T20:14:30.600Z",
-      "endTime": "2026-01-02T20:16:28.743Z",
+      "startTime": "2026-01-19T20:05:27.682Z",
+      "endTime": "2026-01-19T20:06:39.555Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
-      "line": 829
+      "line": 1213
     }
   ]
 }

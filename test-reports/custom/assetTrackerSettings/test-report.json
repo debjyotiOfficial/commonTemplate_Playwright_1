@@ -1,0 +1,460 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "duration": 78343,
+    "startTime": "2026-01-16T23:52:06.178Z",
+    "endTime": "2026-01-16T23:53:24.521Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS062-A",
+      "module": "Asset Tracker Settings",
+      "title": "should test Aggressive Mode/Change Intervals tab functionality",
+      "description": "should test Aggressive Mode/Change Intervals tab functionality",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 72958,
+      "failureReason": "Error: expect(locator).toBeVisible() failed",
+      "parsedError": {
+        "type": "Element Not Visible",
+        "element": "'#aggressive-geofence-info-overlay'",
+        "expected": "Element should be visible on page",
+        "actual": "hidden",
+        "timeout": "10s",
+        "file": "TS062_AssetTrackerSettings.spec.js",
+        "line": 250,
+        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
+        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
+        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('#aggressive-geofence-info-overlay')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('#aggressive-geofence-info-overlay')\n    13 × locator resolved to <div class=\"geofence-info-overlay hidden\" id=\"aggressive-geofence-info-overlay\">…</div>\n       - unexpected value \"hidden\"\n",
+        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('#aggressive-geofence-info-overlay')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('#aggressive-geofence-info-overlay')\n    13 × locator resolved to <div class=\"geofence-info-overlay hidden\" id=\"aggressive-geofence-info-overlay\">…</div>\n       - unexpected value \"hidden\"\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS062_AssetTrackerSettings.spec.js:596:39"
+      },
+      "videoPath": "videos/TS062_AssetTrackerSettings-should-test-Aggressive-Mode-Change-Intervals-tab-f.webm",
+      "videoIdentifier": "TS062_AssetTrackerSettings-should-test-Aggressive-Mode-Change-Intervals-tab-f.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 1: LOGIN AND NAVIGATE",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/assetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 2: NAVIGATE TO ASSET TRACKER SETTINGS",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Account Settings menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Asset Tracker Settings clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Asset Tracker panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 3: CLICK ON AGGRESSIVE MODE TAB",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Clicked on \"Aggressive Mode/Change Intervals\" tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 4: VERIFY TAB 2 CONTENT",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Aggressive Mode content is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 5: VERIFY MODE BUTTONS",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Normal Mode button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Aggressive Mode button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 6: VERIFY SELECT DEVICE LABEL",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Select Device form element present in Tab 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 7: CLICK NORMAL TRACK MODE BUTTON",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Normal Track Mode button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Redirected to Tab 1 (Change Update Frequency) - Pings Per Day dropdown visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 8: CHANGE PINGS PER DAY",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Current Pings per Day value: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Pings per Day: 3 Pings Per Day",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 9: CHECK SEND MOVEMENT COMMANDS CHECKBOX",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Send Movement Commands checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Movement checkbox verification passed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 10: CLICK UPDATE FREQUENCY BUTTON",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Update Frequency button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 11: VERIFY LAST COMMAND STATUS IN TAB 1",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Tab 1 Last Command Status: \"Sent 3 Pings Per Day (Movement Update) update message successfully. on Jan-16-2026 at 04:52:51 PM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Last Command Status field has value",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Status contains \"(Movement Update)\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Status contains success message",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Status contains Pings Per Day value",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Tab 1 Last Command Status stored for comparison",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 12: GO BACK TO TAB 2",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Clicked on \"Aggressive Mode/Change Intervals\" tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Tab 2 content is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 13: VERIFY LAST COMMAND STATUS IN TAB 2",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Found 71 textboxes on page",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 0: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 1: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 2: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 3: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 4: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 5: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 6: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 7: visible=true, value=\"...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Textbox 8: visible=true, value=\"Sent 3 Pings Per Day (Movement Update) update mess...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found Last Command Status textbox at index 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Tab 2 Last Command Status: \"Sent 3 Pings Per Day (Movement Update) update message successfully. on Jan-16-2026 at 04:52:51 PM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Tab 2 Last Command Status matches Tab 1 Last Command Status",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Normal Track Mode Flow Validation Completed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "STEP 14: CLICK GEOFENCE TRACK MODE BUTTON",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Geofence Track Mode button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Address input is visible - entering address for geofence",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Entered address: San Ramon, CA",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected address suggestion from autocomplete",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit button to create aggressive geofence",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Confirmation modal appeared - clicking Save button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Save button to confirm geofence creation",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 15: VERIFY GEOFENCE OVERLAY",
+          "status": "section",
+          "type": "section"
+        }
+      ],
+      "startTime": "2026-01-16T23:52:11.424Z",
+      "endTime": "2026-01-16T23:53:24.382Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS062_AssetTrackerSettings.spec.js",
+      "fileName": "TS062_AssetTrackerSettings",
+      "line": 250
+    }
+  ]
+}

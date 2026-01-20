@@ -17,11 +17,16 @@ test.describe('Custom Logo', () => {
      * Waits for get_custom_logo API call to complete
      */
     async function navigateToCustomLogoSettings(page, config) {
+        // Wait for page to be fully loaded
+        await page.waitForLoadState('domcontentloaded');
+        await page.waitForTimeout(1000);
+
         // Click on Accounts menu
         const accountsMenu = page.locator(config.selectors.navigation.accountsMenu);
         await accountsMenu.waitFor({ state: 'visible', timeout: 30000 });
+        await accountsMenu.scrollIntoViewIfNeeded().catch(() => {});
         await accountsMenu.click();
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(1500);
 
         // Set up wait for get_custom_logo API call before clicking
         const getLogoApiPromise = page.waitForResponse(
@@ -32,6 +37,8 @@ test.describe('Custom Logo', () => {
         // Click on Custom Logo menu option using specific ID
         const customLogoOption = page.locator('#custom-logo-btn');
         await customLogoOption.waitFor({ state: 'visible', timeout: 15000 });
+        await customLogoOption.scrollIntoViewIfNeeded().catch(() => {});
+        await page.waitForTimeout(500);
         await customLogoOption.click({ force: true });
 
         // Wait for API response
@@ -40,11 +47,19 @@ test.describe('Custom Logo', () => {
             console.log(`✓ get_custom_logo API called (status: ${apiResponse.status()})`);
         }
 
-        await page.waitForTimeout(500);
+        await page.waitForTimeout(1000);
 
-        // Verify modal is open
+        // Verify modal is open - retry click if modal not visible
         const modalTitle = page.locator('text=Custom Logo Settings');
-        await modalTitle.waitFor({ state: 'visible', timeout: 15000 });
+        let modalVisible = await modalTitle.isVisible().catch(() => false);
+
+        if (!modalVisible) {
+            console.log('Modal not visible after first click, retrying...');
+            await customLogoOption.click({ force: true });
+            await page.waitForTimeout(1500);
+        }
+
+        await modalTitle.waitFor({ state: 'visible', timeout: 20000 });
         console.log('✓ Custom Logo Settings modal opened');
     }
 
@@ -697,12 +712,19 @@ test.describe('Custom Logo', () => {
         // Handle crop modal for large logo
         await handleCropModal(page);
 
-        // Verify preview section is visible
+        // Wait for modal to stabilize after crop operations
+        await page.waitForTimeout(1000);
+
+        // Verify preview section is visible - scroll into view first as it may be below the fold
         const collapsedPreview = page.getByText('Collapsed', { exact: true });
         const expandedPreview = page.getByText('Expanded', { exact: true });
 
-        await expect(collapsedPreview).toBeVisible();
-        await expect(expandedPreview).toBeVisible();
+        // Scroll the preview section into view before checking visibility
+        await collapsedPreview.scrollIntoViewIfNeeded().catch(() => {});
+        await expect(collapsedPreview).toBeVisible({ timeout: 10000 });
+
+        await expandedPreview.scrollIntoViewIfNeeded().catch(() => {});
+        await expect(expandedPreview).toBeVisible({ timeout: 10000 });
         console.log('✓ Preview section visible with Collapsed and Expanded');
 
         // Capture the custom logo preview images before saving
@@ -789,12 +811,15 @@ test.describe('Custom Logo', () => {
             console.log('✓ Large logo preview changed - uploaded icon replaced with platform logo');
         }
 
-        // Verify Preview section still shows labels
+        // Verify Preview section still shows labels - scroll into view first
         const collapsedPreviewAfter = page.getByText('Collapsed', { exact: true });
         const expandedPreviewAfter = page.getByText('Expanded', { exact: true });
 
-        await expect(collapsedPreviewAfter).toBeVisible();
-        await expect(expandedPreviewAfter).toBeVisible();
+        await collapsedPreviewAfter.scrollIntoViewIfNeeded().catch(() => {});
+        await expect(collapsedPreviewAfter).toBeVisible({ timeout: 10000 });
+
+        await expandedPreviewAfter.scrollIntoViewIfNeeded().catch(() => {});
+        await expect(expandedPreviewAfter).toBeVisible({ timeout: 10000 });
         console.log('✓ Preview section visible after reset');
 
         // Close modal
