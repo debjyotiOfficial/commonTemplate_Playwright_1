@@ -1,23 +1,14 @@
-<testsuites id="" name="" tests="19" failures="1" skipped="3" errors="0" time="1130.932509">
-<testsuite name="auth.setup.js" timestamp="2026-01-19T23:05:17.953Z" hostname="setup" tests="1" failures="0" skipped="0" time="68.722" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="68.722">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="238.71871000000002">
+<testsuite name="auth.setup.js" timestamp="2026-01-26T19:29:21.737Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.952" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="0.952">
 <system-out>
-<![CDATA[Authentication session expired (age: 180 minutes). Re-authenticating...
-Performing authentication setup...
-Login page loaded, filling credentials...
-Username filled
-Password filled
-Submit clicked, waiting for login to complete...
-Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php
-Navigating to fleet dashboard...
-Dashboard loaded, saving session state...
-Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
+<![CDATA[Valid authentication session found (age: 27 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS061_customLogo.spec.js" timestamp="2026-01-19T23:05:17.953Z" hostname="chromium" tests="18" failures="1" skipped="3" time="1051.836" errors="0">
-<testcase name="Custom Logo › should open Custom Logo Settings modal and verify UI elements" classname="TS061_customLogo.spec.js" time="38.609">
+<testsuite name="TS016_afterHoursInsight.spec.js" timestamp="2026-01-26T19:29:21.737Z" hostname="chromium" tests="1" failures="0" skipped="0" time="231.554" errors="0">
+<testcase name="After Hour Insight › should verify after hours insights UI functionality" classname="TS016_afterHoursInsight.spec.js" time="231.554">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -28,425 +19,564 @@ Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
 Network idle timeout, continuing...
 Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Custom Logo Settings modal is visible
-✓ Small Logo (Collapsed Navbar) section is visible
-✓ Small Logo recommended size (80x64 pixels) is displayed
-✓ Large Logo (Expanded Navbar) section is visible
-✓ Large Logo recommended size (200x64 pixels) is displayed
-✓ Found 4 Upload buttons
-✓ Preview section is visible
-✓ Collapsed preview label is visible
-✓ Expanded preview label is visible
-✓ Reset to Default button is visible
-✓ Cancel button is visible
-✓ Save button is visible
-✓ Close (X) button is visible
-✓ All Custom Logo Settings UI elements verified successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should upload Small Logo (Collapsed Navbar) - 80x64 pixels" classname="TS061_customLogo.spec.js" time="48.745">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Small logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Custom Logo Settings modal is visible
-✓ Collapsed navbar preview section visible
-✓ Small Logo upload successful
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should upload Large Logo (Expanded Navbar) - 200x64 pixels" classname="TS061_customLogo.spec.js" time="50.859">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Large logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Custom Logo Settings modal is visible
-✓ Expanded navbar preview section visible
-✓ Large Logo upload successful
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should upload both logos and verify previews (Collapsed &amp; Expanded)" classname="TS061_customLogo.spec.js" time="60.307">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-=== Uploading Small Logo (80x64 pixels) ===
-✓ Small logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-=== Uploading Large Logo (200x64 pixels) ===
-✓ Large logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-=== Verifying Preview Section ===
-✓ Collapsed preview label visible
-✓ Expanded preview label visible
-✓ Preview section visible with both Collapsed and Expanded labels
-=== Saving Logo Settings ===
-✓ save_custom_logo API called (status: 200)
-✓ Modal closed after save
-✓ Both logos uploaded and previews verified successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should verify logos display in actual navbar (Collapsed and Expanded states)" classname="TS061_customLogo.spec.js" time="67.476">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-=== Step 1: Upload Custom Logos ===
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Small logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Large logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ save_custom_logo API called (status: 200)
-✓ Logos saved
-=== Step 2: Verify CUSTOM Logo in Collapsed Navbar ===
-Navbar collapsed state: true
-✓ Navbar logo container is visible
-Collapsed logo dimensions: 80x64
-✓ Collapsed logo dimensions match small logo size (~80x64)
-✓ Custom small logo is displayed in collapsed navbar
-Collapsed logo source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...
-=== Step 3: Hover to Expand Navbar and Verify Large Logo ===
-Navbar expanded after hover: true
-Account Settings label not immediately visible, but navbar expanded
-Expanded logo dimensions: 160x128
-✓ Expanded logo is wider than collapsed logo
-✓ Custom large logo is displayed in expanded navbar
-✓ Expanded logo is DIFFERENT from collapsed logo (different images for small/large)
-=== Step 4: Move Hover Away and Verify Collapsed State ===
-Navbar collapsed after moving hover away: true
-Final collapsed logo dimensions: 80x64
-✓ Navbar logo display verification completed (Collapsed -> Expanded -> Collapsed)
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should display logos on login page" classname="TS061_customLogo.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Custom Logo › should replace existing Small Logo with new one" classname="TS061_customLogo.spec.js" time="61.523">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Replacement small logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Custom Logo Settings modal is visible
-✓ Logo uploaded (preview may be in different format)
-✓ save_custom_logo API called (status: 200)
-✓ Small Logo replacement completed successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should replace existing Large Logo with new one" classname="TS061_customLogo.spec.js" time="81.825">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-Original large logo src: 
-✓ Replacement large logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Custom Logo Settings modal is visible
-✓ Large logo has been replaced
-✓ save_custom_logo API called (status: 200)
-✓ Large Logo replacement completed successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should reset logos to default using Reset to Default button" classname="TS061_customLogo.spec.js" time="311.476">
-<failure message="TS061_customLogo.spec.js:617:5 should reset logos to default using Reset to Default button" type="FAILURE">
-<![CDATA[  [chromium] › TS061_customLogo.spec.js:617:5 › Custom Logo › should reset logos to default using Reset to Default button 
+✓ After Hours Insights panel opened
+=== SETTING UP API INTERCEPTION ===
+Date set result: {"success":true,"value":"2026-01-14 to 2026-01-15"}
+Date set to: 2026-01-14 to 2026-01-15
+Waiting for platform to be fully loaded...
+✓ Submit button is ready
+✓ Submit button clicked
+API Response captured: {
+  "data": [
+    {
+      "imei": 220902734,
+      "vehicleName": "Sales Car1 ",
+      "vehicleStatus": "online",
+      "daily": null,
+      "totalOutside": "00:00:00",
+      "totalInside": "00:00:00",
+      "Stime": "00:00",
+      "Etime": "23:59",
+      "totalOutsideHours": "00:45:14",
+      "totalInsideHours": "02:04:43",
+      "outsideCheckHours": "00:45:14",
+      "insideCheckHours": "02:04:43",
+      "insideWarning": false,
+      "outsideWarning": false,
+      "unauthorized": null
+    },
+    {
+      "imei": 860111051554966,
+      "vehicleName": "Demo 1 ",
+      "vehicleStatus": "online",
+      "daily": null,
+      "totalOutside": "00:00:00",
+      "totalInside": "00:00:00",
+      "Stime": "00:00",
+      "Etime": "23:59",
+      "totalOutsideHours": "00:00:00",
+      "totalInsideHours": "00:00:00",
+      "outsideCheckHours": "00:00:00",
+      "insideCheckHours": "00:00:00",
+      "insideWarning": false,
+      "outsideWarning": false
+    }
+  ],
+  "weekly": [],
+  "AccTime": {
+    "Stime": null,
+    "Etime": null
+  }
+}
+✓ API response captured successfully
+✓ API returned 2 vehicles
+Found 192 vehicle cards in UI
+=== VERIFYING API DATA WITH UI VALUES ===
 
-    Error: expect(locator).toBeVisible() failed
+Verifying vehicle: Sales Car1
+  API Authorized: 02:04:43
+  UI Authorized: 02:04:43
+  API Unauthorized: 00:45:14
+  UI Unauthorized: 00:45:14
+✓ Sales Car1 - Values match!
 
-    Locator:  getByText('Collapsed', { exact: true })
-    Expected: visible
-    Received: hidden
-    Timeout:  10000ms
+Verifying vehicle: Demo 1
+  API Authorized: 00:00:00
+  UI Authorized: 00:00:00
+  API Unauthorized: 00:00:00
+  UI Unauthorized: 00:00:00
+✓ Demo 1 - Values match!
 
-    Call log:
-      - Expect "toBeVisible" with timeout 10000ms
-      - waiting for getByText('Collapsed', { exact: true })
-        12 × locator resolved to <p>Collapsed</p>
-           - unexpected value "hidden"
+=== API VERIFICATION COMPLETE ===
+
+=== TESTING SEARCH FUNCTIONALITY ===
+✓ Search input is visible
+✓ Typed "Sales Car1" in search
+
+=== SETTING UP API INTERCEPTION FOR TABLE DATA ===
+✓ Sales Car1 card found
+✓ Clicked on Sales Car1 card
+Table API Response captured
+Number of records in API: [33m62[39m
+✓ Modal opened with Sales Car1 details
+
+=== SEARCH FUNCTIONALITY TEST COMPLETE ===
+
+=== VERIFYING TABLE DATA WITH API RESPONSE ===
+✓ Locations table is visible
+✓ Table API response captured successfully
+Total records in API: 62
+Visible table rows: 10
+Comparing first 8 rows
+
+--- Comparing Row 1 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:01 AM - 09:03 AM
+  Location: 11249 E Karen Dr, Scottsdale, AZ 85255
+  Duration: 00:01:32
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:01:32
+  Note: API has no time range, UI shows: 09:01 AM - 09:03 AM
+  Note: API has no location, UI shows: 11249 E Karen Dr, Scottsdale, AZ 85255
+✓ Row 1 matches API data
+
+--- Comparing Row 2 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:03 AM - 09:10 AM
+  Location: McDowell Mountain Ranch Rd, Scottsdale, AZ
+  Duration: 00:07:12
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:07:12
+  Note: API has no time range, UI shows: 09:03 AM - 09:10 AM
+  Note: API has no location, UI shows: McDowell Mountain Ranch Rd, Scottsdale, AZ
+✓ Row 2 matches API data
+
+--- Comparing Row 3 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:33 AM - 09:33 AM
+  Location: 16715 N 91st St, Scottsdale, AZ 85260
+  Duration: 00:00:02
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:00:02
+  Note: API has no time range, UI shows: 09:33 AM - 09:33 AM
+  Note: API has no location, UI shows: 16715 N 91st St, Scottsdale, AZ 85260
+✓ Row 3 matches API data
+
+--- Comparing Row 4 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:34 AM - 09:39 AM
+  Location: 16826 N 90th St, Scottsdale, AZ 85260
+  Duration: 00:05:00
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:05:00
+  Note: API has no time range, UI shows: 09:34 AM - 09:39 AM
+  Note: API has no location, UI shows: 16826 N 90th St, Scottsdale, AZ 85260
+✓ Row 4 matches API data
+
+--- Comparing Row 5 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:39 AM - 09:41 AM
+  Location: 11243 E Karen Dr, Scottsdale, AZ 85255
+  Duration: 00:01:26
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:01:26
+  Note: API has no time range, UI shows: 09:39 AM - 09:41 AM
+  Note: API has no location, UI shows: 11243 E Karen Dr, Scottsdale, AZ 85255
+✓ Row 5 matches API data
+
+--- Comparing Row 6 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:41 AM - 09:42 AM
+  Location: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255
+  Duration: 00:01:01
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:01:01
+  Note: API has no time range, UI shows: 09:41 AM - 09:42 AM
+  Note: API has no location, UI shows: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255
+✓ Row 6 matches API data
+
+--- Comparing Row 7 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 09:42 AM - 09:43 AM
+  Location: 18235 N Pima Rd, Scottsdale, AZ 85255
+  Duration: 00:00:28
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:00:28
+  Note: API has no time range, UI shows: 09:42 AM - 09:43 AM
+  Note: API has no location, UI shows: 18235 N Pima Rd, Scottsdale, AZ 85255
+✓ Row 7 matches API data
+
+--- Comparing Row 8 ---
+Table Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 11:58 AM - 11:59 AM
+  Location: 18241 N Pima Rd, Scottsdale, AZ 85255
+  Duration: 00:01:02
+API Data:
+  Date: 2026-01-14
+  Day: Wednesday
+  Time Range: 
+  Location: 
+  Duration: 00:01:02
+  Note: API has no time range, UI shows: 11:58 AM - 11:59 AM
+  Note: API has no location, UI shows: 18241 N Pima Rd, Scottsdale, AZ 85255
+✓ Row 8 matches API data
+
+=== TABLE DATA VERIFICATION COMPLETE ===
+✓ All 8 rows match the API response
+
+=== TESTING ENTRIES PER PAGE FUNCTIONALITY ===
+✓ Entries dropdown is visible
+
+--- Testing 25 entries per page ---
+✓ Selected 25 entries
+⚠ Pagination info element not found, will use table row count
+Total entries from API: 62
+Expected pages: 3
+
+  Checking Page 1:
+    Expected rows: 25
+    Actual rows: 25
+    ✓ Page 1 has correct number of rows (25)
+
+  Checking Page 2:
+  Clicked page 2 button
+    Expected rows: 25
+    Actual rows: 25
+    ✓ Page 2 has correct number of rows (25)
+
+  Checking Page 3:
+  Clicked page 3 button
+    Expected rows: 12
+    Actual rows: 12
+    ✓ Page 3 has correct number of rows (12)
+✓ 25 entries per page verified successfully
+
+--- Testing 50 entries per page ---
+✓ Selected 50 entries
+⚠ Pagination info element not found, will use table row count
+Total entries from API: 62
+Expected pages: 2
+
+  Checking Page 1:
+    Expected rows: 50
+    Actual rows: 50
+    ✓ Page 1 has correct number of rows (50)
+
+  Checking Page 2:
+  Clicked page 2 button
+    Expected rows: 12
+    Actual rows: 12
+    ✓ Page 2 has correct number of rows (12)
+✓ 50 entries per page verified successfully
+
+--- Testing 100 entries per page ---
+✓ Selected 100 entries
+⚠ Pagination info element not found, will use table row count
+Total entries from API: 62
+Expected pages: 1
+
+  Checking Page 1:
+    Expected rows: 62
+    Actual rows: 62
+    ✓ Page 1 has correct number of rows (62)
+✓ 100 entries per page verified successfully
+
+=== ENTRIES PER PAGE FUNCTIONALITY TEST COMPLETE ===
+
+=== TESTING TABLE SORTING FUNCTIONALITY ===
+✓ Reset to 10 entries per page for sorting tests
+
+--- Testing sorting for Date column ---
+  Clicked Date header (1st click - ascending)
+  Data after 1st sort: [ [32m'2026-01-14'[39m, [32m'2026-01-14'[39m, [32m'2026-01-14'[39m ] ...
+  ✓ Date sorted in ASCENDING order correctly
+  Clicked Date header (2nd click - descending)
+  Data after 2nd sort: [ [32m'2026-01-15'[39m, [32m'2026-01-15'[39m, [32m'2026-01-15'[39m ] ...
+  ✓ Date sorted in DESCENDING order correctly
+  ✓ Date column sorting verified successfully
+
+--- Testing sorting for Day Of The Week column ---
+  Clicked Day Of The Week header (1st click - ascending)
+  Data after 1st sort: [ [32m'Thursday'[39m, [32m'Thursday'[39m, [32m'Thursday'[39m ] ...
+  ✓ Day Of The Week sorted in ASCENDING order correctly
+  Clicked Day Of The Week header (2nd click - descending)
+  Data after 2nd sort: [ [32m'Wednesday'[39m, [32m'Wednesday'[39m, [32m'Wednesday'[39m ] ...
+  ✓ Day Of The Week sorted in DESCENDING order correctly
+  ✓ Day Of The Week column sorting verified successfully
+
+--- Testing sorting for Time Range column ---
+  Clicked Time Range header (1st click - ascending)
+  Data after 1st sort: [ [32m'07:45 AM - 07:47 AM'[39m, [32m'07:48 AM - 07:53 AM'[39m, [32m'07:54 AM - 07:55 AM'[39m ] ...
+  ✓ Time Range sorted in ASCENDING order correctly
+  Clicked Time Range header (2nd click - descending)
+  Data after 2nd sort: [ [32m'07:25 PM - 07:29 PM'[39m, [32m'07:20 PM - 07:24 PM'[39m, [32m'07:18 PM - 07:18 PM'[39m ] ...
+  ✓ Time Range sorted in DESCENDING order correctly
+  ✓ Time Range column sorting verified successfully
+
+--- Testing sorting for Location column ---
+  Clicked Location header (1st click - ascending)
+  Data after 1st sort: [
+  [32m'10084 E Bell Rd, Scottsdale, AZ 85260'[39m,
+  [32m'10084 E Bell Rd, Scottsdale, AZ 85260'[39m,
+  [32m'11243 E Karen Dr, Scottsdale, AZ 85255'[39m
+] ...
+  ✓ Location sorted in ASCENDING order correctly
+  Clicked Location header (2nd click - descending)
+  Data after 2nd sort: [
+  [32m'Northern Ave, Phoenix, AZ'[39m,
+  [32m'Northern Ave, Phoenix, AZ'[39m,
+  [32m'Northern Ave, Phoenix, AZ'[39m
+] ...
+  ✓ Location sorted in DESCENDING order correctly
+  ✓ Location column sorting verified successfully
+
+--- Testing sorting for Duration column ---
+  Clicked Duration header (1st click - ascending)
+  Data after 1st sort: [ [32m'00:00:02'[39m, [32m'00:00:02'[39m, [32m'00:00:02'[39m ] ...
+  ✓ Duration sorted in ASCENDING order correctly
+  Clicked Duration header (2nd click - descending)
+  Data after 2nd sort: [ [32m'00:16:48'[39m, [32m'00:13:24'[39m, [32m'00:08:30'[39m ] ...
+  ✓ Duration sorted in DESCENDING order correctly
+  ✓ Duration column sorting verified successfully
+
+=== TABLE SORTING FUNCTIONALITY TEST COMPLETE ===
+✓ All column sorters working correctly
+
+=== TESTING TABLE SEARCH FUNCTIONALITY ===
+✓ Table search input is visible
+Initial row count: 10
+
+--- Testing search: "Scottsdale" (Location search) ---
+  Entered search term: "Scottsdale"
+  Filtered row count: 10
+  ✓ Row 1 contains "Scottsdale"
+  ✓ Row 2 contains "Scottsdale"
+  ✓ Row 3 contains "Scottsdale"
+  ✓ Row 4 contains "Scottsdale"
+  ✓ Row 5 contains "Scottsdale"
+  ✓ Row 6 contains "Scottsdale"
+  ✓ Row 7 contains "Scottsdale"
+  ✓ Row 8 contains "Scottsdale"
+  ✓ Row 9 contains "Scottsdale"
+  ✓ Row 10 contains "Scottsdale"
+  ✓ All 10 filtered rows contain "Scottsdale"
+
+--- Testing search: "2026-01-07" (Date search) ---
+  Entered search term: "2026-01-07"
+  Filtered row count: 0
+  ✓ All 0 filtered rows contain "2026-01-07"
+
+--- Testing search: "Wednesday" (Day search) ---
+  Entered search term: "Wednesday"
+  Filtered row count: 10
+  ✓ Row 1 contains "Wednesday"
+  ✓ Row 2 contains "Wednesday"
+  ✓ Row 3 contains "Wednesday"
+  ✓ Row 4 contains "Wednesday"
+  ✓ Row 5 contains "Wednesday"
+  ✓ Row 6 contains "Wednesday"
+  ✓ Row 7 contains "Wednesday"
+  ✓ Row 8 contains "Wednesday"
+  ✓ Row 9 contains "Wednesday"
+  ✓ Row 10 contains "Wednesday"
+  ✓ All 10 filtered rows contain "Wednesday"
+
+--- Testing search: "AM" (Time search) ---
+  Entered search term: "AM"
+  Filtered row count: 10
+  ✓ Row 1 contains "AM"
+  ✓ Row 2 contains "AM"
+  ✓ Row 3 contains "AM"
+  ✓ Row 4 contains "AM"
+  ✓ Row 5 contains "AM"
+  ✓ Row 6 contains "AM"
+  ✓ Row 7 contains "AM"
+  ✓ Row 8 contains "AM"
+  ✓ Row 9 contains "AM"
+  ✓ Row 10 contains "AM"
+  ✓ All 10 filtered rows contain "AM"
+
+--- Testing search clear ---
+  Cleared search input
+  Row count after clear: 10
+  ✓ All rows restored after clearing search
+
+--- Testing search with no results ---
+  Entered non-existent search term
+  Row count: 0
+  ✓ No rows displayed (as expected)
+
+=== TABLE SEARCH FUNCTIONALITY TEST COMPLETE ===
+✓ Table search working correctly
+
+=== TESTING ROW CLICK AND API CALL (ALL TAB) ===
+
+--- Clicking on 1st row of All tab ---
+  Clicked on 1st row
+    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php
+  ✓ reverse_geocodeNew.php API called for 1st row
+
+--- Clicking on 2nd row of All tab ---
+  Clicked on 2nd row
+    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php
+  ✓ reverse_geocodeNew.php API called for 2nd row
+
+=== ROW CLICK AND API CALL TEST COMPLETE (ALL TAB) ===
 
 
-      817 |
-      818 |         await collapsedPreviewAfter.scrollIntoViewIfNeeded().catch(() => {});
-    > 819 |         await expect(collapsedPreviewAfter).toBeVisible({ timeout: 10000 });
-          |                                             ^
-      820 |
-      821 |         await expandedPreviewAfter.scrollIntoViewIfNeeded().catch(() => {});
-      822 |         await expect(expandedPreviewAfter).toBeVisible({ timeout: 10000 });
-        at C:\cypress-to-playwright-converted\tests\TS061_customLogo.spec.js:819:45
+========================================
+   TESTING AUTHORIZED TAB
+========================================
+✓ Clicked on Authorized tab
+✓ Authorized tab is now active
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+Initial row count in Authorized tab: 10
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+--- Testing Entries Per Page for Authorized tab ---
 
-    Error Context: ..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-=== Step 0: First Reset to Clean State (Ensure Actual Default Logo) ===
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Dialog appeared: "Are you sure you want to reset to the default logo?"
-✓ Dialog accepted (clicked OK)
-✓ Initial Reset to Default clicked (cleaning any previous custom logos)
-✓ API Response: {"status":true,"message":"Custom logos reset to default"}
-✓ Initial reset API verified: {"status":true,"message":"Custom logos reset to default"}
-=== Step 1: Capture DEFAULT Navbar Logo (After Reset) ===
-Default navbar logo captured: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png")...
-Is actual default logo (not custom base64): true
-✓ Verified logo is actual default (file URL, not base64 custom logo)
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-=== Step 2: Upload Custom Logos ===
-✓ Small logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Large logo file selected
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Preview section visible with Collapsed and Expanded
-Custom small logo preview: N/A
-Custom large logo preview: N/A
-✓ save_custom_logo API called (status: 200)
-✓ Custom logos saved
-=== Step 3: Verify Custom Logo is Now in Navbar ===
-Custom navbar logo: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...
-✓ Navbar logo changed to custom logo (different from default)
-Custom logo is base64 encoded: true
-=== Step 4: Re-open Modal and Reset to Default ===
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-Small logo preview BEFORE reset: N/A
-Large logo preview BEFORE reset: N/A
-✓ Dialog appeared: "Are you sure you want to reset to the default logo?"
-✓ Dialog accepted (clicked OK)
-✓ Reset to Default button clicked
-✓ Reset API Response: {"status":true,"message":"Custom logos reset to default"}
-✓ Reset API verified: {"status":true,"message":"Custom logos reset to default"}
-=== Step 5: Verify Uploaded Icons Are Replaced with Platform Logo ===
-Small logo preview AFTER reset: N/A
-Large logo preview AFTER reset: N/A
+  Testing 25 entries:
+  ⚠ Pagination info not found
+    Actual rows: 25
+    ✓ 25 entries selected, 25 rows displayed
 
-[[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\test-failed-1.png]]
+  Testing 50 entries:
+  ⚠ Pagination info not found
+    Actual rows: 49
+    ✓ 50 entries selected, 49 rows displayed
+  Reset to 10 entries per page
 
-[[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\video.webm]]
+--- Testing Sorting for Authorized tab ---
 
-[[ATTACHMENT|..\test-results\TS061_customLogo-Custom-Lo-e7d94-ing-Reset-to-Default-button-chromium\error-context.md]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should cancel changes using Cancel button" classname="TS061_customLogo.spec.js" time="53.608">
-<system-out>
-<![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ New logo file selected (not saved yet)
-✓ Crop modal appeared
-✓ Crop Apply button clicked
-✓ Cancel button clicked
-✓ Modal closed without saving
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Verified changes were discarded
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should reject invalid file type upload for Small Logo" classname="TS061_customLogo.spec.js" time="39.719">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Attempted to upload invalid file type
-✓ Error message displayed for invalid file type
-✓ Modal remains functional after invalid file upload
-✓ Invalid file type rejection test passed
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should reject oversized file upload for Large Logo" classname="TS061_customLogo.spec.js" time="39.582">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Attempted to upload oversized file (>2MB)
-✓ Error message displayed for oversized file
-✓ Modal remains functional after oversized file upload
-✓ Oversized file handling test passed
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should deny access for non-admin user" classname="TS061_customLogo.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Custom Logo › should persist logos after page refresh" classname="TS061_customLogo.spec.js" time="49.07">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-Original navbar logo background: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...
-✓ Navbar logo container visible after refresh
-Refreshed navbar logo background: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...
-✓ Logo background matches after refresh
-✓ Logo persistence verified
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should display fallback default logo when custom logo fails to load" classname="TS061_customLogo.spec.js" time="68.496">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ Navbar logo container is visible
-Logo background after blocking: url("https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...
-✓ Fallback/default logo is displayed
-✓ Fallback logo handling verified
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should include custom logo in PDF report generation" classname="TS061_customLogo.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Custom Logo › should handle corrupted image file gracefully" classname="TS061_customLogo.spec.js" time="38.186">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Attempted to upload corrupted image file
-✓ System handled corrupted file upload
-✓ System remains stable after corrupted file upload
-]]>
-</system-out>
-</testcase>
-<testcase name="Custom Logo › should close modal using X button" classname="TS061_customLogo.spec.js" time="42.355">
-<system-out>
-<![CDATA[Preserving cookies (using stored auth session)
-Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
-Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Network idle timeout, continuing...
-Page loaded successfully
-✓ get_custom_logo API called (status: 200)
-✓ Custom Logo Settings modal opened
-✓ Modal is open
-✓ X button clicked
-✓ Modal closed via X button
+  Testing Date sorting:
+    Ascending: 2026-01-14, 2026-01-14...
+    ✓ Ascending sort verified
+    Descending: 2026-01-15, 2026-01-15...
+    ✓ Descending sort verified
+
+  Testing Duration sorting:
+    Ascending: 00:00:02, 00:00:02...
+    ✓ Ascending sort verified
+    Descending: 00:16:48, 00:13:24...
+    ✓ Descending sort verified
+
+--- Testing Search for Authorized tab ---
+
+  Searching for "Scottsdale" (Location):
+    Filtered rows: 10
+    ✓ All rows contain "Scottsdale"
+
+  Searching for "2026-01-07" (Date):
+    Filtered rows: 0
+    Note: No results for "2026-01-07"
+  ✓ Search cleared
+
+--- Testing Row Click and API Call for Authorized tab ---
+
+  Clicking on 1st row of Authorized tab:
+    Clicked on 1st row
+    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php
+    ✓ reverse_geocodeNew.php API called for 1st row
+
+  Clicking on 2nd row of Authorized tab:
+    Clicked on 2nd row
+    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php
+    ✓ reverse_geocodeNew.php API called for 2nd row
+
+✓ Authorized tab functionality verified successfully
+
+
+
+========================================
+   TESTING UNAUTHORIZED TAB
+========================================
+✓ Clicked on Unauthorized tab
+✓ Unauthorized tab is now active
+
+Initial row count in Unauthorized tab: 10
+
+--- Testing Entries Per Page for Unauthorized tab ---
+
+  Testing 25 entries:
+  ⚠ Pagination info not found
+    Actual rows: 13
+    ✓ 25 entries selected, 13 rows displayed
+
+  Testing 50 entries:
+  ⚠ Pagination info not found
+    Actual rows: 13
+    ✓ 50 entries selected, 13 rows displayed
+  Reset to 10 entries per page
+
+--- Testing Sorting for Unauthorized tab ---
+
+  Testing Date sorting:
+    Ascending: 2026-01-14, 2026-01-14...
+    ✓ Ascending sort verified
+    Descending: 2026-01-15, 2026-01-14...
+    ✓ Descending sort verified
+
+  Testing Duration sorting:
+    Ascending: 00:00:02, 00:00:02...
+    ✓ Ascending sort verified
+    Descending: 00:08:30, 00:07:11...
+    ✓ Descending sort verified
+
+--- Testing Search for Unauthorized tab ---
+
+  Searching for "Scottsdale" (Location):
+    Filtered rows: 10
+    ✓ All rows contain "Scottsdale"
+
+  Searching for "2026-01-07" (Date):
+    Filtered rows: 0
+    Note: No results for "2026-01-07"
+  ✓ Search cleared
+
+--- Testing Row Click and API Call for Unauthorized tab ---
+
+  Clicking on 1st row of Unauthorized tab:
+    Clicked on 1st row
+    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php
+    ✓ reverse_geocodeNew.php API called for 1st row
+
+  Clicking on 2nd row of Unauthorized tab:
+    Clicked on 2nd row
+    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php
+    ✓ reverse_geocodeNew.php API called for 2nd row
+
+✓ Unauthorized tab functionality verified successfully
+
+
+--- Returning to All tab ---
+✓ Returned to All tab
+
+========================================
+   ALL TAB TESTS COMPLETE
+========================================
 ]]>
 </system-out>
 </testcase>

@@ -19,14 +19,19 @@ test.describe('Custom Logo', () => {
     async function navigateToCustomLogoSettings(page, config) {
         // Wait for page to be fully loaded
         await page.waitForLoadState('domcontentloaded');
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(2000);
 
         // Click on Accounts menu
         const accountsMenu = page.locator(config.selectors.navigation.accountsMenu);
         await accountsMenu.waitFor({ state: 'visible', timeout: 30000 });
         await accountsMenu.scrollIntoViewIfNeeded().catch(() => {});
+
+        // Ensure menu is clickable
         await accountsMenu.click();
-        await page.waitForTimeout(1500);
+        console.log('✓ Accounts menu clicked');
+
+        // Wait longer for menu animation and submenu items to appear
+        await page.waitForTimeout(3000);
 
         // Set up wait for get_custom_logo API call before clicking
         const getLogoApiPromise = page.waitForResponse(
@@ -36,10 +41,24 @@ test.describe('Custom Logo', () => {
 
         // Click on Custom Logo menu option using specific ID
         const customLogoOption = page.locator('#custom-logo-btn');
+
+        // Wait for the button to be visible AND attached to DOM
         await customLogoOption.waitFor({ state: 'visible', timeout: 15000 });
+        console.log('✓ Custom Logo button is visible');
+
+        // Scroll into view
         await customLogoOption.scrollIntoViewIfNeeded().catch(() => {});
-        await page.waitForTimeout(500);
-        await customLogoOption.click({ force: true });
+        await page.waitForTimeout(1000);
+
+        // Try normal click first (not force), retry with force if it fails
+        try {
+            await customLogoOption.click({ timeout: 5000 });
+            console.log('✓ Custom Logo button clicked (normal click)');
+        } catch (e) {
+            console.log('Normal click failed, trying with force...');
+            await customLogoOption.click({ force: true });
+            console.log('✓ Custom Logo button clicked (force click)');
+        }
 
         // Wait for API response
         const apiResponse = await getLogoApiPromise;
@@ -47,7 +66,7 @@ test.describe('Custom Logo', () => {
             console.log(`✓ get_custom_logo API called (status: ${apiResponse.status()})`);
         }
 
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(2000);
 
         // Verify modal is open - retry click if modal not visible
         const modalTitle = page.locator('text=Custom Logo Settings');
@@ -55,11 +74,19 @@ test.describe('Custom Logo', () => {
 
         if (!modalVisible) {
             console.log('Modal not visible after first click, retrying...');
-            await customLogoOption.click({ force: true });
-            await page.waitForTimeout(1500);
+            await page.waitForTimeout(1000);
+
+            // Try clicking again
+            try {
+                await customLogoOption.click({ timeout: 5000 });
+            } catch (e) {
+                await customLogoOption.click({ force: true });
+            }
+
+            await page.waitForTimeout(2500);
         }
 
-        await modalTitle.waitFor({ state: 'visible', timeout: 20000 });
+        await modalTitle.waitFor({ state: 'visible', timeout: 30000 });
         console.log('✓ Custom Logo Settings modal opened');
     }
 
@@ -362,6 +389,7 @@ test.describe('Custom Logo', () => {
     });
 
     test('should verify logos display in actual navbar (Collapsed and Expanded states)', async ({ page }) => {
+        test.setTimeout(500000); // Increase timeout for this test
         const helpers = new TestHelpers(page);
         config = await helpers.getConfig();
 

@@ -1,0 +1,3 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS019-A,"view delete geofence","should be able to view, edit and delete geofence",PASSED,49.95,"",N/A,TS019_viewDeleteGeofence.spec.js,23
+TS019-B,"view delete geofence","should be able to toggle Hide Vehicle Markers",PASSED,56.41,"",N/A,TS019_viewDeleteGeofence.spec.js,290

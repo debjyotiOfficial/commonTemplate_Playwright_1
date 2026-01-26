@@ -1,0 +1,17 @@
+Date,Test File,Category,Assertion Name,Description,Expected,Actual,Status,Priority
+2026-01-24,TS015_afterHourSummary.spec.js,Priority Sum,Total Alerts Sum,Low + Medium + High = Total Alerts,Sum equals Total,Sum equals Total,PASS,High
+2026-01-24,TS015_afterHourSummary.spec.js,Priority Sum,Medium Priority Sum,Hard Braking + Hard Acceleration = Medium Priority,Sum equals Medium Priority,Sum equals Medium Priority,PASS,High
+2026-01-24,TS015_afterHourSummary.spec.js,Priority Sum,High Priority Sum,Engine Off + Outside Hours + Speed Violations + Devices Not Updated = High Priority,Sum equals High Priority,Sum equals High Priority,PASS,High
+2026-01-24,TS015_afterHourSummary.spec.js,Priority Sum,Low Priority Sum,Actively Transmitting + Idling = Low Priority,Sum equals Low Priority,Sum equals Low Priority,PASS,High
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Vehicle Column Sortable,Verify Vehicle header has cursor: pointer,cursor: pointer,cursor: pointer,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Location Column Sortable,Verify Location header has cursor: pointer,cursor: pointer,cursor: pointer,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Date Column Sortable,Verify Date header has cursor: pointer,cursor: pointer,cursor: pointer,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Timings Column Non-Sortable,Verify Timings header has data-no-sort=true,data-no-sort=true,data-no-sort=true,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Timings Cursor Default,Verify Timings header has cursor: default,cursor: default,cursor: default,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Idling Hours Column Sortable,Verify Idling Hours header has cursor: pointer,cursor: pointer,cursor: pointer,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Headers,Status Column Sortable,Verify Status header has cursor: pointer,cursor: pointer,cursor: pointer,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Sorting,Idling Hours Ascending (1st Click),First click sorts lowest to highest,First row <= Last row,00:00:01 <= 00:00:09,PASS,High
+2026-01-24,TS015_afterHourSummary.spec.js,Table Sorting,Idling Hours Descending (2nd Click),Second click sorts highest to lowest,First row >= Last row,00:06:02 >= 00:00:19,PASS,High
+2026-01-24,TS015_afterHourSummary.spec.js,Table Sorting,Vehicle Column Sort,Verify Vehicle column sorting works,Sort functional,Sort functional,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Sorting,Date Column Sort,Verify Date column sorting works,Sort functional,Sort functional,PASS,Medium
+2026-01-24,TS015_afterHourSummary.spec.js,Table Sorting,Status Column Sort,Verify Status column sorting works,Sort functional,Sort functional,PASS,Medium

@@ -1,38 +1,26 @@
 {
   "summary": {
     "total": 1,
-    "passed": 0,
-    "failed": 1,
+    "passed": 1,
+    "failed": 0,
     "skipped": 0,
-    "duration": 327014,
-    "startTime": "2025-12-15T23:00:31.944Z",
-    "endTime": "2025-12-15T23:05:58.958Z"
+    "duration": 982073,
+    "startTime": "2026-01-26T19:29:21.738Z",
+    "endTime": "2026-01-26T19:45:43.811Z"
   },
   "tests": [
     {
       "testCaseNo": "TS016-A",
       "module": "After Hour Insight",
-      "title": "should redirect to After Hour Insight",
-      "description": "should redirect to After Hour Insight",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 112909,
-      "failureReason": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",
-      "parsedError": {
-        "type": "Timeout Error",
-        "element": ".flatpickr-calendar.open .flatpickr-monthDropdown-months",
-        "expected": "Operation should complete within time limit",
-        "actual": "Operation took too long",
-        "timeout": "30s",
-        "file": "TS016_afterHoursInsight.spec.js",
-        "line": 23,
-        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
-        "cleanMessage": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.",
-        "fullMessage": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months')\n",
-        "stackTrace": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.flatpickr-calendar.open .flatpickr-monthDropdown-months')\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js:47:88"
-      },
-      "videoPath": "videos/TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm",
-      "videoIdentifier": "TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm",
+      "title": "should verify after hours insights UI functionality",
+      "description": "should verify after hours insights UI functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 231554,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -78,17 +66,2825 @@
         },
         {
           "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ After Hours Insights panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== SETTING UP API INTERCEPTION ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date set result: {\"success\":true,\"value\":\"2026-01-14 to 2026-01-15\"}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date set to: 2026-01-14 to 2026-01-15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for platform to be fully loaded...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button is ready",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"data\": [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"imei\": 220902734,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"vehicleName\": \"Sales Car1 \",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"vehicleStatus\": \"online\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"daily\": null,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalOutside\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalInside\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Stime\": \"00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Etime\": \"23:59\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalOutsideHours\": \"00:45:14\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalInsideHours\": \"02:04:43\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"outsideCheckHours\": \"00:45:14\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"insideCheckHours\": \"02:04:43\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "\"insideWarning\": false,",
+          "status": "warning",
+          "type": "step"
+        },
+        {
+          "number": 2,
+          "text": "\"outsideWarning\": false,",
+          "status": "warning",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "\"unauthorized\": null",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"imei\": 860111051554966,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"vehicleName\": \"Demo 1 \",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"vehicleStatus\": \"online\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"daily\": null,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalOutside\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalInside\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Stime\": \"00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Etime\": \"23:59\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalOutsideHours\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"totalInsideHours\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"outsideCheckHours\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"insideCheckHours\": \"00:00:00\",",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 3,
+          "text": "\"insideWarning\": false,",
+          "status": "warning",
+          "type": "step"
+        },
+        {
+          "number": 4,
+          "text": "\"outsideWarning\": false",
+          "status": "warning",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "\"weekly\": [],",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"AccTime\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Stime\": null,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Etime\": null",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API returned 2 vehicles",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 192 vehicle cards in UI",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== VERIFYING API DATA WITH UI VALUES ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying vehicle: Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Authorized: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Authorized: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Unauthorized: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Unauthorized: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sales Car1 - Values match!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying vehicle: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Authorized: 00:00:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Authorized: 00:00:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Unauthorized: 00:00:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Unauthorized: 00:00:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Demo 1 - Values match!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== API VERIFICATION COMPLETE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING SEARCH FUNCTIONALITY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search input is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Typed \"Sales Car1\" in search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== SETTING UP API INTERCEPTION FOR TABLE DATA ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sales Car1 card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Sales Car1 card",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table API Response captured",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Number of records in API: \u001b[33m62\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal opened with Sales Car1 details",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== SEARCH FUNCTIONALITY TEST COMPLETE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== VERIFYING TABLE DATA WITH API RESPONSE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Locations table is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Table API response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total records in API: 62",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Visible table rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing first 8 rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 1",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:01 AM - 09:03 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 11249 E Karen Dr, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:32",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:32",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:01 AM - 09:03 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 11249 E Karen Dr, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 1 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 2",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:03 AM - 09:10 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: McDowell Mountain Ranch Rd, Scottsdale, AZ",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:07:12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:07:12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:03 AM - 09:10 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: McDowell Mountain Ranch Rd, Scottsdale, AZ",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 2 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 3",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:33 AM - 09:33 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 16715 N 91st St, Scottsdale, AZ 85260",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:00:02",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:00:02",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:33 AM - 09:33 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 16715 N 91st St, Scottsdale, AZ 85260",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 3 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 4",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:34 AM - 09:39 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 16826 N 90th St, Scottsdale, AZ 85260",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:05:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:05:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:34 AM - 09:39 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 16826 N 90th St, Scottsdale, AZ 85260",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 4 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 5",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:39 AM - 09:41 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 11243 E Karen Dr, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:26",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:26",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:39 AM - 09:41 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 11243 E Karen Dr, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 5 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 6",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:41 AM - 09:42 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:01",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:01",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:41 AM - 09:42 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 6 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 7",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 09:42 AM - 09:43 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 18235 N Pima Rd, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:00:28",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:00:28",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 09:42 AM - 09:43 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 18235 N Pima Rd, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 7 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing Row 8",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Table Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range: 11:58 AM - 11:59 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location: 18241 N Pima Rd, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:02",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Data:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date: 2026-01-14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Day: Wednesday",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Time Range:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Location:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Duration: 00:01:02",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no time range, UI shows: 11:58 AM - 11:59 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: API has no location, UI shows: 18241 N Pima Rd, Scottsdale, AZ 85255",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 8 matches API data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TABLE DATA VERIFICATION COMPLETE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 8 rows match the API response",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING ENTRIES PER PAGE FUNCTIONALITY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Entries dropdown is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing 25 entries per page",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected 25 entries",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info element not found, will use table row count",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total entries from API: 62",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected pages: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Page 1:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected rows: 25",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 25",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Page 1 has correct number of rows (25)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Page 2:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked page 2 button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected rows: 25",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 25",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Page 2 has correct number of rows (25)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Page 3:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked page 3 button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected rows: 12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Page 3 has correct number of rows (12)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 25 entries per page verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing 50 entries per page",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected 50 entries",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info element not found, will use table row count",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total entries from API: 62",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected pages: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Page 1:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected rows: 50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 50",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Page 1 has correct number of rows (50)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Page 2:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked page 2 button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected rows: 12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Page 2 has correct number of rows (12)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 50 entries per page verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing 100 entries per page",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected 100 entries",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info element not found, will use table row count",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total entries from API: 62",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected pages: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checking Page 1:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected rows: 62",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 62",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Page 1 has correct number of rows (62)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 100 entries per page verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== ENTRIES PER PAGE FUNCTIONALITY TEST COMPLETE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING TABLE SORTING FUNCTIONALITY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Reset to 10 entries per page for sorting tests",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing sorting for Date column",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked Date header (1st click - ascending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 1st sort: [ \u001b[32m'2026-01-14'\u001b[39m, \u001b[32m'2026-01-14'\u001b[39m, \u001b[32m'2026-01-14'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date sorted in ASCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Date header (2nd click - descending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 2nd sort: [ \u001b[32m'2026-01-15'\u001b[39m, \u001b[32m'2026-01-15'\u001b[39m, \u001b[32m'2026-01-15'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date sorted in DESCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date column sorting verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing sorting for Day Of The Week column",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked Day Of The Week header (1st click - ascending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 1st sort: [ \u001b[32m'Thursday'\u001b[39m, \u001b[32m'Thursday'\u001b[39m, \u001b[32m'Thursday'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Day Of The Week sorted in ASCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Day Of The Week header (2nd click - descending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 2nd sort: [ \u001b[32m'Wednesday'\u001b[39m, \u001b[32m'Wednesday'\u001b[39m, \u001b[32m'Wednesday'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Day Of The Week sorted in DESCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Day Of The Week column sorting verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing sorting for Time Range column",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked Time Range header (1st click - ascending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 1st sort: [ \u001b[32m'07:45 AM - 07:47 AM'\u001b[39m, \u001b[32m'07:48 AM - 07:53 AM'\u001b[39m, \u001b[32m'07:54 AM - 07:55 AM'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Time Range sorted in ASCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Time Range header (2nd click - descending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 2nd sort: [ \u001b[32m'07:25 PM - 07:29 PM'\u001b[39m, \u001b[32m'07:20 PM - 07:24 PM'\u001b[39m, \u001b[32m'07:18 PM - 07:18 PM'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Time Range sorted in DESCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Time Range column sorting verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing sorting for Location column",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked Location header (1st click - ascending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 1st sort: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'10084 E Bell Rd, Scottsdale, AZ 85260'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'10084 E Bell Rd, Scottsdale, AZ 85260'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'11243 E Karen Dr, Scottsdale, AZ 85255'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Location sorted in ASCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Location header (2nd click - descending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 2nd sort: [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Northern Ave, Phoenix, AZ'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Northern Ave, Phoenix, AZ'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'Northern Ave, Phoenix, AZ'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Location sorted in DESCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Location column sorting verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing sorting for Duration column",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked Duration header (1st click - ascending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 1st sort: [ \u001b[32m'00:00:02'\u001b[39m, \u001b[32m'00:00:02'\u001b[39m, \u001b[32m'00:00:02'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Duration sorted in ASCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Duration header (2nd click - descending)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Data after 2nd sort: [ \u001b[32m'00:16:48'\u001b[39m, \u001b[32m'00:13:24'\u001b[39m, \u001b[32m'00:08:30'\u001b[39m ] ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Duration sorted in DESCENDING order correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Duration column sorting verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TABLE SORTING FUNCTIONALITY TEST COMPLETE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All column sorters working correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING TABLE SEARCH FUNCTIONALITY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Table search input is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial row count: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search: \"Scottsdale\" (Location search)",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Entered search term: \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered row count: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 1 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 2 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 3 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 4 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 5 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 6 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 7 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 8 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 9 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 10 contains \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 10 filtered rows contain \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search: \"20260107\" (Date search)",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Entered search term: \"2026-01-07\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered row count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 0 filtered rows contain \"2026-01-07\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search: \"Wednesday\" (Day search)",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Entered search term: \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered row count: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 1 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 2 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 3 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 4 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 5 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 6 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 7 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 8 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 9 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 10 contains \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 10 filtered rows contain \"Wednesday\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search: \"AM\" (Time search)",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Entered search term: \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered row count: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 1 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 2 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 3 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 4 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 5 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 6 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 7 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 8 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 9 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Row 10 contains \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 10 filtered rows contain \"AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search clear",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Cleared search input",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row count after clear: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All rows restored after clearing search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search with no results",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Entered non-existent search term",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ No rows displayed (as expected)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TABLE SEARCH FUNCTIONALITY TEST COMPLETE ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Table search working correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== TESTING ROW CLICK AND API CALL (ALL TAB) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking on 1st row of All tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked on 1st row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API called: https://sievamaps.com/reverse_geocodeNew.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ reverse_geocodeNew.php API called for 1st row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking on 2nd row of All tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicked on 2nd row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API called: https://sievamaps.com/reverse_geocodeNew.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ reverse_geocodeNew.php API called for 2nd row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== ROW CLICK AND API CALL TEST COMPLETE (ALL TAB) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "TESTING AUTHORIZED TAB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Authorized tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Authorized tab is now active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial row count in Authorized tab: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Entries Per Page for Authorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing 25 entries:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info not found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 25",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 25 entries selected, 25 rows displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing 50 entries:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info not found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 49",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 50 entries selected, 49 rows displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Reset to 10 entries per page",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sorting for Authorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date sorting:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ascending: 2026-01-14, 2026-01-14...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Ascending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Descending: 2026-01-15, 2026-01-15...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Descending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Duration sorting:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ascending: 00:00:02, 00:00:02...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Ascending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Descending: 00:16:48, 00:13:24...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Descending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Search for Authorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"Scottsdale\" (Location):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All rows contain \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"2026-01-07\" (Date):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered rows: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: No results for \"2026-01-07\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search cleared",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Row Click and API Call for Authorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicking on 1st row of Authorized tab:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on 1st row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API called: https://sievamaps.com/reverse_geocodeNew.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ reverse_geocodeNew.php API called for 1st row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking on 2nd row of Authorized tab:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on 2nd row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API called: https://sievamaps.com/reverse_geocodeNew.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ reverse_geocodeNew.php API called for 2nd row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Authorized tab functionality verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "TESTING UNAUTHORIZED TAB",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Unauthorized tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Unauthorized tab is now active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial row count in Unauthorized tab: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Entries Per Page for Unauthorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing 25 entries:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info not found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 13",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 25 entries selected, 13 rows displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing 50 entries:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Pagination info not found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual rows: 13",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 50 entries selected, 13 rows displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Reset to 10 entries per page",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sorting for Unauthorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date sorting:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ascending: 2026-01-14, 2026-01-14...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Ascending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Descending: 2026-01-15, 2026-01-14...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Descending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Duration sorting:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ascending: 00:00:02, 00:00:02...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Ascending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Descending: 00:08:30, 00:07:11...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Descending sort verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Search for Unauthorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"Scottsdale\" (Location):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered rows: 10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All rows contain \"Scottsdale\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"2026-01-07\" (Date):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filtered rows: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: No results for \"2026-01-07\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search cleared",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Row Click and API Call for Unauthorized tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Clicking on 1st row of Unauthorized tab:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on 1st row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API called: https://sievamaps.com/reverse_geocodeNew.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ reverse_geocodeNew.php API called for 1st row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking on 2nd row of Unauthorized tab:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on 2nd row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API called: https://sievamaps.com/reverse_geocodeNew.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ reverse_geocodeNew.php API called for 2nd row",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Unauthorized tab functionality verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Returning to All tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Returned to All tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "ALL TAB TESTS COMPLETE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
         }
       ],
-      "startTime": "2025-12-15T23:03:52.156Z",
-      "endTime": "2025-12-15T23:05:45.065Z",
+      "startTime": "2026-01-26T19:29:27.440Z",
+      "endTime": "2026-01-26T19:33:18.994Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js",
       "fileName": "TS016_afterHoursInsight",
-      "line": 23
+      "line": 306
     }
   ]
 }

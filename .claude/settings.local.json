@@ -17,7 +17,10 @@
       "Bash(rm:*)",
       "Bash(C:/Users/debjy/AppData/Local/Programs/Python/Python313/python.exe:*)",
       "Bash(cat:*)",
-      "Bash(taskkill:*)"
+      "Bash(taskkill:*)",
+      "Bash(tee:*)",
+      "Bash(more:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

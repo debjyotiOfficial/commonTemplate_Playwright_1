@@ -1,0 +1,96 @@
+
+Running 2 tests using 1 worker
+
+Valid authentication session found (age: 40 minutes). Skipping login.
+  ok 1 [setup] › tests\auth.setup.js:10:1 › authenticate (406ms)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+Using stored authentication session (skipping login)...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Page loaded successfully
+Session expired or invalid, falling back to fresh login...
+Performing login...
+Login completed
+Navigating to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Network idle timeout after login, continuing...
+Page loaded successfully
+Date set result: {"success":true,"value":"2026-01-14 to 2026-01-15"}
+Date set to: 2026-01-14 to 2026-01-15
+✓ Submit button clicked
+Found 2 vehicle cards
+  Vehicle 1: Sales Car1 
+  Vehicle 2: Demo 1 
+✓ Searched for "Sales Car1"
+✓ Modal opened with Sales Car1
+Stored Authorized Hours: 02:04:43
+Stored Unauthorized Hours: 00:45:14
+=== Testing ALL tab (all pages) ===
+Found 6 pages to process
+Processing page 1
+Page 1: 10 entries, running total: 00:22:33
+Processing page 2
+Page 2: 10 entries, running total: 00:46:26
+Processing page 3
+Page 3: 10 entries, running total: 01:11:34
+Processing page 4
+Page 4: 10 entries, running total: 01:44:06
+Processing page 5
+Page 5: 10 entries, running total: 02:07:24
+Processing page 6
+Page 6: 10 entries, running total: 02:42:34
+Total entries processed: 60
+Final total: 02:42:34
+All tab calculated duration: 02:42:34
+=== Testing AUTHORIZED tab (all pages) ===
+Found 6 pages to process
+Processing page 1
+Page 1: 10 entries, running total: 00:22:33
+Processing page 2
+Page 2: 10 entries, running total: 00:46:26
+Processing page 3
+Page 3: 10 entries, running total: 01:11:34
+Processing page 4
+Page 4: 10 entries, running total: 01:44:06
+Processing page 5
+Page 5: 9 entries, running total: 02:04:43
+Processing page 6
+  x  2 [chromium] › tests\TS016_afterHoursInsight.spec.js:23:5 › After Hour Insight › should redirect to After Hour Insight (2.3m)
+
+
+  1) [chromium] › tests\TS016_afterHoursInsight.spec.js:23:5 › After Hour Insight › should redirect to After Hour Insight 
+
+    Error: locator.click: Element is outside of the viewport
+    Call log:
+    [2m  - waiting for locator('.pagination__controls .pagination__page').nth(5)[22m
+    [2m    - locator resolved to <p class="pagination__page pagination__page--active">1</p>[22m
+    [2m  - attempting click action[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+
+
+      205 |
+      206 |                 await pageButton.scrollIntoViewIfNeeded();
+    > 207 |                 await pageButton.click({ force: true });
+          |                                  ^
+      208 |                 await page.waitForTimeout(1500);
+      209 |
+      210 |                 const rows = page.locator('#locations-table tbody tr');
+        at calculateAllPagesDuration (C:\cypress-to-playwright-converted\tests\TS016_afterHoursInsight.spec.js:207:34)
+        at C:\cypress-to-playwright-converted\tests\TS016_afterHoursInsight.spec.js:257:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TS016_afterHoursInsight-Af-57180-irect-to-After-Hour-Insight-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\TS016_afterHoursInsight-Af-57180-irect-to-After-Hour-Insight-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\TS016_afterHoursInsight-Af-57180-irect-to-After-Hour-Insight-chromium\error-context.md
+
+  1 failed
+    [chromium] › tests\TS016_afterHoursInsight.spec.js:23:5 › After Hour Insight › should redirect to After Hour Insight 
+  1 passed (2.4m)

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - auth - 20/1/2026</title>
+    <title>Test Report - auth - 27/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: auth</div>
             <div class="subtitle">
-                Generated: 20/1/2026, 5:06:30 am |
-                Duration: 1872.44s |
+                Generated: 27/1/2026, 1:15:43 am |
+                Duration: 982.07s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -215,7 +215,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (10)</span>
+                                    <span>View Test Steps (1)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,52 +224,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Authentication session expired (age: 180 minutes). Re-authenticating...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Performing authentication setup...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Login page loaded, filling credentials...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Username filled</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Password filled</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Submit clicked, waiting for login to complete...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating to fleet dashboard...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Dashboard loaded, saving session state...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json</span>
+                                                <span class="step-text">Valid authentication session found (age: 27 minutes). Skipping login.</span>
                                             </div>
                                         
                                     </div>
@@ -277,7 +232,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>68.72s</strong></td>
+                        <td><strong>0.95s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -331,7 +286,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"68.72s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"0.95s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -348,7 +303,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-19.csv';
+            link.download = 'test-report-2026-01-26.csv';
             link.click();
         }
     </script>

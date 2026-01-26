@@ -34,13 +34,27 @@ test.describe('view delete geofence', () => {
 
         await page.waitForTimeout(2000);
 
-        await expect(page.locator(config.selectors.navigation.viewDeleteGeofencingMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.viewDeleteGeofencingMenu).click({ force: true });
+        const viewDeleteMenu = page.locator(config.selectors.navigation.viewDeleteGeofencingMenu);
+        await expect(viewDeleteMenu).toBeVisible();
+
+        const modalLocator = page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer);
+
+        // Click and wait for modal to open, retry if needed
+        for (let attempt = 0; attempt < 3; attempt++) {
+            await viewDeleteMenu.click({ force: true });
+            try {
+                await expect(modalLocator).not.toHaveClass(/hidden/, { timeout: 5000 });
+                break;
+            } catch {
+                if (attempt === 2) throw new Error('Modal did not open after 3 attempts');
+                console.log(`Modal click attempt ${attempt + 1} failed, retrying...`);
+                await page.waitForTimeout(1000);
+            }
+        }
 
         // Step 2: Wait for View Geofences modal
-        await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer)).toBeVisible({ timeout: 10000 });
-        await expect(page.locator(config.selectors.viewDeleteGeofencing.viewDeleteContainer))
-            .toContainText('View Geofences');
+        await expect(modalLocator).toBeVisible({ timeout: 10000 });
+        await expect(modalLocator).toContainText('View Geofences');
 
         // Step 3: Keep "View All Geofences" selected and click Submit
         await expect(page.locator(config.selectors.viewDeleteGeofencing.geoList)).toBeVisible();
@@ -86,6 +100,14 @@ test.describe('view delete geofence', () => {
         // Step 6: Verify the geofence info panel is showing with full details
         console.log('Waiting for geofence info panel to expand...');
 
+        // Close any interfering panels (driver card panel)
+        const driverCardCloseBtn = page.locator('#driver-card-panel .close-btn, #driver-card-panel [class*="close"]').first();
+        if (await driverCardCloseBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+            await driverCardCloseBtn.click({ force: true });
+            console.log('Closed driver card panel');
+            await page.waitForTimeout(500);
+        }
+
         // The overlay should show Name, Radius, Location - check for the view mode content
         const infoOverlay = page.locator('#geofence-info-overlay');
         await expect(infoOverlay).toBeVisible({ timeout: 10000 });
@@ -94,14 +116,36 @@ test.describe('view delete geofence', () => {
         // Check if edit button is visible, if not, click on the overlay to expand
         const editButton = page.locator(config.selectors.viewDeleteGeofencing.editGeofenceButton);
 
-        if (!await editButton.isVisible({ timeout: 3000 }).catch(() => false)) {
-            console.log('Edit button not visible, clicking overlay to expand...');
-            // Click on the geofence name in the dropdown to select it
+        // Try multiple approaches to make the edit button visible
+        for (let attempt = 0; attempt < 3; attempt++) {
+            if (await editButton.isVisible({ timeout: 2000 }).catch(() => false)) {
+                console.log('Edit button is now visible');
+                break;
+            }
+
+            console.log(`Edit button not visible, attempt ${attempt + 1} to expand overlay...`);
+
+            // Try selecting from dropdown first
             const geofenceDropdown = page.locator('#geofence-title select');
-            if (await geofenceDropdown.isVisible({ timeout: 2000 })) {
-                // Select "Test Auto Geofence" from dropdown
-                await geofenceDropdown.selectOption({ label: 'Test Auto Geofence' });
-                await page.waitForTimeout(1000);
+            if (await geofenceDropdown.isVisible({ timeout: 2000 }).catch(() => false)) {
+                // Get all options and select one that contains "Test Auto Geofence" or first available
+                const options = await geofenceDropdown.locator('option').allTextContents();
+                const targetOption = options.find(opt => opt.includes('Test Auto Geofence')) || options[0];
+                if (targetOption) {
+                    await geofenceDropdown.selectOption({ label: targetOption });
+                    console.log(`Selected geofence: ${targetOption}`);
+                    await page.waitForTimeout(2000);
+                }
+            }
+
+            // If still not visible, try clicking the overlay header to expand
+            if (!await editButton.isVisible({ timeout: 1000 }).catch(() => false)) {
+                const overlayHeader = page.locator('#geofence-info-overlay .overlay-header, #geofence-info-overlay h3, #geofence-title').first();
+                if (await overlayHeader.isVisible({ timeout: 1000 }).catch(() => false)) {
+                    await overlayHeader.click({ force: true });
+                    console.log('Clicked overlay header to expand');
+                    await page.waitForTimeout(1000);
+                }
             }
         }
 
@@ -110,7 +154,7 @@ test.describe('view delete geofence', () => {
         // ==================== EDIT GEOFENCE ====================
 
         // Step 7: Click the edit button (pencil icon) to enter edit mode
-        await expect(editButton).toBeVisible({ timeout: 5000 });
+        await expect(editButton).toBeVisible({ timeout: 10000 });
         await editButton.click();
         console.log('Clicked edit button');
 

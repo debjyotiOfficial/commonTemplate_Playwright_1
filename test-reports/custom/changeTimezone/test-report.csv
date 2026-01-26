@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS003-A,"Timezone","should edit the timezone of users",TIMEDOUT,597.60,"",TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm,TS003_ChangeTimezone.spec.js,24

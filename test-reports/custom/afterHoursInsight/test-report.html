@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - afterHoursInsight - 16/12/2025</title>
+    <title>Test Report - afterHoursInsight - 27/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: afterHoursInsight</div>
             <div class="subtitle">
-                Generated: 16/12/2025, 4:35:58 am |
-                Duration: 327.01s |
+                Generated: 27/1/2026, 1:15:43 am |
+                Duration: 982.07s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -164,11 +164,11 @@
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">0</div>
+                <div class="number">1</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">0.0%</div>
+                <div class="number">100.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,72 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="failed" data-module="After Hour Insight">
+                    <tr data-status="passed" data-module="After Hour Insight">
                         <td><span class="test-case-no">TS016-A</span></td>
                         <td>After Hour Insight</td>
                         <td>
-                            <strong>should redirect to After Hour Insight</strong>
-                            
-                                <button class="error-toggle" onclick="toggleError(0)">
-                                    View Error Details
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="error-0" class="error-panel">
-                                    
-            <div class="error-details">
-                <div class="error-details-header">
-                    <span class="error-type-badge">Timeout Error</span>
-                </div>
-                <div class="error-details-body">
-                    <div class="error-row">
-                        <span class="error-label">File:</span>
-                        <span class="error-value">TS016_afterHoursInsight.spec.js</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Line:</span>
-                        <span class="error-value">23</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Element:</span>
-                        <span class="error-value element-selector">.flatpickr-calendar.open .flatpickr-monthDropdown-months</span>
-                    </div>
-                    
-                    
-                    <div class="error-row">
-                        <span class="error-label">Timeout:</span>
-                        <span class="error-value">30s</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Expected:</span>
-                        <span class="error-value">Operation should complete within time limit</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Actual:</span>
-                        <span class="error-value error-actual">Operation took too long</span>
-                    </div>
-                    
-                    <div class="error-row suggestion">
-                        <span class="error-label">Suggestion:</span>
-                        <span class="error-value">Page may be slow to load, or element never appeared. Check network/server status</span>
-                    </div>
-                    
-                    <div class="error-row full-error">
-                        <span class="error-label">Full Error:</span>
-                        <span class="error-value"><pre>TimeoutError: locator.selectOption: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator(&#039;.flatpickr-calendar.open .flatpickr-monthDropdown-months&#039;)
-</pre></span>
-                    </div>
-                </div>
-            </div>
-        
-                                </div>
+                            <strong>should verify after hours insights UI functionality</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (8)</span>
+                                    <span>View Test Steps (476)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -316,17 +259,2357 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ After Hours Insights panel opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== SETTING UP API INTERCEPTION ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date set result: {&quot;success&quot;:true,&quot;value&quot;:&quot;2026-01-14 to 2026-01-15&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date set to: 2026-01-14 to 2026-01-15</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Waiting for platform to be fully loaded...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Submit button is ready</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Submit button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Response captured: {</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;data&quot;: [</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;imei&quot;: 220902734,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;vehicleName&quot;: &quot;Sales Car1 &quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;vehicleStatus&quot;: &quot;online&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;daily&quot;: null,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalOutside&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalInside&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Stime&quot;: &quot;00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Etime&quot;: &quot;23:59&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalOutsideHours&quot;: &quot;00:45:14&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalInsideHours&quot;: &quot;02:04:43&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;outsideCheckHours&quot;: &quot;00:45:14&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;insideCheckHours&quot;: &quot;02:04:43&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item warning step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">&quot;insideWarning&quot;: false,</span>
+                                            </div>
+                                        
+                                            <div class="step-item warning step">
+                                                <span class="step-number">2</span>
+                                                <span class="step-text">&quot;outsideWarning&quot;: false,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;unauthorized&quot;: null</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;imei&quot;: 860111051554966,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;vehicleName&quot;: &quot;Demo 1 &quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;vehicleStatus&quot;: &quot;online&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;daily&quot;: null,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalOutside&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalInside&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Stime&quot;: &quot;00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Etime&quot;: &quot;23:59&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalOutsideHours&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;totalInsideHours&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;outsideCheckHours&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;insideCheckHours&quot;: &quot;00:00:00&quot;,</span>
+                                            </div>
+                                        
+                                            <div class="step-item warning step">
+                                                <span class="step-number">3</span>
+                                                <span class="step-text">&quot;insideWarning&quot;: false,</span>
+                                            </div>
+                                        
+                                            <div class="step-item warning step">
+                                                <span class="step-number">4</span>
+                                                <span class="step-text">&quot;outsideWarning&quot;: false</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;weekly&quot;: [],</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;AccTime&quot;: {</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Stime&quot;: null,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Etime&quot;: null</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API response captured successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API returned 2 vehicles</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 192 vehicle cards in UI</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== VERIFYING API DATA WITH UI VALUES ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying vehicle: Sales Car1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Authorized: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI Authorized: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Unauthorized: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI Unauthorized: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Sales Car1 - Values match!</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verifying vehicle: Demo 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Authorized: 00:00:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI Authorized: 00:00:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Unauthorized: 00:00:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">UI Unauthorized: 00:00:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Demo 1 - Values match!</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== API VERIFICATION COMPLETE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TESTING SEARCH FUNCTIONALITY ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Search input is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Typed &quot;Sales Car1&quot; in search</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== SETTING UP API INTERCEPTION FOR TABLE DATA ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Sales Car1 card found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Clicked on Sales Car1 card</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table API Response captured</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Number of records in API: [33m62[39m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal opened with Sales Car1 details</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== SEARCH FUNCTIONALITY TEST COMPLETE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== VERIFYING TABLE DATA WITH API RESPONSE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Locations table is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Table API response captured successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total records in API: 62</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Visible table rows: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Comparing first 8 rows</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:01 AM - 09:03 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 11249 E Karen Dr, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:32</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:32</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:01 AM - 09:03 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 11249 E Karen Dr, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 1 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:03 AM - 09:10 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: McDowell Mountain Ranch Rd, Scottsdale, AZ</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:07:12</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:07:12</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:03 AM - 09:10 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: McDowell Mountain Ranch Rd, Scottsdale, AZ</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 2 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 3</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:33 AM - 09:33 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 16715 N 91st St, Scottsdale, AZ 85260</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:00:02</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:00:02</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:33 AM - 09:33 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 16715 N 91st St, Scottsdale, AZ 85260</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 3 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 4</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:34 AM - 09:39 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 16826 N 90th St, Scottsdale, AZ 85260</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:05:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:05:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:34 AM - 09:39 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 16826 N 90th St, Scottsdale, AZ 85260</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 4 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 5</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:39 AM - 09:41 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 11243 E Karen Dr, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:26</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:26</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:39 AM - 09:41 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 11243 E Karen Dr, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 5 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 6</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:41 AM - 09:42 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:01</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:01</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:41 AM - 09:42 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 6 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 7</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 09:42 AM - 09:43 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 18235 N Pima Rd, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:00:28</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:00:28</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 09:42 AM - 09:43 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 18235 N Pima Rd, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 7 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Comparing Row 8</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range: 11:58 AM - 11:59 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location: 18241 N Pima Rd, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:02</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Data:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date: 2026-01-14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Day: Wednesday</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Time Range:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Location:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Duration: 00:01:02</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no time range, UI shows: 11:58 AM - 11:59 AM</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 18241 N Pima Rd, Scottsdale, AZ 85255</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 8 matches API data</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TABLE DATA VERIFICATION COMPLETE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All 8 rows match the API response</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TESTING ENTRIES PER PAGE FUNCTIONALITY ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Entries dropdown is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing 25 entries per page</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Selected 25 entries</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info element not found, will use table row count</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total entries from API: 62</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected pages: 3</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Page 1:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected rows: 25</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 25</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Page 1 has correct number of rows (25)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Page 2:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked page 2 button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected rows: 25</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 25</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Page 2 has correct number of rows (25)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Page 3:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked page 3 button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected rows: 12</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 12</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Page 3 has correct number of rows (12)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 25 entries per page verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing 50 entries per page</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Selected 50 entries</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info element not found, will use table row count</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total entries from API: 62</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected pages: 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Page 1:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected rows: 50</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 50</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Page 1 has correct number of rows (50)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Page 2:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked page 2 button</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected rows: 12</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 12</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Page 2 has correct number of rows (12)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 50 entries per page verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing 100 entries per page</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Selected 100 entries</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info element not found, will use table row count</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total entries from API: 62</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected pages: 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checking Page 1:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Expected rows: 62</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 62</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Page 1 has correct number of rows (62)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 100 entries per page verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== ENTRIES PER PAGE FUNCTIONALITY TEST COMPLETE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TESTING TABLE SORTING FUNCTIONALITY ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Reset to 10 entries per page for sorting tests</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing sorting for Date column</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Date header (1st click - ascending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 1st sort: [ [32m&#039;2026-01-14&#039;[39m, [32m&#039;2026-01-14&#039;[39m, [32m&#039;2026-01-14&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Date sorted in ASCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Date header (2nd click - descending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 2nd sort: [ [32m&#039;2026-01-15&#039;[39m, [32m&#039;2026-01-15&#039;[39m, [32m&#039;2026-01-15&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Date sorted in DESCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Date column sorting verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing sorting for Day Of The Week column</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Day Of The Week header (1st click - ascending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 1st sort: [ [32m&#039;Thursday&#039;[39m, [32m&#039;Thursday&#039;[39m, [32m&#039;Thursday&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Day Of The Week sorted in ASCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Day Of The Week header (2nd click - descending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 2nd sort: [ [32m&#039;Wednesday&#039;[39m, [32m&#039;Wednesday&#039;[39m, [32m&#039;Wednesday&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Day Of The Week sorted in DESCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Day Of The Week column sorting verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing sorting for Time Range column</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Time Range header (1st click - ascending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 1st sort: [ [32m&#039;07:45 AM - 07:47 AM&#039;[39m, [32m&#039;07:48 AM - 07:53 AM&#039;[39m, [32m&#039;07:54 AM - 07:55 AM&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Time Range sorted in ASCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Time Range header (2nd click - descending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 2nd sort: [ [32m&#039;07:25 PM - 07:29 PM&#039;[39m, [32m&#039;07:20 PM - 07:24 PM&#039;[39m, [32m&#039;07:18 PM - 07:18 PM&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Time Range sorted in DESCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Time Range column sorting verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing sorting for Location column</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Location header (1st click - ascending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 1st sort: [</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;10084 E Bell Rd, Scottsdale, AZ 85260&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;10084 E Bell Rd, Scottsdale, AZ 85260&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;11243 E Karen Dr, Scottsdale, AZ 85255&#039;[39m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Location sorted in ASCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Location header (2nd click - descending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 2nd sort: [</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Northern Ave, Phoenix, AZ&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Northern Ave, Phoenix, AZ&#039;[39m,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[32m&#039;Northern Ave, Phoenix, AZ&#039;[39m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Location sorted in DESCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Location column sorting verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing sorting for Duration column</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Duration header (1st click - ascending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 1st sort: [ [32m&#039;00:00:02&#039;[39m, [32m&#039;00:00:02&#039;[39m, [32m&#039;00:00:02&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Duration sorted in ASCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked Duration header (2nd click - descending)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Data after 2nd sort: [ [32m&#039;00:16:48&#039;[39m, [32m&#039;00:13:24&#039;[39m, [32m&#039;00:08:30&#039;[39m ] ...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Duration sorted in DESCENDING order correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Duration column sorting verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TABLE SORTING FUNCTIONALITY TEST COMPLETE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All column sorters working correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TESTING TABLE SEARCH FUNCTIONALITY ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Table search input is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Initial row count: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing search: &quot;Scottsdale&quot; (Location search)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered search term: &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered row count: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 1 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 2 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 3 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 4 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 5 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 6 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 7 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 8 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 9 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 10 contains &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All 10 filtered rows contain &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing search: &quot;20260107&quot; (Date search)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered search term: &quot;2026-01-07&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered row count: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All 0 filtered rows contain &quot;2026-01-07&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing search: &quot;Wednesday&quot; (Day search)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered search term: &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered row count: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 1 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 2 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 3 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 4 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 5 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 6 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 7 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 8 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 9 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 10 contains &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All 10 filtered rows contain &quot;Wednesday&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing search: &quot;AM&quot; (Time search)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered search term: &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered row count: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 1 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 2 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 3 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 4 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 5 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 6 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 7 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 8 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 9 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Row 10 contains &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All 10 filtered rows contain &quot;AM&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing search clear</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Cleared search input</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row count after clear: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All rows restored after clearing search</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing search with no results</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Entered non-existent search term</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Row count: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ No rows displayed (as expected)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TABLE SEARCH FUNCTIONALITY TEST COMPLETE ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Table search working correctly</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== TESTING ROW CLICK AND API CALL (ALL TAB) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Clicking on 1st row of All tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked on 1st row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API called: https://sievamaps.com/reverse_geocodeNew.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ reverse_geocodeNew.php API called for 1st row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Clicking on 2nd row of All tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked on 2nd row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API called: https://sievamaps.com/reverse_geocodeNew.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ reverse_geocodeNew.php API called for 2nd row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== ROW CLICK AND API CALL TEST COMPLETE (ALL TAB) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">TESTING AUTHORIZED TAB</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Clicked on Authorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Authorized tab is now active</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Initial row count in Authorized tab: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Entries Per Page for Authorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing 25 entries:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info not found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 25</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 25 entries selected, 25 rows displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing 50 entries:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info not found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 49</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 50 entries selected, 49 rows displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Reset to 10 entries per page</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Sorting for Authorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Date sorting:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Ascending: 2026-01-14, 2026-01-14...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Ascending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Descending: 2026-01-15, 2026-01-15...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Descending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Duration sorting:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Ascending: 00:00:02, 00:00:02...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Ascending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Descending: 00:16:48, 00:13:24...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Descending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Search for Authorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searching for &quot;Scottsdale&quot; (Location):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered rows: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All rows contain &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searching for &quot;2026-01-07&quot; (Date):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered rows: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: No results for &quot;2026-01-07&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Search cleared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Row Click and API Call for Authorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking on 1st row of Authorized tab:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked on 1st row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API called: https://sievamaps.com/reverse_geocodeNew.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ reverse_geocodeNew.php API called for 1st row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking on 2nd row of Authorized tab:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked on 2nd row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API called: https://sievamaps.com/reverse_geocodeNew.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ reverse_geocodeNew.php API called for 2nd row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Authorized tab functionality verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">TESTING UNAUTHORIZED TAB</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Clicked on Unauthorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Unauthorized tab is now active</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Initial row count in Unauthorized tab: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Entries Per Page for Unauthorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing 25 entries:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info not found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 13</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 25 entries selected, 13 rows displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing 50 entries:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠ Pagination info not found</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Actual rows: 13</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ 50 entries selected, 13 rows displayed</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Reset to 10 entries per page</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Sorting for Unauthorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Date sorting:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Ascending: 2026-01-14, 2026-01-14...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Ascending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Descending: 2026-01-15, 2026-01-14...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Descending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Testing Duration sorting:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Ascending: 00:00:02, 00:00:02...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Ascending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Descending: 00:08:30, 00:07:11...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Descending sort verified</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Search for Unauthorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searching for &quot;Scottsdale&quot; (Location):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered rows: 10</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ All rows contain &quot;Scottsdale&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Searching for &quot;2026-01-07&quot; (Date):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Filtered rows: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Note: No results for &quot;2026-01-07&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Search cleared</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Testing Row Click and API Call for Unauthorized tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking on 1st row of Unauthorized tab:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked on 1st row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API called: https://sievamaps.com/reverse_geocodeNew.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ reverse_geocodeNew.php API called for 1st row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking on 2nd row of Unauthorized tab:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked on 2nd row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ API called: https://sievamaps.com/reverse_geocodeNew.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ reverse_geocodeNew.php API called for 2nd row</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Unauthorized tab functionality verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Returning to All tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Returned to All tab</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">ALL TAB TESTS COMPLETE</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
                                             </div>
                                         
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status failed">FAILED</span></td>
-                        <td><strong>112.91s</strong></td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>231.55s</strong></td>
                         <td>
-                            <a href="videos/TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm" class="video-link" target="_blank">Video: TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm</a>
+                            <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
@@ -378,7 +2661,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should redirect to After Hour Insight","status":"FAILED","duration":"112.91s","failureReason":"TimeoutError: locator.selectOption: Timeout 30000ms exceeded.","videoIdentifier":"TS016_afterHoursInsight-should-redirect-to-After-Hour-Insight.webm"}];
+            const data = [{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should verify after hours insights UI functionality","status":"PASSED","duration":"231.55s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -395,7 +2678,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2025-12-15.csv';
+            link.download = 'test-report-2026-01-26.csv';
             link.click();
         }
     </script>

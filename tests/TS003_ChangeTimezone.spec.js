@@ -33,9 +33,9 @@ test.describe('Timezone', () => {
         await page.locator(config.selectors.navigation.accountsMenu).click();
 
         await page.waitForTimeout(config.timeouts.wait);
-          
+
         await expect(page.locator(config.selectors.navigation.timezoneMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.timezoneMenu).click();
+        await page.locator(config.selectors.navigation.timezoneMenu).click({ force: true });
           
         await expect(page.locator(config.selectors.modal.timezoneContainer)).toBeVisible();
           
@@ -46,7 +46,8 @@ test.describe('Timezone', () => {
           
         // Verify timezone selection
         await expect(page.locator(config.selectors.timezoneSelection.timezoneOptions)).toBeVisible();
-        await page.locator(config.selectors.timezoneSelection.timezoneOptions).check();
+        await page.locator(config.selectors.timezoneSelection.timezoneOptions).scrollIntoViewIfNeeded();
+        await page.locator(config.selectors.timezoneSelection.timezoneOptions).check({ force: true });
         await expect(page.locator(config.selectors.timezoneSelection.timezoneOptions)).toBeChecked();
           
         // Save changes
@@ -58,12 +59,17 @@ test.describe('Timezone', () => {
         // Verify timezone change in settings
         await expect(page.locator(config.selectors.navigation.accountsMenu)).toBeVisible();
         await page.locator(config.selectors.navigation.accountsMenu).click();
-          
+
+        await page.waitForTimeout(config.timeouts.wait);
+
         await expect(page.locator(config.selectors.navigation.timezoneMenu)).toBeVisible();
-        await page.locator(config.selectors.navigation.timezoneMenu).click();
+        await page.locator(config.selectors.navigation.timezoneMenu).click({ force: true });
           
         await expect(page.locator(config.selectors.modal.timezoneContainer)).toBeVisible();
-          
+
+        // Wait for the timezone text to load
+        await page.waitForTimeout(config.timeouts.wait);
+
         await expect(page.locator(config.selectors.timezoneSelection.selectedTimezonHead))
             .toContainText(config.testData.expectedSelectedTimezone);
     });

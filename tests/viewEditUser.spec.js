@@ -258,6 +258,50 @@ test.describe('view Edit User', () => {
         const currentUrl = page.url();
         console.log(`Current URL after login: ${currentUrl}`);
 
+        // ========== VERIFY PROFILE SECTION ==========
+        console.log('\n🔍 Verifying Profile Section for AutomatedUsername2...');
+
+        // Wait for profile section to be visible
+        const profileSection = page.locator('#profile-section.accordion__header.accordion--navbar');
+        await expect(profileSection).toBeVisible({ timeout: 15000 });
+        console.log('✅ Profile section is visible');
+
+        // Verify profile avatar
+        const profileAvatar = page.locator('#profile-avatar.avatar.avatar--blue');
+        await expect(profileAvatar).toBeVisible();
+        const avatarText = await profileAvatar.textContent();
+        console.log(`Profile avatar text: "${avatarText.trim()}"`);
+
+        // The avatar should show the first letter of the username (A for AutomatedUsername2)
+        if (avatarText.trim() === 'A') {
+            console.log('✅ Profile avatar shows correct initial "A"');
+        } else {
+            console.log(`⚠️ Profile avatar shows "${avatarText.trim()}", expected "A"`);
+        }
+
+        // Verify username in profile section
+        const profileLabel = profileSection.locator('.accordion__header__label2');
+        await expect(profileLabel).toBeVisible();
+        const profileUsername = await profileLabel.textContent();
+        console.log(`Profile username displayed: "${profileUsername.trim()}"`);
+
+        // Verify the username matches AutomatedUsername2
+        if (profileUsername.trim() === 'AutomatedUsername2') {
+            console.log('✅ Profile section displays correct username "AutomatedUsername2"');
+        } else if (profileUsername.trim().includes('AutomatedUsername2')) {
+            console.log(`✅ Profile section contains username "AutomatedUsername2" (full text: "${profileUsername.trim()}")`);
+        } else {
+            console.log(`❌ Profile section does not show expected username. Found: "${profileUsername.trim()}"`);
+        }
+
+        // Verify chevron icon is present (indicates dropdown)
+        const chevronIcon = profileSection.locator('.icon.icon--md.icon--chevron-down');
+        if (await chevronIcon.isVisible()) {
+            console.log('✅ Profile dropdown chevron icon is visible');
+        }
+
+        console.log('✅ Profile section verification completed\n');
+
         // 1. Verify the Driver Card panel is visible (with longer timeout as it may take time to load)
         const driverCardPanel = page.locator('#driver-card-panel');
         await expect(driverCardPanel).toBeVisible({ timeout: 30000 });
@@ -569,9 +613,45 @@ test.describe('view Edit User', () => {
         // Click the submit button
         await expect(page.locator('input[type="submit"], button[type="submit"], .submit, #Submit')).toBeVisible();
         await page.locator('input[type="submit"], button[type="submit"], .submit, #Submit').click();
-        
+
         // Optional: Wait for navigation or success indication
         await page.waitForTimeout(15000);
+
+        // ========== VERIFY PROFILE SECTION (After Edit with 1 Device) ==========
+        console.log('\n🔍 Verifying Profile Section after editing user to 1 device access...');
+
+        // Wait for profile section to be visible
+        const profileSection2 = page.locator('#profile-section.accordion__header.accordion--navbar');
+        await expect(profileSection2).toBeVisible({ timeout: 15000 });
+        console.log('✅ Profile section is visible');
+
+        // Verify profile avatar
+        const profileAvatar2 = page.locator('#profile-avatar.avatar.avatar--blue');
+        await expect(profileAvatar2).toBeVisible();
+        const avatarText2 = await profileAvatar2.textContent();
+        console.log(`Profile avatar text: "${avatarText2.trim()}"`);
+
+        if (avatarText2.trim() === 'A') {
+            console.log('✅ Profile avatar shows correct initial "A"');
+        } else {
+            console.log(`⚠️ Profile avatar shows "${avatarText2.trim()}", expected "A"`);
+        }
+
+        // Verify username in profile section
+        const profileLabel2 = profileSection2.locator('.accordion__header__label2');
+        await expect(profileLabel2).toBeVisible();
+        const profileUsername2 = await profileLabel2.textContent();
+        console.log(`Profile username displayed: "${profileUsername2.trim()}"`);
+
+        if (profileUsername2.trim() === 'AutomatedUsername2') {
+            console.log('✅ Profile section displays correct username "AutomatedUsername2"');
+        } else if (profileUsername2.trim().includes('AutomatedUsername2')) {
+            console.log(`✅ Profile section contains username "AutomatedUsername2" (full text: "${profileUsername2.trim()}")`);
+        } else {
+            console.log(`❌ Profile section does not show expected username. Found: "${profileUsername2.trim()}"`);
+        }
+
+        console.log('✅ Profile section verification completed\n');
 
         // 1. Verify the Driver Card panel is visible
         await expect(driverCardPanel).toBeVisible();

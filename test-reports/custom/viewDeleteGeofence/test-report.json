@@ -1,0 +1,409 @@
+{
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 921973,
+    "startTime": "2026-01-21T21:42:40.610Z",
+    "endTime": "2026-01-21T21:58:02.583Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS019-A",
+      "module": "view delete geofence",
+      "title": "should be able to view, edit and delete geofence",
+      "description": "should be able to view, edit and delete geofence",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 49953,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map loaded, looking for \"Test Auto Geofence\" marker...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Looking for \"Test Auto Geofence\" marker...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found geofence marker, clicking on it...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for geofence info panel to expand...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit button is now visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence info panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked edit button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated geofence name to: Test Auto Geofence_Edited_1769031874407",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Updated geofence radius to: 700",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked save button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Update API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/SaveData_RDS/updategeofence_rds.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Get Geofence API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getGeofence.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence edit completed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked edit button again for delete",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Edit mode is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked delete button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for delete confirmation modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Confirmed deletion by clicking Delete button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Delete API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/SaveData_RDS/deletegeofence_rds.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Get Geofence API called after delete: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getGeofence.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying deleted geofence is not in API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Verified: \"Test Auto Geofence_Edited_1769031874407\" is not in the geofence list",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying deleted geofence is not in UI dropdown...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dropdown options: \u001b[33m15\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Verified: \"Test Auto Geofence_Edited_1769031874407\" is not in the geofence dropdown",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence deletion completed and verified successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-21T21:43:53.602Z",
+      "endTime": "2026-01-21T21:44:43.555Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS019_viewDeleteGeofence.spec.js",
+      "fileName": "TS019_viewDeleteGeofence",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS019-B",
+      "module": "view delete geofence",
+      "title": "should be able to toggle Hide Vehicle Markers",
+      "description": "should be able to toggle Hide Vehicle Markers",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 56414,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PART 1: Testing with Hide Vehicle Markers UNCHECKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Hide Vehicle Markers checkbox is initially unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit with checkbox unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Device marker is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked on device marker",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Realtime tracking timer is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Timer text and vehicle name are displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked close button",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PART 2: Testing with Hide Vehicle Markers CHECKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Geofencing menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked View/Delete Geofences",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checked: Hide Vehicle Markers checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Hide Vehicle Markers checkbox is now checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicked Submit with checkbox checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Device marker is NOT visible when Hide Vehicle Markers is checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Hide Vehicle Markers toggle test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-01-21T21:44:43.605Z",
+      "endTime": "2026-01-21T21:45:40.020Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS019_viewDeleteGeofence.spec.js",
+      "fileName": "TS019_viewDeleteGeofence",
+      "line": 290
+    }
+  ]
+}
