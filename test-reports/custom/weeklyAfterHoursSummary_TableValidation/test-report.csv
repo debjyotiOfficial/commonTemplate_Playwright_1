@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS014-A,"Weekly After Hours Summary - Table Validation","should validate table headers, sorting, and API data matching for specific date range",FAILED,69.65,"TimeoutError: locator.clear: Timeout 30000ms exceeded.",TS014_weeklyAfterHoursSummary_TableValidation-should-validate-table-headers--sorting--and-API-da.webm,TS014_weeklyAfterHoursSummary_TableValidation.spec.js,21

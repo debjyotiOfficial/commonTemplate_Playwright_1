@@ -64,7 +64,7 @@
         "testMatch": [
           "/auth\\.setup\\.js/"
         ],
-        "timeout": 30000
+        "timeout": 900000
       },
       {
         "outputDir": "C:/cypress-to-playwright-converted/test-results",
@@ -80,7 +80,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 900000
       }
     ],
     "shard": null,
@@ -113,16 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 952,
+                  "duration": 2454,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 27 minutes). Skipping login.\n"
+                      "text": "Valid authentication session found (age: 26 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-26T19:29:22.726Z",
+                  "startTime": "2026-01-27T22:50:07.382Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -138,25 +138,25 @@
       ]
     },
     {
-      "title": "TS016_afterHoursInsight.spec.js",
-      "file": "TS016_afterHoursInsight.spec.js",
+      "title": "TS027_trackHistory.spec.js",
+      "file": "TS027_trackHistory.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "After Hour Insight",
-          "file": "TS016_afterHoursInsight.spec.js",
+          "title": "Track History Tests",
+          "file": "TS027_trackHistory.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should verify after hours insights UI functionality",
+              "title": "should verify track lines disappear bug - segment switch after restart",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 600000,
+                  "timeout": 900000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -166,7 +166,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 231554,
+                      "duration": 131623,
                       "errors": [],
                       "stdout": [
                         {
@@ -197,1290 +197,84 @@
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "✓ After Hours Insights panel opened\n"
+                          "text": "=== BUG REPLICATION: Starting sequence ===\n"
                         },
                         {
-                          "text": "=== SETTING UP API INTERCEPTION ===\n"
+                          "text": "Checking initial visibility of track elements for segment 1...\n"
                         },
                         {
-                          "text": "Date set result: {\"success\":true,\"value\":\"2026-01-14 to 2026-01-15\"}\n"
+                          "text": "Initial Start marker visible: true\n"
                         },
                         {
-                          "text": "Date set to: 2026-01-14 to 2026-01-15\n"
+                          "text": "Initial Stop marker visible: true\n"
                         },
                         {
-                          "text": "Waiting for platform to be fully loaded...\n"
+                          "text": "Initial Track markers count: 36\n"
                         },
                         {
-                          "text": "✓ Submit button is ready\n"
+                          "text": "✓ STEP 1: Clicked Play on segment 1\n"
                         },
                         {
-                          "text": "✓ Submit button clicked\n"
+                          "text": "✓ STEP 2: Clicked Pause\n"
                         },
                         {
-                          "text": "API Response captured: {\n  \"data\": [\n    {\n      \"imei\": 220902734,\n      \"vehicleName\": \"Sales Car1 \",\n      \"vehicleStatus\": \"online\",\n      \"daily\": null,\n      \"totalOutside\": \"00:00:00\",\n      \"totalInside\": \"00:00:00\",\n      \"Stime\": \"00:00\",\n      \"Etime\": \"23:59\",\n      \"totalOutsideHours\": \"00:45:14\",\n      \"totalInsideHours\": \"02:04:43\",\n      \"outsideCheckHours\": \"00:45:14\",\n      \"insideCheckHours\": \"02:04:43\",\n      \"insideWarning\": false,\n      \"outsideWarning\": false,\n      \"unauthorized\": null\n    },\n    {\n      \"imei\": 860111051554966,\n      \"vehicleName\": \"Demo 1 \",\n      \"vehicleStatus\": \"online\",\n      \"daily\": null,\n      \"totalOutside\": \"00:00:00\",\n      \"totalInside\": \"00:00:00\",\n      \"Stime\": \"00:00\",\n      \"Etime\": \"23:59\",\n      \"totalOutsideHours\": \"00:00:00\",\n      \"totalInsideHours\": \"00:00:00\",\n      \"outsideCheckHours\": \"00:00:00\",\n      \"insideCheckHours\": \"00:00:00\",\n      \"insideWarning\": false,\n      \"outsideWarning\": false\n    }\n  ],\n  \"weekly\": [],\n  \"AccTime\": {\n    \"Stime\": null,\n    \"Etime\": null\n  }\n}\n"
+                          "text": "✓ STEP 3: Clicked Restart on segment 1\n"
                         },
                         {
-                          "text": "✓ API response captured successfully\n"
+                          "text": "After Restart 1 - Start marker visible: true\n"
                         },
                         {
-                          "text": "✓ API returned 2 vehicles\n"
+                          "text": "After Restart 1 - Stop marker visible: false\n"
                         },
                         {
-                          "text": "Found 192 vehicle cards in UI\n"
+                          "text": "After Restart 1 - Track markers count: 9\n"
                         },
                         {
-                          "text": "=== VERIFYING API DATA WITH UI VALUES ===\n"
+                          "text": "✓ STEP 4: Clicked on segment 2\n"
                         },
                         {
-                          "text": "\nVerifying vehicle: Sales Car1\n"
+                          "text": "Segment 2 before Restart - Start marker visible: true\n"
                         },
                         {
-                          "text": "  API Authorized: 02:04:43\n"
+                          "text": "Segment 2 before Restart - Stop marker visible: true\n"
                         },
                         {
-                          "text": "  UI Authorized: 02:04:43\n"
+                          "text": "Segment 2 before Restart - Track markers count: 48\n"
                         },
                         {
-                          "text": "  API Unauthorized: 00:45:14\n"
+                          "text": "✓ STEP 5: Clicked Restart on segment 2 - BUG TRIGGER POINT\n"
                         },
                         {
-                          "text": "  UI Unauthorized: 00:45:14\n"
+                          "text": "=== VERIFYING BUG: Track lines should have disappeared ===\n"
                         },
                         {
-                          "text": "✓ Sales Car1 - Values match!\n"
+                          "text": "AFTER BUG - Start marker visible: false\n"
                         },
                         {
-                          "text": "\nVerifying vehicle: Demo 1\n"
+                          "text": "AFTER BUG - Stop marker visible: false\n"
                         },
                         {
-                          "text": "  API Authorized: 00:00:00\n"
+                          "text": "AFTER BUG - Track markers count: 0\n"
                         },
                         {
-                          "text": "  UI Authorized: 00:00:00\n"
+                          "text": "⚠️ BUG CONFIRMED: Track lines have disappeared after segment switch + restart\n"
                         },
                         {
-                          "text": "  API Unauthorized: 00:00:00\n"
+                          "text": "   - Start marker: NOT VISIBLE\n"
                         },
                         {
-                          "text": "  UI Unauthorized: 00:00:00\n"
+                          "text": "   - Stop marker: NOT VISIBLE\n"
                         },
                         {
-                          "text": "✓ Demo 1 - Values match!\n"
+                          "text": "   - Track marker containers: NONE FOUND\n"
                         },
                         {
-                          "text": "\n=== API VERIFICATION COMPLETE ===\n"
-                        },
-                        {
-                          "text": "\n=== TESTING SEARCH FUNCTIONALITY ===\n"
-                        },
-                        {
-                          "text": "✓ Search input is visible\n"
-                        },
-                        {
-                          "text": "✓ Typed \"Sales Car1\" in search\n"
-                        },
-                        {
-                          "text": "\n=== SETTING UP API INTERCEPTION FOR TABLE DATA ===\n"
-                        },
-                        {
-                          "text": "✓ Sales Car1 card found\n"
-                        },
-                        {
-                          "text": "✓ Clicked on Sales Car1 card\n"
-                        },
-                        {
-                          "text": "Table API Response captured\n"
-                        },
-                        {
-                          "text": "Number of records in API: \u001b[33m62\u001b[39m\n"
-                        },
-                        {
-                          "text": "✓ Modal opened with Sales Car1 details\n"
-                        },
-                        {
-                          "text": "\n=== SEARCH FUNCTIONALITY TEST COMPLETE ===\n"
-                        },
-                        {
-                          "text": "\n=== VERIFYING TABLE DATA WITH API RESPONSE ===\n"
-                        },
-                        {
-                          "text": "✓ Locations table is visible\n"
-                        },
-                        {
-                          "text": "✓ Table API response captured successfully\n"
-                        },
-                        {
-                          "text": "Total records in API: 62\n"
-                        },
-                        {
-                          "text": "Visible table rows: 10\n"
-                        },
-                        {
-                          "text": "Comparing first 8 rows\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 1 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:01 AM - 09:03 AM\n"
-                        },
-                        {
-                          "text": "  Location: 11249 E Karen Dr, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:32\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:32\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:01 AM - 09:03 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 11249 E Karen Dr, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "✓ Row 1 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 2 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:03 AM - 09:10 AM\n"
-                        },
-                        {
-                          "text": "  Location: McDowell Mountain Ranch Rd, Scottsdale, AZ\n"
-                        },
-                        {
-                          "text": "  Duration: 00:07:12\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:07:12\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:03 AM - 09:10 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: McDowell Mountain Ranch Rd, Scottsdale, AZ\n"
-                        },
-                        {
-                          "text": "✓ Row 2 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 3 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:33 AM - 09:33 AM\n"
-                        },
-                        {
-                          "text": "  Location: 16715 N 91st St, Scottsdale, AZ 85260\n"
-                        },
-                        {
-                          "text": "  Duration: 00:00:02\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:00:02\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:33 AM - 09:33 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 16715 N 91st St, Scottsdale, AZ 85260\n"
-                        },
-                        {
-                          "text": "✓ Row 3 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 4 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:34 AM - 09:39 AM\n"
-                        },
-                        {
-                          "text": "  Location: 16826 N 90th St, Scottsdale, AZ 85260\n"
-                        },
-                        {
-                          "text": "  Duration: 00:05:00\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:05:00\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:34 AM - 09:39 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 16826 N 90th St, Scottsdale, AZ 85260\n"
-                        },
-                        {
-                          "text": "✓ Row 4 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 5 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:39 AM - 09:41 AM\n"
-                        },
-                        {
-                          "text": "  Location: 11243 E Karen Dr, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:26\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:26\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:39 AM - 09:41 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 11243 E Karen Dr, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "✓ Row 5 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 6 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:41 AM - 09:42 AM\n"
-                        },
-                        {
-                          "text": "  Location: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:01\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:01\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:41 AM - 09:42 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "✓ Row 6 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 7 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 09:42 AM - 09:43 AM\n"
-                        },
-                        {
-                          "text": "  Location: 18235 N Pima Rd, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "  Duration: 00:00:28\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:00:28\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 09:42 AM - 09:43 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 18235 N Pima Rd, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "✓ Row 7 matches API data\n"
-                        },
-                        {
-                          "text": "\n--- Comparing Row 8 ---\n"
-                        },
-                        {
-                          "text": "Table Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: 11:58 AM - 11:59 AM\n"
-                        },
-                        {
-                          "text": "  Location: 18241 N Pima Rd, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:02\n"
-                        },
-                        {
-                          "text": "API Data:\n"
-                        },
-                        {
-                          "text": "  Date: 2026-01-14\n"
-                        },
-                        {
-                          "text": "  Day: Wednesday\n"
-                        },
-                        {
-                          "text": "  Time Range: \n"
-                        },
-                        {
-                          "text": "  Location: \n"
-                        },
-                        {
-                          "text": "  Duration: 00:01:02\n"
-                        },
-                        {
-                          "text": "  Note: API has no time range, UI shows: 11:58 AM - 11:59 AM\n"
-                        },
-                        {
-                          "text": "  Note: API has no location, UI shows: 18241 N Pima Rd, Scottsdale, AZ 85255\n"
-                        },
-                        {
-                          "text": "✓ Row 8 matches API data\n"
-                        },
-                        {
-                          "text": "\n=== TABLE DATA VERIFICATION COMPLETE ===\n"
-                        },
-                        {
-                          "text": "✓ All 8 rows match the API response\n"
-                        },
-                        {
-                          "text": "\n=== TESTING ENTRIES PER PAGE FUNCTIONALITY ===\n"
-                        },
-                        {
-                          "text": "✓ Entries dropdown is visible\n"
-                        },
-                        {
-                          "text": "\n--- Testing 25 entries per page ---\n"
-                        },
-                        {
-                          "text": "✓ Selected 25 entries\n"
-                        },
-                        {
-                          "text": "⚠ Pagination info element not found, will use table row count\n"
-                        },
-                        {
-                          "text": "Total entries from API: 62\n"
-                        },
-                        {
-                          "text": "Expected pages: 3\n"
-                        },
-                        {
-                          "text": "\n  Checking Page 1:\n"
-                        },
-                        {
-                          "text": "    Expected rows: 25\n"
-                        },
-                        {
-                          "text": "    Actual rows: 25\n"
-                        },
-                        {
-                          "text": "    ✓ Page 1 has correct number of rows (25)\n"
-                        },
-                        {
-                          "text": "\n  Checking Page 2:\n"
-                        },
-                        {
-                          "text": "  Clicked page 2 button\n"
-                        },
-                        {
-                          "text": "    Expected rows: 25\n"
-                        },
-                        {
-                          "text": "    Actual rows: 25\n"
-                        },
-                        {
-                          "text": "    ✓ Page 2 has correct number of rows (25)\n"
-                        },
-                        {
-                          "text": "\n  Checking Page 3:\n"
-                        },
-                        {
-                          "text": "  Clicked page 3 button\n"
-                        },
-                        {
-                          "text": "    Expected rows: 12\n"
-                        },
-                        {
-                          "text": "    Actual rows: 12\n"
-                        },
-                        {
-                          "text": "    ✓ Page 3 has correct number of rows (12)\n"
-                        },
-                        {
-                          "text": "✓ 25 entries per page verified successfully\n"
-                        },
-                        {
-                          "text": "\n--- Testing 50 entries per page ---\n"
-                        },
-                        {
-                          "text": "✓ Selected 50 entries\n"
-                        },
-                        {
-                          "text": "⚠ Pagination info element not found, will use table row count\n"
-                        },
-                        {
-                          "text": "Total entries from API: 62\n"
-                        },
-                        {
-                          "text": "Expected pages: 2\n"
-                        },
-                        {
-                          "text": "\n  Checking Page 1:\n"
-                        },
-                        {
-                          "text": "    Expected rows: 50\n"
-                        },
-                        {
-                          "text": "    Actual rows: 50\n"
-                        },
-                        {
-                          "text": "    ✓ Page 1 has correct number of rows (50)\n"
-                        },
-                        {
-                          "text": "\n  Checking Page 2:\n"
-                        },
-                        {
-                          "text": "  Clicked page 2 button\n"
-                        },
-                        {
-                          "text": "    Expected rows: 12\n"
-                        },
-                        {
-                          "text": "    Actual rows: 12\n"
-                        },
-                        {
-                          "text": "    ✓ Page 2 has correct number of rows (12)\n"
-                        },
-                        {
-                          "text": "✓ 50 entries per page verified successfully\n"
-                        },
-                        {
-                          "text": "\n--- Testing 100 entries per page ---\n"
-                        },
-                        {
-                          "text": "✓ Selected 100 entries\n"
-                        },
-                        {
-                          "text": "⚠ Pagination info element not found, will use table row count\n"
-                        },
-                        {
-                          "text": "Total entries from API: 62\n"
-                        },
-                        {
-                          "text": "Expected pages: 1\n"
-                        },
-                        {
-                          "text": "\n  Checking Page 1:\n"
-                        },
-                        {
-                          "text": "    Expected rows: 62\n"
-                        },
-                        {
-                          "text": "    Actual rows: 62\n"
-                        },
-                        {
-                          "text": "    ✓ Page 1 has correct number of rows (62)\n"
-                        },
-                        {
-                          "text": "✓ 100 entries per page verified successfully\n"
-                        },
-                        {
-                          "text": "\n=== ENTRIES PER PAGE FUNCTIONALITY TEST COMPLETE ===\n"
-                        },
-                        {
-                          "text": "\n=== TESTING TABLE SORTING FUNCTIONALITY ===\n"
-                        },
-                        {
-                          "text": "✓ Reset to 10 entries per page for sorting tests\n"
-                        },
-                        {
-                          "text": "\n--- Testing sorting for Date column ---\n"
-                        },
-                        {
-                          "text": "  Clicked Date header (1st click - ascending)\n"
-                        },
-                        {
-                          "text": "  Data after 1st sort: [ \u001b[32m'2026-01-14'\u001b[39m, \u001b[32m'2026-01-14'\u001b[39m, \u001b[32m'2026-01-14'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Date sorted in ASCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  Clicked Date header (2nd click - descending)\n"
-                        },
-                        {
-                          "text": "  Data after 2nd sort: [ \u001b[32m'2026-01-15'\u001b[39m, \u001b[32m'2026-01-15'\u001b[39m, \u001b[32m'2026-01-15'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Date sorted in DESCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  ✓ Date column sorting verified successfully\n"
-                        },
-                        {
-                          "text": "\n--- Testing sorting for Day Of The Week column ---\n"
-                        },
-                        {
-                          "text": "  Clicked Day Of The Week header (1st click - ascending)\n"
-                        },
-                        {
-                          "text": "  Data after 1st sort: [ \u001b[32m'Thursday'\u001b[39m, \u001b[32m'Thursday'\u001b[39m, \u001b[32m'Thursday'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Day Of The Week sorted in ASCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  Clicked Day Of The Week header (2nd click - descending)\n"
-                        },
-                        {
-                          "text": "  Data after 2nd sort: [ \u001b[32m'Wednesday'\u001b[39m, \u001b[32m'Wednesday'\u001b[39m, \u001b[32m'Wednesday'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Day Of The Week sorted in DESCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  ✓ Day Of The Week column sorting verified successfully\n"
-                        },
-                        {
-                          "text": "\n--- Testing sorting for Time Range column ---\n"
-                        },
-                        {
-                          "text": "  Clicked Time Range header (1st click - ascending)\n"
-                        },
-                        {
-                          "text": "  Data after 1st sort: [ \u001b[32m'07:45 AM - 07:47 AM'\u001b[39m, \u001b[32m'07:48 AM - 07:53 AM'\u001b[39m, \u001b[32m'07:54 AM - 07:55 AM'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Time Range sorted in ASCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  Clicked Time Range header (2nd click - descending)\n"
-                        },
-                        {
-                          "text": "  Data after 2nd sort: [ \u001b[32m'07:25 PM - 07:29 PM'\u001b[39m, \u001b[32m'07:20 PM - 07:24 PM'\u001b[39m, \u001b[32m'07:18 PM - 07:18 PM'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Time Range sorted in DESCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  ✓ Time Range column sorting verified successfully\n"
-                        },
-                        {
-                          "text": "\n--- Testing sorting for Location column ---\n"
-                        },
-                        {
-                          "text": "  Clicked Location header (1st click - ascending)\n"
-                        },
-                        {
-                          "text": "  Data after 1st sort: [\n  \u001b[32m'10084 E Bell Rd, Scottsdale, AZ 85260'\u001b[39m,\n  \u001b[32m'10084 E Bell Rd, Scottsdale, AZ 85260'\u001b[39m,\n  \u001b[32m'11243 E Karen Dr, Scottsdale, AZ 85255'\u001b[39m\n] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Location sorted in ASCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  Clicked Location header (2nd click - descending)\n"
-                        },
-                        {
-                          "text": "  Data after 2nd sort: [\n  \u001b[32m'Northern Ave, Phoenix, AZ'\u001b[39m,\n  \u001b[32m'Northern Ave, Phoenix, AZ'\u001b[39m,\n  \u001b[32m'Northern Ave, Phoenix, AZ'\u001b[39m\n] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Location sorted in DESCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  ✓ Location column sorting verified successfully\n"
-                        },
-                        {
-                          "text": "\n--- Testing sorting for Duration column ---\n"
-                        },
-                        {
-                          "text": "  Clicked Duration header (1st click - ascending)\n"
-                        },
-                        {
-                          "text": "  Data after 1st sort: [ \u001b[32m'00:00:02'\u001b[39m, \u001b[32m'00:00:02'\u001b[39m, \u001b[32m'00:00:02'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Duration sorted in ASCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  Clicked Duration header (2nd click - descending)\n"
-                        },
-                        {
-                          "text": "  Data after 2nd sort: [ \u001b[32m'00:16:48'\u001b[39m, \u001b[32m'00:13:24'\u001b[39m, \u001b[32m'00:08:30'\u001b[39m ] ...\n"
-                        },
-                        {
-                          "text": "  ✓ Duration sorted in DESCENDING order correctly\n"
-                        },
-                        {
-                          "text": "  ✓ Duration column sorting verified successfully\n"
-                        },
-                        {
-                          "text": "\n=== TABLE SORTING FUNCTIONALITY TEST COMPLETE ===\n"
-                        },
-                        {
-                          "text": "✓ All column sorters working correctly\n"
-                        },
-                        {
-                          "text": "\n=== TESTING TABLE SEARCH FUNCTIONALITY ===\n"
-                        },
-                        {
-                          "text": "✓ Table search input is visible\n"
-                        },
-                        {
-                          "text": "Initial row count: 10\n"
-                        },
-                        {
-                          "text": "\n--- Testing search: \"Scottsdale\" (Location search) ---\n"
-                        },
-                        {
-                          "text": "  Entered search term: \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  Filtered row count: 10\n"
-                        },
-                        {
-                          "text": "  ✓ Row 1 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 2 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 3 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 4 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 5 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 6 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 7 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 8 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 9 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 10 contains \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "  ✓ All 10 filtered rows contain \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "\n--- Testing search: \"2026-01-07\" (Date search) ---\n"
-                        },
-                        {
-                          "text": "  Entered search term: \"2026-01-07\"\n"
-                        },
-                        {
-                          "text": "  Filtered row count: 0\n"
-                        },
-                        {
-                          "text": "  ✓ All 0 filtered rows contain \"2026-01-07\"\n"
-                        },
-                        {
-                          "text": "\n--- Testing search: \"Wednesday\" (Day search) ---\n"
-                        },
-                        {
-                          "text": "  Entered search term: \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  Filtered row count: 10\n"
-                        },
-                        {
-                          "text": "  ✓ Row 1 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 2 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 3 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 4 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 5 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 6 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 7 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 8 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 9 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 10 contains \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "  ✓ All 10 filtered rows contain \"Wednesday\"\n"
-                        },
-                        {
-                          "text": "\n--- Testing search: \"AM\" (Time search) ---\n"
-                        },
-                        {
-                          "text": "  Entered search term: \"AM\"\n"
-                        },
-                        {
-                          "text": "  Filtered row count: 10\n"
-                        },
-                        {
-                          "text": "  ✓ Row 1 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 2 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 3 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 4 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 5 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 6 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 7 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 8 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 9 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ Row 10 contains \"AM\"\n"
-                        },
-                        {
-                          "text": "  ✓ All 10 filtered rows contain \"AM\"\n"
-                        },
-                        {
-                          "text": "\n--- Testing search clear ---\n"
-                        },
-                        {
-                          "text": "  Cleared search input\n"
-                        },
-                        {
-                          "text": "  Row count after clear: 10\n"
-                        },
-                        {
-                          "text": "  ✓ All rows restored after clearing search\n"
-                        },
-                        {
-                          "text": "\n--- Testing search with no results ---\n"
-                        },
-                        {
-                          "text": "  Entered non-existent search term\n"
-                        },
-                        {
-                          "text": "  Row count: 0\n"
-                        },
-                        {
-                          "text": "  ✓ No rows displayed (as expected)\n"
-                        },
-                        {
-                          "text": "\n=== TABLE SEARCH FUNCTIONALITY TEST COMPLETE ===\n"
-                        },
-                        {
-                          "text": "✓ Table search working correctly\n"
-                        },
-                        {
-                          "text": "\n=== TESTING ROW CLICK AND API CALL (ALL TAB) ===\n"
-                        },
-                        {
-                          "text": "\n--- Clicking on 1st row of All tab ---\n"
-                        },
-                        {
-                          "text": "  Clicked on 1st row\n"
-                        },
-                        {
-                          "text": "    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php\n"
-                        },
-                        {
-                          "text": "  ✓ reverse_geocodeNew.php API called for 1st row\n"
-                        },
-                        {
-                          "text": "\n--- Clicking on 2nd row of All tab ---\n"
-                        },
-                        {
-                          "text": "  Clicked on 2nd row\n"
-                        },
-                        {
-                          "text": "    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php\n"
-                        },
-                        {
-                          "text": "  ✓ reverse_geocodeNew.php API called for 2nd row\n"
-                        },
-                        {
-                          "text": "\n=== ROW CLICK AND API CALL TEST COMPLETE (ALL TAB) ===\n"
-                        },
-                        {
-                          "text": "\n\n========================================\n"
-                        },
-                        {
-                          "text": "   TESTING AUTHORIZED TAB\n"
-                        },
-                        {
-                          "text": "========================================\n"
-                        },
-                        {
-                          "text": "✓ Clicked on Authorized tab\n"
-                        },
-                        {
-                          "text": "✓ Authorized tab is now active\n"
-                        },
-                        {
-                          "text": "\nInitial row count in Authorized tab: 10\n"
-                        },
-                        {
-                          "text": "\n--- Testing Entries Per Page for Authorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Testing 25 entries:\n"
-                        },
-                        {
-                          "text": "  ⚠ Pagination info not found\n"
-                        },
-                        {
-                          "text": "    Actual rows: 25\n"
-                        },
-                        {
-                          "text": "    ✓ 25 entries selected, 25 rows displayed\n"
-                        },
-                        {
-                          "text": "\n  Testing 50 entries:\n"
-                        },
-                        {
-                          "text": "  ⚠ Pagination info not found\n"
-                        },
-                        {
-                          "text": "    Actual rows: 49\n"
-                        },
-                        {
-                          "text": "    ✓ 50 entries selected, 49 rows displayed\n"
-                        },
-                        {
-                          "text": "  Reset to 10 entries per page\n"
-                        },
-                        {
-                          "text": "\n--- Testing Sorting for Authorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Testing Date sorting:\n"
-                        },
-                        {
-                          "text": "    Ascending: 2026-01-14, 2026-01-14...\n"
-                        },
-                        {
-                          "text": "    ✓ Ascending sort verified\n"
-                        },
-                        {
-                          "text": "    Descending: 2026-01-15, 2026-01-15...\n"
-                        },
-                        {
-                          "text": "    ✓ Descending sort verified\n"
-                        },
-                        {
-                          "text": "\n  Testing Duration sorting:\n"
-                        },
-                        {
-                          "text": "    Ascending: 00:00:02, 00:00:02...\n"
-                        },
-                        {
-                          "text": "    ✓ Ascending sort verified\n"
-                        },
-                        {
-                          "text": "    Descending: 00:16:48, 00:13:24...\n"
-                        },
-                        {
-                          "text": "    ✓ Descending sort verified\n"
-                        },
-                        {
-                          "text": "\n--- Testing Search for Authorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Searching for \"Scottsdale\" (Location):\n"
-                        },
-                        {
-                          "text": "    Filtered rows: 10\n"
-                        },
-                        {
-                          "text": "    ✓ All rows contain \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "\n  Searching for \"2026-01-07\" (Date):\n"
-                        },
-                        {
-                          "text": "    Filtered rows: 0\n"
-                        },
-                        {
-                          "text": "    Note: No results for \"2026-01-07\"\n"
-                        },
-                        {
-                          "text": "  ✓ Search cleared\n"
-                        },
-                        {
-                          "text": "\n--- Testing Row Click and API Call for Authorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Clicking on 1st row of Authorized tab:\n"
-                        },
-                        {
-                          "text": "    Clicked on 1st row\n"
-                        },
-                        {
-                          "text": "    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php\n"
-                        },
-                        {
-                          "text": "    ✓ reverse_geocodeNew.php API called for 1st row\n"
-                        },
-                        {
-                          "text": "\n  Clicking on 2nd row of Authorized tab:\n"
-                        },
-                        {
-                          "text": "    Clicked on 2nd row\n"
-                        },
-                        {
-                          "text": "    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php\n"
-                        },
-                        {
-                          "text": "    ✓ reverse_geocodeNew.php API called for 2nd row\n"
-                        },
-                        {
-                          "text": "\n✓ Authorized tab functionality verified successfully\n\n"
-                        },
-                        {
-                          "text": "\n\n========================================\n"
-                        },
-                        {
-                          "text": "   TESTING UNAUTHORIZED TAB\n"
-                        },
-                        {
-                          "text": "========================================\n"
-                        },
-                        {
-                          "text": "✓ Clicked on Unauthorized tab\n"
-                        },
-                        {
-                          "text": "✓ Unauthorized tab is now active\n"
-                        },
-                        {
-                          "text": "\nInitial row count in Unauthorized tab: 10\n"
-                        },
-                        {
-                          "text": "\n--- Testing Entries Per Page for Unauthorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Testing 25 entries:\n"
-                        },
-                        {
-                          "text": "  ⚠ Pagination info not found\n"
-                        },
-                        {
-                          "text": "    Actual rows: 13\n"
-                        },
-                        {
-                          "text": "    ✓ 25 entries selected, 13 rows displayed\n"
-                        },
-                        {
-                          "text": "\n  Testing 50 entries:\n"
-                        },
-                        {
-                          "text": "  ⚠ Pagination info not found\n"
-                        },
-                        {
-                          "text": "    Actual rows: 13\n"
-                        },
-                        {
-                          "text": "    ✓ 50 entries selected, 13 rows displayed\n"
-                        },
-                        {
-                          "text": "  Reset to 10 entries per page\n"
-                        },
-                        {
-                          "text": "\n--- Testing Sorting for Unauthorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Testing Date sorting:\n"
-                        },
-                        {
-                          "text": "    Ascending: 2026-01-14, 2026-01-14...\n"
-                        },
-                        {
-                          "text": "    ✓ Ascending sort verified\n"
-                        },
-                        {
-                          "text": "    Descending: 2026-01-15, 2026-01-14...\n"
-                        },
-                        {
-                          "text": "    ✓ Descending sort verified\n"
-                        },
-                        {
-                          "text": "\n  Testing Duration sorting:\n"
-                        },
-                        {
-                          "text": "    Ascending: 00:00:02, 00:00:02...\n"
-                        },
-                        {
-                          "text": "    ✓ Ascending sort verified\n"
-                        },
-                        {
-                          "text": "    Descending: 00:08:30, 00:07:11...\n"
-                        },
-                        {
-                          "text": "    ✓ Descending sort verified\n"
-                        },
-                        {
-                          "text": "\n--- Testing Search for Unauthorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Searching for \"Scottsdale\" (Location):\n"
-                        },
-                        {
-                          "text": "    Filtered rows: 10\n"
-                        },
-                        {
-                          "text": "    ✓ All rows contain \"Scottsdale\"\n"
-                        },
-                        {
-                          "text": "\n  Searching for \"2026-01-07\" (Date):\n"
-                        },
-                        {
-                          "text": "    Filtered rows: 0\n"
-                        },
-                        {
-                          "text": "    Note: No results for \"2026-01-07\"\n"
-                        },
-                        {
-                          "text": "  ✓ Search cleared\n"
-                        },
-                        {
-                          "text": "\n--- Testing Row Click and API Call for Unauthorized tab ---\n"
-                        },
-                        {
-                          "text": "\n  Clicking on 1st row of Unauthorized tab:\n"
-                        },
-                        {
-                          "text": "    Clicked on 1st row\n"
-                        },
-                        {
-                          "text": "    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php\n"
-                        },
-                        {
-                          "text": "    ✓ reverse_geocodeNew.php API called for 1st row\n"
-                        },
-                        {
-                          "text": "\n  Clicking on 2nd row of Unauthorized tab:\n"
-                        },
-                        {
-                          "text": "    Clicked on 2nd row\n"
-                        },
-                        {
-                          "text": "    ✓ API called: https://sievamaps.com/reverse_geocodeNew.php\n"
-                        },
-                        {
-                          "text": "    ✓ reverse_geocodeNew.php API called for 2nd row\n"
-                        },
-                        {
-                          "text": "\n✓ Unauthorized tab functionality verified successfully\n\n"
-                        },
-                        {
-                          "text": "\n--- Returning to All tab ---\n"
-                        },
-                        {
-                          "text": "✓ Returned to All tab\n"
-                        },
-                        {
-                          "text": "\n========================================\n"
-                        },
-                        {
-                          "text": "   ALL TAB TESTS COMPLETE\n"
-                        },
-                        {
-                          "text": "========================================\n"
+                          "text": "=== BUG REPLICATION TEST COMPLETED ===\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-26T19:29:26.118Z",
+                      "startTime": "2026-01-27T22:50:12.442Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1488,9 +282,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "721fb08bfae4ae18a58e-643180b2b4f4684952ce",
-              "file": "TS016_afterHoursInsight.spec.js",
-              "line": 306,
+              "id": "891f747b11862c401fac-a0dda804c6971d2516cc",
+              "file": "TS027_trackHistory.spec.js",
+              "line": 533,
               "column": 5
             }
           ]
@@ -1500,8 +294,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-26T19:29:21.256Z",
-    "duration": 238718.71000000002,
+    "startTime": "2026-01-27T22:50:05.715Z",
+    "duration": 141856.707,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

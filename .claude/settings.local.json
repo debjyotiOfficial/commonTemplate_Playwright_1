@@ -20,7 +20,9 @@
       "Bash(taskkill:*)",
       "Bash(tee:*)",
       "Bash(more:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npx playwright:*)",
+      "Bash(npm exec:*)"
     ],
     "deny": [],
     "ask": []

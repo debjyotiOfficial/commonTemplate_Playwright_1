@@ -529,4 +529,164 @@ test.describe('Track History Tests', () => {
         console.log('✓ Complete car marker animation test finished');
         console.log('=== ALL TESTS COMPLETED IN SINGLE SESSION ===');
     });
+
+    test('should verify track lines disappear bug - segment switch after restart', async ({ page }) => {
+        // BUG REPLICATION TEST
+        // Steps: Play segment 1 -> Pause -> Restart -> Click segment 2 -> Restart
+        // Expected Bug: Track lines (Start/Stop markers and track-marker-container) disappear
+
+        const helpers = new TestHelpers(page);
+        config = await helpers.getConfig();
+
+        await helpers.loginAndNavigateToPage(config.urls.fleetDashboard3);
+
+        await expect(page.locator(config.selectors.navigation.trackHistoryMenu)).toBeVisible();
+        await page.locator(config.selectors.navigation.trackHistoryMenu).click({ force: true });
+
+        await expect(page.locator(config.selectors.modal.trackHistoryContainer)).toBeVisible();
+
+        // Setup track history data
+        await page.locator('#select2-track-history-device-select-container').click();
+        await page.locator('.select2-results__option').filter({ hasText: 'Sales car1' }).click();
+
+        // Set date range
+        await page.locator('#track-history-date-range-picker').click();
+
+        const yearInput = page.locator('.flatpickr-calendar.open .numInputWrapper input.cur-year');
+        await yearInput.click();
+        await yearInput.fill('2026');
+        await yearInput.press('Enter');
+        await page.waitForTimeout(500);
+
+        await page.selectOption('.flatpickr-calendar.open .flatpickr-monthDropdown-months', 'January');
+
+        // Select January 1-2, 2026
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="January 1, 2026"]').click({ force: true });
+        await page.locator('.flatpickr-calendar.open .flatpickr-day[aria-label="January 2, 2026"]').click({ force: true });
+
+        await expect(page.locator(config.selectors.trackHistoryReport.submitButton)).toBeVisible();
+        await page.locator(config.selectors.trackHistoryReport.submitButton).click({ force: true });
+
+        await page.waitForTimeout(60000); // Wait for data loading
+
+        // Use JavaScript to expand the track history list (toggle display)
+        await page.evaluate(() => {
+            const trackHistoryList = document.querySelector('#track-history-list');
+            if (trackHistoryList) {
+                trackHistoryList.style.display = 'block';
+            }
+        });
+        await page.waitForTimeout(1000);
+
+        // Select segment 1 by clicking on the list item directly
+        const item1Locator = page.locator('.track-history__list-item').first();
+        await item1Locator.click({ force: true });
+        await page.waitForTimeout(3000);
+
+        console.log('=== BUG REPLICATION: Starting sequence ===');
+
+        // STEP 1: Verify track elements are visible initially after selecting segment 1
+        const startMarkerInitial = page.locator('.route-button-marker.route-button-start');
+        const stopMarkerInitial = page.locator('.route-button-marker.route-button-stop');
+        const trackMarkerContainerInitial = page.locator('.track-marker-container');
+
+        console.log('Checking initial visibility of track elements for segment 1...');
+
+        const initialStartVisible = await startMarkerInitial.isVisible().catch(() => false);
+        const initialStopVisible = await stopMarkerInitial.isVisible().catch(() => false);
+        const initialTrackMarkersCount = await trackMarkerContainerInitial.count();
+
+        console.log(`Initial Start marker visible: ${initialStartVisible}`);
+        console.log(`Initial Stop marker visible: ${initialStopVisible}`);
+        console.log(`Initial Track markers count: ${initialTrackMarkersCount}`);
+
+        // STEP 2: Click Play on segment 1 using the playback control button
+        const playPauseButton = page.locator('#track-history-playback-play-pause');
+        await expect(playPauseButton).toBeVisible({ timeout: 15000 });
+        await playPauseButton.click({ force: true });
+        console.log('✓ STEP 1: Clicked Play on segment 1');
+        await page.waitForTimeout(2000);
+
+        // STEP 3: Click Pause (same button toggles)
+        await playPauseButton.click({ force: true });
+        console.log('✓ STEP 2: Clicked Pause');
+        await page.waitForTimeout(1000);
+
+        // STEP 4: Click Restart on segment 1
+        const restartButton = page.locator('#track-history-playback-restart');
+        await expect(restartButton).toBeVisible({ timeout: 10000 });
+        await restartButton.click({ force: true });
+        console.log('✓ STEP 3: Clicked Restart on segment 1');
+        await page.waitForTimeout(2000);
+
+        // Verify track elements still visible after restart on segment 1
+        const afterRestart1StartVisible = await startMarkerInitial.isVisible().catch(() => false);
+        const afterRestart1StopVisible = await stopMarkerInitial.isVisible().catch(() => false);
+        const afterRestart1TrackMarkersCount = await trackMarkerContainerInitial.count();
+
+        console.log(`After Restart 1 - Start marker visible: ${afterRestart1StartVisible}`);
+        console.log(`After Restart 1 - Stop marker visible: ${afterRestart1StopVisible}`);
+        console.log(`After Restart 1 - Track markers count: ${afterRestart1TrackMarkersCount}`);
+
+        // STEP 5: Click on segment 2
+        const item2Locator = page.locator('.track-history__list-item').nth(1);
+        await item2Locator.click({ force: true });
+        console.log('✓ STEP 4: Clicked on segment 2');
+        await page.waitForTimeout(3000);
+
+        // Verify track elements visible for segment 2 before restart
+        const seg2BeforeRestartStartVisible = await startMarkerInitial.isVisible().catch(() => false);
+        const seg2BeforeRestartStopVisible = await stopMarkerInitial.isVisible().catch(() => false);
+        const seg2BeforeRestartTrackMarkersCount = await trackMarkerContainerInitial.count();
+
+        console.log(`Segment 2 before Restart - Start marker visible: ${seg2BeforeRestartStartVisible}`);
+        console.log(`Segment 2 before Restart - Stop marker visible: ${seg2BeforeRestartStopVisible}`);
+        console.log(`Segment 2 before Restart - Track markers count: ${seg2BeforeRestartTrackMarkersCount}`);
+
+        // STEP 6: Click Restart on segment 2 - THIS TRIGGERS THE BUG
+        await restartButton.click({ force: true });
+        console.log('✓ STEP 5: Clicked Restart on segment 2 - BUG TRIGGER POINT');
+        await page.waitForTimeout(3000);
+
+        // Take screenshot to capture bug state
+        await page.screenshot({ path: 'bug-track-lines-disappeared.png' });
+
+        // VERIFY BUG: Check if track elements have disappeared
+        console.log('=== VERIFYING BUG: Track lines should have disappeared ===');
+
+        const startMarkerAfterBug = page.locator('.route-button-marker.route-button-start');
+        const stopMarkerAfterBug = page.locator('.route-button-marker.route-button-stop');
+        const trackMarkerContainerAfterBug = page.locator('.track-marker-container');
+
+        const bugStartVisible = await startMarkerAfterBug.isVisible().catch(() => false);
+        const bugStopVisible = await stopMarkerAfterBug.isVisible().catch(() => false);
+        const bugTrackMarkersCount = await trackMarkerContainerAfterBug.count();
+
+        console.log(`AFTER BUG - Start marker visible: ${bugStartVisible}`);
+        console.log(`AFTER BUG - Stop marker visible: ${bugStopVisible}`);
+        console.log(`AFTER BUG - Track markers count: ${bugTrackMarkersCount}`);
+
+        // BUG ASSERTION: These elements should NOT be visible (proving the bug exists)
+        // If bug is present: Start/Stop markers and track-marker-container will be hidden/removed
+
+        const bugDetected = !bugStartVisible && !bugStopVisible && bugTrackMarkersCount === 0;
+
+        if (bugDetected) {
+            console.log('⚠️ BUG CONFIRMED: Track lines have disappeared after segment switch + restart');
+            console.log('   - Start marker: NOT VISIBLE');
+            console.log('   - Stop marker: NOT VISIBLE');
+            console.log('   - Track marker containers: NONE FOUND');
+        } else {
+            console.log('✓ Bug may be fixed - track elements are still visible');
+            console.log(`   - Start marker visible: ${bugStartVisible}`);
+            console.log(`   - Stop marker visible: ${bugStopVisible}`);
+            console.log(`   - Track markers count: ${bugTrackMarkersCount}`);
+        }
+
+        // Assert the bug exists (test passes when bug is present)
+        // Change to expect().toBeTruthy() when bug should be fixed
+        expect(bugDetected).toBe(true); // Bug replication - expecting elements to disappear
+
+        console.log('=== BUG REPLICATION TEST COMPLETED ===');
+    });
 });

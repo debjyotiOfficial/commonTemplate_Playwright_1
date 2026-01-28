@@ -1,2 +1,2 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS027-A,"Track History Tests","should verify HERE Maps car marker animation functionality",PASSED,224.13,"",N/A,TS027_trackHistory.spec.js,23
+TS027-A,"Track History Tests","should verify track lines disappear bug - segment switch after restart",PASSED,131.62,"",N/A,TS027_trackHistory.spec.js,533

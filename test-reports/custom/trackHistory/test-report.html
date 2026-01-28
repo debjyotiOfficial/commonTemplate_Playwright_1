@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - trackHistory - 3/1/2026</title>
+    <title>Test Report - trackHistory - 28/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: trackHistory</div>
             <div class="subtitle">
-                Generated: 3/1/2026, 1:48:48 am |
-                Duration: 1053.30s |
+                Generated: 28/1/2026, 4:22:27 am |
+                Duration: 141.66s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -211,11 +211,11 @@
                         <td><span class="test-case-no">TS027-A</span></td>
                         <td>Track History Tests</td>
                         <td>
-                            <strong>should verify HERE Maps car marker animation functionality</strong>
+                            <strong>should verify track lines disappear bug - segment switch after restart</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (22)</span>
+                                    <span>View Test Steps (34)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -269,67 +269,127 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Track History Length: 14 Stops</span>
+                                                <span class="step-text">=== BUG REPLICATION: Starting sequence ===</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">=== TESTING HERE MAPS CAR MARKER ANIMATION ===</span>
+                                                <span class="step-text">Checking initial visibility of track elements for segment 1...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ PAUSE BUTTON CLICKED</span>
+                                                <span class="step-text">Initial Start marker visible: true</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ RESUME BUTTON CLICKED</span>
+                                                <span class="step-text">Initial Stop marker visible: true</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ SPEED UP BUTTON CLICKED</span>
+                                                <span class="step-text">Initial Track markers count: 36</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ SPEED DOWN BUTTON CLICKED</span>
+                                                <span class="step-text">✓ STEP 1: Clicked Play on segment 1</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ RESTART BUTTON CLICKED</span>
+                                                <span class="step-text">✓ STEP 2: Clicked Pause</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ SEGMENT 2 SELECTED</span>
+                                                <span class="step-text">✓ STEP 3: Clicked Restart on segment 1</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ SEGMENT 1 SELECTED</span>
+                                                <span class="step-text">After Restart 1 - Start marker visible: true</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">=== TESTING WITH DIFFERENT DATE RANGE (JUNE DATA) ===</span>
+                                                <span class="step-text">After Restart 1 - Stop marker visible: false</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">June Track History Length: 54 Stops</span>
+                                                <span class="step-text">After Restart 1 - Track markers count: 9</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">✓ Complete car marker animation test finished</span>
+                                                <span class="step-text">✓ STEP 4: Clicked on segment 2</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">=== ALL TESTS COMPLETED IN SINGLE SESSION ===</span>
+                                                <span class="step-text">Segment 2 before Restart - Start marker visible: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Segment 2 before Restart - Stop marker visible: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Segment 2 before Restart - Track markers count: 48</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ STEP 5: Clicked Restart on segment 2 - BUG TRIGGER POINT</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== VERIFYING BUG: Track lines should have disappeared ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">AFTER BUG - Start marker visible: false</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">AFTER BUG - Stop marker visible: false</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">AFTER BUG - Track markers count: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">⚠️ BUG CONFIRMED: Track lines have disappeared after segment switch + restart</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Start marker: NOT VISIBLE</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Stop marker: NOT VISIBLE</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Track marker containers: NONE FOUND</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== BUG REPLICATION TEST COMPLETED ===</span>
                                             </div>
                                         
                                     </div>
@@ -337,7 +397,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>224.13s</strong></td>
+                        <td><strong>131.62s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -391,7 +451,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS027-A","module":"Track History Tests","description":"should verify HERE Maps car marker animation functionality","status":"PASSED","duration":"224.13s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS027-A","module":"Track History Tests","description":"should verify track lines disappear bug - segment switch after restart","status":"PASSED","duration":"131.62s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -408,7 +468,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-02.csv';
+            link.download = 'test-report-2026-01-27.csv';
             link.click();
         }
     </script>

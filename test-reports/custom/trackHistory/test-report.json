@@ -4,19 +4,19 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 1053297,
-    "startTime": "2026-01-02T20:01:15.589Z",
-    "endTime": "2026-01-02T20:18:48.886Z"
+    "duration": 141664,
+    "startTime": "2026-01-27T22:50:06.166Z",
+    "endTime": "2026-01-27T22:52:27.830Z"
   },
   "tests": [
     {
       "testCaseNo": "TS027-A",
       "module": "Track History Tests",
-      "title": "should verify HERE Maps car marker animation functionality",
-      "description": "should verify HERE Maps car marker animation functionality",
+      "title": "should verify track lines disappear bug - segment switch after restart",
+      "description": "should verify track lines disappear bug - segment switch after restart",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 224130,
+      "duration": 131623,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -78,89 +78,161 @@
         },
         {
           "number": "",
-          "text": "Track History Length: 14 Stops",
+          "text": "=== BUG REPLICATION: Starting sequence ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "=== TESTING HERE MAPS CAR MARKER ANIMATION ===",
+          "text": "Checking initial visibility of track elements for segment 1...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ PAUSE BUTTON CLICKED",
+          "text": "Initial Start marker visible: true",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ RESUME BUTTON CLICKED",
+          "text": "Initial Stop marker visible: true",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ SPEED UP BUTTON CLICKED",
+          "text": "Initial Track markers count: 36",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ SPEED DOWN BUTTON CLICKED",
+          "text": "✓ STEP 1: Clicked Play on segment 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ RESTART BUTTON CLICKED",
+          "text": "✓ STEP 2: Clicked Pause",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ SEGMENT 2 SELECTED",
+          "text": "✓ STEP 3: Clicked Restart on segment 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ SEGMENT 1 SELECTED",
+          "text": "After Restart 1 - Start marker visible: true",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "=== TESTING WITH DIFFERENT DATE RANGE (JUNE DATA) ===",
+          "text": "After Restart 1 - Stop marker visible: false",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "June Track History Length: 54 Stops",
+          "text": "After Restart 1 - Track markers count: 9",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Complete car marker animation test finished",
+          "text": "✓ STEP 4: Clicked on segment 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "=== ALL TESTS COMPLETED IN SINGLE SESSION ===",
+          "text": "Segment 2 before Restart - Start marker visible: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Segment 2 before Restart - Stop marker visible: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Segment 2 before Restart - Track markers count: 48",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ STEP 5: Clicked Restart on segment 2 - BUG TRIGGER POINT",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== VERIFYING BUG: Track lines should have disappeared ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "AFTER BUG - Start marker visible: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "AFTER BUG - Stop marker visible: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "AFTER BUG - Track markers count: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠️ BUG CONFIRMED: Track lines have disappeared after segment switch + restart",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Start marker: NOT VISIBLE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Stop marker: NOT VISIBLE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Track marker containers: NONE FOUND",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== BUG REPLICATION TEST COMPLETED ===",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-02T20:02:21.892Z",
-      "endTime": "2026-01-02T20:06:06.022Z",
+      "startTime": "2026-01-27T22:50:13.997Z",
+      "endTime": "2026-01-27T22:52:25.620Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS027_trackHistory.spec.js",
       "fileName": "TS027_trackHistory",
-      "line": 23
+      "line": 533
     }
   ]
 }
