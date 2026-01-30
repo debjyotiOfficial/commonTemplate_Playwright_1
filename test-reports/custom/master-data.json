@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-27T22:52:27.992Z",
+  "lastUpdated": "2026-01-30T19:48:56.055Z",
   "tests": [
     {
       "testCaseNo": "TC-A",
@@ -8,7 +8,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 2454,
+      "duration": 55470,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -16,13 +16,67 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 26 minutes). Skipping login.",
+          "text": "Authentication session expired (age: 104 minutes). Re-authenticating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Performing authentication setup...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login page loaded, filling credentials...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked, waiting for login to complete...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to fleet dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashboard loaded, saving session state...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-27T22:50:08.407Z",
-      "endTime": "2026-01-27T22:50:10.861Z",
+      "startTime": "2026-01-30T19:45:56.296Z",
+      "endTime": "2026-01-30T19:46:51.766Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",
@@ -81143,7 +81197,7 @@
       "description": "should manage recent geofence report",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 64486,
+      "duration": 120036,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -81192,6 +81246,36 @@
           "type": "log"
         },
         {
+          "number": 1,
+          "text": "Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Call log:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Retrying navigation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)",
+          "status": "info",
+          "type": "log"
+        },
+        {
           "number": "",
           "text": "Network idle timeout, continuing...",
           "status": "info",
@@ -81202,10 +81286,34 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 5 geofence options",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selecting geofence with value: 53",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table has 1 rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First row has 1 cells",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2026-01-19T18:57:47.555Z",
-      "endTime": "2026-01-19T18:58:52.042Z",
+      "startTime": "2026-01-30T19:46:54.986Z",
+      "endTime": "2026-01-30T19:48:55.023Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS022_recentGeofenceReport.spec.js",
       "fileName": "TS022_recentGeofenceReport",
@@ -86713,11 +86821,11 @@
     {
       "testCaseNo": "TS057-A",
       "module": "Account Health Summary Report",
-      "title": "should display Account Health Summary report and verify device data with Historical Data",
-      "description": "should display Account Health Summary report and verify device data with Historical Data",
+      "title": "should verify Get Support functionality from Account Health Summary",
+      "description": "should verify Get Support functionality from Account Health Summary",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 227759,
+      "duration": 150627,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -86766,404 +86874,8 @@
           "type": "log"
         },
         {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 1: Getting driver count from Driver Card panel...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Number of drivers in Driver Card panel: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Driver names from Driver Card panel: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 2: Opening Account Health Summary report...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 3: Verifying Device Fleet Monitoring Dashboard...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device Fleet Monitoring Dashboard is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 4: Verifying total devices count...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Total devices monitored in report: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Device count matches: Driver Cards (2) = Report (2)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 5: Verifying Device Details table...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 6: Verifying table headers...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 12 table headers",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 1: Device IMEI",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 2: Driver Name",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 3: Device Type",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 4: Status",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 5: SIM Status",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 6: Battery/Voltage",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 7: GPS Satellites",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 8: Signal Quality",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 9: Last GPS Connect",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 10: Last Cell Connect",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 11: Renewal Date",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 12: Historical Data",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 7: Verifying table row count...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Table row count matches device count: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 8: Verifying driver names in table match Driver Card panel...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Driver names from table: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Sales Car1\" found in IoT Device table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Demo 1\" found in IoT Device table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 9: Verifying table data for each device...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Row 2: IMEI=220902734, Driver=Sales Car1, Type=XT2469, Status=Active",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 10: Clicking on Last 30 Days button for Sales Car1...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 11: Verifying Historical Data modal...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Historical Data modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal header shows: Historical Data - Sales Car1 (220902734)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 12: Verifying Historical Data chart...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Chart container not found, checking for alternate selectors...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Historical Data chart is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 13: Testing checkbox filters...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Battery/Voltage\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"GPS Satellites\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Buffered Packets Only\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"No Update Days\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Battery/Voltage checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Battery/Voltage\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Battery/Voltage initial state: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Battery/Voltage after toggle: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Battery/Voltage checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing GPS Satellites checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"GPS Satellites\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "GPS Satellites initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "GPS Satellites after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ GPS Satellites checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Signal Quality (CSQ) checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Signal Quality (CSQ) initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Signal Quality (CSQ) after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Signal Quality (CSQ) checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Buffered Packets Only checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Buffered Packets Only initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
           "number": 1,
-          "text": "⚠ Error testing \"Buffered Packets Only\": locator.click: Timeout 30000ms exceeded.",
+          "text": "Navigation attempt 1 failed: page.goto: net::ERR_NETWORK_CHANGED at https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php",
           "status": "failed",
           "type": "step"
         },
@@ -87175,136 +86887,19 @@
         },
         {
           "number": "",
-          "text": "\u001b[2m  - waiting for locator('#iot-showBuffered').first()\u001b[22m",
+          "text": "\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing No Update Days checkbox...",
+          "text": "Retrying navigation...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"No Update Days\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "No Update Days initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "No Update Days after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ No Update Days checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 14: Verifying chart legend...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"Battery/Voltage\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"GPS Satellites\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"Signal Quality (CSQ)\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"Buffered Packets\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"No Update Days\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 15: Closing Historical Data modal...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Account Health Summary report verification completed successfully!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T20:54:01.331Z",
-      "endTime": "2025-12-15T20:57:49.091Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 26
-    },
-    {
-      "testCaseNo": "TS057-B",
-      "module": "Account Health Summary Report",
-      "title": "should verify Fleet Status Summary cards and table filtering",
-      "description": "should verify Fleet Status Summary cards and table filtering",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 70197,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)",
           "status": "info",
           "type": "log"
         },
@@ -87316,608 +86911,167 @@
         },
         {
           "number": "",
-          "text": "Verifying Fleet Status Summary cards and table filtering...",
+          "text": "Opening Account Health Summary report (attempt 1/3)...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: ALL DEVICES",
+          "text": "Device table is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "ALL DEVICES card count: 2",
+          "text": "✓ Account Health Summary report opened successfully on attempt 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking ALL DEVICES: 2",
+          "text": "Waiting for data to load...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ ALL DEVICES: Card count (2) matches table rows (2)",
+          "text": "Loading indicator not found or already hidden",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: ONLINE & ACTIVE",
+          "text": "Table data rows loaded",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "ONLINE & ACTIVE card count: 1",
+          "text": "Testing Get Support functionality from Account Health Summary...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking ONLINE & ACTIVE: 1",
+          "text": "Step 1: Clicking on Get Support button...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ ONLINE & ACTIVE: Card count (1) matches table rows (1)",
+          "text": "✓ Get Support button is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: SUSPENDED SIMS",
+          "text": "✓ Clicked Get Support button",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "SUSPENDED SIMS card count: 0",
+          "text": "Step 2: Verifying Get Support panel opened...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking SUSPENDED SIMS: 0",
+          "text": "✓ Get Support panel is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ SUSPENDED SIMS: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ Get Support title is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: LOW BATTERY",
+          "text": "Step 3: Filling Get Support form...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "LOW BATTERY card count: 0",
+          "text": "✓ First Name filled: Test",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking LOW BATTERY: 0",
+          "text": "✓ Last Name filled: User",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ LOW BATTERY: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ Email filled: testuser@example.com",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: LOW VOLTAGE",
+          "text": "✓ Phone filled: 5551234567",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "LOW VOLTAGE card count: 0",
+          "text": "✓ Comments filled",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking LOW VOLTAGE: 0",
+          "text": "Step 4: Submitting Get Support form...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ LOW VOLTAGE: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ Submit Request button clicked",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: POOR SIGNAL ACTIVE",
+          "text": "Step 5: Verifying form submission...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "POOR SIGNAL ACTIVE card count: 1",
+          "text": "✓ Get Support form submission success indicator found",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking POOR SIGNAL ACTIVE: 1",
+          "text": "Step 6: Closing Get Support panel...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ POOR SIGNAL ACTIVE: Card count (1) matches table rows (1)",
+          "text": "✓ Attempted to close Get Support panel with Escape key",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: POWER DISCONNECT",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "POWER DISCONNECT card count: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows after clicking POWER DISCONNECT: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ POWER DISCONNECT: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing status card: NOT UPDATING",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "NOT UPDATING card count: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows after clicking NOT UPDATING: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ NOT UPDATING: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Reset filter to ALL DEVICES",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Fleet Status Summary cards and table filtering verification completed!",
+          "text": "✓ Get Support functionality from Account Health Summary verified successfully!",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T20:57:49.119Z",
-      "endTime": "2025-12-15T20:58:59.316Z",
+      "startTime": "2026-01-28T18:57:25.229Z",
+      "endTime": "2026-01-28T18:59:55.856Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 355
-    },
-    {
-      "testCaseNo": "TS057-C",
-      "module": "Account Health Summary Report",
-      "title": "should verify table sorting functionality",
-      "description": "should verify table sorting functionality",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 52946,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing table sorting...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Initial order: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "After ascending sort: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "After descending sort: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Sorting functionality works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ IMEI column sorting tested",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table sorting functionality verified!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T20:58:59.424Z",
-      "endTime": "2025-12-15T20:59:52.370Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 457
-    },
-    {
-      "testCaseNo": "TS057-D",
-      "module": "Account Health Summary Report",
-      "title": "should verify export buttons and file downloads",
-      "description": "should verify export buttons and file downloads",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 86672,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying export buttons and file downloads...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Report table loaded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Export buttons container loaded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing CSV export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV export button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "Regular click failed for CSV, trying force click...",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV export button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-15.csv",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV download verified successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Excel export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel export button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel export button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-15.xlsx",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel download verified successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing PDF export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF export button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF export button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-15.pdf",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF download verified successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Show Map View button...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Show Map View button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Map view is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Export buttons and file downloads verification completed!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T20:59:52.520Z",
-      "endTime": "2025-12-15T21:01:19.192Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 520
-    },
-    {
-      "testCaseNo": "TS057-E",
-      "module": "Account Health Summary Report",
-      "title": "should verify search functionality in device table",
-      "description": "should verify search functionality in device table",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 79078,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying search functionality...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Search results count: 1",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Search for \"Sales Car1\" shows correct results",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Search results for Demo 1 count: 1",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Search for \"Demo 1\" shows correct results",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Search functionality verification completed!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T21:01:19.489Z",
-      "endTime": "2025-12-15T21:02:38.569Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 692
+      "line": 1099
     },
     {
       "testCaseNo": "TS058-A",
@@ -88199,1091 +87353,1971 @@
       "line": 23
     },
     {
+      "testCaseNo": "TS060-A",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Dashcam Safety Report features and API validation",
+      "description": "should verify Dashcam Safety Report features and API validation",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 156123,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam Safety Report panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting first device and submitting...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available devices: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected first device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Setting up API listener and clicking Submit...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Capturing first API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=862798051102933&startDate=2026-01-23&endDate=2026-01-30&clientPath=dashcamdemo1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ First API Response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First API Response Summary",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weightage data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying Safety Score on UI...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Safety Score: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First Device Comparison",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "CHANGING DEVICE AND DATE RANGE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Changing to second device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected second device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Checking date range...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Setting up API listener and clicking Submit for second device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Capturing second API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=353899269355234&startDate=2026-01-23&endDate=2026-01-30&clientPath=dashcamdemo1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API URL Verification",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Correct API endpoint called: getDashCamDriverScore.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ DashcamId in API: 353899269355234",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date parameters present in API call",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Second API Response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second API Response Summary",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weightage data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert types in weightage: 20",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DashCamAlert array length: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying Safety Score on UI for second device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device Comparison",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "DASHCAM SAFETY REPORT TEST SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "First Device Test:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Safety Score: N/A",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Safety Score: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match: NO ⚠",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device Test:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Safety Score: N/A",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match: NO ⚠",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Verification:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ getDashCamDriverScore.php API called for both devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API returns weightage, status, and DashCamAlert data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "NAVIGATING TO SETTINGS VIEW",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings view (weights-view) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 20 alert cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "TESTING ALERT SLIDERS FOR ALL ALERTS",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Initial Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 12: Eyes Closed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 13: Using Phone",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 14: Yawning",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 15: Photo Trap",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 16: Over Speed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 17: Braking",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: NO",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 18: Sharp Turn",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 19: Parking Vibration",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 20: Proximity Alert",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 21: Fatigue",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 22: Smoking",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 23: Abnormal Video Feed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "DASHCAM SAFETY REPORT FULL TEST SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "1. Device Selection & API Validation:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First Device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ getDashCamDriverScore.php API verified for both devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2. Safety Score API vs UI Comparison:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First Device - API: N/A, UI: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device - API: N/A, UI: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "3. Alert Slider Testing Results:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final Safety Score: 0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Score Change: -29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "4. Individual Alert Test Results:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "┌─────────────────────┬────────┬────────┬─────────┬─────────┬─────────┐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Alert Type          │ Before │ After  │ Modal   │ API     │ Changed │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "├─────────────────────┼────────┼────────┼─────────┼─────────┼─────────┤",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Eyes Closed         │      6 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Using Phone         │      9 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Yawning             │      6 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Photo Trap          │      3 │      8 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Over Speed          │      8 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Braking             │      7 │      7 │   ✓   │   ✓   │   ✗   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Sharp Turn          │      7 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Parking Vibration   │      1 │      8 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Proximity Alert     │      8 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Fatigue             │      2 │      8 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Smoking             │      9 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Abnormal Video Feed │      7 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "└─────────────────────┴────────┴────────┴─────────┴─────────┴─────────┘",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "5. Test Statistics:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Alerts Tested: 12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successful Tests: 12/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modals Opened: 12/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Calls Made: 12/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weights Changed: 11/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "6. Safety Score Progression:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "7. Level of Importance Ranges:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Low (Blue): 1-3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Medium (Yellow): 3-7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "High (Red): 7-10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "TEST COMPLETED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        }
+      ],
+      "startTime": "2026-01-29T22:14:50.974Z",
+      "endTime": "2026-01-29T22:17:27.097Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 1260
+    },
+    {
       "testCaseNo": "TS061-A",
-      "module": "Custom Logo",
-      "title": "should open Custom Logo Settings modal and verify UI elements",
-      "description": "should open Custom Logo Settings modal and verify UI elements",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 38609,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo (Collapsed Navbar) section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo (Expanded Navbar) section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Found 4 Upload buttons",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Preview section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed preview label is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded preview label is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Reset to Default button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Cancel button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Save button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Close (X) button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ All Custom Logo Settings UI elements verified successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:06:31.854Z",
-      "endTime": "2026-01-19T23:07:10.463Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 134
-    },
-    {
-      "testCaseNo": "TS061-B",
-      "module": "Custom Logo",
-      "title": "should upload Small Logo (Collapsed Navbar) - 80x64 pixels",
-      "description": "should upload Small Logo (Collapsed Navbar) - 80x64 pixels",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 48745,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed navbar preview section visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo upload successful",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:07:10.533Z",
-      "endTime": "2026-01-19T23:07:59.278Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 209
-    },
-    {
-      "testCaseNo": "TS061-C",
-      "module": "Custom Logo",
-      "title": "should upload Large Logo (Expanded Navbar) - 200x64 pixels",
-      "description": "should upload Large Logo (Expanded Navbar) - 200x64 pixels",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 50859,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded navbar preview section visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo upload successful",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:07:59.358Z",
-      "endTime": "2026-01-19T23:08:50.217Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 248
-    },
-    {
-      "testCaseNo": "TS061-D",
-      "module": "Custom Logo",
-      "title": "should upload both logos and verify previews (Collapsed & Expanded)",
-      "description": "should upload both logos and verify previews (Collapsed & Expanded)",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 60307,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Uploading Small Logo (80x64 pixels) ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Uploading Large Logo (200x64 pixels) ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Verifying Preview Section ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed preview label visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded preview label visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Preview section visible with both Collapsed and Expanded labels",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Saving Logo Settings ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal closed after save",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Both logos uploaded and previews verified successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:08:50.291Z",
-      "endTime": "2026-01-19T23:09:50.598Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 287
-    },
-    {
-      "testCaseNo": "TS061-E",
-      "module": "Custom Logo",
-      "title": "should verify logos display in actual navbar (Collapsed and Expanded states)",
-      "description": "should verify logos display in actual navbar (Collapsed and Expanded states)",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 67476,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 1: Upload Custom Logos ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logos saved",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 2: Verify CUSTOM Logo in Collapsed Navbar ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navbar collapsed state: true",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo container is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Collapsed logo dimensions: 80x64",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed logo dimensions match small logo size (~80x64)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom small logo is displayed in collapsed navbar",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Collapsed logo source: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 3: Hover to Expand Navbar and Verify Large Logo ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navbar expanded after hover: true",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Account Settings label not immediately visible, but navbar expanded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Expanded logo dimensions: 160x128",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded logo is wider than collapsed logo",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom large logo is displayed in expanded navbar",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded logo is DIFFERENT from collapsed logo (different images for small/large)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 4: Move Hover Away and Verify Collapsed State ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navbar collapsed after moving hover away: true",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Final collapsed logo dimensions: 80x64",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo display verification completed (Collapsed -> Expanded -> Collapsed)",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:09:50.639Z",
-      "endTime": "2026-01-19T23:10:58.115Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 364
-    },
-    {
-      "testCaseNo": "TS061-F",
-      "module": "Custom Logo",
-      "title": "should display logos on login page",
-      "description": "should display logos on login page",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2026-01-19T23:10:58.125Z",
-      "endTime": "2026-01-19T23:10:58.125Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 504
-    },
-    {
-      "testCaseNo": "TS061-G",
-      "module": "Custom Logo",
-      "title": "should replace existing Small Logo with new one",
-      "description": "should replace existing Small Logo with new one",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 61523,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Replacement small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logo uploaded (preview may be in different format)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo replacement completed successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:10:58.165Z",
-      "endTime": "2026-01-19T23:11:59.688Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 531
-    },
-    {
-      "testCaseNo": "TS061-H",
-      "module": "Custom Logo",
-      "title": "should replace existing Large Logo with new one",
-      "description": "should replace existing Large Logo with new one",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 81825,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Original large logo src:",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Replacement large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo has been replaced",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo replacement completed successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:11:59.712Z",
-      "endTime": "2026-01-19T23:13:21.537Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 575
-    },
-    {
-      "testCaseNo": "TS061-I",
       "module": "Custom Logo",
       "title": "should reset logos to default using Reset to Default button",
       "description": "should reset logos to default using Reset to Default button",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 311476,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "getByText('Collapsed', { exact: true }",
-        "expected": "Element should be visible on page",
-        "actual": "hidden",
-        "timeout": "10s",
-        "file": "TS061_customLogo.spec.js",
-        "line": 617,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  getByText('Collapsed', { exact: true })\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for getByText('Collapsed', { exact: true })\n    12 × locator resolved to <p>Collapsed</p>\n       - unexpected value \"hidden\"\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  getByText('Collapsed', { exact: true })\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for getByText('Collapsed', { exact: true })\n    12 × locator resolved to <p>Collapsed</p>\n       - unexpected value \"hidden\"\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js:819:45"
-      },
-      "videoPath": "videos/TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm",
-      "videoIdentifier": "TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 215312,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
@@ -89334,6 +89368,24 @@
         },
         {
           "number": "",
+          "text": "✓ Accounts menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button clicked (normal click)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ get_custom_logo API called (status: 200)",
           "status": "info",
           "type": "log"
@@ -89364,13 +89416,13 @@
         },
         {
           "number": "",
-          "text": "✓ API Response: {\"status\":true,\"message\":\"Custom logos reset to default\"}",
+          "text": "✓ API Response: {\"status\":true,\"message\":\"No custom logos to reset\"}",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Initial reset API verified: {\"status\":true,\"message\":\"Custom logos reset to default\"}",
+          "text": "✓ Initial reset API verified: {\"status\":true,\"message\":\"No custom logos to reset\"}",
           "status": "info",
           "type": "log"
         },
@@ -89395,6 +89447,24 @@
         {
           "number": "",
           "text": "✓ Verified logo is actual default (file URL, not base64 custom logo)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Accounts menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button clicked (normal click)",
           "status": "info",
           "type": "log"
         },
@@ -89514,6 +89584,24 @@
         },
         {
           "number": "",
+          "text": "✓ Accounts menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button clicked (normal click)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ get_custom_logo API called (status: 200)",
           "status": "info",
           "type": "log"
@@ -89568,768 +89656,95 @@
         },
         {
           "number": "",
-          "text": "=== Step 5: Verify Uploaded Icons Are Replaced with Platform Logo ===",
+          "text": "=== Step 5: Check if Modal is Still Open After Reset ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Small logo preview AFTER reset: N/A",
+          "text": "Modal still open after reset: false",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Large logo preview AFTER reset: N/A",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:13:22.007Z",
-      "endTime": "2026-01-19T23:18:33.483Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 617
-    },
-    {
-      "testCaseNo": "TS061-J",
-      "module": "Custom Logo",
-      "title": "should cancel changes using Cancel button",
-      "description": "should cancel changes using Cancel button",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 53608,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "text": "✓ Modal closed after reset - this is expected behavior",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Config loaded successfully",
+          "text": "=== Step 6: Verify Navbar Logo Reset to Default ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Preserving cookies (using stored auth session)",
+          "text": "Reset navbar logo: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png\")...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "text": "✓ Navbar logo has been reset to DEFAULT logo",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Config loaded successfully",
+          "text": "✓ Confirmed navbar shows default logo (not custom base64 logo)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Using stored authentication session (skipping login)...",
+          "text": "✓ Confirmed uploaded custom icons are no longer displayed",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "=== Step 7: Verify Reset Persisted After Page Refresh ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Network idle timeout, continuing...",
+          "text": "Logo after refresh: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png\")...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Page loaded successfully",
+          "text": "✓ Default logo persisted after page refresh",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
+          "text": "✓ Uploaded icons remain replaced with platform default after refresh",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
+          "text": "✓ Reset to Default functionality fully verified",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ New logo file selected (not saved yet)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Cancel button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal closed without saving",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Verified changes were discarded",
+          "text": "✓ Summary: Uploaded icons successfully replaced with platform logos",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-19T23:18:36.376Z",
-      "endTime": "2026-01-19T23:19:29.985Z",
+      "startTime": "2026-01-29T23:03:10.000Z",
+      "endTime": "2026-01-29T23:06:45.313Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
       "fileName": "TS061_customLogo",
-      "line": 868
-    },
-    {
-      "testCaseNo": "TS061-K",
-      "module": "Custom Logo",
-      "title": "should reject invalid file type upload for Small Logo",
-      "description": "should reject invalid file type upload for Small Logo",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 39719,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Attempted to upload invalid file type",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "✓ Error message displayed for invalid file type",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal remains functional after invalid file upload",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Invalid file type rejection test passed",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:19:30.041Z",
-      "endTime": "2026-01-19T23:20:09.760Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 910
-    },
-    {
-      "testCaseNo": "TS061-L",
-      "module": "Custom Logo",
-      "title": "should reject oversized file upload for Large Logo",
-      "description": "should reject oversized file upload for Large Logo",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 39582,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Attempted to upload oversized file (>2MB)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "✓ Error message displayed for oversized file",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal remains functional after oversized file upload",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Oversized file handling test passed",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:20:09.844Z",
-      "endTime": "2026-01-19T23:20:49.427Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 954
-    },
-    {
-      "testCaseNo": "TS061-M",
-      "module": "Custom Logo",
-      "title": "should deny access for non-admin user",
-      "description": "should deny access for non-admin user",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2026-01-19T23:20:49.439Z",
-      "endTime": "2026-01-19T23:20:49.439Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 998
-    },
-    {
-      "testCaseNo": "TS061-N",
-      "module": "Custom Logo",
-      "title": "should persist logos after page refresh",
-      "description": "should persist logos after page refresh",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 49070,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Original navbar logo background: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo container visible after refresh",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Refreshed navbar logo background: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logo background matches after refresh",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logo persistence verified",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:20:49.526Z",
-      "endTime": "2026-01-19T23:21:38.596Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1040
-    },
-    {
-      "testCaseNo": "TS061-O",
-      "module": "Custom Logo",
-      "title": "should display fallback default logo when custom logo fails to load",
-      "description": "should display fallback default logo when custom logo fails to load",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 68496,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo container is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Logo background after blocking: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Fallback/default logo is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Fallback logo handling verified",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:21:38.769Z",
-      "endTime": "2026-01-19T23:22:47.267Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1074
-    },
-    {
-      "testCaseNo": "TS061-P",
-      "module": "Custom Logo",
-      "title": "should include custom logo in PDF report generation",
-      "description": "should include custom logo in PDF report generation",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2026-01-19T23:22:47.274Z",
-      "endTime": "2026-01-19T23:22:47.274Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1109
-    },
-    {
-      "testCaseNo": "TS061-Q",
-      "module": "Custom Logo",
-      "title": "should handle corrupted image file gracefully",
-      "description": "should handle corrupted image file gracefully",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 38186,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Attempted to upload corrupted image file",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ System handled corrupted file upload",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ System remains stable after corrupted file upload",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:22:47.301Z",
-      "endTime": "2026-01-19T23:23:25.487Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1142
-    },
-    {
-      "testCaseNo": "TS061-R",
-      "module": "Custom Logo",
-      "title": "should close modal using X button",
-      "description": "should close modal using X button",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 42355,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal is open",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ X button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal closed via X button",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:23:25.565Z",
-      "endTime": "2026-01-19T23:24:07.921Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1181
+      "line": 645
     },
     {
       "testCaseNo": "TS062-A",

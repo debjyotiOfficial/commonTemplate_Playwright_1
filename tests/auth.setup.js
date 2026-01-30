@@ -35,7 +35,7 @@ setup('authenticate', async ({ page }, testInfo) => {
     const loginUrl = config.urls.backAdminLoginPage;
 
     await page.goto(loginUrl, {
-        waitUntil: 'networkidle',
+        waitUntil: 'domcontentloaded',
         timeout: 60000  // 1 minute for login page
     });
 

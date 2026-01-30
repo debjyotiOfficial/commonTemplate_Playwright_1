@@ -1,1100 +1,39 @@
 {
   "summary": {
-    "total": 18,
-    "passed": 14,
-    "failed": 1,
-    "skipped": 3,
-    "duration": 1872437,
-    "startTime": "2026-01-19T23:05:17.954Z",
-    "endTime": "2026-01-19T23:36:30.391Z"
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 221400,
+    "startTime": "2026-01-29T23:03:04.995Z",
+    "endTime": "2026-01-29T23:06:46.395Z"
   },
   "tests": [
     {
       "testCaseNo": "TS061-A",
       "module": "Custom Logo",
-      "title": "should open Custom Logo Settings modal and verify UI elements",
-      "description": "should open Custom Logo Settings modal and verify UI elements",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 38609,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo (Collapsed Navbar) section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo recommended size (80x64 pixels) is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo (Expanded Navbar) section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo recommended size (200x64 pixels) is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Found 4 Upload buttons",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Preview section is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed preview label is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded preview label is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Reset to Default button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Cancel button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Save button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Close (X) button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ All Custom Logo Settings UI elements verified successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:06:31.854Z",
-      "endTime": "2026-01-19T23:07:10.463Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 134
-    },
-    {
-      "testCaseNo": "TS061-B",
-      "module": "Custom Logo",
-      "title": "should upload Small Logo (Collapsed Navbar) - 80x64 pixels",
-      "description": "should upload Small Logo (Collapsed Navbar) - 80x64 pixels",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 48745,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed navbar preview section visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo upload successful",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:07:10.533Z",
-      "endTime": "2026-01-19T23:07:59.278Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 209
-    },
-    {
-      "testCaseNo": "TS061-C",
-      "module": "Custom Logo",
-      "title": "should upload Large Logo (Expanded Navbar) - 200x64 pixels",
-      "description": "should upload Large Logo (Expanded Navbar) - 200x64 pixels",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 50859,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded navbar preview section visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo upload successful",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:07:59.358Z",
-      "endTime": "2026-01-19T23:08:50.217Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 248
-    },
-    {
-      "testCaseNo": "TS061-D",
-      "module": "Custom Logo",
-      "title": "should upload both logos and verify previews (Collapsed & Expanded)",
-      "description": "should upload both logos and verify previews (Collapsed & Expanded)",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 60307,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Uploading Small Logo (80x64 pixels) ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Uploading Large Logo (200x64 pixels) ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Verifying Preview Section ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed preview label visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded preview label visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Preview section visible with both Collapsed and Expanded labels",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Saving Logo Settings ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal closed after save",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Both logos uploaded and previews verified successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:08:50.291Z",
-      "endTime": "2026-01-19T23:09:50.598Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 287
-    },
-    {
-      "testCaseNo": "TS061-E",
-      "module": "Custom Logo",
-      "title": "should verify logos display in actual navbar (Collapsed and Expanded states)",
-      "description": "should verify logos display in actual navbar (Collapsed and Expanded states)",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 67476,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 1: Upload Custom Logos ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logos saved",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 2: Verify CUSTOM Logo in Collapsed Navbar ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navbar collapsed state: true",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo container is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Collapsed logo dimensions: 80x64",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Collapsed logo dimensions match small logo size (~80x64)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom small logo is displayed in collapsed navbar",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Collapsed logo source: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAADKklEQVR4AeyZPW7bQBCFR7mIF...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 3: Hover to Expand Navbar and Verify Large Logo ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navbar expanded after hover: true",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Account Settings label not immediately visible, but navbar expanded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Expanded logo dimensions: 160x128",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded logo is wider than collapsed logo",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom large logo is displayed in expanded navbar",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Expanded logo is DIFFERENT from collapsed logo (different images for small/large)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "=== Step 4: Move Hover Away and Verify Collapsed State ===",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navbar collapsed after moving hover away: true",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Final collapsed logo dimensions: 80x64",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo display verification completed (Collapsed -> Expanded -> Collapsed)",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:09:50.639Z",
-      "endTime": "2026-01-19T23:10:58.115Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 364
-    },
-    {
-      "testCaseNo": "TS061-F",
-      "module": "Custom Logo",
-      "title": "should display logos on login page",
-      "description": "should display logos on login page",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2026-01-19T23:10:58.125Z",
-      "endTime": "2026-01-19T23:10:58.125Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 504
-    },
-    {
-      "testCaseNo": "TS061-G",
-      "module": "Custom Logo",
-      "title": "should replace existing Small Logo with new one",
-      "description": "should replace existing Small Logo with new one",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 61523,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Replacement small logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logo uploaded (preview may be in different format)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Small Logo replacement completed successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:10:58.165Z",
-      "endTime": "2026-01-19T23:11:59.688Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 531
-    },
-    {
-      "testCaseNo": "TS061-H",
-      "module": "Custom Logo",
-      "title": "should replace existing Large Logo with new one",
-      "description": "should replace existing Large Logo with new one",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 81825,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Original large logo src:",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Replacement large logo file selected",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large logo has been replaced",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ save_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Large Logo replacement completed successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:11:59.712Z",
-      "endTime": "2026-01-19T23:13:21.537Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 575
-    },
-    {
-      "testCaseNo": "TS061-I",
-      "module": "Custom Logo",
       "title": "should reset logos to default using Reset to Default button",
       "description": "should reset logos to default using Reset to Default button",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 311476,
-      "failureReason": "Error: expect(locator).toBeVisible() failed",
-      "parsedError": {
-        "type": "Element Not Visible",
-        "element": "getByText('Collapsed', { exact: true }",
-        "expected": "Element should be visible on page",
-        "actual": "hidden",
-        "timeout": "10s",
-        "file": "TS061_customLogo.spec.js",
-        "line": 617,
-        "suggestion": "Check if the page loaded correctly, or if the selector has changed",
-        "cleanMessage": "Error: expect(locator).toBeVisible() failed",
-        "fullMessage": "Error: expect(locator).toBeVisible() failed\n\nLocator:  getByText('Collapsed', { exact: true })\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for getByText('Collapsed', { exact: true })\n    12 × locator resolved to <p>Collapsed</p>\n       - unexpected value \"hidden\"\n",
-        "stackTrace": "Error: expect(locator).toBeVisible() failed\n\nLocator:  getByText('Collapsed', { exact: true })\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for getByText('Collapsed', { exact: true })\n    12 × locator resolved to <p>Collapsed</p>\n       - unexpected value \"hidden\"\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js:819:45"
-      },
-      "videoPath": "videos/TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm",
-      "videoIdentifier": "TS061_customLogo-should-reset-logos-to-default-using-Reset-to-Defau.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 215312,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
@@ -1145,6 +84,24 @@
         },
         {
           "number": "",
+          "text": "✓ Accounts menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button clicked (normal click)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ get_custom_logo API called (status: 200)",
           "status": "info",
           "type": "log"
@@ -1175,13 +132,13 @@
         },
         {
           "number": "",
-          "text": "✓ API Response: {\"status\":true,\"message\":\"Custom logos reset to default\"}",
+          "text": "✓ API Response: {\"status\":true,\"message\":\"No custom logos to reset\"}",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Initial reset API verified: {\"status\":true,\"message\":\"Custom logos reset to default\"}",
+          "text": "✓ Initial reset API verified: {\"status\":true,\"message\":\"No custom logos to reset\"}",
           "status": "info",
           "type": "log"
         },
@@ -1206,6 +163,24 @@
         {
           "number": "",
           "text": "✓ Verified logo is actual default (file URL, not base64 custom logo)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Accounts menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button clicked (normal click)",
           "status": "info",
           "type": "log"
         },
@@ -1325,6 +300,24 @@
         },
         {
           "number": "",
+          "text": "✓ Accounts menu clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Custom Logo button clicked (normal click)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ get_custom_logo API called (status: 200)",
           "status": "info",
           "type": "log"
@@ -1379,768 +372,95 @@
         },
         {
           "number": "",
-          "text": "=== Step 5: Verify Uploaded Icons Are Replaced with Platform Logo ===",
+          "text": "=== Step 5: Check if Modal is Still Open After Reset ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Small logo preview AFTER reset: N/A",
+          "text": "Modal still open after reset: false",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Large logo preview AFTER reset: N/A",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:13:22.007Z",
-      "endTime": "2026-01-19T23:18:33.483Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 617
-    },
-    {
-      "testCaseNo": "TS061-J",
-      "module": "Custom Logo",
-      "title": "should cancel changes using Cancel button",
-      "description": "should cancel changes using Cancel button",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 53608,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "text": "✓ Modal closed after reset - this is expected behavior",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Config loaded successfully",
+          "text": "=== Step 6: Verify Navbar Logo Reset to Default ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Preserving cookies (using stored auth session)",
+          "text": "Reset navbar logo: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png\")...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "text": "✓ Navbar logo has been reset to DEFAULT logo",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Config loaded successfully",
+          "text": "✓ Confirmed navbar shows default logo (not custom base64 logo)",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Using stored authentication session (skipping login)...",
+          "text": "✓ Confirmed uploaded custom icons are no longer displayed",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "=== Step 7: Verify Reset Persisted After Page Refresh ===",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Network idle timeout, continuing...",
+          "text": "Logo after refresh: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.png\")...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Page loaded successfully",
+          "text": "✓ Default logo persisted after page refresh",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
+          "text": "✓ Uploaded icons remain replaced with platform default after refresh",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
+          "text": "✓ Reset to Default functionality fully verified",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ New logo file selected (not saved yet)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop modal appeared",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Crop Apply button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Cancel button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal closed without saving",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Verified changes were discarded",
+          "text": "✓ Summary: Uploaded icons successfully replaced with platform logos",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-19T23:18:36.376Z",
-      "endTime": "2026-01-19T23:19:29.985Z",
+      "startTime": "2026-01-29T23:03:10.000Z",
+      "endTime": "2026-01-29T23:06:45.313Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
       "fileName": "TS061_customLogo",
-      "line": 868
-    },
-    {
-      "testCaseNo": "TS061-K",
-      "module": "Custom Logo",
-      "title": "should reject invalid file type upload for Small Logo",
-      "description": "should reject invalid file type upload for Small Logo",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 39719,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Attempted to upload invalid file type",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "✓ Error message displayed for invalid file type",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal remains functional after invalid file upload",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Invalid file type rejection test passed",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:19:30.041Z",
-      "endTime": "2026-01-19T23:20:09.760Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 910
-    },
-    {
-      "testCaseNo": "TS061-L",
-      "module": "Custom Logo",
-      "title": "should reject oversized file upload for Large Logo",
-      "description": "should reject oversized file upload for Large Logo",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 39582,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Attempted to upload oversized file (>2MB)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "✓ Error message displayed for oversized file",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal remains functional after oversized file upload",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Oversized file handling test passed",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:20:09.844Z",
-      "endTime": "2026-01-19T23:20:49.427Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 954
-    },
-    {
-      "testCaseNo": "TS061-M",
-      "module": "Custom Logo",
-      "title": "should deny access for non-admin user",
-      "description": "should deny access for non-admin user",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2026-01-19T23:20:49.439Z",
-      "endTime": "2026-01-19T23:20:49.439Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 998
-    },
-    {
-      "testCaseNo": "TS061-N",
-      "module": "Custom Logo",
-      "title": "should persist logos after page refresh",
-      "description": "should persist logos after page refresh",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 49070,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Original navbar logo background: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo container visible after refresh",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Refreshed navbar logo background: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logo background matches after refresh",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Logo persistence verified",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:20:49.526Z",
-      "endTime": "2026-01-19T23:21:38.596Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1040
-    },
-    {
-      "testCaseNo": "TS061-O",
-      "module": "Custom Logo",
-      "title": "should display fallback default logo when custom logo fails to load",
-      "description": "should display fallback default logo when custom logo fails to load",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 68496,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Navbar logo container is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Logo background after blocking: url(\"https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet-new-2025/logo_small.pn...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Fallback/default logo is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Fallback logo handling verified",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:21:38.769Z",
-      "endTime": "2026-01-19T23:22:47.267Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1074
-    },
-    {
-      "testCaseNo": "TS061-P",
-      "module": "Custom Logo",
-      "title": "should include custom logo in PDF report generation",
-      "description": "should include custom logo in PDF report generation",
-      "status": "skipped",
-      "statusDisplay": "SKIPPED",
-      "duration": 0,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [],
-      "startTime": "2026-01-19T23:22:47.274Z",
-      "endTime": "2026-01-19T23:22:47.274Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1109
-    },
-    {
-      "testCaseNo": "TS061-Q",
-      "module": "Custom Logo",
-      "title": "should handle corrupted image file gracefully",
-      "description": "should handle corrupted image file gracefully",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 38186,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Attempted to upload corrupted image file",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ System handled corrupted file upload",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ System remains stable after corrupted file upload",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:22:47.301Z",
-      "endTime": "2026-01-19T23:23:25.487Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1142
-    },
-    {
-      "testCaseNo": "TS061-R",
-      "module": "Custom Logo",
-      "title": "should close modal using X button",
-      "description": "should close modal using X button",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 42355,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ get_custom_logo API called (status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Custom Logo Settings modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal is open",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ X button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal closed via X button",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-19T23:23:25.565Z",
-      "endTime": "2026-01-19T23:24:07.921Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS061_customLogo.spec.js",
-      "fileName": "TS061_customLogo",
-      "line": 1181
+      "line": 645
     }
   ]
 }

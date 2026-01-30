@@ -1,0 +1,1954 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 162604,
+    "startTime": "2026-01-29T22:14:45.430Z",
+    "endTime": "2026-01-29T22:17:28.034Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS060-A",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Dashcam Safety Report features and API validation",
+      "description": "should verify Dashcam Safety Report features and API validation",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 156123,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam Safety Report panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting first device and submitting...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available devices: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected first device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Setting up API listener and clicking Submit...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Capturing first API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=862798051102933&startDate=2026-01-23&endDate=2026-01-30&clientPath=dashcamdemo1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ First API Response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First API Response Summary",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weightage data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying Safety Score on UI...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Safety Score: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First Device Comparison",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "CHANGING DEVICE AND DATE RANGE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Changing to second device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected second device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Checking date range...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Setting up API listener and clicking Submit for second device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Capturing second API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=353899269355234&startDate=2026-01-23&endDate=2026-01-30&clientPath=dashcamdemo1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API URL Verification",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Correct API endpoint called: getDashCamDriverScore.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ DashcamId in API: 353899269355234",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date parameters present in API call",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Second API Response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second API Response Summary",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Weightage data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert types in weightage: 20",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Status data present: Yes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DashCamAlert array length: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying Safety Score on UI for second device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device Comparison",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "DASHCAM SAFETY REPORT TEST SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "First Device Test:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Safety Score: N/A",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Safety Score: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match: NO ⚠",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device Test:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Safety Score: N/A",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "UI Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Match: NO ⚠",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Verification:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ getDashCamDriverScore.php API called for both devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API returns weightage, status, and DashCamAlert data",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "NAVIGATING TO SETTINGS VIEW",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings view (weights-view) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 20 alert cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "TESTING ALERT SLIDERS FOR ALL ALERTS",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Initial Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 12: Eyes Closed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 13: Using Phone",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 14: Yawning",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 15: Photo Trap",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 16: Over Speed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 17: Braking",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: NO",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 18: Sharp Turn",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 19: Parking Vibration",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 20: Proximity Alert",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 21: Fatigue",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 22: Smoking",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 23: Abnormal Video Feed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "DASHCAM SAFETY REPORT FULL TEST SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "1. Device Selection & API Validation:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First Device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device: M4000-Training3 Off  (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ getDashCamDriverScore.php API verified for both devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2. Safety Score API vs UI Comparison:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First Device - API: N/A, UI: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Second Device - API: N/A, UI: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "3. Alert Slider Testing Results:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Safety Score: 29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final Safety Score: 0%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Score Change: -29%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "4. Individual Alert Test Results:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "┌─────────────────────┬────────┬────────┬─────────┬─────────┬─────────┐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Alert Type          │ Before │ After  │ Modal   │ API     │ Changed │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "├─────────────────────┼────────┼────────┼─────────┼─────────┼─────────┤",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Eyes Closed         │      6 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Using Phone         │      9 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Yawning             │      6 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Photo Trap          │      3 │      8 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Over Speed          │      8 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Braking             │      7 │      7 │   ✓   │   ✓   │   ✗   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Sharp Turn          │      7 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Parking Vibration   │      1 │      8 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Proximity Alert     │      8 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Fatigue             │      2 │      8 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Smoking             │      9 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "│ Abnormal Video Feed │      7 │      2 │   ✓   │   ✓   │   ✓   │",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "└─────────────────────┴────────┴────────┴─────────┴─────────┴─────────┘",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "5. Test Statistics:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Alerts Tested: 12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successful Tests: 12/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modals Opened: 12/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Calls Made: 12/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weights Changed: 11/12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "6. Safety Score Progression:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "7. Level of Importance Ranges:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Low (Blue): 1-3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Medium (Yellow): 3-7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "High (Red): 7-10",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "TEST COMPLETED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        }
+      ],
+      "startTime": "2026-01-29T22:14:50.974Z",
+      "endTime": "2026-01-29T22:17:27.097Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 1260
+    }
+  ]
+}

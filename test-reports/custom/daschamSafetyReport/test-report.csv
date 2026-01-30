@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS060-A,"Dashcam Safety Report","should verify Dashcam Safety Report features and API validation",PASSED,156.12,"",N/A,TS060_daschamSafetyReport.spec.js,1260

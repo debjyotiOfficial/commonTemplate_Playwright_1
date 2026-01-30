@@ -1,14 +1,23 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="141.856707">
-<testsuite name="auth.setup.js" timestamp="2026-01-27T22:50:06.165Z" hostname="setup" tests="1" failures="0" skipped="0" time="2.454" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="2.454">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="182.272521">
+<testsuite name="auth.setup.js" timestamp="2026-01-30T19:45:53.903Z" hostname="setup" tests="1" failures="0" skipped="0" time="55.47" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="55.47">
 <system-out>
-<![CDATA[Valid authentication session found (age: 26 minutes). Skipping login.
+<![CDATA[Authentication session expired (age: 104 minutes). Re-authenticating...
+Performing authentication setup...
+Login page loaded, filling credentials...
+Username filled
+Password filled
+Submit clicked, waiting for login to complete...
+Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php
+Navigating to fleet dashboard...
+Dashboard loaded, saving session state...
+Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS027_trackHistory.spec.js" timestamp="2026-01-27T22:50:06.165Z" hostname="chromium" tests="1" failures="0" skipped="0" time="131.623" errors="0">
-<testcase name="Track History Tests › should verify track lines disappear bug - segment switch after restart" classname="TS027_trackHistory.spec.js" time="131.623">
+<testsuite name="TS022_recentGeofenceReport.spec.js" timestamp="2026-01-30T19:45:53.903Z" hostname="chromium" tests="1" failures="0" skipped="0" time="120.036" errors="0">
+<testcase name="Recent geofence report › should manage recent geofence report" classname="TS022_recentGeofenceReport.spec.js" time="120.036">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -17,33 +26,18 @@ Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.
+Call log:
+[2m  - navigating to "https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php", waiting until "domcontentloaded"[22m
+
+Retrying navigation...
+Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)
 Network idle timeout, continuing...
 Page loaded successfully
-=== BUG REPLICATION: Starting sequence ===
-Checking initial visibility of track elements for segment 1...
-Initial Start marker visible: true
-Initial Stop marker visible: true
-Initial Track markers count: 36
-✓ STEP 1: Clicked Play on segment 1
-✓ STEP 2: Clicked Pause
-✓ STEP 3: Clicked Restart on segment 1
-After Restart 1 - Start marker visible: true
-After Restart 1 - Stop marker visible: false
-After Restart 1 - Track markers count: 9
-✓ STEP 4: Clicked on segment 2
-Segment 2 before Restart - Start marker visible: true
-Segment 2 before Restart - Stop marker visible: true
-Segment 2 before Restart - Track markers count: 48
-✓ STEP 5: Clicked Restart on segment 2 - BUG TRIGGER POINT
-=== VERIFYING BUG: Track lines should have disappeared ===
-AFTER BUG - Start marker visible: false
-AFTER BUG - Stop marker visible: false
-AFTER BUG - Track markers count: 0
-⚠️ BUG CONFIRMED: Track lines have disappeared after segment switch + restart
-   - Start marker: NOT VISIBLE
-   - Stop marker: NOT VISIBLE
-   - Track marker containers: NONE FOUND
-=== BUG REPLICATION TEST COMPLETED ===
+Found 5 geofence options
+Selecting geofence with value: 53
+Table has 1 rows
+First row has 1 cells
 ]]>
 </system-out>
 </testcase>

@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 141664,
-    "startTime": "2026-01-27T22:50:06.166Z",
-    "endTime": "2026-01-27T22:52:27.830Z"
+    "duration": 182068,
+    "startTime": "2026-01-30T19:45:53.904Z",
+    "endTime": "2026-01-30T19:48:55.972Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "authenticate",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 2454,
+      "duration": 55470,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -24,13 +24,67 @@
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 26 minutes). Skipping login.",
+          "text": "Authentication session expired (age: 104 minutes). Re-authenticating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Performing authentication setup...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login page loaded, filling credentials...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked, waiting for login to complete...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to fleet dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashboard loaded, saving session state...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-27T22:50:08.407Z",
-      "endTime": "2026-01-27T22:50:10.861Z",
+      "startTime": "2026-01-30T19:45:56.296Z",
+      "endTime": "2026-01-30T19:46:51.766Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",

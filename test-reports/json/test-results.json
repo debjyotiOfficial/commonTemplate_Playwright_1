@@ -64,7 +64,7 @@
         "testMatch": [
           "/auth\\.setup\\.js/"
         ],
-        "timeout": 900000
+        "timeout": 30000
       },
       {
         "outputDir": "C:/cypress-to-playwright-converted/test-results",
@@ -80,7 +80,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 900000
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -113,16 +113,43 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2454,
+                  "duration": 55470,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Valid authentication session found (age: 26 minutes). Skipping login.\n"
+                      "text": "Authentication session expired (age: 104 minutes). Re-authenticating...\n"
+                    },
+                    {
+                      "text": "Performing authentication setup...\n"
+                    },
+                    {
+                      "text": "Login page loaded, filling credentials...\n"
+                    },
+                    {
+                      "text": "Username filled\n"
+                    },
+                    {
+                      "text": "Password filled\n"
+                    },
+                    {
+                      "text": "Submit clicked, waiting for login to complete...\n"
+                    },
+                    {
+                      "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php\n"
+                    },
+                    {
+                      "text": "Navigating to fleet dashboard...\n"
+                    },
+                    {
+                      "text": "Dashboard loaded, saving session state...\n"
+                    },
+                    {
+                      "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-27T22:50:07.382Z",
+                  "startTime": "2026-01-30T19:45:55.268Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -138,25 +165,25 @@
       ]
     },
     {
-      "title": "TS027_trackHistory.spec.js",
-      "file": "TS027_trackHistory.spec.js",
+      "title": "TS022_recentGeofenceReport.spec.js",
+      "file": "TS022_recentGeofenceReport.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Track History Tests",
-          "file": "TS027_trackHistory.spec.js",
+          "title": "Recent geofence report",
+          "file": "TS022_recentGeofenceReport.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should verify track lines disappear bug - segment switch after restart",
+              "title": "should manage recent geofence report",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 900000,
+                  "timeout": 600000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -166,7 +193,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 131623,
+                      "duration": 120036,
                       "errors": [],
                       "stdout": [
                         {
@@ -191,90 +218,36 @@
                           "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
                         },
                         {
+                          "text": "Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "Retrying navigation...\n"
+                        },
+                        {
+                          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)\n"
+                        },
+                        {
                           "text": "Network idle timeout, continuing...\n"
                         },
                         {
                           "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "=== BUG REPLICATION: Starting sequence ===\n"
+                          "text": "Found 5 geofence options\n"
                         },
                         {
-                          "text": "Checking initial visibility of track elements for segment 1...\n"
+                          "text": "Selecting geofence with value: 53\n"
                         },
                         {
-                          "text": "Initial Start marker visible: true\n"
+                          "text": "Table has 1 rows\n"
                         },
                         {
-                          "text": "Initial Stop marker visible: true\n"
-                        },
-                        {
-                          "text": "Initial Track markers count: 36\n"
-                        },
-                        {
-                          "text": "✓ STEP 1: Clicked Play on segment 1\n"
-                        },
-                        {
-                          "text": "✓ STEP 2: Clicked Pause\n"
-                        },
-                        {
-                          "text": "✓ STEP 3: Clicked Restart on segment 1\n"
-                        },
-                        {
-                          "text": "After Restart 1 - Start marker visible: true\n"
-                        },
-                        {
-                          "text": "After Restart 1 - Stop marker visible: false\n"
-                        },
-                        {
-                          "text": "After Restart 1 - Track markers count: 9\n"
-                        },
-                        {
-                          "text": "✓ STEP 4: Clicked on segment 2\n"
-                        },
-                        {
-                          "text": "Segment 2 before Restart - Start marker visible: true\n"
-                        },
-                        {
-                          "text": "Segment 2 before Restart - Stop marker visible: true\n"
-                        },
-                        {
-                          "text": "Segment 2 before Restart - Track markers count: 48\n"
-                        },
-                        {
-                          "text": "✓ STEP 5: Clicked Restart on segment 2 - BUG TRIGGER POINT\n"
-                        },
-                        {
-                          "text": "=== VERIFYING BUG: Track lines should have disappeared ===\n"
-                        },
-                        {
-                          "text": "AFTER BUG - Start marker visible: false\n"
-                        },
-                        {
-                          "text": "AFTER BUG - Stop marker visible: false\n"
-                        },
-                        {
-                          "text": "AFTER BUG - Track markers count: 0\n"
-                        },
-                        {
-                          "text": "⚠️ BUG CONFIRMED: Track lines have disappeared after segment switch + restart\n"
-                        },
-                        {
-                          "text": "   - Start marker: NOT VISIBLE\n"
-                        },
-                        {
-                          "text": "   - Stop marker: NOT VISIBLE\n"
-                        },
-                        {
-                          "text": "   - Track marker containers: NONE FOUND\n"
-                        },
-                        {
-                          "text": "=== BUG REPLICATION TEST COMPLETED ===\n"
+                          "text": "First row has 1 cells\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-27T22:50:12.442Z",
+                      "startTime": "2026-01-30T19:46:53.671Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -282,9 +255,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "891f747b11862c401fac-a0dda804c6971d2516cc",
-              "file": "TS027_trackHistory.spec.js",
-              "line": 533,
+              "id": "d9f72f1af99e06a8a527-5c0bbd9c8530047d50b2",
+              "file": "TS022_recentGeofenceReport.spec.js",
+              "line": 23,
               "column": 5
             }
           ]
@@ -294,8 +267,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-27T22:50:05.715Z",
-    "duration": 141856.707,
+    "startTime": "2026-01-30T19:45:53.593Z",
+    "duration": 182272.521,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

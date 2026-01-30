@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 811351,
-    "startTime": "2026-01-19T18:57:41.927Z",
-    "endTime": "2026-01-19T19:11:13.278Z"
+    "duration": 182068,
+    "startTime": "2026-01-30T19:45:53.904Z",
+    "endTime": "2026-01-30T19:48:55.972Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "should manage recent geofence report",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 64486,
+      "duration": 120036,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -65,6 +65,36 @@
           "type": "log"
         },
         {
+          "number": 1,
+          "text": "Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Call log:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Retrying navigation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)",
+          "status": "info",
+          "type": "log"
+        },
+        {
           "number": "",
           "text": "Network idle timeout, continuing...",
           "status": "info",
@@ -75,10 +105,34 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 5 geofence options",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selecting geofence with value: 53",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Table has 1 rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First row has 1 cells",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2026-01-19T18:57:47.555Z",
-      "endTime": "2026-01-19T18:58:52.042Z",
+      "startTime": "2026-01-30T19:46:54.986Z",
+      "endTime": "2026-01-30T19:48:55.023Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS022_recentGeofenceReport.spec.js",
       "fileName": "TS022_recentGeofenceReport",

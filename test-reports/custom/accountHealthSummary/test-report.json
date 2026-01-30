@@ -1,22 +1,22 @@
 {
   "summary": {
-    "total": 5,
-    "passed": 5,
+    "total": 1,
+    "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 548542,
-    "startTime": "2025-12-15T20:53:53.637Z",
-    "endTime": "2025-12-15T21:03:02.179Z"
+    "duration": 214134,
+    "startTime": "2026-01-28T18:56:22.031Z",
+    "endTime": "2026-01-28T18:59:56.165Z"
   },
   "tests": [
     {
       "testCaseNo": "TS057-A",
       "module": "Account Health Summary Report",
-      "title": "should display Account Health Summary report and verify device data with Historical Data",
-      "description": "should display Account Health Summary report and verify device data with Historical Data",
+      "title": "should verify Get Support functionality from Account Health Summary",
+      "description": "should verify Get Support functionality from Account Health Summary",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 227759,
+      "duration": 150627,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -65,404 +65,8 @@
           "type": "log"
         },
         {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 1: Getting driver count from Driver Card panel...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Number of drivers in Driver Card panel: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Driver names from Driver Card panel: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 2: Opening Account Health Summary report...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 3: Verifying Device Fleet Monitoring Dashboard...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device Fleet Monitoring Dashboard is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 4: Verifying total devices count...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Total devices monitored in report: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Device count matches: Driver Cards (2) = Report (2)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 5: Verifying Device Details table...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 6: Verifying table headers...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Found 12 table headers",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 1: Device IMEI",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 2: Driver Name",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 3: Device Type",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 4: Status",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 5: SIM Status",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 6: Battery/Voltage",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 7: GPS Satellites",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 8: Signal Quality",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 9: Last GPS Connect",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 10: Last Cell Connect",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 11: Renewal Date",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Header 12: Historical Data",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 7: Verifying table row count...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Table row count matches device count: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 8: Verifying driver names in table match Driver Card panel...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Driver names from table: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Sales Car1\" found in IoT Device table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Driver \"Demo 1\" found in IoT Device table",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 9: Verifying table data for each device...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Row 1: IMEI=860111051554966, Driver=Demo 1, Type=MA9276-Portable, Status=Blocked Satellite",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Row 2: IMEI=220902734, Driver=Sales Car1, Type=XT2469, Status=Active",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 10: Clicking on Last 30 Days button for Sales Car1...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 11: Verifying Historical Data modal...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Historical Data modal is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Modal header shows: Historical Data - Sales Car1 (220902734)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 12: Verifying Historical Data chart...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Chart container not found, checking for alternate selectors...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Historical Data chart is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 13: Testing checkbox filters...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Battery/Voltage\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"GPS Satellites\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Buffered Packets Only\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"No Update Days\" is present",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Battery/Voltage checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Battery/Voltage\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Battery/Voltage initial state: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Battery/Voltage after toggle: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Battery/Voltage checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing GPS Satellites checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"GPS Satellites\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "GPS Satellites initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "GPS Satellites after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ GPS Satellites checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Signal Quality (CSQ) checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Signal Quality (CSQ)\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Signal Quality (CSQ) initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Signal Quality (CSQ) after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Signal Quality (CSQ) checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Buffered Packets Only checkbox...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Checkbox \"Buffered Packets Only\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Buffered Packets Only initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
           "number": 1,
-          "text": "⚠ Error testing \"Buffered Packets Only\": locator.click: Timeout 30000ms exceeded.",
+          "text": "Navigation attempt 1 failed: page.goto: net::ERR_NETWORK_CHANGED at https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php",
           "status": "failed",
           "type": "step"
         },
@@ -474,136 +78,19 @@
         },
         {
           "number": "",
-          "text": "\u001b[2m  - waiting for locator('#iot-showBuffered').first()\u001b[22m",
+          "text": "\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing No Update Days checkbox...",
+          "text": "Retrying navigation...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Checkbox \"No Update Days\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "No Update Days initial state: unchecked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "No Update Days after toggle: checked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ No Update Days checkbox toggle works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 14: Verifying chart legend...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"Battery/Voltage\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"GPS Satellites\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"Signal Quality (CSQ)\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"Buffered Packets\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Legend item \"No Update Days\" is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Step 15: Closing Historical Data modal...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Account Health Summary report verification completed successfully!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T20:54:01.331Z",
-      "endTime": "2025-12-15T20:57:49.091Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 26
-    },
-    {
-      "testCaseNo": "TS057-B",
-      "module": "Account Health Summary Report",
-      "title": "should verify Fleet Status Summary cards and table filtering",
-      "description": "should verify Fleet Status Summary cards and table filtering",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 70197,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)",
           "status": "info",
           "type": "log"
         },
@@ -615,608 +102,167 @@
         },
         {
           "number": "",
-          "text": "Verifying Fleet Status Summary cards and table filtering...",
+          "text": "Opening Account Health Summary report (attempt 1/3)...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: ALL DEVICES",
+          "text": "Device table is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "ALL DEVICES card count: 2",
+          "text": "✓ Account Health Summary report opened successfully on attempt 1",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking ALL DEVICES: 2",
+          "text": "Waiting for data to load...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ ALL DEVICES: Card count (2) matches table rows (2)",
+          "text": "Loading indicator not found or already hidden",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: ONLINE & ACTIVE",
+          "text": "Table data rows loaded",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "ONLINE & ACTIVE card count: 1",
+          "text": "Testing Get Support functionality from Account Health Summary...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking ONLINE & ACTIVE: 1",
+          "text": "Step 1: Clicking on Get Support button...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ ONLINE & ACTIVE: Card count (1) matches table rows (1)",
+          "text": "✓ Get Support button is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: SUSPENDED SIMS",
+          "text": "✓ Clicked Get Support button",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "SUSPENDED SIMS card count: 0",
+          "text": "Step 2: Verifying Get Support panel opened...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking SUSPENDED SIMS: 0",
+          "text": "✓ Get Support panel is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ SUSPENDED SIMS: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ Get Support title is visible",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: LOW BATTERY",
+          "text": "Step 3: Filling Get Support form...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "LOW BATTERY card count: 0",
+          "text": "✓ First Name filled: Test",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking LOW BATTERY: 0",
+          "text": "✓ Last Name filled: User",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ LOW BATTERY: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ Email filled: testuser@example.com",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: LOW VOLTAGE",
+          "text": "✓ Phone filled: 5551234567",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "LOW VOLTAGE card count: 0",
+          "text": "✓ Comments filled",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking LOW VOLTAGE: 0",
+          "text": "Step 4: Submitting Get Support form...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ LOW VOLTAGE: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
+          "text": "✓ Submit Request button clicked",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: POOR SIGNAL ACTIVE",
+          "text": "Step 5: Verifying form submission...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "POOR SIGNAL ACTIVE card count: 1",
+          "text": "✓ Get Support form submission success indicator found",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Table rows after clicking POOR SIGNAL ACTIVE: 1",
+          "text": "Step 6: Closing Get Support panel...",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ POOR SIGNAL ACTIVE: Card count (1) matches table rows (1)",
+          "text": "✓ Attempted to close Get Support panel with Escape key",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing status card: POWER DISCONNECT",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "POWER DISCONNECT card count: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows after clicking POWER DISCONNECT: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ POWER DISCONNECT: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing status card: NOT UPDATING",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "NOT UPDATING card count: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table rows after clicking NOT UPDATING: 0",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ NOT UPDATING: Card count is 0, table has 0 rows (filter may not apply for empty categories)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Reset filter to ALL DEVICES",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Fleet Status Summary cards and table filtering verification completed!",
+          "text": "✓ Get Support functionality from Account Health Summary verified successfully!",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-15T20:57:49.119Z",
-      "endTime": "2025-12-15T20:58:59.316Z",
+      "startTime": "2026-01-28T18:57:25.229Z",
+      "endTime": "2026-01-28T18:59:55.856Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
       "fileName": "TS057_accountHealthSummary",
-      "line": 355
-    },
-    {
-      "testCaseNo": "TS057-C",
-      "module": "Account Health Summary Report",
-      "title": "should verify table sorting functionality",
-      "description": "should verify table sorting functionality",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 52946,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing table sorting...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Initial order: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "After ascending sort: [ \u001b[32m'Sales Car1'\u001b[39m, \u001b[32m'Demo 1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "After descending sort: [ \u001b[32m'Demo 1'\u001b[39m, \u001b[32m'Sales Car1'\u001b[39m ]",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Sorting functionality works",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ IMEI column sorting tested",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Table sorting functionality verified!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T20:58:59.424Z",
-      "endTime": "2025-12-15T20:59:52.370Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 457
-    },
-    {
-      "testCaseNo": "TS057-D",
-      "module": "Account Health Summary Report",
-      "title": "should verify export buttons and file downloads",
-      "description": "should verify export buttons and file downloads",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 86672,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying export buttons and file downloads...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Report table loaded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Export buttons container loaded",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing CSV export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV export button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "Regular click failed for CSV, trying force click...",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV export button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV file downloaded: device-fleet-all-devices-2025-12-15.csv",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ CSV download verified successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Excel export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel export button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel export button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel file downloaded: device-fleet-all-devices-2025-12-15.xlsx",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Excel download verified successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing PDF export...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF export button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF export button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF file downloaded: device-fleet-all-devices-2025-12-15.pdf",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ PDF download verified successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Show Map View button...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Show Map View button is visible",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Map view is displayed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Export buttons and file downloads verification completed!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T20:59:52.520Z",
-      "endTime": "2025-12-15T21:01:19.192Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 520
-    },
-    {
-      "testCaseNo": "TS057-E",
-      "module": "Account Health Summary Report",
-      "title": "should verify search functionality in device table",
-      "description": "should verify search functionality in device table",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 79078,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Verifying search functionality...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Search results count: 1",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Search for \"Sales Car1\" shows correct results",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Search results for Demo 1 count: 1",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Search for \"Demo 1\" shows correct results",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Search functionality verification completed!",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2025-12-15T21:01:19.489Z",
-      "endTime": "2025-12-15T21:02:38.569Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS057_accountHealthSummary.spec.js",
-      "fileName": "TS057_accountHealthSummary",
-      "line": 692
+      "line": 1099
     }
   ]
 }

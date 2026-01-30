@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - recentGeofenceReport - 20/1/2026</title>
+    <title>Test Report - recentGeofenceReport - 31/1/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: recentGeofenceReport</div>
             <div class="subtitle">
-                Generated: 20/1/2026, 12:41:13 am |
-                Duration: 811.35s |
+                Generated: 31/1/2026, 1:18:56 am |
+                Duration: 182.07s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -215,7 +215,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (9)</span>
+                                    <span>View Test Steps (18)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -257,6 +257,31 @@
                                                 <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
                                             </div>
                                         
+                                            <div class="step-item failed step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Call log:</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">[2m  - navigating to &quot;https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php&quot;, waiting until &quot;domcontentloaded&quot;[22m</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Retrying navigation...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)</span>
+                                            </div>
+                                        
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Network idle timeout, continuing...</span>
@@ -267,12 +292,32 @@
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 5 geofence options</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selecting geofence with value: 53</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Table has 1 rows</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">First row has 1 cells</span>
+                                            </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>64.49s</strong></td>
+                        <td><strong>120.04s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -326,7 +371,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS022-A","module":"Recent geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"64.49s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS022-A","module":"Recent geofence report","description":"should manage recent geofence report","status":"PASSED","duration":"120.04s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -343,7 +388,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-19.csv';
+            link.download = 'test-report-2026-01-30.csv';
             link.click();
         }
     </script>
