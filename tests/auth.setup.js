@@ -41,27 +41,75 @@ setup('authenticate', async ({ page }, testInfo) => {
 
     console.log('Login page loaded, filling credentials...');
 
+    // Wait for the page to be fully ready
+    await page.waitForTimeout(2000);
+
     // Fill username field - use #username selector
     const usernameField = page.locator('#username');
     await usernameField.waitFor({ state: 'visible', timeout: 30000 });
+    await usernameField.click();
     await usernameField.clear();
     await usernameField.fill(config.credentials.demo.usernameBackup);
-    console.log('Username filled');
+    await page.waitForTimeout(500);
+    console.log('Username filled:', await usernameField.inputValue());
 
     // Fill password field - use #password selector
     const passwordField = page.locator('#password');
     await passwordField.waitFor({ state: 'visible', timeout: 30000 });
+    await passwordField.click();
     await passwordField.clear();
     await passwordField.fill(config.credentials.demo.passwordBackup);
+    await page.waitForTimeout(500);
     console.log('Password filled');
 
-    // Click submit button and wait for navigation
-    const submitButton = page.locator('.submit');
-    await submitButton.click();
-    console.log('Submit clicked, waiting for login to complete...');
+    // Verify credentials are filled before submit
+    const usernameValue = await usernameField.inputValue();
+    const passwordValue = await passwordField.inputValue();
+    console.log('Username value before submit:', usernameValue);
+    console.log('Password filled:', passwordValue ? 'Yes (hidden)' : 'No');
 
-    // Wait for navigation away from login page (to index.php)
-    await page.waitForURL('**/index.php**', { timeout: 60000 });
+    // Wait a bit for any JavaScript to process the filled values
+    await page.waitForTimeout(2000);
+
+    // Click submit button using JavaScript to bypass any event issues
+    const submitButton = page.locator('.submit');
+    await submitButton.waitFor({ state: 'visible', timeout: 10000 });
+
+    console.log('Clicking submit button...');
+
+    // Use Promise.all with navigation wait and click
+    try {
+        await Promise.all([
+            page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 60000 }),
+            submitButton.click()
+        ]);
+    } catch (navError) {
+        console.log('Navigation wait failed, checking current state...');
+    }
+
+    // Check current URL
+    const currentUrl = page.url();
+    console.log('Current URL after submit:', currentUrl);
+
+    // If still on login page, the login failed
+    if (currentUrl.includes('login.php')) {
+        // Take a screenshot for debugging
+        await page.screenshot({ path: 'login-debug.png' });
+        console.log('Debug screenshot saved to login-debug.png');
+
+        // Try submitting the form directly via JavaScript
+        console.log('Trying JavaScript form submission...');
+        await page.evaluate(() => {
+            const form = document.querySelector('form');
+            if (form) {
+                form.submit();
+            }
+        });
+
+        // Wait for navigation after JS submit
+        await page.waitForURL('**/index.php**', { timeout: 60000 });
+    }
+
     console.log('Login successful! Redirected to:', page.url());
 
     // Wait for session to be fully established

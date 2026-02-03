@@ -1,2 +1,6 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS028-A,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,71.87,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport.spec.js,1213
+TS028-A,"Travel Log Report","should display TLR",PASSED,158.24,"",N/A,TS028_travelLogReport.spec.js,87
+TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",PASSED,181.41,"",N/A,TS028_travelLogReport.spec.js,567
+TS028-C,"Travel Log Report","should verify search functionality in TLR",PASSED,129.03,"",N/A,TS028_travelLogReport.spec.js,692
+TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,102.62,"",N/A,TS028_travelLogReport.spec.js,829
+TS028-E,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,75.17,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport.spec.js,1216

@@ -46,8 +46,11 @@ test.describe('Timezone', () => {
           
         // Verify timezone selection
         await expect(page.locator(config.selectors.timezoneSelection.timezoneOptions)).toBeVisible();
-        await page.locator(config.selectors.timezoneSelection.timezoneOptions).scrollIntoViewIfNeeded();
-        await page.locator(config.selectors.timezoneSelection.timezoneOptions).check({ force: true });
+        const radioButton = page.locator(config.selectors.timezoneSelection.timezoneOptions);
+        await radioButton.evaluate(el => {
+            el.scrollIntoView({ block: 'center', behavior: 'instant' });
+            el.click();
+        });
         await expect(page.locator(config.selectors.timezoneSelection.timezoneOptions)).toBeChecked();
           
         // Save changes

@@ -1,15 +1,16 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,55.47,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,1.02,"",N/A,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,4244.73,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add device with custom icon",PASSED,239.54,"",N/A,TS002_addEditDevices,394
-TS003-A,"Timezone","should edit the timezone of users",TIMEDOUT,597.60,"",TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm,TS003_ChangeTimezone,24
+TS003-A,"Timezone","should edit the timezone of users",PASSED,286.72,"",N/A,TS003_ChangeTimezone,24
 TS005-A,"Subgroup","should manage subgroups",PASSED,112.70,"",N/A,TS005_subgroup,32
 TS008-A,"Alert Contact","should add email and phone contacts and configure alert settings",PASSED,137.13,"",N/A,TS008_alertsContact,23
 TS009-A,"Change Alert Settings","should configure after hours settings",PASSED,132.69,"",N/A,TS009_changeAlertSettings,306
 TS011-A,"Add Edit Maintenance Contact","should add the contact details",PASSED,135.69,"",N/A,TS011_addEditMaintenanceContact,23
 TS014-A,"Weekly After Hours Summary - Table Validation","should validate table headers, sorting, and API data matching for specific date range",FAILED,69.65,"TimeoutError: locator.clear: Timeout 30000ms exceeded.",TS014_weeklyAfterHoursSummary_TableValidation-should-validate-table-headers--sorting--and-API-da.webm,TS014_weeklyAfterHoursSummary_TableValidation,21
 TS015-A,"After Hour Summary","should redirect to fleet demo page with demo credentials",PASSED,320.69,"",N/A,TS015_afterHourSummary,23
-TS016-A,"After Hour Insight","should verify after hours insights UI functionality",PASSED,231.55,"",N/A,TS016_afterHoursInsight,306
+TS016-A,"After Hour Insight","should verify after hours data calculations across tabs",FAILED,130.34,"Error: expect(received).toBe(expected) // Object.is equality",TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm,TS016_afterHoursInsight,23
+TS016-B,"After Hour Insight","should verify after hours insights UI functionality",PASSED,252.48,"",N/A,TS016_afterHoursInsight,306
 TS017-A,"After Hour Setting","should edit the after hour settings of a device",PASSED,64.59,"",N/A,TS017_afterHoursSettings,23
 TS018-A,"Create Geofencing","should be able to create new Geofence",PASSED,139.29,"",N/A,TS018_createGeofencing,23
 TS019-A,"view delete geofence","should be able to view, edit and delete geofence",PASSED,49.95,"",N/A,TS019_viewDeleteGeofence,23
@@ -21,7 +22,11 @@ TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,113.69,
 TS026-A,"view edit landmark","should be able to view, edit and delete landmark",PASSED,128.39,"",N/A,TS026_viewEditLandmark,238
 TS026-B,"view edit landmark","should be able to toggle Hide Vehicle Markers for landmarks",PASSED,125.98,"",N/A,TS026_viewEditLandmark,451
 TS027-A,"Track History Tests","should verify track lines disappear bug - segment switch after restart",PASSED,131.62,"",N/A,TS027_trackHistory,533
-TS028-A,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,71.87,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport,1213
+TS028-A,"Travel Log Report","should display TLR",PASSED,158.24,"",N/A,TS028_travelLogReport,87
+TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",PASSED,181.41,"",N/A,TS028_travelLogReport,567
+TS028-C,"Travel Log Report","should verify search functionality in TLR",PASSED,129.03,"",N/A,TS028_travelLogReport,692
+TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,102.62,"",N/A,TS028_travelLogReport,829
+TS028-E,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,75.17,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport,1216
 TS028-A,"Travel Log Report - Filters","should verify Geofence Events checkbox functionality",FAILED,151.43,"Error: expect(received).toBeFalsy()",TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm,TS028_travelLogReportFilters,84
 TS030-A,"Mileage Report","should display start and end mileage of devices",PASSED,88.19,"",N/A,TS030_mileageReport,23
 TS032-A,"30 Day Mileage Report","should be redirected to fleet demo page with demo credentials",PASSED,98.20,"",N/A,TS032_30DayMileageReport,46

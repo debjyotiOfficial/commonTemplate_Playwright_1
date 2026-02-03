@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - afterHoursInsight - 27/1/2026</title>
+    <title>Test Report - afterHoursInsight - 2/2/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,15 +152,15 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: afterHoursInsight</div>
             <div class="subtitle">
-                Generated: 27/1/2026, 1:15:43 am |
-                Duration: 982.07s |
+                Generated: 2/2/2026, 11:55:52 pm |
+                Duration: 482.81s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">1</div>
+                <div class="number">2</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
@@ -168,7 +168,7 @@
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">0</div>
+                <div class="number">1</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">100.0%</div>
+                <div class="number">50.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,18 +207,456 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="After Hour Insight">
+                    <tr data-status="failed" data-module="After Hour Insight">
                         <td><span class="test-case-no">TS016-A</span></td>
+                        <td>After Hour Insight</td>
+                        <td>
+                            <strong>should verify after hours data calculations across tabs</strong>
+                            
+                                <button class="error-toggle" onclick="toggleError(0)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-0" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Assertion Failed</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">TS016_afterHoursInsight.spec.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">23</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Values should be equal</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">&quot;02:42:34&quot;</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Check the expected vs actual values in the assertion</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;02:49:57&quot;
+Received: &quot;02:42:34&quot;</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
+                            
+                            <div class="steps-container">
+                                <button class="steps-toggle" onclick="toggleSteps(0)">
+                                    <span>View Test Steps (73)</span>
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="steps-0" class="steps-panel">
+                                    <div class="steps-header">Test Execution Steps</div>
+                                    <div class="steps-list">
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date set result: {&quot;success&quot;:true,&quot;value&quot;:&quot;2026-01-14 to 2026-01-15&quot;}</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Date set to: 2026-01-14 to 2026-01-15</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Submit button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Found 2 vehicle cards</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Vehicle 1: Sales Car1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Vehicle 2: Demo 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Searched for &quot;Sales Car1&quot;</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Modal opened with Sales Car1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Stored Authorized Hours: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Stored Unauthorized Hours: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Testing ALL tab (all pages) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 1: 10 entries, running total: 00:22:33</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 2: 10 entries, running total: 00:46:26</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 3</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 3: 10 entries, running total: 01:11:34</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 4</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 4: 10 entries, running total: 01:44:06</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 5</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 5: 10 entries, running total: 02:07:24</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 6</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 6: 10 entries, running total: 02:42:34</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 6: Last page reached</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total entries processed: 60</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final total: 02:42:34</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All tab calculated duration: 02:42:34</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Testing AUTHORIZED tab (all pages) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 1: 10 entries, running total: 00:22:33</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 2: 10 entries, running total: 00:46:26</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 3</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 3: 10 entries, running total: 01:11:34</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 4</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 4: 10 entries, running total: 01:44:06</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 5</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 5: 9 entries, running total: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 5: Last page reached</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total entries processed: 49</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final total: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Authorized tab calculated duration: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== Testing UNAUTHORIZED tab (all pages) ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 1: 10 entries, running total: 00:33:28</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Processing page 2</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 2: 3 entries, running total: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Page 2: Last page reached</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Total entries processed: 13</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final total: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Unauthorized tab calculated duration: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== USING SUMMARY CARD VALUES ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Summary Authorized: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Summary Unauthorized: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Summary Total: 02:49:57</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== COMPARISON 2: Authorized Tab vs Summary Authorized ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Authorized tab (all pages): 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Summary authorized: 02:04:43</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== COMPARISON 3: Unauthorized Tab vs Summary Unauthorized ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Unauthorized tab (all pages): 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Summary unauthorized: 00:45:14</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== VERIFICATION: Math Check ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Authorized (02:04:43) + Unauthorized (00:45:14) = 02:49:57</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All tab shows: 02:42:34</span>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>130.34s</strong></td>
+                        <td>
+                            <a href="videos/TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm" class="video-link" target="_blank">Video: TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm</a>
+                        </td>
+                    </tr>
+                    
+                    <tr data-status="passed" data-module="After Hour Insight">
+                        <td><span class="test-case-no">TS016-B</span></td>
                         <td>After Hour Insight</td>
                         <td>
                             <strong>should verify after hours insights UI functionality</strong>
                             
                             <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (476)</span>
+                                <button class="steps-toggle" onclick="toggleSteps(1)">
+                                    <span>View Test Steps (482)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
-                                <div id="steps-0" class="steps-panel">
+                                <div id="steps-1" class="steps-panel">
                                     <div class="steps-header">Test Execution Steps</div>
                                     <div class="steps-list">
                                         
@@ -300,6 +738,36 @@
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">✓ Submit button clicked</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">API Response captured: {</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;data&quot;: [],</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;weekly&quot;: [],</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;AccTime&quot;: {</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Stime&quot;: null,</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">&quot;Etime&quot;: null</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -669,7 +1137,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 11249 E Karen Dr, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Location: E Bell Rd, Scottsdale, AZ</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -714,7 +1182,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 11249 E Karen Dr, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Note: API has no location, UI shows: E Bell Rd, Scottsdale, AZ</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -749,7 +1217,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: McDowell Mountain Ranch Rd, Scottsdale, AZ</span>
+                                                <span class="step-text">Location: 11239 E Karen Dr, Scottsdale, AZ 85255</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -794,7 +1262,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: McDowell Mountain Ranch Rd, Scottsdale, AZ</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 11239 E Karen Dr, Scottsdale, AZ 85255</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -829,7 +1297,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 16715 N 91st St, Scottsdale, AZ 85260</span>
+                                                <span class="step-text">Location: 11203 E Karen Dr, Scottsdale, AZ 85255</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -874,7 +1342,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 16715 N 91st St, Scottsdale, AZ 85260</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 11203 E Karen Dr, Scottsdale, AZ 85255</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -909,7 +1377,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 16826 N 90th St, Scottsdale, AZ 85260</span>
+                                                <span class="step-text">Location: E Bell Rd, Scottsdale, AZ</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -954,7 +1422,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 16826 N 90th St, Scottsdale, AZ 85260</span>
+                                                <span class="step-text">Note: API has no location, UI shows: E Bell Rd, Scottsdale, AZ</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -989,7 +1457,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 11243 E Karen Dr, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Location: 9362 E Bell Rd, Scottsdale, AZ 85260</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1034,7 +1502,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 11243 E Karen Dr, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 9362 E Bell Rd, Scottsdale, AZ 85260</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1069,7 +1537,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Location: 8952 E Bell Rd, Scottsdale, AZ 85255</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1114,7 +1582,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 8952 E Bell Rd, Scottsdale, AZ 85255</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1149,7 +1617,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 18235 N Pima Rd, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Location: 16796 N 90th St, Scottsdale, AZ 85260</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1194,7 +1662,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 18235 N Pima Rd, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Note: API has no location, UI shows: 16796 N 90th St, Scottsdale, AZ 85260</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1229,7 +1697,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Location: 18241 N Pima Rd, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Location: N Pima, Scottsdale, AZ</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -1274,7 +1742,7 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Note: API has no location, UI shows: 18241 N Pima Rd, Scottsdale, AZ 85255</span>
+                                                <span class="step-text">Note: API has no location, UI shows: N Pima, Scottsdale, AZ</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -2607,7 +3075,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>231.55s</strong></td>
+                        <td><strong>252.48s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -2661,7 +3129,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should verify after hours insights UI functionality","status":"PASSED","duration":"231.55s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS016-A","module":"After Hour Insight","description":"should verify after hours data calculations across tabs","status":"FAILED","duration":"130.34s","failureReason":"Error: expect(received).toBe(expected) // Object.is equality","videoIdentifier":"TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm"},{"testCaseNo":"TS016-B","module":"After Hour Insight","description":"should verify after hours insights UI functionality","status":"PASSED","duration":"252.48s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -2678,7 +3146,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-26.csv';
+            link.download = 'test-report-2026-02-02.csv';
             link.click();
         }
     </script>

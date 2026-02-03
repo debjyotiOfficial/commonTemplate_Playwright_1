@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - changeTimezone - 22/1/2026</title>
+    <title>Test Report - changeTimezone - 3/2/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: changeTimezone</div>
             <div class="subtitle">
-                Generated: 22/1/2026, 11:53:55 pm |
-                Duration: 1499.74s |
+                Generated: 3/2/2026, 9:53:02 pm |
+                Duration: 292.92s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -164,7 +164,7 @@
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">0</div>
+                <div class="number">1</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">0.0%</div>
+                <div class="number">100.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,7 +207,7 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="timedOut" data-module="Timezone">
+                    <tr data-status="passed" data-module="Timezone">
                         <td><span class="test-case-no">TS003-A</span></td>
                         <td>Timezone</td>
                         <td>
@@ -215,7 +215,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (8)</span>
+                                    <span>View Test Steps (9)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -259,6 +259,11 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
+                                                <span class="step-text">Network idle timeout, continuing...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
@@ -266,10 +271,10 @@
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status timedOut">TIMEDOUT</span></td>
-                        <td><strong>597.60s</strong></td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>286.72s</strong></td>
                         <td>
-                            <a href="videos/TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm" class="video-link" target="_blank">Video: TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm</a>
+                            <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
@@ -321,7 +326,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS003-A","module":"Timezone","description":"should edit the timezone of users","status":"TIMEDOUT","duration":"597.60s","failureReason":"","videoIdentifier":"TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm"}];
+            const data = [{"testCaseNo":"TS003-A","module":"Timezone","description":"should edit the timezone of users","status":"PASSED","duration":"286.72s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -338,7 +343,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-22.csv';
+            link.download = 'test-report-2026-02-03.csv';
             link.click();
         }
     </script>

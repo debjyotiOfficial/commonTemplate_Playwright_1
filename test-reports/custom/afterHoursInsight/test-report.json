@@ -1,22 +1,493 @@
 {
   "summary": {
-    "total": 1,
+    "total": 2,
     "passed": 1,
-    "failed": 0,
+    "failed": 1,
     "skipped": 0,
-    "duration": 982073,
-    "startTime": "2026-01-26T19:29:21.738Z",
-    "endTime": "2026-01-26T19:45:43.811Z"
+    "duration": 482809,
+    "startTime": "2026-02-02T18:17:49.384Z",
+    "endTime": "2026-02-02T18:25:52.193Z"
   },
   "tests": [
     {
       "testCaseNo": "TS016-A",
       "module": "After Hour Insight",
+      "title": "should verify after hours data calculations across tabs",
+      "description": "should verify after hours data calculations across tabs",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 130342,
+      "failureReason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "\"02:42:34\"",
+        "timeout": null,
+        "file": "TS016_afterHoursInsight.spec.js",
+        "line": 23,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBe(expected) // Object.is equality",
+        "fullMessage": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"02:49:57\"\nReceived: \"02:42:34\"",
+        "stackTrace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"02:49:57\"\nReceived: \"02:42:34\"\n    at C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js:294:32"
+      },
+      "videoPath": "videos/TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm",
+      "videoIdentifier": "TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date set result: {\"success\":true,\"value\":\"2026-01-14 to 2026-01-15\"}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date set to: 2026-01-14 to 2026-01-15",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 2 vehicle cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Vehicle 1: Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Vehicle 2: Demo 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Searched for \"Sales Car1\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal opened with Sales Car1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored Authorized Hours: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Stored Unauthorized Hours: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Testing ALL tab (all pages) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 1: 10 entries, running total: 00:22:33",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 2: 10 entries, running total: 00:46:26",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 3: 10 entries, running total: 01:11:34",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 4",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 4: 10 entries, running total: 01:44:06",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 5: 10 entries, running total: 02:07:24",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 6",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 6: 10 entries, running total: 02:42:34",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 6: Last page reached",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total entries processed: 60",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final total: 02:42:34",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All tab calculated duration: 02:42:34",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Testing AUTHORIZED tab (all pages) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 1: 10 entries, running total: 00:22:33",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 2: 10 entries, running total: 00:46:26",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 3: 10 entries, running total: 01:11:34",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 4",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 4: 10 entries, running total: 01:44:06",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 5: 9 entries, running total: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 5: Last page reached",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total entries processed: 49",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final total: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Authorized tab calculated duration: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== Testing UNAUTHORIZED tab (all pages) ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 1: 10 entries, running total: 00:33:28",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Processing page 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 2: 3 entries, running total: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page 2: Last page reached",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total entries processed: 13",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final total: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unauthorized tab calculated duration: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== USING SUMMARY CARD VALUES ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Summary Authorized: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Summary Unauthorized: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Summary Total: 02:49:57",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== COMPARISON 2: Authorized Tab vs Summary Authorized ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Authorized tab (all pages): 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Summary authorized: 02:04:43",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== COMPARISON 3: Unauthorized Tab vs Summary Unauthorized ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unauthorized tab (all pages): 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Summary unauthorized: 00:45:14",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== VERIFICATION: Math Check ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Authorized (02:04:43) + Unauthorized (00:45:14) = 02:49:57",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All tab shows: 02:42:34",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-02T18:19:25.066Z",
+      "endTime": "2026-02-02T18:21:35.408Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js",
+      "fileName": "TS016_afterHoursInsight",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS016-B",
+      "module": "After Hour Insight",
       "title": "should verify after hours insights UI functionality",
       "description": "should verify after hours insights UI functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 231554,
+      "duration": 252477,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -115,6 +586,42 @@
         {
           "number": "",
           "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"data\": [],",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"weekly\": [],",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"AccTime\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Stime\": null,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Etime\": null",
           "status": "info",
           "type": "log"
         },
@@ -558,7 +1065,7 @@
         },
         {
           "number": "",
-          "text": "Location: 11249 E Karen Dr, Scottsdale, AZ 85255",
+          "text": "Location: E Bell Rd, Scottsdale, AZ",
           "status": "info",
           "type": "log"
         },
@@ -612,7 +1119,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 11249 E Karen Dr, Scottsdale, AZ 85255",
+          "text": "Note: API has no location, UI shows: E Bell Rd, Scottsdale, AZ",
           "status": "info",
           "type": "log"
         },
@@ -654,7 +1161,7 @@
         },
         {
           "number": "",
-          "text": "Location: McDowell Mountain Ranch Rd, Scottsdale, AZ",
+          "text": "Location: 11239 E Karen Dr, Scottsdale, AZ 85255",
           "status": "info",
           "type": "log"
         },
@@ -708,7 +1215,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: McDowell Mountain Ranch Rd, Scottsdale, AZ",
+          "text": "Note: API has no location, UI shows: 11239 E Karen Dr, Scottsdale, AZ 85255",
           "status": "info",
           "type": "log"
         },
@@ -750,7 +1257,7 @@
         },
         {
           "number": "",
-          "text": "Location: 16715 N 91st St, Scottsdale, AZ 85260",
+          "text": "Location: 11203 E Karen Dr, Scottsdale, AZ 85255",
           "status": "info",
           "type": "log"
         },
@@ -804,7 +1311,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 16715 N 91st St, Scottsdale, AZ 85260",
+          "text": "Note: API has no location, UI shows: 11203 E Karen Dr, Scottsdale, AZ 85255",
           "status": "info",
           "type": "log"
         },
@@ -846,7 +1353,7 @@
         },
         {
           "number": "",
-          "text": "Location: 16826 N 90th St, Scottsdale, AZ 85260",
+          "text": "Location: E Bell Rd, Scottsdale, AZ",
           "status": "info",
           "type": "log"
         },
@@ -900,7 +1407,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 16826 N 90th St, Scottsdale, AZ 85260",
+          "text": "Note: API has no location, UI shows: E Bell Rd, Scottsdale, AZ",
           "status": "info",
           "type": "log"
         },
@@ -942,7 +1449,7 @@
         },
         {
           "number": "",
-          "text": "Location: 11243 E Karen Dr, Scottsdale, AZ 85255",
+          "text": "Location: 9362 E Bell Rd, Scottsdale, AZ 85260",
           "status": "info",
           "type": "log"
         },
@@ -996,7 +1503,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 11243 E Karen Dr, Scottsdale, AZ 85255",
+          "text": "Note: API has no location, UI shows: 9362 E Bell Rd, Scottsdale, AZ 85260",
           "status": "info",
           "type": "log"
         },
@@ -1038,7 +1545,7 @@
         },
         {
           "number": "",
-          "text": "Location: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255",
+          "text": "Location: 8952 E Bell Rd, Scottsdale, AZ 85255",
           "status": "info",
           "type": "log"
         },
@@ -1092,7 +1599,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 18698 N Thompson Peak Pkwy, Scottsdale, AZ 85255",
+          "text": "Note: API has no location, UI shows: 8952 E Bell Rd, Scottsdale, AZ 85255",
           "status": "info",
           "type": "log"
         },
@@ -1134,7 +1641,7 @@
         },
         {
           "number": "",
-          "text": "Location: 18235 N Pima Rd, Scottsdale, AZ 85255",
+          "text": "Location: 16796 N 90th St, Scottsdale, AZ 85260",
           "status": "info",
           "type": "log"
         },
@@ -1188,7 +1695,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 18235 N Pima Rd, Scottsdale, AZ 85255",
+          "text": "Note: API has no location, UI shows: 16796 N 90th St, Scottsdale, AZ 85260",
           "status": "info",
           "type": "log"
         },
@@ -1230,7 +1737,7 @@
         },
         {
           "number": "",
-          "text": "Location: 18241 N Pima Rd, Scottsdale, AZ 85255",
+          "text": "Location: N Pima, Scottsdale, AZ",
           "status": "info",
           "type": "log"
         },
@@ -1284,7 +1791,7 @@
         },
         {
           "number": "",
-          "text": "Note: API has no location, UI shows: 18241 N Pima Rd, Scottsdale, AZ 85255",
+          "text": "Note: API has no location, UI shows: N Pima, Scottsdale, AZ",
           "status": "info",
           "type": "log"
         },
@@ -2879,8 +3386,8 @@
           "type": "section"
         }
       ],
-      "startTime": "2026-01-26T19:29:27.440Z",
-      "endTime": "2026-01-26T19:33:18.994Z",
+      "startTime": "2026-02-02T18:21:38.490Z",
+      "endTime": "2026-02-02T18:25:50.967Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS016_afterHoursInsight.spec.js",
       "fileName": "TS016_afterHoursInsight",

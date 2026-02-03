@@ -1,38 +1,26 @@
 {
   "summary": {
-    "total": 1,
-    "passed": 0,
+    "total": 5,
+    "passed": 4,
     "failed": 1,
     "skipped": 0,
-    "duration": 875271,
-    "startTime": "2026-01-19T20:04:25.535Z",
-    "endTime": "2026-01-19T20:19:00.806Z"
+    "duration": 655347,
+    "startTime": "2026-02-02T18:35:51.913Z",
+    "endTime": "2026-02-02T18:46:47.260Z"
   },
   "tests": [
     {
       "testCaseNo": "TS028-A",
       "module": "Travel Log Report",
-      "title": "should clear search input on report resubmission in Frequent Stops",
-      "description": "should clear search input on report resubmission in Frequent Stops",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 71873,
-      "failureReason": "Error: expect(received).toBe(expected) // Object.is equality",
-      "parsedError": {
-        "type": "Assertion Failed",
-        "element": null,
-        "expected": "Values should be equal",
-        "actual": "\"test search text\"",
-        "timeout": null,
-        "file": "TS028_travelLogReport.spec.js",
-        "line": 1213,
-        "suggestion": "Check the expected vs actual values in the assertion",
-        "cleanMessage": "Error: expect(received).toBe(expected) // Object.is equality",
-        "fullMessage": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"test search text\"",
-        "stackTrace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"test search text\"\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js:1376:34"
-      },
-      "videoPath": "videos/TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm",
-      "videoIdentifier": "TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm",
+      "title": "should display TLR",
+      "description": "should display TLR",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 158241,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -46,6 +34,1056 @@
           "status": "info",
           "type": "log"
         },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying map visibility...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map is visible and loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing table row click and infobox data validation for Travel Log Report With Map...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Map table row data extracted: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "eventType: \u001b[32m'● Engine Off'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "dateTime: \u001b[32m'12/01/2025, 02:08 AM'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "durationOfStop: \u001b[32m''\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "location: \u001b[32m''\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "speed: \u001b[32m'\\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                    \\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                        11243 E Karen Dr, Scottsdale, AZ 85255\\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                        \\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                    \\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "direction: \u001b[32m'0.0'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Infobox data extracted: { eventType: \u001b[32m'\\n                Engine Off\\n            '\u001b[39m }",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Validating data match between table row and infobox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All data validation completed successfully for first row in Travel Log Report With Map!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing 2nd table row click and infobox data validation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2nd row data extracted: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "eventType: \u001b[32m'● Engine Off'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "dateTime: \u001b[32m'12/01/2025, 04:08 AM'\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "durationOfStop: \u001b[32m''\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "location: \u001b[32m''\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "speed: \u001b[32m'\\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                    \\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                        11245 E Karen Dr, Scottsdale, AZ 85255\\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                        \\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                    \\n'\u001b[39m +",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[32m'                '\u001b[39m,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "direction: \u001b[32m'0.0'\u001b[39m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2nd row infobox data extracted: { eventType: \u001b[32m'\\n                Engine Off\\n            '\u001b[39m }",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All data validation completed successfully for 2nd row!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Engine Idling Checkbox in Travel Log Report With Map",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Engine Idling checkbox is checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ No Engine Idling events found in current data (Map tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sort functionality in Travel Log Report With Map",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date & Time column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First date before sort (Map): 12/01/2025, 02:08 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First date after sort (Map): 12/01/2025, 02:08 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date & Time column sort clicked (Map tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First date after reverse sort (Map): 12/01/2025, 02:08 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date & Time column reverse sort clicked (Map tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Event Type column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First event before sort (Map): ● Engine Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First event after sort (Map): ⏸ Engine Idling",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Event Type column sort clicked (Map tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First event after reverse sort (Map): ● Ignition On",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Event Type column reverse sort clicked (Map tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Switching to Travel Log Report tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Engine Idling Checkbox in Travel Log Report tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Engine Idling checkbox is checked (TLR tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ No Engine Idling events found in current data (TLR tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sort functionality in Travel Log Report tab",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date & Time column sort (TLR)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First date before sort (TLR): 12/01/2025 - 02:08 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First date after sort (TLR): 12/01/2025 - 02:08 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date & Time column sort clicked (TLR tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First date after reverse sort (TLR): 12/03/2025 - 11:34 AM",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date & Time column reverse sort clicked (TLR tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Event Type column sort (TLR)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First event before sort (TLR): ● Engine Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First event after sort (TLR): ⏸ Engine Idling",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Event Type column sort clicked (TLR tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "First event after reverse sort (TLR): ● Ignition On",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Event Type column reverse sort clicked (TLR tab)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Export functionality",
+          "status": "info",
+          "type": "subsection"
+        }
+      ],
+      "startTime": "2026-02-02T18:35:59.166Z",
+      "endTime": "2026-02-02T18:38:37.407Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 87
+    },
+    {
+      "testCaseNo": "TS028-B",
+      "module": "Travel Log Report",
+      "title": "should verify Engine Idling checkbox functionality",
+      "description": "should verify Engine Idling checkbox functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 181413,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Call log:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Retrying navigation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Engine Idling checkbox functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Engine Idling checkbox initial state: checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Unchecking Engine Idling checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Engine Idling events are hidden when checkbox is unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Re-checking Engine Idling checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Engine Idling events are visible after re-checking",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Engine Idling checkbox functionality test completed!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-02T18:38:37.475Z",
+      "endTime": "2026-02-02T18:41:38.888Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 567
+    },
+    {
+      "testCaseNo": "TS028-C",
+      "module": "Travel Log Report",
+      "title": "should verify search functionality in TLR",
+      "description": "should verify search functionality in TLR",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 129032,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing search functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial row count: 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"Engine On\"...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows after searching \"Engine On\": 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Search results contain \"Engine On\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"Engine Off\"...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows after searching \"Engine Off\": 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Search results contain \"Engine Off\" events",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clearing search...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows after clearing search: 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: All rows return after clearing search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Engine Idling search with checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Rows after searching \"Engine Idling\": 100",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Note: No Engine Idling events in search results",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Search functionality test completed!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-02T18:41:38.954Z",
+      "endTime": "2026-02-02T18:43:47.986Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 692
+    },
+    {
+      "testCaseNo": "TS028-D",
+      "module": "Travel Log Report",
+      "title": "should verify Frequent Stops functionality with API validation",
+      "description": "should verify Frequent Stops functionality with API validation",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 102622,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Frequent Stops functionality with API validation...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying Loading Modal",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal title shows \"Loading Travel Report...\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading time estimate: ⏱️ Loading 3 days of data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal shows correct \"3 days\" estimate",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response captured: [{\"id\":160833,\"idIndex\":0,\"date\":\"12/01/2025\",\"duration\":355,\"time\":\"02:08 AM\",\"lat\":\"33.624222\",\"lng\":\"-111.840185\",\"location\":\"\",\"tripType\":\"\",\"battery\":\"12\",\"speed\":\"0.0\",\"mileage\":\"1166.238\",\"dire...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Loading modal disappeared after data loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying API response matches table data...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 76 rows in Frequent Stops table",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API returned 76 records",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 1: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3: First cell = 12/01/2025",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified: Frequent Stops table data matches API response",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Sort functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Testing Date column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Time column sort...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Search functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "DataTables filter not found, using general search input",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total visible rows before search: 76",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Searching for \"02:08 AM\"...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 visible rows after searching \"02:08 AM\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search filtered results: 1 rows (down from 76)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 1 rows containing \"02:08 AM\" out of 1 visible rows",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All 76 rows returned after clearing search",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Export functionality in Frequent Stops",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ \"Save file as\" dropdown button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Excel export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dropdown content is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Excel file downloaded: track_frequent_stops.xlsx",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing CSV export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ CSV file downloaded: track_frequent_stops.csv",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing PDF export...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ PDF file downloaded: track_frequent_stops.pdf",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ All export buttons (Excel, CSV, PDF) verified in Frequent Stops tab",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Frequent Stops functionality test completed!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-02T18:43:48.073Z",
+      "endTime": "2026-02-02T18:45:30.695Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
+      "fileName": "TS028_travelLogReport",
+      "line": 829
+    },
+    {
+      "testCaseNo": "TS028-E",
+      "module": "Travel Log Report",
+      "title": "should clear search input on report resubmission in Frequent Stops",
+      "description": "should clear search input on report resubmission in Frequent Stops",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 75175,
+      "failureReason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "parsedError": {
+        "type": "Assertion Failed",
+        "element": null,
+        "expected": "Values should be equal",
+        "actual": "\"test search text\"",
+        "timeout": null,
+        "file": "TS028_travelLogReport.spec.js",
+        "line": 1216,
+        "suggestion": "Check the expected vs actual values in the assertion",
+        "cleanMessage": "Error: expect(received).toBe(expected) // Object.is equality",
+        "fullMessage": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"test search text\"",
+        "stackTrace": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"test search text\"\n    at C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js:1379:34"
+      },
+      "videoPath": "videos/TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm",
+      "videoIdentifier": "TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm",
+      "steps": [
         {
           "number": "",
           "text": "Preserving cookies (using stored auth session)",
@@ -143,12 +1181,12 @@
           "type": "log"
         }
       ],
-      "startTime": "2026-01-19T20:05:27.682Z",
-      "endTime": "2026-01-19T20:06:39.555Z",
+      "startTime": "2026-02-02T18:45:31.755Z",
+      "endTime": "2026-02-02T18:46:46.930Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
-      "line": 1213
+      "line": 1216
     }
   ]
 }

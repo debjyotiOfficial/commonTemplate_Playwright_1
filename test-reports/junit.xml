@@ -1,23 +1,14 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="182.272521">
-<testsuite name="auth.setup.js" timestamp="2026-01-30T19:45:53.903Z" hostname="setup" tests="1" failures="0" skipped="0" time="55.47" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="55.47">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="293.109435">
+<testsuite name="auth.setup.js" timestamp="2026-02-03T16:18:09.717Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.024" errors="0">
+<testcase name="authenticate" classname="auth.setup.js" time="1.024">
 <system-out>
-<![CDATA[Authentication session expired (age: 104 minutes). Re-authenticating...
-Performing authentication setup...
-Login page loaded, filling credentials...
-Username filled
-Password filled
-Submit clicked, waiting for login to complete...
-Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php
-Navigating to fleet dashboard...
-Dashboard loaded, saving session state...
-Session state saved to: C:\cypress-to-playwright-converted\.auth\user.json
+<![CDATA[Valid authentication session found (age: 6 minutes). Skipping login.
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="TS022_recentGeofenceReport.spec.js" timestamp="2026-01-30T19:45:53.903Z" hostname="chromium" tests="1" failures="0" skipped="0" time="120.036" errors="0">
-<testcase name="Recent geofence report › should manage recent geofence report" classname="TS022_recentGeofenceReport.spec.js" time="120.036">
+<testsuite name="TS003_ChangeTimezone.spec.js" timestamp="2026-02-03T16:18:09.717Z" hostname="chromium" tests="1" failures="0" skipped="0" time="286.72" errors="0">
+<testcase name="Timezone › should edit the timezone of users" classname="TS003_ChangeTimezone.spec.js" time="286.72">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
@@ -26,18 +17,8 @@ Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Using stored authentication session (skipping login)...
 Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
-Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.
-Call log:
-[2m  - navigating to "https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php", waiting until "domcontentloaded"[22m
-
-Retrying navigation...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)
 Network idle timeout, continuing...
 Page loaded successfully
-Found 5 geofence options
-Selecting geofence with value: 53
-Table has 1 rows
-First row has 1 cells
 ]]>
 </system-out>
 </testcase>

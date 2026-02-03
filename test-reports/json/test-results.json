@@ -113,43 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 55470,
+                  "duration": 1024,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Authentication session expired (age: 104 minutes). Re-authenticating...\n"
-                    },
-                    {
-                      "text": "Performing authentication setup...\n"
-                    },
-                    {
-                      "text": "Login page loaded, filling credentials...\n"
-                    },
-                    {
-                      "text": "Username filled\n"
-                    },
-                    {
-                      "text": "Password filled\n"
-                    },
-                    {
-                      "text": "Submit clicked, waiting for login to complete...\n"
-                    },
-                    {
-                      "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php\n"
-                    },
-                    {
-                      "text": "Navigating to fleet dashboard...\n"
-                    },
-                    {
-                      "text": "Dashboard loaded, saving session state...\n"
-                    },
-                    {
-                      "text": "Session state saved to: C:\\cypress-to-playwright-converted\\.auth\\user.json\n"
+                      "text": "Valid authentication session found (age: 6 minutes). Skipping login.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T19:45:55.268Z",
+                  "startTime": "2026-02-03T16:18:10.995Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -165,25 +138,25 @@
       ]
     },
     {
-      "title": "TS022_recentGeofenceReport.spec.js",
-      "file": "TS022_recentGeofenceReport.spec.js",
+      "title": "TS003_ChangeTimezone.spec.js",
+      "file": "TS003_ChangeTimezone.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Recent geofence report",
-          "file": "TS022_recentGeofenceReport.spec.js",
+          "title": "Timezone",
+          "file": "TS003_ChangeTimezone.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should manage recent geofence report",
+              "title": "should edit the timezone of users",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 600000,
+                  "timeout": 500000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -193,7 +166,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 120036,
+                      "duration": 286720,
                       "errors": [],
                       "stdout": [
                         {
@@ -218,36 +191,15 @@
                           "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
                         },
                         {
-                          "text": "Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m\n\n"
-                        },
-                        {
-                          "text": "Retrying navigation...\n"
-                        },
-                        {
-                          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)\n"
-                        },
-                        {
                           "text": "Network idle timeout, continuing...\n"
                         },
                         {
                           "text": "Page loaded successfully\n"
-                        },
-                        {
-                          "text": "Found 5 geofence options\n"
-                        },
-                        {
-                          "text": "Selecting geofence with value: 53\n"
-                        },
-                        {
-                          "text": "Table has 1 rows\n"
-                        },
-                        {
-                          "text": "First row has 1 cells\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-30T19:46:53.671Z",
+                      "startTime": "2026-02-03T16:18:13.922Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -255,9 +207,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "d9f72f1af99e06a8a527-5c0bbd9c8530047d50b2",
-              "file": "TS022_recentGeofenceReport.spec.js",
-              "line": 23,
+              "id": "abced7358b44b0183c8b-492010b9cff7ac17308f",
+              "file": "TS003_ChangeTimezone.spec.js",
+              "line": 24,
               "column": 5
             }
           ]
@@ -267,8 +219,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-30T19:45:53.593Z",
-    "duration": 182272.521,
+    "startTime": "2026-02-03T16:18:09.447Z",
+    "duration": 293109.435,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

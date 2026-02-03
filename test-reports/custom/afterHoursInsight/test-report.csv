@@ -1,2 +1,3 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS016-A,"After Hour Insight","should verify after hours insights UI functionality",PASSED,231.55,"",N/A,TS016_afterHoursInsight.spec.js,306
+TS016-A,"After Hour Insight","should verify after hours data calculations across tabs",FAILED,130.34,"Error: expect(received).toBe(expected) // Object.is equality",TS016_afterHoursInsight-should-verify-after-hours-data-calculations-across.webm,TS016_afterHoursInsight.spec.js,23
+TS016-B,"After Hour Insight","should verify after hours insights UI functionality",PASSED,252.48,"",N/A,TS016_afterHoursInsight.spec.js,306

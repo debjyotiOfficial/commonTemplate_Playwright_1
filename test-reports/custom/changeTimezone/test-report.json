@@ -1,12 +1,12 @@
 {
   "summary": {
     "total": 1,
-    "passed": 0,
+    "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 1499739,
-    "startTime": "2026-01-22T17:58:56.137Z",
-    "endTime": "2026-01-22T18:23:55.876Z"
+    "duration": 292916,
+    "startTime": "2026-02-03T16:18:09.719Z",
+    "endTime": "2026-02-03T16:23:02.635Z"
   },
   "tests": [
     {
@@ -14,13 +14,13 @@
       "module": "Timezone",
       "title": "should edit the timezone of users",
       "description": "should edit the timezone of users",
-      "status": "timedOut",
-      "statusDisplay": "TIMEDOUT",
-      "duration": 597601,
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 286720,
       "failureReason": "",
       "parsedError": null,
-      "videoPath": "videos/TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm",
-      "videoIdentifier": "TS003_ChangeTimezone-should-edit-the-timezone-of-users.webm",
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -66,13 +66,19 @@
         },
         {
           "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-01-22T18:01:35.193Z",
-      "endTime": "2026-01-22T18:11:32.794Z",
+      "startTime": "2026-02-03T16:18:15.112Z",
+      "endTime": "2026-02-03T16:23:01.832Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS003_ChangeTimezone.spec.js",
       "fileName": "TS003_ChangeTimezone",
