@@ -1,5 +1,5 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",PASSED,1.02,"",N/A,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",FAILED,212.13,"TimeoutError: page.goto: Timeout 180000ms exceeded.",auth.setup.js-authenticate.webm,auth.setup.js,10
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,4244.73,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add device with custom icon",PASSED,239.54,"",N/A,TS002_addEditDevices,394
 TS003-A,"Timezone","should edit the timezone of users",PASSED,286.72,"",N/A,TS003_ChangeTimezone,24
@@ -35,9 +35,8 @@ TS037-A,"Low Voltage Device Report","should generate and validate low voltage de
 TS039-A,"Weekly Utilization Report","should generate and validate weekly utilization report",FAILED,253.09,"TimeoutError: locator.hover: Timeout 30000ms exceeded.",TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm,TS039_weeklyUtilizationReport,23
 TS043-A,"Dashcam Refresh","should refresh dashcam functionality",PASSED,103.15,"",N/A,TS043_dashcamRefresh,23
 TS046-A,"Dashcam Track History","displays dashcam track history with different tracking options",PASSED,74.45,"",N/A,TS046_dashcamTrackHistory,23
-TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",FAILED,64.35,"Error: locator.check: Element is not visible",TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm,TS047_dashcamAlertSettings,57
-TS047-B,"Dashcam Alert Settings","should add and delete alerts contacts (email and phone)",PASSED,158.45,"",N/A,TS047_dashcamAlertSettings,90
-TS047-C,"Dashcam Alert Settings","should configure after hours settings",PASSED,61.04,"",N/A,TS047_dashcamAlertSettings,170
+TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",PASSED,85.97,"",N/A,TS047_dashcamAlertSettings,57
+TS047-B,"Dashcam Alert Settings","should configure after hours settings",PASSED,87.94,"",N/A,TS047_dashcamAlertSettings,286
 TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",PASSED,153.74,"",N/A,TS050_last24hrs,39
 TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Frequent Stops functionality",PASSED,131.61,"",N/A,TS050_last24hrs,338
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
@@ -48,4 +47,11 @@ TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",FAILED,5
 TS060-A,"Dashcam Safety Report","should verify Dashcam Safety Report features and API validation",PASSED,156.12,"",N/A,TS060_daschamSafetyReport,1260
 TS061-A,"Custom Logo","should reset logos to default using Reset to Default button",PASSED,215.31,"",N/A,TS061_customLogo,645
 TS062-A,"Asset Tracker Settings","should test Aggressive Mode/Change Intervals tab functionality",FAILED,72.96,"Error: expect(locator).toBeVisible() failed",TS062_AssetTrackerSettings-should-test-Aggressive-Mode-Change-Intervals-tab-f.webm,TS062_AssetTrackerSettings,250
+TS068-A,"Daily Geofence Report","should display and interact with Daily Geofence Report",PASSED,101.86,"",N/A,TS068_dailyGeofenceReport,93
+TS068-B,"Daily Geofence Report","should handle date changes and reload data",PASSED,64.18,"",N/A,TS068_dailyGeofenceReport,614
+TS068-C,"Daily Geofence Report","should show appropriate message when no data",FAILED,59.24,"Error: expect(received).toBeGreaterThan(expected)",TS068_dailyGeofenceReport-should-show-appropriate-message-when-no-data.webm,TS068_dailyGeofenceReport,683
+TS069-A,"Subscription Dashboard","should display and interact with Subscription Dashboard panel",PASSED,146.18,"",N/A,TS069_subscriptionDashboard,125
+TS069-B,"Subscription Dashboard","should handle tab switching and verify data updates",PASSED,90.94,"",N/A,TS069_subscriptionDashboard,445
+TS069-C,"Subscription Dashboard","should display and interact with Payment History section",PASSED,68.95,"",N/A,TS069_subscriptionDashboard,538
+TS069-D,"Subscription Dashboard","should handle row selection and verify modals structure",PASSED,106.57,"",N/A,TS069_subscriptionDashboard,692
 TC-A,"view Edit User","should create user and edit them",FAILED,320.51,"Error: expect(received).toBeFalsy()",viewEditUser-should-create-user-and-edit-them.webm,viewEditUser,24

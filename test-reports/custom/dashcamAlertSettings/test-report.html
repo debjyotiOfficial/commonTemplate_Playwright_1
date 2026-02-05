@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - dashcamAlertSettings - 6/1/2026</title>
+    <title>Test Report - dashcamAlertSettings - 4/2/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,15 +152,15 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: dashcamAlertSettings</div>
             <div class="subtitle">
-                Generated: 6/1/2026, 4:55:30 am |
-                Duration: 1043.89s |
+                Generated: 4/2/2026, 4:43:19 am |
+                Duration: 179.98s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
 
         <div class="summary">
             <div class="card total">
-                <div class="number">3</div>
+                <div class="number">2</div>
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
@@ -168,7 +168,7 @@
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">66.7%</div>
+                <div class="number">100.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,65 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="failed" data-module="Dashcam Alert Settings">
+                    <tr data-status="passed" data-module="Dashcam Alert Settings">
                         <td><span class="test-case-no">TS047-A</span></td>
                         <td>Dashcam Alert Settings</td>
                         <td>
                             <strong>should verify alert settings panel and save settings</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(0)">
-                                    View Error Details
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="error-0" class="error-panel">
-                                    
-            <div class="error-details">
-                <div class="error-details-header">
-                    <span class="error-type-badge">Unknown Error</span>
-                </div>
-                <div class="error-details-body">
-                    <div class="error-row">
-                        <span class="error-label">File:</span>
-                        <span class="error-value">TS047_dashcamAlertSettings.spec.js</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Line:</span>
-                        <span class="error-value">57</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Element:</span>
-                        <span class="error-value element-selector">#select-all-alerts</span>
-                    </div>
-                    
-                    
-                    <div class="error-row">
-                        <span class="error-label">Expected:</span>
-                        <span class="error-value">N/A</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Actual:</span>
-                        <span class="error-value error-actual">N/A</span>
-                    </div>
-                    
-                    <div class="error-row full-error">
-                        <span class="error-label">Full Error:</span>
-                        <span class="error-value"><pre>Error: locator.check: Element is not visible
-Call log:
-  - waiting for locator(&#039;#select-all-alerts&#039;).first()
-    - locator resolved to &lt;input type=&quot;checkbox&quot; id=&quot;select-all-alerts&quot;/&gt;
-  - attempting click action
-    - scrolling into view if needed
-</pre></span>
-                    </div>
-                </div>
-            </div>
-        
-                                </div>
-                            
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (9)</span>
+                                    <span>View Test Steps (14)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -317,14 +267,39 @@ Call log:
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified test 1 Speed Alert: 60</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Verified test 1 Low Battery Alert: 60</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final verification - test 1 Speed Alert: 70</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final verification - test 1 Low Battery Alert: 70</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All verifications passed! Settings cascade correctly from All Dashcams to individual devices.</span>
+                                            </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status failed">FAILED</span></td>
-                        <td><strong>64.35s</strong></td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>85.97s</strong></td>
                         <td>
-                            <a href="videos/TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm" class="video-link" target="_blank">Video: TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm</a>
+                            <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
@@ -332,11 +307,11 @@ Call log:
                         <td><span class="test-case-no">TS047-B</span></td>
                         <td>Dashcam Alert Settings</td>
                         <td>
-                            <strong>should add and delete alerts contacts (email and phone)</strong>
+                            <strong>should configure after hours settings</strong>
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(1)">
-                                    <span>View Test Steps (9)</span>
+                                    <span>View Test Steps (52)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-1" class="steps-panel">
@@ -345,16 +320,6 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Config loaded successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
                                                 <span class="step-text">Preserving cookies (using stored auth session)</span>
                                             </div>
                                         
@@ -366,6 +331,11 @@ Call log:
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Config loaded successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Starting comprehensive After Hours Settings test...</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -388,73 +358,232 @@ Call log:
                                                 <span class="step-text">Page loaded successfully</span>
                                             </div>
                                         
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">After Hours panel opened</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 1: Configuring test 1 with Custom Days</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected device: test 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected Custom Days option</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Checked W, TH, F checkboxes</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Wednesday: true, Thursday: true, Friday: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Advanced Settings expanded</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Advanced settings entered for test 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Idling Hours: 02:00, Stop Hours: 03:00, Stop Count: 5, Speed Limit: 40</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit clicked for test 1</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 2: Verifying test 1 settings immediately after save</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">test 1 after save - Idling: 02:00, Stop: 03:00, Count: 5, Speed: 40</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 3: Configuring M4000Training3 Off with Weekdays</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected device: M4000-Training3 Off</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected Weekdays option</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">From time: 08:00, To time: 18:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Advanced settings entered for M4000-Training3 Off</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit clicked for M4000-Training3 Off</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 4: Verifying M4000Training3 Off settings persistence</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">M4000 persisted values - Idling: 01:30, Stop: 02:30, Count: 8, Speed: 55</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">M4000-Training3 Off settings verified successfully</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 5: Configuring test 1 with All Days option</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Selected All Days option</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All Days - From time: 07:00, To time: 20:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All Days advanced settings entered</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Submit clicked for All Days configuration</span>
+                                            </div>
+                                        
+                                            <div class="step-item info subsection">
+                                                <span class="step-icon">-</span>
+                                                <span class="step-text">Step 6: Final verification  All Days settings persisted</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">All Days radio selected: true</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Final All Days values - Idling: 01:00, Stop: 02:00, Count: 10, Speed: 60</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">=== AFTER HOURS SETTINGS TEST SUMMARY ===</span>
+                                            </div>
+                                        
+                                            <div class="step-item passed step">
+                                                <span class="step-number">1</span>
+                                                <span class="step-text">test 1 Configuration (Custom Days):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Custom Days selected (W, TH, F)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Advanced settings: 02:00, 03:00, 5, 40</span>
+                                            </div>
+                                        
+                                            <div class="step-item passed step">
+                                                <span class="step-number">2</span>
+                                                <span class="step-text">M4000-Training3 Off Configuration (Weekdays):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Weekdays selected</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- From/To time: 08:00 - 18:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Advanced settings: 01:30, 02:30, 8, 55</span>
+                                            </div>
+                                        
+                                            <div class="step-item passed step">
+                                                <span class="step-number">3</span>
+                                                <span class="step-text">test 1 Configuration (All Days):</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Changed to All Days option</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- From/To time: 07:00 - 20:00</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">- Advanced settings: 01:00, 02:00, 10, 60</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Settings Persistence: VERIFIED for both devices</span>
+                                            </div>
+                                        
+                                            <div class="step-item section section">
+                                                <span class="step-icon">></span>
+                                                <span class="step-text"></span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">After Hours Settings comprehensive test completed successfully!</span>
+                                            </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>158.45s</strong></td>
-                        <td>
-                            <span class="no-video">No video</span>
-                        </td>
-                    </tr>
-                    
-                    <tr data-status="passed" data-module="Dashcam Alert Settings">
-                        <td><span class="test-case-no">TS047-C</span></td>
-                        <td>Dashcam Alert Settings</td>
-                        <td>
-                            <strong>should configure after hours settings</strong>
-                            
-                            <div class="steps-container">
-                                <button class="steps-toggle" onclick="toggleSteps(2)">
-                                    <span>View Test Steps (7)</span>
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="steps-2" class="steps-panel">
-                                    <div class="steps-header">Test Execution Steps</div>
-                                    <div class="steps-list">
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Preserving cookies (using stored auth session)</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Config loaded successfully</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Using stored authentication session (skipping login)...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Network idle timeout, continuing...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Page loaded successfully</span>
-                                            </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td><span class="status passed">PASSED</span></td>
-                        <td><strong>61.04s</strong></td>
+                        <td><strong>87.94s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -508,7 +637,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS047-A","module":"Dashcam Alert Settings","description":"should verify alert settings panel and save settings","status":"FAILED","duration":"64.35s","failureReason":"Error: locator.check: Element is not visible","videoIdentifier":"TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm"},{"testCaseNo":"TS047-B","module":"Dashcam Alert Settings","description":"should add and delete alerts contacts (email and phone)","status":"PASSED","duration":"158.45s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS047-C","module":"Dashcam Alert Settings","description":"should configure after hours settings","status":"PASSED","duration":"61.04s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TS047-A","module":"Dashcam Alert Settings","description":"should verify alert settings panel and save settings","status":"PASSED","duration":"85.97s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS047-B","module":"Dashcam Alert Settings","description":"should configure after hours settings","status":"PASSED","duration":"87.94s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -525,7 +654,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-05.csv';
+            link.download = 'test-report-2026-02-03.csv';
             link.click();
         }
     </script>

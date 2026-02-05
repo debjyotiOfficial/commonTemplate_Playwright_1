@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total": 3,
+    "total": 2,
     "passed": 2,
-    "failed": 1,
+    "failed": 0,
     "skipped": 0,
-    "duration": 1043895,
-    "startTime": "2026-01-05T23:08:07.031Z",
-    "endTime": "2026-01-05T23:25:30.926Z"
+    "duration": 179980,
+    "startTime": "2026-02-03T23:10:19.100Z",
+    "endTime": "2026-02-03T23:13:19.080Z"
   },
   "tests": [
     {
@@ -14,25 +14,13 @@
       "module": "Dashcam Alert Settings",
       "title": "should verify alert settings panel and save settings",
       "description": "should verify alert settings panel and save settings",
-      "status": "failed",
-      "statusDisplay": "FAILED",
-      "duration": 64348,
-      "failureReason": "Error: locator.check: Element is not visible",
-      "parsedError": {
-        "type": "Unknown Error",
-        "element": "#select-all-alerts",
-        "expected": null,
-        "actual": null,
-        "timeout": null,
-        "file": "TS047_dashcamAlertSettings.spec.js",
-        "line": 57,
-        "suggestion": null,
-        "cleanMessage": "Error: locator.check: Element is not visible",
-        "fullMessage": "Error: locator.check: Element is not visible\nCall log:\n  - waiting for locator('#select-all-alerts').first()\n    - locator resolved to <input type=\"checkbox\" id=\"select-all-alerts\"/>\n  - attempting click action\n    - scrolling into view if needed\n",
-        "stackTrace": "Error: locator.check: Element is not visible\nCall log:\n  - waiting for locator('#select-all-alerts').first()\n    - locator resolved to <input type=\"checkbox\" id=\"select-all-alerts\"/>\n  - attempting click action\n    - scrolling into view if needed\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js:78:37"
-      },
-      "videoPath": "videos/TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm",
-      "videoIdentifier": "TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 85967,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
       "steps": [
         {
           "number": "",
@@ -87,10 +75,40 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified test 1 Speed Alert: 60",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verified test 1 Low Battery Alert: 60",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final verification - test 1 Speed Alert: 70",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final verification - test 1 Low Battery Alert: 70",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All verifications passed! Settings cascade correctly from All Dashcams to individual devices.",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2026-01-05T23:08:20.022Z",
-      "endTime": "2026-01-05T23:09:24.370Z",
+      "startTime": "2026-02-03T23:10:24.259Z",
+      "endTime": "2026-02-03T23:11:50.226Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
       "fileName": "TS047_dashcamAlertSettings",
@@ -99,86 +117,11 @@
     {
       "testCaseNo": "TS047-B",
       "module": "Dashcam Alert Settings",
-      "title": "should add and delete alerts contacts (email and phone)",
-      "description": "should add and delete alerts contacts (email and phone)",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 158453,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
-      "steps": [
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Preserving cookies (using stored auth session)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Config loaded successfully",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Using stored authentication session (skipping login)...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Network idle timeout, continuing...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Page loaded successfully",
-          "status": "info",
-          "type": "log"
-        }
-      ],
-      "startTime": "2026-01-05T23:09:28.072Z",
-      "endTime": "2026-01-05T23:12:06.525Z",
-      "retries": 0,
-      "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
-      "fileName": "TS047_dashcamAlertSettings",
-      "line": 90
-    },
-    {
-      "testCaseNo": "TS047-C",
-      "module": "Dashcam Alert Settings",
       "title": "should configure after hours settings",
       "description": "should configure after hours settings",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 61041,
+      "duration": 87942,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -199,6 +142,12 @@
         {
           "number": "",
           "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Starting comprehensive After Hours Settings test...",
           "status": "info",
           "type": "log"
         },
@@ -225,14 +174,278 @@
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Hours panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Configuring test 1 with Custom Days",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected device: test 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Custom Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Checked W, TH, F checkboxes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Wednesday: true, Thursday: true, Friday: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced Settings expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced settings entered for test 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Idling Hours: 02:00, Stop Hours: 03:00, Stop Count: 5, Speed Limit: 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked for test 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Verifying test 1 settings immediately after save",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "test 1 after save - Idling: 02:00, Stop: 03:00, Count: 5, Speed: 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Configuring M4000Training3 Off with Weekdays",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected device: M4000-Training3 Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected Weekdays option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "From time: 08:00, To time: 18:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Advanced settings entered for M4000-Training3 Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked for M4000-Training3 Off",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Verifying M4000Training3 Off settings persistence",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "M4000 persisted values - Idling: 01:30, Stop: 02:30, Count: 8, Speed: 55",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "M4000-Training3 Off settings verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Configuring test 1 with All Days option",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Selected All Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days - From time: 07:00, To time: 20:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "All Days advanced settings entered",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked for All Days configuration",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Final verification  All Days settings persisted",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "All Days radio selected: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Final All Days values - Idling: 01:00, Stop: 02:00, Count: 10, Speed: 60",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "=== AFTER HOURS SETTINGS TEST SUMMARY ===",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "test 1 Configuration (Custom Days):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Custom Days selected (W, TH, F)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings: 02:00, 03:00, 5, 40",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 2,
+          "text": "M4000-Training3 Off Configuration (Weekdays):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Weekdays selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- From/To time: 08:00 - 18:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings: 01:30, 02:30, 8, 55",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 3,
+          "text": "test 1 Configuration (All Days):",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "- Changed to All Days option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- From/To time: 07:00 - 20:00",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Advanced settings: 01:00, 02:00, 10, 60",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Settings Persistence: VERIFIED for both devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "After Hours Settings comprehensive test completed successfully!",
+          "status": "info",
+          "type": "log"
         }
       ],
-      "startTime": "2026-01-05T23:12:06.542Z",
-      "endTime": "2026-01-05T23:13:07.583Z",
+      "startTime": "2026-02-03T23:11:50.271Z",
+      "endTime": "2026-02-03T23:13:18.213Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS047_dashcamAlertSettings.spec.js",
       "fileName": "TS047_dashcamAlertSettings",
-      "line": 170
+      "line": 286
     }
   ]
 }

@@ -22,7 +22,9 @@
       "Bash(more:*)",
       "Bash(node:*)",
       "Bash(npx playwright:*)",
-      "Bash(npm exec:*)"
+      "Bash(npm exec:*)",
+      "WebSearch",
+      "Bash(copy:*)"
     ],
     "deny": [],
     "ask": []

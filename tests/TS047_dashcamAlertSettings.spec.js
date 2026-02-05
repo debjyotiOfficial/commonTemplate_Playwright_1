@@ -60,10 +60,10 @@ test.describe('Dashcam Alert Settings', () => {
 
         const activePanel = await navigateToAlertSettings(page, helpers, config);
 
-        // Step 1: Select "Dashcams" from Select Device/Subgroup dropdown
+        // Step 1: Select first dashcam from Select Device/Subgroup dropdown
         await page.locator('#select2-dashcam-select-container').click();
-        await page.locator('.select2-search__field').fill('Dashcams');
-        await page.locator('.select2-results__option').filter({ hasText: 'Dashcams' }).click();
+        await page.locator('.select2-results__option').first().waitFor({ state: 'visible', timeout: 10000 });
+        await page.locator('.select2-results__option').first().click();
         await page.waitForTimeout(2000);
 
         // Step 2: Toggle "Select/Unselect All Alerts" checkbox (Select All Alerts)
@@ -81,8 +81,8 @@ test.describe('Dashcam Alert Settings', () => {
 
         // Click on the device dropdown in Change Alerts Settings panel
         await changeAlertsPanel.locator('.select2-selection').first().click();
-        await page.locator('.select2-search__field').fill('Dashcams');
-        await page.locator('.select2-results__option').filter({ hasText: 'Dashcams' }).click();
+        await page.locator('.select2-results__option').first().waitFor({ state: 'visible', timeout: 10000 });
+        await page.locator('.select2-results__option').first().click();
         await page.waitForTimeout(3000);
 
         // Step 5: Select "All Alerts" from Select Alerts dropdown
@@ -153,10 +153,10 @@ test.describe('Dashcam Alert Settings', () => {
 
         // ===== PART 3: Change settings for All Dashcams and verify on test 1 =====
 
-        // Step 17: Select "Dashcams" (All Dashcams) from dropdown
+        // Step 17: Select first dashcam from dropdown
         await changeAlertsPanel.locator('.select2-selection').first().click();
-        await page.locator('.select2-search__field').fill('Dashcams');
-        await page.locator('.select2-results__option').filter({ hasText: 'Dashcams' }).click();
+        await page.locator('.select2-results__option').first().waitFor({ state: 'visible', timeout: 10000 });
+        await page.locator('.select2-results__option').first().click();
         await page.waitForTimeout(3000);
 
         // Step 18: Select "All Alerts" for all dashcams
@@ -292,8 +292,8 @@ test.describe('Dashcam Alert Settings', () => {
 
         // Click on the Select2 dropdown to open options (use unique ID)
         await page.locator('#select2-dashcam-select-container').click();
-        await page.locator('.select2-search__field').fill('All Dashcams');
-        await page.locator('.select2-results__option').filter({ hasText: 'All Dashcams' }).click();
+        await page.locator('.select2-results__option').first().waitFor({ state: 'visible', timeout: 10000 });
+        await page.locator('.select2-results__option').first().click();
 
         // Click on alerts contact button
         await page.locator('#showcontacts').first().click();

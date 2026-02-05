@@ -1,0 +1,4 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS068-A,"Daily Geofence Report","should display and interact with Daily Geofence Report",PASSED,110.14,"",N/A,TS068_dailyGeofenceReport.spec.js,93
+TS068-B,"Daily Geofence Report","should handle date changes and reload data",PASSED,74.21,"",N/A,TS068_dailyGeofenceReport.spec.js,614
+TS068-C,"Daily Geofence Report","should show appropriate message when no data",PASSED,74.19,"",N/A,TS068_dailyGeofenceReport.spec.js,683

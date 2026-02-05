@@ -1,0 +1,5 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS069-A,"Subscription Dashboard","should display and interact with Subscription Dashboard panel",PASSED,146.18,"",N/A,TS069_subscriptionDashboard.spec.js,125
+TS069-B,"Subscription Dashboard","should handle tab switching and verify data updates",PASSED,90.94,"",N/A,TS069_subscriptionDashboard.spec.js,445
+TS069-C,"Subscription Dashboard","should display and interact with Payment History section",PASSED,68.95,"",N/A,TS069_subscriptionDashboard.spec.js,538
+TS069-D,"Subscription Dashboard","should handle row selection and verify modals structure",PASSED,106.57,"",N/A,TS069_subscriptionDashboard.spec.js,692

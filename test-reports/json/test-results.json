@@ -92,81 +92,35 @@
   },
   "suites": [
     {
-      "title": "auth.setup.js",
-      "file": "auth.setup.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup",
-              "projectName": "setup",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1024,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Valid authentication session found (age: 6 minutes). Skipping login.\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-02-03T16:18:10.995Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "f376efe52c54b1a876fd-9d03a3bb502e264caa3f",
-          "file": "auth.setup.js",
-          "line": 10,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "TS003_ChangeTimezone.spec.js",
-      "file": "TS003_ChangeTimezone.spec.js",
+      "title": "TS069_subscriptionDashboard.spec.js",
+      "file": "TS069_subscriptionDashboard.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Timezone",
-          "file": "TS003_ChangeTimezone.spec.js",
-          "line": 4,
+          "title": "Subscription Dashboard",
+          "file": "TS069_subscriptionDashboard.spec.js",
+          "line": 35,
           "column": 6,
           "specs": [
             {
-              "title": "should edit the timezone of users",
+              "title": "should display and interact with Subscription Dashboard panel",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 500000,
+                  "timeout": 600000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 286720,
+                      "duration": 146184,
                       "errors": [],
                       "stdout": [
                         {
@@ -185,21 +139,759 @@
                           "text": "Config loaded successfully\n"
                         },
                         {
-                          "text": "Using stored authentication session (skipping login)...\n"
+                          "text": "--- Step 1: Login and navigate to fleet dashboard ---\n"
                         },
                         {
-                          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...\n"
+                          "text": "Login completed on tracking1\n"
                         },
                         {
                           "text": "Network idle timeout, continuing...\n"
                         },
                         {
-                          "text": "Page loaded successfully\n"
+                          "text": "Navigated to tracking1 dashboard\n"
+                        },
+                        {
+                          "text": "✓ Successfully logged in\n"
+                        },
+                        {
+                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
+                        },
+                        {
+                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
+                        },
+                        {
+                          "text": "✓ Subscription Dashboard opened\n"
+                        },
+                        {
+                          "text": "--- Step 3: Verifying stats cards ---\n"
+                        },
+                        {
+                          "text": "  Stats card \"Active Devices\" not found\n"
+                        },
+                        {
+                          "text": "  Stats card \"Currently Due\" not found\n"
+                        },
+                        {
+                          "text": "  Stats card \"Past Due\" not found\n"
+                        },
+                        {
+                          "text": "  ✓ Stats card \"Auto-renew Subscriptions\" visible\n"
+                        },
+                        {
+                          "text": "✓ Stats cards verified\n"
+                        },
+                        {
+                          "text": "--- Step 4: Verifying alert banner ---\n"
+                        },
+                        {
+                          "text": "  ✓ Alert banner: 1 devices require attention\n"
+                        },
+                        {
+                          "text": "  ✓ Alert dropdown toggle clicked\n"
+                        },
+                        {
+                          "text": "--- Step 5: Verifying action buttons ---\n"
+                        },
+                        {
+                          "text": "  ✓ \"Renew All\" button visible\n"
+                        },
+                        {
+                          "text": "  ✓ \"Payment History\" button visible\n"
+                        },
+                        {
+                          "text": "  ✓ \"Change Payment Method\" button visible\n"
+                        },
+                        {
+                          "text": "  ✓ \"Billing Overview\" button visible\n"
+                        },
+                        {
+                          "text": "--- Step 6: Testing Billing Overview dropdown ---\n"
+                        },
+                        {
+                          "text": "  ✓ Billing Overview clicked\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Resolve Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: View Details\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Billing Overview\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Upcoming Bill Preview\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Last Payment Invoice\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Download Full Payment History\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Subscription Details\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Export\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Export\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Select All\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Deselect All\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Online Only\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Export\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Dropdown item: PDF\n"
+                        },
+                        {
+                          "text": "--- Step 7: Verifying tabs ---\n"
+                        },
+                        {
+                          "text": "  Tab \"All Devices\" not found\n"
+                        },
+                        {
+                          "text": "  Tab \"Active Devices\" not found\n"
+                        },
+                        {
+                          "text": "  Tab \"Currently Due\" not found\n"
+                        },
+                        {
+                          "text": "  Tab \"Past Due\" not found\n"
+                        },
+                        {
+                          "text": "  ✓ Tab \"Suspended Devices\" visible\n"
+                        },
+                        {
+                          "text": "  ✓ Tab \"Auto-Renew Subscriptions\" visible\n"
+                        },
+                        {
+                          "text": "  ✓ Tab \"Cancelled Devices\" visible\n"
+                        },
+                        {
+                          "text": "✓ Tabs verification completed\n"
+                        },
+                        {
+                          "text": "--- Step 8: Verifying filter bar ---\n"
+                        },
+                        {
+                          "text": "  ✓ Status filter visible\n"
+                        },
+                        {
+                          "text": "  ✓ Device type filter visible\n"
+                        },
+                        {
+                          "text": "  ✓ Search input visible\n"
+                        },
+                        {
+                          "text": "  ✓ Entries select visible\n"
+                        },
+                        {
+                          "text": "--- Step 9: Verifying table structure ---\n"
+                        },
+                        {
+                          "text": "  Table headers: Driver Name/IMEI ⇅, Type ⇅, Amount ⇅, Status ⇅, Billing Cycle ⇅, Renewal Date ⇅, Auto-Renew, Actions\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Driver Name/IMEI\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Type\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Amount\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Status\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Billing Cycle\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Renewal Date\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Auto-Renew\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Column \"Actions\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Table has 10 data rows\n"
+                        },
+                        {
+                          "text": "--- Step 10: Testing status filter ---\n"
+                        },
+                        {
+                          "text": "  ✓ Status filter \"Past Due\": 10 → 10 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Status filter reset: 10 rows\n"
+                        },
+                        {
+                          "text": "--- Step 11: Testing device filter ---\n"
+                        },
+                        {
+                          "text": "  ✓ Device filter applied: 10 → 10 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Device filter reset: 10 rows\n"
+                        },
+                        {
+                          "text": "--- Step 12: Testing search functionality ---\n"
+                        },
+                        {
+                          "text": "  ✓ Search \"Sales\": 10 → 10 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Search cleared: 10 rows\n"
+                        },
+                        {
+                          "text": "--- Step 13: Testing entries per page ---\n"
+                        },
+                        {
+                          "text": "  ✓ Entries 10: showing 10 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Entries 25: showing 10 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Entries 50: showing 10 rows\n"
+                        },
+                        {
+                          "text": "--- Step 14: Verifying pagination ---\n"
+                        },
+                        {
+                          "text": "  ✓ Showing range: 1-10 of 11\n"
+                        },
+                        {
+                          "text": "  ✓ Next page button visible\n"
+                        },
+                        {
+                          "text": "  ✓ Navigated to next page\n"
+                        },
+                        {
+                          "text": "  ✓ Navigated back to first page\n"
+                        },
+                        {
+                          "text": "--- Step 15: Testing export buttons ---\n"
+                        },
+                        {
+                          "text": "  ✓ PDF export clicked\n"
+                        },
+                        {
+                          "text": "  ✓ CSV export clicked\n"
+                        },
+                        {
+                          "text": "  ✓ Excel export clicked\n"
+                        },
+                        {
+                          "text": "\n========================================\n"
+                        },
+                        {
+                          "text": "Subscription Dashboard Test A Completed\n"
+                        },
+                        {
+                          "text": "========================================\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-03T16:18:13.922Z",
+                      "startTime": "2026-02-05T21:06:32.903Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -207,9 +899,1464 @@
                   "status": "expected"
                 }
               ],
-              "id": "abced7358b44b0183c8b-492010b9cff7ac17308f",
-              "file": "TS003_ChangeTimezone.spec.js",
-              "line": 24,
+              "id": "d8769c75831f3ea407e0-02d8fcab89aef45022a0",
+              "file": "TS069_subscriptionDashboard.spec.js",
+              "line": 125,
+              "column": 5
+            },
+            {
+              "title": "should handle tab switching and verify data updates",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 90936,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Preserving cookies (using stored auth session)\n"
+                        },
+                        {
+                          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
+                        },
+                        {
+                          "text": "Config loaded successfully\n"
+                        },
+                        {
+                          "text": "--- Step 1: Login and navigate ---\n"
+                        },
+                        {
+                          "text": "Login completed on tracking1\n"
+                        },
+                        {
+                          "text": "Network idle timeout, continuing...\n"
+                        },
+                        {
+                          "text": "Navigated to tracking1 dashboard\n"
+                        },
+                        {
+                          "text": "✓ Successfully logged in\n"
+                        },
+                        {
+                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
+                        },
+                        {
+                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
+                        },
+                        {
+                          "text": "✓ Subscription Dashboard opened\n"
+                        },
+                        {
+                          "text": "--- Step 3: Testing tab switching ---\n"
+                        },
+                        {
+                          "text": "  Tab \"All Devices\" not visible, skipping\n"
+                        },
+                        {
+                          "text": "  Tab \"Active Devices\" not visible, skipping\n"
+                        },
+                        {
+                          "text": "  Tab \"Currently Due\" not visible, skipping\n"
+                        },
+                        {
+                          "text": "  Tab \"Past Due\" not visible, skipping\n"
+                        },
+                        {
+                          "text": "  Tab \"Suspended Devices\": 1 rows\n"
+                        },
+                        {
+                          "text": "    Device filter: 1 → 1 rows\n"
+                        },
+                        {
+                          "text": "  Tab \"Auto-Renew Subscriptions\": 1 rows\n"
+                        },
+                        {
+                          "text": "    Device filter: 1 → 1 rows\n"
+                        },
+                        {
+                          "text": "  Tab \"Cancelled Devices\": 1 rows\n"
+                        },
+                        {
+                          "text": "    Device filter: 1 → 1 rows\n"
+                        },
+                        {
+                          "text": "--- Step 4: Testing entries per page on All Devices tab ---\n"
+                        },
+                        {
+                          "text": "  ✓ Entries 10: showing 1 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Entries 25: showing 1 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Entries 50: showing 1 rows\n"
+                        },
+                        {
+                          "text": "\n========================================\n"
+                        },
+                        {
+                          "text": "Subscription Dashboard Test B Completed\n"
+                        },
+                        {
+                          "text": "========================================\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-05T21:08:59.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d8769c75831f3ea407e0-1bebc265acaf27bef26a",
+              "file": "TS069_subscriptionDashboard.spec.js",
+              "line": 445,
+              "column": 5
+            },
+            {
+              "title": "should display and interact with Payment History section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 68948,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Preserving cookies (using stored auth session)\n"
+                        },
+                        {
+                          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
+                        },
+                        {
+                          "text": "Config loaded successfully\n"
+                        },
+                        {
+                          "text": "--- Step 1: Login and navigate ---\n"
+                        },
+                        {
+                          "text": "Login completed on tracking1\n"
+                        },
+                        {
+                          "text": "Network idle timeout, continuing...\n"
+                        },
+                        {
+                          "text": "Navigated to tracking1 dashboard\n"
+                        },
+                        {
+                          "text": "✓ Successfully logged in\n"
+                        },
+                        {
+                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
+                        },
+                        {
+                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
+                        },
+                        {
+                          "text": "✓ Subscription Dashboard opened\n"
+                        },
+                        {
+                          "text": "--- Step 3: Verifying Payment History section ---\n"
+                        },
+                        {
+                          "text": "✓ Payment History heading visible\n"
+                        },
+                        {
+                          "text": "--- Step 4: Verifying Payment History controls ---\n"
+                        },
+                        {
+                          "text": "  ✓ Payment search input visible\n"
+                        },
+                        {
+                          "text": "  ✓ Date filter button (\"All Time\") visible\n"
+                        },
+                        {
+                          "text": "--- Step 5: Verifying payment table ---\n"
+                        },
+                        {
+                          "text": "  Found 36 tables on page\n"
+                        },
+                        {
+                          "text": "  ✓ Payment table columns: Transaction ⇅, Type ⇅, Amount ⇅, Status ⇅, Date ⇅, Payment Method ⇅, Receipt\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Transaction\" found\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Type\" found\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Amount\" found\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Status\" found\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Date\" found\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Payment Method\" found\n"
+                        },
+                        {
+                          "text": "    ✓ Column \"Receipt\" found\n"
+                        },
+                        {
+                          "text": "  ✓ Payment table has 0 rows\n"
+                        },
+                        {
+                          "text": "  ✓ Payment showing: Showing 0 to 0 of 0 entries\n"
+                        },
+                        {
+                          "text": "--- Step 6: Testing date filter ---\n"
+                        },
+                        {
+                          "text": "  ✓ Date filter opened with 177 options\n"
+                        },
+                        {
+                          "text": "--- Step 7: Verifying payment pagination ---\n"
+                        },
+                        {
+                          "text": "  ✓ Payment prev button visible\n"
+                        },
+                        {
+                          "text": "  ✓ Payment next button visible\n"
+                        },
+                        {
+                          "text": "--- Step 8: Testing collapse/expand ---\n"
+                        },
+                        {
+                          "text": "  ✓ Collapsed Payment History section\n"
+                        },
+                        {
+                          "text": "  ✓ Expanded Payment History section\n"
+                        },
+                        {
+                          "text": "--- Step 9: Testing Payment Save file as ---\n"
+                        },
+                        {
+                          "text": "  ✓ Payment \"Save file as\" dropdown opened\n"
+                        },
+                        {
+                          "text": "\n========================================\n"
+                        },
+                        {
+                          "text": "Subscription Dashboard Test C Completed\n"
+                        },
+                        {
+                          "text": "========================================\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-05T21:10:30.842Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d8769c75831f3ea407e0-36f26a43b0a3cbf3a08b",
+              "file": "TS069_subscriptionDashboard.spec.js",
+              "line": 538,
+              "column": 5
+            },
+            {
+              "title": "should handle row selection and verify modals structure",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 106572,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Preserving cookies (using stored auth session)\n"
+                        },
+                        {
+                          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
+                        },
+                        {
+                          "text": "Config loaded successfully\n"
+                        },
+                        {
+                          "text": "--- Step 1: Login and navigate ---\n"
+                        },
+                        {
+                          "text": "Login completed on tracking1\n"
+                        },
+                        {
+                          "text": "Network idle timeout, continuing...\n"
+                        },
+                        {
+                          "text": "Navigated to tracking1 dashboard\n"
+                        },
+                        {
+                          "text": "✓ Successfully logged in\n"
+                        },
+                        {
+                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
+                        },
+                        {
+                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
+                        },
+                        {
+                          "text": "✓ Subscription Dashboard opened\n"
+                        },
+                        {
+                          "text": "--- Step 3: Testing row checkboxes ---\n"
+                        },
+                        {
+                          "text": "  Sidebar collapsed\n"
+                        },
+                        {
+                          "text": "  Found 10 row checkboxes\n"
+                        },
+                        {
+                          "text": "  ✓ First row checkbox clicked\n"
+                        },
+                        {
+                          "text": "  ✓ \"Renew Selected\" button visible\n"
+                        },
+                        {
+                          "text": "  ✓ First row checkbox unchecked\n"
+                        },
+                        {
+                          "text": "  ✓ Multiple rows selected\n"
+                        },
+                        {
+                          "text": "  ✓ Multiple rows deselected\n"
+                        },
+                        {
+                          "text": "--- Step 4: Testing Take Action dropdown ---\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Close\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Make Default\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Remove\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Make Default\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Remove\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Download invoice\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Download receipt\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Edit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Delete\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Close\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Submit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Add New Service Type\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: View Change Log\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Submit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Close\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Activate\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Edit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Deactivate\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Delete\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Back\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Close\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: View Details\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: View Details\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: View Details\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: View Chart\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Export\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Export\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: View Chart\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: \n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Select All\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Deselect All\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Online Only\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Reset to Defaults\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save Settings\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Copy\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Reset\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Edit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: \n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Reset\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Edit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: \n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Reset\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: Edit\n"
+                        },
+                        {
+                          "text": "    ✓ Action option: \n"
+                        },
+                        {
+                          "text": "  ✓ Take Action dropdown tested\n"
+                        },
+                        {
+                          "text": "--- Step 5: Testing Change Payment Method ---\n"
+                        },
+                        {
+                          "text": "  Change Payment Method clicked (may redirect or show inline form)\n"
+                        },
+                        {
+                          "text": "--- Step 6: Testing Billing Overview dropdown ---\n"
+                        },
+                        {
+                          "text": "  ✓ Billing Overview dropdown opened\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Billing Overview\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Upcoming Bill Preview\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Last Payment Invoice\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Download Full Payment History\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Subscription Details\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Take Action\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Renew Now\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Request Cancellation\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Export\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Save file as\n"
+                        },
+                        {
+                          "text": "    ✓ Option: Excel\n"
+                        },
+                        {
+                          "text": "    ✓ Option: CSV\n"
+                        },
+                        {
+                          "text": "    ✓ Option: PDF\n"
+                        },
+                        {
+                          "text": "--- Step 7: Testing Renew All button ---\n"
+                        },
+                        {
+                          "text": "  ✓ \"Renew All\" button visible\n"
+                        },
+                        {
+                          "text": "--- Step 8: Testing Take Action → Renew Now ---\n"
+                        },
+                        {
+                          "text": "  Renew Now clicked (no modal appeared)\n"
+                        },
+                        {
+                          "text": "--- Step 9: Testing Take Action → Cancel ---\n"
+                        },
+                        {
+                          "text": "  Cancel option clicked (no modal appeared)\n"
+                        },
+                        {
+                          "text": "\n========================================\n"
+                        },
+                        {
+                          "text": "Subscription Dashboard Test D Completed\n"
+                        },
+                        {
+                          "text": "========================================\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-05T21:11:39.827Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d8769c75831f3ea407e0-3b37cd6a9ea7cbddc48c",
+              "file": "TS069_subscriptionDashboard.spec.js",
+              "line": 692,
               "column": 5
             }
           ]
@@ -219,9 +2366,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-03T16:18:09.447Z",
-    "duration": 293109.435,
-    "expected": 2,
+    "startTime": "2026-02-05T21:06:31.853Z",
+    "duration": 414888.70800000004,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

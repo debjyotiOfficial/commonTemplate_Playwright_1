@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - auth - 3/2/2026</title>
+    <title>Test Report - auth - 6/2/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: auth</div>
             <div class="subtitle">
-                Generated: 3/2/2026, 9:53:02 pm |
-                Duration: 292.92s |
+                Generated: 6/2/2026, 1:22:24 am |
+                Duration: 215.08s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -164,11 +164,11 @@
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">0</div>
+                <div class="number">1</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">100.0%</div>
+                <div class="number">0.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,15 +207,67 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="passed" data-module="auth.setup.js">
+                    <tr data-status="failed" data-module="auth.setup.js">
                         <td><span class="test-case-no">TC-A</span></td>
                         <td>auth.setup.js</td>
                         <td>
                             <strong>authenticate</strong>
                             
+                                <button class="error-toggle" onclick="toggleError(0)">
+                                    View Error Details
+                                    <span class="arrow">&#9660;</span>
+                                </button>
+                                <div id="error-0" class="error-panel">
+                                    
+            <div class="error-details">
+                <div class="error-details-header">
+                    <span class="error-type-badge">Timeout Error</span>
+                </div>
+                <div class="error-details-body">
+                    <div class="error-row">
+                        <span class="error-label">File:</span>
+                        <span class="error-value">auth.setup.js</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Line:</span>
+                        <span class="error-value">10</span>
+                    </div>
+                    
+                    
+                    <div class="error-row">
+                        <span class="error-label">Timeout:</span>
+                        <span class="error-value">180s</span>
+                    </div>
+                    
+                    <div class="error-row">
+                        <span class="error-label">Expected:</span>
+                        <span class="error-value">Operation should complete within time limit</span>
+                    </div>
+                    <div class="error-row">
+                        <span class="error-label">Actual:</span>
+                        <span class="error-value error-actual">Operation took too long</span>
+                    </div>
+                    
+                    <div class="error-row suggestion">
+                        <span class="error-label">Suggestion:</span>
+                        <span class="error-value">Page may be slow to load, or element never appeared. Check network/server status</span>
+                    </div>
+                    
+                    <div class="error-row full-error">
+                        <span class="error-label">Full Error:</span>
+                        <span class="error-value"><pre>TimeoutError: page.goto: Timeout 180000ms exceeded.
+Call log:
+  - navigating to &quot;https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php&quot;, waiting until &quot;load&quot;
+</pre></span>
+                    </div>
+                </div>
+            </div>
+        
+                                </div>
+                            
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (1)</span>
+                                    <span>View Test Steps (11)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -224,17 +276,67 @@
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">Valid authentication session found (age: 6 minutes). Skipping login.</span>
+                                                <span class="step-text">Authentication session expired (age: 83 minutes). Re-authenticating...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Performing authentication setup...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Login page loaded, filling credentials...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Username filled: debjyoti</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Password filled</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Username value before submit: debjyoti</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Password filled: Yes (hidden)</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicking submit button...</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Current URL after submit: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Navigating to fleet dashboard...</span>
                                             </div>
                                         
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status passed">PASSED</span></td>
-                        <td><strong>1.02s</strong></td>
+                        <td><span class="status failed">FAILED</span></td>
+                        <td><strong>212.13s</strong></td>
                         <td>
-                            <span class="no-video">No video</span>
+                            <a href="videos/auth.setup.js-authenticate.webm" class="video-link" target="_blank">Video: auth.setup.js-authenticate.webm</a>
                         </td>
                     </tr>
                     
@@ -286,7 +388,7 @@
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"PASSED","duration":"1.02s","failureReason":"","videoIdentifier":"N/A"}];
+            const data = [{"testCaseNo":"TC-A","module":"auth.setup.js","description":"authenticate","status":"FAILED","duration":"212.13s","failureReason":"TimeoutError: page.goto: Timeout 180000ms exceeded.","videoIdentifier":"auth.setup.js-authenticate.webm"}];
 
             data.forEach(row => {
                 csv.push([
@@ -303,7 +405,7 @@
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-02-03.csv';
+            link.download = 'test-report-2026-02-05.csv';
             link.click();
         }
     </script>

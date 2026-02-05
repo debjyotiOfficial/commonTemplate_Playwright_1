@@ -1,12 +1,12 @@
 {
   "summary": {
     "total": 1,
-    "passed": 1,
-    "failed": 0,
+    "passed": 0,
+    "failed": 1,
     "skipped": 0,
-    "duration": 292916,
-    "startTime": "2026-02-03T16:18:09.719Z",
-    "endTime": "2026-02-03T16:23:02.635Z"
+    "duration": 215079,
+    "startTime": "2026-02-05T19:48:49.843Z",
+    "endTime": "2026-02-05T19:52:24.922Z"
   },
   "tests": [
     {
@@ -14,23 +14,95 @@
       "module": "auth.setup.js",
       "title": "authenticate",
       "description": "authenticate",
-      "status": "passed",
-      "statusDisplay": "PASSED",
-      "duration": 1024,
-      "failureReason": "",
-      "parsedError": null,
-      "videoPath": null,
-      "videoIdentifier": "N/A",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 212133,
+      "failureReason": "TimeoutError: page.goto: Timeout 180000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": null,
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "180s",
+        "file": "auth.setup.js",
+        "line": 10,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: page.goto: Timeout 180000ms exceeded.",
+        "fullMessage": "TimeoutError: page.goto: Timeout 180000ms exceeded.\nCall log:\n  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"load\"\n",
+        "stackTrace": "TimeoutError: page.goto: Timeout 180000ms exceeded.\nCall log:\n  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"load\"\n\n    at C:\\cypress-to-playwright-converted\\tests\\auth.setup.js:120:16"
+      },
+      "videoPath": "videos/auth.setup.js-authenticate.webm",
+      "videoIdentifier": "auth.setup.js-authenticate.webm",
       "steps": [
         {
           "number": "",
-          "text": "Valid authentication session found (age: 6 minutes). Skipping login.",
+          "text": "Authentication session expired (age: 83 minutes). Re-authenticating...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Performing authentication setup...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login page loaded, filling credentials...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username filled: debjyoti",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password filled",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username value before submit: debjyoti",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password filled: Yes (hidden)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking submit button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current URL after submit: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful! Redirected to: https://www.gpsandfleet3.net/gpsandfleet/adminnew/view/index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating to fleet dashboard...",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2026-02-03T16:18:11.510Z",
-      "endTime": "2026-02-03T16:18:12.534Z",
+      "startTime": "2026-02-05T19:48:52.649Z",
+      "endTime": "2026-02-05T19:52:24.788Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\auth.setup.js",
       "fileName": "auth.setup.js",

@@ -1,4 +1,3 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",FAILED,64.35,"Error: locator.check: Element is not visible",TS047_dashcamAlertSettings-should-verify-alert-settings-panel-and-save-settin.webm,TS047_dashcamAlertSettings.spec.js,57
-TS047-B,"Dashcam Alert Settings","should add and delete alerts contacts (email and phone)",PASSED,158.45,"",N/A,TS047_dashcamAlertSettings.spec.js,90
-TS047-C,"Dashcam Alert Settings","should configure after hours settings",PASSED,61.04,"",N/A,TS047_dashcamAlertSettings.spec.js,170
+TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",PASSED,85.97,"",N/A,TS047_dashcamAlertSettings.spec.js,57
+TS047-B,"Dashcam Alert Settings","should configure after hours settings",PASSED,87.94,"",N/A,TS047_dashcamAlertSettings.spec.js,286

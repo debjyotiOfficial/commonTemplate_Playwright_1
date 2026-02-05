@@ -1,24 +1,731 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="293.109435">
-<testsuite name="auth.setup.js" timestamp="2026-02-03T16:18:09.717Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.024" errors="0">
-<testcase name="authenticate" classname="auth.setup.js" time="1.024">
-<system-out>
-<![CDATA[Valid authentication session found (age: 6 minutes). Skipping login.
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="TS003_ChangeTimezone.spec.js" timestamp="2026-02-03T16:18:09.717Z" hostname="chromium" tests="1" failures="0" skipped="0" time="286.72" errors="0">
-<testcase name="Timezone › should edit the timezone of users" classname="TS003_ChangeTimezone.spec.js" time="286.72">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="414.88870800000007">
+<testsuite name="TS069_subscriptionDashboard.spec.js" timestamp="2026-02-05T21:06:31.974Z" hostname="chromium" tests="4" failures="0" skipped="0" time="412.64" errors="0">
+<testcase name="Subscription Dashboard › should display and interact with Subscription Dashboard panel" classname="TS069_subscriptionDashboard.spec.js" time="146.184">
 <system-out>
 <![CDATA[Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
 Preserving cookies (using stored auth session)
 Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
 Config loaded successfully
-Using stored authentication session (skipping login)...
-Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...
+--- Step 1: Login and navigate to fleet dashboard ---
+Login completed on tracking1
 Network idle timeout, continuing...
-Page loaded successfully
+Navigated to tracking1 dashboard
+✓ Successfully logged in
+--- Step 2: Opening Subscription Dashboard ---
+  Clicked "Subscription Dashboard" in sidebar
+✓ Subscription Dashboard opened
+--- Step 3: Verifying stats cards ---
+  Stats card "Active Devices" not found
+  Stats card "Currently Due" not found
+  Stats card "Past Due" not found
+  ✓ Stats card "Auto-renew Subscriptions" visible
+✓ Stats cards verified
+--- Step 4: Verifying alert banner ---
+  ✓ Alert banner: 1 devices require attention
+  ✓ Alert dropdown toggle clicked
+--- Step 5: Verifying action buttons ---
+  ✓ "Renew All" button visible
+  ✓ "Payment History" button visible
+  ✓ "Change Payment Method" button visible
+  ✓ "Billing Overview" button visible
+--- Step 6: Testing Billing Overview dropdown ---
+  ✓ Billing Overview clicked
+    ✓ Dropdown item: Resolve Now
+    ✓ Dropdown item: View Details
+    ✓ Dropdown item: Billing Overview
+    ✓ Dropdown item: Upcoming Bill Preview
+    ✓ Dropdown item: Last Payment Invoice
+    ✓ Dropdown item: Download Full Payment History
+    ✓ Dropdown item: Subscription Details
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Take Action
+    ✓ Dropdown item: Renew Now
+    ✓ Dropdown item: Request Cancellation
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Export
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Export
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Select All
+    ✓ Dropdown item: Deselect All
+    ✓ Dropdown item: Online Only
+    ✓ Dropdown item: Export
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+    ✓ Dropdown item: Save file as
+    ✓ Dropdown item: Excel
+    ✓ Dropdown item: CSV
+    ✓ Dropdown item: PDF
+--- Step 7: Verifying tabs ---
+  Tab "All Devices" not found
+  Tab "Active Devices" not found
+  Tab "Currently Due" not found
+  Tab "Past Due" not found
+  ✓ Tab "Suspended Devices" visible
+  ✓ Tab "Auto-Renew Subscriptions" visible
+  ✓ Tab "Cancelled Devices" visible
+✓ Tabs verification completed
+--- Step 8: Verifying filter bar ---
+  ✓ Status filter visible
+  ✓ Device type filter visible
+  ✓ Search input visible
+  ✓ Entries select visible
+--- Step 9: Verifying table structure ---
+  Table headers: Driver Name/IMEI ⇅, Type ⇅, Amount ⇅, Status ⇅, Billing Cycle ⇅, Renewal Date ⇅, Auto-Renew, Actions
+  ✓ Column "Driver Name/IMEI" found
+  ✓ Column "Type" found
+  ✓ Column "Amount" found
+  ✓ Column "Status" found
+  ✓ Column "Billing Cycle" found
+  ✓ Column "Renewal Date" found
+  ✓ Column "Auto-Renew" found
+  ✓ Column "Actions" found
+  ✓ Table has 10 data rows
+--- Step 10: Testing status filter ---
+  ✓ Status filter "Past Due": 10 → 10 rows
+  ✓ Status filter reset: 10 rows
+--- Step 11: Testing device filter ---
+  ✓ Device filter applied: 10 → 10 rows
+  ✓ Device filter reset: 10 rows
+--- Step 12: Testing search functionality ---
+  ✓ Search "Sales": 10 → 10 rows
+  ✓ Search cleared: 10 rows
+--- Step 13: Testing entries per page ---
+  ✓ Entries 10: showing 10 rows
+  ✓ Entries 25: showing 10 rows
+  ✓ Entries 50: showing 10 rows
+--- Step 14: Verifying pagination ---
+  ✓ Showing range: 1-10 of 11
+  ✓ Next page button visible
+  ✓ Navigated to next page
+  ✓ Navigated back to first page
+--- Step 15: Testing export buttons ---
+  ✓ PDF export clicked
+  ✓ CSV export clicked
+  ✓ Excel export clicked
+
+========================================
+Subscription Dashboard Test A Completed
+========================================
+]]>
+</system-out>
+</testcase>
+<testcase name="Subscription Dashboard › should handle tab switching and verify data updates" classname="TS069_subscriptionDashboard.spec.js" time="90.936">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+--- Step 1: Login and navigate ---
+Login completed on tracking1
+Network idle timeout, continuing...
+Navigated to tracking1 dashboard
+✓ Successfully logged in
+--- Step 2: Opening Subscription Dashboard ---
+  Clicked "Subscription Dashboard" in sidebar
+✓ Subscription Dashboard opened
+--- Step 3: Testing tab switching ---
+  Tab "All Devices" not visible, skipping
+  Tab "Active Devices" not visible, skipping
+  Tab "Currently Due" not visible, skipping
+  Tab "Past Due" not visible, skipping
+  Tab "Suspended Devices": 1 rows
+    Device filter: 1 → 1 rows
+  Tab "Auto-Renew Subscriptions": 1 rows
+    Device filter: 1 → 1 rows
+  Tab "Cancelled Devices": 1 rows
+    Device filter: 1 → 1 rows
+--- Step 4: Testing entries per page on All Devices tab ---
+  ✓ Entries 10: showing 1 rows
+  ✓ Entries 25: showing 1 rows
+  ✓ Entries 50: showing 1 rows
+
+========================================
+Subscription Dashboard Test B Completed
+========================================
+]]>
+</system-out>
+</testcase>
+<testcase name="Subscription Dashboard › should display and interact with Payment History section" classname="TS069_subscriptionDashboard.spec.js" time="68.948">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+--- Step 1: Login and navigate ---
+Login completed on tracking1
+Network idle timeout, continuing...
+Navigated to tracking1 dashboard
+✓ Successfully logged in
+--- Step 2: Opening Subscription Dashboard ---
+  Clicked "Subscription Dashboard" in sidebar
+✓ Subscription Dashboard opened
+--- Step 3: Verifying Payment History section ---
+✓ Payment History heading visible
+--- Step 4: Verifying Payment History controls ---
+  ✓ Payment search input visible
+  ✓ Date filter button ("All Time") visible
+--- Step 5: Verifying payment table ---
+  Found 36 tables on page
+  ✓ Payment table columns: Transaction ⇅, Type ⇅, Amount ⇅, Status ⇅, Date ⇅, Payment Method ⇅, Receipt
+    ✓ Column "Transaction" found
+    ✓ Column "Type" found
+    ✓ Column "Amount" found
+    ✓ Column "Status" found
+    ✓ Column "Date" found
+    ✓ Column "Payment Method" found
+    ✓ Column "Receipt" found
+  ✓ Payment table has 0 rows
+  ✓ Payment showing: Showing 0 to 0 of 0 entries
+--- Step 6: Testing date filter ---
+  ✓ Date filter opened with 177 options
+--- Step 7: Verifying payment pagination ---
+  ✓ Payment prev button visible
+  ✓ Payment next button visible
+--- Step 8: Testing collapse/expand ---
+  ✓ Collapsed Payment History section
+  ✓ Expanded Payment History section
+--- Step 9: Testing Payment Save file as ---
+  ✓ Payment "Save file as" dropdown opened
+
+========================================
+Subscription Dashboard Test C Completed
+========================================
+]]>
+</system-out>
+</testcase>
+<testcase name="Subscription Dashboard › should handle row selection and verify modals structure" classname="TS069_subscriptionDashboard.spec.js" time="106.572">
+<system-out>
+<![CDATA[Preserving cookies (using stored auth session)
+Loading config from: C:\cypress-to-playwright-converted\fixtures\tlr-config.json
+Config loaded successfully
+--- Step 1: Login and navigate ---
+Login completed on tracking1
+Network idle timeout, continuing...
+Navigated to tracking1 dashboard
+✓ Successfully logged in
+--- Step 2: Opening Subscription Dashboard ---
+  Clicked "Subscription Dashboard" in sidebar
+✓ Subscription Dashboard opened
+--- Step 3: Testing row checkboxes ---
+  Sidebar collapsed
+  Found 10 row checkboxes
+  ✓ First row checkbox clicked
+  ✓ "Renew Selected" button visible
+  ✓ First row checkbox unchecked
+  ✓ Multiple rows selected
+  ✓ Multiple rows deselected
+--- Step 4: Testing Take Action dropdown ---
+    ✓ Action option: Close
+    ✓ Action option: Save
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Take Action
+    ✓ Action option: Renew Now
+    ✓ Action option: Request Cancellation
+    ✓ Action option: Make Default
+    ✓ Action option: Remove
+    ✓ Action option: Make Default
+    ✓ Action option: Remove
+    ✓ Action option: Download invoice
+    ✓ Action option: Download receipt
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Edit
+    ✓ Action option: Delete
+    ✓ Action option: Close
+    ✓ Action option: Submit
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Add New Service Type
+    ✓ Action option: View Change Log
+    ✓ Action option: Submit
+    ✓ Action option: Close
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Activate
+    ✓ Action option: Edit
+    ✓ Action option: Deactivate
+    ✓ Action option: Delete
+    ✓ Action option: Back
+    ✓ Action option: Close
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: View Details
+    ✓ Action option: View Details
+    ✓ Action option: View Details
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: View Chart
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Export
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Export
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: View Chart
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: 
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Select All
+    ✓ Action option: Deselect All
+    ✓ Action option: Online Only
+    ✓ Action option: Reset to Defaults
+    ✓ Action option: Save Settings
+    ✓ Action option: Copy
+    ✓ Action option: Save file as
+    ✓ Action option: Excel
+    ✓ Action option: CSV
+    ✓ Action option: PDF
+    ✓ Action option: Reset
+    ✓ Action option: Edit
+    ✓ Action option: 
+    ✓ Action option: Reset
+    ✓ Action option: Edit
+    ✓ Action option: 
+    ✓ Action option: Reset
+    ✓ Action option: Edit
+    ✓ Action option: 
+  ✓ Take Action dropdown tested
+--- Step 5: Testing Change Payment Method ---
+  Change Payment Method clicked (may redirect or show inline form)
+--- Step 6: Testing Billing Overview dropdown ---
+  ✓ Billing Overview dropdown opened
+    ✓ Option: Billing Overview
+    ✓ Option: Upcoming Bill Preview
+    ✓ Option: Last Payment Invoice
+    ✓ Option: Download Full Payment History
+    ✓ Option: Subscription Details
+    ✓ Option: Save file as
+    ✓ Option: PDF
+    ✓ Option: CSV
+    ✓ Option: Excel
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Take Action
+    ✓ Option: Renew Now
+    ✓ Option: Request Cancellation
+    ✓ Option: Save file as
+    ✓ Option: PDF
+    ✓ Option: CSV
+    ✓ Option: Excel
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Export
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+    ✓ Option: Save file as
+    ✓ Option: Excel
+    ✓ Option: CSV
+    ✓ Option: PDF
+--- Step 7: Testing Renew All button ---
+  ✓ "Renew All" button visible
+--- Step 8: Testing Take Action → Renew Now ---
+  Renew Now clicked (no modal appeared)
+--- Step 9: Testing Take Action → Cancel ---
+  Cancel option clicked (no modal appeared)
+
+========================================
+Subscription Dashboard Test D Completed
+========================================
 ]]>
 </system-out>
 </testcase>
