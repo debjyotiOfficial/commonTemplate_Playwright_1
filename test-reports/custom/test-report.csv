@@ -1,5 +1,7 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TC-A,"auth.setup.js","authenticate",FAILED,212.13,"TimeoutError: page.goto: Timeout 180000ms exceeded.",auth.setup.js-authenticate.webm,auth.setup.js,10
+TC-A,"auth.setup.js","authenticate",PASSED,1.64,"",N/A,auth.setup.js,10
+TC-A,"Geofence Admin Access - Matrack Server","should login, access account NATM0810, and load the platform",PASSED,485.12,"",N/A,TS_geofence_admin_access,7
+TC-A,"Matrack Driver Safety Report","should verify Driver Safety Report for multiple devices",PASSED,118.69,"",N/A,TS_matrack_driverSafety,89
 TS001-A,"List of Device","should show list of all devices in the platform",PASSED,4244.73,"",N/A,TS001_listOfDevice,10
 TS002-A,"Add edit Device","should add device with custom icon",PASSED,239.54,"",N/A,TS002_addEditDevices,394
 TS003-A,"Timezone","should edit the timezone of users",PASSED,286.72,"",N/A,TS003_ChangeTimezone,24
@@ -22,29 +24,43 @@ TS024-A,"Create Landmark","should be able to create new Landmark",PASSED,113.69,
 TS026-A,"view edit landmark","should be able to view, edit and delete landmark",PASSED,128.39,"",N/A,TS026_viewEditLandmark,238
 TS026-B,"view edit landmark","should be able to toggle Hide Vehicle Markers for landmarks",PASSED,125.98,"",N/A,TS026_viewEditLandmark,451
 TS027-A,"Track History Tests","should verify track lines disappear bug - segment switch after restart",PASSED,131.62,"",N/A,TS027_trackHistory,533
-TS028-A,"Travel Log Report","should display TLR",PASSED,158.24,"",N/A,TS028_travelLogReport,87
-TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",PASSED,181.41,"",N/A,TS028_travelLogReport,567
-TS028-C,"Travel Log Report","should verify search functionality in TLR",PASSED,129.03,"",N/A,TS028_travelLogReport,692
-TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,102.62,"",N/A,TS028_travelLogReport,829
-TS028-E,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,75.17,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport,1216
+TS028-A,"Travel Log Report","should display TLR",PASSED,153.41,"",N/A,TS028_travelLogReport,87
+TS028-B,"Travel Log Report","should verify Engine Idling checkbox functionality",PASSED,114.54,"",N/A,TS028_travelLogReport,567
+TS028-C,"Travel Log Report","should verify search functionality in TLR",PASSED,121.15,"",N/A,TS028_travelLogReport,692
+TS028-D,"Travel Log Report","should verify Frequent Stops functionality with API validation",PASSED,100.50,"",N/A,TS028_travelLogReport,829
+TS028-E,"Travel Log Report","should clear search input on report resubmission in Frequent Stops",FAILED,67.14,"Error: expect(received).toBe(expected) // Object.is equality",TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm,TS028_travelLogReport,1216
 TS028-A,"Travel Log Report - Filters","should verify Geofence Events checkbox functionality",FAILED,151.43,"Error: expect(received).toBeFalsy()",TS028_travelLogReportFilters-should-verify-Geofence-Events-checkbox-functionali.webm,TS028_travelLogReportFilters,84
 TS030-A,"Mileage Report","should display start and end mileage of devices",PASSED,88.19,"",N/A,TS030_mileageReport,23
 TS032-A,"30 Day Mileage Report","should be redirected to fleet demo page with demo credentials",PASSED,98.20,"",N/A,TS032_30DayMileageReport,46
 TS034-A,"Trip Report","should generate and validate trip report",PASSED,125.86,"",N/A,TS034_tripReport,43
 TS037-A,"Low Voltage Device Report","should generate and validate low voltage device report",FAILED,81.84,"TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.",TS037_lowVoltageDeviceReport-should-generate-and-validate-low-voltage-device-re.webm,TS037_lowVoltageDeviceReport,23
 TS039-A,"Weekly Utilization Report","should generate and validate weekly utilization report",FAILED,253.09,"TimeoutError: locator.hover: Timeout 30000ms exceeded.",TS039_weeklyUtilizationReport-should-generate-and-validate-weekly-utilization-re.webm,TS039_weeklyUtilizationReport,23
-TS043-A,"Dashcam Refresh","should refresh dashcam functionality",PASSED,103.15,"",N/A,TS043_dashcamRefresh,23
-TS046-A,"Dashcam Track History","displays dashcam track history with different tracking options",PASSED,74.45,"",N/A,TS046_dashcamTrackHistory,23
-TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",PASSED,85.97,"",N/A,TS047_dashcamAlertSettings,57
-TS047-B,"Dashcam Alert Settings","should configure after hours settings",PASSED,87.94,"",N/A,TS047_dashcamAlertSettings,286
+TS043-A,"Dashcam Refresh","should refresh dashcam functionality",PASSED,145.02,"",N/A,TS043_dashcamRefresh,23
+TS044-A,"Snapshots","should display snapshots",PASSED,187.00,"",N/A,TS044_snapshots,23
+TS045-A,"Dashcam Alert Report","shows dashcam alert report",PASSED,110.51,"",N/A,TS045_dashcamAlertReport,23
+TS046-A,"Dashcam Track History","displays dashcam track history with different tracking options",FAILED,109.22,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS046_dashcamTrackHistory-displays-dashcam-track-history-with-different-trac.webm,TS046_dashcamTrackHistory,23
+TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",PASSED,129.39,"",N/A,TS047_dashcamAlertSettings,57
+TS047-B,"Dashcam Alert Settings","should add and delete alerts contacts (email and phone)",PASSED,188.02,"",N/A,TS047_dashcamAlertSettings,206
+TS047-C,"Dashcam Alert Settings","should configure after hours settings",FAILED,112.75,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS047_dashcamAlertSettings-should-configure-after-hours-settings.webm,TS047_dashcamAlertSettings,286
+TS048-A,"Dashcam Video On Demand","should add/edit a device",FAILED,93.74,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS048_dashcamVideoOnDemand-should-add-edit-a-device.webm,TS048_dashcamVideoOnDemand,23
+TS049-A,"Live Video Stream","should request live video stream and verify modal",PASSED,39.87,"",N/A,TS049_liveVideoStream,23
+TS049-B,"Live Video Stream","should verify device status switching and offline/online behavior",PASSED,178.25,"",N/A,TS049_liveVideoStream,169
 TS050-A,"Last 24 Hours","should verify Engine Idling Events checkbox functionality",PASSED,153.74,"",N/A,TS050_last24hrs,39
 TS050-B,"Last 24 Hours","should verify Geofence Events, Landmark Events, and Frequent Stops functionality",PASSED,131.61,"",N/A,TS050_last24hrs,338
 TS051-A,"Real Time Tracking","should verify real-time tracking timer and API data synchronization",PASSED,120.52,"",N/A,TS051_realTimeTracking,23
 TS052-A,"Get Support","should verify Get Support and Insurance form functionality",PASSED,70.68,"",N/A,TS052_getSupport,23
 TS055-A,"Timezone","should edit the timezone of users",PASSED,122.58,"",N/A,TS055_appearanceSettings,24
 TS057-A,"Account Health Summary Report","should verify Get Support functionality from Account Health Summary",PASSED,150.63,"",N/A,TS057_accountHealthSummary,1099
-TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",FAILED,56.74,"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:",TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm,TS058_dashcamDataUsage,23
-TS060-A,"Dashcam Safety Report","should verify Dashcam Safety Report features and API validation",PASSED,156.12,"",N/A,TS060_daschamSafetyReport,1260
+TS058-A,"Dashcam Data Usage","should display Dashcam Data Usage report",PASSED,90.22,"",N/A,TS058_dashcamDataUsage,23
+TS060-A,"Dashcam Safety Report","should display Dashcam Safety Report and verify report data with API validation",PASSED,69.12,"",N/A,TS060_daschamSafetyReport,104
+TS060-B,"Dashcam Safety Report","should verify device selection and date range functionality",PASSED,92.31,"",N/A,TS060_daschamSafetyReport,329
+TS060-C,"Dashcam Safety Report","should verify report metrics and dashboard elements",PASSED,69.88,"",N/A,TS060_daschamSafetyReport,390
+TS060-D,"Dashcam Safety Report","should verify Settings window with All devices selection bug replication",PASSED,90.06,"",N/A,TS060_daschamSafetyReport,439
+TS060-E,"Dashcam Safety Report","should verify Alert Settings button bug replication",PASSED,115.91,"",N/A,TS060_daschamSafetyReport,956
+TS060-F,"Dashcam Safety Report","should verify Dashcam Safety Report features and API validation",PASSED,183.20,"",N/A,TS060_daschamSafetyReport,1260
+TS060-G,"Dashcam Safety Report","should verify Settings view and alert weight configurations",FAILED,100.68,"TimeoutError: locator.fill: Timeout 30000ms exceeded.",TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm,TS060_daschamSafetyReport,1812
+TS060-H,"Dashcam Safety Report","should verify Settings view and alert weight configurations",FAILED,115.81,"TimeoutError: locator.fill: Timeout 30000ms exceeded.",TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm,TS060_daschamSafetyReport,1812
+TS060-I,"Dashcam Safety Report","should verify Settings view and alert weight configurations",FAILED,104.76,"TimeoutError: locator.fill: Timeout 30000ms exceeded.",TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm,TS060_daschamSafetyReport,1812
 TS061-A,"Custom Logo","should reset logos to default using Reset to Default button",PASSED,215.31,"",N/A,TS061_customLogo,645
 TS062-A,"Asset Tracker Settings","should test Aggressive Mode/Change Intervals tab functionality",FAILED,72.96,"Error: expect(locator).toBeVisible() failed",TS062_AssetTrackerSettings-should-test-Aggressive-Mode-Change-Intervals-tab-f.webm,TS062_AssetTrackerSettings,250
 TS068-A,"Daily Geofence Report","should display and interact with Daily Geofence Report",PASSED,101.86,"",N/A,TS068_dailyGeofenceReport,93

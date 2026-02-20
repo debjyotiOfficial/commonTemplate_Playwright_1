@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - travelLogReport - 3/2/2026</title>
+    <title>Test Report - travelLogReport - 7/2/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: travelLogReport</div>
             <div class="subtitle">
-                Generated: 3/2/2026, 12:16:47 am |
-                Duration: 655.35s |
+                Generated: 7/2/2026, 1:17:01 am |
+                Duration: 636.14s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -607,7 +607,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>158.24s</strong></td>
+                        <td><strong>153.41s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -621,7 +621,7 @@
                             
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(1)">
-                                    <span>View Test Steps (19)</span>
+                                    <span>View Test Steps (14)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-1" class="steps-panel">
@@ -651,31 +651,6 @@
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
                                                 <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...</span>
-                                            </div>
-                                        
-                                            <div class="step-item failed step">
-                                                <span class="step-number">1</span>
-                                                <span class="step-text">Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Call log:</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">[2m  - navigating to &quot;https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php&quot;, waiting until &quot;domcontentloaded&quot;[22m</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Retrying navigation...</span>
-                                            </div>
-                                        
-                                            <div class="step-item info log">
-                                                <span class="step-icon">*</span>
-                                                <span class="step-text">Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -728,7 +703,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>181.41s</strong></td>
+                        <td><strong>114.54s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -864,7 +839,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>129.03s</strong></td>
+                        <td><strong>121.15s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -1110,7 +1085,7 @@
                             </div>
                         </td>
                         <td><span class="status passed">PASSED</span></td>
-                        <td><strong>102.62s</strong></td>
+                        <td><strong>100.50s</strong></td>
                         <td>
                             <span class="no-video">No video</span>
                         </td>
@@ -1263,7 +1238,7 @@ Received: &quot;test search text&quot;</pre></span>
                             </div>
                         </td>
                         <td><span class="status failed">FAILED</span></td>
-                        <td><strong>75.17s</strong></td>
+                        <td><strong>67.14s</strong></td>
                         <td>
                             <a href="videos/TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm" class="video-link" target="_blank">Video: TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm</a>
                         </td>
@@ -1317,7 +1292,7 @@ Received: &quot;test search text&quot;</pre></span>
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should display TLR","status":"PASSED","duration":"158.24s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-B","module":"Travel Log Report","description":"should verify Engine Idling checkbox functionality","status":"PASSED","duration":"181.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-C","module":"Travel Log Report","description":"should verify search functionality in TLR","status":"PASSED","duration":"129.03s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-D","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"PASSED","duration":"102.62s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-E","module":"Travel Log Report","description":"should clear search input on report resubmission in Frequent Stops","status":"FAILED","duration":"75.17s","failureReason":"Error: expect(received).toBe(expected) // Object.is equality","videoIdentifier":"TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm"}];
+            const data = [{"testCaseNo":"TS028-A","module":"Travel Log Report","description":"should display TLR","status":"PASSED","duration":"153.41s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-B","module":"Travel Log Report","description":"should verify Engine Idling checkbox functionality","status":"PASSED","duration":"114.54s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-C","module":"Travel Log Report","description":"should verify search functionality in TLR","status":"PASSED","duration":"121.15s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-D","module":"Travel Log Report","description":"should verify Frequent Stops functionality with API validation","status":"PASSED","duration":"100.50s","failureReason":"","videoIdentifier":"N/A"},{"testCaseNo":"TS028-E","module":"Travel Log Report","description":"should clear search input on report resubmission in Frequent Stops","status":"FAILED","duration":"67.14s","failureReason":"Error: expect(received).toBe(expected) // Object.is equality","videoIdentifier":"TS028_travelLogReport-should-clear-search-input-on-report-resubmission-i.webm"}];
 
             data.forEach(row => {
                 csv.push([
@@ -1334,7 +1309,7 @@ Received: &quot;test search text&quot;</pre></span>
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-02-02.csv';
+            link.download = 'test-report-2026-02-06.csv';
             link.click();
         }
     </script>

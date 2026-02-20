@@ -1,0 +1,274 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 180983,
+    "startTime": "2026-02-06T21:20:13.055Z",
+    "endTime": "2026-02-06T21:23:14.038Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TC-A",
+      "module": "Matrack Driver Safety Report",
+      "title": "should verify Driver Safety Report for multiple devices",
+      "description": "should verify Driver Safety Report for multiple devices",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 118690,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Login successful",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dashboard loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Driver Safety Report panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DEVICE 1",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Selecting device 1: Dashcam LC400",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked for device 1...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API called for device 1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing API vs Modal for: Dashcam LC400",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API Data: {\"safetyScore\":1000,\"milesDriven\":0,\"speedCount\":0,\"hardBrakes\":0,\"hardAcceleration\":0,\"nightMiles\":0}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Data: {\"safetyScore\":1000,\"milesDriven\":0,\"speedCount\":0,\"hardBrakes\":0,\"hardAcceleration\":0,\"nightMiles\":0,\"hasLowRiskLabel\":true}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Safety Score: API=1000 | Modal=1000",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Miles Driven: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Speed Events: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Hard Braking: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Hard Acceleration: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Night Miles: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Risk Level: Score=1000 -> Low Risk Driver",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "All comparisons  for Dashcam LC400!",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Closing modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DEVICE 2",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Selecting device 2: Dashcam LC400-2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Submit clicked for device 2...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API called for device 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing API vs Modal for: Dashcam LC4002",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "API Data: {\"safetyScore\":1000,\"milesDriven\":0,\"speedCount\":0,\"hardBrakes\":0,\"hardAcceleration\":0,\"nightMiles\":0}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Data: {\"safetyScore\":1000,\"milesDriven\":0,\"speedCount\":0,\"hardBrakes\":0,\"hardAcceleration\":0,\"nightMiles\":0,\"hasLowRiskLabel\":true}",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Safety Score: API=1000 | Modal=1000",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Miles Driven: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Speed Events: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Hard Braking: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Hard Acceleration: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Night Miles: API=0 | Modal=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "PASS  Risk Level: Score=1000 -> Low Risk Driver",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 2,
+          "text": "All comparisons  for Dashcam LC400-2!",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": 3,
+          "text": "ALL TESTS",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Device 1: Dashcam LC400 - VERIFIED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device 2: Dashcam LC400-2 - VERIFIED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        }
+      ],
+      "startTime": "2026-02-06T21:21:12.867Z",
+      "endTime": "2026-02-06T21:23:11.560Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS_matrack_driverSafety.spec.js",
+      "fileName": "TS_matrack_driverSafety",
+      "line": 89
+    }
+  ]
+}

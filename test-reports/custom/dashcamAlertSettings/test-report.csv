@@ -1,3 +1,4 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",PASSED,85.97,"",N/A,TS047_dashcamAlertSettings.spec.js,57
-TS047-B,"Dashcam Alert Settings","should configure after hours settings",PASSED,87.94,"",N/A,TS047_dashcamAlertSettings.spec.js,286
+TS047-A,"Dashcam Alert Settings","should verify alert settings panel and save settings",PASSED,129.39,"",N/A,TS047_dashcamAlertSettings.spec.js,57
+TS047-B,"Dashcam Alert Settings","should add and delete alerts contacts (email and phone)",PASSED,188.02,"",N/A,TS047_dashcamAlertSettings.spec.js,206
+TS047-C,"Dashcam Alert Settings","should configure after hours settings",FAILED,112.75,"TimeoutError: locator.click: Timeout 30000ms exceeded.",TS047_dashcamAlertSettings-should-configure-after-hours-settings.webm,TS047_dashcamAlertSettings.spec.js,286

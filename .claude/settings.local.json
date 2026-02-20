@@ -24,7 +24,8 @@
       "Bash(npx playwright:*)",
       "Bash(npm exec:*)",
       "WebSearch",
-      "Bash(copy:*)"
+      "Bash(copy:*)",
+      "Bash(del \"C:\\\\cypress-to-playwright-converted\\\\tests\\\\TS_geofence_admin_access.spec.js\")"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,3 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS049-A,"Live Video Stream","should request live video stream and verify modal",PASSED,39.87,"",N/A,TS049_liveVideoStream.spec.js,23
+TS049-B,"Live Video Stream","should verify device status switching and offline/online behavior",PASSED,178.25,"",N/A,TS049_liveVideoStream.spec.js,169

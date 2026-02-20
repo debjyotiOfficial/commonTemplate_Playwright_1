@@ -92,20 +92,66 @@
   },
   "suites": [
     {
-      "title": "TS069_subscriptionDashboard.spec.js",
-      "file": "TS069_subscriptionDashboard.spec.js",
+      "title": "auth.setup.js",
+      "file": "auth.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1636,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Valid authentication session found (age: 53 minutes). Skipping login.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-12T23:55:35.118Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f376efe52c54b1a876fd-9d03a3bb502e264caa3f",
+          "file": "auth.setup.js",
+          "line": 10,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "TS049_liveVideoStream.spec.js",
+      "file": "TS049_liveVideoStream.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Subscription Dashboard",
-          "file": "TS069_subscriptionDashboard.spec.js",
-          "line": 35,
+          "title": "Live Video Stream",
+          "file": "TS049_liveVideoStream.spec.js",
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should display and interact with Subscription Dashboard panel",
+              "title": "should request live video stream and verify modal",
               "ok": true,
               "tags": [],
               "tests": [
@@ -117,10 +163,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 146184,
+                      "duration": 39866,
                       "errors": [],
                       "stdout": [
                         {
@@ -139,759 +185,156 @@
                           "text": "Config loaded successfully\n"
                         },
                         {
-                          "text": "--- Step 1: Login and navigate to fleet dashboard ---\n"
+                          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...\n"
                         },
                         {
-                          "text": "Login completed on tracking1\n"
+                          "text": "Using stored authentication session (skipping login)...\n"
+                        },
+                        {
+                          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...\n"
                         },
                         {
                           "text": "Network idle timeout, continuing...\n"
                         },
                         {
-                          "text": "Navigated to tracking1 dashboard\n"
+                          "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "✓ Successfully logged in\n"
+                          "text": "✓ Logged in and navigated to Dashcam Dashboard\n"
                         },
                         {
-                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
+                          "text": "\nStep 2: Expanding Dashcam accordion menu...\n"
                         },
                         {
-                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
+                          "text": "✓ Dashcam accordion expanded\n"
                         },
                         {
-                          "text": "✓ Subscription Dashboard opened\n"
+                          "text": "\nStep 3: Opening Live Video Stream panel...\n"
                         },
                         {
-                          "text": "--- Step 3: Verifying stats cards ---\n"
+                          "text": "✓ Clicked Live Video Stream option\n"
                         },
                         {
-                          "text": "  Stats card \"Active Devices\" not found\n"
+                          "text": "\nStep 4: Verifying Live Video Stream panel...\n"
                         },
                         {
-                          "text": "  Stats card \"Currently Due\" not found\n"
+                          "text": "✓ Live Video Stream panel is visible\n"
                         },
                         {
-                          "text": "  Stats card \"Past Due\" not found\n"
+                          "text": "\nStep 5: Selecting first device from dropdown...\n"
                         },
                         {
-                          "text": "  ✓ Stats card \"Auto-renew Subscriptions\" visible\n"
+                          "text": "✓ Selected device: test 1 (862798051102933)\n"
                         },
                         {
-                          "text": "✓ Stats cards verified\n"
+                          "text": "\nStep 6: Checking Dash View and Cabin View...\n"
                         },
                         {
-                          "text": "--- Step 4: Verifying alert banner ---\n"
+                          "text": "✓ Dash View checked\n"
                         },
                         {
-                          "text": "  ✓ Alert banner: 1 devices require attention\n"
+                          "text": "✓ Cabin View checked\n"
                         },
                         {
-                          "text": "  ✓ Alert dropdown toggle clicked\n"
+                          "text": "\nStep 7: Setting up API listener and clicking Submit...\n"
                         },
                         {
-                          "text": "--- Step 5: Verifying action buttons ---\n"
+                          "text": "✓ Submit button clicked\n"
                         },
                         {
-                          "text": "  ✓ \"Renew All\" button visible\n"
+                          "text": "\nStep 8: Verifying API response...\n"
                         },
                         {
-                          "text": "  ✓ \"Payment History\" button visible\n"
+                          "text": "✓ API response status: 200\n"
                         },
                         {
-                          "text": "  ✓ \"Change Payment Method\" button visible\n"
+                          "text": "\nStep 9: Verifying live video modal is visible...\n"
                         },
                         {
-                          "text": "  ✓ \"Billing Overview\" button visible\n"
+                          "text": "✓ Live video modal is visible and active\n"
                         },
                         {
-                          "text": "--- Step 6: Testing Billing Overview dropdown ---\n"
+                          "text": "\nStep 10: Verifying modal title...\n"
                         },
                         {
-                          "text": "  ✓ Billing Overview clicked\n"
+                          "text": "✓ Modal title: \"Live Video Stream - JC400\"\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Resolve Now\n"
+                          "text": "\nStep 11: Verifying device info...\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: View Details\n"
+                          "text": "✓ Device info: \"test 1  • 862798051102933\"\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Billing Overview\n"
+                          "text": "\nStep 12: Verifying close button...\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Upcoming Bill Preview\n"
+                          "text": "✓ Close button is visible\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Last Payment Invoice\n"
+                          "text": "\nStep 13: Verifying iframe src URL...\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Download Full Payment History\n"
+                          "text": "✓ Iframe src: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0&camera%5B%5D=1\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Subscription Details\n"
+                          "text": "✓ Iframe src contains correct parameters (clientName, imei, deviceType, camera)\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Save file as\n"
+                          "text": "\nStep 14: Verifying iframe content loads...\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: PDF\n"
+                          "text": "✓ Iframe content loaded: No (0 chars)\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: CSV\n"
+                          "text": "⚠ Cannot access iframe content (likely cross-origin). Verifying iframe dimensions...\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Excel\n"
+                          "text": "✓ Iframe is rendered with dimensions: 1400x848.2000274658203\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Take Action\n"
+                          "text": "\nStep 15: Testing close button to dismiss modal...\n"
                         },
                         {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Export\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Export\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Select All\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Deselect All\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Online Only\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Export\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Dropdown item: PDF\n"
-                        },
-                        {
-                          "text": "--- Step 7: Verifying tabs ---\n"
-                        },
-                        {
-                          "text": "  Tab \"All Devices\" not found\n"
-                        },
-                        {
-                          "text": "  Tab \"Active Devices\" not found\n"
-                        },
-                        {
-                          "text": "  Tab \"Currently Due\" not found\n"
-                        },
-                        {
-                          "text": "  Tab \"Past Due\" not found\n"
-                        },
-                        {
-                          "text": "  ✓ Tab \"Suspended Devices\" visible\n"
-                        },
-                        {
-                          "text": "  ✓ Tab \"Auto-Renew Subscriptions\" visible\n"
-                        },
-                        {
-                          "text": "  ✓ Tab \"Cancelled Devices\" visible\n"
-                        },
-                        {
-                          "text": "✓ Tabs verification completed\n"
-                        },
-                        {
-                          "text": "--- Step 8: Verifying filter bar ---\n"
-                        },
-                        {
-                          "text": "  ✓ Status filter visible\n"
-                        },
-                        {
-                          "text": "  ✓ Device type filter visible\n"
-                        },
-                        {
-                          "text": "  ✓ Search input visible\n"
-                        },
-                        {
-                          "text": "  ✓ Entries select visible\n"
-                        },
-                        {
-                          "text": "--- Step 9: Verifying table structure ---\n"
-                        },
-                        {
-                          "text": "  Table headers: Driver Name/IMEI ⇅, Type ⇅, Amount ⇅, Status ⇅, Billing Cycle ⇅, Renewal Date ⇅, Auto-Renew, Actions\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Driver Name/IMEI\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Type\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Amount\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Status\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Billing Cycle\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Renewal Date\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Auto-Renew\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Column \"Actions\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Table has 10 data rows\n"
-                        },
-                        {
-                          "text": "--- Step 10: Testing status filter ---\n"
-                        },
-                        {
-                          "text": "  ✓ Status filter \"Past Due\": 10 → 10 rows\n"
-                        },
-                        {
-                          "text": "  ✓ Status filter reset: 10 rows\n"
-                        },
-                        {
-                          "text": "--- Step 11: Testing device filter ---\n"
-                        },
-                        {
-                          "text": "  ✓ Device filter applied: 10 → 10 rows\n"
-                        },
-                        {
-                          "text": "  ✓ Device filter reset: 10 rows\n"
-                        },
-                        {
-                          "text": "--- Step 12: Testing search functionality ---\n"
-                        },
-                        {
-                          "text": "  ✓ Search \"Sales\": 10 → 10 rows\n"
-                        },
-                        {
-                          "text": "  ✓ Search cleared: 10 rows\n"
-                        },
-                        {
-                          "text": "--- Step 13: Testing entries per page ---\n"
-                        },
-                        {
-                          "text": "  ✓ Entries 10: showing 10 rows\n"
-                        },
-                        {
-                          "text": "  ✓ Entries 25: showing 10 rows\n"
-                        },
-                        {
-                          "text": "  ✓ Entries 50: showing 10 rows\n"
-                        },
-                        {
-                          "text": "--- Step 14: Verifying pagination ---\n"
-                        },
-                        {
-                          "text": "  ✓ Showing range: 1-10 of 11\n"
-                        },
-                        {
-                          "text": "  ✓ Next page button visible\n"
-                        },
-                        {
-                          "text": "  ✓ Navigated to next page\n"
-                        },
-                        {
-                          "text": "  ✓ Navigated back to first page\n"
-                        },
-                        {
-                          "text": "--- Step 15: Testing export buttons ---\n"
-                        },
-                        {
-                          "text": "  ✓ PDF export clicked\n"
-                        },
-                        {
-                          "text": "  ✓ CSV export clicked\n"
-                        },
-                        {
-                          "text": "  ✓ Excel export clicked\n"
+                          "text": "✓ Modal dismissed: true\n"
                         },
                         {
                           "text": "\n========================================\n"
                         },
                         {
-                          "text": "Subscription Dashboard Test A Completed\n"
+                          "text": "    LIVE VIDEO STREAM TEST SUMMARY\n"
                         },
                         {
                           "text": "========================================\n"
+                        },
+                        {
+                          "text": "Device Selected: test 1 (862798051102933)\n"
+                        },
+                        {
+                          "text": "Device Info: test 1  • 862798051102933\n"
+                        },
+                        {
+                          "text": "Modal Title: Live Video Stream - JC400\n"
+                        },
+                        {
+                          "text": "API Status: 200\n"
+                        },
+                        {
+                          "text": "Iframe URL: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0&camera%5B%5D=1\n"
+                        },
+                        {
+                          "text": "Modal Closed: true\n"
+                        },
+                        {
+                          "text": "========================================\n"
+                        },
+                        {
+                          "text": "✓ Live Video Stream test completed successfully!\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-05T21:06:32.903Z",
+                      "startTime": "2026-02-12T23:55:39.638Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -899,13 +342,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "d8769c75831f3ea407e0-02d8fcab89aef45022a0",
-              "file": "TS069_subscriptionDashboard.spec.js",
-              "line": 125,
+              "id": "b0e4639107962c022da2-90f7f2d456622706b368",
+              "file": "TS049_liveVideoStream.spec.js",
+              "line": 23,
               "column": 5
             },
             {
-              "title": "should handle tab switching and verify data updates",
+              "title": "should verify device status switching and offline/online behavior",
               "ok": true,
               "tags": [],
               "tests": [
@@ -917,10 +360,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 90936,
+                      "duration": 178251,
                       "errors": [],
                       "stdout": [
                         {
@@ -933,87 +376,312 @@
                           "text": "Config loaded successfully\n"
                         },
                         {
-                          "text": "--- Step 1: Login and navigate ---\n"
+                          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...\n"
                         },
                         {
-                          "text": "Login completed on tracking1\n"
+                          "text": "Using stored authentication session (skipping login)...\n"
+                        },
+                        {
+                          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...\n"
                         },
                         {
                           "text": "Network idle timeout, continuing...\n"
                         },
                         {
-                          "text": "Navigated to tracking1 dashboard\n"
+                          "text": "Page loaded successfully\n"
                         },
                         {
-                          "text": "✓ Successfully logged in\n"
+                          "text": "✓ Logged in and navigated to Dashcam Dashboard\n"
                         },
                         {
-                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
+                          "text": "\nStep 2: Expanding Dashcam accordion menu...\n"
                         },
                         {
-                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
+                          "text": "✓ Dashcam accordion expanded\n"
                         },
                         {
-                          "text": "✓ Subscription Dashboard opened\n"
+                          "text": "\nStep 3: Opening Live Video Stream panel...\n"
                         },
                         {
-                          "text": "--- Step 3: Testing tab switching ---\n"
+                          "text": "✓ Live Video Stream panel is visible\n"
                         },
                         {
-                          "text": "  Tab \"All Devices\" not visible, skipping\n"
+                          "text": "\nStep 4: Selecting 2nd vehicle - M4000-Training3 Off...\n"
                         },
                         {
-                          "text": "  Tab \"Active Devices\" not visible, skipping\n"
+                          "text": "✓ Selected 2nd device: M4000-Training3 Off (353899269355234)\n"
                         },
                         {
-                          "text": "  Tab \"Currently Due\" not visible, skipping\n"
+                          "text": "\nStep 5: Verifying device status indicator...\n"
                         },
                         {
-                          "text": "  Tab \"Past Due\" not visible, skipping\n"
+                          "text": "✓ Device status indicator is visible\n"
                         },
                         {
-                          "text": "  Tab \"Suspended Devices\": 1 rows\n"
+                          "text": "✓ Status for M4000-Training3 Off (353899269355234): ONLINE\n"
                         },
                         {
-                          "text": "    Device filter: 1 → 1 rows\n"
+                          "text": "\nStep 6: Changing to 3rd device - Mikes Dashcam...\n"
                         },
                         {
-                          "text": "  Tab \"Auto-Renew Subscriptions\": 1 rows\n"
+                          "text": "✓ Selected 3rd device: Mikes Dashcam (353899269360549)\n"
                         },
                         {
-                          "text": "    Device filter: 1 → 1 rows\n"
+                          "text": "\nStep 7: Verifying device status...\n"
                         },
                         {
-                          "text": "  Tab \"Cancelled Devices\": 1 rows\n"
+                          "text": "✓ Status for Mikes Dashcam (353899269360549): OFFLINE\n"
                         },
                         {
-                          "text": "    Device filter: 1 → 1 rows\n"
+                          "text": "\n--- Device is OFFLINE - Verifying offline elements ---\n"
                         },
                         {
-                          "text": "--- Step 4: Testing entries per page on All Devices tab ---\n"
+                          "text": "\nStep 7a: Verifying offline warning message...\n"
                         },
                         {
-                          "text": "  ✓ Entries 10: showing 1 rows\n"
+                          "text": "✓ Offline warning visible: \"Device should be online to start live stream\"\n"
                         },
                         {
-                          "text": "  ✓ Entries 25: showing 1 rows\n"
+                          "text": "\nStep 7b: Verifying auto-refresh countdown timer...\n"
                         },
                         {
-                          "text": "  ✓ Entries 50: showing 1 rows\n"
+                          "text": "✓ Auto refresh countdown timer is visible\n"
+                        },
+                        {
+                          "text": "\nStep 7c: Waiting for 60-second countdown to expire...\n"
+                        },
+                        {
+                          "text": "✓ Status API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common/Data/getDeviceStatusProxy_new.php?imei=353899269360549&deviceType=M4000\n"
+                        },
+                        {
+                          "text": "✓ API Response: status=false, message=\"Device is offline\"\n"
+                        },
+                        {
+                          "text": "\nStep 7d: Handling device offline alert...\n"
+                        },
+                        {
+                          "text": "\n--- Offline verification complete ---\n"
+                        },
+                        {
+                          "text": "\nStep 8: Switching to online vehicle (test 1)...\n"
+                        },
+                        {
+                          "text": "✓ Selected device: test 1 (862798051102933)\n"
+                        },
+                        {
+                          "text": "\nStep 9: Verifying online device status...\n"
+                        },
+                        {
+                          "text": "✓ Device selected: test 1 (862798051102933) (status indicator not shown after offline flow - expected)\n"
+                        },
+                        {
+                          "text": "\nStep 10: Checking Dash View and Cabin View...\n"
+                        },
+                        {
+                          "text": "✓ Dash View checked\n"
+                        },
+                        {
+                          "text": "✓ Cabin View checked\n"
+                        },
+                        {
+                          "text": "\nStep 11: Setting up API listener and clicking Submit...\n"
+                        },
+                        {
+                          "text": "✓ Submit button clicked\n"
+                        },
+                        {
+                          "text": "\nStep 12: Verifying API response...\n"
+                        },
+                        {
+                          "text": "✓ API response status: 200\n"
+                        },
+                        {
+                          "text": "\nStep 13: Verifying live video modal opens...\n"
+                        },
+                        {
+                          "text": "✓ Live video modal is visible and active\n"
+                        },
+                        {
+                          "text": "✓ Modal title: \"Live Video Stream - JC400\"\n"
+                        },
+                        {
+                          "text": "✓ Device info: \"test 1  • 862798051102933\"\n"
+                        },
+                        {
+                          "text": "✓ Iframe src: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0&camera%5B%5D=1\n"
+                        },
+                        {
+                          "text": "\nStep 14: Waiting 30 seconds for videos to load...\n"
+                        },
+                        {
+                          "text": "✓ 30 second wait completed\n"
+                        },
+                        {
+                          "text": "\nStep 15: Verifying video element is visible...\n"
+                        },
+                        {
+                          "text": "✓ Native HTML5 video player detected\n"
+                        },
+                        {
+                          "text": "✓ Video element is visible with src: blob:https://www.video.gps-streaming.com/906c5dfd-cf9e-4d54-85d8-55df9d8de268\n"
+                        },
+                        {
+                          "text": "\nSteps 16-20: Skipped (native video player uses browser-native controls)\n"
+                        },
+                        {
+                          "text": "✓ Video feed iframe loaded and video elements are present\n"
+                        },
+                        {
+                          "text": "\nStep 21: Closing the live video modal...\n"
+                        },
+                        {
+                          "text": "✓ Modal closed successfully\n"
+                        },
+                        {
+                          "text": "\nStep 22: Selecting only Dash View checkbox...\n"
+                        },
+                        {
+                          "text": "✓ Cabin View unchecked\n"
+                        },
+                        {
+                          "text": "✓ Only Dash View is checked\n"
+                        },
+                        {
+                          "text": "\nStep 23: Setting up API listener and clicking Submit (Dash View only)...\n"
+                        },
+                        {
+                          "text": "✓ Submit button clicked\n"
+                        },
+                        {
+                          "text": "\nStep 24: Verifying API response...\n"
+                        },
+                        {
+                          "text": "✓ API response status: 200\n"
+                        },
+                        {
+                          "text": "\nStep 25: Verifying live video modal opens...\n"
+                        },
+                        {
+                          "text": "✓ Live video modal is visible and active\n"
+                        },
+                        {
+                          "text": "✓ Modal title: \"Live Video Stream - JC400\"\n"
+                        },
+                        {
+                          "text": "✓ Device info: \"test 1  • 862798051102933\"\n"
+                        },
+                        {
+                          "text": "✓ Iframe src: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0\n"
+                        },
+                        {
+                          "text": "\nStep 26: Waiting 30 seconds for Dash View video to load...\n"
+                        },
+                        {
+                          "text": "✓ 30 second wait completed\n"
+                        },
+                        {
+                          "text": "\nStep 27: Verifying Dash View video element...\n"
+                        },
+                        {
+                          "text": "✓ Native HTML5 video player detected (Dash View)\n"
+                        },
+                        {
+                          "text": "\nSteps 28-32: Skipped (native video player uses browser-native controls)\n"
+                        },
+                        {
+                          "text": "✓ Dash View video feed iframe loaded\n"
+                        },
+                        {
+                          "text": "\nStep 33: Closing the live video modal...\n"
+                        },
+                        {
+                          "text": "✓ Modal closed successfully\n"
                         },
                         {
                           "text": "\n========================================\n"
                         },
                         {
-                          "text": "Subscription Dashboard Test B Completed\n"
+                          "text": "    LIVE VIDEO STREAM FULL TEST SUMMARY\n"
                         },
                         {
                           "text": "========================================\n"
+                        },
+                        {
+                          "text": "--- Device Switching ---\n"
+                        },
+                        {
+                          "text": "2nd Device: M4000-Training3 Off (353899269355234) - Status: ONLINE\n"
+                        },
+                        {
+                          "text": "3rd Device: Mikes Dashcam (353899269360549) - Status: OFFLINE\n"
+                        },
+                        {
+                          "text": "Online Device: test 1 (862798051102933)\n"
+                        },
+                        {
+                          "text": "\n"
+                        },
+                        {
+                          "text": "--- Dual View (Dash + Cabin) ---\n"
+                        },
+                        {
+                          "text": "Modal Title: Live Video Stream - JC400\n"
+                        },
+                        {
+                          "text": "Device Info: test 1  • 862798051102933\n"
+                        },
+                        {
+                          "text": "API Status: 200\n"
+                        },
+                        {
+                          "text": "✓ Screenshot: Clicked & verified\n"
+                        },
+                        {
+                          "text": "✓ Sound: Toggled ON/OFF\n"
+                        },
+                        {
+                          "text": "✓ Play/Pause: Toggled Pause/Play\n"
+                        },
+                        {
+                          "text": "✓ Fullscreen: Toggled ON/OFF\n"
+                        },
+                        {
+                          "text": "\n"
+                        },
+                        {
+                          "text": "--- Dash View Only ---\n"
+                        },
+                        {
+                          "text": "Modal Title: Live Video Stream - JC400\n"
+                        },
+                        {
+                          "text": "Device Info: test 1  • 862798051102933\n"
+                        },
+                        {
+                          "text": "API Status: 200\n"
+                        },
+                        {
+                          "text": "✓ Screenshot: Clicked & verified\n"
+                        },
+                        {
+                          "text": "✓ Sound: Toggled ON/OFF\n"
+                        },
+                        {
+                          "text": "✓ Play/Pause: Toggled Pause/Play\n"
+                        },
+                        {
+                          "text": "✓ Fullscreen: Toggled ON/OFF\n"
+                        },
+                        {
+                          "text": "========================================\n"
+                        },
+                        {
+                          "text": "✓ Live Video Stream full test completed successfully!\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-05T21:08:59.863Z",
+                      "startTime": "2026-02-12T23:56:20.898Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1021,1342 +689,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "d8769c75831f3ea407e0-1bebc265acaf27bef26a",
-              "file": "TS069_subscriptionDashboard.spec.js",
-              "line": 445,
-              "column": 5
-            },
-            {
-              "title": "should display and interact with Payment History section",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 600000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 68948,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Preserving cookies (using stored auth session)\n"
-                        },
-                        {
-                          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
-                        },
-                        {
-                          "text": "Config loaded successfully\n"
-                        },
-                        {
-                          "text": "--- Step 1: Login and navigate ---\n"
-                        },
-                        {
-                          "text": "Login completed on tracking1\n"
-                        },
-                        {
-                          "text": "Network idle timeout, continuing...\n"
-                        },
-                        {
-                          "text": "Navigated to tracking1 dashboard\n"
-                        },
-                        {
-                          "text": "✓ Successfully logged in\n"
-                        },
-                        {
-                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
-                        },
-                        {
-                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
-                        },
-                        {
-                          "text": "✓ Subscription Dashboard opened\n"
-                        },
-                        {
-                          "text": "--- Step 3: Verifying Payment History section ---\n"
-                        },
-                        {
-                          "text": "✓ Payment History heading visible\n"
-                        },
-                        {
-                          "text": "--- Step 4: Verifying Payment History controls ---\n"
-                        },
-                        {
-                          "text": "  ✓ Payment search input visible\n"
-                        },
-                        {
-                          "text": "  ✓ Date filter button (\"All Time\") visible\n"
-                        },
-                        {
-                          "text": "--- Step 5: Verifying payment table ---\n"
-                        },
-                        {
-                          "text": "  Found 36 tables on page\n"
-                        },
-                        {
-                          "text": "  ✓ Payment table columns: Transaction ⇅, Type ⇅, Amount ⇅, Status ⇅, Date ⇅, Payment Method ⇅, Receipt\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Transaction\" found\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Type\" found\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Amount\" found\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Status\" found\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Date\" found\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Payment Method\" found\n"
-                        },
-                        {
-                          "text": "    ✓ Column \"Receipt\" found\n"
-                        },
-                        {
-                          "text": "  ✓ Payment table has 0 rows\n"
-                        },
-                        {
-                          "text": "  ✓ Payment showing: Showing 0 to 0 of 0 entries\n"
-                        },
-                        {
-                          "text": "--- Step 6: Testing date filter ---\n"
-                        },
-                        {
-                          "text": "  ✓ Date filter opened with 177 options\n"
-                        },
-                        {
-                          "text": "--- Step 7: Verifying payment pagination ---\n"
-                        },
-                        {
-                          "text": "  ✓ Payment prev button visible\n"
-                        },
-                        {
-                          "text": "  ✓ Payment next button visible\n"
-                        },
-                        {
-                          "text": "--- Step 8: Testing collapse/expand ---\n"
-                        },
-                        {
-                          "text": "  ✓ Collapsed Payment History section\n"
-                        },
-                        {
-                          "text": "  ✓ Expanded Payment History section\n"
-                        },
-                        {
-                          "text": "--- Step 9: Testing Payment Save file as ---\n"
-                        },
-                        {
-                          "text": "  ✓ Payment \"Save file as\" dropdown opened\n"
-                        },
-                        {
-                          "text": "\n========================================\n"
-                        },
-                        {
-                          "text": "Subscription Dashboard Test C Completed\n"
-                        },
-                        {
-                          "text": "========================================\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-05T21:10:30.842Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d8769c75831f3ea407e0-36f26a43b0a3cbf3a08b",
-              "file": "TS069_subscriptionDashboard.spec.js",
-              "line": 538,
-              "column": 5
-            },
-            {
-              "title": "should handle row selection and verify modals structure",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 600000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 106572,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Preserving cookies (using stored auth session)\n"
-                        },
-                        {
-                          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json\n"
-                        },
-                        {
-                          "text": "Config loaded successfully\n"
-                        },
-                        {
-                          "text": "--- Step 1: Login and navigate ---\n"
-                        },
-                        {
-                          "text": "Login completed on tracking1\n"
-                        },
-                        {
-                          "text": "Network idle timeout, continuing...\n"
-                        },
-                        {
-                          "text": "Navigated to tracking1 dashboard\n"
-                        },
-                        {
-                          "text": "✓ Successfully logged in\n"
-                        },
-                        {
-                          "text": "--- Step 2: Opening Subscription Dashboard ---\n"
-                        },
-                        {
-                          "text": "  Clicked \"Subscription Dashboard\" in sidebar\n"
-                        },
-                        {
-                          "text": "✓ Subscription Dashboard opened\n"
-                        },
-                        {
-                          "text": "--- Step 3: Testing row checkboxes ---\n"
-                        },
-                        {
-                          "text": "  Sidebar collapsed\n"
-                        },
-                        {
-                          "text": "  Found 10 row checkboxes\n"
-                        },
-                        {
-                          "text": "  ✓ First row checkbox clicked\n"
-                        },
-                        {
-                          "text": "  ✓ \"Renew Selected\" button visible\n"
-                        },
-                        {
-                          "text": "  ✓ First row checkbox unchecked\n"
-                        },
-                        {
-                          "text": "  ✓ Multiple rows selected\n"
-                        },
-                        {
-                          "text": "  ✓ Multiple rows deselected\n"
-                        },
-                        {
-                          "text": "--- Step 4: Testing Take Action dropdown ---\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Close\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Make Default\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Remove\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Make Default\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Remove\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Download invoice\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Download receipt\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Edit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Delete\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Close\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Submit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Add New Service Type\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: View Change Log\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Submit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Close\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Activate\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Edit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Deactivate\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Delete\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Back\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Close\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: View Details\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: View Details\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: View Details\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: View Chart\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Export\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Export\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: View Chart\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: \n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Select All\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Deselect All\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Online Only\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Reset to Defaults\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save Settings\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Copy\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Reset\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Edit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: \n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Reset\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Edit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: \n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Reset\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: Edit\n"
-                        },
-                        {
-                          "text": "    ✓ Action option: \n"
-                        },
-                        {
-                          "text": "  ✓ Take Action dropdown tested\n"
-                        },
-                        {
-                          "text": "--- Step 5: Testing Change Payment Method ---\n"
-                        },
-                        {
-                          "text": "  Change Payment Method clicked (may redirect or show inline form)\n"
-                        },
-                        {
-                          "text": "--- Step 6: Testing Billing Overview dropdown ---\n"
-                        },
-                        {
-                          "text": "  ✓ Billing Overview dropdown opened\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Billing Overview\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Upcoming Bill Preview\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Last Payment Invoice\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Download Full Payment History\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Subscription Details\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Take Action\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Renew Now\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Request Cancellation\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Export\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Save file as\n"
-                        },
-                        {
-                          "text": "    ✓ Option: Excel\n"
-                        },
-                        {
-                          "text": "    ✓ Option: CSV\n"
-                        },
-                        {
-                          "text": "    ✓ Option: PDF\n"
-                        },
-                        {
-                          "text": "--- Step 7: Testing Renew All button ---\n"
-                        },
-                        {
-                          "text": "  ✓ \"Renew All\" button visible\n"
-                        },
-                        {
-                          "text": "--- Step 8: Testing Take Action → Renew Now ---\n"
-                        },
-                        {
-                          "text": "  Renew Now clicked (no modal appeared)\n"
-                        },
-                        {
-                          "text": "--- Step 9: Testing Take Action → Cancel ---\n"
-                        },
-                        {
-                          "text": "  Cancel option clicked (no modal appeared)\n"
-                        },
-                        {
-                          "text": "\n========================================\n"
-                        },
-                        {
-                          "text": "Subscription Dashboard Test D Completed\n"
-                        },
-                        {
-                          "text": "========================================\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-05T21:11:39.827Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d8769c75831f3ea407e0-3b37cd6a9ea7cbddc48c",
-              "file": "TS069_subscriptionDashboard.spec.js",
-              "line": 692,
+              "id": "b0e4639107962c022da2-1b17895e90f762a9e7ae",
+              "file": "TS049_liveVideoStream.spec.js",
+              "line": 169,
               "column": 5
             }
           ]
@@ -2366,9 +701,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-05T21:06:31.853Z",
-    "duration": 414888.70800000004,
-    "expected": 4,
+    "startTime": "2026-02-12T23:55:33.990Z",
+    "duration": 226530.54700000002,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

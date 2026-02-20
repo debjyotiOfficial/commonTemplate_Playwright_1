@@ -1,2 +1,10 @@
 Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
-TS060-A,"Dashcam Safety Report","should verify Dashcam Safety Report features and API validation",PASSED,156.12,"",N/A,TS060_daschamSafetyReport.spec.js,1260
+TS060-A,"Dashcam Safety Report","should display Dashcam Safety Report and verify report data with API validation",PASSED,69.12,"",N/A,TS060_daschamSafetyReport.spec.js,104
+TS060-B,"Dashcam Safety Report","should verify device selection and date range functionality",PASSED,92.31,"",N/A,TS060_daschamSafetyReport.spec.js,329
+TS060-C,"Dashcam Safety Report","should verify report metrics and dashboard elements",PASSED,69.88,"",N/A,TS060_daschamSafetyReport.spec.js,390
+TS060-D,"Dashcam Safety Report","should verify Settings window with All devices selection bug replication",PASSED,90.06,"",N/A,TS060_daschamSafetyReport.spec.js,439
+TS060-E,"Dashcam Safety Report","should verify Alert Settings button bug replication",PASSED,115.91,"",N/A,TS060_daschamSafetyReport.spec.js,956
+TS060-F,"Dashcam Safety Report","should verify Dashcam Safety Report features and API validation",PASSED,183.20,"",N/A,TS060_daschamSafetyReport.spec.js,1260
+TS060-G,"Dashcam Safety Report","should verify Settings view and alert weight configurations",FAILED,100.68,"TimeoutError: locator.fill: Timeout 30000ms exceeded.",TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm,TS060_daschamSafetyReport.spec.js,1812
+TS060-H,"Dashcam Safety Report","should verify Settings view and alert weight configurations",FAILED,115.81,"TimeoutError: locator.fill: Timeout 30000ms exceeded.",TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm,TS060_daschamSafetyReport.spec.js,1812
+TS060-I,"Dashcam Safety Report","should verify Settings view and alert weight configurations",FAILED,104.76,"TimeoutError: locator.fill: Timeout 30000ms exceeded.",TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm,TS060_daschamSafetyReport.spec.js,1812

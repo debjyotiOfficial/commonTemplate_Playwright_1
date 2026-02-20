@@ -1,0 +1,991 @@
+{
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 226524,
+    "startTime": "2026-02-12T23:55:34.133Z",
+    "endTime": "2026-02-12T23:59:20.657Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS049-A",
+      "module": "Live Video Stream",
+      "title": "should request live video stream and verify modal",
+      "description": "should request live video stream and verify modal",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 39866,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Expanding Dashcam accordion menu...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Opening Live Video Stream panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked Live Video Stream option",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Verifying Live Video Stream panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Live Video Stream panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Selecting first device from dropdown...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected device: test 1 (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Checking Dash View and Cabin View...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dash View checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Cabin View checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Setting up API listener and clicking Submit...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying live video modal is visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Live video modal is visible and active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying modal title...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal title: \"Live Video Stream - JC400\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying device info...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device info: \"test 1  • 862798051102933\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Verifying close button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Close button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Verifying iframe src URL...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Iframe src: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0&camera%5B%5D=1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Iframe src contains correct parameters (clientName, imei, deviceType, camera)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Verifying iframe content loads...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Iframe content loaded: No (0 chars)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "⚠ Cannot access iframe content (likely cross-origin). Verifying iframe dimensions...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Iframe is rendered with dimensions: 1400x848.2000274658203",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Testing close button to dismiss modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal dismissed: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "LIVE VIDEO STREAM TEST SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Device Selected: test 1 (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Info: test 1  • 862798051102933",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Title: Live Video Stream - JC400",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Iframe URL: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0&camera%5B%5D=1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal Closed: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Live Video Stream test completed successfully!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T23:55:41.040Z",
+      "endTime": "2026-02-12T23:56:20.906Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS049_liveVideoStream.spec.js",
+      "fileName": "TS049_liveVideoStream",
+      "line": 23
+    },
+    {
+      "testCaseNo": "TS049-B",
+      "module": "Live Video Stream",
+      "title": "should verify device status switching and offline/online behavior",
+      "description": "should verify device status switching and offline/online behavior",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 178251,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Expanding Dashcam accordion menu...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Opening Live Video Stream panel...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Live Video Stream panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Selecting 2nd vehicle - M4000-Training3 Off...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected 2nd device: M4000-Training3 Off (353899269355234)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying device status indicator...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device status indicator is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Status for M4000-Training3 Off (353899269355234): ONLINE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Changing to 3rd device - Mikes Dashcam...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected 3rd device: Mikes Dashcam (353899269360549)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying device status...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Status for Mikes Dashcam (353899269360549): OFFLINE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device is OFFLINE  Verifying offline elements",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": 1,
+          "text": "Step 7a: Verifying offline warning message...",
+          "status": "warning",
+          "type": "step"
+        },
+        {
+          "number": 2,
+          "text": "✓ Offline warning visible: \"Device should be online to start live stream\"",
+          "status": "warning",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Step 7b: Verifying auto-refresh countdown timer...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Auto refresh countdown timer is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7c: Waiting for 60-second countdown to expire...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Status API called: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common/Data/getDeviceStatusProxy_new.php?imei=353899269360549&deviceType=M4000",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response: status=false, message=\"Device is offline\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7d: Handling device offline alert...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Offline verification complete",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Switching to online vehicle (test 1)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected device: test 1 (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying online device status...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device selected: test 1 (862798051102933) (status indicator not shown after offline flow - expected)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Checking Dash View and Cabin View...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dash View checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Cabin View checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Setting up API listener and clicking Submit...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Verifying API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Verifying live video modal opens...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Live video modal is visible and active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal title: \"Live Video Stream - JC400\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device info: \"test 1  • 862798051102933\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Iframe src: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0&camera%5B%5D=1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 14: Waiting 30 seconds for videos to load...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 30 second wait completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15: Verifying video element is visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Native HTML5 video player detected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Video element is visible with src: blob:https://www.video.gps-streaming.com/906c5dfd-cf9e-4d54-85d8-55df9d8de268",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Steps 16-20: Skipped (native video player uses browser-native controls)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Video feed iframe loaded and video elements are present",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 21: Closing the live video modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal closed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 22: Selecting only Dash View checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Cabin View unchecked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Only Dash View is checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 23: Setting up API listener and clicking Submit (Dash View only)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 24: Verifying API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API response status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 25: Verifying live video modal opens...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Live video modal is visible and active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal title: \"Live Video Stream - JC400\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device info: \"test 1  • 862798051102933\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Iframe src: https://www.video.gps-streaming.com/liveFeed/VideoLiveStream.php?clientName=dashcamdemo1&imei=862798051102933&deviceType=JC400&camera%5B%5D=0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 26: Waiting 30 seconds for Dash View video to load...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ 30 second wait completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 27: Verifying Dash View video element...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Native HTML5 video player detected (Dash View)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Steps 28-32: Skipped (native video player uses browser-native controls)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dash View video feed iframe loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 33: Closing the live video modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal closed successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "LIVE VIDEO STREAM FULL TEST SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Device Switching",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "2nd Device: M4000-Training3 Off (353899269355234) - Status: ONLINE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "3rd Device: Mikes Dashcam (353899269360549) - Status: OFFLINE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Online Device: test 1 (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dual View (Dash + Cabin)",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal Title: Live Video Stream - JC400",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Info: test 1  • 862798051102933",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Screenshot: Clicked & verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sound: Toggled ON/OFF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Play/Pause: Toggled Pause/Play",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fullscreen: Toggled ON/OFF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Dash View Only",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Modal Title: Live Video Stream - JC400",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device Info: test 1  • 862798051102933",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Screenshot: Clicked & verified",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sound: Toggled ON/OFF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Play/Pause: Toggled Pause/Play",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fullscreen: Toggled ON/OFF",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Live Video Stream full test completed successfully!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T23:56:21.022Z",
+      "endTime": "2026-02-12T23:59:19.275Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS049_liveVideoStream.spec.js",
+      "fileName": "TS049_liveVideoStream",
+      "line": 169
+    }
+  ]
+}

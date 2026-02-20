@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TC-A,"Geofence Admin Access - Matrack Server","should login, access account NATM0810, and load the platform",PASSED,485.12,"",N/A,TS_geofence_admin_access.spec.js,7

@@ -4,9 +4,9 @@
     "passed": 4,
     "failed": 1,
     "skipped": 0,
-    "duration": 655347,
-    "startTime": "2026-02-02T18:35:51.913Z",
-    "endTime": "2026-02-02T18:46:47.260Z"
+    "duration": 636142,
+    "startTime": "2026-02-06T19:36:25.582Z",
+    "endTime": "2026-02-06T19:47:01.724Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "should display TLR",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 158241,
+      "duration": 153407,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -479,8 +479,8 @@
           "type": "subsection"
         }
       ],
-      "startTime": "2026-02-02T18:35:59.166Z",
-      "endTime": "2026-02-02T18:38:37.407Z",
+      "startTime": "2026-02-06T19:37:43.656Z",
+      "endTime": "2026-02-06T19:40:17.063Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
@@ -493,7 +493,7 @@
       "description": "should verify Engine Idling checkbox functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 181413,
+      "duration": 114538,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -526,36 +526,6 @@
         {
           "number": "",
           "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": 1,
-          "text": "Navigation attempt 1 failed: page.goto: Timeout 60000ms exceeded.",
-          "status": "failed",
-          "type": "step"
-        },
-        {
-          "number": "",
-          "text": "Call log:",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "\u001b[2m  - navigating to \"https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php\", waiting until \"domcontentloaded\"\u001b[22m",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Retrying navigation...",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/fleetdemo/maps/index2.php... (attempt 2)",
           "status": "info",
           "type": "log"
         },
@@ -614,8 +584,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2026-02-02T18:38:37.475Z",
-      "endTime": "2026-02-02T18:41:38.888Z",
+      "startTime": "2026-02-06T19:40:17.082Z",
+      "endTime": "2026-02-06T19:42:11.620Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
@@ -628,7 +598,7 @@
       "description": "should verify search functionality in TLR",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 129032,
+      "duration": 121153,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -767,8 +737,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2026-02-02T18:41:38.954Z",
-      "endTime": "2026-02-02T18:43:47.986Z",
+      "startTime": "2026-02-06T19:42:11.678Z",
+      "endTime": "2026-02-06T19:44:12.831Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
@@ -781,7 +751,7 @@
       "description": "should verify Frequent Stops functionality with API validation",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 102622,
+      "duration": 100501,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -1052,8 +1022,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2026-02-02T18:43:48.073Z",
-      "endTime": "2026-02-02T18:45:30.695Z",
+      "startTime": "2026-02-06T19:44:12.876Z",
+      "endTime": "2026-02-06T19:45:53.377Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",
@@ -1066,7 +1036,7 @@
       "description": "should clear search input on report resubmission in Frequent Stops",
       "status": "failed",
       "statusDisplay": "FAILED",
-      "duration": 75175,
+      "duration": 67143,
       "failureReason": "Error: expect(received).toBe(expected) // Object.is equality",
       "parsedError": {
         "type": "Assertion Failed",
@@ -1181,8 +1151,8 @@
           "type": "log"
         }
       ],
-      "startTime": "2026-02-02T18:45:31.755Z",
-      "endTime": "2026-02-02T18:46:46.930Z",
+      "startTime": "2026-02-06T19:45:54.324Z",
+      "endTime": "2026-02-06T19:47:01.467Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS028_travelLogReport.spec.js",
       "fileName": "TS028_travelLogReport",

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Report - dashcamDataUsage - 3/1/2026</title>
+    <title>Test Report - dashcamDataUsage - 12/2/2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
@@ -152,8 +152,8 @@
             <h1>Test Execution Report</h1>
             <div class="module-name">Module: dashcamDataUsage</div>
             <div class="subtitle">
-                Generated: 3/1/2026, 4:26:15 am |
-                Duration: 805.32s |
+                Generated: 12/2/2026, 11:21:09 pm |
+                Duration: 1604.41s |
                 Project: Fleet GPS Tracking Platform
             </div>
         </div>
@@ -164,11 +164,11 @@
                 <div class="label">Total Tests</div>
             </div>
             <div class="card passed">
-                <div class="number">0</div>
+                <div class="number">1</div>
                 <div class="label">Passed</div>
             </div>
             <div class="card failed">
-                <div class="number">1</div>
+                <div class="number">0</div>
                 <div class="label">Failed</div>
             </div>
             <div class="card skipped">
@@ -176,7 +176,7 @@
                 <div class="label">Skipped</div>
             </div>
             <div class="card rate">
-                <div class="number">0.0%</div>
+                <div class="number">100.0%</div>
                 <div class="label">Pass Rate</div>
             </div>
         </div>
@@ -207,85 +207,15 @@
                 </thead>
                 <tbody>
                     
-                    <tr data-status="failed" data-module="Dashcam Data Usage">
+                    <tr data-status="passed" data-module="Dashcam Data Usage">
                         <td><span class="test-case-no">TS058-A</span></td>
                         <td>Dashcam Data Usage</td>
                         <td>
                             <strong>should display Dashcam Data Usage report</strong>
                             
-                                <button class="error-toggle" onclick="toggleError(0)">
-                                    View Error Details
-                                    <span class="arrow">&#9660;</span>
-                                </button>
-                                <div id="error-0" class="error-panel">
-                                    
-            <div class="error-details">
-                <div class="error-details-header">
-                    <span class="error-type-badge">Element Not Visible</span>
-                </div>
-                <div class="error-details-body">
-                    <div class="error-row">
-                        <span class="error-label">File:</span>
-                        <span class="error-value">TS058_dashcamDataUsage.spec.js</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Line:</span>
-                        <span class="error-value">23</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Element:</span>
-                        <span class="error-value element-selector">div</span>
-                    </div>
-                    
-                    
-                    <div class="error-row">
-                        <span class="error-label">Timeout:</span>
-                        <span class="error-value">5s</span>
-                    </div>
-                    
-                    <div class="error-row">
-                        <span class="error-label">Expected:</span>
-                        <span class="error-value">Element should be visible on page</span>
-                    </div>
-                    <div class="error-row">
-                        <span class="error-label">Actual:</span>
-                        <span class="error-value error-actual">Element was not found or not visible</span>
-                    </div>
-                    
-                    <div class="error-row suggestion">
-                        <span class="error-label">Suggestion:</span>
-                        <span class="error-value">Check if the page loaded correctly, or if the selector has changed</span>
-                    </div>
-                    
-                    <div class="error-row full-error">
-                        <span class="error-label">Full Error:</span>
-                        <span class="error-value"><pre>Error: expect.toBeVisible: Error: strict mode violation: locator(&#039;div&#039;).filter({ hasText: &#039;Live Video Requests&#039; }).filter({ hasText: &#039;This month&#039; }).first().getByText(&#039;0&#039;) resolved to 11 elements:
-    1) &lt;div class=&quot;device-id&quot;&gt;862798051102933&lt;/div&gt; aka locator(&#039;#du-selectedDeviceDisplay&#039;).getByText(&#039;862798051102933&#039;)
-    2) &lt;div class=&quot;device-item-id&quot;&gt;862798051102933&lt;/div&gt; aka locator(&#039;#du-deviceList&#039;).getByText(&#039;862798051102933&#039;)
-    3) &lt;div class=&quot;device-item-name&quot;&gt;M4000-Training3 Off &lt;/div&gt; aka locator(&#039;#du-deviceList&#039;).getByText(&#039;M4000-Training3 Off&#039;)
-    4) &lt;div class=&quot;data-usage-device-id&quot;&gt;862798051102933&lt;/div&gt; aka getByText(&#039;862798051102933&#039;).nth(2)
-    5) &lt;button data-period=&quot;30d&quot; class=&quot;period-btn active&quot;&gt;30 Days&lt;/button&gt; aka getByRole(&#039;button&#039;, { name: &#039;30 Days&#039; })
-    6) &lt;div id=&quot;du-totalUsage&quot; class=&quot;total-usage&quot;&gt;↵                        0 B Mobile Data↵        …&lt;/div&gt; aka getByText(&#039;B Mobile Data&#039;)
-    7) &lt;div class=&quot;usage-item-value count zero&quot;&gt;↵                        0↵                    &lt;/div&gt; aka locator(&#039;#dashcam-data-usage-panel&#039;).getByText(&#039;0&#039;, { exact: true }).first()
-    8) &lt;div class=&quot;usage-item-value count zero&quot;&gt;↵                        0↵                    &lt;/div&gt; aka locator(&#039;#dashcam-data-usage-panel&#039;).getByText(&#039;0&#039;, { exact: true }).nth(1)
-    9) &lt;div class=&quot;usage-item-value count zero&quot;&gt;↵                        0↵                    &lt;/div&gt; aka locator(&#039;#dashcam-data-usage-panel&#039;).getByText(&#039;0&#039;, { exact: true }).nth(2)
-    10) &lt;div class=&quot;usage-item-value count zero&quot;&gt;↵                        0↵                    &lt;/div&gt; aka locator(&#039;#dashcam-data-usage-panel&#039;).getByText(&#039;0&#039;, { exact: true }).nth(3)
-    ...
-
-Call log:
-  - Expect &quot;toBeVisible&quot; with timeout 5000ms
-  - waiting for locator(&#039;div&#039;).filter({ hasText: &#039;Live Video Requests&#039; }).filter({ hasText: &#039;This month&#039; }).first().getByText(&#039;0&#039;)
-</pre></span>
-                    </div>
-                </div>
-            </div>
-        
-                                </div>
-                            
                             <div class="steps-container">
                                 <button class="steps-toggle" onclick="toggleSteps(0)">
-                                    <span>View Test Steps (41)</span>
+                                    <span>View Test Steps (52)</span>
                                     <span class="arrow">&#9660;</span>
                                 </button>
                                 <div id="steps-0" class="steps-panel">
@@ -439,7 +369,7 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">&quot;month&quot;: &quot;January 2026&quot;,</span>
+                                                <span class="step-text">&quot;month&quot;: &quot;February 2026&quot;,</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -449,12 +379,12 @@ Call log:
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">&quot;startDate&quot;: &quot;2026-01-01&quot;,</span>
+                                                <span class="step-text">&quot;startDate&quot;: &quot;2026-02-01&quot;,</span>
                                             </div>
                                         
                                             <div class="step-item info log">
                                                 <span class="step-icon">*</span>
-                                                <span class="step-text">&quot;endDate&quot;: &quot;2026-01-02&quot;</span>
+                                                <span class="step-text">&quot;endDate&quot;: &quot;2026-02-12&quot;</span>
                                             </div>
                                         
                                             <div class="step-item info log">
@@ -497,14 +427,69 @@ Call log:
                                                 <span class="step-text">✓ Mobile Data verified: 0 B</span>
                                             </div>
                                         
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Live Video Requests verified: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Video on Demand verified: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Total Alerts verified: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">✓ Video Files verified: 0</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Refresh Data button is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Last updated text is visible</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked 7 Days filter</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked 24 Hours filter</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Clicked 30 Days filter</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Refresh Data button clicked and API called</span>
+                                            </div>
+                                        
+                                            <div class="step-item info log">
+                                                <span class="step-icon">*</span>
+                                                <span class="step-text">Dashcam Data Usage test completed successfully - All API data matched with UI</span>
+                                            </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td><span class="status failed">FAILED</span></td>
-                        <td><strong>56.74s</strong></td>
+                        <td><span class="status passed">PASSED</span></td>
+                        <td><strong>90.22s</strong></td>
                         <td>
-                            <a href="videos/TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm" class="video-link" target="_blank">Video: TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm</a>
+                            <span class="no-video">No video</span>
                         </td>
                     </tr>
                     
@@ -556,7 +541,7 @@ Call log:
             let csv = [];
             csv.push(['Test Case No', 'Module', 'Test Case Description', 'Status', 'Duration', 'Failure Reason', 'Video Identifier'].join(','));
 
-            const data = [{"testCaseNo":"TS058-A","module":"Dashcam Data Usage","description":"should display Dashcam Data Usage report","status":"FAILED","duration":"56.74s","failureReason":"Error: expect.toBeVisible: Error: strict mode violation: locator('div').filter({ hasText: 'Live Video Requests' }).filter({ hasText: 'This month' }).first().getByText('0') resolved to 11 elements:","videoIdentifier":"TS058_dashcamDataUsage-should-display-Dashcam-Data-Usage-report.webm"}];
+            const data = [{"testCaseNo":"TS058-A","module":"Dashcam Data Usage","description":"should display Dashcam Data Usage report","status":"PASSED","duration":"90.22s","failureReason":"","videoIdentifier":"N/A"}];
 
             data.forEach(row => {
                 csv.push([
@@ -573,7 +558,7 @@ Call log:
             const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'test-report-2026-01-02.csv';
+            link.download = 'test-report-2026-02-12.csv';
             link.click();
         }
     </script>

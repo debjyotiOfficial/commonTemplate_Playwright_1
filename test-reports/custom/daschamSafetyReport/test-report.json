@@ -1,22 +1,22 @@
 {
   "summary": {
-    "total": 1,
-    "passed": 1,
-    "failed": 0,
+    "total": 9,
+    "passed": 6,
+    "failed": 3,
     "skipped": 0,
-    "duration": 162604,
-    "startTime": "2026-01-29T22:14:45.430Z",
-    "endTime": "2026-01-29T22:17:28.034Z"
+    "duration": 1604413,
+    "startTime": "2026-02-12T17:24:25.038Z",
+    "endTime": "2026-02-12T17:51:09.451Z"
   },
   "tests": [
     {
       "testCaseNo": "TS060-A",
       "module": "Dashcam Safety Report",
-      "title": "should verify Dashcam Safety Report features and API validation",
-      "description": "should verify Dashcam Safety Report features and API validation",
+      "title": "should display Dashcam Safety Report and verify report data with API validation",
+      "description": "should display Dashcam Safety Report and verify report data with API validation",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 156123,
+      "duration": 69123,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -132,6 +132,2703 @@
         },
         {
           "number": "",
+          "text": "Step 3: Verifying form elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Select Dashcam Device dropdown is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device options: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234), Mikes Dashcam  (353899269360549)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date Range input visible with value: 2026-02-05 - 2026-02-12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Selecting a device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Checking date range...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Date range value: 2026-02-05 - 2026-02-12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Setting up API listener and clicking Submit...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Capturing API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=862798051102933&startDate=2026-02-05&endDate=2026-02-12&clientPath=dashcamdemo1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response Data: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"DashCamAlert\": [],",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"info\": [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"isNeeded\": false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"weightage\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Eyes Closed\": 0.6,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Using Phone\": 0.9,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Yawning\": 0.6,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Photo Trap\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Over Speed\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Braking\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Sharp Turn\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Parking Vibration\": 0.6,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Proximity Alert\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Fatigue\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Smoking\": 0.9,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Abnormal Video Feed\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Distracted\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Lane Departure\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Tailgating\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"SOS emergency alarm\": 0.9,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"FCW\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"PCW\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Hard Acceleration\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Breaking\": 0.7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"status\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Eyes Closed\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Using Phone\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Yawning\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Photo Trap\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Over Speed\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Breaking\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Sharp Turn\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Parking Vibration\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Proximity Alert\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Fatigue\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Smoking\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Abnormal Video Feed\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Distracted\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Lane Departure\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Tailgating\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"SOS emergency alarm\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"FCW\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"PCW\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Hard Acceleration\": true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response Metrics",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying dashboard elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Safety Score: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying Total Alerts...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Total Alerts label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Total Alerts: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying High Risk Alerts...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ High Risk Alerts label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI High Risk Alerts: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying Medium Risk Alerts...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Medium Risk Alerts label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Medium Risk Alerts: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Comparing API response with UI values...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparison: API vs UI",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Verifying Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "DASHCAM SAFETY REPORT SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Safety Score:       24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total Alerts:       0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "High Risk Alerts:   0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Medium Risk Alerts: 0",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam Safety Report verification completed successfully!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:35:20.307Z",
+      "endTime": "2026-02-12T17:36:29.430Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 104
+    },
+    {
+      "testCaseNo": "TS060-B",
+      "module": "Dashcam Safety Report",
+      "title": "should verify device selection and date range functionality",
+      "description": "should verify device selection and date range functionality",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 92307,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing device selection and date range functionality...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device dropdown options: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234), Mikes Dashcam  (353899269360549)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device dropdown has 4 option(s)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected second device: 353899269355234",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Switched back to first device",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current date range: 2026-02-05 - 2026-02-12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date picker opened successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device selection and date range functionality verified!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:36:29.459Z",
+      "endTime": "2026-02-12T17:38:01.766Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 329
+    },
+    {
+      "testCaseNo": "TS060-C",
+      "module": "Dashcam Safety Report",
+      "title": "should verify report metrics and dashboard elements",
+      "description": "should verify report metrics and dashboard elements",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 69881,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Verifying report metrics...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Total Alerts is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ High Risk Alerts is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Medium Risk Alerts is displayed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Report metrics verification completed!",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:38:01.807Z",
+      "endTime": "2026-02-12T17:39:11.688Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 390
+    },
+    {
+      "testCaseNo": "TS060-D",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Settings window with All devices selection bug replication",
+      "description": "should verify Settings window with All devices selection bug replication",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 90059,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam Safety Report panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting device...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available devices: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234), Mikes Dashcam  (353899269360549)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Verifying date range...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Date range value: 2026-02-05 - 2026-02-12",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Setting up API listener and clicking Submit...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Capturing API response...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=862798051102933&startDate=2026-02-05&endDate=2026-02-12&clientPath=dashcamdemo1",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ API Response captured successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response Data: {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"DashCamAlert\": [],",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"info\": [",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"isNeeded\": false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"weightage\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Eyes Closed\": 0.6,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Using Phone\": 0.9,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Yawning\": 0.6,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Photo Trap\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Over Speed\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Braking\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Sharp Turn\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Parking Vibration\": 0.6,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Proximity Alert\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Fatigue\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Smoking\": 0.9,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Abnormal Video Feed\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Distracted\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Lane Departure\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Tailgating\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"SOS emergency alarm\": 0.9,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"FCW\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"PCW\": 0.8,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Hard Acceleration\": 0.7,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Breaking\": 0.7",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"status\": {",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Eyes Closed\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Using Phone\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Yawning\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Photo Trap\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Over Speed\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Breaking\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Sharp Turn\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Parking Vibration\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Proximity Alert\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Fatigue\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Smoking\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Abnormal Video Feed\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Distracted\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Lane Departure\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Tailgating\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"SOS emergency alarm\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"FCW\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"PCW\": true,",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "\"Hard Acceleration\": true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying Safety Score on UI...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ UI Safety Score: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying Settings window appears...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings window (weights-view) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Back to Dashboard button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score card is visible in settings",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 20 alert cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert types visible in Settings:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Using Phone",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Braking",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Sharp Turn",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Fatigue",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Smoking",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Abnormal Video Feed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "SETTINGS WINDOW VERIFICATION COMPLETE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Clicking on Eyes Closed card checkbox to open modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Eyes Closed checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying Eyes Closed Driver Safety Alert Setting modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal header \"Eyes Closed Driver Safety Alert Setting\" is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Search input is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Select All Devices checkbox is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ IMEI column header is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 3 device row checkboxes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "BUG REPLICATION: Select All Devices",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Testing Select All Devices checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial state: 1/3 checkboxes are checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Select All Devices checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "BUG CHECK: Select All Devices",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "After clicking \"Select All Devices\": 1/3 checkboxes are checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✗ BUG CONFIRMED: Not all device checkboxes are checked!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected: 3 checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual: 1 checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "BUG REPLICATION: IMEI Header Checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Resetting state and testing IMEI header checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Unchecked Select All Devices to reset state",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on IMEI header checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "BUG CHECK: IMEI Header Checkbox",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "After clicking IMEI header checkbox: 1/3 IMEI checkboxes are checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✗ BUG CONFIRMED: Not all IMEI checkboxes are checked!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected: 3 checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual: 1 checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device List State",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Row 1: ☑ 862798051102933",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: ☐ 353899269355234",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3: ☐ 353899269360549",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "STEP 15: Saving with Select All Devices checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Checked Select All Devices checkbox before saving",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 16: Clicking Save button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Alert message: This alert has now been deselected and will not be calculated in the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Clicking OK on alert...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert accepted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 17: Verifying Dashcam Safety Report is visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Still on Settings view after save",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed card is visible - Settings view confirmed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "STEP 18: Re-opening Eyes Closed modal to verify saved state",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Eyes Closed checkbox again",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Eyes Closed modal reopened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 19: Verifying if Select All Devices checkbox state persisted...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "BUG CHECK: Select All Devices state after Save",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Select All Devices checkbox is: NOT CHECKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✗ BUG: Select All Devices state did NOT persist after save!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 20: Verifying all device checkboxes state after reopening...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "BUG CHECK: Device checkboxes state after Save & Reopen",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Devices checked: 1/3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✗ BUG CONFIRMED: Not all device checkboxes are checked after save!",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Expected: 3 checked (since we saved with Select All Devices)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Actual: 1 checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device List State After Reopen",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Row 1: ☑ 862798051102933",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 2: ☐ 353899269355234",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Row 3: ☐ 353899269360549",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Modal already closed or Cancel not visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "BUG REPLICATION SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Bug 1: Select All Devices checkbox (initial click)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Expected: All 3 devices selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Actual: 1 devices selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Status: BUG CONFIRMED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Bug 2: IMEI header checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Expected: All 3 IMEI checkboxes selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Actual: 1 IMEI checkboxes selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Status: BUG CONFIRMED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Bug 3: Select All Devices state persistence after Save",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Select All Devices checkbox: NOT CHECKED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Devices checked after reopen: 1/3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Status: BUG CONFIRMED",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        }
+      ],
+      "startTime": "2026-02-12T17:39:11.743Z",
+      "endTime": "2026-02-12T17:40:41.802Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 439
+    },
+    {
+      "testCaseNo": "TS060-E",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Alert Settings button bug replication",
+      "description": "should verify Alert Settings button bug replication",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 115905,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam Safety Report panel opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting device and submitting...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Available devices: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234), Mikes Dashcam  (353899269360549)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected device: test 1  (862798051102933)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings view (weights-view) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Clicking on Alert Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying Change Alert Settings modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Change Alert Settings modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Selecting device in modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal device options: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234), Mikes Dashcam  (353899269360549)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Selected device in modal",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Testing Select/Unselect All Alerts checkbox...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Speed Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ignition Off Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SOS Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DMS Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Volume Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ignition On Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Photo Trap Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ADAS Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial state: 1/9 alerts checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Select/Unselect All Alerts checkbox found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked Select/Unselect All Alerts checkbox",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert states after clicking Select/Unselect All:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Speed Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ignition Off Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SOS Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DMS Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Volume Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ignition On Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Photo Trap Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ADAS Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After Select/Unselect All: 9/9 alerts checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Select/Unselect All Alerts works correctly",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Changing Limit For Speed Alert value...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Limit For Speed Alert label found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current Speed Limit value: 75",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Changed Speed Limit from 75 to 85",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Clicking Save Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": 1,
+          "text": "Alert message: Error saving settings. Please try again.",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert accepted",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 2,
+          "text": "--- BUG CHECK: Save Settings Error ---",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": 3,
+          "text": "✓ BUG CONFIRMED: Error alert appeared when saving settings",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": 4,
+          "text": "Error message: \"Error saving settings. Please try again.\"",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Closing Change Alert Settings modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Pressed Escape to close modal",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Clicking Alert Settings button again...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button clicked again",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 13: Verifying if changes persisted...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Change Alert Settings modal reopened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Speed Limit value after reopen: 70",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert states after reopening modal:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Speed Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ignition Off Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "SOS Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "DMS Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Volume Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Ignition On Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Photo Trap Alert: ☑",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "ADAS Alert: ☐",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "After reopen: 7/9 alerts checked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "ALERT SETTINGS BUG SUMMARY",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Bug: Save Settings shows error but changes may/may not persist",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Speed Limit Changes:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Original value: 75",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Changed to: 85",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Value after reopen: 70",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Persisted: NO",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Checkbox Changes:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Initial checked: 1/9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- After Select All: 9/9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- After reopen: 7/9",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "- Persisted: NO",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 5,
+          "text": "✗ BUG CONFIRMED: Error alert shown when saving settings",
+          "status": "failed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "",
+          "status": "section",
+          "type": "section"
+        }
+      ],
+      "startTime": "2026-02-12T17:40:41.845Z",
+      "endTime": "2026-02-12T17:42:37.750Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 956
+    },
+    {
+      "testCaseNo": "TS060-F",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Dashcam Safety Report features and API validation",
+      "description": "should verify Dashcam Safety Report features and API validation",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 183198,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Logged in and navigated to Dashcam Dashboard",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "✓ Dashcam Safety Report panel opened",
           "status": "info",
           "type": "log"
@@ -144,7 +2841,7 @@
         },
         {
           "number": "",
-          "text": "Available devices: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234)",
+          "text": "Available devices: Select Device, test 1  (862798051102933), M4000-Training3 Off  (353899269355234), Mikes Dashcam  (353899269360549)",
           "status": "info",
           "type": "log"
         },
@@ -156,7 +2853,7 @@
         },
         {
           "number": "",
-          "text": "✓ Date range: 2026-01-23 - 2026-01-30",
+          "text": "✓ Date range: 2026-02-05 - 2026-02-12",
           "status": "info",
           "type": "log"
         },
@@ -186,7 +2883,7 @@
         },
         {
           "number": "",
-          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=862798051102933&startDate=2026-01-23&endDate=2026-01-30&clientPath=dashcamdemo1",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=862798051102933&startDate=2026-02-05&endDate=2026-02-12&clientPath=dashcamdemo1",
           "status": "info",
           "type": "log"
         },
@@ -246,7 +2943,7 @@
         },
         {
           "number": "",
-          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "text": "Date Range: 2026-02-05 - 2026-02-12",
           "status": "info",
           "type": "log"
         },
@@ -288,7 +2985,7 @@
         },
         {
           "number": "",
-          "text": "✓ Date range: 2026-01-23 - 2026-01-30",
+          "text": "✓ Date range: 2026-02-05 - 2026-02-12",
           "status": "info",
           "type": "log"
         },
@@ -318,7 +3015,7 @@
         },
         {
           "number": "",
-          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=353899269355234&startDate=2026-01-23&endDate=2026-01-30&clientPath=dashcamdemo1",
+          "text": "✓ API URL: https://www.gpsandfleet3.net/gpsandfleet/gpsandfleet_common_here/Data/getDashCamDriverScore.php?dashcamId=353899269355234&startDate=2026-02-05&endDate=2026-02-12&clientPath=dashcamdemo1",
           "status": "info",
           "type": "log"
         },
@@ -390,7 +3087,7 @@
         },
         {
           "number": "",
-          "text": "✓ UI Safety Score: 29%",
+          "text": "✓ UI Safety Score: 42%",
           "status": "info",
           "type": "log"
         },
@@ -408,7 +3105,7 @@
         },
         {
           "number": "",
-          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "text": "Date Range: 2026-02-05 - 2026-02-12",
           "status": "info",
           "type": "log"
         },
@@ -444,7 +3141,7 @@
         },
         {
           "number": "",
-          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "text": "Date Range: 2026-02-05 - 2026-02-12",
           "status": "info",
           "type": "log"
         },
@@ -480,7 +3177,7 @@
         },
         {
           "number": "",
-          "text": "Date Range: 2026-01-23 - 2026-01-30",
+          "text": "Date Range: 2026-02-05 - 2026-02-12",
           "status": "info",
           "type": "log"
         },
@@ -492,7 +3189,7 @@
         },
         {
           "number": "",
-          "text": "UI Safety Score: 29%",
+          "text": "UI Safety Score: 42%",
           "status": "info",
           "type": "log"
         },
@@ -588,7 +3285,7 @@
         },
         {
           "number": "",
-          "text": "Initial Safety Score: 29%",
+          "text": "Initial Safety Score: 42%",
           "status": "info",
           "type": "log"
         },
@@ -606,13 +3303,13 @@
         },
         {
           "number": "",
-          "text": "Initial Level of Importance: 6",
+          "text": "Initial Level of Importance: 8",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Current slider value: 6",
+          "text": "Current slider value: 8",
           "status": "info",
           "type": "log"
         },
@@ -636,7 +3333,7 @@
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -696,193 +3393,13 @@
         },
         {
           "number": "",
-          "text": "Initial Level of Importance: 9",
+          "text": "Initial Level of Importance: 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Current slider value: 9",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Will change slider to: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Slider changed to 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Using Phone Driver Safety Alert Setting modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device rows in table: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Save button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ update_alert_weights.php API called (Status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "New Level of Importance: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Weight changed: YES ✓",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Safety Score changed: NaN%",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Using Phone test completed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Alert 14: Yawning",
-          "status": "info",
-          "type": "subsection"
-        },
-        {
-          "number": "",
-          "text": "✓ Yawning alert card found",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Initial Level of Importance: 6",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Current slider value: 6",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Will change slider to: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Slider changed to 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Yawning Driver Safety Alert Setting modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device rows in table: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Save button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ update_alert_weights.php API called (Status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "New Level of Importance: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Weight changed: YES ✓",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Safety Score changed: NaN%",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Yawning test completed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Alert 15: Photo Trap",
-          "status": "info",
-          "type": "subsection"
-        },
-        {
-          "number": "",
-          "text": "✓ Photo Trap alert card found",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Initial Level of Importance: 3",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Current slider value: 3",
+          "text": "Current slider value: 2",
           "status": "info",
           "type": "log"
         },
@@ -900,13 +3417,13 @@
         },
         {
           "number": "",
-          "text": "✓ Photo Trap Driver Safety Alert Setting modal opened",
+          "text": "✓ Using Phone Driver Safety Alert Setting modal opened",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -948,19 +3465,109 @@
         },
         {
           "number": "",
-          "text": "✓ Photo Trap test completed",
+          "text": "✓ Using Phone test completed",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing Alert 16: Over Speed",
+          "text": "Testing Alert 14: Yawning",
           "status": "info",
           "type": "subsection"
         },
         {
           "number": "",
-          "text": "✓ Over Speed alert card found",
+          "text": "✓ Yawning alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Yawning test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 15: Photo Trap",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap alert card found",
           "status": "info",
           "type": "log"
         },
@@ -990,13 +3597,13 @@
         },
         {
           "number": "",
-          "text": "✓ Over Speed Driver Safety Alert Setting modal opened",
+          "text": "✓ Photo Trap Driver Safety Alert Setting modal opened",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1021,6 +3628,96 @@
         {
           "number": "",
           "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Photo Trap test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 16: Over Speed",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Over Speed Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
           "status": "info",
           "type": "log"
         },
@@ -1086,7 +3783,7 @@
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1146,103 +3843,13 @@
         },
         {
           "number": "",
-          "text": "Initial Level of Importance: 7",
+          "text": "Initial Level of Importance: 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Current slider value: 7",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Will change slider to: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Slider changed to 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Sharp Turn Driver Safety Alert Setting modal opened",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Device rows in table: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Save button clicked",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ update_alert_weights.php API called (Status: 200)",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "New Level of Importance: 2",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Weight changed: YES ✓",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Safety Score changed: NaN%",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "✓ Sharp Turn test completed",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Testing Alert 19: Parking Vibration",
-          "status": "info",
-          "type": "subsection"
-        },
-        {
-          "number": "",
-          "text": "✓ Parking Vibration alert card found",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Initial Level of Importance: 1",
-          "status": "info",
-          "type": "log"
-        },
-        {
-          "number": "",
-          "text": "Current slider value: 1",
+          "text": "Current slider value: 2",
           "status": "info",
           "type": "log"
         },
@@ -1260,13 +3867,13 @@
         },
         {
           "number": "",
-          "text": "✓ Parking Vibration Driver Safety Alert Setting modal opened",
+          "text": "✓ Sharp Turn Driver Safety Alert Setting modal opened",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1308,19 +3915,19 @@
         },
         {
           "number": "",
-          "text": "✓ Parking Vibration test completed",
+          "text": "✓ Sharp Turn test completed",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Testing Alert 20: Proximity Alert",
+          "text": "Testing Alert 19: Parking Vibration",
           "status": "info",
           "type": "subsection"
         },
         {
           "number": "",
-          "text": "✓ Proximity Alert alert card found",
+          "text": "✓ Parking Vibration alert card found",
           "status": "info",
           "type": "log"
         },
@@ -1350,13 +3957,13 @@
         },
         {
           "number": "",
-          "text": "✓ Proximity Alert Driver Safety Alert Setting modal opened",
+          "text": "✓ Parking Vibration Driver Safety Alert Setting modal opened",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1381,6 +3988,96 @@
         {
           "number": "",
           "text": "New Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Weight changed: YES ✓",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Safety Score changed: NaN%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Parking Vibration test completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing Alert 20: Proximity Alert",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert alert card found",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial Level of Importance: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Current slider value: 2",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Will change slider to: 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider changed to 8",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Proximity Alert Driver Safety Alert Setting modal opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Device rows in table: 3",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Save button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert Dialog: This alert has now been selected and will be calculated into the Driver Safety Report score.",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ update_alert_weights.php API called (Status: 200)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "New Level of Importance: 8",
           "status": "info",
           "type": "log"
         },
@@ -1446,7 +4143,7 @@
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1506,25 +4203,25 @@
         },
         {
           "number": "",
-          "text": "Initial Level of Importance: 9",
+          "text": "Initial Level of Importance: 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Current slider value: 9",
+          "text": "Current slider value: 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Will change slider to: 2",
+          "text": "Will change slider to: 8",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Slider changed to 2",
+          "text": "✓ Slider changed to 8",
           "status": "info",
           "type": "log"
         },
@@ -1536,7 +4233,7 @@
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1560,7 +4257,7 @@
         },
         {
           "number": "",
-          "text": "New Level of Importance: 2",
+          "text": "New Level of Importance: 8",
           "status": "info",
           "type": "log"
         },
@@ -1596,25 +4293,25 @@
         },
         {
           "number": "",
-          "text": "Initial Level of Importance: 7",
+          "text": "Initial Level of Importance: 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Current slider value: 7",
+          "text": "Current slider value: 2",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "Will change slider to: 2",
+          "text": "Will change slider to: 8",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "✓ Slider changed to 2",
+          "text": "✓ Slider changed to 8",
           "status": "info",
           "type": "log"
         },
@@ -1626,7 +4323,7 @@
         },
         {
           "number": "",
-          "text": "Device rows in table: 2",
+          "text": "Device rows in table: 3",
           "status": "info",
           "type": "log"
         },
@@ -1650,7 +4347,7 @@
         },
         {
           "number": "",
-          "text": "New Level of Importance: 2",
+          "text": "New Level of Importance: 8",
           "status": "info",
           "type": "log"
         },
@@ -1728,7 +4425,7 @@
         },
         {
           "number": "",
-          "text": "Second Device - API: N/A, UI: 29%",
+          "text": "Second Device - API: N/A, UI: 42%",
           "status": "info",
           "type": "log"
         },
@@ -1740,7 +4437,7 @@
         },
         {
           "number": "",
-          "text": "Initial Safety Score: 29%",
+          "text": "Initial Safety Score: 42%",
           "status": "info",
           "type": "log"
         },
@@ -1752,7 +4449,7 @@
         },
         {
           "number": "",
-          "text": "Total Score Change: -29%",
+          "text": "Total Score Change: -42%",
           "status": "info",
           "type": "log"
         },
@@ -1782,31 +4479,31 @@
         },
         {
           "number": "",
-          "text": "│ Eyes Closed         │      6 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Eyes Closed         │      8 │      2 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Using Phone         │      9 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Using Phone         │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Yawning             │      6 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Yawning             │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Photo Trap          │      3 │      8 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Photo Trap          │      8 │      2 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Over Speed          │      8 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Over Speed          │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
@@ -1818,19 +4515,19 @@
         },
         {
           "number": "",
-          "text": "│ Sharp Turn          │      7 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Sharp Turn          │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Parking Vibration   │      1 │      8 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Parking Vibration   │      8 │      2 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Proximity Alert     │      8 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Proximity Alert     │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
@@ -1842,13 +4539,13 @@
         },
         {
           "number": "",
-          "text": "│ Smoking             │      9 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Smoking             │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
         {
           "number": "",
-          "text": "│ Abnormal Video Feed │      7 │      2 │   ✓   │   ✓   │   ✓   │",
+          "text": "│ Abnormal Video Feed │      2 │      8 │   ✓   │   ✓   │   ✓   │",
           "status": "info",
           "type": "log"
         },
@@ -1943,12 +4640,1359 @@
           "type": "section"
         }
       ],
-      "startTime": "2026-01-29T22:14:50.974Z",
-      "endTime": "2026-01-29T22:17:27.097Z",
+      "startTime": "2026-02-12T17:42:37.773Z",
+      "endTime": "2026-02-12T17:45:40.971Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
       "fileName": "TS060_daschamSafetyReport",
       "line": 1260
+    },
+    {
+      "testCaseNo": "TS060-G",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Settings view and alert weight configurations",
+      "description": "should verify Settings view and alert weight configurations",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 100680,
+      "failureReason": "TimeoutError: locator.fill: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": "#dashcam-safety-iframe",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS060_daschamSafetyReport.spec.js",
+        "line": 1812,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.fill: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#dashcam-safety-iframe').contentFrame().locator('.alert-card').first().locator('.slider')\n    - locator resolved to <input min=\"1\" max=\"10\" step=\"1\" disabled value=\"6\" type=\"range\" class=\"slider\" data-index=\"0\"/>\n    - fill(\"5\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and editable\n       - element is not enabled\n     - retrying fill action\n       - waiting 500ms\n",
+        "stackTrace": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#dashcam-safety-iframe').contentFrame().locator('.alert-card').first().locator('.slider')\n    - locator resolved to <input min=\"1\" max=\"10\" step=\"1\" disabled value=\"6\" type=\"range\" class=\"slider\" data-index=\"0\"/>\n    - fill(\"5\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and editable\n       - element is not enabled\n     - retrying fill action\n       - waiting 500ms\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js:2014:26"
+      },
+      "videoPath": "videos/TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm",
+      "videoIdentifier": "TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting device and submitting...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Settings view (weights-view) is visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Weights view is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying view header elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Back to Dashboard button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying Safety Score card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score card is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score title is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score circle is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score value: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score legend is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying risk levels...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 3 risk levels",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Low risk level (1-3) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Medium risk level (3-7) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ High risk level (7-10) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying alert cards...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alerts container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 20 alert cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying individual alert cards...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 1: Eyes Closed - Weight: 6, Enabled: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 2: Using Phone - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 3: Yawning - Weight: 6, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 4: Photo Trap - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 5: Over Speed - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 6: Braking - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 7: Sharp Turn - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 8: Parking Vibration - Weight: 6, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 9: Proximity Alert - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 10: Fatigue - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 11: Smoking - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 12: Abnormal Video Feed - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 13: Distracted - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 14: Lane Departure - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 15: Tailgating - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 16: SOS emergency alarm - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 17: FCW - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 18: PCW - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 19: Hard Acceleration - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 20: Breaking - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying alert card structure...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert card checkbox container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert card header is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Weight section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Level Of Importance label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider is visible (min: 1, max: 10)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Testing slider interaction...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial slider value: 6",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:45:41.140Z",
+      "endTime": "2026-02-12T17:47:21.820Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 1812
+    },
+    {
+      "testCaseNo": "TS060-H",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Settings view and alert weight configurations",
+      "description": "should verify Settings view and alert weight configurations",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 115811,
+      "failureReason": "TimeoutError: locator.fill: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": "#dashcam-safety-iframe",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS060_daschamSafetyReport.spec.js",
+        "line": 1812,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.fill: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#dashcam-safety-iframe').contentFrame().locator('.alert-card').first().locator('.slider')\n    - locator resolved to <input min=\"1\" max=\"10\" step=\"1\" disabled value=\"6\" type=\"range\" class=\"slider\" data-index=\"0\"/>\n    - fill(\"5\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n      - waiting 100ms\n    52 × waiting for element to be visible, enabled and editable\n       - element is not enabled\n     - retrying fill action\n       - waiting 500ms\n",
+        "stackTrace": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#dashcam-safety-iframe').contentFrame().locator('.alert-card').first().locator('.slider')\n    - locator resolved to <input min=\"1\" max=\"10\" step=\"1\" disabled value=\"6\" type=\"range\" class=\"slider\" data-index=\"0\"/>\n    - fill(\"5\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n      - waiting 100ms\n    52 × waiting for element to be visible, enabled and editable\n       - element is not enabled\n     - retrying fill action\n       - waiting 500ms\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js:2014:26"
+      },
+      "videoPath": "videos/TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm",
+      "videoIdentifier": "TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting device and submitting...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Settings view (weights-view) is visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Weights view is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying view header elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Back to Dashboard button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying Safety Score card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score card is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score title is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score circle is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score value: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score legend is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying risk levels...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 3 risk levels",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Low risk level (1-3) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Medium risk level (3-7) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ High risk level (7-10) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying alert cards...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alerts container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 20 alert cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying individual alert cards...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 1: Eyes Closed - Weight: 6, Enabled: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 2: Using Phone - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 3: Yawning - Weight: 6, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 4: Photo Trap - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 5: Over Speed - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 6: Braking - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 7: Sharp Turn - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 8: Parking Vibration - Weight: 6, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 9: Proximity Alert - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 10: Fatigue - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 11: Smoking - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 12: Abnormal Video Feed - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 13: Distracted - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 14: Lane Departure - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 15: Tailgating - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 16: SOS emergency alarm - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 17: FCW - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 18: PCW - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 19: Hard Acceleration - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 20: Breaking - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying alert card structure...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert card checkbox container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert card header is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Weight section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Level Of Importance label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider is visible (min: 1, max: 10)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Testing slider interaction...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial slider value: 6",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:47:26.198Z",
+      "endTime": "2026-02-12T17:49:22.009Z",
+      "retries": 1,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 1812
+    },
+    {
+      "testCaseNo": "TS060-I",
+      "module": "Dashcam Safety Report",
+      "title": "should verify Settings view and alert weight configurations",
+      "description": "should verify Settings view and alert weight configurations",
+      "status": "failed",
+      "statusDisplay": "FAILED",
+      "duration": 104756,
+      "failureReason": "TimeoutError: locator.fill: Timeout 30000ms exceeded.",
+      "parsedError": {
+        "type": "Timeout Error",
+        "element": "#dashcam-safety-iframe",
+        "expected": "Operation should complete within time limit",
+        "actual": "Operation took too long",
+        "timeout": "30s",
+        "file": "TS060_daschamSafetyReport.spec.js",
+        "line": 1812,
+        "suggestion": "Page may be slow to load, or element never appeared. Check network/server status",
+        "cleanMessage": "TimeoutError: locator.fill: Timeout 30000ms exceeded.",
+        "fullMessage": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#dashcam-safety-iframe').contentFrame().locator('.alert-card').first().locator('.slider')\n    - locator resolved to <input min=\"1\" max=\"10\" step=\"1\" disabled value=\"6\" type=\"range\" class=\"slider\" data-index=\"0\"/>\n    - fill(\"5\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and editable\n       - element is not enabled\n     - retrying fill action\n       - waiting 500ms\n",
+        "stackTrace": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#dashcam-safety-iframe').contentFrame().locator('.alert-card').first().locator('.slider')\n    - locator resolved to <input min=\"1\" max=\"10\" step=\"1\" disabled value=\"6\" type=\"range\" class=\"slider\" data-index=\"0\"/>\n    - fill(\"5\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not enabled\n    - retrying fill action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and editable\n       - element is not enabled\n     - retrying fill action\n       - waiting 500ms\n\n    at C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js:2014:26"
+      },
+      "videoPath": "videos/TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm",
+      "videoIdentifier": "TS060_daschamSafetyReport-should-verify-Settings-view-and-alert-weight-confi.webm",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 1: Logging in and navigating to Dashcam Dashboard...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 2: Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Opening Dashcam Safety Report...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Dashcam accordion expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Clicked on Dashcam Safety Report menu",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Closed navbar",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report panel is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Report content loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 3: Selecting device and submitting...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Device selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Submit clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 4: Clicking on Settings button...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Settings button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 5: Verifying Settings view (weights-view) is visible...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Weights view is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 6: Verifying view header elements...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Back to Dashboard button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert Settings button is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 7: Verifying Safety Score card...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score card is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score title is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score circle is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Safety Score value: 24%",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Score legend is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 8: Verifying risk levels...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 3 risk levels",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Low risk level (1-3) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Medium risk level (3-7) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ High risk level (7-10) is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 9: Verifying alert cards...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alerts container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Found 20 alert cards",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 10: Verifying individual alert cards...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 1: Eyes Closed - Weight: 6, Enabled: false",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 2: Using Phone - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 3: Yawning - Weight: 6, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 4: Photo Trap - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 5: Over Speed - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 6: Braking - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 7: Sharp Turn - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 8: Parking Vibration - Weight: 6, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 9: Proximity Alert - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 10: Fatigue - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 11: Smoking - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 12: Abnormal Video Feed - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 13: Distracted - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 14: Lane Departure - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 15: Tailgating - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 16: SOS emergency alarm - Weight: 9, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 17: FCW - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 18: PCW - Weight: 8, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 19: Hard Acceleration - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert 20: Breaking - Weight: 7, Enabled: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 11: Verifying alert card structure...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert card checkbox container is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Alert card header is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Weight section is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Level Of Importance label is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "✓ Slider is visible (min: 1, max: 10)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 12: Testing slider interaction...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Initial slider value: 6",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:49:24.297Z",
+      "endTime": "2026-02-12T17:51:09.053Z",
+      "retries": 2,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS060_daschamSafetyReport.spec.js",
+      "fileName": "TS060_daschamSafetyReport",
+      "line": 1812
     }
   ]
 }

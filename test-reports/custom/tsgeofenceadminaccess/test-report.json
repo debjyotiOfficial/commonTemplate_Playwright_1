@@ -1,0 +1,832 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 488037,
+    "startTime": "2026-02-11T16:54:05.433Z",
+    "endTime": "2026-02-11T17:02:13.470Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TC-A",
+      "module": "Geofence Admin Access - Matrack Server",
+      "title": "should login, access account NATM0810, and load the platform",
+      "description": "should login, access account NATM0810, and load the platform",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 485118,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "STEP 1: LOGIN",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Login page loaded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Username entered",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Password entered",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sign In clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful - redirected to index.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 2: ACCESS ACCOUNT",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "ACCESS ACCOUNT clicked - new tab opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Access Account page loaded: https://www.matrack-server.com/gpstracking/adminnew/view/accessaccount.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 3: SELECT ACCOUNT NATM0810",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Search attempt 1/5",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Select2 dropdown opened",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "IMEI entered: 862343068530220",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Selected NATM0810 from suggestions",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 4: CLICK ACCESS ACCOUNT BUTTON",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Access Account button clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 5: WAITING FOR PLATFORM TO LOAD",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Platform page URL: https://www.matrack-server.com/gpstracking/client/NATM0810/maps/index2.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Platform loaded successfully at: https://www.matrack-server.com/gpstracking/client/NATM0810/maps/index2.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Platform fully loaded and ready",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 6: CLICK HAMBURGER ICON",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Hamburger icon clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Side menu expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 7: CLICK SETTINGS",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Settings clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Settings submenu expanded",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 8: CLICK CHANGE ALERT SETTINGS",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Change Alert Settings clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 9: VERIFY ALERT SETTINGS MODAL",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Alert settings modal found with selector: .modal.show",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Change Alert Settings modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 10: SELECT VEHICLE FROM DROPDOWN",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Selected vehicle: MA1285WT 710810",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 11: CHECK GEOFENCING ALERT",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Geofencing Alert - Found: true, Is ON: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofencing Alert is already ON - closing modal...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofencing alert check completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 12: CLICK ADD/EDIT ALERT CONTACTS",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Add/Edit Alert Contacts clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 13: VERIFY EDIT ALERT CONTACT MODAL",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Edit Alert Contact modal is visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Modal title verified: Edit Alert Contact",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 14: CHECK EMAIL CONTACT",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Email \"debjyoti@sievanetworks2.com, Debjyoti d\" exists: true",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Email contact \"debjyoti@sievanetworks2.com, Debjyoti d\" is already present in the list",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Email contact verified successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Alert contact email check completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 15: RUN GEOFENCE PACKET SENDER",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Alert Contact modal closed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Starting packet sender: C:\\geofence_hari\\geofence_packet_sender_alternating.py",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Waiting for 4 packets to be sent (each takes ~2 min)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Pattern: INSIDE -> OUTSIDE -> INSIDE -> OUTSIDE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Each inside/outside transition triggers a geofence alert notification",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:25:45,004 - INFO -",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:25:45,005 - INFO - Geofence Packet Sender - ALTERNATING MODE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:25:45,005 - INFO - Server: 165.232.56.194:6008",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:25:45,005 - INFO - Send interval: 2 minutes",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:25:45,005 - INFO - Pattern: INSIDE -> OUTSIDE -> INSIDE -> OUTSIDE ...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:25:45,006 - INFO -",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:25:45,008 - INFO - [SENT] [INSIDE] Lat: 37.769667, Lon: -121.960531",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:25:45,008 - INFO -   Packet: S102,4,99,862343068530220,37.76967,-121.96053,52,085545,110226,61,12,3,70,24,A1E5210,680,8F11,310,030,330,101,0,e",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:25:45,008 - INFO -   Stats: Inside=1 (100.0%) | Outside=0 (0.0%)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packets sent so far: 1/4 | Lat: 37.769667, Lng: -121.960531, Status: INSIDE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 20260211 22:25:45,008  INFO",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:27:45,009 - INFO - [SENT] [OUTSIDE] Lat: 37.770618, Lon: -121.961614",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packets sent so far: 2/4 | Lat: 37.770618, Lng: -121.961614, Status: OUTSIDE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:27:45,010 - INFO -   Packet: S102,4,99,862343068530220,37.77062,-121.96161,52,085745,110226,61,12,3,70,24,A1E5210,680,8F11,310,030,330,101,0,e",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:27:45,010 - INFO -   Stats: Inside=1 (50.0%) | Outside=1 (50.0%)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "20260211 22:27:45,011  INFO",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:29:45,012 - INFO - [SENT] [INSIDE] Lat: 37.769670, Lon: -121.960815",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packets sent so far: 3/4 | Lat: 37.76967, Lng: -121.960815, Status: INSIDE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:29:45,012 - INFO -   Packet: S102,4,99,862343068530220,37.76967,-121.96081,52,085945,110226,61,12,3,70,24,A1E5210,680,8F11,310,030,330,101,0,e",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:29:45,013 - INFO -   Stats: Inside=2 (66.7%) | Outside=1 (33.3%)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 20260211 22:29:45,013  INFO",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:31:45,015 - INFO - [SENT] [OUTSIDE] Lat: 37.770230, Lon: -121.961064",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packets sent so far: 4/4 | Lat: 37.77023, Lng: -121.961064, Status: OUTSIDE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Target of 4 packets reached. Stopping packet sender...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "[PACKET SENDER STDERR] 2026-02-11 22:31:45,016 - INFO -   Packet: S102,4,99,862343068530220,37.77023,-121.96106,52,090145,110226,61,12,3,70,24,A1E5210,680,8F11,310,030,330,101,0,e",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2026-02-11 22:31:45,016 - INFO -   Stats: Inside=2 (50.0%) | Outside=2 (50.0%)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "20260211 22:31:45,016  INFO",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Packet sender process exited with code: null",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet sender completed:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Total packets sent: 4",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Exit code: null",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Captured packets: 4",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet 1: [INSIDE] Lat=37.769667, Lng=-121.960531, Time=2026-02-11T16:55:45.008Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet 2: [OUTSIDE] Lat=37.770618, Lng=-121.961614, Time=2026-02-11T16:57:45.008Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet 3: [INSIDE] Lat=37.76967, Lng=-121.960815, Time=2026-02-11T16:59:45.013Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet 4: [OUTSIDE] Lat=37.77023, Lng=-121.961064, Time=2026-02-11T17:01:45.014Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Geofence alert notifications should have been triggered for the configured email contacts",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Step 15 completed - Geofence packet sender finished",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 16: OPEN HARDWARE TESTING PAGE",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Current URL: https://www.tracking.matrack.io/gpstracking/adminnew/view/login.php?redirect=/gpstracking/hardware_testing/index2.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Redirected to login page - entering credentials...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sign In clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Login successful - redirected to hardware testing page",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Hardware testing page loaded: https://www.tracking.matrack.io/gpstracking/adminnew/view/login.php?redirect=/gpstracking/hardware_testing/index2.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 17: CLICK NEW VERSION",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "New Version page loaded: https://www.tracking.matrack.io/gpstracking/hardware_testing/index4.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 18: SEARCH PACKETS FOR IMEI",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "IMEI entered: 862343068530220",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Radio button \"New MA1080\" selected",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Search Packets clicked",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API Response Status: 200",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API URL: https://www.tracking.matrack.io/gpstracking/hardware_testing/Data2/getimeiData_6008-new.php",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "API status verified: 200 OK",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 19: EXTRACT LAST PACKET INFO",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Last packet line: Client ('3.134.193.76', 51820) sent time: 2026-02-11 14:20:09.781425 data: S102,4,0,862343068530220,37.76911,-121.95947,...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Last packet from API (before retry):",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sent Time (UTC): 2026-02-11 14:20:09.781425",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Lat: 37.76911, Lng: -121.95947",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Raw Data: S102,4,0,862343068530220,37.76911,-121.95947,0,141955,110226,0,6,3,100,21,A140112,661,8F11,310,030,4...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "STEP 20: VERIFY PYTHON SCRIPT PACKETS MATCH API",
+          "status": "section",
+          "type": "section"
+        },
+        {
+          "number": "",
+          "text": "Last Python packet: Lat=37.77023, Lng=-121.961064, Status=OUTSIDE",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Comparing: API(37.76911, -121.95947) vs Python(37.77023, -121.961064)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Lat diff: 0.001120, Lng diff: 0.001594",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "COMPARISON SUMMARY",
+          "status": "info",
+          "type": "subsection"
+        },
+        {
+          "number": "",
+          "text": "Python script packets sent:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "1. [INSIDE] Lat=37.769667, Lng=-121.960531, Time=2026-02-11T16:55:45.008Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet: S102,4,99,862343068530220,37.76967,-121.96053,52,085545,110226,61,12,3,70,24,A1E...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "2. [OUTSIDE] Lat=37.770618, Lng=-121.961614, Time=2026-02-11T16:57:45.008Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet: S102,4,99,862343068530220,37.77062,-121.96161,52,085745,110226,61,12,3,70,24,A1E...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "3. [INSIDE] Lat=37.76967, Lng=-121.960815, Time=2026-02-11T16:59:45.013Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet: S102,4,99,862343068530220,37.76967,-121.96081,52,085945,110226,61,12,3,70,24,A1E...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "4. [OUTSIDE] Lat=37.77023, Lng=-121.961064, Time=2026-02-11T17:01:45.014Z",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Packet: S102,4,99,862343068530220,37.77023,-121.96106,52,090145,110226,61,12,3,70,24,A1E...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Latest packet from API/textarea:",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Sent Time (UTC): 2026-02-11 14:20:09.781425",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Lat: 37.76911, Lng: -121.95947",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Raw: S102,4,0,862343068530220,37.76911,-121.95947,0,141955,110226,0,6,3,100,21,A140112,661,8F11,310,030,4",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": 1,
+          "text": "VERIFICATION : Latest API packet matches the Python script packet (within tolerance)",
+          "status": "passed",
+          "type": "step"
+        },
+        {
+          "number": "",
+          "text": "Step 20 completed - Hardware testing packet verification finished",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-11T16:54:07.266Z",
+      "endTime": "2026-02-11T17:02:12.387Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS_geofence_admin_access.spec.js",
+      "fileName": "TS_geofence_admin_access",
+      "line": 7
+    }
+  ]
+}

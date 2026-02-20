@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS044-A,"Snapshots","should display snapshots",PASSED,187.00,"",N/A,TS044_snapshots.spec.js,23

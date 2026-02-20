@@ -1,0 +1,2 @@
+Test Case No,Module,Test Case Description,Status,Duration (s),Failure Reason,Video Identifier,File,Line
+TS045-A,"Dashcam Alert Report","shows dashcam alert report",PASSED,110.51,"",N/A,TS045_dashcamAlertReport.spec.js,23

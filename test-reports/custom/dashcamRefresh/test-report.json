@@ -4,9 +4,9 @@
     "passed": 1,
     "failed": 0,
     "skipped": 0,
-    "duration": 112392,
-    "startTime": "2025-12-09T17:44:43.907Z",
-    "endTime": "2025-12-09T17:46:36.299Z"
+    "duration": 1604413,
+    "startTime": "2026-02-12T17:24:25.038Z",
+    "endTime": "2026-02-12T17:51:09.451Z"
   },
   "tests": [
     {
@@ -16,7 +16,7 @@
       "description": "should refresh dashcam functionality",
       "status": "passed",
       "statusDisplay": "PASSED",
-      "duration": 103153,
+      "duration": 145016,
       "failureReason": "",
       "parsedError": null,
       "videoPath": null,
@@ -24,7 +24,31 @@
       "steps": [
         {
           "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
           "status": "info",
           "type": "log"
         },
@@ -42,13 +66,19 @@
         },
         {
           "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
           "text": "Page loaded successfully",
           "status": "info",
           "type": "log"
         }
       ],
-      "startTime": "2025-12-09T17:44:52.278Z",
-      "endTime": "2025-12-09T17:46:35.431Z",
+      "startTime": "2026-02-12T17:27:14.089Z",
+      "endTime": "2026-02-12T17:29:39.106Z",
       "retries": 0,
       "file": "C:\\cypress-to-playwright-converted\\tests\\TS043_dashcamRefresh.spec.js",
       "fileName": "TS043_dashcamRefresh",

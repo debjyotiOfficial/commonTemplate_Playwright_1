@@ -1,0 +1,130 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 1604413,
+    "startTime": "2026-02-12T17:24:25.038Z",
+    "endTime": "2026-02-12T17:51:09.451Z"
+  },
+  "tests": [
+    {
+      "testCaseNo": "TS044-A",
+      "module": "Snapshots",
+      "title": "should display snapshots",
+      "description": "should display snapshots",
+      "status": "passed",
+      "statusDisplay": "PASSED",
+      "duration": 187005,
+      "failureReason": "",
+      "parsedError": null,
+      "videoPath": null,
+      "videoIdentifier": "N/A",
+      "steps": [
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Preserving cookies (using stored auth session)",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Loading config from: C:\\cypress-to-playwright-converted\\fixtures\\tlr-config.json",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Config loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Using stored authentication session (skipping login)...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Navigating directly to https://www.gpsandfleet3.net/gpsandfleet/client/dashcamdemo1/maps/index2.php...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Network idle timeout, continuing...",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Page loaded successfully",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found 1 dashcam cards with status indicators",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Testing filter for card 1 with status: \"Vehicle Is Off\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Found matching filter button for status: \"Vehicle Is Off\"",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Successfully verified 1 dashcam card(s) with status \"Vehicle Is Off\" are visible",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Filter button for \"Vehicle Is Off\" is now active",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Reset to \"All\" filter after testing loop completed",
+          "status": "info",
+          "type": "log"
+        },
+        {
+          "number": "",
+          "text": "Snapshots test completed successfully",
+          "status": "info",
+          "type": "log"
+        }
+      ],
+      "startTime": "2026-02-12T17:27:14.066Z",
+      "endTime": "2026-02-12T17:30:21.071Z",
+      "retries": 0,
+      "file": "C:\\cypress-to-playwright-converted\\tests\\TS044_snapshots.spec.js",
+      "fileName": "TS044_snapshots",
+      "line": 23
+    }
+  ]
+}
